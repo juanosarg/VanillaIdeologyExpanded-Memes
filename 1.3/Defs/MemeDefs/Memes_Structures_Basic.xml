@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MemeDef>
+    <defName>VME_Structure_Serketist</defName>
+    <label>serketist</label>
+    <description>There is no higher lifeform than the Hive Queen. Their nourishing jelly is like ambrosia, and the entire world should be remade in their image.</description>
+    <category>Structure</category>
+    <iconPath>UI/Structures/VME_AlphaMeme</iconPath>
+    <impact>0</impact>
+    <worshipRoomLabel>hive</worshipRoomLabel>
+    <randomizationSelectionWeightFactor>2</randomizationSelectionWeightFactor>
+    <deityCount>1</deityCount>
+	<requireOne>
+     
+      <li>
+        <li>InsectMeatEating_Loved</li>
+      </li>
+     
+    </requireOne>
+    <generalRules>
+      <rulesStrings>
+	    <li>memeAdjective->serketic</li>
+		<li>memeAdjective->insectoid</li>
+		<li>memeAdjective->verminous</li>
+        <li>memeLeaderNoun->scarab lord</li>
+        <li>memeLeaderNoun->high speaker</li>
+        <li>memeLeaderAdjective->buzzing</li>
+        <li>memeLeaderAdjective->gregarious</li>
+        <li>memeLeaderAdjective->crawling</li>      
+        <li>memeMoralist->shaman</li>
+        <li>memeMoralist->moth priest</li>
+        <li>memeMoralist->plague advocate</li>
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <patterns>
+        <li><def>VME_SerketistDescription</def></li>
+      </patterns>
+      <constants>
+        <li><key>structure_serketist</key><value>true</value></li>
+      </constants>
+    </descriptionMaker>
+    <symbolPacks>
+      <li>
+        <theme>serketism</theme>
+        <adjective>serketist</adjective>
+        <member>serketist</member>
+      </li>
+      
+    </symbolPacks>
+    
+  </MemeDef>
+
+
+
+</Defs>
