@@ -1,41 +1,42 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
- 
-
-  <IdeoStoryPatternDef>
-    <defName>VME_SerketistDescription</defName>
-    <segments>
-      <li>serketistBasis</li>
-      <li>serketistFact</li>
-      <li>serketistProphecy</li>
-    </segments>
-    <rules>
-      <include>
-        <li>IdeoDescriptionGlobal</li>
-      </include>
-      <rulesStrings>
-        <!-- generic basis -->
-        <li>serketistBasis   ->The universe is an endless cycle of creation and destruction managed by spirits in aspects of the world around us.</li>
-        <li>serketistBasis   ->A parallel universe of spirits lies next to our own. A seemingly inanimate object in this universe corresponds to an animated spirit in the other.</li>
-
-        <!-- generic fact -->
-        <li>serketistFact    ->Each spirit has an essential nature, and seeks to influence the world. Sometimes this influence is helpful, and  sometimes it is harmful.</li>
-
-        <!-- generic prophecy -->
-        <li>serketistProphecy->[itIsSaid] that the spirit of the great [relic0_name] will one day grant its wielder power over all spirits.</li>
-        <li>serketistProphecy->[itIsSaid] that a sleeping traveler from the stars will crash to the earth, and the spirit of the crater will wake the traveller who will raise the last tribe.</li>
-
-        <!-- pieces -->
-        <li>itIsSaid->It is said</li>
-        <li>itIsSaid->It is prophesied</li>
-        <li>itIsSaid->An ancient text says</li>
-        <li>itIsSaid->Our book says</li>
-        <li>itIsSaid->Our sages say</li>
-        <li>itIsSaid->We know</li>
-
-      </rulesStrings>
-    </rules>
-  </IdeoStoryPatternDef>
-
-
+	<IdeoStoryPatternDef>
+		<defName>VME_SerketistDescription</defName>
+		<segments>
+			<li>serketistBasis</li>
+			<li>serketistFact</li>
+			<li>serketistProphecy</li>
+		</segments>
+		<rules>
+			<include>
+				<li>IdeoDescriptionGlobal</li>
+			</include>
+			<rulesStrings>
+				<!-- generic basis -->
+				<li>serketistBasis   ->In its hubris, humanity accidentally stumbled upon the creation of the perfect lifeform: Insectoids.</li>
+				<li>serketistBasis   ->The runaway creation of some forgotten ancient geneticist, Insectoids have evolved to become the perfect lifeform.</li>
+				<li>serketistBasis   ->Threatened by the Mechanoid menace, mankind engineered the perfect lifeform: Insectoids.</li>
+				<li>serketistBasis   ->Led by the sacred Hive Queens, Insectoids are the perfect lifeform in the galaxy.</li>
+				<!-- generic fact -->
+				<li>serketistFact    ->They are the pinnacle of evolution. [InsectAdjective]. [InsectAdjective2]. [InsectAdjective3]. Everyone should strive to become like them.</li>
+				<!-- generic prophecy -->
+				<li>serketistProphecy->[itIsSaid] we will learn from them, becoming like a tidal wave that will wash over our enemies.</li>
+				<!-- pieces -->
+				<li>itIsSaid->Perhaps, with time,</li>
+				<li>itIsSaid->It is written in our destiny that</li>
+				<li>itIsSaid->Either through technology or more arcane means</li>
+				<li>itIsSaid->We will revere their ways, their collective intelligence and</li>
+				<li>itIsSaid->By revering the Will of the Hive Queen</li>
+				<li>InsectAdjective->Adaptive</li>
+				<li>InsectAdjective->Ravenous</li>
+				<li>InsectAdjective->Overpowering</li>
+				<li>InsectAdjective2->Versatile</li>
+				<li>InsectAdjective2->Uncompromising</li>
+				<li>InsectAdjective2->Destructive</li>
+				<li>InsectAdjective3->Complex</li>
+				<li>InsectAdjective3->Indestructible</li>
+				<li>InsectAdjective3->Resistant</li>
+			</rulesStrings>
+		</rules>
+	</IdeoStoryPatternDef>
 </Defs>

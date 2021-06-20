@@ -4,17 +4,18 @@
   <MemeDef>
     <defName>VME_Structure_Serketist</defName>
     <label>serketist</label>
-    <description>There is no higher lifeform than the Hive Queen. Their nourishing jelly is like ambrosia, and the entire world should be remade in their image.</description>
+    <description>There is no higher lifeform than the Hive Queens. Their nourishing jelly is like ambrosia, and the entire world should be remade in their image.</description>
     <category>Structure</category>
     <iconPath>UI/Structures/VME_AlphaMeme</iconPath>
     <impact>0</impact>
     <worshipRoomLabel>hive</worshipRoomLabel>
-    <randomizationSelectionWeightFactor>2</randomizationSelectionWeightFactor>
-    <deityCount>1</deityCount>
+    <randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+    <deityCount>0</deityCount>
 	<requireOne>
      
       <li>
-        <li>InsectMeatEating_Loved</li>
+        <li>VME_InsectMeatEating_Sacrilegious</li>
+		<li>VME_InsectJellyEaten_Loved_Classic</li>
       </li>
      
     </requireOne>
