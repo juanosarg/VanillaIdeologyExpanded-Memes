@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+ 
+
+  <FleckDef ParentName="FleckBase">
+    <defName>VME_DivineStarsFleck</defName>
+    <fleckSystemClass>FleckSystemThrown</fleckSystemClass>
+    <graphicData>
+      <graphicClass>Graphic_Fleck</graphicClass>
+      <shaderType>Mote</shaderType>
+      <texPath>UI/Issues/VME_AlphaIssue</texPath>
+      <drawSize>(2, 2)</drawSize>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0.2</solidTime>
+    <fadeInTime>0.03</fadeInTime>
+    <fadeOutTime>0.02</fadeOutTime>
+  </FleckDef>
+  
+</Defs>

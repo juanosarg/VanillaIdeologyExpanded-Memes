@@ -10,13 +10,13 @@
 		<defName>VME_ViolentConversion</defName>
 		<label>violent conversion</label>
 		<exclusionTags>
-				<li>VME_Proselytism</li>
+			<li>VME_Proselytism</li>
 		</exclusionTags>
 		<description>Infidels can choose to adopt our beliefs, or die.</description>
 		<iconPath>UI/Memes/VME_AlphaMeme</iconPath>
 		<groupDef>VME_Proselytism</groupDef>
 		<impact>2</impact>
-		
+
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->forced</li>
@@ -52,12 +52,14 @@
 					<li>archistProphecy(tag=meme_ViolentConversion) ->[inTheEnd], the archotechs will voice their final wisdom to the holder of the [relic0_name]. Anyone who hasn't listened must be purged.</li>
 					<!-- animist -->
 					<li>animistFact(tag=meme_ViolentConversion)     ->The spirits want to be known, but only speak to a few. We will make anyone who stands in our way fear the will of the spirits.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_ViolentConversion)->[itIsSaid] we will learn from them, and use that knowledge to purge the universe of filthy infidels.</li>
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
 		<requireOne>
 			<li>
-				
+
 				<li>Proselytizing_Frequently</li>
 			</li>
 		</requireOne>
@@ -82,4 +84,84 @@
 			</li>
 		</symbolPacks>
 	</MemeDef>
+
+	<MemeDef>
+		<defName>VME_Astrology</defName>
+		<label>astrology</label>
+
+		<description>A careful examination of the stars will unlock mystical powers far beyond our wildest imagination.</description>
+		<iconPath>UI/Memes/VME_AlphaMeme</iconPath>
+
+		<impact>1</impact>
+
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->astrological</li>
+				<li>memeAdjective->zodiacal</li>
+				<li>memeHyphenPrefix->astro</li>
+				<li>memeConcept->stars</li>
+				<li>memeLeaderNoun->grand astrologer</li>
+				<li>memeMoralist->diviner</li>
+				<li>memeMoralist->star seer</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Astrology)        ->[deity0_name] anointed a few crusaders among mortals to carry out [deity0_possessive] will.</li>
+					<li>episode(uses=1,tag=meme_Astrology)  ->[deity0_name] said to all the [memberNamePlural], "The infidel shall accept my words, or perish."</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Astrology)           ->[memberNamePlural] built a great [altarName] on the [place_summary] [place_name], so that many would be bent to [deity0_name]'s will.</li>
+					<li>conflict(tag=meme_Astrology)        ->A coward [foeLeader], seeking to deny the will of [deity0_name], told [foeLeader_possessive] [foeSoldiers] to cut out the tongues of any who speak of the [deity0_type].</li>
+					<li>founderJoin(tag=meme_Astrology)     ->[deity0_name] blessed a [place_job] named [founderName] with [foeLeader_possessive] unwavering resolve, and none could turn away when [founder_pronoun] spoke.</li>
+					<li>victory(tag=meme_Astrology)         ->[founderName] slaughtered many of the [foeSoldiers] and mercilessly tortured the survivors to show [deity0_name]'s power. Their cries of anguish will forever remind us of the destiny awaiting those who deny [deity0_name].</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Astrology)           ->Our founder [founderName] was a great revolutionary and a genious, converting thousands as [founder_pronoun] traveled between the cities.</li>
+					<li>story(uses=1,tag=meme_Astrology)    ->The believers moved between cities and institutions, spreading word of the new order and fighting against those who would disagree.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Astrology)         ->In all my years spreading our philosophy, I learned one lesson that stands over all:</li>
+					<li>lesson(tag=meme_Astrology)              ->there is no Truth but Our Truth. We can't let anyone stand in our way. They can either agree, or die.</li>
+					<li>lessonReinforcement(tag=meme_Astrology) ->This is the fact we need to spread, and spread, and spread. By force, if necessary.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Astrology)    ->The archotechs announce their presence from the sky, and in the mind, and their existance MUST become an universal truth.</li>
+					<li>archistFact(tag=meme_Astrology)     ->Archotechs must be obeyed, and it is our reponsibility to bend others to their will.</li>
+					<li>archistProphecy(tag=meme_Astrology) ->[inTheEnd], the archotechs will voice their final wisdom to the holder of the [relic0_name]. Anyone who hasn't listened must be purged.</li>
+					<!-- animist -->
+					<li>animistFact(tag=meme_Astrology)     ->The spirits want to be known, but only speak to a few. We will make anyone who stands in our way fear the will of the spirits.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Astrology)->[itIsSaid] we will learn from them, and use that knowledge to purge the universe of filthy infidels.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requiredRituals>
+			<li>
+				<precept>VME_DivineStarsPrecept</precept>
+				<pattern>VME_DivineStarsRitual</pattern>
+				
+			</li>
+		</requiredRituals>
+		<symbolPacks>
+			<li>
+				<ideoName>Astrology</ideoName>
+				<theme>astrology</theme>
+				<adjective>astrological</adjective>
+				<member>astrologer</member>
+			</li>
+			<li>
+				<ideoName>Tarot</ideoName>
+				<theme>tarot</theme>
+				<adjective>tarot reading</adjective>
+				<member>tarot reader</member>
+			</li>
+			<li>
+				<ideoName>Divination</ideoName>
+				<theme>divination</theme>
+				<adjective>divinatorial</adjective>
+				<member>diviner</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+
+
 </Defs>
