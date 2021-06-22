@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<RitualVisualEffectDef>
+
+  
+  <RitualVisualEffectDef>
     <defName>VME_DivineStarsVisual</defName>
+    <tintColor>(26, 20, 25)</tintColor>
     <comps>
-      <li Class="CompProperties_RitualEffectSpawnOnPawn">
+      <li>
+        <compClass>CompRitualEffect_ConstantCenter</compClass>
+        <moteDef>Mote_RitualSmoke</moteDef>
+        <scaleWithRoom>true</scaleWithRoom>
+      </li>
+      <li Class="CompProperties_RitualEffectIntervalSpawnCircle">
         <fleckDef>VME_DivineStarsFleck</fleckDef>
-        <compClass>CompRitualEffect_SpawnOnOrganizer</compClass>
-        
-        <eastRotationOffset>(0.5, 0, 0.2)</eastRotationOffset>
-        <westRotationOffset>(-0.5, 0, 0.2)</westRotationOffset>
-        <northRotationOffset>(0, 0, 0.5)</northRotationOffset>
-        <spawnIntervalTicks>45</spawnIntervalTicks>
+        <area>(27, 28)</area>
+        <radius>6</radius>
+        <concentration>3</concentration>
+        <spawnIntervalTicks>9</spawnIntervalTicks>
+        <spawnCount>1</spawnCount>
+        <rotation>-15~15</rotation>
+        <scalePositionWithRoom>true</scalePositionWithRoom>
+        <onlySpawnInSameRoom>true</onlySpawnInSameRoom>
       </li>
     </comps>
   </RitualVisualEffectDef>
