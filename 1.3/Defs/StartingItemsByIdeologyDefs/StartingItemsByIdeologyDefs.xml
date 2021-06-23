@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	<VanillaMemesExpanded.StartingItemsByIdeologyDef>
+		<defName>VME_StartingItemsByIdeologyTest</defName>
+		<associatedMeme>VME_Astrology</associatedMeme>	
+		<thingSetMaker>Reward_ItemsStandard</thingSetMaker>		
+	</VanillaMemesExpanded.StartingItemsByIdeologyDef>
+
+
+
+
+
+
+</Defs>

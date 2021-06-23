@@ -28,11 +28,17 @@ namespace VanillaMemesExpanded
             {
 
                 List<Thing> things = new List<Thing>();
-                PawnGenerationRequest request = new PawnGenerationRequest(PawnKindDef.Named("Alpaca"), null, PawnGenerationContext.NonPlayer, -1, false, false, false, false, true, false, 1f, false, true, true, true, false, false, false, false, 0f, 0f,null, 1f, null, null, null, null, null, null, null, null, null, null, null, null);
-                Pawn pawn = PawnGenerator.GeneratePawn(request);
-                things.Add(pawn);
 
-                DropPodUtility.DropThingsNear(MapGenerator.PlayerStartSpot, map, things, 110);
+                foreach (StartingItemsByIdeologyDef startingItems in DefDatabase<StartingItemsByIdeologyDef>.AllDefsListForReading)
+                {
+                    if (Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo.HasMeme(startingItems.associatedMeme))
+                    {
+                        things = startingItems.thingSetMaker.root.Generate();
+                    }
+
+                }                
+                if (things.Count > 0) { DropPodUtility.DropThingsNear(MapGenerator.PlayerStartSpot, map, things, 110); }
+                
                
                 Current.Game.GetComponent<GameComponent_IdeologicalGoodies>().sentOncePerGame = true;
             }

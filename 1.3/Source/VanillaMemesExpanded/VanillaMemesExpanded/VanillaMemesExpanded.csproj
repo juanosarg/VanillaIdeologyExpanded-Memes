@@ -297,6 +297,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Defs\StartingItemsByIdeologyDef.cs" />
     <Compile Include="GameComponent\GameComponent_IdeologicalGoodies.cs" />
     <Compile Include="MapComponent\MapComponent_IdeologicalGoodies.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

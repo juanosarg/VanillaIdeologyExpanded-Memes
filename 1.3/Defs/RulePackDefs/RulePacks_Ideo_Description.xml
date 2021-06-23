@@ -77,4 +77,38 @@
 			</rulesStrings>
 		</rules>
 	</IdeoStoryPatternDef>
+	
+	 <IdeoStoryPatternDef>
+    <defName>VME_EsotericismDescription</defName>
+    <segments>
+      <li>esotericismBasis</li>
+      <li>esotericismFact</li>
+      <li>esotericismProphecy</li>
+    </segments>
+    <rules>
+      <include>
+        <li>IdeoDescriptionGlobal</li>
+      </include>
+      <rulesStrings>
+        <!-- generic basis -->
+        <li>esotericismBasis   ->Beyond the grasp of common science, there is an unsurpassed wealth of secret knowledge.</li>
+        <li>esotericismBasis   ->Hidden to the prying eyes of scientists and philosophers, an occult world of hidden knowledge awaits.</li>
+		<li>esotericismBasis   ->Science can only bring you so far. Beyond the veil of reality there is a trove of secret knowledge, waiting to be uncovered.</li>
+		<li>esotericismBasis   ->The Universe is too vast to be limited to the constraints of pure math and physics. Beyond such human limitations there is a vast treasure of secret knowledge that can be accessed by those willing to do so at any cost necessary.</li>
+
+        <!-- generic fact -->
+        <li>esotericismFact    ->Only a select few have the mental strength to acquire such insights.</li>
+		<li>esotericismFact    ->These occult insights are not for everyone. Only a small group of sages can explore and observe them. The Chosen Ones.</li>
+		<li>esotericismFact    ->Such insights would probably be too much for the common folk. Only those with great mental fortitude can peer into the occult... and keep their minds intact.</li>
+
+        <!-- generic prophecy -->
+        <li>esotericismProphecy->Perhaps by delving into such knowledge we can even trascend our mortal existence.</li>
+        <li>esotericismProphecy->Given enough time, we will crack the most guarded secrets, and finally understand our place in this Universe.</li>
+		<li>esotericismProphecy->The alchemists of antiquity might not have been so foolish in their search for gold, but we are much more ambitious: we will apply the transmundane to our very souls and become more than human.</li>
+		<li>esotericismProphecy->With such knowledge, we will have a clear advantage over the rest of this planet's inhabitants, and our domination will be all but secured.</li>
+       
+
+      </rulesStrings>
+    </rules>
+  </IdeoStoryPatternDef>
 </Defs>
