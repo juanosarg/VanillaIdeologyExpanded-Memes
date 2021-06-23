@@ -102,12 +102,12 @@
 	</MemeDef>
 	<MemeDef>
 		<defName>VME_Structure_Bacchanalianism</defName>
-		<label>bacchanalianism</label>
-		<description>There is no higher lifeform than the Hive Queens. Their nourishing jelly is like ambrosia, and the entire world should be remade in their image.</description>
+		<label>hedonism</label>
+		<description>Pleasure, the satisfaction of bodily desires, is the highest good and proper aim of human life. Whether through religion or philosophy our entire lives should be focused on enjoying ourselves as much as possible.</description>
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_Bacchanalianism</iconPath>
 		<impact>0</impact>
-		<worshipRoomLabel>hive</worshipRoomLabel>
+		<worshipRoomLabel>lounge</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
 		<deityCount>0</deityCount>
 		
@@ -210,7 +210,7 @@
 		<iconPath>UI/Structures/Structure_Eschatologism</iconPath>
 		<impact>0</impact>
 		
-		<worshipRoomLabel>chamber of whispers</worshipRoomLabel>
+		<worshipRoomLabel>antechamber</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
 		<deityNameMakerOverride>VME_NamerDeityEldritch</deityNameMakerOverride>
 		<deityTypeMakerOverride>VME_DietyTypeMakerEldritch</deityTypeMakerOverride>
@@ -265,7 +265,7 @@
 		<iconPath>UI/Structures/Structure_Authoritarianism</iconPath>
 		<impact>0</impact>
 		
-		<worshipRoomLabel>chamber of whispers</worshipRoomLabel>
+		<worshipRoomLabel>headquarters</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
 		<deityNameMakerOverride>VME_NamerDeityEldritch</deityNameMakerOverride>
 		<deityTypeMakerOverride>VME_DietyTypeMakerEldritch</deityTypeMakerOverride>
@@ -320,7 +320,7 @@
 		<iconPath>UI/Structures/Structure_CultofPersonality</iconPath>
 		<impact>0</impact>
 		
-		<worshipRoomLabel>chamber of whispers</worshipRoomLabel>
+		<worshipRoomLabel>chamber of the high one</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
 		<deityNameMakerOverride>VME_NamerDeityEldritch</deityNameMakerOverride>
 		<deityTypeMakerOverride>VME_DietyTypeMakerEldritch</deityTypeMakerOverride>
@@ -375,7 +375,7 @@
 		<iconPath>UI/Structures/Structure_Pantheism</iconPath>
 		<impact>0</impact>
 		
-		<worshipRoomLabel>chamber of whispers</worshipRoomLabel>
+		<worshipRoomLabel>great hall</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
 		<deityNameMakerOverride>VME_NamerDeityEldritch</deityNameMakerOverride>
 		<deityTypeMakerOverride>VME_DietyTypeMakerEldritch</deityTypeMakerOverride>
@@ -430,7 +430,7 @@
 		<iconPath>UI/Structures/Structure_Omnism</iconPath>
 		<impact>0</impact>
 		
-		<worshipRoomLabel>chamber of whispers</worshipRoomLabel>
+		<worshipRoomLabel>temple</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
 		<deityNameMakerOverride>VME_NamerDeityEldritch</deityNameMakerOverride>
 		<deityTypeMakerOverride>VME_DietyTypeMakerEldritch</deityTypeMakerOverride>
@@ -485,7 +485,7 @@
 		<iconPath>UI/Structures/Structure_Agnosticism</iconPath>
 		<impact>0</impact>
 		
-		<worshipRoomLabel>chamber of whispers</worshipRoomLabel>
+		<worshipRoomLabel>symposium hall</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
 		<deityNameMakerOverride>VME_NamerDeityEldritch</deityNameMakerOverride>
 		<deityTypeMakerOverride>VME_DietyTypeMakerEldritch</deityTypeMakerOverride>
@@ -540,7 +540,7 @@
 		<iconPath>UI/Structures/Structure_SecularSpirituality</iconPath>
 		<impact>0</impact>
 		
-		<worshipRoomLabel>chamber of whispers</worshipRoomLabel>
+		<worshipRoomLabel>meditation room</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
 		<deityNameMakerOverride>VME_NamerDeityEldritch</deityNameMakerOverride>
 		<deityTypeMakerOverride>VME_DietyTypeMakerEldritch</deityTypeMakerOverride>
@@ -595,7 +595,7 @@
 		<iconPath>UI/Structures/Structure_Taoism</iconPath>
 		<impact>0</impact>
 	
-		<worshipRoomLabel>chamber of whispers</worshipRoomLabel>
+		<worshipRoomLabel>dàoguàn</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
 		<deityNameMakerOverride>VME_NamerDeityEldritch</deityNameMakerOverride>
 		<deityTypeMakerOverride>VME_DietyTypeMakerEldritch</deityTypeMakerOverride>
@@ -650,7 +650,7 @@
 		<iconPath>UI/Structures/Structure_Corporate</iconPath>
 		<impact>0</impact>
 		
-		<worshipRoomLabel>chamber of whispers</worshipRoomLabel>
+		<worshipRoomLabel>office</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
 		<deityNameMakerOverride>VME_NamerDeityEldritch</deityNameMakerOverride>
 		<deityTypeMakerOverride>VME_DietyTypeMakerEldritch</deityTypeMakerOverride>
