@@ -7,7 +7,7 @@
   <IssueDef>
     <defName>VME_InsectJelly</defName>
     <label>insect jelly</label>
-    <iconPath>UI/Issues/VME_AlphaIssue</iconPath>
+    <iconPath>UI/Issues/InsectJellyEating</iconPath>
   </IssueDef>
 
   <HistoryEventDef>

@@ -15,7 +15,7 @@
     <countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
     <selectionWeight>1.0</selectionWeight>
     <ritualPatternBase>VME_DivineStarsRitual</ritualPatternBase>
-    <iconPath>UI/Icons/Rituals/LeaderSpeech</iconPath>
+    <iconPath>UI/Rituals/CelebrationStarDivination</iconPath>
     <ignoreNameUniqueness>false</ignoreNameUniqueness>
   </PreceptDef>
   

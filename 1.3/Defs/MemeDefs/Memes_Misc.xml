@@ -13,7 +13,7 @@
 			<li>VME_Proselytism</li>
 		</exclusionTags>
 		<description>Infidels can choose to adopt our beliefs, or die.</description>
-		<iconPath>UI/Memes/VME_AlphaMeme</iconPath>
+		<iconPath>UI/Memes/ViolentConversion</iconPath>
 		<groupDef>VME_Proselytism</groupDef>
 		<impact>2</impact>
 
@@ -90,7 +90,7 @@
 		<label>astrology</label>
 
 		<description>A careful examination of the stars will unlock mystical powers far beyond our wildest imagination.</description>
-		<iconPath>UI/Memes/VME_AlphaMeme</iconPath>
+		<iconPath>UI/Memes/Astrology</iconPath>
 
 		<impact>1</impact>
 

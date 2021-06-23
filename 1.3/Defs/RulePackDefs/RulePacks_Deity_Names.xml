@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   <RulePackDef>
+    <defName>VME_NamerDeityEldritch</defName>
+    <include>
+      <li>GlobalUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_deityName->[start][middle][end]</li>
+
+       
+        <li>start->cn</li>
+        <li>start->kt</li>
+        <li>start->c't</li>
+        <li>start->kh</li>
+        <li>start->yir</li>
+        <li>start->yor</li>
+        <li>start->yok</li>
+        <li>start->igh</li>
+        <li>start->vhal</li>
+        <li>start->gher</li>
+        <li>start->mh'ur</li>
+        <li>start->vh'or</li>
+        <li>start->og</li>
+        <li>start->ak</li>
+        <li>start->kol</li>
+        <li>start->okt</li>
+        <li>start->yom-</li>
+        <li>start->sub-</li>
+        <li>start->ed</li>       
+        <li>start->ith</li>
+       
+
+        <!-- Middle is always surrounded by vowels -->
+        <li>middle->all'ra</li>
+        <li>middle->hele</li>
+        <li>middle->ujhu</li>
+        <li>middle->aand'xu</li>
+        <li>middle->'og'vhe</li>
+        <li>middle->aathe</li>
+        <li>middle->omliggda</li>
+        <li>middle->ethla</li>
+        <li>middle->ouvha</li>
+		<li>middle->omlao</li>
+
+        <!-- Ends never begin with vowels -->
+        <li>end(p=4)-></li>
+        <li>end->tl</li>
+        <li>end->ss</li>
+        <li>end->xr</li>
+        <li>end->rc</li>
+        <li>end->sh</li>
+        <li>end->l</li>
+        <li>end->va</li>
+       
+        <li>end->rrath</li>
+       
+        <li>end->th</li>
+       
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>VME_DietyTypeMakerEldritch</defName>
+    <rulePack>
+      <rulesStrings>
+	    <li>r_deityType->Progenitor of [concept]</li>
+		<li>r_deityType->Corruptor of [concept]</li>
+		<li>r_deityType->Bane of [concept]</li>
+		<li>r_deityType->Enemy of [concept]</li>
+		
+        <li>r_deityType->Devourer of [concept]</li>
+		<li>r_deityType->Scourge of [concept]</li>
+		<li>r_deityType->The incomprehensible [concept]</li>
+		<li>r_deityType->The noise at the center of [concept]</li>
+		<li>r_deityType->The [concept2] out of [concept3]</li>
+
+       
+        <li>concept->everything</li>
+        <li>concept->all</li>
+        <li>concept->the universe</li>
+		<li>concept->stars</li>
+		<li>concept->souls</li>
+		<li>concept->humanity</li>
+		<li>concept->space</li>
+		<li>concept->our dreams</li>
+		<li>concept->our deepest fears</li>
+		
+		<li>concept2->colour</li>
+        <li>concept2->thousand goats</li>
+        <li>concept2->hunger</li>
+		<li>concept2->scintillation</li>
+		<li>concept2->inkbloat</li>
+		<li>concept2->madness</li>
+		<li>concept2->insanity</li>
+		
+		<li>concept3->space</li>
+        <li>concept3->the depths</li>
+        <li>concept3->the chthonian abyss</li>
+		<li>concept3->hades</li>
+		<li>concept3->our nightmares</li>
+		<li>concept3->our dreams</li>
+		<li>concept3->our deepest fears</li>
+
+       
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

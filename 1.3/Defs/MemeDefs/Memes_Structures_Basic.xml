@@ -1,58 +1,700 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  <MemeDef>
-    <defName>VME_Structure_Serketist</defName>
-    <label>serketist</label>
-    <description>There is no higher lifeform than the Hive Queens. Their nourishing jelly is like ambrosia, and the entire world should be remade in their image.</description>
-    <category>Structure</category>
-    <iconPath>UI/Structures/Structure_Serketism</iconPath>
-    <impact>0</impact>
-    <worshipRoomLabel>hive</worshipRoomLabel>
-    <randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
-    <deityCount>0</deityCount>
-	<requireOne>
-     
-      <li>
-        <li>VME_InsectMeatEating_Sacrilegious</li>
-		<li>VME_InsectJellyEaten_Loved_Classic</li>
-      </li>
-     
-    </requireOne>
-    <generalRules>
-      <rulesStrings>
-	    <li>memeAdjective->serketic</li>
-		<li>memeAdjective->insectoid</li>
-		<li>memeAdjective->verminous</li>
-        <li>memeLeaderNoun->scarab lord</li>
-        <li>memeLeaderNoun->high speaker</li>
-        <li>memeLeaderAdjective->buzzing</li>
-        <li>memeLeaderAdjective->gregarious</li>
-        <li>memeLeaderAdjective->crawling</li>      
-        <li>memeMoralist->shaman</li>
-        <li>memeMoralist->moth priest</li>
-        <li>memeMoralist->plague advocate</li>
-      </rulesStrings>
-    </generalRules>
-    <descriptionMaker>
-      <patterns>
-        <li><def>VME_SerketistDescription</def></li>
-      </patterns>
-      <constants>
-        <li><key>structure_serketist</key><value>true</value></li>
-      </constants>
-    </descriptionMaker>
-    <symbolPacks>
-      <li>
-        <theme>serketism</theme>
-        <adjective>serketist</adjective>
-        <member>serketist</member>
-      </li>
-      
-    </symbolPacks>
-    
-  </MemeDef>
-
-
-
+	<MemeDef>
+		<defName>VME_Structure_Serketist</defName>
+		<label>serketism</label>
+		<description>There is no higher lifeform than the Hive Queens. Their nourishing jelly is like ambrosia, and the entire world should be remade in their image.</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/Structure_Serketism</iconPath>
+		<impact>0</impact>
+		<worshipRoomLabel>hive</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityCount>0</deityCount>
+		<requireOne>
+			<li>
+				<li>VME_InsectMeatEating_Sacrilegious</li>
+				<li>VME_InsectJellyEaten_Loved_Classic</li>
+			</li>
+		</requireOne>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->serketic</li>
+				<li>memeAdjective->insectoid</li>
+				<li>memeAdjective->verminous</li>
+				<li>memeLeaderNoun->scarab lord</li>
+				<li>memeLeaderNoun->high speaker</li>
+				<li>memeLeaderAdjective->buzzing</li>
+				<li>memeLeaderAdjective->gregarious</li>
+				<li>memeLeaderAdjective->crawling</li>
+				<li>memeMoralist->shaman</li>
+				<li>memeMoralist->moth priest</li>
+				<li>memeMoralist->plague advocate</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>VME_SerketistDescription</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_serketist</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>serketism</theme>
+				<adjective>serketist</adjective>
+				<member>serketist</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+	<MemeDef>
+		<defName>VME_Structure_Esotericism</defName>
+		<label>esotericism</label>
+		<description>There is a secret world hiding behind reality. Occult knowledge can be obtained by a select group of chosen people. Studying and understanding the obscure words of ancient tomes will allow us to unlock these secrets.</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/Structure_Esotericism</iconPath>
+		<impact>0</impact>
+		<worshipRoomLabel>sanctum</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityCount>0</deityCount>
+		
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->obscure</li>
+				<li>memeAdjective->secret</li>
+				<li>memeAdjective->occult</li>
+				<li>memeAdjective->mystical</li>
+				<li>memeLeaderNoun->grand magus</li>
+				<li>memeLeaderNoun->enlightened one</li>
+				<li>memeLeaderAdjective->esoteric</li>
+				<li>memeLeaderAdjective->mystical</li>
+				<li>memeLeaderAdjective->secretive</li>
+				<li>memeMoralist->practitioner</li>
+				<li>memeMoralist->philosopher</li>
+				<li>memeMoralist->wizard</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>VME_EsotericismDescription</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_esotericism</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>esotericism</theme>
+				<adjective>esoteric</adjective>
+				<member>practitioner</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+	<MemeDef>
+		<defName>VME_Structure_Bacchanalianism</defName>
+		<label>bacchanalianism</label>
+		<description>There is no higher lifeform than the Hive Queens. Their nourishing jelly is like ambrosia, and the entire world should be remade in their image.</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/Structure_Bacchanalianism</iconPath>
+		<impact>0</impact>
+		<worshipRoomLabel>hive</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityCount>0</deityCount>
+		
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->serketic</li>
+				<li>memeAdjective->insectoid</li>
+				<li>memeAdjective->verminous</li>
+				<li>memeLeaderNoun->scarab lord</li>
+				<li>memeLeaderNoun->high speaker</li>
+				<li>memeLeaderAdjective->buzzing</li>
+				<li>memeLeaderAdjective->gregarious</li>
+				<li>memeLeaderAdjective->crawling</li>
+				<li>memeMoralist->shaman</li>
+				<li>memeMoralist->moth priest</li>
+				<li>memeMoralist->plague advocate</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>VME_SerketistDescription</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_serketist</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>serketism</theme>
+				<adjective>serketist</adjective>
+				<member>serketist</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+	<MemeDef>
+		<defName>VME_Structure_ChthonianCult</defName>
+		<label>eldritch cult</label>
+		<description>There are ancient entities in this Universe that are more powerful than mere gods. Immensely powerful and utterly indifferent to us humans who can barely begin to comprehend them. Only by worshipping them can we hope to placate their ire.</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/Structure_ChthonianCult</iconPath>
+		<impact>0</impact>
+		
+		<worshipRoomLabel>chamber of whispers</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityNameMakerOverride>VME_NamerDeityEldritch</deityNameMakerOverride>
+		<deityTypeMakerOverride>VME_DietyTypeMakerEldritch</deityTypeMakerOverride>
+		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
+		<symbolPackOverride>true</symbolPackOverride>
+		<deityCount>4</deityCount>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->chthonian</li>
+				<li>memeAdjective->eldritch</li>
+				<li>memeAdjective->unnameable</li>
+				<li>memeAdjective->insane</li>
+				<li>memeAdjective->non-euclidean</li>
+				<li>memeAdjective->otherwordly</li>
+				<li>memeAdjective->loathsome</li>
+				<li>memeLeaderNoun->antiquarian</li>
+				<li>memeLeaderNoun->nameless</li>
+				<li>memeLeaderAdjective->indescribable </li>
+				<li>memeLeaderAdjective->unmentionable </li>
+				<li>memeLeaderAdjective->whispering</li>
+				<li>memeMoralist->deranged cultist</li>
+				<li>memeMoralist->cultist leader</li>
+				<li>memeMoralist->stygian advocate</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>VME_ChthonianDescription</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_chthonian</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>eldritch</theme>
+				<adjective>eldritch</adjective>
+				<member>cultist</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+	<MemeDef>
+		<defName>VME_Structure_Eschatologism</defName>
+		<label>eschatologism</label>
+		<description>There are ancient entities in this Universe that are more powerful than mere gods. Immensely powerful and utterly indifferent to us humans who can barely begin to comprehend them. Only by worshipping them can we hope to placate their ire.</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/Structure_Eschatologism</iconPath>
+		<impact>0</impact>
+		
+		<worshipRoomLabel>chamber of whispers</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityNameMakerOverride>VME_NamerDeityEldritch</deityNameMakerOverride>
+		<deityTypeMakerOverride>VME_DietyTypeMakerEldritch</deityTypeMakerOverride>
+		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
+		<symbolPackOverride>true</symbolPackOverride>
+		<deityCount>4</deityCount>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->chthonian</li>
+				<li>memeAdjective->eldritch</li>
+				<li>memeAdjective->unnameable</li>
+				<li>memeAdjective->insane</li>
+				<li>memeAdjective->non-euclidean</li>
+				<li>memeAdjective->otherwordly</li>
+				<li>memeAdjective->loathsome</li>
+				<li>memeLeaderNoun->antiquarian</li>
+				<li>memeLeaderNoun->nameless</li>
+				<li>memeLeaderAdjective->indescribable </li>
+				<li>memeLeaderAdjective->unmentionable </li>
+				<li>memeLeaderAdjective->whispering</li>
+				<li>memeMoralist->deranged cultist</li>
+				<li>memeMoralist->cultist leader</li>
+				<li>memeMoralist->stygian advocate</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>VME_ChthonianDescription</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_chthonian</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>eldritch</theme>
+				<adjective>eldritch</adjective>
+				<member>cultist</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+	<MemeDef>
+		<defName>VME_Structure_Authoritarianism</defName>
+		<label>authoritarian</label>
+		<description>There are ancient entities in this Universe that are more powerful than mere gods. Immensely powerful and utterly indifferent to us humans who can barely begin to comprehend them. Only by worshipping them can we hope to placate their ire.</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/Structure_Authoritarianism</iconPath>
+		<impact>0</impact>
+		
+		<worshipRoomLabel>chamber of whispers</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityNameMakerOverride>VME_NamerDeityEldritch</deityNameMakerOverride>
+		<deityTypeMakerOverride>VME_DietyTypeMakerEldritch</deityTypeMakerOverride>
+		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
+		<symbolPackOverride>true</symbolPackOverride>
+		<deityCount>4</deityCount>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->chthonian</li>
+				<li>memeAdjective->eldritch</li>
+				<li>memeAdjective->unnameable</li>
+				<li>memeAdjective->insane</li>
+				<li>memeAdjective->non-euclidean</li>
+				<li>memeAdjective->otherwordly</li>
+				<li>memeAdjective->loathsome</li>
+				<li>memeLeaderNoun->antiquarian</li>
+				<li>memeLeaderNoun->nameless</li>
+				<li>memeLeaderAdjective->indescribable </li>
+				<li>memeLeaderAdjective->unmentionable </li>
+				<li>memeLeaderAdjective->whispering</li>
+				<li>memeMoralist->deranged cultist</li>
+				<li>memeMoralist->cultist leader</li>
+				<li>memeMoralist->stygian advocate</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>VME_ChthonianDescription</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_chthonian</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>eldritch</theme>
+				<adjective>eldritch</adjective>
+				<member>cultist</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+	<MemeDef>
+		<defName>VME_Structure_CultOfPersonality</defName>
+		<label>cult of personality</label>
+		<description>There are ancient entities in this Universe that are more powerful than mere gods. Immensely powerful and utterly indifferent to us humans who can barely begin to comprehend them. Only by worshipping them can we hope to placate their ire.</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/Structure_CultofPersonality</iconPath>
+		<impact>0</impact>
+		
+		<worshipRoomLabel>chamber of whispers</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityNameMakerOverride>VME_NamerDeityEldritch</deityNameMakerOverride>
+		<deityTypeMakerOverride>VME_DietyTypeMakerEldritch</deityTypeMakerOverride>
+		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
+		<symbolPackOverride>true</symbolPackOverride>
+		<deityCount>4</deityCount>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->chthonian</li>
+				<li>memeAdjective->eldritch</li>
+				<li>memeAdjective->unnameable</li>
+				<li>memeAdjective->insane</li>
+				<li>memeAdjective->non-euclidean</li>
+				<li>memeAdjective->otherwordly</li>
+				<li>memeAdjective->loathsome</li>
+				<li>memeLeaderNoun->antiquarian</li>
+				<li>memeLeaderNoun->nameless</li>
+				<li>memeLeaderAdjective->indescribable </li>
+				<li>memeLeaderAdjective->unmentionable </li>
+				<li>memeLeaderAdjective->whispering</li>
+				<li>memeMoralist->deranged cultist</li>
+				<li>memeMoralist->cultist leader</li>
+				<li>memeMoralist->stygian advocate</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>VME_ChthonianDescription</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_chthonian</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>eldritch</theme>
+				<adjective>eldritch</adjective>
+				<member>cultist</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+	<MemeDef>
+		<defName>VME_Structure_Pantheism</defName>
+		<label>pantheism</label>
+		<description>There are ancient entities in this Universe that are more powerful than mere gods. Immensely powerful and utterly indifferent to us humans who can barely begin to comprehend them. Only by worshipping them can we hope to placate their ire.</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/Structure_Pantheism</iconPath>
+		<impact>0</impact>
+		
+		<worshipRoomLabel>chamber of whispers</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityNameMakerOverride>VME_NamerDeityEldritch</deityNameMakerOverride>
+		<deityTypeMakerOverride>VME_DietyTypeMakerEldritch</deityTypeMakerOverride>
+		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
+		<symbolPackOverride>true</symbolPackOverride>
+		<deityCount>4</deityCount>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->chthonian</li>
+				<li>memeAdjective->eldritch</li>
+				<li>memeAdjective->unnameable</li>
+				<li>memeAdjective->insane</li>
+				<li>memeAdjective->non-euclidean</li>
+				<li>memeAdjective->otherwordly</li>
+				<li>memeAdjective->loathsome</li>
+				<li>memeLeaderNoun->antiquarian</li>
+				<li>memeLeaderNoun->nameless</li>
+				<li>memeLeaderAdjective->indescribable </li>
+				<li>memeLeaderAdjective->unmentionable </li>
+				<li>memeLeaderAdjective->whispering</li>
+				<li>memeMoralist->deranged cultist</li>
+				<li>memeMoralist->cultist leader</li>
+				<li>memeMoralist->stygian advocate</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>VME_ChthonianDescription</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_chthonian</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>eldritch</theme>
+				<adjective>eldritch</adjective>
+				<member>cultist</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+	<MemeDef>
+		<defName>VME_Structure_Omnism</defName>
+		<label>omnism</label>
+		<description>There are ancient entities in this Universe that are more powerful than mere gods. Immensely powerful and utterly indifferent to us humans who can barely begin to comprehend them. Only by worshipping them can we hope to placate their ire.</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/Structure_Omnism</iconPath>
+		<impact>0</impact>
+		
+		<worshipRoomLabel>chamber of whispers</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityNameMakerOverride>VME_NamerDeityEldritch</deityNameMakerOverride>
+		<deityTypeMakerOverride>VME_DietyTypeMakerEldritch</deityTypeMakerOverride>
+		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
+		<symbolPackOverride>true</symbolPackOverride>
+		<deityCount>4</deityCount>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->chthonian</li>
+				<li>memeAdjective->eldritch</li>
+				<li>memeAdjective->unnameable</li>
+				<li>memeAdjective->insane</li>
+				<li>memeAdjective->non-euclidean</li>
+				<li>memeAdjective->otherwordly</li>
+				<li>memeAdjective->loathsome</li>
+				<li>memeLeaderNoun->antiquarian</li>
+				<li>memeLeaderNoun->nameless</li>
+				<li>memeLeaderAdjective->indescribable </li>
+				<li>memeLeaderAdjective->unmentionable </li>
+				<li>memeLeaderAdjective->whispering</li>
+				<li>memeMoralist->deranged cultist</li>
+				<li>memeMoralist->cultist leader</li>
+				<li>memeMoralist->stygian advocate</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>VME_ChthonianDescription</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_chthonian</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>eldritch</theme>
+				<adjective>eldritch</adjective>
+				<member>cultist</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+	<MemeDef>
+		<defName>VME_Structure_Agnosticism</defName>
+		<label>agnosticism</label>
+		<description>There are ancient entities in this Universe that are more powerful than mere gods. Immensely powerful and utterly indifferent to us humans who can barely begin to comprehend them. Only by worshipping them can we hope to placate their ire.</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/Structure_Agnosticism</iconPath>
+		<impact>0</impact>
+		
+		<worshipRoomLabel>chamber of whispers</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityNameMakerOverride>VME_NamerDeityEldritch</deityNameMakerOverride>
+		<deityTypeMakerOverride>VME_DietyTypeMakerEldritch</deityTypeMakerOverride>
+		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
+		<symbolPackOverride>true</symbolPackOverride>
+		<deityCount>4</deityCount>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->chthonian</li>
+				<li>memeAdjective->eldritch</li>
+				<li>memeAdjective->unnameable</li>
+				<li>memeAdjective->insane</li>
+				<li>memeAdjective->non-euclidean</li>
+				<li>memeAdjective->otherwordly</li>
+				<li>memeAdjective->loathsome</li>
+				<li>memeLeaderNoun->antiquarian</li>
+				<li>memeLeaderNoun->nameless</li>
+				<li>memeLeaderAdjective->indescribable </li>
+				<li>memeLeaderAdjective->unmentionable </li>
+				<li>memeLeaderAdjective->whispering</li>
+				<li>memeMoralist->deranged cultist</li>
+				<li>memeMoralist->cultist leader</li>
+				<li>memeMoralist->stygian advocate</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>VME_ChthonianDescription</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_chthonian</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>eldritch</theme>
+				<adjective>eldritch</adjective>
+				<member>cultist</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+	<MemeDef>
+		<defName>VME_Structure_SecularSpirituality</defName>
+		<label>secular spirituality</label>
+		<description>There are ancient entities in this Universe that are more powerful than mere gods. Immensely powerful and utterly indifferent to us humans who can barely begin to comprehend them. Only by worshipping them can we hope to placate their ire.</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/Structure_SecularSpirituality</iconPath>
+		<impact>0</impact>
+		
+		<worshipRoomLabel>chamber of whispers</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityNameMakerOverride>VME_NamerDeityEldritch</deityNameMakerOverride>
+		<deityTypeMakerOverride>VME_DietyTypeMakerEldritch</deityTypeMakerOverride>
+		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
+		<symbolPackOverride>true</symbolPackOverride>
+		<deityCount>4</deityCount>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->chthonian</li>
+				<li>memeAdjective->eldritch</li>
+				<li>memeAdjective->unnameable</li>
+				<li>memeAdjective->insane</li>
+				<li>memeAdjective->non-euclidean</li>
+				<li>memeAdjective->otherwordly</li>
+				<li>memeAdjective->loathsome</li>
+				<li>memeLeaderNoun->antiquarian</li>
+				<li>memeLeaderNoun->nameless</li>
+				<li>memeLeaderAdjective->indescribable </li>
+				<li>memeLeaderAdjective->unmentionable </li>
+				<li>memeLeaderAdjective->whispering</li>
+				<li>memeMoralist->deranged cultist</li>
+				<li>memeMoralist->cultist leader</li>
+				<li>memeMoralist->stygian advocate</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>VME_ChthonianDescription</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_chthonian</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>eldritch</theme>
+				<adjective>eldritch</adjective>
+				<member>cultist</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+	<MemeDef>
+		<defName>VME_Structure_Taoism</defName>
+		<label>taoist origin</label>
+		<description>There are ancient entities in this Universe that are more powerful than mere gods. Immensely powerful and utterly indifferent to us humans who can barely begin to comprehend them. Only by worshipping them can we hope to placate their ire.</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/Structure_Taoism</iconPath>
+		<impact>0</impact>
+	
+		<worshipRoomLabel>chamber of whispers</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityNameMakerOverride>VME_NamerDeityEldritch</deityNameMakerOverride>
+		<deityTypeMakerOverride>VME_DietyTypeMakerEldritch</deityTypeMakerOverride>
+		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
+		<symbolPackOverride>true</symbolPackOverride>
+		<deityCount>4</deityCount>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->chthonian</li>
+				<li>memeAdjective->eldritch</li>
+				<li>memeAdjective->unnameable</li>
+				<li>memeAdjective->insane</li>
+				<li>memeAdjective->non-euclidean</li>
+				<li>memeAdjective->otherwordly</li>
+				<li>memeAdjective->loathsome</li>
+				<li>memeLeaderNoun->antiquarian</li>
+				<li>memeLeaderNoun->nameless</li>
+				<li>memeLeaderAdjective->indescribable </li>
+				<li>memeLeaderAdjective->unmentionable </li>
+				<li>memeLeaderAdjective->whispering</li>
+				<li>memeMoralist->deranged cultist</li>
+				<li>memeMoralist->cultist leader</li>
+				<li>memeMoralist->stygian advocate</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>VME_ChthonianDescription</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_chthonian</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>eldritch</theme>
+				<adjective>eldritch</adjective>
+				<member>cultist</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+	<MemeDef>
+		<defName>VME_Structure_Corporate</defName>
+		<label>corporate origin</label>
+		<description>There are ancient entities in this Universe that are more powerful than mere gods. Immensely powerful and utterly indifferent to us humans who can barely begin to comprehend them. Only by worshipping them can we hope to placate their ire.</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/Structure_Corporate</iconPath>
+		<impact>0</impact>
+		
+		<worshipRoomLabel>chamber of whispers</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityNameMakerOverride>VME_NamerDeityEldritch</deityNameMakerOverride>
+		<deityTypeMakerOverride>VME_DietyTypeMakerEldritch</deityTypeMakerOverride>
+		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
+		<symbolPackOverride>true</symbolPackOverride>
+		<deityCount>4</deityCount>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->chthonian</li>
+				<li>memeAdjective->eldritch</li>
+				<li>memeAdjective->unnameable</li>
+				<li>memeAdjective->insane</li>
+				<li>memeAdjective->non-euclidean</li>
+				<li>memeAdjective->otherwordly</li>
+				<li>memeAdjective->loathsome</li>
+				<li>memeLeaderNoun->antiquarian</li>
+				<li>memeLeaderNoun->nameless</li>
+				<li>memeLeaderAdjective->indescribable </li>
+				<li>memeLeaderAdjective->unmentionable </li>
+				<li>memeLeaderAdjective->whispering</li>
+				<li>memeMoralist->deranged cultist</li>
+				<li>memeMoralist->cultist leader</li>
+				<li>memeMoralist->stygian advocate</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>VME_ChthonianDescription</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_chthonian</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>eldritch</theme>
+				<adjective>eldritch</adjective>
+				<member>cultist</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
 </Defs>

@@ -39,4 +39,42 @@
 			</rulesStrings>
 		</rules>
 	</IdeoStoryPatternDef>
+	
+	<IdeoStoryPatternDef>
+		<defName>VME_ChthonianDescription</defName>
+		<segments>
+			<li>chthonianBasis</li>
+			<li>chthonianFact</li>
+			<li>chthonianProphecy</li>
+		</segments>
+		<rules>
+			<include>
+				<li>IdeoDescriptionGlobal</li>
+			</include>
+			<rulesStrings>
+				<!-- generic basis -->
+				<li>chthonianBasis   ->There are vast entities in this world that defy any explanation. Concepts far more ancient than mere Gods.</li>
+				<li>chthonianBasis   ->Beyond the Veil, a whole new universe of insanity-inducing Old Gods awaits.</li>
+				<li>chthonianBasis   ->Gods are not the ultimate predator in the Universe, for there are ancient entities far more powerful. Entities that should be respected... and feared.</li>
+				<li>chthonianBasis   ->In the unknown vastness of space, there are insane entities that could remake the whole Universe with a simple wayward thought.</li>
+				<!-- generic fact -->
+				<li>chthonianFact    ->We are like insects to these entities. Not even worthy of their attention. As insignificant to them as an ant would be to us.</li>
+				<li>chthonianFact    ->They do not care about humanity. We are nothing to them. Not even a footnote.</li>
+				<li>chthonianFact    ->Though powerful, they are uncaring. So far beyond our intelligence that we are not even sapient in their eyes.</li>
+				<li>chthonianFact    ->From their point of view, we don't even exist. The same way you don't think about the microbes in the surface of the chair you are sitting on.</li>
+				<!-- generic prophecy -->
+				<li>chthonianProphecy->[weMustBe] careful, for it wouldn't be wise to attract their attention, as they could destroy us in an instant.</li>
+				<li>chthonianProphecy->[byWorshipping] them, perhaps we can avoid their gaze.</li>
+				<li>chthonianProphecy->Don't be fooled: they don't deserve our devotion. But perhaps by showing a false façade of piety we can avoid their attention long enough.</li>
+				<li>chthonianProphecy->Even so, a lot can be learned from them. Eldritch knowledge awaits those brave -or foolish- enough to peek into the screaming visage of madness.</li>
+				<!-- pieces -->
+				<li>weMustBe->We must be</li>
+				<li>weMustBe->It is imperative that we are</li>
+				<li>weMustBe->We'd better be</li>
+				<li>byWorshipping->By worshipping</li>
+				<li>byWorshipping->We hope if we worshop</li>
+				
+			</rulesStrings>
+		</rules>
+	</IdeoStoryPatternDef>
 </Defs>
