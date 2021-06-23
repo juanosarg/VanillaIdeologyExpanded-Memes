@@ -6,7 +6,7 @@
     <label>serketist</label>
     <description>There is no higher lifeform than the Hive Queens. Their nourishing jelly is like ambrosia, and the entire world should be remade in their image.</description>
     <category>Structure</category>
-    <iconPath>UI/Structures/VME_AlphaMeme</iconPath>
+    <iconPath>UI/Structures/Structure_Serketism</iconPath>
     <impact>0</impact>
     <worshipRoomLabel>hive</worshipRoomLabel>
     <randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
