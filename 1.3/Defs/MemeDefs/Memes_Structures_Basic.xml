@@ -107,43 +107,46 @@
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_Bacchanalianism</iconPath>
 		<impact>0</impact>
-		<worshipRoomLabel>lounge</worshipRoomLabel>
+		<worshipRoomLabel>pleasure lounge</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
 		<deityCount>0</deityCount>
 		
 		<generalRules>
 			<rulesStrings>
-				<li>memeAdjective->serketic</li>
-				<li>memeAdjective->insectoid</li>
-				<li>memeAdjective->verminous</li>
-				<li>memeLeaderNoun->scarab lord</li>
-				<li>memeLeaderNoun->high speaker</li>
-				<li>memeLeaderAdjective->buzzing</li>
-				<li>memeLeaderAdjective->gregarious</li>
-				<li>memeLeaderAdjective->crawling</li>
-				<li>memeMoralist->shaman</li>
-				<li>memeMoralist->moth priest</li>
-				<li>memeMoralist->plague advocate</li>
+				<li>memeAdjective->hedonistic</li>
+				<li>memeAdjective->pleasurable</li>
+				<li>memeAdjective->orgasmic</li>
+				<li>memeAdjective->pleasant</li>
+				<li>memeAdjective->enjoyable</li>
+				<li>memeAdjective->delightful</li>
+				<li>memeLeaderNoun->lord of pleasure</li>
+				<li>memeLeaderNoun->libertine</li>
+				<li>memeLeaderAdjective->delightful</li>
+				<li>memeLeaderAdjective->gratifying</li>
+				<li>memeLeaderAdjective->pleasing</li>
+				<li>memeMoralist->reveler</li>
+				<li>memeMoralist->love priest</li>
+				
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
 			<patterns>
 				<li>
-					<def>VME_SerketistDescription</def>
+					<def>VME_HedonistDescription</def>
 				</li>
 			</patterns>
 			<constants>
 				<li>
-					<key>structure_serketist</key>
+					<key>structure_hedonist</key>
 					<value>true</value>
 				</li>
 			</constants>
 		</descriptionMaker>
 		<symbolPacks>
 			<li>
-				<theme>serketism</theme>
-				<adjective>serketist</adjective>
-				<member>serketist</member>
+				<theme>hedonism</theme>
+				<adjective>hedonist</adjective>
+				<member>hedonist</member>
 			</li>
 		</symbolPacks>
 	</MemeDef>
