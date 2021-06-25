@@ -69,6 +69,10 @@
 				<li>memeAdjective->secret</li>
 				<li>memeAdjective->occult</li>
 				<li>memeAdjective->mystical</li>
+				<li>memeCreed->mystery</li>
+				<li>memeCreed->secrets</li>
+				<li>memeCreed->arcana</li>       
+				<li>memeCreed->divinations</li>  
 				<li>memeLeaderNoun->grand magus</li>
 				<li>memeLeaderNoun->enlightened one</li>
 				<li>memeLeaderAdjective->esoteric</li>
@@ -174,10 +178,13 @@
 				<li>memeAdjective->non-euclidean</li>
 				<li>memeAdjective->otherwordly</li>
 				<li>memeAdjective->loathsome</li>
+				<li>memeCreed->scribbles</li>
+				<li>memeCreed->knoledge</li>
+				<li>memeCreed->madness</li>       
 				<li>memeLeaderNoun->antiquarian</li>
 				<li>memeLeaderNoun->nameless</li>
-				<li>memeLeaderAdjective->indescribable </li>
-				<li>memeLeaderAdjective->unmentionable </li>
+				<li>memeLeaderAdjective->indescribable</li>
+				<li>memeLeaderAdjective->unmentionable</li>
 				<li>memeLeaderAdjective->whispering</li>
 				<li>memeMoralist->deranged cultist</li>
 				<li>memeMoralist->cultist leader</li>
@@ -208,227 +215,233 @@
 	<MemeDef>
 		<defName>VME_Structure_Eschatologism</defName>
 		<label>eschatologism</label>
-		<description>There are ancient entities in this Universe that are more powerful than mere gods. Immensely powerful and utterly indifferent to us humans who can barely begin to comprehend them. Only by worshipping them can we hope to placate their ire.</description>
+		<description>This world is tainted, impure, and it must be purged. We shall bring the end of days and a new Universe will be reborn from the ashes of the current one.</description>
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_Eschatologism</iconPath>
 		<impact>0</impact>
 		
 		<worshipRoomLabel>antechamber</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
-		<deityNameMakerOverride>VME_NamerDeityEldritch</deityNameMakerOverride>
-		<deityTypeMakerOverride>VME_DietyTypeMakerEldritch</deityTypeMakerOverride>
-		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
-		<symbolPackOverride>true</symbolPackOverride>
-		<deityCount>4</deityCount>
+		
+		<deityCount>0</deityCount>
 		<generalRules>
 			<rulesStrings>
-				<li>memeAdjective->chthonian</li>
-				<li>memeAdjective->eldritch</li>
-				<li>memeAdjective->unnameable</li>
-				<li>memeAdjective->insane</li>
-				<li>memeAdjective->non-euclidean</li>
-				<li>memeAdjective->otherwordly</li>
-				<li>memeAdjective->loathsome</li>
-				<li>memeLeaderNoun->antiquarian</li>
-				<li>memeLeaderNoun->nameless</li>
-				<li>memeLeaderAdjective->indescribable </li>
-				<li>memeLeaderAdjective->unmentionable </li>
-				<li>memeLeaderAdjective->whispering</li>
-				<li>memeMoralist->deranged cultist</li>
-				<li>memeMoralist->cultist leader</li>
-				<li>memeMoralist->stygian advocate</li>
+				<li>memeAdjective->doomsday</li>
+				<li>memeAdjective->eschatological</li>
+				<li>memeAdjective->apocalyptic</li>
+				<li>memeAdjective->cataclysmic</li>
+				<li>memeAdjective->catastrophic</li>	
+				<li>memeCreed->predictions</li>
+				<li>memeCreed->prophecies</li>
+				<li>memeCreed->auguries</li>				
+				<li>memeLeaderNoun->cult leader</li>
+				<li>memeLeaderNoun->doombringer</li>
+				<li>memeLeaderAdjective->portentous</li>
+				<li>memeLeaderAdjective->oracular</li>
+				<li>memeLeaderAdjective->prescient</li>
+				<li>memeMoralist->doomsayer</li>
+				<li>memeMoralist->scaremonger</li>
+				<li>memeMoralist->harbinger of doom</li>
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
 			<patterns>
 				<li>
-					<def>VME_ChthonianDescription</def>
+					<def>VME_EschatologismDescription</def>
 				</li>
 			</patterns>
 			<constants>
 				<li>
-					<key>structure_chthonian</key>
+					<key>structure_eschatological</key>
 					<value>true</value>
 				</li>
 			</constants>
 		</descriptionMaker>
 		<symbolPacks>
 			<li>
-				<theme>eldritch</theme>
-				<adjective>eldritch</adjective>
-				<member>cultist</member>
+				<theme>eschatologism</theme>
+				<adjective>eschatological</adjective>
+				<member>doomsday cultist</member>
 			</li>
 		</symbolPacks>
 	</MemeDef>
 	<MemeDef>
 		<defName>VME_Structure_Authoritarianism</defName>
 		<label>authoritarian</label>
-		<description>There are ancient entities in this Universe that are more powerful than mere gods. Immensely powerful and utterly indifferent to us humans who can barely begin to comprehend them. Only by worshipping them can we hope to placate their ire.</description>
+		<description>Plurality only brings a false illusion of choice, and breeds discontent, rebellion and chaos. With an iron fist we will govern our people and bring prosperity to all.</description>
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_Authoritarianism</iconPath>
 		<impact>0</impact>
 		
 		<worshipRoomLabel>headquarters</worshipRoomLabel>
-		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
-		<deityNameMakerOverride>VME_NamerDeityEldritch</deityNameMakerOverride>
-		<deityTypeMakerOverride>VME_DietyTypeMakerEldritch</deityTypeMakerOverride>
-		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
-		<symbolPackOverride>true</symbolPackOverride>
-		<deityCount>4</deityCount>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>		
+		<deityCount>0</deityCount>
 		<generalRules>
 			<rulesStrings>
-				<li>memeAdjective->chthonian</li>
-				<li>memeAdjective->eldritch</li>
-				<li>memeAdjective->unnameable</li>
-				<li>memeAdjective->insane</li>
-				<li>memeAdjective->non-euclidean</li>
-				<li>memeAdjective->otherwordly</li>
-				<li>memeAdjective->loathsome</li>
-				<li>memeLeaderNoun->antiquarian</li>
-				<li>memeLeaderNoun->nameless</li>
-				<li>memeLeaderAdjective->indescribable </li>
-				<li>memeLeaderAdjective->unmentionable </li>
-				<li>memeLeaderAdjective->whispering</li>
-				<li>memeMoralist->deranged cultist</li>
-				<li>memeMoralist->cultist leader</li>
-				<li>memeMoralist->stygian advocate</li>
+				<li>memeAdjective->firm</li>
+				<li>memeAdjective->oligarchic</li>
+				<li>memeAdjective->absolute</li>
+				<li>memeAdjective->uncompromising</li>
+				<li>memeAdjective->repressive</li>
+				<li>memeAdjective->iron-fisted</li>
+				<li>memeAdjective->populist</li>
+				<li>memeLeaderNoun->supreme leader</li>
+				<li>memeLeaderNoun->caudillo</li>
+				<li>memeLeaderNoun->chairman</li>
+				<li>memeLeaderNoun->duce</li>
+				<li>memeLeaderNoun->president for life</li>
+				<li>memeLeaderAdjective->stern</li>
+				<li>memeLeaderAdjective->patriot</li>
+				<li>memeLeaderAdjective->callous</li>
+				<li>memeLeaderAdjective->harsh</li>
+				<li>memeLeaderAdjective->implacable</li>
+				<li>memeLeaderAdjective->inexorable</li>
+				<li>memeMoralist->propagandist</li>
+				<li>memeMoralist->regime advocate</li>
+				<li>memeMoralist->campaigner</li>
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
 			<patterns>
 				<li>
-					<def>VME_ChthonianDescription</def>
+					<def>VME_AuthoritarianDescription</def>
 				</li>
 			</patterns>
 			<constants>
 				<li>
-					<key>structure_chthonian</key>
+					<key>structure_authoritarian</key>
 					<value>true</value>
 				</li>
 			</constants>
 		</descriptionMaker>
 		<symbolPacks>
 			<li>
-				<theme>eldritch</theme>
-				<adjective>eldritch</adjective>
-				<member>cultist</member>
+				<theme>authoritarianism</theme>
+				<adjective>authoritarian</adjective>
+				<member>citizen</member>
 			</li>
 		</symbolPacks>
 	</MemeDef>
 	<MemeDef>
 		<defName>VME_Structure_CultOfPersonality</defName>
 		<label>cult of personality</label>
-		<description>There are ancient entities in this Universe that are more powerful than mere gods. Immensely powerful and utterly indifferent to us humans who can barely begin to comprehend them. Only by worshipping them can we hope to placate their ire.</description>
+		<description>Only by following our revered leader may we progress and succeed. Our leader -who should be admired and loved- knows all, and sees all.</description>
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_CultofPersonality</iconPath>
 		<impact>0</impact>
-		
-		<worshipRoomLabel>chamber of the high one</worshipRoomLabel>
-		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
-		<deityNameMakerOverride>VME_NamerDeityEldritch</deityNameMakerOverride>
-		<deityTypeMakerOverride>VME_DietyTypeMakerEldritch</deityTypeMakerOverride>
+		<deityNameMakerOverride>VME_NamerCultofPersonality</deityNameMakerOverride>
+		<deityTypeMakerOverride>VME_DietyTypeMakerCultofPersonality</deityTypeMakerOverride>
 		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
 		<symbolPackOverride>true</symbolPackOverride>
-		<deityCount>4</deityCount>
+		<deityCount>1</deityCount>
+		<worshipRoomLabel>chamber of the high one</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		
 		<generalRules>
 			<rulesStrings>
-				<li>memeAdjective->chthonian</li>
-				<li>memeAdjective->eldritch</li>
-				<li>memeAdjective->unnameable</li>
-				<li>memeAdjective->insane</li>
-				<li>memeAdjective->non-euclidean</li>
-				<li>memeAdjective->otherwordly</li>
-				<li>memeAdjective->loathsome</li>
-				<li>memeLeaderNoun->antiquarian</li>
-				<li>memeLeaderNoun->nameless</li>
-				<li>memeLeaderAdjective->indescribable </li>
-				<li>memeLeaderAdjective->unmentionable </li>
-				<li>memeLeaderAdjective->whispering</li>
-				<li>memeMoralist->deranged cultist</li>
-				<li>memeMoralist->cultist leader</li>
-				<li>memeMoralist->stygian advocate</li>
+				<li>memeAdjective->unified</li>
+				<li>memeAdjective->imperial</li>
+				<li>memeAdjective->kingly</li>
+				<li>memeAdjective->royal</li>
+				<li>memeAdjective->monarchal</li>
+				<li>memeAdjective->princely</li>
+				<li>memeAdjective->sovereign</li>
+				<li>memeCreed->laws</li>  
+				<li>memeCreed->orders</li>
+				<li>memeCreed->divine will</li>
+				<li>memeLeaderNoun->god-emperor</li>
+				<li>memeLeaderNoun->emperor</li>
+				<li>memeLeaderNoun->king</li>
+				<li>memeLeaderNoun->dictator</li>
+				<li>memeLeaderAdjective->majestic</li>
+				<li>memeLeaderAdjective->loved</li>
+				<li>memeLeaderAdjective->adored</li>
+				<li>memeLeaderAdjective->annointed</li>
+				<li>memeMoralist->sycophant</li>
+				<li>memeMoralist->servant</li>
+				<li>memeMoralist->magistrate</li>
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
 			<patterns>
 				<li>
-					<def>VME_ChthonianDescription</def>
+					<def>VME_CultOfPersonalityDescription</def>
 				</li>
 			</patterns>
 			<constants>
 				<li>
-					<key>structure_chthonian</key>
+					<key>structure_cultofpersonality</key>
 					<value>true</value>
 				</li>
 			</constants>
 		</descriptionMaker>
 		<symbolPacks>
 			<li>
-				<theme>eldritch</theme>
-				<adjective>eldritch</adjective>
-				<member>cultist</member>
+				<theme>cult of personality</theme>
+				<adjective>totalitarian</adjective>
+				<member>subject</member>
 			</li>
 		</symbolPacks>
 	</MemeDef>
 	<MemeDef>
 		<defName>VME_Structure_Pantheism</defName>
 		<label>pantheism</label>
-		<description>There are ancient entities in this Universe that are more powerful than mere gods. Immensely powerful and utterly indifferent to us humans who can barely begin to comprehend them. Only by worshipping them can we hope to placate their ire.</description>
+		<description>The Universe is God. There is no God but the combined substance, forces, and laws that are manifested in the existing universe.</description>
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_Pantheism</iconPath>
 		<impact>0</impact>
 		
 		<worshipRoomLabel>great hall</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
-		<deityNameMakerOverride>VME_NamerDeityEldritch</deityNameMakerOverride>
-		<deityTypeMakerOverride>VME_DietyTypeMakerEldritch</deityTypeMakerOverride>
+		<deityNameMakerOverride>VME_NamerPantheism</deityNameMakerOverride>
+		<deityTypeMakerOverride>VME_DietyTypeMakerPantheism</deityTypeMakerOverride>
 		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
 		<symbolPackOverride>true</symbolPackOverride>
-		<deityCount>4</deityCount>
+		<deityCount>1</deityCount>
 		<generalRules>
 			<rulesStrings>
-				<li>memeAdjective->chthonian</li>
-				<li>memeAdjective->eldritch</li>
-				<li>memeAdjective->unnameable</li>
-				<li>memeAdjective->insane</li>
-				<li>memeAdjective->non-euclidean</li>
-				<li>memeAdjective->otherwordly</li>
-				<li>memeAdjective->loathsome</li>
-				<li>memeLeaderNoun->antiquarian</li>
-				<li>memeLeaderNoun->nameless</li>
-				<li>memeLeaderAdjective->indescribable </li>
-				<li>memeLeaderAdjective->unmentionable </li>
-				<li>memeLeaderAdjective->whispering</li>
-				<li>memeMoralist->deranged cultist</li>
-				<li>memeMoralist->cultist leader</li>
-				<li>memeMoralist->stygian advocate</li>
+				<li>memeAdjective->immanent</li>
+				<li>memeAdjective->divine</li>
+				<li>memeAdjective->all-encompassing</li>
+				<li>memeAdjective->transcendent</li>
+				<li>memeAdjective->infinite</li>
+				<li>memeAdjective->enlightened</li>				
+				<li>memeLeaderNoun->guru</li>
+				<li>memeLeaderNoun->leader</li>	
+				<li>memeLeaderNoun->prince</li>					
+				<li>memeLeaderAdjective->calm</li>
+				<li>memeLeaderAdjective->meditating </li>
+				<li>memeLeaderAdjective->enlightened</li>
+				<li>memeMoralist->philosopher</li>
+				<li>memeMoralist->thinker</li>
+				<li>memeMoralist->spiritualist</li>
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
 			<patterns>
 				<li>
-					<def>VME_ChthonianDescription</def>
+					<def>VME_PantheismDescription</def>
 				</li>
 			</patterns>
 			<constants>
 				<li>
-					<key>structure_chthonian</key>
+					<key>structure_pantheism</key>
 					<value>true</value>
 				</li>
 			</constants>
 		</descriptionMaker>
 		<symbolPacks>
 			<li>
-				<theme>eldritch</theme>
-				<adjective>eldritch</adjective>
-				<member>cultist</member>
+				<theme>pantheism</theme>
+				<adjective>pantheistic</adjective>
+				<member>pantheist</member>
 			</li>
 		</symbolPacks>
 	</MemeDef>
 	<MemeDef>
 		<defName>VME_Structure_Omnism</defName>
 		<label>omnism</label>
-		<description>There are ancient entities in this Universe that are more powerful than mere gods. Immensely powerful and utterly indifferent to us humans who can barely begin to comprehend them. Only by worshipping them can we hope to placate their ire.</description>
+		<description>All religions and ideologies point to the whole truth, that a single transcendent purpose unites all things.</description>
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_Omnism</iconPath>
 		<impact>0</impact>

@@ -118,7 +118,7 @@
     <defName>VME_HedonistDescription</defName>
     <segments>
       <li>lessonIntro</li>
-      <li>lesson</li>
+      <li>lessonMain</li>
       <li>lessonReinforcement</li>
     </segments>
     <noCapitalizeFirstSentence>
@@ -129,17 +129,15 @@
         <li>IdeoDescriptionGlobal</li>
       </include>
       <rulesStrings>
-        <!-- final fallbacks (when no memes selected yet) -->
         <li>lesson(priority=-1)->stuff happens</li>
-
         <!-- typesetting -->
-        <li>r_pattern->"[r_lessonIntro] [r_lesson]. [r_lessonReinforcement]"\n\n  - [lessonAttribution]</li>
+        <li>r_pattern->"[r_lessonIntro] [r_lessonMain]. [r_lessonReinforcement]"\n\n  - [lessonAttribution]</li>
 
         <!-- attribution -->
         <li>lessonAttribution->[founder_nameFull]</li>
         <li>lessonAttribution(p=2)->&lt;i>[attributionSource_titleCase]&lt;/i> by [founder_nameFull]</li>
         <li>lessonAttribution->[founder_nameFull]'s letter to [believer_nameFull]</li>
-        <li>lessonAttribution->[founder_nameFull], from the keynote to [memeConference_titleCase]</li>
+     
         <li>lessonAttribution->[founder_nameFull], on [founder_possessive] deathbed</li>
         <li>lessonAttribution->[founder_nameFull], just before execution</li>
         <li>lessonAttribution->[founder_nameFull], [speech] on the [TerrainFeature]</li>
@@ -155,47 +153,29 @@
         <li>attributionJob->[memeAdjective] [place_job]</li>
         <li>attributionJob->[place_job]</li>
 
-        <li>memeConference(p=3)->The [conferencePrefix] [memeConcept] [conferenceType]</li>
-        <li>memeConference(p=2)->The [memeConcept] [conferenceType]</li>
-        <li>memeConference->[memeHyphenPrefix_titleCase]-Con</li>
-
-        <li>conferencePrefix->First</li>
-        <li>conferencePrefix->Second</li>
-        <li>conferencePrefix->Third</li>
-        <li>conferencePrefix->Fourth</li>
-        <li>conferencePrefix->Last</li>
-        <li>conferencePrefix->Ultimate</li>
-        <li>conferencePrefix->Interplanetary</li>
-        <li>conferencePrefix->Planetary</li>
-        <li>conferencePrefix->Universal</li>
-        <li>conferenceType->Conference</li>
-        <li>conferenceType->Assembly</li>
-        <li>conferenceType->Meeting</li>
-        <li>conferenceType->Discussion</li>
-        <li>conferenceType->Forum</li>
+       
 
         <li>speech->Speech</li>
         <li>speech->Address</li>
 
         <!-- generic intro -->
-        <li>lessonIntro->One lesson was hardest for my followers to accept:</li>
-        <li>lessonIntro->My greatest crime was taking so long to understand that</li>
-        <li>lessonIntro->My struggle against the [foeLeader] seemed endless. But it did teach me one thing:</li>
-        <li>lessonIntro->Even as a child on the [place_summary] [place_name], I knew that</li>
-        <li>lessonIntro->During a school class in the [place_community], a student thew a [thrownObject] and it hit me in the head. It was then I realized that</li>
-        <li>lessonIntro->I say this not so that you might live the life I lived, but so you might learn the things I learned. That</li>
-        <li>lessonIntro->Once the doctor had finished [doctor_possessive] grisly work, I finally knew that</li>
-        <li>lessonIntro->As each year passed on the [place_summary] [place_name], one thing became increasingly clear: that</li>
-        <li>lessonIntro->Looking back, I wish I'd realized this earlier - that</li>
-        <li>lessonIntro->They all seemed so lost. I told them that</li>
-        <li>lessonIntro->They cried for guidance. I showed them that</li>
+        <li>lessonIntro->After so many sleepless nights of careful deliberation, I came to a simple conclussion:</li>
+        <li>lessonIntro->What is a fundamental truth of human existence?</li>
+        <li>lessonIntro->I have suffered a lot in this life. But this suffering has taught me a simple principle:</li>
+        <li>lessonIntro->Growing in squalor on the [place_summary] [place_name], I learned a sincere axiom:</li>      
+        <li>lessonIntro->Internalize this lesson, for it will serve you well:</li>
+        <li>lessonIntro->Are you feeling lost? Perhaps you haven't yet figured out this very simple concept:</li>
+		<li>lessonIntro->They tried to tempt me with a life of rich, dull productivity, but they couldn't fool me:</li>
 
-        <li>thrownObject->book</li>
-        <li>thrownObject->sandwich</li>
-        <li>thrownObject->toy [place_personalWeapon]</li>
-        <li>thrownObject->stuffed [Animal]</li>
-        <li>doctor_possessive->his</li>
-        <li>doctor_possessive->her</li>
+		
+		<li>lessonMain->I finally figured out the only reason to be alive is to enjoy it</li>
+		<li>lessonMain->The only way to get rid of temptation is to yield to it</li>
+		<li>lessonMain->Salvation is for the feeble. I don't want salvation, I want life, all of life, the miserable as well as the superb</li>
+		<li>lessonMain->Pleasure is not a need, but an incentive</li>
+		<li>lessonMain->The most responsible way of life right now is to enjoy ourselves while we can</li>
+		<li>lessonMain->You can live to be a hundred if you give up all the things that make you want to live to be a hundred</li>
+		
+       
 
         <!-- generic reinforcement -->
         <li>lessonReinforcement->No one can argue with that.</li>
@@ -204,6 +184,185 @@
         <li>lessonReinforcement->Everything that has happened since has reinforced that fact.</li>
         <li>lessonReinforcement->It is as if that is etched directly into my mind.</li>
         <li>lessonReinforcement->It is something I'll never forget.</li>
+      </rulesStrings>
+    </rules>
+  </IdeoStoryPatternDef>
+  
+   <IdeoStoryPatternDef>
+    <defName>VME_EschatologismDescription</defName>
+    <segments>
+      <li>eschatologismBasis</li>
+      <li>eschatologismFact</li>
+      <li>eschatologismProphecy</li>
+    </segments>
+    <rules>
+      <include>
+        <li>IdeoDescriptionGlobal</li>
+      </include>
+      <rulesStrings>
+        <!-- generic basis -->
+        <li>eschatologismBasis   ->There is nothing of value in this world anymore. Vast post-human intelligences scheming in the dark. Vicious genetically engineered creations rampaging across the land. Greedy, stupid, ambitious humans preying on the weak. It must all be destroyed.</li>
+        <li>eschatologismBasis   ->This world needs to be purged. Too long have we left it go unchecked. Human stupidity running rampant and ruining everything.</li>
+		<li>eschatologismBasis   ->It is an inescapable fact: the only way forward is to start over and begin anew. This world must be destroyed.</li>
+		<li>eschatologismBasis   ->There is no longer room for compromise. This world is tainted, impure. It must be destroyed.</li>
+
+        <!-- generic fact -->
+        <li>eschatologismFact    ->Either through atomic fire or another means, we must bring the Apocalypse.</li>
+		<li>eschatologismFact    ->The Great Battle at the End of Everything is coming, and we will be prepared.</li>
+		<li>eschatologismFact    ->No one must be left alive to rebuild, for the seeds of corruption lie deep within each and any of us.</li>
+		<li>eschatologismFact    ->Nothing but charred remains should be left.</li>
+		<li>eschatologismFact    ->Once everything has been destroyed. We, the Chosen, shall recreate the world to our liking.</li>
+
+
+        <!-- generic prophecy -->
+        <li>eschatologismProphecy->We will be triumphant.</li>
+        <li>eschatologismProphecy->No one shall be ready for our wrath.</li>
+		<li>eschatologismProphecy->When we finally strike, all shall fall before us.</li>
+		<li>eschatologismProphecy->The days of this world are counted.</li>
+       
+
+      </rulesStrings>
+    </rules>
+  </IdeoStoryPatternDef>
+  
+   <IdeoStoryPatternDef>
+    <defName>VME_AuthoritarianDescription</defName>
+    <segments>
+      <li>lessonIntro</li>
+      <li>lessonMain</li>
+      <li>lessonReinforcement</li>
+    </segments>
+    <noCapitalizeFirstSentence>
+      <li>lesson</li>
+    </noCapitalizeFirstSentence>
+    <rules>
+      <include>
+        <li>IdeoDescriptionGlobal</li>
+      </include>
+      <rulesStrings>
+        <li>lesson(priority=-1)->stuff happens</li>
+        <!-- typesetting -->
+        <li>r_pattern->"[r_lessonIntro] [r_lessonMain]. [r_lessonReinforcement]"\n\n  - [lessonAttribution]</li>
+
+        <!-- attribution -->
+       
+       
+        <li>lessonAttribution->[founder_nameFull], on a [speechadjective] [speech] on the [TerrainFeature]</li>
+        <li>lessonAttribution->[founder_nameFull], [speechadjective] [speech] in the [Community]</li>
+
+       
+
+       
+		<li>speechadjective->rousing</li>
+		<li>speechadjective->public</li>
+		<li>speechadjective->multitudinous</li>
+		<li>speechadjective->political</li>
+		<li>speechadjective->passionate</li>
+		<li>speechadjective->fiery</li>
+        <li>speech->Speech</li>
+        <li>speech->Address</li>
+		<li>speech->Disquisition</li>
+		<li>speech->Declamation</li>
+
+        <!-- generic intro -->
+        <li>lessonIntro->The entire struggle for survival is a conquest of the means of existence.</li>
+        <li>lessonIntro->I also extend noble respects to the revolutionary martyrs, both sung and unsung, who sacrificed their precious lives in the sacred war for achieving the reunification and independence of our people.</li>
+        <li>lessonIntro->We cannot think of our people today without remembering the sweats and blood shed by the generation of the victors in the war, the great spirit they demonstrated and the ennobling sacrifice of the warriors.</li>
+        <li>lessonIntro->There is only one order. It is categorical and obligatory for every one. It already wings over and enflames hearts from [place_name] to corners of this world: Conquer!</li>      
+        <li>lessonIntro->Nothing is possible unless one will commands, a will which has to be obeyed by others, beginning at the top and ending only at the very bottom.</li>
+        <li>lessonIntro->My fellow-countrymen, man does not exist on theories and phrases, on declarations or on systems of political philosophy; he lives on what he can gain from the soil by his own labor.</li>
+		<li>lessonIntro->Our victory was the victory of the ennobling patriotism and mass heroism of our citizens, the victory of justice and progress over injustice and reaction, the future of mankind over our enemies.</li>
+
+		
+		<li>lessonMain->To those who can hear me, I say - do not despair</li>
+		<li>lessonMain->No one will be astonished if now, when this phase may be considered overcome, we throw off whatever and whoever would like to deflect us from marching toward fulfillment of our movement</li>
+		<li>lessonMain->We are actors in a new era in which we can have no truck with the mentality of the past</li>
+		<li>lessonMain->Youth marched conscious of its historic responsibility toward a goal sensed but not clearly defined</li>
+		<li>lessonMain->In these days our generations are not merely faced with territorial and political problems, but also with supreme issues of the existence of our faith, our civilization and our culture, which are now at stake once more</li>
+		<li>lessonMain->Certain people wished to be in our ranks in order to create among us a controlling body or a new minority group. That could not be permitted</li>
+		
+       
+
+        <!-- generic reinforcement -->
+        <li>lessonReinforcement->Together, we will march towards the dawn of a new era.</li>
+        <li>lessonReinforcement->Our future is bright, and we will persevere.</li>
+        <li>lessonReinforcement->Whatever projects there may exist now, the historic destiny of our era will be settled.</li>
+        <li>lessonReinforcement->For this reason, because we know that ours is the truth, and because we have labored for it endlessly, we look upon events with serenity.</li>
+        <li>lessonReinforcement->We have called you together to carry our work to completion, for it is heralded by continuous triumphs.</li>
+        <li>lessonReinforcement->It is not enough to set our goal. It must be pursued with constancy and sacrifice.</li>
+      </rulesStrings>
+    </rules>
+  </IdeoStoryPatternDef>
+  
+   <IdeoStoryPatternDef>
+    <defName>VME_CultOfPersonalityDescription</defName>
+    <segments>
+      <li>setup</li>
+      <li>story</li>
+      <li>story</li>
+    </segments>
+    <rules>
+      <include>
+        <li>IdeoDescriptionGlobal</li>
+      </include>
+      <rulesStrings>
+        <!-- final fallbacks -->
+        <li>story(priority=-999)-></li> <!-- allow zero or more stories -->
+
+        <!-- generic setup -->
+        <li>setup->There is no order without a firm hand directing things. This was clear to [founderName], our first [leaderTitle].</li>
+        <li>setup->We are the Chosen of [founder_possessive] Divine Will. The sons and daughters of [founderName] [honorific], our first [leaderTitle].</li>
+        <li>setup->It is told that the first [leaderTitle] of our people, [founderName] [honorific] was forged by the Universe from the clay of creation itself.</li>
+        <li>setup->From the terrible chaos embraced by our ancients arose [founderName], our first [leaderTitle].</li>
+		<li>setup->From humble and unremarkable origins, [founderName], our first [leaderTitle], raised above [founder_possessive] station, imposing [founder_possessive] unwavering will.</li>
+		
+
+		<li>honorific->The Magnificent</li>
+		<li>honorific->The Great</li>
+		<li>honorific->The Saint</li>
+		<li>honorific->The Awe-Inspiring</li>
+		<li>honorific->The Conqueror</li>
+		<li>honorific->The Resplendent</li>
+
+
+
+        <!-- low-priority generic stories -->
+        <li>story(uses=1,priority=-10)->The [memberNamePlural] swore eternal loyalty to [founderName] and [founder_possessive] descendants, forever bound in devoted servitude.</li>
+        <li>story(uses=1,priority=-10)->[founderName] inspired many to lead a life of righteousness, and thus received our unnending devotion.</li>
+        <li>story(uses=1,priority=-10)->With an army of [founder_possessive] followers at [founder_possessive] command, the line of [founderName] has lasted till the present, represented by our beloved leader.</li>
+        <li>story(uses=1,priority=-10)->Our beloved leader, the latest successor of [founderName], will bring us to prosperity, allowing all of us to live a [memeAdjective] life.</li>
+      </rulesStrings>
+    </rules>
+  </IdeoStoryPatternDef>
+  
+  <IdeoStoryPatternDef>
+    <defName>VME_PantheismDescription</defName>
+    <segments>
+      <li>creation</li>
+      <li>episode</li>
+      <li>episode</li>
+    </segments>
+    <rules>
+      <include>
+        <li>IdeoDescriptionGlobal</li>
+      </include>
+      <rulesStrings>
+        <!-- final fallbacks -->
+        <li>episode(priority=-1)-></li> <!-- allow zero or more episodes -->
+
+        <!-- generic creation -->
+        <li>creation->[deity0_name] is in all things. We are all made from stardust, and we are a part of divinity as much as any [Animal] might be.</li>
+        <li>creation->Everything is part of an all-encompassing, immanent God, [deity0_name]. All forms of reality may then be considered either modes of that Being, or identical with it.</li>
+        <li>creation->The Universe, in the sense of the totality of all existence, and God are identical. Divinity is all around us, forming [deity0_name].</li>
+        <li>creation->There was a neverending void. In that void, [deity0_name] was formed, thus beginning the reckoning of time.</li>
+
+        <!-- generic episode -->
+        <li>episode(uses=1)->Only through carefully studying [deity0_name] can we truly understand the nature of reality.</li>
+        <li>episode(uses=1)->We must recognize this immanent divinity in everything around us, and respect all creations inside [deity0_name] as sacred.</li>
+        <li>episode(uses=1)->If we want to truly understand the nature of [deity0_name] we must engage in quiet and respectful contemplation of everything on it.</li>
+        <li>episode(uses=1)->Controlling [deity0_name] would be a natural consequence of our own intrinsic divinity.</li>
+
+       
       </rulesStrings>
     </rules>
   </IdeoStoryPatternDef>

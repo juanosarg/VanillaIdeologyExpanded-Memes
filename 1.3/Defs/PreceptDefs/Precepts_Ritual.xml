@@ -17,6 +17,9 @@
     <ritualPatternBase>VME_DivineStarsRitual</ritualPatternBase>
     <iconPath>UI/Rituals/CelebrationStarDivination</iconPath>
     <ignoreNameUniqueness>false</ignoreNameUniqueness>
+	<requiredMemes>
+      <li>VME_Astrology</li>
+    </requiredMemes>
   </PreceptDef>
   
   
