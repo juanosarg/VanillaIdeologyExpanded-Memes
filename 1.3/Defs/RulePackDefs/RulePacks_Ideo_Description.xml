@@ -366,4 +366,257 @@
       </rulesStrings>
     </rules>
   </IdeoStoryPatternDef>
+  
+   <IdeoStoryPatternDef>
+    <defName>VME_OmnismDescription</defName>
+    <segments>
+      <li>creation</li>
+      <li>episode</li>
+     
+    </segments>
+    <rules>
+      <include>
+        <li>IdeoDescriptionGlobal</li>
+      </include>
+      <rulesStrings>
+        <!-- final fallbacks -->
+        <li>episode(priority=-1)-></li> <!-- allow zero or more episodes -->
+
+        <!-- generic creation -->
+        <li>creation->It seems that the teachings of the ancient [religion] and [religion2] scholars had a lot of truth to teach us.</li>
+        <li>creation->Truth can be found in all religions and ideologies, as they are all part of the greater human experience. Whether it is the teachings of the [religion] texts or the philosophies of the ancient [religion2] scholars, we can learn about the universe by opening our minds to this truth.</li>
+        <li>creation->Human beings are inquisitive creatures, and as such we have invented some incredible concepts: either [religion] teachings or [religion2] tennets hold a portion of the complete truth, and as such all beliefs are intrinsically true and useful.</li>
+        <li>creation->All religions and ideologies are legitimate. A single transcendent purpose unites all things and people, and you can reach this universal purpose by any means, either by the study of the ancient [religion] texts or by following the [religion2] dogma.</li>
+
+        <!-- generic episode -->
+        <li>episode(uses=1)->Only through carefully studying all beliefs can we truly understand the nature of reality.</li>
+        <li>episode(uses=1)->We must recognize that all religions contain varying elements of a common truth, and respect all beliefs accordingly.</li>
+       
+		<li>religion->Christian</li>
+		<li>religion->Buddhist</li>
+		<li>religion->Muslim</li>
+		<li>religion->Jewish</li>
+		<li>religion->Taoist</li>
+		<li>religion->Confucianist</li>
+		<li>religion->Zoroastrian</li>
+		<li>religion2->Capitalist</li>
+		<li>religion2->Communist</li>
+		<li>religion2->Authoritarian</li>
+		<li>religion2->Freethinking</li>
+		<li>religion2->Freemason</li>
+		<li>religion2->Ecologist</li>
+		<li>religion2->Anarchist</li>
+		<li>religion2->Libertarian</li>
+		<li>religion2->Utopian</li>
+		
+	
+       
+      </rulesStrings>
+    </rules>
+  </IdeoStoryPatternDef>
+  
+  <IdeoStoryPatternDef>
+    <defName>VME_AgnosticismDescription</defName>
+    <segments>
+      <li>setup</li>
+      <li>story</li>
+      <li>story</li>
+    </segments>
+    <rules>
+      <include>
+        <li>IdeoDescriptionGlobal</li>
+      </include>
+      <rulesStrings>
+        <!-- final fallbacks -->
+        <li>story(priority=-999)-></li> <!-- allow zero or more stories -->
+
+        <!-- generic setup -->
+        <li>setup->[founderName] was the first to realize that we didn't need Gods to explain the Universe.</li>
+        <li>setup->Struck by the non-spiritual nature of the world, [founderName] studied history and philosophy and discovered the new truth that guides us.</li>
+        <li>setup->During an ancient ritual, [founderName] began to question the validity of [founder_possessive] former beliefs. Why put your whole life in service of an unknowable God?</li>
+        <li>setup->[founderName]'s tough life had made [founder_objective] reject [founder_possessive] faith. Gods are unknowable and should have no bearing on a person's day to day.</li>
+
+        <!-- low-priority generic stories -->
+        <li>story(uses=1,priority=-10)->The [memberNamePlural] would still be worshipping ancient spirits without [founderName]'s teachings, and thus [founder_pronoun] will always be remembered amongst our people as: [honorific].</li>
+        <li>story(uses=1,priority=-10)->[founderName]'s speech at a [ritualName] inspired many to lead a [memeAdjective] life, free of the shackles of magical thinking. Thus [founder_pronoun] will always be remembered amongst our people as: [honorific].</li>
+
+        <li>story(uses=1,priority=-10)->[founderName] will always be remembered amongst our people as [honorific]: The one that forever banished magical thinking from our minds.</li>
+		
+		<li>honorific->The Godkiller</li>
+		<li>honorific->The Atheist</li>
+		<li>honorific->The Agnostic</li>
+		<li>honorific->The Disenter</li>
+		<li>honorific->The Light in the Dark</li>
+		<li>honorific->The Unbeliever</li>
+		<li>honorific->The Heretic</li>
+      </rulesStrings>
+    </rules>
+  </IdeoStoryPatternDef>
+  
+    <IdeoStoryPatternDef>
+    <defName>VME_SecularSpiritualityDescription</defName>
+    <segments>
+      <li>lessonIntro</li>
+      <li>lesson</li>
+      <li>lessonReinforcement</li>
+    </segments>
+    <noCapitalizeFirstSentence>
+      <li>lesson</li>
+    </noCapitalizeFirstSentence>
+    <rules>
+      <include>
+        <li>IdeoDescriptionGlobal</li>
+      </include>
+      <rulesStrings>
+        <!-- final fallbacks (when no memes selected yet) -->
+        <li>lesson(priority=-1)->stuff happens</li>
+
+        <!-- typesetting -->
+        <li>r_pattern->"[r_lessonIntro] [r_lesson]. [r_lessonReinforcement]"\n\n  - [lessonAttribution]</li>
+
+        <!-- attribution -->
+        <li>lessonAttribution->[founder_nameFull]</li>
+       
+        <li>lessonAttribution->[founder_nameFull]'s letter to [believer_nameFull]</li>       
+        <li>lessonAttribution->[founder_nameFull], on [founder_possessive] mindfulness dissertation</li>      
+        <li>lessonAttribution->[founder_nameFull], [speech] on the [TerrainFeature]</li>
+        <li>lessonAttribution->[founder_nameFull], [speech] in the [Community]</li>
+
+
+        <li>speech->Meditation Speech</li>
+        <li>speech->Know-Yourself Address</li>
+
+        <!-- generic intro -->
+        <li>lessonIntro->I always repeat, "letting go is the hardest asana":</li>
+        <li>lessonIntro->It took me long years of intense meditation to understand that</li>
+        <li>lessonIntro->We must not be like the [foeLeader], who don't know themselves. Observing them did teach me one thing:</li>
+        <li>lessonIntro->By teaching Yoga on the [place_summary] [place_name], I realized that</li>
+        <li>lessonIntro->Find your center and set intentions for the day as you begin to focus on your breath – body connection. You will then realize that</li>
+        <li>lessonIntro->You must start with a series of breath to movement flows, energizing and invigorating the body and the mind. And you will finally know that</li>
+        <li>lessonIntro->A flower does not think of competing to the flower next to it. It just blooms. One thing will become increasingly clear then: that</li>
+        <li>lessonIntro->You will begin the journey of the self, through the self, to the self. Then you'll see that</li>
+        <li>lessonIntro->You cannot always control what goes on outside. But you can always control what goes on inside. Once that is achieved you will see that</li>
+        <li>lessonIntro->The longest journey of any person is the journey inward. This journey shows you that</li>
+
+
+        <!-- generic reinforcement -->
+        <li>lessonReinforcement->Just breathe.</li>
+        <li>lessonReinforcement->Be where you are, not where you think you should be.</li>
+        <li>lessonReinforcement->The pose begins when you want to leave it.</li>
+        <li>lessonReinforcement->Inhale the future, exhale the past.</li>
+        <li>lessonReinforcement->It's not about being good at something. It's about being good to yourself.</li>
+        
+      </rulesStrings>
+    </rules>
+  </IdeoStoryPatternDef>
+  
+   <IdeoStoryPatternDef>
+    <defName>VME_TaoismDescription</defName>
+    <segments>
+      <li>creation</li>
+      <li>episode</li>
+      <li>episode</li>
+    </segments>
+    <rules>
+      <include>
+        <li>IdeoDescriptionGlobal</li>
+      </include>
+      <rulesStrings>
+        <!-- final fallbacks -->
+        <li>episode(priority=-1)-></li> <!-- allow zero or more episodes -->
+		
+		<!-- typesetting -->
+        <li>r_pattern->"[r_creation] [r_episode] [r_episode]."\n\n  - Lao Tzu, Tao Te Ching</li>
+
+        <!-- generic creation -->
+        <li>creation->Being deeply loved by someone gives you strength, while loving someone deeply gives you courage.</li>
+        <li>creation->Simplicity, patience, compassion. These three are the greatest treasures.</li>
+        <li>creation->The journey of a thousand miles begins with a single step.</li>
+        <li>creation->Life is a series of natural and spontaneous changes. Don't resist them; that only creates sorrow. Let reality be reality. Let things flow naturally forward in whatever way they like.</li>
+
+        <!-- generic episode -->
+        <li>episode(uses=1)->When you are content to be simply yourself and don't compare or compete, everyone will respect you.</li>
+        <li>episode(uses=1)->The truth is not always beautiful, nor beautiful words the truth.</li>
+        <li>episode(uses=1)->Because one believes in oneself, one doesn't try to convince others. Because one is content with oneself, one doesn't need others' approval. Because one accepts oneself, the whole world accepts him or her.</li>
+        <li>episode(uses=1)->Care about what other people think and you will always be their prisoner.</li>
+
+       
+      </rulesStrings>
+    </rules>
+  </IdeoStoryPatternDef>
+  
+  <IdeoStoryPatternDef>
+    <defName>VME_CorporateDescription</defName>
+    <segments>
+      <li>introMemo</li>
+      <li>episode</li>
+      <li>episode</li>
+    </segments>
+    <rules>
+      <include>
+        <li>IdeoDescriptionGlobal</li>
+      </include>
+      <rulesStrings>
+        <!-- final fallbacks -->
+        <li>episode(priority=-1)-></li> <!-- allow zero or more episodes -->
+		
+		<!-- typesetting -->
+        <li>r_pattern->"To: All Employees\n\nFrom: Upper Management\n\nSubject: [subject]\n\n[r_introMemo] [r_episode] [r_episode]."</li>
+
+        <!-- generic creation -->
+        <li>introMemo->Coworkers, it has come to my attention that many in the office have been spending time doing unapproved activities.</li>
+        <li>introMemo->This is to remind the division that, starting today, we are now filing all Testing Procedure Specification (TPS) reports with new cover sheets.</li>
+        <li>introMemo->In our efforts to make your orientation a pleasant one, we have implemented an employee self-service system to assist you in completing the new hire process, including benefits enrollment.</li>
+        <li>introMemo->As you know, tomorrow afternoon we’ll be meeting to discuss the status of all of our current projects.</li>
+		<li>introMemo->For tomorrow’s 3 p.m. staff meeting in the conference room, please bring 5 copies of the aforementioned materials.</li>
+		<li>introMemo->Due to your excellent performance in the last year —especially your work in the Northwest Region!— we would like to feature you as one of our spotlight employees.</li>
+		<li>introMemo->Do you know the #1 thing that matters most to our customers? Money, of course.</li>
+		<li>introMemo->Are you using the 3 most useful collaboration tools?. We'd really appreciate it if you get those synergies flowing.</li>
+		<li>introMemo->Good morning. There are some exciting changes coming to our department that I wish to alert you to.</li>
+		<li>introMemo->I am very pleased that you have accepted our offer and are joining our team.</li>
+		<li>introMemo->We are very happy to have you as a part of our team. The staff here is looking forward to helping you fill the management void we have had for some time.</li>
+
+
+
+        <!-- generic episode -->
+        <li>episode(uses=1)->This memo is a reminder to use your work hours for work.</li>
+        <li>episode(uses=1)->Of course, we don't want you to view our organization as a place of drudgery and draconian rules. We encourage a fun and competitive environment.</li>
+        <li>episode(uses=1)->Though this change may initially seem like a headache and an extra step, it is necessary to ensure the proper functioning of our company.</li>
+        <li>episode(uses=1)->Please be sure to follow this new procedure.</li>
+		<li>episode(uses=1)->I think I don't need to remind you all that we are a team, no, a family. And families stick together, no matter the challenge.</li>
+		<li>episode(uses=1)->This critical issue will be discussed in an all-hands meeting, ASAP.</li>
+		<li>episode(uses=1)->It is prioritary that we start thinking outside the box. And let's all sing from the same hymn sheet.</li>
+		<li>episode(uses=1)->Let's take it to the next level, people.</li>
+		<li>episode(uses=1)->Our executive management has decided that some restructuring of our department is in order so that our transition through this merger can be as seamless as possible. You'll receive more info shortly.</li>
+		<li>episode(uses=1)->We are scheduling a staff meeting for tomorrow from 12 pm to 1 pm where we will outline the steps of this important transition; lunch will be provided.</li>
+		<li>episode(uses=1)->Your experience and vision will be a great asset to this group, and I know that the team is looking forward to working with you.</li>
+
+
+		
+		<li>subject->Inappropriate use of time on Google Doodle games</li>
+		<li>subject->Please reload ink on the printer once it runs out</li>
+		<li>subject->Fall Clothes Line Promotion</li>
+		<li>subject->Don't invite Steve to the meeting. He'll dress like a ghost</li>
+		<li>subject->Warning: Unattended items in your desks may be stolen. The Company is not responsible for your belongings</li>
+		<li>subject->Office Memo to All Employees</li>
+		<li>subject->Restroom Use Policy</li>
+		<li>subject->Company's Position On "Streaking"</li>
+		<li>subject->Customer Satisfaction</li>
+		<li>subject->Boss's Rules</li>
+		<li>subject->Prospective Employee Assessment</li>
+		<li>subject->Re: Request For A Raise</li>
+		<li>subject->Re: that is my last email!</li>
+		<li>subject->Your Company's Early Retirement Program</li>
+		<li>subject->PARKING VIOLATION</li>
+		<li>subject->Forwarded for Your Consideration</li>
+		<li>subject->For your Information (FYI)</li>
+		<li>subject->Give Us the Benefit of Your Present Thinking</li>
+		<li>subject->Under Consideration</li>
+		<li>subject->The milestones have almost been reached</li>
+		<li>subject->Clarification</li>
+
+       
+      </rulesStrings>
+    </rules>
+  </IdeoStoryPatternDef>
 </Defs>

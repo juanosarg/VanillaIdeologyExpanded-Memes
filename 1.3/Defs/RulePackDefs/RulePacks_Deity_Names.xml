@@ -131,7 +131,7 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-	
+
 	<RulePackDef>
 		<defName>VME_NamerPantheism</defName>
 		<include>
@@ -157,15 +157,63 @@
 				<li>name1->All-Present</li>
 				<li>name1->All-Pervasive</li>
 				<li>name1->Boundless</li>
-				
+
 				<li>name2->Creation</li>
 				<li>name2->Space</li>
 				<li>name2->Vaccuum</li>				
 				<li>name2->Totality</li>
 				<li>name2->Infinity</li>
 				<li>name2->Spheres</li>
-				
+
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+
+	<RulePackDef>
+		<defName>VME_NamerCorporate</defName>
+		<include>
+			<li>GlobalUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_deityName->The Company</li>
+				<li>r_deityName->The Business</li>
+				<li>r_deityName->The Corporation</li>
+				<li>r_deityName->The Organization</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VME_DietyTypeMakerCorporate</defName>
+		<rulePack>
+			
+
+			<rulesStrings>
+				<li>r_deityType(p=4)->[businessname] [businesstype]</li>
+				<li>r_deityType->[NamePerson] [businesstype]</li>
+				<li>r_deityType->[maybe_adjective] [Animal] [businesstype]</li>
+				<li>r_deityType->[Letter][Letter] [businesstype]</li>
+				<li>r_deityType(p=0.5)->[PersonAlly] [businesstype]</li>
+				<li>r_deityType(p=0.5)->[AdjectiveFriendly] [businesstype]</li>
+				<li>r_deityType(p=0.5)->[AdjectiveBadass] [businesstype]</li>
+				<li>r_deityType(p=0.3)->[PersonFamily] [businesstype]</li>
+				<li>r_deityType(p=0.3)->[maybe_adjective] [NaturalObject] [businesstype]</li>
+				<li>r_deityType(p=0.2)->[maybe_adjective] [TreeType] [businesstype]</li>
+				<li>r_deityType(p=0.2)->[maybe_adjective] [Vegetable] [businesstype]</li>
+				<li>r_deityType(p=0.2)->[Direction] [businesstype]</li>
+
+				<li>maybe_adjective-></li>
+				<li>maybe_adjective->[Color]</li>
+				<li>maybe_adjective->[AdjectiveFriendly]</li>
+				<li>maybe_adjective->[AdjectiveBadass]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>businessname->Names/Business</li>
+				<li>businesstype->Words/Nouns/BusinessTypes</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+
+
 </Defs>

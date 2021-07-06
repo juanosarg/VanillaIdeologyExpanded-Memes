@@ -448,268 +448,250 @@
 		
 		<worshipRoomLabel>temple</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
-		<deityNameMakerOverride>VME_NamerDeityEldritch</deityNameMakerOverride>
-		<deityTypeMakerOverride>VME_DietyTypeMakerEldritch</deityTypeMakerOverride>
-		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
-		<symbolPackOverride>true</symbolPackOverride>
-		<deityCount>4</deityCount>
+		
+		<deityCount>0</deityCount>
 		<generalRules>
 			<rulesStrings>
-				<li>memeAdjective->chthonian</li>
-				<li>memeAdjective->eldritch</li>
-				<li>memeAdjective->unnameable</li>
-				<li>memeAdjective->insane</li>
-				<li>memeAdjective->non-euclidean</li>
-				<li>memeAdjective->otherwordly</li>
-				<li>memeAdjective->loathsome</li>
-				<li>memeLeaderNoun->antiquarian</li>
-				<li>memeLeaderNoun->nameless</li>
-				<li>memeLeaderAdjective->indescribable </li>
-				<li>memeLeaderAdjective->unmentionable </li>
-				<li>memeLeaderAdjective->whispering</li>
-				<li>memeMoralist->deranged cultist</li>
-				<li>memeMoralist->cultist leader</li>
-				<li>memeMoralist->stygian advocate</li>
+				<li>memeAdjective->universal</li>
+				<li>memeAdjective->reformed</li>
+				<li>memeAdjective->comprehensive</li>
+				<li>memeAdjective->ubiquitous</li>
+				<li>memeAdjective->all-inclusive</li>
+				
+				<li>memeLeaderNoun->all-theist</li>
+				<li>memeLeaderNoun->trascendent one</li>
+				<li>memeLeaderAdjective->wise</li>
+				<li>memeLeaderAdjective->inclusive</li>
+				
+				<li>memeMoralist->priest</li>
+				<li>memeMoralist->preacher</li>
+				
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
 			<patterns>
 				<li>
-					<def>VME_ChthonianDescription</def>
+					<def>VME_OmnismDescription</def>
 				</li>
 			</patterns>
 			<constants>
 				<li>
-					<key>structure_chthonian</key>
+					<key>structure_omnism</key>
 					<value>true</value>
 				</li>
 			</constants>
 		</descriptionMaker>
 		<symbolPacks>
 			<li>
-				<theme>eldritch</theme>
-				<adjective>eldritch</adjective>
-				<member>cultist</member>
+				<theme>omnism</theme>
+				<adjective>omnist</adjective>
+				<member>believer</member>
 			</li>
 		</symbolPacks>
 	</MemeDef>
 	<MemeDef>
 		<defName>VME_Structure_Agnosticism</defName>
 		<label>agnosticism</label>
-		<description>There are ancient entities in this Universe that are more powerful than mere gods. Immensely powerful and utterly indifferent to us humans who can barely begin to comprehend them. Only by worshipping them can we hope to placate their ire.</description>
+		<description>The existence of God, of the divine and the supernatural is unknown and unknowable,</description>
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_Agnosticism</iconPath>
-		<impact>0</impact>
-		
+		<impact>0</impact>		
 		<worshipRoomLabel>symposium hall</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
-		<deityNameMakerOverride>VME_NamerDeityEldritch</deityNameMakerOverride>
-		<deityTypeMakerOverride>VME_DietyTypeMakerEldritch</deityTypeMakerOverride>
-		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
-		<symbolPackOverride>true</symbolPackOverride>
-		<deityCount>4</deityCount>
+		<deityCount>0</deityCount>
 		<generalRules>
 			<rulesStrings>
-				<li>memeAdjective->chthonian</li>
-				<li>memeAdjective->eldritch</li>
-				<li>memeAdjective->unnameable</li>
-				<li>memeAdjective->insane</li>
-				<li>memeAdjective->non-euclidean</li>
-				<li>memeAdjective->otherwordly</li>
-				<li>memeAdjective->loathsome</li>
-				<li>memeLeaderNoun->antiquarian</li>
-				<li>memeLeaderNoun->nameless</li>
-				<li>memeLeaderAdjective->indescribable </li>
-				<li>memeLeaderAdjective->unmentionable </li>
-				<li>memeLeaderAdjective->whispering</li>
-				<li>memeMoralist->deranged cultist</li>
-				<li>memeMoralist->cultist leader</li>
-				<li>memeMoralist->stygian advocate</li>
+				<li>memeAdjective->disbelieving</li>
+				<li>memeAdjective->godless</li>
+				<li>memeAdjective->irreligious</li>
+				<li>memeAdjective->nonreligious</li>
+				<li>memeAdjective->unbelieving</li>
+				<li>memeAdjective->secular</li>				
+				<li>memeLeaderNoun->leader</li>
+				<li>memeLeaderNoun->freethinker</li>
+				<li>memeLeaderAdjective->secular</li>
+				<li>memeLeaderAdjective->worldly</li>
+				<li>memeLeaderAdjective->profane</li>
+				<li>memeMoralist->counselor</li>
+				<li>memeMoralist->ethicist</li>
+				<li>memeMoralist->moralist</li>
+				<li>memeMoralist->philosopher</li>
+				<li>memeMoralist->thinker</li>
+				<li>memeMoralist->academic</li>
+				<li>memeMoralist->sophist</li>
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
 			<patterns>
 				<li>
-					<def>VME_ChthonianDescription</def>
+					<def>VME_AgnosticismDescription</def>
 				</li>
 			</patterns>
 			<constants>
 				<li>
-					<key>structure_chthonian</key>
+					<key>structure_agnosticism</key>
 					<value>true</value>
 				</li>
 			</constants>
 		</descriptionMaker>
 		<symbolPacks>
 			<li>
-				<theme>eldritch</theme>
-				<adjective>eldritch</adjective>
-				<member>cultist</member>
+				<theme>agnosticism</theme>
+				<adjective>agnostic</adjective>
+				<member>agnostic</member>
 			</li>
 		</symbolPacks>
 	</MemeDef>
 	<MemeDef>
 		<defName>VME_Structure_SecularSpirituality</defName>
 		<label>secular spirituality</label>
-		<description>There are ancient entities in this Universe that are more powerful than mere gods. Immensely powerful and utterly indifferent to us humans who can barely begin to comprehend them. Only by worshipping them can we hope to placate their ire.</description>
+		<description>Truth lies in pursuing a spiritual philosophy without adherence to a religion, emphasizing the personal growth and inner peace of an individual, rather than a relationship with the divine.</description>
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_SecularSpirituality</iconPath>
 		<impact>0</impact>
 		
 		<worshipRoomLabel>meditation room</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
-		<deityNameMakerOverride>VME_NamerDeityEldritch</deityNameMakerOverride>
-		<deityTypeMakerOverride>VME_DietyTypeMakerEldritch</deityTypeMakerOverride>
-		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
-		<symbolPackOverride>true</symbolPackOverride>
-		<deityCount>4</deityCount>
+		
+		<deityCount>0</deityCount>
 		<generalRules>
 			<rulesStrings>
-				<li>memeAdjective->chthonian</li>
-				<li>memeAdjective->eldritch</li>
-				<li>memeAdjective->unnameable</li>
-				<li>memeAdjective->insane</li>
-				<li>memeAdjective->non-euclidean</li>
-				<li>memeAdjective->otherwordly</li>
-				<li>memeAdjective->loathsome</li>
-				<li>memeLeaderNoun->antiquarian</li>
-				<li>memeLeaderNoun->nameless</li>
-				<li>memeLeaderAdjective->indescribable </li>
-				<li>memeLeaderAdjective->unmentionable </li>
-				<li>memeLeaderAdjective->whispering</li>
-				<li>memeMoralist->deranged cultist</li>
-				<li>memeMoralist->cultist leader</li>
-				<li>memeMoralist->stygian advocate</li>
+				<li>memeAdjective->psychic</li>
+				<li>memeAdjective->intangible</li>
+				<li>memeAdjective->ethereal</li>
+				<li>memeAdjective->transcendent</li>
+			
+				<li>memeLeaderNoun->mystic</li>
+				<li>memeLeaderNoun->visionary</li>
+				<li>memeLeaderAdjective->supernatural</li>
+				<li>memeLeaderAdjective->spiritual</li>
+				<li>memeLeaderAdjective->otherworldly</li>
+				<li>memeMoralist->yogi</li>
+				<li>memeMoralist->therapist</li>
+				<li>memeMoralist->meditation teacher</li>
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
 			<patterns>
 				<li>
-					<def>VME_ChthonianDescription</def>
+					<def>VME_SecularSpiritualityDescription</def>
 				</li>
 			</patterns>
 			<constants>
 				<li>
-					<key>structure_chthonian</key>
+					<key>structure_secularspirituality</key>
 					<value>true</value>
 				</li>
 			</constants>
 		</descriptionMaker>
 		<symbolPacks>
 			<li>
-				<theme>eldritch</theme>
-				<adjective>eldritch</adjective>
-				<member>cultist</member>
+				<theme>secular spirituality</theme>
+				<adjective>secular</adjective>
+				<member>spiritual person</member>
 			</li>
 		</symbolPacks>
 	</MemeDef>
 	<MemeDef>
 		<defName>VME_Structure_Taoism</defName>
 		<label>taoist origin</label>
-		<description>There are ancient entities in this Universe that are more powerful than mere gods. Immensely powerful and utterly indifferent to us humans who can barely begin to comprehend them. Only by worshipping them can we hope to placate their ire.</description>
+		<description>By living in harmony with the Tao, one can achieve perfection and become one with the unplanned rhythms of the universe.</description>
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_Taoism</iconPath>
 		<impact>0</impact>
 	
 		<worshipRoomLabel>dàoguàn</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
-		<deityNameMakerOverride>VME_NamerDeityEldritch</deityNameMakerOverride>
-		<deityTypeMakerOverride>VME_DietyTypeMakerEldritch</deityTypeMakerOverride>
-		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
-		<symbolPackOverride>true</symbolPackOverride>
-		<deityCount>4</deityCount>
+		
+		<deityCount>0</deityCount>
 		<generalRules>
 			<rulesStrings>
-				<li>memeAdjective->chthonian</li>
-				<li>memeAdjective->eldritch</li>
-				<li>memeAdjective->unnameable</li>
-				<li>memeAdjective->insane</li>
-				<li>memeAdjective->non-euclidean</li>
-				<li>memeAdjective->otherwordly</li>
-				<li>memeAdjective->loathsome</li>
-				<li>memeLeaderNoun->antiquarian</li>
-				<li>memeLeaderNoun->nameless</li>
-				<li>memeLeaderAdjective->indescribable </li>
-				<li>memeLeaderAdjective->unmentionable </li>
-				<li>memeLeaderAdjective->whispering</li>
-				<li>memeMoralist->deranged cultist</li>
-				<li>memeMoralist->cultist leader</li>
-				<li>memeMoralist->stygian advocate</li>
+				<li>memeAdjective->balanced</li>
+				<li>memeAdjective->natural</li>
+				<li>memeAdjective->compassionate</li>
+				<li>memeAdjective->frugal</li>
+				<li>memeAdjective->humble</li>			
+				<li>memeLeaderNoun->taoshih</li>
+				<li>memeLeaderNoun->master of the Tao</li>
+				<li>memeLeaderAdjective->spiritual</li>
+				<li>memeLeaderAdjective->serene</li>				
+				<li>memeMoralist->taoist priest</li>
+				
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
 			<patterns>
 				<li>
-					<def>VME_ChthonianDescription</def>
+					<def>VME_TaoismDescription</def>
 				</li>
 			</patterns>
 			<constants>
 				<li>
-					<key>structure_chthonian</key>
+					<key>structure_taoism</key>
 					<value>true</value>
 				</li>
 			</constants>
 		</descriptionMaker>
 		<symbolPacks>
 			<li>
-				<theme>eldritch</theme>
-				<adjective>eldritch</adjective>
-				<member>cultist</member>
+				<theme>taoism</theme>
+				<adjective>taoist</adjective>
+				<member>initiate</member>
 			</li>
 		</symbolPacks>
 	</MemeDef>
 	<MemeDef>
 		<defName>VME_Structure_Corporate</defName>
 		<label>corporate origin</label>
-		<description>There are ancient entities in this Universe that are more powerful than mere gods. Immensely powerful and utterly indifferent to us humans who can barely begin to comprehend them. Only by worshipping them can we hope to placate their ire.</description>
+		<description>There is only The Company. All other ideas or concepts are subordinate to it.</description>
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_Corporate</iconPath>
 		<impact>0</impact>
 		
 		<worshipRoomLabel>office</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
-		<deityNameMakerOverride>VME_NamerDeityEldritch</deityNameMakerOverride>
-		<deityTypeMakerOverride>VME_DietyTypeMakerEldritch</deityTypeMakerOverride>
+		<deityNameMakerOverride>VME_NamerCorporate</deityNameMakerOverride>
+		<deityTypeMakerOverride>VME_DietyTypeMakerCorporate</deityTypeMakerOverride>
 		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
 		<symbolPackOverride>true</symbolPackOverride>
-		<deityCount>4</deityCount>
+		<deityCount>1</deityCount>
 		<generalRules>
 			<rulesStrings>
-				<li>memeAdjective->chthonian</li>
-				<li>memeAdjective->eldritch</li>
-				<li>memeAdjective->unnameable</li>
-				<li>memeAdjective->insane</li>
-				<li>memeAdjective->non-euclidean</li>
-				<li>memeAdjective->otherwordly</li>
-				<li>memeAdjective->loathsome</li>
-				<li>memeLeaderNoun->antiquarian</li>
-				<li>memeLeaderNoun->nameless</li>
-				<li>memeLeaderAdjective->indescribable </li>
-				<li>memeLeaderAdjective->unmentionable </li>
-				<li>memeLeaderAdjective->whispering</li>
-				<li>memeMoralist->deranged cultist</li>
-				<li>memeMoralist->cultist leader</li>
-				<li>memeMoralist->stygian advocate</li>
+				<li>memeAdjective->private</li>
+				<li>memeAdjective->profitable</li>
+				<li>memeAdjective->exploitative</li>
+				<li>memeAdjective->proffesional</li>
+				<li>memeAdjective->commercial</li>
+				<li>memeAdjective->lucrative</li>			
+				<li>memeLeaderNoun->CEO</li>
+				<li>memeLeaderNoun->boss</li>
+				<li>memeLeaderNoun->superintendent</li>
+				<li>memeLeaderAdjective->ruthless</li>
+				<li>memeLeaderAdjective->talented</li>
+				<li>memeLeaderAdjective->entrepreneurial</li>
+				<li>memeMoralist->administrator</li>
+				<li>memeMoralist->executive</li>
+				<li>memeMoralist->manager</li>
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
 			<patterns>
 				<li>
-					<def>VME_ChthonianDescription</def>
+					<def>VME_CorporateDescription</def>
 				</li>
 			</patterns>
 			<constants>
 				<li>
-					<key>structure_chthonian</key>
+					<key>structure_corporate</key>
 					<value>true</value>
 				</li>
 			</constants>
 		</descriptionMaker>
 		<symbolPacks>
 			<li>
-				<theme>eldritch</theme>
-				<adjective>eldritch</adjective>
-				<member>cultist</member>
+				<theme>corporation</theme>
+				<adjective>corporate</adjective>
+				<member>employee</member>
 			</li>
 		</symbolPacks>
 	</MemeDef>
