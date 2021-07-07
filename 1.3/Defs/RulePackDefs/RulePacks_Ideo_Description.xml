@@ -561,7 +561,7 @@
         <li>episode(priority=-1)-></li> <!-- allow zero or more episodes -->
 		
 		<!-- typesetting -->
-        <li>r_pattern->"To: All Employees\n\nFrom: Upper Management\n\nSubject: [subject]\n\n[r_introMemo] [r_episode] [r_episode]."</li>
+        <li>r_pattern->"To: All Employees\n\nFrom: Upper Management\n\nSubject: [subject]\n\n[r_introMemo] [r_episode] [r_episode]"</li>
 
         <!-- generic creation -->
         <li>introMemo->Coworkers, it has come to my attention that many in the office have been spending time doing unapproved activities.</li>

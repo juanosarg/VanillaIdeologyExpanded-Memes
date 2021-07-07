@@ -51,6 +51,12 @@
 				<member>serketist</member>
 			</li>
 		</symbolPacks>
+		<thingStyleCategories>
+			<li>
+				<category>VME_Serketist</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
 	</MemeDef>
 	<MemeDef>
 		<defName>VME_Structure_Esotericism</defName>
@@ -62,7 +68,6 @@
 		<worshipRoomLabel>sanctum</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
 		<deityCount>0</deityCount>
-		
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->obscure</li>
@@ -71,8 +76,8 @@
 				<li>memeAdjective->mystical</li>
 				<li>memeCreed->mystery</li>
 				<li>memeCreed->secrets</li>
-				<li>memeCreed->arcana</li>       
-				<li>memeCreed->divinations</li>  
+				<li>memeCreed->arcana</li>
+				<li>memeCreed->divinations</li>
 				<li>memeLeaderNoun->grand magus</li>
 				<li>memeLeaderNoun->enlightened one</li>
 				<li>memeLeaderAdjective->esoteric</li>
@@ -114,7 +119,6 @@
 		<worshipRoomLabel>pleasure lounge</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
 		<deityCount>0</deityCount>
-		
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->hedonistic</li>
@@ -130,7 +134,6 @@
 				<li>memeLeaderAdjective->pleasing</li>
 				<li>memeMoralist->reveler</li>
 				<li>memeMoralist->love priest</li>
-				
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
@@ -161,7 +164,6 @@
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_ChthonianCult</iconPath>
 		<impact>0</impact>
-		
 		<worshipRoomLabel>chamber of whispers</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
 		<deityNameMakerOverride>VME_NamerDeityEldritch</deityNameMakerOverride>
@@ -180,7 +182,7 @@
 				<li>memeAdjective->loathsome</li>
 				<li>memeCreed->scribbles</li>
 				<li>memeCreed->knoledge</li>
-				<li>memeCreed->madness</li>       
+				<li>memeCreed->madness</li>
 				<li>memeLeaderNoun->antiquarian</li>
 				<li>memeLeaderNoun->nameless</li>
 				<li>memeLeaderAdjective->indescribable</li>
@@ -219,10 +221,8 @@
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_Eschatologism</iconPath>
 		<impact>0</impact>
-		
 		<worshipRoomLabel>antechamber</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
-		
 		<deityCount>0</deityCount>
 		<generalRules>
 			<rulesStrings>
@@ -230,10 +230,10 @@
 				<li>memeAdjective->eschatological</li>
 				<li>memeAdjective->apocalyptic</li>
 				<li>memeAdjective->cataclysmic</li>
-				<li>memeAdjective->catastrophic</li>	
+				<li>memeAdjective->catastrophic</li>
 				<li>memeCreed->predictions</li>
 				<li>memeCreed->prophecies</li>
-				<li>memeCreed->auguries</li>				
+				<li>memeCreed->auguries</li>
 				<li>memeLeaderNoun->cult leader</li>
 				<li>memeLeaderNoun->doombringer</li>
 				<li>memeLeaderAdjective->portentous</li>
@@ -272,9 +272,8 @@
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_Authoritarianism</iconPath>
 		<impact>0</impact>
-		
 		<worshipRoomLabel>headquarters</worshipRoomLabel>
-		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>		
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
 		<deityCount>0</deityCount>
 		<generalRules>
 			<rulesStrings>
@@ -336,7 +335,6 @@
 		<deityCount>1</deityCount>
 		<worshipRoomLabel>chamber of the high one</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
-		
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->unified</li>
@@ -346,7 +344,7 @@
 				<li>memeAdjective->monarchal</li>
 				<li>memeAdjective->princely</li>
 				<li>memeAdjective->sovereign</li>
-				<li>memeCreed->laws</li>  
+				<li>memeCreed->laws</li>
 				<li>memeCreed->orders</li>
 				<li>memeCreed->divine will</li>
 				<li>memeLeaderNoun->god-emperor</li>
@@ -390,7 +388,6 @@
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_Pantheism</iconPath>
 		<impact>0</impact>
-		
 		<worshipRoomLabel>great hall</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
 		<deityNameMakerOverride>VME_NamerPantheism</deityNameMakerOverride>
@@ -405,10 +402,10 @@
 				<li>memeAdjective->all-encompassing</li>
 				<li>memeAdjective->transcendent</li>
 				<li>memeAdjective->infinite</li>
-				<li>memeAdjective->enlightened</li>				
+				<li>memeAdjective->enlightened</li>
 				<li>memeLeaderNoun->guru</li>
-				<li>memeLeaderNoun->leader</li>	
-				<li>memeLeaderNoun->prince</li>					
+				<li>memeLeaderNoun->leader</li>
+				<li>memeLeaderNoun->prince</li>
 				<li>memeLeaderAdjective->calm</li>
 				<li>memeLeaderAdjective->meditating </li>
 				<li>memeLeaderAdjective->enlightened</li>
@@ -445,10 +442,8 @@
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_Omnism</iconPath>
 		<impact>0</impact>
-		
 		<worshipRoomLabel>temple</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
-		
 		<deityCount>0</deityCount>
 		<generalRules>
 			<rulesStrings>
@@ -457,15 +452,12 @@
 				<li>memeAdjective->comprehensive</li>
 				<li>memeAdjective->ubiquitous</li>
 				<li>memeAdjective->all-inclusive</li>
-				
 				<li>memeLeaderNoun->all-theist</li>
 				<li>memeLeaderNoun->trascendent one</li>
 				<li>memeLeaderAdjective->wise</li>
 				<li>memeLeaderAdjective->inclusive</li>
-				
 				<li>memeMoralist->priest</li>
 				<li>memeMoralist->preacher</li>
-				
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
@@ -495,10 +487,13 @@
 		<description>The existence of God, of the divine and the supernatural is unknown and unknowable,</description>
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_Agnosticism</iconPath>
-		<impact>0</impact>		
+		<impact>0</impact>
 		<worshipRoomLabel>symposium hall</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
 		<deityCount>0</deityCount>
+		<exclusionTags>
+			<li>VME_GodEmperor</li>
+		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->disbelieving</li>
@@ -506,7 +501,7 @@
 				<li>memeAdjective->irreligious</li>
 				<li>memeAdjective->nonreligious</li>
 				<li>memeAdjective->unbelieving</li>
-				<li>memeAdjective->secular</li>				
+				<li>memeAdjective->secular</li>
 				<li>memeLeaderNoun->leader</li>
 				<li>memeLeaderNoun->freethinker</li>
 				<li>memeLeaderAdjective->secular</li>
@@ -549,10 +544,8 @@
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_SecularSpirituality</iconPath>
 		<impact>0</impact>
-		
 		<worshipRoomLabel>meditation room</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
-		
 		<deityCount>0</deityCount>
 		<generalRules>
 			<rulesStrings>
@@ -560,7 +553,6 @@
 				<li>memeAdjective->intangible</li>
 				<li>memeAdjective->ethereal</li>
 				<li>memeAdjective->transcendent</li>
-			
 				<li>memeLeaderNoun->mystic</li>
 				<li>memeLeaderNoun->visionary</li>
 				<li>memeLeaderAdjective->supernatural</li>
@@ -599,10 +591,8 @@
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_Taoism</iconPath>
 		<impact>0</impact>
-	
 		<worshipRoomLabel>dàoguàn</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
-		
 		<deityCount>0</deityCount>
 		<generalRules>
 			<rulesStrings>
@@ -610,13 +600,12 @@
 				<li>memeAdjective->natural</li>
 				<li>memeAdjective->compassionate</li>
 				<li>memeAdjective->frugal</li>
-				<li>memeAdjective->humble</li>			
+				<li>memeAdjective->humble</li>
 				<li>memeLeaderNoun->taoshih</li>
 				<li>memeLeaderNoun->master of the Tao</li>
 				<li>memeLeaderAdjective->spiritual</li>
-				<li>memeLeaderAdjective->serene</li>				
+				<li>memeLeaderAdjective->serene</li>
 				<li>memeMoralist->taoist priest</li>
-				
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
@@ -647,7 +636,6 @@
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_Corporate</iconPath>
 		<impact>0</impact>
-		
 		<worshipRoomLabel>office</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
 		<deityNameMakerOverride>VME_NamerCorporate</deityNameMakerOverride>
@@ -662,7 +650,7 @@
 				<li>memeAdjective->exploitative</li>
 				<li>memeAdjective->proffesional</li>
 				<li>memeAdjective->commercial</li>
-				<li>memeAdjective->lucrative</li>			
+				<li>memeAdjective->lucrative</li>
 				<li>memeLeaderNoun->CEO</li>
 				<li>memeLeaderNoun->boss</li>
 				<li>memeLeaderNoun->superintendent</li>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <ThingStyleDef ParentName="IdeoTableStyleBase">
+    <defName>VME_Serketist_Table1x2c</defName>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Serketist/Tables/VME_Serketist_Table1x2c</texPath>
+      <drawSize>(3,4)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+  
+ 
+
+ 
+
+</Defs>
