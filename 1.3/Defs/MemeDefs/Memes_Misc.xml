@@ -178,6 +178,86 @@
 			</li>
 		</symbolPacks>
 	</MemeDef>
+	
+	<MemeDef>
+		<defName>VME_GodEmperor</defName>
+		<label>god emperor</label>
+
+		<description>Our leader must be worshipped as a living God, a physical manifestation of our ideals and precepts.</description>
+		<iconPath>UI/Memes/GodEmperor</iconPath>
+
+		<impact>1</impact>
+
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->absolute</li>
+				<li>memeAdjective->divine</li>
+				<li>memeHyphenPrefix->godlike</li>
+				<li>memeConcept->imperial sovereignty</li>
+				<li>memeLeaderNoun->god emperor</li>
+				<li>memeMoralist->servant</li>
+				<li>memeMoralist->seer</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Astrology)        ->[deity0_name] showed us that the path to true wisdom lies in understanding the stars.</li>
+					<li>episode(uses=1,tag=meme_Astrology)  ->[deity0_name] said to all the [memberNamePlural], "For in the Firmament you shall see a reflection of my Will."</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Astrology)           ->[memberNamePlural] built a great [altarName] on the [place_summary] [place_name], so that anyone may peer into the stars.</li>
+					<li>conflict(tag=meme_Astrology)        ->A coward [foeLeader], seeking to deny the will of [deity0_name], tried to obscure the firmament so we couldn't watch the majesty of the stars.</li>
+					<li>founderJoin(tag=meme_Astrology)     ->[deity0_name] blessed a [place_job] named [founderName] with [foeLeader_possessive] unwavering resolve, and a zodiacal sign was created then and there.</li>
+					<li>victory(tag=meme_Astrology)         ->[founderName] read the astrological fortunes of the [foeSoldiers] and used them to convince them of [deity0_name]'s power.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Astrology)           ->Our founder [founderName] was a great astrologer, capable of divining the fortunes of [founder_possessive] followers as he traveled between the cities.</li>
+					<li>story(uses=1,tag=meme_Astrology)    ->The believers spread knowledge of the wisdom found in the movement of the stars.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Astrology)         ->In all my years observing the stars, I learned one lesson that stands over all:</li>
+					<li>lesson(tag=meme_Astrology)              ->our zodiacal signs guide us through all of our lives.</li>
+					<li>lessonReinforcement(tag=meme_Astrology) ->This is the fact we need to spread, for the fate of oneself is reflected upon the heavens.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Astrology)    ->The archotechs announce their presence from the sky, and in the mind, they showed us that great knowledge is encoded in the movement of celestial bodies.</li>
+					<li>archistFact(tag=meme_Astrology)     ->Archotechs are wise beyond all reason, and they have coded immense knowledge on the stars.</li>
+					<li>archistProphecy(tag=meme_Astrology) ->[inTheEnd], the archotechs will voice their final wisdom to the holder of the [relic0_name]. Only one who is trained on the Art of the Zodiac can absorb their teachings.</li>
+					<!-- animist -->
+					<li>animistFact(tag=meme_Astrology)     ->The spirits want to be known, and they manifest themselves not only through the creatures of land, but also in the heavens.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Astrology)->[itIsSaid] we will be wise enough to create a new zodiacal sign. Serket. The Holy Scarab.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_ViolentConversion)->Eldritch knowledge lies upon the Unwavering Hungry Void between Stars, and by studying them we will be eternal, perhaps at the cost of our sanity.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_ViolentConversion)->With such knowledge, we will devise a way to control the zodiac, and thus the fate of everyone.</li>				
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_ViolentConversion)->The stars will only show a singular fate: destruction.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_ViolentConversion)->It has been brought to my atention that some of you are using work breaks to share your astrological charts. Although this is a sanctioned topic by the Company, I would like to remind you that breaks should never exceed the allotted time.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		
+		<symbolPacks>
+			<li>
+				<ideoName>Astrology</ideoName>
+				<theme>astrology</theme>
+				<adjective>astrological</adjective>
+				<member>astrologer</member>
+			</li>
+			<li>
+				<ideoName>Tarot</ideoName>
+				<theme>tarot</theme>
+				<adjective>tarot reading</adjective>
+				<member>tarot reader</member>
+			</li>
+			<li>
+				<ideoName>Divination</ideoName>
+				<theme>divination</theme>
+				<adjective>divinatorial</adjective>
+				<member>diviner</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
 
 
 </Defs>
