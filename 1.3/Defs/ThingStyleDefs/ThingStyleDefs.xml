@@ -11,6 +11,14 @@
     </graphicData>
   </ThingStyleDef>
   
+    <ThingStyleDef>
+    <defName>VME_Bed</defName>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Serketist/Tables/VFE_BedFlowers</texPath>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+  
  
 
  

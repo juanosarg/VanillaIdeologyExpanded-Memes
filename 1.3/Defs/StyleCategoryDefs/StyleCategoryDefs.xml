@@ -39,8 +39,8 @@
         <styleDef>Morbid_AltarGrand</styleDef>
       </li>
       <li>
-        <thingDef>Stool</thingDef>
-        <styleDef>Morbid_Stool</styleDef>
+        <thingDef>Bed</thingDef>
+        <styleDef>VME_Bed</styleDef>
       </li>
       <li>
         <thingDef>Table1x2c</thingDef>
