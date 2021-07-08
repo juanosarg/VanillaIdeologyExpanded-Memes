@@ -12,19 +12,19 @@
     <thingDefStyles>
       <li>
         <thingDef>SculptureSmall</thingDef>
-        <styleDef>Morbid_SculptureSmall</styleDef>
+        <styleDef>VME_Serketist_SculptureSmall</styleDef>
       </li>
       <li>
         <thingDef>SculptureLarge</thingDef>
-        <styleDef>Morbid_SculptureLarge</styleDef>
+        <styleDef>VME_Serketist_SculptureLarge</styleDef>
       </li>
       <li>
         <thingDef>SculptureGrand</thingDef>
-        <styleDef>Morbid_SculptureGrand</styleDef>
+        <styleDef>VME_Serketist_SculptureGrand</styleDef>
       </li>
       <li>
         <thingDef>Altar_Small</thingDef>
-        <styleDef>Morbid_AltarSmall</styleDef>
+        <styleDef>VME_Serketist_AltarSmall</styleDef>
       </li>
       <li>
         <thingDef>Altar_Medium</thingDef>
@@ -38,25 +38,26 @@
         <thingDef>Altar_Grand</thingDef>
         <styleDef>Morbid_AltarGrand</styleDef>
       </li>
-      <li>
-        <thingDef>Bed</thingDef>
-        <styleDef>VME_Bed</styleDef>
+	   <li>
+        <thingDef>Stool</thingDef>
+        <styleDef>VME_SerketistStool</styleDef>
       </li>
+     
       <li>
         <thingDef>Table1x2c</thingDef>
         <styleDef>VME_Serketist_Table1x2c</styleDef>
       </li>
       <li>
         <thingDef>Table2x2c</thingDef>
-        <styleDef>Morbid_Table2x2c</styleDef>
+        <styleDef>VME_Serketist_Table2x2c</styleDef>
       </li>
       <li>
         <thingDef>Table2x4c</thingDef>
-        <styleDef>Morbid_Table2x4c</styleDef>
+        <styleDef>VME_Serketist_Table2x4c</styleDef>
       </li>
       <li>
         <thingDef>Table3x3c</thingDef>
-        <styleDef>Morbid_Table3x3c</styleDef>
+        <styleDef>VME_Serketist_Table3x3c</styleDef>
       </li>
       <li>
         <thingDef>StandingLamp</thingDef>
