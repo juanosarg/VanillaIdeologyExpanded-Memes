@@ -95,6 +95,18 @@
   
 
   
+    <ThingStyleDef>
+    <defName>VME_Serketist_WarMask</defName>
+    <wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/VME_WarMaskSerketist/VME_WarMaskSerketist</wornGraphicPath>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparelstyles/Single/VME_WarMaskSerketist</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+     
+    </graphicData>
+  </ThingStyleDef>
+  
+
+  
  
 
  

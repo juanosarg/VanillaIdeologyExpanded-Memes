@@ -95,9 +95,9 @@
         <thingDef>Apparel_PowerArmorHelmet</thingDef>
         <styleDef>Morbid_MarineHelmet</styleDef>
       </li>
-      <li MayRequire="Ludeon.RimWorld.Royalty">
-        <thingDef>Apparel_ArmorHelmetCataphract</thingDef>
-        <styleDef>Morbid_CataphractHelmet</styleDef>
+       <li>
+        <thingDef>Apparel_VisageMask</thingDef>
+        <styleDef>VME_Serketist_WarMask</styleDef>
       </li>
       <li>
         <thingDef>Ideogram</thingDef>
