@@ -28,15 +28,15 @@
       </li>
       <li>
         <thingDef>Altar_Medium</thingDef>
-        <styleDef>Morbid_AltarMedium</styleDef>
+        <styleDef>VME_Serketist_AltarMedium</styleDef>
       </li>
       <li>
         <thingDef>Altar_Large</thingDef>
-        <styleDef>Morbid_AltarLarge</styleDef>
+        <styleDef>VME_Serketist_AltarLarge</styleDef>
       </li>
       <li>
         <thingDef>Altar_Grand</thingDef>
-        <styleDef>Morbid_AltarGrand</styleDef>
+        <styleDef>VME_Serketist_AltarGrand</styleDef>
       </li>
 	   <li>
         <thingDef>Stool</thingDef>
@@ -61,51 +61,40 @@
       </li>
       <li>
         <thingDef>StandingLamp</thingDef>
-        <styleDef>Morbid_StandingLamp</styleDef>
+        <styleDef>VME_Serketist_StandingLamp</styleDef>
       </li>
       <li>
         <thingDef>StandingLamp_Red</thingDef>
-        <styleDef>Morbid_StandingLamp_Red</styleDef>
+        <styleDef>VME_Serketist_StandingLamp_Red</styleDef>
       </li>
       <li>
         <thingDef>StandingLamp_Green</thingDef>
-        <styleDef>Morbid_StandingLamp_Green</styleDef>
+        <styleDef>VME_Serketist_StandingLamp_Green</styleDef>
       </li>
       <li>
         <thingDef>StandingLamp_Blue</thingDef>
-        <styleDef>Morbid_StandingLamp_Blue</styleDef>
+        <styleDef>VME_Serketist_StandingLamp_Blue</styleDef>
       </li>
       <li>
         <thingDef>Darklamp</thingDef>
-        <styleDef>Morbid_DarklampStanding</styleDef>
+        <styleDef>VME_Serketist_DarklampStanding</styleDef>
       </li>
       <li>
         <thingDef>TorchLamp</thingDef>
-        <styleDef>Morbid_TorchLamp</styleDef>
+        <styleDef>VME_Serketist_TorchLamp</styleDef>
       </li>
-      <li>
-        <thingDef>Column</thingDef>
-        <styleDef>Morbid_Column</styleDef>
-      </li>
-      <li>
-        <thingDef>Apparel_ArmorHelmetRecon</thingDef>
-        <styleDef>Morbid_ReconHelmet</styleDef>
-      </li>
-      <li>
-        <thingDef>Apparel_PowerArmorHelmet</thingDef>
-        <styleDef>Morbid_MarineHelmet</styleDef>
-      </li>
+     
        <li>
         <thingDef>Apparel_VisageMask</thingDef>
         <styleDef>VME_Serketist_WarMask</styleDef>
       </li>
       <li>
         <thingDef>Ideogram</thingDef>
-        <styleDef>Morbid_IdeogramA</styleDef>
+        <styleDef>VME_Serketist_IdeogramA</styleDef>
       </li>
       <li>
         <thingDef>Ideogram</thingDef>
-        <styleDef>Morbid_IdeogramB</styleDef>
+        <styleDef>VME_Serketist_IdeogramB</styleDef>
       </li>
     </thingDefStyles>
     <addDesignators>

@@ -72,6 +72,42 @@
     </graphicData>
   </ThingStyleDef>
   
+   <ThingStyleDef>
+    <defName>VME_Serketist_AltarMedium</defName>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Serketist/Altars/VME_AltarSerketist1x3</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,1)</drawSize>
+      <shadowData>
+        <volume>(2.4, 1, 0.8)</volume>
+      </shadowData>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>VME_Serketist_AltarLarge</defName>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Serketist/Altars/VME_AltarSerketist2x3</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,2)</drawSize>
+      <shadowData>
+        <volume>(2.4, 1, 1.6)</volume>
+      </shadowData>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>VME_Serketist_AltarGrand</defName>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Serketist/Altars/VME_AltarSerketist3x3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <shadowData>
+        <volume>(2.4, 1, 2.4)</volume>
+      </shadowData>
+    </graphicData>
+  </ThingStyleDef>
+  
   <ThingStyleDef>
     <defName>VME_SerketistStool</defName>
     <graphicData>
@@ -90,6 +126,61 @@
       <shadowData>
         <volume>(0.18, 0.23, 0.18)</volume>
       </shadowData>
+    </graphicData>
+  </ThingStyleDef>
+  
+  <ThingStyleDef Name="VME_Serketist_StandingLamp">
+    <defName>VME_Serketist_StandingLamp</defName>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Serketist/VME_SerketistLampStanding</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef ParentName="VME_Serketist_StandingLamp">
+    <defName>VME_Serketist_StandingLamp_Red</defName>
+  </ThingStyleDef>
+
+  <ThingStyleDef ParentName="VME_Serketist_StandingLamp">
+    <defName>VME_Serketist_StandingLamp_Blue</defName>
+  </ThingStyleDef>
+
+  <ThingStyleDef ParentName="VME_Serketist_StandingLamp">
+    <defName>VME_Serketist_StandingLamp_Green</defName>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>VME_Serketist_DarklampStanding</defName>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Serketist/VME_SerketistDarklampStanding</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>VME_Serketist_TorchLamp</defName>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Serketist/VME_SerketistTorchLamp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconPath>Things/Building/BuildingStyles/Serketist/VME_SerketistTorchLamp_MenuIcon</uiIconPath>
+  </ThingStyleDef>
+  
+    <ThingStyleDef>
+    <defName>VME_Serketist_IdeogramA</defName>
+    <graphicData>
+      <texPath>Things/Building/Misc/Ideogram/Serketist/VME_IconSerketistA</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>VME_Serketist_IdeogramB</defName>
+    <graphicData>
+      <texPath>Things/Building/Misc/Ideogram/Serketist/VME_IconSerketistB</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
     </graphicData>
   </ThingStyleDef>
   
