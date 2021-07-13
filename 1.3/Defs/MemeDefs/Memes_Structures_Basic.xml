@@ -682,5 +682,21 @@
 				<member>employee</member>
 			</li>
 		</symbolPacks>
+		<thingStyleCategories>
+			<li>
+				<category>VME_Corporate</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
+		<selectOneOrNone>
+			<noneChance>0</noneChance>
+			<preceptThingPairs>
+				<li>
+					<precept>ApparelDesired_Strong_Subordinate</precept>
+						<thing>Apparel_CollarShirt</thing>
+				</li>
+			</preceptThingPairs>
+		</selectOneOrNone>
+		
 	</MemeDef>
 </Defs>

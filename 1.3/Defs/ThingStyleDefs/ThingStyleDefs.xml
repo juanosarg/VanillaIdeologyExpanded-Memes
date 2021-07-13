@@ -1,205 +1,405 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!-- ====== Serketist ======== -->
+
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>VME_Serketist_Table1x2c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/Tables/VME_Serketist_Table1x2c</texPath>
+			<drawSize>(3,4)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>VME_Serketist_Table2x2c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/Tables/VME_Serketist_Table2x2</texPath>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>VME_Serketist_Table2x4c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/Tables/VME_Serketist_Table2x4</texPath>
+			<drawSize>(4,6)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>VME_Serketist_Table3x3c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/Tables/VME_Serketist_Table3x3</texPath>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Serketist_SculptureSmall</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/Sculptures/Small</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Serketist_SculptureLarge</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/Sculptures/Large</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Serketist_SculptureGrand</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/Sculptures/Grand</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Serketist_AltarSmall</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/Altars/VME_AltarSerketist1x1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shadowData>
+				<volume>(0.8, 1, 0.8)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Serketist_AltarMedium</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/Altars/VME_AltarSerketist1x3</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,1)</drawSize>
+			<shadowData>
+				<volume>(2.4, 1, 0.8)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Serketist_AltarLarge</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/Altars/VME_AltarSerketist2x3</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,2)</drawSize>
+			<shadowData>
+				<volume>(2.4, 1, 1.6)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Serketist_AltarGrand</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/Altars/VME_AltarSerketist3x3</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(2.4, 1, 2.4)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_SerketistStool</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/Stool/VME_StoolSerketist</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<damageData>
+				<rectN>(0.125,0.296875,0.734375,0.421875)</rectN>
+				<rectS>(0.125,0.296875,0.734375,0.421875)</rectS>
+				<rectE>(0.234375,0.296875,0.5,0.546875)</rectE>
+				<rectW>(0.234375,0.296875,0.5,0.546875)</rectW>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+			<shadowData>
+				<volume>(0.18, 0.23, 0.18)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef Name="VME_Serketist_StandingLamp">
+		<defName>VME_Serketist_StandingLamp</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/VME_SerketistLampStanding</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef ParentName="VME_Serketist_StandingLamp">
+		<defName>VME_Serketist_StandingLamp_Red</defName>
+	</ThingStyleDef>
+
+	<ThingStyleDef ParentName="VME_Serketist_StandingLamp">
+		<defName>VME_Serketist_StandingLamp_Blue</defName>
+	</ThingStyleDef>
+
+	<ThingStyleDef ParentName="VME_Serketist_StandingLamp">
+		<defName>VME_Serketist_StandingLamp_Green</defName>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Serketist_DarklampStanding</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/VME_SerketistDarklampStanding</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Serketist_TorchLamp</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/VME_SerketistTorchLamp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Serketist/VME_SerketistTorchLamp_MenuIcon</uiIconPath>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Serketist_IdeogramA</defName>
+		<graphicData>
+			<texPath>Things/Building/Misc/Ideogram/Serketist/VME_IconSerketistA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Serketist_IdeogramB</defName>
+		<graphicData>
+			<texPath>Things/Building/Misc/Ideogram/Serketist/VME_IconSerketistB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Serketist_WarMask</defName>
+		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/VME_WarMaskSerketist/VME_WarMaskSerketist</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparelstyles/Single/VME_WarMaskSerketist</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+
+		</graphicData>
+	</ThingStyleDef>
+
+	<!-- ====== Corporate ======== -->
+
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>VME_Corporate_Table1x2c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Corporate/Tables/VME_Corporate_Table1x2</texPath>
+			<drawSize>(3,4)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>VME_Corporate_Table2x2c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Corporate/Tables/VME_Corporate_Table2x2</texPath>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>VME_Corporate_Table2x4c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Corporate/Tables/VME_Corporate_Table2x4</texPath>
+			<drawSize>(4,6)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>VME_Corporate_Table3x3c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Corporate/Tables/VME_Corporate_Table3x3</texPath>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Corporate_SculptureSmall</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Corporate/Sculptures/Small</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Corporate_SculptureLarge</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Corporate/Sculptures/Large</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Corporate_SculptureGrand</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Corporate/Sculptures/Grand</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Corporate_AltarSmall</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Corporate/Altars/VME_AltarCorporate1x1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shadowData>
+				<volume>(0.8, 1, 0.8)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Corporate_AltarMedium</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Corporate/Altars/VME_AltarCorporate1x3</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,1)</drawSize>
+			<shadowData>
+				<volume>(2.4, 1, 0.8)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Corporate_AltarLarge</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Corporate/Altars/VME_AltarCorporate2x3</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,2)</drawSize>
+			<shadowData>
+				<volume>(2.4, 1, 1.6)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Corporate_AltarGrand</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Corporate/Altars/VME_AltarCorporate3x3</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(2.4, 1, 2.4)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_CorporateStool</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Corporate/Stool/VME_StoolCorporate</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<damageData>
+				<rectN>(0.125,0.296875,0.734375,0.421875)</rectN>
+				<rectS>(0.125,0.296875,0.734375,0.421875)</rectS>
+				<rectE>(0.234375,0.296875,0.5,0.546875)</rectE>
+				<rectW>(0.234375,0.296875,0.5,0.546875)</rectW>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+			<shadowData>
+				<volume>(0.18, 0.23, 0.18)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_CorporateChair</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Corporate/Chair/VME_Corporate_Chair</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+				<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+				<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+			</damageData>
+			<shadowData>
+				<volume>(0.23, 0.26, 0.23)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_CorporateArmchair</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Corporate/Armchair/VME_Corporate_Armchair</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+				<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+				<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+			</damageData>
+			<shadowData>
+				<volume>(0.23, 0.26, 0.23)</volume>
+			</shadowData>
+		</graphicData>
+		
+	</ThingStyleDef>
+
+	<ThingStyleDef ParentName="IdeoColumnStyleBase">
+		<defName>VME_Corporate_Column</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Corporate/VME_CorporateColumn</texPath>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef Name="VME_Corporate_StandingLamp">
+		<defName>VME_Corporate_StandingLamp</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Corporate/VME_CorporateLampStanding</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef ParentName="VME_Corporate_StandingLamp">
+		<defName>VME_Corporate_StandingLamp_Red</defName>
+	</ThingStyleDef>
+
+	<ThingStyleDef ParentName="VME_Corporate_StandingLamp">
+		<defName>VME_Corporate_StandingLamp_Blue</defName>
+	</ThingStyleDef>
+
+	<ThingStyleDef ParentName="VME_Corporate_StandingLamp">
+		<defName>VME_Corporate_StandingLamp_Green</defName>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>VME_Corporate_Apparel_CollarShirt</defName>
+		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/VME_CorporateShirt/VME_CorporateShirtButton</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparelstyles/Single/VME_CorporateShirtButton</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+
+		</graphicData>
+	</ThingStyleDef>
 
 
-  <ThingStyleDef ParentName="IdeoTableStyleBase">
-    <defName>VME_Serketist_Table1x2c</defName>
-    <graphicData>
-      <texPath>Things/Building/BuildingStyles/Serketist/Tables/VME_Serketist_Table1x2c</texPath>
-      <drawSize>(3,4)</drawSize>
-    </graphicData>
-  </ThingStyleDef>
-  
-  <ThingStyleDef ParentName="IdeoTableStyleBase">
-    <defName>VME_Serketist_Table2x2c</defName>
-    <graphicData>
-      <texPath>Things/Building/BuildingStyles/Serketist/Tables/VME_Serketist_Table2x2</texPath>
-      <drawSize>(4,4)</drawSize>
-    </graphicData>
-  </ThingStyleDef>
 
-  <ThingStyleDef ParentName="IdeoTableStyleBase">
-    <defName>VME_Serketist_Table2x4c</defName>
-    <graphicData>
-      <texPath>Things/Building/BuildingStyles/Serketist/Tables/VME_Serketist_Table2x4</texPath>
-      <drawSize>(4,6)</drawSize>
-    </graphicData>
-  </ThingStyleDef>
 
-  <ThingStyleDef ParentName="IdeoTableStyleBase">
-    <defName>VME_Serketist_Table3x3c</defName>
-    <graphicData>
-      <texPath>Things/Building/BuildingStyles/Serketist/Tables/VME_Serketist_Table3x3</texPath>
-      <drawSize>(5,5)</drawSize>
-    </graphicData>
-  </ThingStyleDef>
-  
-   <ThingStyleDef>
-    <defName>VME_Serketist_SculptureSmall</defName>
-    <graphicData>
-      <texPath>Things/Building/BuildingStyles/Serketist/Sculptures/Small</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-    </graphicData>
-  </ThingStyleDef>
 
-  <ThingStyleDef>
-    <defName>VME_Serketist_SculptureLarge</defName>
-    <graphicData>
-      <texPath>Things/Building/BuildingStyles/Serketist/Sculptures/Large</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(3,3)</drawSize>
-    </graphicData>
-  </ThingStyleDef>
 
-  <ThingStyleDef>
-    <defName>VME_Serketist_SculptureGrand</defName>
-    <graphicData>
-      <texPath>Things/Building/BuildingStyles/Serketist/Sculptures/Grand</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(4,4)</drawSize>
-    </graphicData>
-  </ThingStyleDef>
-  
-  <ThingStyleDef>
-    <defName>VME_Serketist_AltarSmall</defName>
-    <graphicData>
-      <texPath>Things/Building/BuildingStyles/Serketist/Altars/VME_AltarSerketist1x1</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <shadowData>
-        <volume>(0.8, 1, 0.8)</volume>
-      </shadowData>
-    </graphicData>
-  </ThingStyleDef>
-  
-   <ThingStyleDef>
-    <defName>VME_Serketist_AltarMedium</defName>
-    <graphicData>
-      <texPath>Things/Building/BuildingStyles/Serketist/Altars/VME_AltarSerketist1x3</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(3,1)</drawSize>
-      <shadowData>
-        <volume>(2.4, 1, 0.8)</volume>
-      </shadowData>
-    </graphicData>
-  </ThingStyleDef>
-
-  <ThingStyleDef>
-    <defName>VME_Serketist_AltarLarge</defName>
-    <graphicData>
-      <texPath>Things/Building/BuildingStyles/Serketist/Altars/VME_AltarSerketist2x3</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(3,2)</drawSize>
-      <shadowData>
-        <volume>(2.4, 1, 1.6)</volume>
-      </shadowData>
-    </graphicData>
-  </ThingStyleDef>
-
-  <ThingStyleDef>
-    <defName>VME_Serketist_AltarGrand</defName>
-    <graphicData>
-      <texPath>Things/Building/BuildingStyles/Serketist/Altars/VME_AltarSerketist3x3</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(3,3)</drawSize>
-      <shadowData>
-        <volume>(2.4, 1, 2.4)</volume>
-      </shadowData>
-    </graphicData>
-  </ThingStyleDef>
-  
-  <ThingStyleDef>
-    <defName>VME_SerketistStool</defName>
-    <graphicData>
-      <texPath>Things/Building/BuildingStyles/Serketist/Stool/VME_StoolSerketist</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <damageData>
-        <rectN>(0.125,0.296875,0.734375,0.421875)</rectN>
-        <rectS>(0.125,0.296875,0.734375,0.421875)</rectS>
-        <rectE>(0.234375,0.296875,0.5,0.546875)</rectE>
-        <rectW>(0.234375,0.296875,0.5,0.546875)</rectW>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
-      </damageData>
-      <shadowData>
-        <volume>(0.18, 0.23, 0.18)</volume>
-      </shadowData>
-    </graphicData>
-  </ThingStyleDef>
-  
-  <ThingStyleDef Name="VME_Serketist_StandingLamp">
-    <defName>VME_Serketist_StandingLamp</defName>
-    <graphicData>
-      <texPath>Things/Building/BuildingStyles/Serketist/VME_SerketistLampStanding</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-  </ThingStyleDef>
-
-  <ThingStyleDef ParentName="VME_Serketist_StandingLamp">
-    <defName>VME_Serketist_StandingLamp_Red</defName>
-  </ThingStyleDef>
-
-  <ThingStyleDef ParentName="VME_Serketist_StandingLamp">
-    <defName>VME_Serketist_StandingLamp_Blue</defName>
-  </ThingStyleDef>
-
-  <ThingStyleDef ParentName="VME_Serketist_StandingLamp">
-    <defName>VME_Serketist_StandingLamp_Green</defName>
-  </ThingStyleDef>
-
-  <ThingStyleDef>
-    <defName>VME_Serketist_DarklampStanding</defName>
-    <graphicData>
-      <texPath>Things/Building/BuildingStyles/Serketist/VME_SerketistDarklampStanding</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-  </ThingStyleDef>
-
-  <ThingStyleDef>
-    <defName>VME_Serketist_TorchLamp</defName>
-    <graphicData>
-      <texPath>Things/Building/BuildingStyles/Serketist/VME_SerketistTorchLamp</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <uiIconPath>Things/Building/BuildingStyles/Serketist/VME_SerketistTorchLamp_MenuIcon</uiIconPath>
-  </ThingStyleDef>
-  
-    <ThingStyleDef>
-    <defName>VME_Serketist_IdeogramA</defName>
-    <graphicData>
-      <texPath>Things/Building/Misc/Ideogram/Serketist/VME_IconSerketistA</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(3,3)</drawSize>
-    </graphicData>
-  </ThingStyleDef>
-
-  <ThingStyleDef>
-    <defName>VME_Serketist_IdeogramB</defName>
-    <graphicData>
-      <texPath>Things/Building/Misc/Ideogram/Serketist/VME_IconSerketistB</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(3,3)</drawSize>
-    </graphicData>
-  </ThingStyleDef>
-  
-
-  
-    <ThingStyleDef>
-    <defName>VME_Serketist_WarMask</defName>
-    <wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/VME_WarMaskSerketist/VME_WarMaskSerketist</wornGraphicPath>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparelstyles/Single/VME_WarMaskSerketist</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-     
-    </graphicData>
-  </ThingStyleDef>
-  
-
-  
- 
-
- 
 
 </Defs>
