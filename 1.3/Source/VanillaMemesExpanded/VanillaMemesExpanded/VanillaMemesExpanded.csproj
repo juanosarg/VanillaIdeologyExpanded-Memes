@@ -297,14 +297,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Defs\StartingItemsByIdeologyDef.cs" />
-    <Compile Include="GameComponent\GameComponent_IdeologicalGoodies.cs" />
-    <Compile Include="MapComponent\MapComponent_IdeologicalGoodies.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Defs\" />
+    <Folder Include="GameComponent\" />
+    <Folder Include="MapComponent\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
