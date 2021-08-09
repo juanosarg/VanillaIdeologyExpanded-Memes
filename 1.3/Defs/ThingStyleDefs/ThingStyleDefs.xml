@@ -356,7 +356,7 @@
 				<volume>(0.23, 0.26, 0.23)</volume>
 			</shadowData>
 		</graphicData>
-		
+
 	</ThingStyleDef>
 
 	<ThingStyleDef ParentName="IdeoColumnStyleBase">
@@ -385,7 +385,7 @@
 	<ThingStyleDef ParentName="VME_Corporate_StandingLamp">
 		<defName>VME_Corporate_StandingLamp_Green</defName>
 	</ThingStyleDef>
-	
+
 	<ThingStyleDef>
 		<defName>VME_Corporate_Apparel_CollarShirt</defName>
 		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/VME_CorporateShirt/VME_CorporateShirtButton</wornGraphicPath>
@@ -396,9 +396,404 @@
 		</graphicData>
 	</ThingStyleDef>
 
+	<ThingStyleDef>
+		<defName>VME_Corporate_AssaultRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/CorporateWeapons/VME_CorporateAssaultRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_Corporate_ChainShotgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/CorporateWeapons/VME_CorporateChainShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_Corporate_Autopistol</defName>
+		<graphicData>
+			<texPath>Things/Weapons/CorporateWeapons/VME_CorporateAutopistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_Corporate_SniperRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/CorporateWeapons/VME_CorporateSniperRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<!-- ====== Authoritarian ======== -->
 
 
 
+	<ThingStyleDef>
+		<defName>VME_Authoritarian_SculptureSmall</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Authoritarian/Sculptures/Small</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Authoritarian_SculptureLarge</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Authoritarian/Sculptures/Large</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Authoritarian_SculptureGrand</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Authoritarian/Sculptures/Grand</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_AuthoritarianPew</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Authoritarian/Pew/VME_Authoritarian_Pew</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,1)</drawSize>
+			<shadowData>
+				<volume>(0.8, 1, 0.8)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_AuthoritarianDresser</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Authoritarian/Dresser/VME_Authoritarian_Dresser</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_AuthoritarianEndTable</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Authoritarian/EndTable/VME_Authoritarian_EndTable</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_AuthoritarianShelf</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Authoritarian/Shelf/VME_Authoritarian_Shelf</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,2)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_AuthoritarianPlantPot</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Authoritarian/PlantPot/VME_Authoritarian_PlantPot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.55, 0.35, 0.3)</volume>
+				<offset>(0, 0, -0.28)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_AuthoritarianChair</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Authoritarian/Chair/VME_Authoritarian_Chair</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+				<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+				<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+			</damageData>
+			<shadowData>
+				<volume>(0.23, 0.26, 0.23)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_AuthoritarianArmchair</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Authoritarian/Armchair/VME_Authoritarian_Armchair</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+				<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+				<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+			</damageData>
+			<shadowData>
+				<volume>(0.23, 0.26, 0.23)</volume>
+			</shadowData>
+		</graphicData>
+
+	</ThingStyleDef>
+
+
+
+	<ThingStyleDef>
+		<defName>VME_Authoritarian_Apparel_Tuque</defName>
+		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/VME_AuthoritarianTuque/VME_Authoritarian_Tuque</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparelstyles/Single/VME_AuthoritarianTuque</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Authoritarian_AssaultRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianAssaultRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_Authoritarian_ChainShotgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianChainShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_Authoritarian_ChargeRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianChargeRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_Authoritarian_SniperRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianSniperRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_Authoritarian_HeavySMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianHeavySMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_Authoritarian_MachinePistol</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianMachinePistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<!-- ====== Shintao ======== -->
+
+
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>VME_Taoist_Table1x2c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Taoist/Tables/VME_Taoist_Table1x2</texPath>
+			<drawSize>(3,4)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>VME_Taoist_Table2x2c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Taoist/Tables/VME_Taoist_Table2x2</texPath>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>VME_Taoist_Table2x4c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Taoist/Tables/VME_Taoist_Table2x4</texPath>
+			<drawSize>(4,6)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>VME_Taoist_Table3x3c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Taoist/Tables/VME_Taoist_Table3x3</texPath>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+
+	<ThingStyleDef>
+		<defName>VME_Taoist_SculptureSmall</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Taoist/Sculptures/Small</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Taoist_SculptureLarge</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Taoist/Sculptures/Large</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Taoist_SculptureGrand</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Taoist/Sculptures/Grand</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>VME_Taoist_AltarSmall</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Taoist/Altars/VME_AltarTaoist1x1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shadowData>
+				<volume>(0.8, 1, 0.8)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Taoist_AltarMedium</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Taoist/Altars/VME_AltarTaoist1x3</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,1)</drawSize>
+			<shadowData>
+				<volume>(2.4, 1, 0.8)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Taoist_AltarLarge</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Taoist/Altars/VME_AltarTaoist2x3</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,2)</drawSize>
+			<shadowData>
+				<volume>(2.4, 1, 1.6)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Taoist_AltarGrand</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Taoist/Altars/VME_AltarTaoist3x3</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(2.4, 1, 2.4)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef Name="VME_Taoist_StandingLamp">
+		<defName>VME_Taoist_StandingLamp</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Taoist/VME_TaoistLampStanding</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef ParentName="VME_Taoist_StandingLamp">
+		<defName>VME_Taoist_StandingLamp_Red</defName>
+	</ThingStyleDef>
+
+	<ThingStyleDef ParentName="VME_Taoist_StandingLamp">
+		<defName>VME_Taoist_StandingLamp_Blue</defName>
+	</ThingStyleDef>
+
+	<ThingStyleDef ParentName="VME_Taoist_StandingLamp">
+		<defName>VME_Taoist_StandingLamp_Green</defName>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Taoist_Apparel_PowerArmorHelmet</defName>
+		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/VME_HelmetMarineTaoist/VME_HelmetMarineTaoist</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparelstyles/Single/VME_HelmetMarineTaoist</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_Taoist_Apparel_AdvancedHelmet</defName>
+		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/VME_HelmetAdvancedTaoist/VME_HelmetAdvancedTaoist</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparelstyles/Single/VME_HelmetAdvancedTaoist</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_Taoist_Apparel_ArmorHelmetRecon</defName>
+		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/VME_HelmetReconTaoist/VME_HelmetReconTaoist</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparelstyles/Single/VME_HelmetReconTaoist</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_Taoist_Apparel_ArmorHelmetCataphract</defName>
+		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/VME_HelmetCataphractTaoist/VME_HelmetCataphractTaoist</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparelstyles/Single/VME_HelmetCataphractTaoist</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_Taoist_Apparel_ArmorCataphract</defName>
+		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/VME_TaoistCataphractArmor/VME_TaoistCataphractArmor</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparelstyles/Single/VME_TaoistCataphractArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_Taoist_WarMask</defName>
+		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/VME_WarMaskTaoist/VME_WarMaskTaoist</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparelstyles/Single/VME_WarMaskTaoist</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>VME_Taoist_LongSword</defName>
+		<graphicData>
+			<texPath>Things/Weapons/TaoistWeapons/VME_TaoistLongsword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 
 
 

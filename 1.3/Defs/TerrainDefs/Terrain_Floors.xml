@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <!-- Ocular -->
+
+  <DesignatorDropdownGroupDef>
+    <defName>VME_Floor_CorporateFineStoneTiles</defName>
+    <label>corporate fine stone tiles</label>
+  </DesignatorDropdownGroupDef>
+
+
+
+  <TerrainDef ParentName="IdeoStoneTileBase" Name="VME_CorporateFineStoneTiles" Abstract="True">
+    <renderPrecedence>220</renderPrecedence>
+    <description>Fine stone tiles in a corporate style for expressing economic status. Slow to construct.</description>
+	<statBases>
+      <WorkToBuild>5000</WorkToBuild>
+      <Beauty>3</Beauty>
+    </statBases>
+	<researchPrerequisites>
+      <li>Stonecutting</li>
+	  
+    </researchPrerequisites>
+	 <tags>
+      <li>FineFloor</li>
+    </tags>
+    <texturePath>Terrain/Surfaces/VME_CorporateFineStoneTiles</texturePath>
+    <designatorDropdown>VME_Floor_CorporateFineStoneTiles</designatorDropdown>
+    <dominantStyleCategory>VME_Corporate</dominantStyleCategory>
+	<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </TerrainDef>
+
+  
+  <TerrainDef ParentName="VME_CorporateFineStoneTiles">
+    <defName>VME_CorporateFineTileSandstone</defName>
+    <label>corporate fine sandstone tile</label>
+    <color>(147,127,118)</color>
+    <costList>
+      <BlocksSandstone>20</BlocksSandstone>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="VME_CorporateFineStoneTiles">
+    <defName>VME_CorporateFineTileGranite</defName>
+    <label>corporate fine granite tile</label>
+    <color>(105,95,97)</color>
+    <costList>
+      <BlocksGranite>20</BlocksGranite>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="VME_CorporateFineStoneTiles">
+    <defName>VME_CorporateFineTileLimestone</defName>
+    <label>corporate fine limestone tile</label>
+    <color>(158,153,135)</color>
+    <costList>
+      <BlocksLimestone>20</BlocksLimestone>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="VME_CorporateFineStoneTiles">
+    <defName>VME_CorporateFineTileSlate</defName>
+    <label>corporate fine slate tile</label>
+    <color>(70,70,70)</color>
+    <costList>
+      <BlocksSlate>20</BlocksSlate>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="VME_CorporateFineStoneTiles">
+    <defName>VME_CorporateFineTileMarble</defName>
+    <label>corporate fine marble tile</label>
+    <color>(180,180,180)</color>
+    <costList>
+      <BlocksMarble>20</BlocksMarble>
+    </costList>
+  </TerrainDef>
+ 
+
+</Defs>

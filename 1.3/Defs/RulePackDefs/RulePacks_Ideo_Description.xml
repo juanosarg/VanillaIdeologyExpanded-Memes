@@ -13,6 +13,7 @@
 			</include>
 			<rulesStrings>
 				<!-- generic basis -->
+				<li>serketistBasis   ->There is no higher lifeform than the Hive Queens. Their nourishing jelly is like ambrosia, and the entire world should be remade in their image.</li>
 				<li>serketistBasis   ->In its hubris, humanity accidentally stumbled upon the creation of the perfect lifeform: Insectoids.</li>
 				<li>serketistBasis   ->The runaway creation of some forgotten ancient geneticist, Insectoids have evolved to become the perfect lifeform.</li>
 				<li>serketistBasis   ->Threatened by the Mechanoid menace, mankind engineered the perfect lifeform: Insectoids.</li>
@@ -167,7 +168,7 @@
         <li>lessonIntro->Are you feeling lost? Perhaps you haven't yet figured out this very simple concept:</li>
 		<li>lessonIntro->They tried to tempt me with a life of rich, dull productivity, but they couldn't fool me:</li>
 
-		
+		<li>lessonMain->Pleasure, the satisfaction of bodily desires, is the highest good and proper aim of human life. Whether through religion or philosophy our entire lives should be focused on enjoying ourselves as much as possible</li>
 		<li>lessonMain->I finally figured out the only reason to be alive is to enjoy it</li>
 		<li>lessonMain->The only way to get rid of temptation is to yield to it</li>
 		<li>lessonMain->Salvation is for the feeble. I don't want salvation, I want life, all of life, the miserable as well as the superb</li>
@@ -201,6 +202,7 @@
       </include>
       <rulesStrings>
         <!-- generic basis -->
+		<li>eschatologismBasis   ->This world is tainted, impure, and it must be purged. We shall bring the end of days and a new Universe will be reborn from the ashes of the current one.</li>
         <li>eschatologismBasis   ->There is nothing of value in this world anymore. Vast post-human intelligences scheming in the dark. Vicious genetically engineered creations rampaging across the land. Greedy, stupid, ambitious humans preying on the weak. It must all be destroyed.</li>
         <li>eschatologismBasis   ->This world needs to be purged. Too long have we left it go unchecked. Human stupidity running rampant and ruining everything.</li>
 		<li>eschatologismBasis   ->It is an inescapable fact: the only way forward is to start over and begin anew. This world must be destroyed.</li>
@@ -383,6 +385,8 @@
         <li>episode(priority=-1)-></li> <!-- allow zero or more episodes -->
 
         <!-- generic creation -->
+		<li>creation->It is limiting beyond words to bind oneself to any particular god or belief. The combined gifts of all supreme beings, philosophers and forces is what should truly be appreciated.</li>
+		<li>creation->All religions and ideologies point to the whole truth, that a single transcendent purpose unites all things.</li>
         <li>creation->It seems that the teachings of the ancient [religion] and [religion2] scholars had a lot of truth to teach us.</li>
         <li>creation->Truth can be found in all religions and ideologies, as they are all part of the greater human experience. Whether it is the teachings of the [religion] texts or the philosophies of the ancient [religion2] scholars, we can learn about the universe by opening our minds to this truth.</li>
         <li>creation->Human beings are inquisitive creatures, and as such we have invented some incredible concepts: either [religion] teachings or [religion2] tennets hold a portion of the complete truth, and as such all beliefs are intrinsically true and useful.</li>
@@ -431,6 +435,7 @@
         <li>story(priority=-999)-></li> <!-- allow zero or more stories -->
 
         <!-- generic setup -->
+		<li>setup->[founderName] made us see that the existence of God, of the divine and the supernatural, is unknown and unknowable.</li>
         <li>setup->[founderName] was the first to realize that we didn't need Gods to explain the Universe.</li>
         <li>setup->Struck by the non-spiritual nature of the world, [founderName] studied history and philosophy and discovered the new truth that guides us.</li>
         <li>setup->During an ancient ritual, [founderName] began to question the validity of [founder_possessive] former beliefs. Why put your whole life in service of an unknowable God?</li>
@@ -497,6 +502,7 @@
         <li>lessonIntro->You will begin the journey of the self, through the self, to the self. Then you'll see that</li>
         <li>lessonIntro->You cannot always control what goes on outside. But you can always control what goes on inside. Once that is achieved you will see that</li>
         <li>lessonIntro->The longest journey of any person is the journey inward. This journey shows you that</li>
+		<li>lessonIntro->Truth lies in pursuing a spiritual philosophy without adherence to a religion, personal growth and inner peace of an individual are more important than a relationship with the divine, and thus</li>
 
 
         <!-- generic reinforcement -->
@@ -529,6 +535,7 @@
         <li>r_pattern->"[r_creation] [r_episode] [r_episode]."\n\n  - Lao Tzu, Tao Te Ching</li>
 
         <!-- generic creation -->
+		<li>creation->By living in harmony with the Tao, one can achieve perfection and become one with the unplanned rhythms of the universe.</li>
         <li>creation->Being deeply loved by someone gives you strength, while loving someone deeply gives you courage.</li>
         <li>creation->Simplicity, patience, compassion. These three are the greatest treasures.</li>
         <li>creation->The journey of a thousand miles begins with a single step.</li>

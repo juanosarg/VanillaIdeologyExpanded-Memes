@@ -3,7 +3,7 @@
 	<MemeDef>
 		<defName>VME_Structure_Serketist</defName>
 		<label>serketism</label>
-		<description>There is no higher lifeform than the Hive Queens. Their nourishing jelly is like ambrosia, and the entire world should be remade in their image.</description>
+		<description>The true face of gods is found in the bite of a spider, the sting of the scorpion. Let those of many legs crawl all over us.</description>
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_Serketism</iconPath>
 		<impact>0</impact>
@@ -61,7 +61,7 @@
 	<MemeDef>
 		<defName>VME_Structure_Esotericism</defName>
 		<label>esotericism</label>
-		<description>There is a secret world hiding behind reality. Occult knowledge can be obtained by a select group of chosen people. Studying and understanding the obscure words of ancient tomes will allow us to unlock these secrets.</description>
+		<description>The forces that guide this world are not for the faint of heart nor weak of will. Only through forbidden texts, dark pacts and proper initiation can one truly see beyond the veil.</description>
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_Esotericism</iconPath>
 		<impact>0</impact>
@@ -112,7 +112,7 @@
 	<MemeDef>
 		<defName>VME_Structure_Bacchanalianism</defName>
 		<label>hedonism</label>
-		<description>Pleasure, the satisfaction of bodily desires, is the highest good and proper aim of human life. Whether through religion or philosophy our entire lives should be focused on enjoying ourselves as much as possible.</description>
+		<description>Man's time on this earth is brief and fleeting, to deny oneself of any of life's pleasures such as lust or gluttony is the one true sin. Throw wide the gates to tireless festivity, live and breathe endless splendor.</description>
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_Bacchanalianism</iconPath>
 		<impact>0</impact>
@@ -217,7 +217,7 @@
 	<MemeDef>
 		<defName>VME_Structure_Eschatologism</defName>
 		<label>eschatologism</label>
-		<description>This world is tainted, impure, and it must be purged. We shall bring the end of days and a new Universe will be reborn from the ashes of the current one.</description>
+		<description>To be cursed to walk this earth is true torture, and whether by means of cataclysm, famine, or pestilance the departure of ones soul from their mortal coil should be celebrated.</description>
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_Eschatologism</iconPath>
 		<impact>0</impact>
@@ -313,6 +313,12 @@
 				</li>
 			</constants>
 		</descriptionMaker>
+		<thingStyleCategories>
+			<li>
+				<category>VME_Authoritarian</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
 		<symbolPacks>
 			<li>
 				<theme>authoritarianism</theme>
@@ -324,7 +330,7 @@
 	<MemeDef>
 		<defName>VME_Structure_CultOfPersonality</defName>
 		<label>cult of personality</label>
-		<description>Only by following our revered leader may we progress and succeed. Our leader -who should be admired and loved- knows all, and sees all.</description>
+		<description>It is forbidden to question the crown of a king or queen, even the soil itself is undeserving to feel the touch of our leaders' divine feet. Our leader should want for nothing and through their grand design we will prosper.</description>
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_CultofPersonality</iconPath>
 		<impact>0</impact>
@@ -438,7 +444,7 @@
 	<MemeDef>
 		<defName>VME_Structure_Omnism</defName>
 		<label>omnism</label>
-		<description>All religions and ideologies point to the whole truth, that a single transcendent purpose unites all things.</description>
+		<description>All creeds and beliefs have both truths and fabrications, a healthy mind will listen carefully and with scrutiny to what tenets say as well as what they choose not to say.</description>
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_Omnism</iconPath>
 		<impact>0</impact>
@@ -484,7 +490,7 @@
 	<MemeDef>
 		<defName>VME_Structure_Agnosticism</defName>
 		<label>agnosticism</label>
-		<description>The existence of God, of the divine and the supernatural is unknown and unknowable,</description>
+		<description>The theory that any gods or all-powerful force watches or guides us down to trivialities is either asinine or incomprehensible by mere man, and equally so is the idea that all came from nothing. It is better to ignore such dogma and respect the freedom of those who find respite in such beliefs.</description>
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_Agnosticism</iconPath>
 		<impact>0</impact>
@@ -540,7 +546,7 @@
 	<MemeDef>
 		<defName>VME_Structure_SecularSpirituality</defName>
 		<label>secular spirituality</label>
-		<description>Truth lies in pursuing a spiritual philosophy without adherence to a religion, emphasizing the personal growth and inner peace of an individual, rather than a relationship with the divine.</description>
+		<description>Putting one’s faith in rituals, prayer or powers beyond only delays one’s personal growth. Enlightenment, happiness, and purpose can all be found from within and through any matter one feels is right.</description>
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_SecularSpirituality</iconPath>
 		<impact>0</impact>
@@ -585,9 +591,9 @@
 		</symbolPacks>
 	</MemeDef>
 	<MemeDef>
-		<defName>VME_Structure_Taoism</defName>
-		<label>taoist origin</label>
-		<description>By living in harmony with the Tao, one can achieve perfection and become one with the unplanned rhythms of the universe.</description>
+		<defName>VME_Structure_Shintaoism</defName>
+		<label>shintaoist origin</label>
+		<description>This ideoligion is a descendant of ancient Shinto and Taoism. It may have very different precepts than those of thousands of years ago, but its symbols are similar.</description>
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_Taoism</iconPath>
 		<impact>0</impact>
@@ -605,7 +611,7 @@
 				<li>memeLeaderNoun->master of the Tao</li>
 				<li>memeLeaderAdjective->spiritual</li>
 				<li>memeLeaderAdjective->serene</li>
-				<li>memeMoralist->taoist priest</li>
+				<li>memeMoralist->shintaoist priest</li>
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
@@ -621,10 +627,16 @@
 				</li>
 			</constants>
 		</descriptionMaker>
+		<thingStyleCategories>
+			<li>
+				<category>VME_Shintaoism</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
 		<symbolPacks>
 			<li>
-				<theme>taoism</theme>
-				<adjective>taoist</adjective>
+				<theme>shintao</theme>
+				<adjective>shintaoist</adjective>
 				<member>initiate</member>
 			</li>
 		</symbolPacks>
@@ -632,7 +644,7 @@
 	<MemeDef>
 		<defName>VME_Structure_Corporate</defName>
 		<label>corporate origin</label>
-		<description>There is only The Company. All other ideas or concepts are subordinate to it.</description>
+		<description>No Gods or Kings should be worshipped, only man and his unslakable desire for wealth. Colonies should be managed like companies.</description>
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_Corporate</iconPath>
 		<impact>0</impact>
