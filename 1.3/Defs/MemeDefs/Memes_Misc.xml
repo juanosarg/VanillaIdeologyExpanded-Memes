@@ -66,9 +66,22 @@
 		</descriptionMaker>
 		<requireOne>
 			<li>
-				<li>Proselytizing_Frequently</li>
+				<li>VME_Proselytizing_Forceful</li>
+			</li>
+			<li>
+				<li>IdeoDiversity_Abhorrent</li>
+			</li>
+			<li>
+				<li>Slavery_Acceptable</li>
+				<li>Slavery_Honorable</li>
 			</li>
 		</requireOne>
+		<requiredRituals>
+			<li>
+				<precept>VME_ViolentConversionPrecept</precept>
+				<pattern>VME_ViolentConversionRitual</pattern>
+			</li>
+		</requiredRituals>
 		<symbolPacks>
 			<li>
 				<ideoName>Strictness</ideoName>
@@ -181,7 +194,7 @@
 		<exclusionTags>
 			<li>VME_GodEmperor</li>
 		</exclusionTags>
-		<impact>1</impact>
+		<impact>2</impact>
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->absolute</li>
@@ -244,7 +257,7 @@
 		<groupDef>Misc</groupDef>
 		<description>Work gives a man dignity. Only through hard work and being productive can a person really grow.</description>
 		<iconPath>UI/Memes/HardcoreIndustrialism</iconPath>
-		<impact>1</impact>
+		<impact>2</impact>
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->high-yielding</li>
@@ -302,7 +315,7 @@
 			</li>
 		</symbolPacks>
 	</MemeDef>
-	
+
 	<MemeDef>
 		<defName>VME_Gestalt</defName>
 		<label>gestalt</label>
@@ -311,8 +324,8 @@
 		<allowDuringTutorial>true</allowDuringTutorial>
 		<groupDef>Individualism</groupDef>
 		<impact>1</impact>
-		
-		
+
+
 		<exclusionTags>
 			<li>Individualism</li>
 		</exclusionTags>
@@ -328,7 +341,7 @@
 				<li>memeConcept->total unity</li>
 				<li>memeLeaderNoun->many-as-one</li>
 				<li>memeLeaderNoun->swarm</li>
-				
+
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
@@ -369,168 +382,199 @@
 			</rules>
 		</descriptionMaker>
 		<symbolPacks>
-			
+
 			<li>
 				<theme>hive mind</theme>
 				<adjective>gestalt</adjective>
 				<member>extension</member>
 			</li>
+
+		</symbolPacks>
+
+	</MemeDef>
+
+	<MemeDef>
+		<defName>VME_Fleshcrafting</defName>
+		<label>fleshcrafting</label>
+		<description>Technology should be shunned, unless it serves the flesh. Only through extreme biological experimentation may we unlock our hidden potential.</description>
+		<iconPath>UI/Memes/Fleshcrafting</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>3</impact>
+		<exclusionTags>
+			<li>FleshAugmentation</li>
+		</exclusionTags>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->biotechnological</li>
+				<li>memeAdjective->aberrant</li>
+				<li>memeAdjective->organic</li>
+				<li>memeAdjective->fleshcrafted</li>
+				<li>memeAdjective->mutant</li>
+				<li>memeCreed->modification</li>
+				<li>memeCreed->mutation</li>       
+				<li>memeHyphenPrefix->bio</li>
+				<li>memeHyphenPrefix->biomechanic</li>     
+				<li>memeConcept->augmentation</li>      
+				<li>memeLeaderNoun->flesh-shaper</li>
+				<li>memeLeaderNoun->ubermutant</li>
+				<li>memeLeaderNoun->shaper</li>
+				<li>memeLeaderAdjective->bio</li>        
+				<li>memeMoralist->crafter</li>
+				<li>memeMoralist->mutator</li>
+
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Fleshcrafting)        ->[deity0_name] granted us the knowledge of fleshcrafting, that we may use it to improve and remake ourselves in [deity0_possessive] perfect image.</li>
+					<li>episode(uses=1,tag=meme_Fleshcrafting)  ->Human bio-shapers studied the works of [deity0_name], which pleased [deity0_objective].</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Fleshcrafting)           ->On the [place_summary] [place_name], the [memberNamePlural] found the words of [deity0_name], carved into the quivering, mutated flesh of some gigantic space creature.</li>
+					<li>conflict(tag=meme_Fleshcrafting)        ->A technologist [foeLeader] envied the enhanced progress of the [memberNamePlural], and [foeLeader_possessive] [foeSoldiers] destroyed their flesh vats with [place_personalWeapon]s.</li>
+					<li>founderJoin(tag=meme_Fleshcrafting)     ->A cunning [place_job] named [founderName] mutated [founder_possessive] vocal chords to warn the [memberNamePlural] of the approach of the [foeSoldiers].</li>
+					<li>victory(tag=meme_Fleshcrafting)         ->[founderName] received divine fleshcrafting knowledge from [deity0_name], and used it to enhance the bodies and minds of the [memberNamePlural] so they could defeat the [foeSoldiers].</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Fleshcrafting)           ->[founderName] was a bio-scientist in the early days of human planetary colonization. Seeing the absurd ethical restrictions of the common colonies, [founder_pronoun] took a small ship to found [founder_possessive] own movement.</li>
+					<li>story(uses=1,tag=meme_Fleshcrafting)    ->[founderName] assembled a team of great fleshcrafters and geneticists to re-define humanity.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Fleshcrafting)         ->The oldest shaper in my division taught me the history of fleshcrafting, how genetic experimentation on humans has always been seen with fear, but this was not his true lesson. He was really leading me to understand that</li>
+					<li>lesson(tag=meme_Fleshcrafting)              ->humanity's flesh is nothing but a canvas. An empty, white canvas waiting to be filled</li>
+					<li>lessonReinforcement(tag=meme_Fleshcrafting) ->And any limitations imposed on the artist only serve to spoil the final result of his art.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Fleshcrafting)    ->Humanity's pursuit of technology gave birth to the all-powerful archotechs as the rightful next step in the development of consciousness.</li>
+					<li>archistFact(tag=meme_Fleshcrafting)     ->Fleshcrafting teaches us that technology by itself is inhumane, if not accompanied by the guiding hand of biological evolution.</li>
+					<li>archistProphecy(tag=meme_Fleshcrafting) ->[inTheEnd], we shall modify our own bodies and intertwine them with the archotechs.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Fleshcrafting)    ->The spirit world drives every action in the universe, and mortal flesh is just another manifestation of it.</li>
+					<li>animistFact(tag=meme_Fleshcrafting)     ->We will modify our own bodies until they are a valid vessel for the spirits.</li>
+					<li>animistFact(tag=meme_Fleshcrafting)     ->When the spirits become fused with our flesh, both will be combined and become more powerful.</li>
+					<li>animistProphecy(tag=meme_Fleshcrafting) ->[itIsSaid] that one day the wielder of the [relic0_name] will summon its spirit who will teach humanity the ultimate gift of fleshcrafting.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Fleshcrafting)->[itIsSaid] with the proper technology we can shape our bodies to be like those of insects. Tough and immutable, our new chittering forms will be as close to perfection as possible.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Fleshcrafting)->Our human bodies will not be able to withstand the madness and cosmic insanity brought by these entities: we must shape our forms beyond the imaginable so they are capable of resisting their onslaught.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Fleshcrafting)->In shaping our bodies we will gain an invaluable insight into the secrets of the Cosmos.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Fleshcrafting)->We will shape our bodies, contorting them into nightmarish shapes that will bring with them the end of all things.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Fleshcrafting)->The company's policy about self-mutilation and fleshcrafting is crystal clear: if it helps the bottom line, go ahead. Just please clean the meeting room afterwards.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Biotechnologism</ideoName>
+				<theme>biotechnology</theme>
+				<adjective>biotechnologistic</adjective>
+				<member>biotechnologist</member>
+			</li>
+			<li>
+				<ideoName>Fleshcrafting</ideoName>
+				<theme>fleshcrafting</theme>
+				<adjective>fleshcrafter</adjective>
+				<member>fleshcrafter</member>
+			</li>
+			<li>
+				<ideoName>Shaping</ideoName>
+				<theme>shaping</theme>
+				<adjective>shaping</adjective>
+				<member>shaper</member>
+			</li>
 			
 		</symbolPacks>
+		
 		
 	</MemeDef>
 	
 	<MemeDef>
-    <defName>VME_Fleshcrafting</defName>
-    <label>fleshcrafting</label>
-    <description>Technology should be shunned. Only through extreme biological experimentation may we unlock our hidden potential.</description>
-    <iconPath>UI/Memes/Fleshcrafting</iconPath>
-    <groupDef>Misc</groupDef>
-    <impact>2</impact>
-    <exclusionTags>
-      <li>FleshAugmentation</li>
-    </exclusionTags>
-    <generalRules>
-      <rulesStrings>
-        <li>memeAdjective->biotechnological</li>
-        <li>memeAdjective->aberrant</li>
-        <li>memeAdjective->organic</li>
-		<li>memeAdjective->fleshcrafted</li>
-		<li>memeAdjective->mutant</li>
-        <li>memeCreed->modification</li>
-        <li>memeCreed->mutation</li>       
-        <li>memeHyphenPrefix->bio</li>
-        <li>memeHyphenPrefix->biomechanic</li>     
-        <li>memeConcept->augmentation</li>      
-        <li>memeLeaderNoun->flesh-shaper</li>
-        <li>memeLeaderNoun->ubermutant</li>
-        <li>memeLeaderNoun->shaper</li>
-        <li>memeLeaderAdjective->bio</li>        
-        <li>memeMoralist->crafter</li>
-        <li>memeMoralist->mutator</li>
-        
-      </rulesStrings>
-    </generalRules>
-    <descriptionMaker>
-      <rules>
-        <rulesStrings>
-          <!-- theist myth -->
-          <li>creation(tag=meme_Fleshcrafting)        ->[deity0_name] granted us the knowledge of fleshcrafting, that we may use it to improve and remake ourselves in [deity0_possessive] perfect image.</li>
-          <li>episode(uses=1,tag=meme_Fleshcrafting)  ->Human bio-shapers studied the works of [deity0_name], which pleased [deity0_objective].</li>
-          <!-- theist founder -->
-          <li>intro(tag=meme_Fleshcrafting)           ->On the [place_summary] [place_name], the [memberNamePlural] found the words of [deity0_name], carved into the quivering, mutated flesh of some gigantic space creature.</li>
-          <li>conflict(tag=meme_Fleshcrafting)        ->A technologist [foeLeader] envied the enhanced progress of the [memberNamePlural], and [foeLeader_possessive] [foeSoldiers] destroyed their flesh vats with [place_personalWeapon]s.</li>
-          <li>founderJoin(tag=meme_Fleshcrafting)     ->A cunning [place_job] named [founderName] mutated [founder_possessive] vocal chords to warn the [memberNamePlural] of the approach of the [foeSoldiers].</li>
-          <li>victory(tag=meme_Fleshcrafting)         ->[founderName] received divine fleshcrafting knowledge from [deity0_name], and used it to enhance the bodies and minds of the [memberNamePlural] so they could defeat the [foeSoldiers].</li>
-          <!-- ideological founder -->
-          <li>setup(tag=meme_Fleshcrafting)           ->[founderName] was a bio-scientist in the early days of human planetary colonization. Seeing the absurd ethical restrictions of the common colonies, [founder_pronoun] took a small ship to found [founder_possessive] own movement.</li>
-          <li>story(uses=1,tag=meme_Fleshcrafting)    ->[founderName] assembled a team of great fleshcrafters and geneticists to re-define humanity.</li>
-          <!-- ideological lesson -->
-          <li>lessonIntro(tag=meme_Fleshcrafting)         ->The oldest shaper in my division taught me the history of fleshcrafting, how genetic experimentation on humans has always been seen with fear, but this was not his true lesson. He was really leading me to understand that</li>
-          <li>lesson(tag=meme_Fleshcrafting)              ->humanity's flesh is nothing but a canvas. An empty, white canvas waiting to be filled</li>
-          <li>lessonReinforcement(tag=meme_Fleshcrafting) ->And any limitations imposed on the artist only serve to spoil the final result of his art.</li>
-          <!-- archist -->
-          <li>archistBasis(tag=meme_Fleshcrafting)    ->Humanity's pursuit of technology gave birth to the all-powerful archotechs as the rightful next step in the development of consciousness.</li>
-          <li>archistFact(tag=meme_Fleshcrafting)     ->Technology allows humans to be more like the archotechs.</li>
-          <li>archistProphecy(tag=meme_Fleshcrafting) ->[inTheEnd], the archotechs will depart. Only those who are sufficiently augmented will be allowed to go with them.</li>
-          <!-- animist -->
-          <li>animistBasis(tag=meme_Fleshcrafting)    ->The spirit world drives every action in the universe, and it is only by learning and controlling the laws of the universe that we can integrate with it.</li>
-          <li>animistFact(tag=meme_Fleshcrafting)     ->Like seeks like - build a device for a purpose and it will filled with a spirit of a like nature.</li>
-          <li>animistFact(tag=meme_Fleshcrafting)     ->When technology is fused with flesh, the spirits of both are combined and become more powerful.</li>
-          <li>animistProphecy(tag=meme_Fleshcrafting) ->[itIsSaid] that one day the wielder of the [relic0_name] will summon its spirit who will teach humanity the ultimate bio-fusion technology.</li>
-        </rulesStrings>
-      </rules>
-    </descriptionMaker>
-    <symbolPacks>
-      <li>
-        <ideoName>Technologism</ideoName>
-        <theme>technology</theme>
-        <adjective>technologistic</adjective>
-        <member>technologist</member>
-      </li>
-      <li>
-        <ideoName>Progressism</ideoName>
-        <theme>progress</theme>
-        <adjective>progressist</adjective>
-        <member>progressor</member>
-      </li>
-      <li>
-        <ideoName>Machinism</ideoName>
-        <theme>machinery</theme>
-        <adjective>machinist</adjective>
-        <member>machinist</member>
-      </li>
-      <li>
-        <ideoName>Steelism</ideoName>
-        <theme>steel</theme>
-        <adjective>steelist</adjective>
-        <member>steeler</member>
-      </li>
-      <li>
-        <ideoName>Automatism</ideoName>
-        <theme>automata</theme>
-        <adjective>automatist</adjective>
-        <member>automator</member>
-      </li>
-      <li>
-        <ideoName>Augmentism</ideoName>
-        <theme>augmentation</theme>
-        <adjective>augmentist</adjective>
-        <member>augmentor</member>
-      </li>
-    </symbolPacks>
-    <selectOneOrNone>
-      <noneChance>0.8</noneChance>
-      <preceptThingPairs>
-        <li>
-          <precept>ApparelDesired_Soft_Subordinate</precept>
-          <thing>Apparel_Slicecap</thing>
-        </li>
-      </preceptThingPairs>
-    </selectOneOrNone>
-    <preferredWeaponClasses>
-      <noble>Ultratech</noble>
-      <despised>Neolithic</despised>
-    </preferredWeaponClasses>
-    <requireOne>
-      <li>
-        <li>SleepAccelerator_Preferred</li>
-      </li>
-      <li>
-        <li>NeuralSupercharge_Preferred</li>
-      </li>
-      <li>
-        <li>Biosculpting_Accelerated</li>
-      </li>
-      <li>
-        <li>AgeReversal_Demanded</li>
-      </li>
-      <li>
-        <li>NutrientPasteEating_DontMind</li>
-      </li>
-      <li>
-        <li>BodyMod_Approved</li>
-      </li>
-    </requireOne>
-    <styleItemTags>
-      <li>
-        <tag>NoBeard</tag>
-        <weightFactor>2</weightFactor>
-      </li>
-    </styleItemTags>
-    <thingStyleCategories>
-      <li>
-        <category>Techist</category>
-        <priority>4</priority>
-      </li>
-    </thingStyleCategories>
-    <addDesignators>
-      <li>Tile_Transhumanist</li>
-      <li>SleepAccelerator</li>
-      <li>NeuralSupercharger</li>
-    </addDesignators>
-    <addDesignatorGroups>
-      <li>Floor_Transhumanist_Carpet</li>
-    </addDesignatorGroups>
-  </MemeDef>
+		<defName>VME_HolyDiseases</defName>
+		<label>holy diseases</label>
+		<description>.</description>
+		<iconPath>UI/Memes/HolyDiseases</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>2</impact>		
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->diseased</li>
+				<li>memeAdjective->infirm</li>
+				<li>memeAdjective->sick</li>
+				<li>memeAdjective->ailing</li>
+				<li>memeAdjective->ill</li>				 
+				<li>memeHyphenPrefix->sick</li>
+				<li>memeConcept->disease</li> 
+				<li>memeConcept->sickness</li>      
+				<li>memeLeaderNoun->purulent one</li>
+				<li>memeLeaderNoun->herald of Aesculapius</li>
+				<li>memeLeaderNoun->plaguebriger</li>				   
+				<li>memeMoralist->plague doctor</li>
+				
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_HolyDiseases)        ->[deity0_name] filled the Universe with all kinds of viruses and bacteria, diminutive organisms that are the bearers of [deity0_possessive] gifts.</li>
+					<li>episode(uses=1,tag=meme_HolyDiseases)  ->We accepted [deity0_name]'s bounty, offering our bodies as vessels for [deity0_possessive] myriad diseases, which pleased [deity0_objective].</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_HolyDiseases)           ->On the [place_summary] [place_name], the [memberNamePlural] found a sealed tomb with a huge holy symbol of [deity0_name].</li>
+					<li>conflict(tag=meme_HolyDiseases)        ->An archeologist directed the [memberNamePlural] to open the ancient tomb, and within it were found the microbiological archives of a long lost civilization: a panoply of contagious diseases as the world hadn't seen in millenia.</li>
+					<li>founderJoin(tag=meme_HolyDiseases)     ->A most revered priest named [founderName] infected himself with one of the diseases from the archive, showing the [memberNamePlural] that they were actually a gift from [deity0_name].</li>
+					<li>victory(tag=meme_HolyDiseases)         ->[founderName] received [deity0_name]'s blessing, and to this day we offer our bodies as vessels for [deity0_possessive] myriad diseases.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_HolyDiseases)           ->[founderName] was a bio-scientist in the early days of human planetary colonization. Seeing the soft, complacent behavior of the colonies, [founder_pronoun] took a small ship to found [founder_possessive] own movement.</li>
+					<li>story(uses=1,tag=meme_HolyDiseases)    ->[founderName] assembled a team of great geneticists to modify the human body, making it more resistant to diseases by gradually inflicting healthy bodies with them.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_HolyDiseases)         ->The oldest doctor in my hospital taught me the history of disease, how humanity had always feared sickness and death. He was really leading me to understand that</li>
+					<li>lesson(tag=meme_HolyDiseases)              ->microorganisms are also part of nature, and by not embracing disease we are only making ourselves weaker to it</li>
+					<li>lessonReinforcement(tag=meme_HolyDiseases) ->Only by accepting disease as an integral part of life may we truly realize our potential.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_HolyDiseases)    ->Humanity's pursuit of technology gave birth to the all-powerful archotechs as the rightful next step in the development of consciousness.</li>
+					<li>archistFact(tag=meme_HolyDiseases)     ->Fleshcrafting teaches us that technology by itself is inhumane, if not accompanied by the guiding hand of biological evolution.</li>
+					<li>archistProphecy(tag=meme_HolyDiseases) ->[inTheEnd], we shall modify our own bodies and intertwine them with the archotechs.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_HolyDiseases)    ->The spirit world drives every action in the universe, and mortal flesh is just another manifestation of it.</li>
+					<li>animistFact(tag=meme_HolyDiseases)     ->We will modify our own bodies until they are a valid vessel for the spirits.</li>
+					<li>animistFact(tag=meme_HolyDiseases)     ->When the spirits become fused with our flesh, both will be combined and become more powerful.</li>
+					<li>animistProphecy(tag=meme_HolyDiseases) ->[itIsSaid] that one day the wielder of the [relic0_name] will summon its spirit who will teach humanity the ultimate gift of fleshcrafting.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_HolyDiseases)->[itIsSaid] with the proper technology we can shape our bodies to be like those of insects. Tough and immutable, our new chittering forms will be as close to perfection as possible.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_HolyDiseases)->Our human bodies will not be able to withstand the madness and cosmic insanity brought by these entities: we must shape our forms beyond the imaginable so they are capable of resisting their onslaught.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_HolyDiseases)->In shaping our bodies we will gain an invaluable insight into the secrets of the Cosmos.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_HolyDiseases)->We will shape our bodies, contorting them into nightmarish shapes that will bring with them the end of all things.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_HolyDiseases)->The company's policy about self-mutilation and fleshcrafting is crystal clear: if it helps the bottom line, go ahead. Just please clean the meeting room afterwards.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Biotechnologism</ideoName>
+				<theme>biotechnology</theme>
+				<adjective>biotechnologistic</adjective>
+				<member>biotechnologist</member>
+			</li>
+			<li>
+				<ideoName>Fleshcrafting</ideoName>
+				<theme>fleshcrafting</theme>
+				<adjective>fleshcrafter</adjective>
+				<member>fleshcrafter</member>
+			</li>
+			<li>
+				<ideoName>Shaping</ideoName>
+				<theme>shaping</theme>
+				<adjective>shaping</adjective>
+				<member>shaper</member>
+			</li>
+			
+		</symbolPacks>
+		
+		
+	</MemeDef>
 </Defs>

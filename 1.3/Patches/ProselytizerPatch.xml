@@ -3,6 +3,7 @@
 
 
 	<Operation Class="PatchOperationAdd"> 
+	<success>Always</success>
 		<xpath>/Defs/MemeDef[defName="Proselytizer"]</xpath>
 		<value>
 			
@@ -13,6 +14,7 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationReplace"> 
+	<success>Always</success>
 		<xpath>/Defs/MemeDef[defName="Proselytizer"]/groupDef</xpath>
 		<value>
 			

@@ -22,6 +22,23 @@
     </requiredMemes>
   </PreceptDef>
   
+  <PreceptDef>
+    <defName>VME_ViolentConversionPrecept</defName>
+    <label>violent conversion</label>
+    <description>Infidels must either join our cause, or their skulls shall be caved in with a thousand hammers.</description>
+	<issue>Ritual</issue>
+	 <preceptClass>Precept_Ritual</preceptClass>
+    <visible>true</visible>
+    <countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+    <selectionWeight>1.0</selectionWeight>
+    <ritualPatternBase>VME_ViolentConversionRitual</ritualPatternBase>
+    <iconPath>UI/Rituals/VME_AlphaMeme</iconPath>
+    <ignoreNameUniqueness>false</ignoreNameUniqueness>
+	<requiredMemes>
+      <li>VME_ViolentConversion</li>
+    </requiredMemes>
+  </PreceptDef>
+  
   
 
  

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <PreceptDef>
+    <defName>VME_Proselytizing_Forceful</defName>
+    <issue>Proselytizing</issue>
+    <label>forceful</label>
+    <description>Those who know the absolute truth have a duty to always spread it and drive out other beliefs, by force if necessary.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>-10</displayOrderInIssue>
+    <requiredMemes>
+      <li>VME_ViolentConversion</li>
+    </requiredMemes>
+    <associatedMemes>
+      <li>VME_ViolentConversion</li>
+    </associatedMemes>
+    <statFactors>
+      <SocialIdeoSpreadFrequencyFactor>8</SocialIdeoSpreadFrequencyFactor>
+    </statFactors>
+    <proselytizes>true</proselytizes>
+  </PreceptDef>
+
+</Defs>
