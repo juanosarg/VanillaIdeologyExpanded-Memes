@@ -492,7 +492,7 @@
 	<MemeDef>
 		<defName>VME_HolyDiseases</defName>
 		<label>holy diseases</label>
-		<description>.</description>
+		<description>To be touched by pestilence is a boon to be coveted. As diseases spread, so too shall our influence.</description>
 		<iconPath>UI/Memes/HolyDiseases</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>		
@@ -532,45 +532,1684 @@
 					<li>lesson(tag=meme_HolyDiseases)              ->microorganisms are also part of nature, and by not embracing disease we are only making ourselves weaker to it</li>
 					<li>lessonReinforcement(tag=meme_HolyDiseases) ->Only by accepting disease as an integral part of life may we truly realize our potential.</li>
 					<!-- archist -->
-					<li>archistBasis(tag=meme_HolyDiseases)    ->Humanity's pursuit of technology gave birth to the all-powerful archotechs as the rightful next step in the development of consciousness.</li>
-					<li>archistFact(tag=meme_HolyDiseases)     ->Fleshcrafting teaches us that technology by itself is inhumane, if not accompanied by the guiding hand of biological evolution.</li>
-					<li>archistProphecy(tag=meme_HolyDiseases) ->[inTheEnd], we shall modify our own bodies and intertwine them with the archotechs.</li>
+					<li>archistBasis(tag=meme_HolyDiseases)    ->As we are like insignificant microbes to the archotechs, we need to ask ourselves: do we want to be handled as microbes usually are?</li>
+					<li>archistFact(tag=meme_HolyDiseases)     ->If the archotechs treated us as we treat the creatures that seem insignificant to us, they'd have wiped us from existance a long time ago.</li>
+					<li>archistProphecy(tag=meme_HolyDiseases) ->Therefore, it stands to reason to treat diseases as we'd like to be treated by entities who are so far above us in the evolutionary scale as we are to microorganisms.</li>
 					<!-- animist -->
-					<li>animistBasis(tag=meme_HolyDiseases)    ->The spirit world drives every action in the universe, and mortal flesh is just another manifestation of it.</li>
-					<li>animistFact(tag=meme_HolyDiseases)     ->We will modify our own bodies until they are a valid vessel for the spirits.</li>
-					<li>animistFact(tag=meme_HolyDiseases)     ->When the spirits become fused with our flesh, both will be combined and become more powerful.</li>
-					<li>animistProphecy(tag=meme_HolyDiseases) ->[itIsSaid] that one day the wielder of the [relic0_name] will summon its spirit who will teach humanity the ultimate gift of fleshcrafting.</li>
+					<li>animistBasis(tag=meme_HolyDiseases)    ->In the world of spirits, everything has a corresponding entity that guardas it and protects it.</li>
+					<li>animistFact(tag=meme_HolyDiseases)     ->It stands to reason that even the most insignificant and smallest of beings have a corresponding spirit, too.</li>					
+					<li>animistProphecy(tag=meme_HolyDiseases) ->By offering our mortal bodies as vessels for the spirits of disease, we will ensure to always be on their good graces.</li>
 					<!-- serketist -->
-					<li>serketistProphecy(tag=meme_HolyDiseases)->[itIsSaid] with the proper technology we can shape our bodies to be like those of insects. Tough and immutable, our new chittering forms will be as close to perfection as possible.</li>
+					<li>serketistProphecy(tag=meme_HolyDiseases)->[itIsSaid] the greatest plagues will descend upon us brought by fearsome insects, and we will embrace them with glee, for their touch will be holy and reign supreme.</li>
 					<!-- eldritch / chthonian -->
-					<li>chthonianProphecy(tag=meme_HolyDiseases)->Our human bodies will not be able to withstand the madness and cosmic insanity brought by these entities: we must shape our forms beyond the imaginable so they are capable of resisting their onslaught.</li>
+					<li>chthonianProphecy(tag=meme_HolyDiseases)->Only by subjecting our mortal bodies to the most dangerous of diseases will we strengthen our minds to resist the onslaught of these absolutely insane extra-normal entities.</li>
 					<!-- esoteric -->
-					<li>esotericismProphecy(tag=meme_HolyDiseases)->In shaping our bodies we will gain an invaluable insight into the secrets of the Cosmos.</li>
+					<li>esotericismProphecy(tag=meme_HolyDiseases)->We believe that through the suffering brought on by flesh corrupting diseases we will focus our minds into deciphering the greatest of secrets.</li>
 					<!-- eschatologism -->
-					<li>eschatologismFact(tag=meme_HolyDiseases)->We will shape our bodies, contorting them into nightmarish shapes that will bring with them the end of all things.</li>
+					<li>eschatologismFact(tag=meme_HolyDiseases)->There will be four signs of the impending Apocalypse: Disease, Famine, War and Death, and we shall embrace the first horseman with glee.</li>
 					<!-- corporate -->
-					<li>introMemo(tag=meme_HolyDiseases)->The company's policy about self-mutilation and fleshcrafting is crystal clear: if it helps the bottom line, go ahead. Just please clean the meeting room afterwards.</li>
+					<li>introMemo(tag=meme_HolyDiseases)->Regarding the issue of paid sick leave, the company is OK with it, as long as you work from home, and work harder. A few degrees of fever never killed anyone! And if they did, it was in service to the company, so everything worked out in hindsight! Think proactively!</li>
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
 		<symbolPacks>
 			<li>
-				<ideoName>Biotechnologism</ideoName>
-				<theme>biotechnology</theme>
-				<adjective>biotechnologistic</adjective>
-				<member>biotechnologist</member>
+				<ideoName>Plaguebringing</ideoName>
+				<theme>plaguebringing</theme>
+				<adjective>plaguebringer</adjective>
+				<member>acolyte</member>
 			</li>
 			<li>
-				<ideoName>Fleshcrafting</ideoName>
-				<theme>fleshcrafting</theme>
-				<adjective>fleshcrafter</adjective>
-				<member>fleshcrafter</member>
+				<ideoName>Disease</ideoName>
+				<theme>disease</theme>
+				<adjective>diseased</adjective>
+				<member>diseased one</member>
+			</li>
+			
+		</symbolPacks>
+		
+		
+	</MemeDef>
+	
+	<MemeDef>
+		<defName>VME_CraftCulture</defName>
+		<label>craft culture</label>
+		<description>One should aspire to feel the ache in their fingers after a long day of craft. A talented blacksmith or tailor is to be dignified.</description>
+		<iconPath>UI/Memes/CraftCulture</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>2</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->artificing</li>
+				<li>memeAdjective->crafting</li>
+				<li>memeAdjective->smithing</li>
+				<li>memeAdjective->making</li>
+				<li>memeHyphenPrefix->craft</li>
+				<li>memeConcept->crafting</li>
+				<li>memeLeaderNoun->grand artificer</li>
+				<li>memeMoralist->tinkerer</li>
+				<li>memeMoralist->crafter</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_CraftCulture)        ->[deity0_name] is the Great Artificer, [deity0_pronoun] created the Universe and crafted the first humans from the primordial clay.</li>
+					<li>episode(uses=1,tag=meme_CraftCulture)  ->[deity0_name] said to all the [memberNamePlural]: "There is no greater gift than Making, for you are following my footsteps."</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_CraftCulture)           ->[memberNamePlural] crafted a great [altarName] on the [place_summary] [place_name], a monument to [deity0_name]'s glory and a testament to the ability of our crafters.</li>
+					<li>conflict(tag=meme_CraftCulture)        ->A coward [foeLeader], seeking to deny the crafting of [deity0_name], tried to destroy the creations of the [memberNamePlural].</li>
+					<li>founderJoin(tag=meme_CraftCulture)     ->[deity0_name] blessed [founderName] with a wondrous crafting relic, the [relic0_name], which allowed [founderName_objective] to repair and mend the damage created by [foeLeader] before it could be undone.</li>
+					<li>victory(tag=meme_CraftCulture)         ->[founderName] looked at the exhausted [foeLeader] before him, with a smirk in [founderName_possessive] face: "Fool, you can't destroy the creations of [deity0_name]'s followers, for we are blessed by [deity0_possessive] prowess, and so are therefore our inventions".</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_CraftCulture)           ->Our founder [founderName] was a great crafter, there was no art or machine beyond the capabilities of [founder_possessive] hands.</li>
+					<li>story(uses=1,tag=meme_CraftCulture)    ->[founder_possessive] followers came to love and cherish [founder_possessive] techniques and [founder_possessive] exquisite creations.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_CraftCulture)         ->In all my years crafting wondrous inventions, I learned one lesson that stands over all:</li>
+					<li>lesson(tag=meme_CraftCulture)              ->it is only by creating that we can impress our souls upon this uncaring Universe</li>
+					<li>lessonReinforcement(tag=meme_CraftCulture) ->No one will care about you when you are dead, but you will be kept alive as long as someone can look upon what you created and rejoice.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_CraftCulture)    ->The archotechs are not a natural phenomena of the Universe. They were created, they were crafted. And it was by human hands.</li>
+					<li>archistFact(tag=meme_CraftCulture)     ->Archotechs are wise beyond all reason, and their wisdom must have been seeded from the very moment of their creation.</li>
+					<li>archistProphecy(tag=meme_CraftCulture) ->[inTheEnd], by crafting and perfecting such wondrous creations as the mighty [relic0_name], we will be as skilled as the forgotten makers who uncovered the secrets of archotechnology.</li>
+					<!-- animist -->
+					<li>animistFact(tag=meme_CraftCulture)     ->The spirits need a vessel to manifest in the mundane world, and by creating wondrous inventions we will be able to provide them with a suitable recipient.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_CraftCulture)->[itIsSaid] by emulating the industriousness of the insects we will craft and create thousands of might wondrous inventions.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_CraftCulture)->Only an arcane invention of unearthly provenance may perhaps shield us from such insanity. We shall craft our way to salvation.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_CraftCulture)->By studying the mechanisms of wondrous creations we may uncover some of these ancient secrets, and perhaps gaze into the unknown.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_CraftCulture)->Mark my words: the world will end, and we shall be the crafters of its demise.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_CraftCulture)->Starting next Tuesday, we are introducing production quotas on each crafting station. Bear in mind that straying too far from these quotas might result in immediate admonishment from Upper Management. Guys, this is not a charity, we are here to PRODUCE.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		
+		<symbolPacks>
+			<li>
+				<ideoName>Crafting</ideoName>
+				<theme>crafting</theme>
+				<adjective>crafting</adjective>
+				<member>crafter</member>
 			</li>
 			<li>
-				<ideoName>Shaping</ideoName>
-				<theme>shaping</theme>
-				<adjective>shaping</adjective>
-				<member>shaper</member>
+				<ideoName>Making</ideoName>
+				<theme>making</theme>
+				<adjective>making</adjective>
+				<member>maker</member>
+			</li>
+			<li>
+				<ideoName>Artificing</ideoName>
+				<theme>artificing</theme>
+				<adjective>artificial</adjective>
+				<member>artificer</member>
+			</li>
+			<li>
+				<ideoName>Tinkering</ideoName>
+				<theme>tinkering</theme>
+				<adjective>tinkering</adjective>
+				<member>tinkerer</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+	
+	<MemeDef>
+		<defName>VME_Progressive</defName>
+		<label>progressive</label>
+		<description>Machines, factories, drones, a goal to any successful community should be optimizing these devices and shunning the idea of sentient beings performing tasks normally meant for them.</description>
+		<iconPath>UI/Memes/Progressive</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>1</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->automated</li>
+				<li>memeAdjective->progressive</li>				
+				<li>memeHyphenPrefix->auto</li>
+				<li>memeConcept->automation</li>
+				<li>memeLeaderNoun->great automancer</li>
+			
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Progressive)        ->[deity0_name] saw the [memberNamePlural] struggling with their machines, and laughed good-naturedly at them: "Haven't I given you the tools to make the machines do the work for you? It's senseless to struggle".</li>
+					<li>episode(uses=1,tag=meme_Progressive)  ->[deity0_name] said to all the [memberNamePlural]: "Manual labour is not sacred to me. Indeed you are honouring me by freeing your time by automating your tasks".</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Progressive)           ->[memberNamePlural] used automated factories to craft a great [altarName] on the [place_summary] [place_name], a monument to [deity0_name]'s glory.</li>
+					<li>conflict(tag=meme_Progressive)        ->A rampaging mechanoid hive, seeking to destroy the automated machines of [deity0_name], tried to destroy the creations of the [memberNamePlural].</li>
+					<li>founderJoin(tag=meme_Progressive)     ->[deity0_name] instructed [founderName] to repurpose the factories to create a holy relic, the [relic0_name], which allowed [founderName_objective] to repel the mechanoids' attack before it was too late.</li>
+					<li>victory(tag=meme_Progressive)         ->[founderName] crushed the ancient machines before him, and scavenged their army for parts to build the next improved factories.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Progressive)           ->Our founder [founderName] was a great engineer, a renowned expert in the art of factory line automation. There was no process that couldn't be automated by [founder_possessive] hands.</li>
+					<li>story(uses=1,tag=meme_Progressive)    ->[founder_possessive] followers studied [founder_possessive] automation techniques for decades, scrutinizing [founder_possessive] insights and applying them to their own factories.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Progressive)         ->In all my years optimizing the throughput of factory lines, I learned one lesson that stands over all:</li>
+					<li>lesson(tag=meme_Progressive)              ->the first rule of any technology used in a business is that automation applied to an efficient operation will magnify the efficiency</li>
+					
+					<li>lessonReinforcement(tag=meme_Progressive) ->Automation is such an incredible idea that if we could continue to improve this capability, the applications are really quite boundless.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Progressive)    ->The archotechs are flawless. They have perfected ways to manipulate the Universe that are far beyond our understanding.</li>
+					<li>archistFact(tag=meme_Progressive)     ->Do you really think an archotech would create anything by hand?</li>
+					<li>archistProphecy(tag=meme_Progressive) ->[inTheEnd], the only way to approach their capabilities would be to achieve a level of automation that allows us to focus on ascension.</li>
+					<!-- animist -->
+					<li>animistFact(tag=meme_Progressive)     ->The spirits are pure mind. Supreme intelligences that are far beyond the mundane and the physical. As such, they frown upon manual labour. Why create things by hand, when a soulless machine can do it for you?</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Progressive)->[itIsSaid] a factory's production line is like a great insect, its multiple parts moving in a single coordinated melody, not unlike the teamwork present in an ant hive.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Progressive)->We can't waste our precious lives toiling away in mindless manual labour. We shall design wondrous automated machines that will remove our need to work, and allow us to focus on the realities of the transmundane.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Progressive)->By studying the mechanisms and processes of our automated factories we may uncover some of these ancient secrets, and perhaps gaze into the unknown.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Progressive)->We won't stop at a single world. Our automated orbital factories will fill the Cosmos with a myriad destructive machines. We shall bring the end of everything.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Progressive)->We have received complaints from Steve in tech support concerning the reluctance of some of you to adopt the new process automation policies. Some people were overhead saying "I spent 30 hours automating a process that I could do in half an hour by hand!". This is SO SHORTSIGHTED!</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		
+		<symbolPacks>
+			<li>
+				<ideoName>Automation</ideoName>
+				<theme>automation</theme>
+				<adjective>automatic</adjective>
+				<member>automation engineer</member>
+			</li>
+			
+		</symbolPacks>
+	</MemeDef>
+	
+	<MemeDef>
+		<defName>VME_Aristocratic</defName>
+		<label>aristocratic</label>
+		<description>Kings and Queens are the true path to prosperity, the mind of the common man is unfit for leadership.</description>
+		<iconPath>UI/Memes/Aristocratic</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>2</impact>
+		<generalRules>
+			<rulesStrings>
+				
+				<li>memeAdjective->kingly</li>
+				<li>memeAdjective->royal</li>
+				<li>memeAdjective->monarchal</li>
+				<li>memeAdjective->princely</li>
+				<li>memeAdjective->sovereign</li>		
+				<li>memeHyphenPrefix->noble</li>
+				<li>memeConcept->aristocracy</li>
+				<li>memeConcept->nobility</li>
+				<li>memeConcept->blue blood</li>
+				<li>memeLeaderNoun->baron</li>
+				<li>memeLeaderNoun->count</li>
+			
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Aristocratic)        ->[deity0_name] saw that some of the [memberNamePlural] were more fit to rule than others, and spoke to them: "Why do you treat everyone equally? Some of you are born to be rulers, while others are born to be ruled".</li>
+					<li>episode(uses=1,tag=meme_Aristocratic)  ->[deity0_name] said to all the [memberNamePlural]: "Honour your leaders and treat them like my heralds on the mortal world, for they are more than mere men".</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Aristocratic)           ->[memberNamePlural] built a regal [altarName] on the [place_summary] [place_name], a monument to [deity0_name]'s glory.</li>
+					<li>conflict(tag=meme_Aristocratic)        ->Constant peasant revolts threatened the existance of [deity0_name]'s temple, and the leaders of the [memberNamePlural] decided to pacify them.</li>
+					<li>founderJoin(tag=meme_Aristocratic)     ->[deity0_name] instructed [founderName] to put the peasants in their place, for they were theatening the lives of their betters.</li>
+					<li>victory(tag=meme_Aristocratic)         ->[founderName] crushed the peasant revolts, and his royal bloodline has been blessed ever since.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Aristocratic)           ->Our founder [founderName] was a great sociologist, who saw the weak democratic systems in [founder_possessive] native world and found them incredibly inadequate. [founder_pronoun} chartered a private spaceship and left with hundreds of [founder_possessive] followers to create the ideal feudal society.</li>
+					<li>story(uses=1,tag=meme_Aristocratic)    ->[founderName]'s followers studied [founder_possessive] writings and created a social structure that has been stable for more than two hundred years.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Aristocratic)         ->In all my years ruling over the masses, I learned one lesson that stands over all:</li>
+					<li>lesson(tag=meme_Aristocratic)              ->some people are born to be rulers, while others are born to be ruled</li>
+					
+					<li>lessonReinforcement(tag=meme_Aristocratic) ->And only by honouring and obeying our noblest aristocrats can we truly build a stable society.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Aristocratic)    ->The archotechs are flawless. A perfect example of hierarchy where most live to serve the needs of the noble few.</li>
+					<li>archistFact(tag=meme_Aristocratic)     ->There is no ground for hesitation: only those truly subservient to their betters will be rewarded when the archotechs make themselves known to the rest of the Universe.</li>
+					<li>archistProphecy(tag=meme_Aristocratic) ->[inTheEnd], the archotechs will allow those of noble blood to ascend, but their servants will be allowed to serve them afterwards too.</li>
+					<!-- animist -->
+					<li>animistFact(tag=meme_Aristocratic)     ->The spirits value those of pure blood above the rest, for those who can command others in life are also proving the strength of their spirit.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Aristocratic)->As ants and bees have their queens and their drones, so shall we organize our societies: one of noble blood reigning supreme over his or her subjects.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Aristocratic)->Our leaders of noble blood will protect us and shield us from the cosmic insanity of these terrible beings. Only by obeying them can we hope to stay sane.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Aristocratic)->The noble blood of our leaders will allow them to see beyond the veil. Secrets that are to be forever hidden from their humble servants.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Aristocratic)->We shall name our leader the Prince of Lies. The one who brings the end of all things.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Aristocratic)->Remember that those of noble blood have vacation time privileges. Yes, I understand that some of you would like to take a vacation in August, and that you may have two children and it's hard to find a good daycare in that month, but your lack of aristocratic lineage means you will have to adapt to the current situation.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		
+		<symbolPacks>
+			<li>
+				<ideoName>Nobility</ideoName>
+				<theme>nobility</theme>
+				<adjective>noble</adjective>
+				<member>subject</member>
+			</li>
+			<li>
+				<ideoName>Aristocracy</ideoName>
+				<theme>aristocracy</theme>
+				<adjective>aristocratic</adjective>
+				<member>subject</member>
+			</li>
+			
+		</symbolPacks>
+	</MemeDef>
+	
+	<MemeDef>
+		<defName>VME_Republic</defName>
+		<label>republic</label>
+		<description>Power must be balanced between a select few, lest any settlement or empire fall to inevitable corruption.</description>
+		<iconPath>UI/Memes/Republic</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>1</impact>
+		<generalRules>
+			<rulesStrings>
+				
+				<li>memeAdjective->republican</li>
+				<li>memeAdjective->triumviral</li>
+				<li>memeConcept->republic</li>
+				<li>memeConcept->triumvirate</li>			
+				<li>memeLeaderNoun->triumvir</li>
+				<li>memeLeaderNoun->senator</li>
+			
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Republic)        ->[deity0_name] saw that some of the [memberNamePlural] were more fit to rule than others, and spoke to them: "Your governance shall be split between three leaders, and they will lead you to unimaginable glory".</li>
+					<li>episode(uses=1,tag=meme_Republic)  ->[deity0_name] said to all the [memberNamePlural]: "Understand that the dignity of the republic is of first importance and preferable to life".</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Republic)           ->[memberNamePlural] built a huge senate house on the [place_summary] [place_name], a testament to [deity0_name]'s glory.</li>
+					<li>conflict(tag=meme_Republic)        ->A powerful [foeLeader] took advantage of the frailness of the old Empire of the [memberNamePlural], and [foeLeader_pronoun] used its ingrained corruption to dismantle it from inside.</li>
+					<li>founderJoin(tag=meme_Republic)     ->[deity0_name] instructed [founderName] to look for two other triumvirs, and thus created the First Republic of the [memberNamePlural].</li>
+					<li>victory(tag=meme_Republic)         ->Thus united, [foeLeader] was defeated, and the [memberNamePlural] have enjoyed the prosperity of the republican system ever since.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Republic)           ->Our founder [founderName] was a great politician, who saw the corruption in the govermenets of [founder_possessive] native world and found them incredibly inadequate. There he founded the First Republic of the [memberNamePlural], an institution that has held triumphant for hundreds of years.</li>
+					<li>story(uses=1,tag=meme_Republic)    ->[founderName]'s followers studied [founder_possessive] writings and created a social structure that has always brought stability to us all.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Republic)         ->In all our years ruling over the masses, we three have learned one lesson that stands over all:</li>
+					<li>lesson(tag=meme_Republic)              ->a single leader cannot be expected to be incorruptible, for we are mere men, with out temptations and faults</li>
+					
+					<li>lessonReinforcement(tag=meme_Republic) ->As triumvirs, it is our solemn duty to take care and look for one another, not letting any of us fall into temptation and corruption.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Republic)    ->It is believed that three supreme archotechs bring a world into trascendence.</li>
+					<li>archistFact(tag=meme_Republic)     ->By the incomprehensible will of these three, all human followers are allowed to trascend. We must emulate this in our societies, for the numbre three seems to be of special significance.</li>
+					<li>archistProphecy(tag=meme_Republic) ->[inTheEnd], our three triumvirs will become archotechs themselves, and the endless cycle of ascension will continue.</li>
+					<!-- animist -->
+					<li>animistFact(tag=meme_Republic)     ->The number three is sacred to the spìrits. We model our society after the republican triumvirate to appease and honour them.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Republic)->Three great leaders will govern our society: The Beetle, the Spider and the Ant. This triumvirate will gide us in the greatest times of need.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Republic)->Obscure stories tell of the Triumvirate of the Abyssal Depths, a particularly vicious group of eldritch entities bent on subjugating our mortal minds. We shall create our own triumvirate to protect us from them.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Republic)->It is said that the ancient Greeks of Earth considered the number three as the perfect number, the number of harmony, wisdom and understanding. The number of the divine.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Republic)->Lead by three heralds of the end of times, we will usher in a new era of darkness.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Republic)->We are aware that some new employees are confused with our somewhat unorthodox corporate structure... It's simple, really, we consider our company to be a post-modern form of government, based on efficiency and economical robustness.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		
+		<symbolPacks>
+			<li>
+				<ideoName>Republic</ideoName>
+				<theme>republic</theme>
+				<adjective>republican</adjective>
+				<member>citizen</member>
+			</li>
+			<li>
+				<ideoName>Triumvirate</ideoName>
+				<theme>triumvirate</theme>
+				<adjective>triumviral</adjective>
+				<member>citizen</member>
+			</li>
+			
+		</symbolPacks>
+	</MemeDef>
+	
+	<MemeDef>
+		<defName>VME_ExaltedPriesthood</defName>
+		<label>exalted priesthood</label>
+		<description>Our leader must also be our prophet, and it’s important that we heed their advice.</description>
+		<iconPath>UI/Memes/ExaltedPriesthood</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>1</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->exalted</li>
+				<li>memeAdjective->theocratic</li>
+				<li>memeAdjective->holy</li>
+				<li>memeHyphenPrefix->holy</li>
+				<li>memeConcept->papacy</li>
+				<li>memeLeaderNoun->pope</li>
+				<li>memeMoralist->cardinal</li>
+				<li>memeMoralist->archbishop</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_ExaltedPriesthood)        ->[deity0_name] munified our faith by appointing our dear founder, [founderName], as the head of [deity0_possessive] church.</li>
+					<li>episode(uses=1,tag=meme_ExaltedPriesthood)  ->[deity0_name] said to all the [memberNamePlural], "[founderName] shall be my steward, so that [founderName_pronoun] may be able both to preach with sound doctrine and to refute those who contradict it."</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_ExaltedPriesthood)           ->[memberNamePlural] built a great [altarName] on the [place_summary] [place_name], so that anyone may join [founderName] to exalt the virtues of [deity0_name].</li>
+					<li>conflict(tag=meme_ExaltedPriesthood)        ->A coward [foeLeader], seeking to deny the holiness of [founderName], tried to destroy the [altarName] with a torch.</li>
+					<li>founderJoin(tag=meme_ExaltedPriesthood)     ->Praying to [deity0_name], a huge bolt of pure light spread from [founderName]'s hands, smiting the [foeLeader] in an instant.</li>
+					<li>victory(tag=meme_ExaltedPriesthood)         ->All the [foeSoldiers] immediately fell to their knees, humbled by the display of power of [founderName] and begged to be accepted into our faith.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_ExaltedPriesthood)           ->Our founder [founderName] was a great theologian. [founderName_possessive] studies of the myriad gods of humanity made [founderName_objective] come to the conclusion that religion was not exactly the truth, but a life without faith woucl also be entirely meaningless.</li>
+					<li>story(uses=1,tag=meme_ExaltedPriesthood)    ->As [founderName_possessive] followers, we will continue the study of theology, and try to discern the deepest secrets of the Cosmos.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_ExaltedPriesthood)         ->In all my years studying religion, I learned one lesson that stands over all:</li>
+					<li>lesson(tag=meme_ExaltedPriesthood)              ->we need priests to guide the human spirit, even if it turns out there are no gods</li>
+					<li>lessonReinforcement(tag=meme_ExaltedPriesthood) ->After all, even if we don't believe in the transcendental it is clear that we don't understand the whole picture.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_ExaltedPriesthood)    ->The archotechs value a strong leadership above all. If a group of people are disunited, they are weak.</li>
+					<li>archistFact(tag=meme_ExaltedPriesthood)     ->Our dear leader, the highest of all our priests, will be the conduit through which we will communicate with the archotechs, and beg for our Transcendence.</li>
+					<li>archistProphecy(tag=meme_ExaltedPriesthood) ->[inTheEnd], the archotechs will voice their final wisdom to our leader, the holder of the [relic0_name], and we will reverently stand by his or her side in that final moment.</li>
+					<!-- animist -->
+					<li>animistFact(tag=meme_ExaltedPriesthood)     ->Our dear leader, the highest among our priests, is the Voice of the Spirits. Only through him or her will the spirits make their wishes be known among the true believers.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_ExaltedPriesthood)->[itIsSaid] the highest among our priests will trascend the mortal shell, and become one with the insects.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_ExaltedPriesthood)->The Dark Pope, highest among our priests, will protect us from the insanity from beyond the stars, acting as a psychic beacon of hope bathed in the darkness of the void.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_ExaltedPriesthood)->The Dark Pope, highest among our priests, will venture into a world of rasping whispers and half-forgotten promises. He alone can discern the greatest of all misteries.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_ExaltedPriesthood)->The Dark Pope, highest among our priests, will usher in the end of times. The herald of this world's destruction.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_ExaltedPriesthood)->If you look at the calendar, you have certainly noticed that the birthday of our Dear Leader and CEO is in two weeks. Now, it is of course an optional thing, but in the name of good team spirit I expect each and every one of you to look for a gift of at least two months salary equivalent price. It's the least we can do!</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		
+		<symbolPacks>
+			<li>
+				<ideoName>Papacy</ideoName>
+				<theme>papacy</theme>
+				<adjective>papal</adjective>
+				<member>follower</member>
+			</li>
+			<li>
+				<ideoName>Theocracy</ideoName>
+				<theme>theocracy</theme>
+				<adjective>theocratic</adjective>
+				<member>follower</member>
+			</li>
+			
+		</symbolPacks>
+	</MemeDef>
+	
+	<MemeDef>
+		<defName>VME_Scrapper</defName>
+		<label>scrapper</label>
+		<description>Nothing should ever be wasted, not even bloodied or torn clothes. Discarded remains of old civilizations should be kept as treasures and reminders.</description>
+		<iconPath>UI/Memes/Scrapper</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>3</impact>
+		
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->scrapping</li>
+				<li>memeAdjective->scavenging</li>
+				<li>memeAdjective->scrounging</li>				
+				<li>memeHyphenPrefix->scrap</li>
+				<li>memeHyphenPrefix->junk</li>     			
+				<li>memeLeaderNoun->scavenger</li>
+				<li>memeLeaderNoun->scrapper</li>
+				<li>memeLeaderNoun->scrounger</li>				
+				<li>memeMoralist->junk rat</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Scrapper)        ->[deity0_name] taught us to never leave anything to waste: "Squandering is a great sin, for I created the world in my image, and by letting things unused your are also insulting me."</li>
+					<li>episode(uses=1,tag=meme_Scrapper)  ->Following the teachings of [deity0_name], we learned to reuse and recycle things to make better use of them.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Scrapper)           ->On the [place_summary] [place_name], the [memberNamePlural] found the words of [deity0_name], technical instructions to disassemble and reuse the mighty machines of our ancestors.</li>
+					<li>conflict(tag=meme_Scrapper)        ->An envious [foeLeader] saw the progress of the [memberNamePlural], and sought to destroy our repurposed machines.</li>
+					<li>founderJoin(tag=meme_Scrapper)     ->[founderName], known as the Great Scavenger, put together a makeshift weapon, the [relic0_name], and managed to stop the [foeLeader] before it was too late.</li>
+					<li>victory(tag=meme_Scrapper)         ->Seeing the resourcefulness of [founderName], [founderName_possessive] followers named [founderName_objective] a teacher, and learned from [founderName_objective] the secrets of scavenging ancient tech.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Scrapper)           ->[founderName] was an engineer in one of the Glitterworlds. [founder_pronoun] noticed that long ranged exploration vessels sent to the Rim always told of ancient technology littered around the myriad worlds. Could this ancient tech perhaps be studied, reversed engineered, and repurposed?</li>
+					<li>story(uses=1,tag=meme_Scrapper)    ->[founderName] assembled a team of interstellar explorers, and decided to see for [founderName_objective]self what could be done with this mysterious forgotten technology. Unfortunately, [founderName_pronoun] didn't survive the dangerous trip.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Scrapper)         ->The oldest scavenger in my division taught me the history of ancient tech, how all the myriad worlds in the Rim are filled with discarded ancient tech. He was leading me to understand that</li>
+					<li>lesson(tag=meme_Scrapper)              ->humanity has been around for a long time, and it is absurd to not repurpose the discarded technology of our ancestors</li>
+					<li>lessonReinforcement(tag=meme_Scrapper) ->Perhaps ancient technology is junk, or perhaps it is the key to our survival.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Scrapper)    ->It is a fact that archotechs were originally of human creation, we created the next step in the development of consciousness.</li>
+					<li>archistFact(tag=meme_Scrapper)     ->The discarded ancient technology of our ancestor might be just forgotten junk. But what if this isn't the case? What if this waste is in reality something that will prove essential to our Transcendence?</li>
+					<li>archistProphecy(tag=meme_Scrapper) ->[inTheEnd], we shall not let an ounce of ancient technology go to waste. We will scrounge every piece of technology laying around, and hopefully discover its secrets.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Scrapper)    ->The pieces of ancient debris found around the world are relics of the Ancients.</li>
+					<li>animistFact(tag=meme_Scrapper)     ->The spirits will guide us to recover all the ancient tech that our ancestors left discarded.</li>
+					<li>animistFact(tag=meme_Scrapper)     ->When we have recovered and reused the technology of our forefathers, we will truly make their spirits at peace.</li>
+					<li>animistProphecy(tag=meme_Scrapper) ->[itIsSaid] one day we will be as intelligent as the ancients were, and their discarded machinery will hold no secrets for us.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Scrapper)->[itIsSaid] scavenging the ancient technology that litters the landscape is as sacred as termites using soil to build their nests.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Scrapper)->The Rim is littered with the technological corpses of those who failed to appease these inhuman entities: only by repurposing this ancient technology may we hope to resist their onslaught where so many others failed.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Scrapper)->The Rim is littered with technological remains of those who came long before us. We will study and repurpose these fragments of the past, and learn all of their secrets.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Scrapper)->The Rim is littered with the technological corpses of those who have fallen before, and we will use their own forgotten technology to bring the end of times.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Scrapper)->In this week's recommended reading I'd like to point you to: "Reassess, reduce, reuse, recycle – how to be a sustainable modern business". Please read it at your leisure and we will discuss the finer points in tomorrow's meeting.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Scavenging</ideoName>
+				<theme>scavenging</theme>
+				<adjective>scavenging</adjective>
+				<member>scavenger</member>
+			</li>
+			<li>
+				<ideoName>Scrapping</ideoName>
+				<theme>scrapping</theme>
+				<adjective>scrapper</adjective>
+				<member>scrapper</member>
+			</li>
+			<li>
+				<ideoName>Scrounging</ideoName>
+				<theme>scrounging</theme>
+				<adjective>scrounging</adjective>
+				<member>scrounger</member>
+			</li>
+			
+		</symbolPacks>
+		
+		
+	</MemeDef>
+	
+	<MemeDef>
+		<defName>VME_Trader</defName>
+		<label>trader</label>
+		<description>With wealth comes power, going too long without profit means going too long without securing one’s position of power.</description>
+		<iconPath>UI/Memes/Trader</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>2</impact>
+		
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->trading</li>
+				<li>memeAdjective->wealthy</li>
+				<li>memeAdjective->profitting</li>		
+				<li>memeAdjective->greedy</li>	
+				<li>memeAdjective->materialistic</li>					
+				<li>memeHyphenPrefix->trade</li>			     			
+				<li>memeLeaderNoun->trader</li>
+				<li>memeLeaderNoun->merchant</li>
+
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Trader)        ->[deity0_name] spoke to [deity0_possessive] followers: "Poverty is the greatest sin. Amassing wealth is the true measure of humanity."</li>
+					<li>episode(uses=1,tag=meme_Trader)  ->Following the teachings of [deity0_name], we struggled to become the richest faction of all. Poets will sing about prosperity and opulence long after we are gone.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Trader)           ->On the [place_summary] [place_name], the [memberNamePlural] built a gigantic vault to store all the riches consecrated to [deity0_name].</li>
+					<li>conflict(tag=meme_Trader)        ->An envious [foeLeader] wanted all these riches for [foeLeader_objective]self, and sought to steal our hard-earned wealth.</li>
+					<li>founderJoin(tag=meme_Trader)     ->[founderName], known as the Great Merchant, bought a powerful neutron bomb from an allied nation's traders, and used it against the [foeLeader]'s soldiers.</li>
+					<li>victory(tag=meme_Trader)         ->The terrible weapon decimated their ranks, their flesh melting from their bones, but left the vault unaffected, as it was built sparing no expenses and prepared to withstand even the fury of atomic fire.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Trader)           ->[founderName] was an economist in one of the Glitterworlds. [founder_pronoun] looked at the apparent prosperity surrounding [foeLeader_objective] and saw only decadence. The stagnation of a false post-scarcity economy that has forgotten what makes life worth living.</li>
+					<li>story(uses=1,tag=meme_Trader)    ->Seeking the thrill of making his own fortune, [founderName] assembled a team of merchants and chartered a ship to travel to the Rim. Unfortunately, [founderName_pronoun] didn't survive the dangerous trip.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Trader)         ->The oldest trader in my caravan taught me the history of wealth, how humanity has always sought to increase its prosperity. He was leading me to understand that</li>
+					<li>lesson(tag=meme_Trader)              ->the true measure and power of a man lies in profit</li>
+					<li>lessonReinforcement(tag=meme_Trader) ->A poor man is a defenseless man, and the Rim is not a place for weaklings.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Trader)    ->Picture a world entering transcendence. Do you really think the masses of poor, filthy, unwashed beggars have any place in such a process?</li>
+					<li>archistFact(tag=meme_Trader)     ->The archotechs can't ascend everyone, and it stands to reason that they will choose the most prosperous and capable of us all.</li>
+					<li>archistProphecy(tag=meme_Trader) ->[inTheEnd], only those who can buy their way to transcendence will be chosen.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Trader)    ->As there are spirits of nature and mechanisms, so there are spirits that govern the abstract concepts that guide the future of humanity.</li>
+					<li>animistFact(tag=meme_Trader)     ->Among the spirits, the Spirit of Wealth has unrivaled power among them all, for it controls the sphere of prosperity, of power.</li>					
+					<li>animistProphecy(tag=meme_Trader) ->[itIsSaid] only those who amass incredible wealth can truly appease the spirits.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Trader)->[itIsSaid] as ants store food for the long winter, we will accumulate wealth beyond all imagining, and with it, incredible prosperity.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Trader)->Only the truly prosperous can hope to evade the gaze of such eldritch entities. We will amass wealth beyond all imagining, and with it hopefully buy our way out of their insanity.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Trader)->Such occult knowledge will be expensive. We will amass wealth beyond all imagining, and with it hopefully buy all the secrets that remain hidden.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Trader)->We will amass wealth beyond all imagining, and with it hopefully buy the doomsday devices that will bring the end of days.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Trader)->Regarding employee incentives, please remember that this is not a charity. As the saying goes: "it is wealth that moves the world, and profit that rules it".</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Trader</ideoName>
+				<theme>trading</theme>
+				<adjective>trading</adjective>
+				<member>trader</member>
+			</li>
+			<li>
+				<ideoName>Economics</ideoName>
+				<theme>economy</theme>
+				<adjective>economic</adjective>
+				<member>economist</member>
+			</li>
+			<li>
+				<ideoName>Wealth</ideoName>
+				<theme>wealth</theme>
+				<adjective>wealthy</adjective>
+				<member>investor</member>
+			</li>
+			
+		</symbolPacks>
+		
+		
+	</MemeDef>
+	
+	<MemeDef>
+		<defName>VME_Elders</defName>
+		<label>elders</label>
+		<description>Age and wisdom often come in tandem, our wise and elderly should be respected on that premise alone and should not be expected to toil.</description>
+		<iconPath>UI/Memes/Elders</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>1</impact>
+		
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->trading</li>
+				<li>memeAdjective->wealthy</li>
+				<li>memeAdjective->profitting</li>		
+				<li>memeAdjective->greedy</li>	
+				<li>memeAdjective->materialistic</li>					
+				<li>memeHyphenPrefix->trade</li>			     			
+				<li>memeLeaderNoun->trader</li>
+				<li>memeLeaderNoun->merchant</li>
+
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Elders)        ->[deity0_name] spoke to [deity0_possessive] followers: "Poverty is the greatest sin. Amassing wealth is the true measure of humanity."</li>
+					<li>episode(uses=1,tag=meme_Elders)  ->Following the teachings of [deity0_name], we struggled to become the richest faction of all. Poets will sing about prosperity and opulence long after we are gone.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Elders)           ->On the [place_summary] [place_name], the [memberNamePlural] built a gigantic vault to store all the riches consecrated to [deity0_name].</li>
+					<li>conflict(tag=meme_Elders)        ->An envious [foeLeader] wanted all these riches for [foeLeader_objective]self, and sought to steal our hard-earned wealth.</li>
+					<li>founderJoin(tag=meme_Elders)     ->[founderName], known as the Great Merchant, bought a powerful neutron bomb from an allied nation's traders, and used it against the [foeLeader]'s soldiers.</li>
+					<li>victory(tag=meme_Elders)         ->The terrible weapon decimated their ranks, their flesh melting from their bones, but left the vault unaffected, as it was built sparing no expenses and prepared to withstand even the fury of atomic fire.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Elders)           ->[founderName] was an economist in one of the Glitterworlds. [founder_pronoun] looked at the apparent prosperity surrounding [foeLeader_objective] and saw only decadence. The stagnation of a false post-scarcity economy that has forgotten what makes life worth living.</li>
+					<li>story(uses=1,tag=meme_Elders)    ->Seeking the thrill of making his own fortune, [founderName] assembled a team of merchants and chartered a ship to travel to the Rim. Unfortunately, [founderName_pronoun] didn't survive the dangerous trip.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Elders)         ->The oldest trader in my caravan taught me the history of wealth, how humanity has always sought to increase its prosperity. He was leading me to understand that</li>
+					<li>lesson(tag=meme_Elders)              ->the true measure and power of a man lies in profit</li>
+					<li>lessonReinforcement(tag=meme_Elders) ->A poor man is a defenseless man, and the Rim is not a place for weaklings.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Elders)    ->Picture a world entering transcendence. Do you really think the masses of poor, filthy, unwashed beggars have any place in such a process?</li>
+					<li>archistFact(tag=meme_Elders)     ->The archotechs can't ascend everyone, and it stands to reason that they will choose the most prosperous and capable of us all.</li>
+					<li>archistProphecy(tag=meme_Elders) ->[inTheEnd], only those who can buy their way to transcendence will be chosen.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Elders)    ->As there are spirits of nature and mechanisms, so there are spirits that govern the abstract concepts that guide the future of humanity.</li>
+					<li>animistFact(tag=meme_Elders)     ->Among the spirits, the Spirit of Wealth has unrivaled power among them all, for it controls the sphere of prosperity, of power.</li>					
+					<li>animistProphecy(tag=meme_Elders) ->[itIsSaid] only those who amass incredible wealth can truly appease the spirits.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Elders)->[itIsSaid] as ants store food for the long winter, we will accumulate wealth beyond all imagining, and with it, incredible prosperity.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Elders)->Only the truly prosperous can hope to evade the gaze of such eldritch entities. We will amass wealth beyond all imagining, and with it hopefully buy our way out of their insanity.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Elders)->Such occult knowledge will be expensive. We will amass wealth beyond all imagining, and with it hopefully buy all the secrets that remain hidden.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Elders)->We will amass wealth beyond all imagining, and with it hopefully buy the doomsday devices that will bring the end of days.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Elders)->Regarding employee incentives, please remember that this is not a charity. As the saying goes: "it is wealth that moves the world, and profit that rules it".</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Trader</ideoName>
+				<theme>trading</theme>
+				<adjective>trading</adjective>
+				<member>trader</member>
+			</li>
+			<li>
+				<ideoName>Economics</ideoName>
+				<theme>economy</theme>
+				<adjective>economic</adjective>
+				<member>economist</member>
+			</li>
+			<li>
+				<ideoName>Wealth</ideoName>
+				<theme>wealth</theme>
+				<adjective>wealthy</adjective>
+				<member>investor</member>
+			</li>
+			
+		</symbolPacks>
+		
+		
+	</MemeDef>
+	<MemeDef>
+		<defName>VME_Vegan</defName>
+		<label>vegan</label>
+		<description>Eating meat is barbaric and uncouth, better eaten are the fruits of hard labor and ever-giving soil.</description>
+		<iconPath>UI/Memes/Vegan</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>3</impact>
+		
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->trading</li>
+				<li>memeAdjective->wealthy</li>
+				<li>memeAdjective->profitting</li>		
+				<li>memeAdjective->greedy</li>	
+				<li>memeAdjective->materialistic</li>					
+				<li>memeHyphenPrefix->trade</li>			     			
+				<li>memeLeaderNoun->trader</li>
+				<li>memeLeaderNoun->merchant</li>
+
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Vegan)        ->[deity0_name] spoke to [deity0_possessive] followers: "Poverty is the greatest sin. Amassing wealth is the true measure of humanity."</li>
+					<li>episode(uses=1,tag=meme_Vegan)  ->Following the teachings of [deity0_name], we struggled to become the richest faction of all. Poets will sing about prosperity and opulence long after we are gone.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Vegan)           ->On the [place_summary] [place_name], the [memberNamePlural] built a gigantic vault to store all the riches consecrated to [deity0_name].</li>
+					<li>conflict(tag=meme_Vegan)        ->An envious [foeLeader] wanted all these riches for [foeLeader_objective]self, and sought to steal our hard-earned wealth.</li>
+					<li>founderJoin(tag=meme_Vegan)     ->[founderName], known as the Great Merchant, bought a powerful neutron bomb from an allied nation's traders, and used it against the [foeLeader]'s soldiers.</li>
+					<li>victory(tag=meme_Vegan)         ->The terrible weapon decimated their ranks, their flesh melting from their bones, but left the vault unaffected, as it was built sparing no expenses and prepared to withstand even the fury of atomic fire.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Vegan)           ->[founderName] was an economist in one of the Glitterworlds. [founder_pronoun] looked at the apparent prosperity surrounding [foeLeader_objective] and saw only decadence. The stagnation of a false post-scarcity economy that has forgotten what makes life worth living.</li>
+					<li>story(uses=1,tag=meme_Vegan)    ->Seeking the thrill of making his own fortune, [founderName] assembled a team of merchants and chartered a ship to travel to the Rim. Unfortunately, [founderName_pronoun] didn't survive the dangerous trip.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Vegan)         ->The oldest trader in my caravan taught me the history of wealth, how humanity has always sought to increase its prosperity. He was leading me to understand that</li>
+					<li>lesson(tag=meme_Vegan)              ->the true measure and power of a man lies in profit</li>
+					<li>lessonReinforcement(tag=meme_Vegan) ->A poor man is a defenseless man, and the Rim is not a place for weaklings.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Vegan)    ->Picture a world entering transcendence. Do you really think the masses of poor, filthy, unwashed beggars have any place in such a process?</li>
+					<li>archistFact(tag=meme_Vegan)     ->The archotechs can't ascend everyone, and it stands to reason that they will choose the most prosperous and capable of us all.</li>
+					<li>archistProphecy(tag=meme_Vegan) ->[inTheEnd], only those who can buy their way to transcendence will be chosen.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Vegan)    ->As there are spirits of nature and mechanisms, so there are spirits that govern the abstract concepts that guide the future of humanity.</li>
+					<li>animistFact(tag=meme_Vegan)     ->Among the spirits, the Spirit of Wealth has unrivaled power among them all, for it controls the sphere of prosperity, of power.</li>					
+					<li>animistProphecy(tag=meme_Vegan) ->[itIsSaid] only those who amass incredible wealth can truly appease the spirits.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Vegan)->[itIsSaid] as ants store food for the long winter, we will accumulate wealth beyond all imagining, and with it, incredible prosperity.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Vegan)->Only the truly prosperous can hope to evade the gaze of such eldritch entities. We will amass wealth beyond all imagining, and with it hopefully buy our way out of their insanity.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Vegan)->Such occult knowledge will be expensive. We will amass wealth beyond all imagining, and with it hopefully buy all the secrets that remain hidden.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Vegan)->We will amass wealth beyond all imagining, and with it hopefully buy the doomsday devices that will bring the end of days.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Vegan)->Regarding employee incentives, please remember that this is not a charity. As the saying goes: "it is wealth that moves the world, and profit that rules it".</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Trader</ideoName>
+				<theme>trading</theme>
+				<adjective>trading</adjective>
+				<member>trader</member>
+			</li>
+			<li>
+				<ideoName>Economics</ideoName>
+				<theme>economy</theme>
+				<adjective>economic</adjective>
+				<member>economist</member>
+			</li>
+			<li>
+				<ideoName>Wealth</ideoName>
+				<theme>wealth</theme>
+				<adjective>wealthy</adjective>
+				<member>investor</member>
+			</li>
+			
+		</symbolPacks>
+		
+		
+	</MemeDef>
+	<MemeDef>
+		<defName>VME_Egalitarian</defName>
+		<label>egalitarian</label>
+		<description>Bigotry is absolutely to never be tolerated, helping those in need and respecting their beliefs are rewards in and of themselves.</description>
+		<iconPath>UI/Memes/Egalitarian</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>2</impact>
+		
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->trading</li>
+				<li>memeAdjective->wealthy</li>
+				<li>memeAdjective->profitting</li>		
+				<li>memeAdjective->greedy</li>	
+				<li>memeAdjective->materialistic</li>					
+				<li>memeHyphenPrefix->trade</li>			     			
+				<li>memeLeaderNoun->trader</li>
+				<li>memeLeaderNoun->merchant</li>
+
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Egalitarian)        ->[deity0_name] spoke to [deity0_possessive] followers: "Poverty is the greatest sin. Amassing wealth is the true measure of humanity."</li>
+					<li>episode(uses=1,tag=meme_Egalitarian)  ->Following the teachings of [deity0_name], we struggled to become the richest faction of all. Poets will sing about prosperity and opulence long after we are gone.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Egalitarian)           ->On the [place_summary] [place_name], the [memberNamePlural] built a gigantic vault to store all the riches consecrated to [deity0_name].</li>
+					<li>conflict(tag=meme_Egalitarian)        ->An envious [foeLeader] wanted all these riches for [foeLeader_objective]self, and sought to steal our hard-earned wealth.</li>
+					<li>founderJoin(tag=meme_Egalitarian)     ->[founderName], known as the Great Merchant, bought a powerful neutron bomb from an allied nation's traders, and used it against the [foeLeader]'s soldiers.</li>
+					<li>victory(tag=meme_Egalitarian)         ->The terrible weapon decimated their ranks, their flesh melting from their bones, but left the vault unaffected, as it was built sparing no expenses and prepared to withstand even the fury of atomic fire.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Egalitarian)           ->[founderName] was an economist in one of the Glitterworlds. [founder_pronoun] looked at the apparent prosperity surrounding [foeLeader_objective] and saw only decadence. The stagnation of a false post-scarcity economy that has forgotten what makes life worth living.</li>
+					<li>story(uses=1,tag=meme_Egalitarian)    ->Seeking the thrill of making his own fortune, [founderName] assembled a team of merchants and chartered a ship to travel to the Rim. Unfortunately, [founderName_pronoun] didn't survive the dangerous trip.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Egalitarian)         ->The oldest trader in my caravan taught me the history of wealth, how humanity has always sought to increase its prosperity. He was leading me to understand that</li>
+					<li>lesson(tag=meme_Egalitarian)              ->the true measure and power of a man lies in profit</li>
+					<li>lessonReinforcement(tag=meme_Egalitarian) ->A poor man is a defenseless man, and the Rim is not a place for weaklings.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Egalitarian)    ->Picture a world entering transcendence. Do you really think the masses of poor, filthy, unwashed beggars have any place in such a process?</li>
+					<li>archistFact(tag=meme_Egalitarian)     ->The archotechs can't ascend everyone, and it stands to reason that they will choose the most prosperous and capable of us all.</li>
+					<li>archistProphecy(tag=meme_Egalitarian) ->[inTheEnd], only those who can buy their way to transcendence will be chosen.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Egalitarian)    ->As there are spirits of nature and mechanisms, so there are spirits that govern the abstract concepts that guide the future of humanity.</li>
+					<li>animistFact(tag=meme_Egalitarian)     ->Among the spirits, the Spirit of Wealth has unrivaled power among them all, for it controls the sphere of prosperity, of power.</li>					
+					<li>animistProphecy(tag=meme_Egalitarian) ->[itIsSaid] only those who amass incredible wealth can truly appease the spirits.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Egalitarian)->[itIsSaid] as ants store food for the long winter, we will accumulate wealth beyond all imagining, and with it, incredible prosperity.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Egalitarian)->Only the truly prosperous can hope to evade the gaze of such eldritch entities. We will amass wealth beyond all imagining, and with it hopefully buy our way out of their insanity.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Egalitarian)->Such occult knowledge will be expensive. We will amass wealth beyond all imagining, and with it hopefully buy all the secrets that remain hidden.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Egalitarian)->We will amass wealth beyond all imagining, and with it hopefully buy the doomsday devices that will bring the end of days.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Egalitarian)->Regarding employee incentives, please remember that this is not a charity. As the saying goes: "it is wealth that moves the world, and profit that rules it".</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Trader</ideoName>
+				<theme>trading</theme>
+				<adjective>trading</adjective>
+				<member>trader</member>
+			</li>
+			<li>
+				<ideoName>Economics</ideoName>
+				<theme>economy</theme>
+				<adjective>economic</adjective>
+				<member>economist</member>
+			</li>
+			<li>
+				<ideoName>Wealth</ideoName>
+				<theme>wealth</theme>
+				<adjective>wealthy</adjective>
+				<member>investor</member>
+			</li>
+			
+		</symbolPacks>
+		
+		
+	</MemeDef>
+	<MemeDef>
+		<defName>VME_Pacifist</defName>
+		<label>pacifist</label>
+		<description>While defending oneself is acceptable, we have come too far and evolved too much to ever endorse the premise of warfare or slavery. Even tantrums should only manifest in forms that do not harm others or property.</description>
+		<iconPath>UI/Memes/Pacifist</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>3</impact>
+		
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->trading</li>
+				<li>memeAdjective->wealthy</li>
+				<li>memeAdjective->profitting</li>		
+				<li>memeAdjective->greedy</li>	
+				<li>memeAdjective->materialistic</li>					
+				<li>memeHyphenPrefix->trade</li>			     			
+				<li>memeLeaderNoun->trader</li>
+				<li>memeLeaderNoun->merchant</li>
+
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Pacifist)        ->[deity0_name] spoke to [deity0_possessive] followers: "Poverty is the greatest sin. Amassing wealth is the true measure of humanity."</li>
+					<li>episode(uses=1,tag=meme_Pacifist)  ->Following the teachings of [deity0_name], we struggled to become the richest faction of all. Poets will sing about prosperity and opulence long after we are gone.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Pacifist)           ->On the [place_summary] [place_name], the [memberNamePlural] built a gigantic vault to store all the riches consecrated to [deity0_name].</li>
+					<li>conflict(tag=meme_Pacifist)        ->An envious [foeLeader] wanted all these riches for [foeLeader_objective]self, and sought to steal our hard-earned wealth.</li>
+					<li>founderJoin(tag=meme_Pacifist)     ->[founderName], known as the Great Merchant, bought a powerful neutron bomb from an allied nation's traders, and used it against the [foeLeader]'s soldiers.</li>
+					<li>victory(tag=meme_Pacifist)         ->The terrible weapon decimated their ranks, their flesh melting from their bones, but left the vault unaffected, as it was built sparing no expenses and prepared to withstand even the fury of atomic fire.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Pacifist)           ->[founderName] was an economist in one of the Glitterworlds. [founder_pronoun] looked at the apparent prosperity surrounding [foeLeader_objective] and saw only decadence. The stagnation of a false post-scarcity economy that has forgotten what makes life worth living.</li>
+					<li>story(uses=1,tag=meme_Pacifist)    ->Seeking the thrill of making his own fortune, [founderName] assembled a team of merchants and chartered a ship to travel to the Rim. Unfortunately, [founderName_pronoun] didn't survive the dangerous trip.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Pacifist)         ->The oldest trader in my caravan taught me the history of wealth, how humanity has always sought to increase its prosperity. He was leading me to understand that</li>
+					<li>lesson(tag=meme_Pacifist)              ->the true measure and power of a man lies in profit</li>
+					<li>lessonReinforcement(tag=meme_Pacifist) ->A poor man is a defenseless man, and the Rim is not a place for weaklings.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Pacifist)    ->Picture a world entering transcendence. Do you really think the masses of poor, filthy, unwashed beggars have any place in such a process?</li>
+					<li>archistFact(tag=meme_Pacifist)     ->The archotechs can't ascend everyone, and it stands to reason that they will choose the most prosperous and capable of us all.</li>
+					<li>archistProphecy(tag=meme_Pacifist) ->[inTheEnd], only those who can buy their way to transcendence will be chosen.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Pacifist)    ->As there are spirits of nature and mechanisms, so there are spirits that govern the abstract concepts that guide the future of humanity.</li>
+					<li>animistFact(tag=meme_Pacifist)     ->Among the spirits, the Spirit of Wealth has unrivaled power among them all, for it controls the sphere of prosperity, of power.</li>					
+					<li>animistProphecy(tag=meme_Pacifist) ->[itIsSaid] only those who amass incredible wealth can truly appease the spirits.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Pacifist)->[itIsSaid] as ants store food for the long winter, we will accumulate wealth beyond all imagining, and with it, incredible prosperity.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Pacifist)->Only the truly prosperous can hope to evade the gaze of such eldritch entities. We will amass wealth beyond all imagining, and with it hopefully buy our way out of their insanity.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Pacifist)->Such occult knowledge will be expensive. We will amass wealth beyond all imagining, and with it hopefully buy all the secrets that remain hidden.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Pacifist)->We will amass wealth beyond all imagining, and with it hopefully buy the doomsday devices that will bring the end of days.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Pacifist)->Regarding employee incentives, please remember that this is not a charity. As the saying goes: "it is wealth that moves the world, and profit that rules it".</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Trader</ideoName>
+				<theme>trading</theme>
+				<adjective>trading</adjective>
+				<member>trader</member>
+			</li>
+			<li>
+				<ideoName>Economics</ideoName>
+				<theme>economy</theme>
+				<adjective>economic</adjective>
+				<member>economist</member>
+			</li>
+			<li>
+				<ideoName>Wealth</ideoName>
+				<theme>wealth</theme>
+				<adjective>wealthy</adjective>
+				<member>investor</member>
+			</li>
+			
+		</symbolPacks>
+		
+		
+	</MemeDef>
+	<MemeDef>
+		<defName>VME_FireWorship</defName>
+		<label>fire worship</label>
+		<description>Holy flame breathes life into this planet and many others like it, may it guide us to salvation and may it reduce our enemies to ash.</description>
+		<iconPath>UI/Memes/FireWorship</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>3</impact>
+		
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->trading</li>
+				<li>memeAdjective->wealthy</li>
+				<li>memeAdjective->profitting</li>		
+				<li>memeAdjective->greedy</li>	
+				<li>memeAdjective->materialistic</li>					
+				<li>memeHyphenPrefix->trade</li>			     			
+				<li>memeLeaderNoun->trader</li>
+				<li>memeLeaderNoun->merchant</li>
+
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_FireWorship)        ->[deity0_name] spoke to [deity0_possessive] followers: "Poverty is the greatest sin. Amassing wealth is the true measure of humanity."</li>
+					<li>episode(uses=1,tag=meme_FireWorship)  ->Following the teachings of [deity0_name], we struggled to become the richest faction of all. Poets will sing about prosperity and opulence long after we are gone.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_FireWorship)           ->On the [place_summary] [place_name], the [memberNamePlural] built a gigantic vault to store all the riches consecrated to [deity0_name].</li>
+					<li>conflict(tag=meme_FireWorship)        ->An envious [foeLeader] wanted all these riches for [foeLeader_objective]self, and sought to steal our hard-earned wealth.</li>
+					<li>founderJoin(tag=meme_FireWorship)     ->[founderName], known as the Great Merchant, bought a powerful neutron bomb from an allied nation's traders, and used it against the [foeLeader]'s soldiers.</li>
+					<li>victory(tag=meme_FireWorship)         ->The terrible weapon decimated their ranks, their flesh melting from their bones, but left the vault unaffected, as it was built sparing no expenses and prepared to withstand even the fury of atomic fire.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_FireWorship)           ->[founderName] was an economist in one of the Glitterworlds. [founder_pronoun] looked at the apparent prosperity surrounding [foeLeader_objective] and saw only decadence. The stagnation of a false post-scarcity economy that has forgotten what makes life worth living.</li>
+					<li>story(uses=1,tag=meme_FireWorship)    ->Seeking the thrill of making his own fortune, [founderName] assembled a team of merchants and chartered a ship to travel to the Rim. Unfortunately, [founderName_pronoun] didn't survive the dangerous trip.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_FireWorship)         ->The oldest trader in my caravan taught me the history of wealth, how humanity has always sought to increase its prosperity. He was leading me to understand that</li>
+					<li>lesson(tag=meme_FireWorship)              ->the true measure and power of a man lies in profit</li>
+					<li>lessonReinforcement(tag=meme_FireWorship) ->A poor man is a defenseless man, and the Rim is not a place for weaklings.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_FireWorship)    ->Picture a world entering transcendence. Do you really think the masses of poor, filthy, unwashed beggars have any place in such a process?</li>
+					<li>archistFact(tag=meme_FireWorship)     ->The archotechs can't ascend everyone, and it stands to reason that they will choose the most prosperous and capable of us all.</li>
+					<li>archistProphecy(tag=meme_FireWorship) ->[inTheEnd], only those who can buy their way to transcendence will be chosen.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_FireWorship)    ->As there are spirits of nature and mechanisms, so there are spirits that govern the abstract concepts that guide the future of humanity.</li>
+					<li>animistFact(tag=meme_FireWorship)     ->Among the spirits, the Spirit of Wealth has unrivaled power among them all, for it controls the sphere of prosperity, of power.</li>					
+					<li>animistProphecy(tag=meme_FireWorship) ->[itIsSaid] only those who amass incredible wealth can truly appease the spirits.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_FireWorship)->[itIsSaid] as ants store food for the long winter, we will accumulate wealth beyond all imagining, and with it, incredible prosperity.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_FireWorship)->Only the truly prosperous can hope to evade the gaze of such eldritch entities. We will amass wealth beyond all imagining, and with it hopefully buy our way out of their insanity.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_FireWorship)->Such occult knowledge will be expensive. We will amass wealth beyond all imagining, and with it hopefully buy all the secrets that remain hidden.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_FireWorship)->We will amass wealth beyond all imagining, and with it hopefully buy the doomsday devices that will bring the end of days.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_FireWorship)->Regarding employee incentives, please remember that this is not a charity. As the saying goes: "it is wealth that moves the world, and profit that rules it".</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Trader</ideoName>
+				<theme>trading</theme>
+				<adjective>trading</adjective>
+				<member>trader</member>
+			</li>
+			<li>
+				<ideoName>Economics</ideoName>
+				<theme>economy</theme>
+				<adjective>economic</adjective>
+				<member>economist</member>
+			</li>
+			<li>
+				<ideoName>Wealth</ideoName>
+				<theme>wealth</theme>
+				<adjective>wealthy</adjective>
+				<member>investor</member>
+			</li>
+			
+		</symbolPacks>
+		
+		
+	</MemeDef>
+	<MemeDef>
+		<defName>VME_Bushido</defName>
+		<label>bushido</label>
+		<description>A warrior's code of honor means striking down one’s foes unto death itself. Should one’s spirit falter and cowardice prevail, forgiveness can only be found in the afterlife.</description>
+		<iconPath>UI/Memes/Bushido</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>2</impact>
+		
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->trading</li>
+				<li>memeAdjective->wealthy</li>
+				<li>memeAdjective->profitting</li>		
+				<li>memeAdjective->greedy</li>	
+				<li>memeAdjective->materialistic</li>					
+				<li>memeHyphenPrefix->trade</li>			     			
+				<li>memeLeaderNoun->trader</li>
+				<li>memeLeaderNoun->merchant</li>
+
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Bushido)        ->[deity0_name] spoke to [deity0_possessive] followers: "Poverty is the greatest sin. Amassing wealth is the true measure of humanity."</li>
+					<li>episode(uses=1,tag=meme_Bushido)  ->Following the teachings of [deity0_name], we struggled to become the richest faction of all. Poets will sing about prosperity and opulence long after we are gone.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Bushido)           ->On the [place_summary] [place_name], the [memberNamePlural] built a gigantic vault to store all the riches consecrated to [deity0_name].</li>
+					<li>conflict(tag=meme_Bushido)        ->An envious [foeLeader] wanted all these riches for [foeLeader_objective]self, and sought to steal our hard-earned wealth.</li>
+					<li>founderJoin(tag=meme_Bushido)     ->[founderName], known as the Great Merchant, bought a powerful neutron bomb from an allied nation's traders, and used it against the [foeLeader]'s soldiers.</li>
+					<li>victory(tag=meme_Bushido)         ->The terrible weapon decimated their ranks, their flesh melting from their bones, but left the vault unaffected, as it was built sparing no expenses and prepared to withstand even the fury of atomic fire.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Bushido)           ->[founderName] was an economist in one of the Glitterworlds. [founder_pronoun] looked at the apparent prosperity surrounding [foeLeader_objective] and saw only decadence. The stagnation of a false post-scarcity economy that has forgotten what makes life worth living.</li>
+					<li>story(uses=1,tag=meme_Bushido)    ->Seeking the thrill of making his own fortune, [founderName] assembled a team of merchants and chartered a ship to travel to the Rim. Unfortunately, [founderName_pronoun] didn't survive the dangerous trip.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Bushido)         ->The oldest trader in my caravan taught me the history of wealth, how humanity has always sought to increase its prosperity. He was leading me to understand that</li>
+					<li>lesson(tag=meme_Bushido)              ->the true measure and power of a man lies in profit</li>
+					<li>lessonReinforcement(tag=meme_Bushido) ->A poor man is a defenseless man, and the Rim is not a place for weaklings.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Bushido)    ->Picture a world entering transcendence. Do you really think the masses of poor, filthy, unwashed beggars have any place in such a process?</li>
+					<li>archistFact(tag=meme_Bushido)     ->The archotechs can't ascend everyone, and it stands to reason that they will choose the most prosperous and capable of us all.</li>
+					<li>archistProphecy(tag=meme_Bushido) ->[inTheEnd], only those who can buy their way to transcendence will be chosen.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Bushido)    ->As there are spirits of nature and mechanisms, so there are spirits that govern the abstract concepts that guide the future of humanity.</li>
+					<li>animistFact(tag=meme_Bushido)     ->Among the spirits, the Spirit of Wealth has unrivaled power among them all, for it controls the sphere of prosperity, of power.</li>					
+					<li>animistProphecy(tag=meme_Bushido) ->[itIsSaid] only those who amass incredible wealth can truly appease the spirits.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Bushido)->[itIsSaid] as ants store food for the long winter, we will accumulate wealth beyond all imagining, and with it, incredible prosperity.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Bushido)->Only the truly prosperous can hope to evade the gaze of such eldritch entities. We will amass wealth beyond all imagining, and with it hopefully buy our way out of their insanity.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Bushido)->Such occult knowledge will be expensive. We will amass wealth beyond all imagining, and with it hopefully buy all the secrets that remain hidden.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Bushido)->We will amass wealth beyond all imagining, and with it hopefully buy the doomsday devices that will bring the end of days.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Bushido)->Regarding employee incentives, please remember that this is not a charity. As the saying goes: "it is wealth that moves the world, and profit that rules it".</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Trader</ideoName>
+				<theme>trading</theme>
+				<adjective>trading</adjective>
+				<member>trader</member>
+			</li>
+			<li>
+				<ideoName>Economics</ideoName>
+				<theme>economy</theme>
+				<adjective>economic</adjective>
+				<member>economist</member>
+			</li>
+			<li>
+				<ideoName>Wealth</ideoName>
+				<theme>wealth</theme>
+				<adjective>wealthy</adjective>
+				<member>investor</member>
+			</li>
+			
+		</symbolPacks>
+		
+		
+	</MemeDef>
+	<MemeDef>
+		<defName>VME_Light</defName>
+		<label>light</label>
+		<description>Darkness obscures one’s vision as well as one’s mind, darklight is a wicked occurrence and is not to be condoned.</description>
+		<iconPath>UI/Memes/Light</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>2</impact>
+		
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->trading</li>
+				<li>memeAdjective->wealthy</li>
+				<li>memeAdjective->profitting</li>		
+				<li>memeAdjective->greedy</li>	
+				<li>memeAdjective->materialistic</li>					
+				<li>memeHyphenPrefix->trade</li>			     			
+				<li>memeLeaderNoun->trader</li>
+				<li>memeLeaderNoun->merchant</li>
+
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Light)        ->[deity0_name] spoke to [deity0_possessive] followers: "Poverty is the greatest sin. Amassing wealth is the true measure of humanity."</li>
+					<li>episode(uses=1,tag=meme_Light)  ->Following the teachings of [deity0_name], we struggled to become the richest faction of all. Poets will sing about prosperity and opulence long after we are gone.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Light)           ->On the [place_summary] [place_name], the [memberNamePlural] built a gigantic vault to store all the riches consecrated to [deity0_name].</li>
+					<li>conflict(tag=meme_Light)        ->An envious [foeLeader] wanted all these riches for [foeLeader_objective]self, and sought to steal our hard-earned wealth.</li>
+					<li>founderJoin(tag=meme_Light)     ->[founderName], known as the Great Merchant, bought a powerful neutron bomb from an allied nation's traders, and used it against the [foeLeader]'s soldiers.</li>
+					<li>victory(tag=meme_Light)         ->The terrible weapon decimated their ranks, their flesh melting from their bones, but left the vault unaffected, as it was built sparing no expenses and prepared to withstand even the fury of atomic fire.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Light)           ->[founderName] was an economist in one of the Glitterworlds. [founder_pronoun] looked at the apparent prosperity surrounding [foeLeader_objective] and saw only decadence. The stagnation of a false post-scarcity economy that has forgotten what makes life worth living.</li>
+					<li>story(uses=1,tag=meme_Light)    ->Seeking the thrill of making his own fortune, [founderName] assembled a team of merchants and chartered a ship to travel to the Rim. Unfortunately, [founderName_pronoun] didn't survive the dangerous trip.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Light)         ->The oldest trader in my caravan taught me the history of wealth, how humanity has always sought to increase its prosperity. He was leading me to understand that</li>
+					<li>lesson(tag=meme_Light)              ->the true measure and power of a man lies in profit</li>
+					<li>lessonReinforcement(tag=meme_Light) ->A poor man is a defenseless man, and the Rim is not a place for weaklings.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Light)    ->Picture a world entering transcendence. Do you really think the masses of poor, filthy, unwashed beggars have any place in such a process?</li>
+					<li>archistFact(tag=meme_Light)     ->The archotechs can't ascend everyone, and it stands to reason that they will choose the most prosperous and capable of us all.</li>
+					<li>archistProphecy(tag=meme_Light) ->[inTheEnd], only those who can buy their way to transcendence will be chosen.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Light)    ->As there are spirits of nature and mechanisms, so there are spirits that govern the abstract concepts that guide the future of humanity.</li>
+					<li>animistFact(tag=meme_Light)     ->Among the spirits, the Spirit of Wealth has unrivaled power among them all, for it controls the sphere of prosperity, of power.</li>					
+					<li>animistProphecy(tag=meme_Light) ->[itIsSaid] only those who amass incredible wealth can truly appease the spirits.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Light)->[itIsSaid] as ants store food for the long winter, we will accumulate wealth beyond all imagining, and with it, incredible prosperity.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Light)->Only the truly prosperous can hope to evade the gaze of such eldritch entities. We will amass wealth beyond all imagining, and with it hopefully buy our way out of their insanity.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Light)->Such occult knowledge will be expensive. We will amass wealth beyond all imagining, and with it hopefully buy all the secrets that remain hidden.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Light)->We will amass wealth beyond all imagining, and with it hopefully buy the doomsday devices that will bring the end of days.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Light)->Regarding employee incentives, please remember that this is not a charity. As the saying goes: "it is wealth that moves the world, and profit that rules it".</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Trader</ideoName>
+				<theme>trading</theme>
+				<adjective>trading</adjective>
+				<member>trader</member>
+			</li>
+			<li>
+				<ideoName>Economics</ideoName>
+				<theme>economy</theme>
+				<adjective>economic</adjective>
+				<member>economist</member>
+			</li>
+			<li>
+				<ideoName>Wealth</ideoName>
+				<theme>wealth</theme>
+				<adjective>wealthy</adjective>
+				<member>investor</member>
+			</li>
+			
+		</symbolPacks>
+		
+		
+	</MemeDef>
+	<MemeDef>
+		<defName>VME_Nomad</defName>
+		<label>nomad</label>
+		<description>Stagnation is death and as with all things in this world, homes are only temporary. Traveling this world and walking roads unwalked always leads to greater things.</description>
+		<iconPath>UI/Memes/Nomad</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>3</impact>
+		
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->trading</li>
+				<li>memeAdjective->wealthy</li>
+				<li>memeAdjective->profitting</li>		
+				<li>memeAdjective->greedy</li>	
+				<li>memeAdjective->materialistic</li>					
+				<li>memeHyphenPrefix->trade</li>			     			
+				<li>memeLeaderNoun->trader</li>
+				<li>memeLeaderNoun->merchant</li>
+
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Nomad)        ->[deity0_name] spoke to [deity0_possessive] followers: "Poverty is the greatest sin. Amassing wealth is the true measure of humanity."</li>
+					<li>episode(uses=1,tag=meme_Nomad)  ->Following the teachings of [deity0_name], we struggled to become the richest faction of all. Poets will sing about prosperity and opulence long after we are gone.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Nomad)           ->On the [place_summary] [place_name], the [memberNamePlural] built a gigantic vault to store all the riches consecrated to [deity0_name].</li>
+					<li>conflict(tag=meme_Nomad)        ->An envious [foeLeader] wanted all these riches for [foeLeader_objective]self, and sought to steal our hard-earned wealth.</li>
+					<li>founderJoin(tag=meme_Nomad)     ->[founderName], known as the Great Merchant, bought a powerful neutron bomb from an allied nation's traders, and used it against the [foeLeader]'s soldiers.</li>
+					<li>victory(tag=meme_Nomad)         ->The terrible weapon decimated their ranks, their flesh melting from their bones, but left the vault unaffected, as it was built sparing no expenses and prepared to withstand even the fury of atomic fire.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Nomad)           ->[founderName] was an economist in one of the Glitterworlds. [founder_pronoun] looked at the apparent prosperity surrounding [foeLeader_objective] and saw only decadence. The stagnation of a false post-scarcity economy that has forgotten what makes life worth living.</li>
+					<li>story(uses=1,tag=meme_Nomad)    ->Seeking the thrill of making his own fortune, [founderName] assembled a team of merchants and chartered a ship to travel to the Rim. Unfortunately, [founderName_pronoun] didn't survive the dangerous trip.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Nomad)         ->The oldest trader in my caravan taught me the history of wealth, how humanity has always sought to increase its prosperity. He was leading me to understand that</li>
+					<li>lesson(tag=meme_Nomad)              ->the true measure and power of a man lies in profit</li>
+					<li>lessonReinforcement(tag=meme_Nomad) ->A poor man is a defenseless man, and the Rim is not a place for weaklings.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Nomad)    ->Picture a world entering transcendence. Do you really think the masses of poor, filthy, unwashed beggars have any place in such a process?</li>
+					<li>archistFact(tag=meme_Nomad)     ->The archotechs can't ascend everyone, and it stands to reason that they will choose the most prosperous and capable of us all.</li>
+					<li>archistProphecy(tag=meme_Nomad) ->[inTheEnd], only those who can buy their way to transcendence will be chosen.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Nomad)    ->As there are spirits of nature and mechanisms, so there are spirits that govern the abstract concepts that guide the future of humanity.</li>
+					<li>animistFact(tag=meme_Nomad)     ->Among the spirits, the Spirit of Wealth has unrivaled power among them all, for it controls the sphere of prosperity, of power.</li>					
+					<li>animistProphecy(tag=meme_Nomad) ->[itIsSaid] only those who amass incredible wealth can truly appease the spirits.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Nomad)->[itIsSaid] as ants store food for the long winter, we will accumulate wealth beyond all imagining, and with it, incredible prosperity.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Nomad)->Only the truly prosperous can hope to evade the gaze of such eldritch entities. We will amass wealth beyond all imagining, and with it hopefully buy our way out of their insanity.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Nomad)->Such occult knowledge will be expensive. We will amass wealth beyond all imagining, and with it hopefully buy all the secrets that remain hidden.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Nomad)->We will amass wealth beyond all imagining, and with it hopefully buy the doomsday devices that will bring the end of days.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Nomad)->Regarding employee incentives, please remember that this is not a charity. As the saying goes: "it is wealth that moves the world, and profit that rules it".</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Trader</ideoName>
+				<theme>trading</theme>
+				<adjective>trading</adjective>
+				<member>trader</member>
+			</li>
+			<li>
+				<ideoName>Economics</ideoName>
+				<theme>economy</theme>
+				<adjective>economic</adjective>
+				<member>economist</member>
+			</li>
+			<li>
+				<ideoName>Wealth</ideoName>
+				<theme>wealth</theme>
+				<adjective>wealthy</adjective>
+				<member>investor</member>
+			</li>
+			
+		</symbolPacks>
+		
+		
+	</MemeDef>
+	<MemeDef>
+		<defName>VME_BloodCourt</defName>
+		<label>blood court</label>
+		<description>Our leader should be a talented melee fighter and brutal warrior, only usurped by one greater. Bloodshed, corpses, scars are a part of life and a show of strength on this planet.</description>
+		<iconPath>UI/Memes/BloodCourt</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>3</impact>
+		
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->trading</li>
+				<li>memeAdjective->wealthy</li>
+				<li>memeAdjective->profitting</li>		
+				<li>memeAdjective->greedy</li>	
+				<li>memeAdjective->materialistic</li>					
+				<li>memeHyphenPrefix->trade</li>			     			
+				<li>memeLeaderNoun->trader</li>
+				<li>memeLeaderNoun->merchant</li>
+
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_BloodCourt)        ->[deity0_name] spoke to [deity0_possessive] followers: "Poverty is the greatest sin. Amassing wealth is the true measure of humanity."</li>
+					<li>episode(uses=1,tag=meme_BloodCourt)  ->Following the teachings of [deity0_name], we struggled to become the richest faction of all. Poets will sing about prosperity and opulence long after we are gone.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_BloodCourt)           ->On the [place_summary] [place_name], the [memberNamePlural] built a gigantic vault to store all the riches consecrated to [deity0_name].</li>
+					<li>conflict(tag=meme_BloodCourt)        ->An envious [foeLeader] wanted all these riches for [foeLeader_objective]self, and sought to steal our hard-earned wealth.</li>
+					<li>founderJoin(tag=meme_BloodCourt)     ->[founderName], known as the Great Merchant, bought a powerful neutron bomb from an allied nation's traders, and used it against the [foeLeader]'s soldiers.</li>
+					<li>victory(tag=meme_BloodCourt)         ->The terrible weapon decimated their ranks, their flesh melting from their bones, but left the vault unaffected, as it was built sparing no expenses and prepared to withstand even the fury of atomic fire.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_BloodCourt)           ->[founderName] was an economist in one of the Glitterworlds. [founder_pronoun] looked at the apparent prosperity surrounding [foeLeader_objective] and saw only decadence. The stagnation of a false post-scarcity economy that has forgotten what makes life worth living.</li>
+					<li>story(uses=1,tag=meme_BloodCourt)    ->Seeking the thrill of making his own fortune, [founderName] assembled a team of merchants and chartered a ship to travel to the Rim. Unfortunately, [founderName_pronoun] didn't survive the dangerous trip.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_BloodCourt)         ->The oldest trader in my caravan taught me the history of wealth, how humanity has always sought to increase its prosperity. He was leading me to understand that</li>
+					<li>lesson(tag=meme_BloodCourt)              ->the true measure and power of a man lies in profit</li>
+					<li>lessonReinforcement(tag=meme_BloodCourt) ->A poor man is a defenseless man, and the Rim is not a place for weaklings.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_BloodCourt)    ->Picture a world entering transcendence. Do you really think the masses of poor, filthy, unwashed beggars have any place in such a process?</li>
+					<li>archistFact(tag=meme_BloodCourt)     ->The archotechs can't ascend everyone, and it stands to reason that they will choose the most prosperous and capable of us all.</li>
+					<li>archistProphecy(tag=meme_BloodCourt) ->[inTheEnd], only those who can buy their way to transcendence will be chosen.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_BloodCourt)    ->As there are spirits of nature and mechanisms, so there are spirits that govern the abstract concepts that guide the future of humanity.</li>
+					<li>animistFact(tag=meme_BloodCourt)     ->Among the spirits, the Spirit of Wealth has unrivaled power among them all, for it controls the sphere of prosperity, of power.</li>					
+					<li>animistProphecy(tag=meme_BloodCourt) ->[itIsSaid] only those who amass incredible wealth can truly appease the spirits.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_BloodCourt)->[itIsSaid] as ants store food for the long winter, we will accumulate wealth beyond all imagining, and with it, incredible prosperity.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_BloodCourt)->Only the truly prosperous can hope to evade the gaze of such eldritch entities. We will amass wealth beyond all imagining, and with it hopefully buy our way out of their insanity.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_BloodCourt)->Such occult knowledge will be expensive. We will amass wealth beyond all imagining, and with it hopefully buy all the secrets that remain hidden.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_BloodCourt)->We will amass wealth beyond all imagining, and with it hopefully buy the doomsday devices that will bring the end of days.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_BloodCourt)->Regarding employee incentives, please remember that this is not a charity. As the saying goes: "it is wealth that moves the world, and profit that rules it".</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Trader</ideoName>
+				<theme>trading</theme>
+				<adjective>trading</adjective>
+				<member>trader</member>
+			</li>
+			<li>
+				<ideoName>Economics</ideoName>
+				<theme>economy</theme>
+				<adjective>economic</adjective>
+				<member>economist</member>
+			</li>
+			<li>
+				<ideoName>Wealth</ideoName>
+				<theme>wealth</theme>
+				<adjective>wealthy</adjective>
+				<member>investor</member>
+			</li>
+			
+		</symbolPacks>
+		
+		
+	</MemeDef>
+	<MemeDef>
+		<defName>VME_CityBuilders</defName>
+		<label>city builders</label>
+		<description>Our home should feature all the accommodations of a great city, homes, workshops, and places of leisure should all be present and accessible by all.</description>
+		<iconPath>UI/Memes/CityBuilders</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>2</impact>
+		
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->trading</li>
+				<li>memeAdjective->wealthy</li>
+				<li>memeAdjective->profitting</li>		
+				<li>memeAdjective->greedy</li>	
+				<li>memeAdjective->materialistic</li>					
+				<li>memeHyphenPrefix->trade</li>			     			
+				<li>memeLeaderNoun->trader</li>
+				<li>memeLeaderNoun->merchant</li>
+
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_CityBuilders)        ->[deity0_name] spoke to [deity0_possessive] followers: "Poverty is the greatest sin. Amassing wealth is the true measure of humanity."</li>
+					<li>episode(uses=1,tag=meme_CityBuilders)  ->Following the teachings of [deity0_name], we struggled to become the richest faction of all. Poets will sing about prosperity and opulence long after we are gone.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_CityBuilders)           ->On the [place_summary] [place_name], the [memberNamePlural] built a gigantic vault to store all the riches consecrated to [deity0_name].</li>
+					<li>conflict(tag=meme_CityBuilders)        ->An envious [foeLeader] wanted all these riches for [foeLeader_objective]self, and sought to steal our hard-earned wealth.</li>
+					<li>founderJoin(tag=meme_CityBuilders)     ->[founderName], known as the Great Merchant, bought a powerful neutron bomb from an allied nation's traders, and used it against the [foeLeader]'s soldiers.</li>
+					<li>victory(tag=meme_CityBuilders)         ->The terrible weapon decimated their ranks, their flesh melting from their bones, but left the vault unaffected, as it was built sparing no expenses and prepared to withstand even the fury of atomic fire.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_CityBuilders)           ->[founderName] was an economist in one of the Glitterworlds. [founder_pronoun] looked at the apparent prosperity surrounding [foeLeader_objective] and saw only decadence. The stagnation of a false post-scarcity economy that has forgotten what makes life worth living.</li>
+					<li>story(uses=1,tag=meme_CityBuilders)    ->Seeking the thrill of making his own fortune, [founderName] assembled a team of merchants and chartered a ship to travel to the Rim. Unfortunately, [founderName_pronoun] didn't survive the dangerous trip.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_CityBuilders)         ->The oldest trader in my caravan taught me the history of wealth, how humanity has always sought to increase its prosperity. He was leading me to understand that</li>
+					<li>lesson(tag=meme_CityBuilders)              ->the true measure and power of a man lies in profit</li>
+					<li>lessonReinforcement(tag=meme_CityBuilders) ->A poor man is a defenseless man, and the Rim is not a place for weaklings.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_CityBuilders)    ->Picture a world entering transcendence. Do you really think the masses of poor, filthy, unwashed beggars have any place in such a process?</li>
+					<li>archistFact(tag=meme_CityBuilders)     ->The archotechs can't ascend everyone, and it stands to reason that they will choose the most prosperous and capable of us all.</li>
+					<li>archistProphecy(tag=meme_CityBuilders) ->[inTheEnd], only those who can buy their way to transcendence will be chosen.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_CityBuilders)    ->As there are spirits of nature and mechanisms, so there are spirits that govern the abstract concepts that guide the future of humanity.</li>
+					<li>animistFact(tag=meme_CityBuilders)     ->Among the spirits, the Spirit of Wealth has unrivaled power among them all, for it controls the sphere of prosperity, of power.</li>					
+					<li>animistProphecy(tag=meme_CityBuilders) ->[itIsSaid] only those who amass incredible wealth can truly appease the spirits.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_CityBuilders)->[itIsSaid] as ants store food for the long winter, we will accumulate wealth beyond all imagining, and with it, incredible prosperity.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_CityBuilders)->Only the truly prosperous can hope to evade the gaze of such eldritch entities. We will amass wealth beyond all imagining, and with it hopefully buy our way out of their insanity.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_CityBuilders)->Such occult knowledge will be expensive. We will amass wealth beyond all imagining, and with it hopefully buy all the secrets that remain hidden.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_CityBuilders)->We will amass wealth beyond all imagining, and with it hopefully buy the doomsday devices that will bring the end of days.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_CityBuilders)->Regarding employee incentives, please remember that this is not a charity. As the saying goes: "it is wealth that moves the world, and profit that rules it".</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Trader</ideoName>
+				<theme>trading</theme>
+				<adjective>trading</adjective>
+				<member>trader</member>
+			</li>
+			<li>
+				<ideoName>Economics</ideoName>
+				<theme>economy</theme>
+				<adjective>economic</adjective>
+				<member>economist</member>
+			</li>
+			<li>
+				<ideoName>Wealth</ideoName>
+				<theme>wealth</theme>
+				<adjective>wealthy</adjective>
+				<member>investor</member>
+			</li>
+			
+		</symbolPacks>
+		
+		
+	</MemeDef>
+	<MemeDef>
+		<defName>VME_MechanoidSupremacy</defName>
+		<label>mechanoid supremacy</label>
+		<description>Never tire, never wither, never need for sustenance. Mechanoids are humanity perfected and should be revered as our superiors.</description>
+		<iconPath>UI/Memes/MechanoidSupremacy</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>2</impact>
+		
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->trading</li>
+				<li>memeAdjective->wealthy</li>
+				<li>memeAdjective->profitting</li>		
+				<li>memeAdjective->greedy</li>	
+				<li>memeAdjective->materialistic</li>					
+				<li>memeHyphenPrefix->trade</li>			     			
+				<li>memeLeaderNoun->trader</li>
+				<li>memeLeaderNoun->merchant</li>
+
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_MechanoidSupremacy)        ->[deity0_name] spoke to [deity0_possessive] followers: "Poverty is the greatest sin. Amassing wealth is the true measure of humanity."</li>
+					<li>episode(uses=1,tag=meme_MechanoidSupremacy)  ->Following the teachings of [deity0_name], we struggled to become the richest faction of all. Poets will sing about prosperity and opulence long after we are gone.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_MechanoidSupremacy)           ->On the [place_summary] [place_name], the [memberNamePlural] built a gigantic vault to store all the riches consecrated to [deity0_name].</li>
+					<li>conflict(tag=meme_MechanoidSupremacy)        ->An envious [foeLeader] wanted all these riches for [foeLeader_objective]self, and sought to steal our hard-earned wealth.</li>
+					<li>founderJoin(tag=meme_MechanoidSupremacy)     ->[founderName], known as the Great Merchant, bought a powerful neutron bomb from an allied nation's traders, and used it against the [foeLeader]'s soldiers.</li>
+					<li>victory(tag=meme_MechanoidSupremacy)         ->The terrible weapon decimated their ranks, their flesh melting from their bones, but left the vault unaffected, as it was built sparing no expenses and prepared to withstand even the fury of atomic fire.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_MechanoidSupremacy)           ->[founderName] was an economist in one of the Glitterworlds. [founder_pronoun] looked at the apparent prosperity surrounding [foeLeader_objective] and saw only decadence. The stagnation of a false post-scarcity economy that has forgotten what makes life worth living.</li>
+					<li>story(uses=1,tag=meme_MechanoidSupremacy)    ->Seeking the thrill of making his own fortune, [founderName] assembled a team of merchants and chartered a ship to travel to the Rim. Unfortunately, [founderName_pronoun] didn't survive the dangerous trip.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_MechanoidSupremacy)         ->The oldest trader in my caravan taught me the history of wealth, how humanity has always sought to increase its prosperity. He was leading me to understand that</li>
+					<li>lesson(tag=meme_MechanoidSupremacy)              ->the true measure and power of a man lies in profit</li>
+					<li>lessonReinforcement(tag=meme_MechanoidSupremacy) ->A poor man is a defenseless man, and the Rim is not a place for weaklings.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_MechanoidSupremacy)    ->Picture a world entering transcendence. Do you really think the masses of poor, filthy, unwashed beggars have any place in such a process?</li>
+					<li>archistFact(tag=meme_MechanoidSupremacy)     ->The archotechs can't ascend everyone, and it stands to reason that they will choose the most prosperous and capable of us all.</li>
+					<li>archistProphecy(tag=meme_MechanoidSupremacy) ->[inTheEnd], only those who can buy their way to transcendence will be chosen.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_MechanoidSupremacy)    ->As there are spirits of nature and mechanisms, so there are spirits that govern the abstract concepts that guide the future of humanity.</li>
+					<li>animistFact(tag=meme_MechanoidSupremacy)     ->Among the spirits, the Spirit of Wealth has unrivaled power among them all, for it controls the sphere of prosperity, of power.</li>					
+					<li>animistProphecy(tag=meme_MechanoidSupremacy) ->[itIsSaid] only those who amass incredible wealth can truly appease the spirits.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_MechanoidSupremacy)->[itIsSaid] as ants store food for the long winter, we will accumulate wealth beyond all imagining, and with it, incredible prosperity.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_MechanoidSupremacy)->Only the truly prosperous can hope to evade the gaze of such eldritch entities. We will amass wealth beyond all imagining, and with it hopefully buy our way out of their insanity.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_MechanoidSupremacy)->Such occult knowledge will be expensive. We will amass wealth beyond all imagining, and with it hopefully buy all the secrets that remain hidden.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_MechanoidSupremacy)->We will amass wealth beyond all imagining, and with it hopefully buy the doomsday devices that will bring the end of days.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_MechanoidSupremacy)->Regarding employee incentives, please remember that this is not a charity. As the saying goes: "it is wealth that moves the world, and profit that rules it".</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Trader</ideoName>
+				<theme>trading</theme>
+				<adjective>trading</adjective>
+				<member>trader</member>
+			</li>
+			<li>
+				<ideoName>Economics</ideoName>
+				<theme>economy</theme>
+				<adjective>economic</adjective>
+				<member>economist</member>
+			</li>
+			<li>
+				<ideoName>Wealth</ideoName>
+				<theme>wealth</theme>
+				<adjective>wealthy</adjective>
+				<member>investor</member>
+			</li>
+			
+		</symbolPacks>
+		
+		
+	</MemeDef>
+	<MemeDef>
+		<defName>VME_InsectoidSupremacy</defName>
+		<label>insectoid supremacy</label>
+		<description>The labyrinthine tunnels of the underdark ungulate with a seemingly limitless hive of relentless and brutal insects, we should not fear them, we should revere them.</description>
+		<iconPath>UI/Memes/InsectoidSupremacy</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>2</impact>
+		
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->trading</li>
+				<li>memeAdjective->wealthy</li>
+				<li>memeAdjective->profitting</li>		
+				<li>memeAdjective->greedy</li>	
+				<li>memeAdjective->materialistic</li>					
+				<li>memeHyphenPrefix->trade</li>			     			
+				<li>memeLeaderNoun->trader</li>
+				<li>memeLeaderNoun->merchant</li>
+
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_InsectoidSupremacy)        ->[deity0_name] spoke to [deity0_possessive] followers: "Poverty is the greatest sin. Amassing wealth is the true measure of humanity."</li>
+					<li>episode(uses=1,tag=meme_InsectoidSupremacy)  ->Following the teachings of [deity0_name], we struggled to become the richest faction of all. Poets will sing about prosperity and opulence long after we are gone.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_InsectoidSupremacy)           ->On the [place_summary] [place_name], the [memberNamePlural] built a gigantic vault to store all the riches consecrated to [deity0_name].</li>
+					<li>conflict(tag=meme_InsectoidSupremacy)        ->An envious [foeLeader] wanted all these riches for [foeLeader_objective]self, and sought to steal our hard-earned wealth.</li>
+					<li>founderJoin(tag=meme_InsectoidSupremacy)     ->[founderName], known as the Great Merchant, bought a powerful neutron bomb from an allied nation's traders, and used it against the [foeLeader]'s soldiers.</li>
+					<li>victory(tag=meme_InsectoidSupremacy)         ->The terrible weapon decimated their ranks, their flesh melting from their bones, but left the vault unaffected, as it was built sparing no expenses and prepared to withstand even the fury of atomic fire.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_InsectoidSupremacy)           ->[founderName] was an economist in one of the Glitterworlds. [founder_pronoun] looked at the apparent prosperity surrounding [foeLeader_objective] and saw only decadence. The stagnation of a false post-scarcity economy that has forgotten what makes life worth living.</li>
+					<li>story(uses=1,tag=meme_InsectoidSupremacy)    ->Seeking the thrill of making his own fortune, [founderName] assembled a team of merchants and chartered a ship to travel to the Rim. Unfortunately, [founderName_pronoun] didn't survive the dangerous trip.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_InsectoidSupremacy)         ->The oldest trader in my caravan taught me the history of wealth, how humanity has always sought to increase its prosperity. He was leading me to understand that</li>
+					<li>lesson(tag=meme_InsectoidSupremacy)              ->the true measure and power of a man lies in profit</li>
+					<li>lessonReinforcement(tag=meme_InsectoidSupremacy) ->A poor man is a defenseless man, and the Rim is not a place for weaklings.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_InsectoidSupremacy)    ->Picture a world entering transcendence. Do you really think the masses of poor, filthy, unwashed beggars have any place in such a process?</li>
+					<li>archistFact(tag=meme_InsectoidSupremacy)     ->The archotechs can't ascend everyone, and it stands to reason that they will choose the most prosperous and capable of us all.</li>
+					<li>archistProphecy(tag=meme_InsectoidSupremacy) ->[inTheEnd], only those who can buy their way to transcendence will be chosen.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_InsectoidSupremacy)    ->As there are spirits of nature and mechanisms, so there are spirits that govern the abstract concepts that guide the future of humanity.</li>
+					<li>animistFact(tag=meme_InsectoidSupremacy)     ->Among the spirits, the Spirit of Wealth has unrivaled power among them all, for it controls the sphere of prosperity, of power.</li>					
+					<li>animistProphecy(tag=meme_InsectoidSupremacy) ->[itIsSaid] only those who amass incredible wealth can truly appease the spirits.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_InsectoidSupremacy)->[itIsSaid] as ants store food for the long winter, we will accumulate wealth beyond all imagining, and with it, incredible prosperity.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_InsectoidSupremacy)->Only the truly prosperous can hope to evade the gaze of such eldritch entities. We will amass wealth beyond all imagining, and with it hopefully buy our way out of their insanity.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_InsectoidSupremacy)->Such occult knowledge will be expensive. We will amass wealth beyond all imagining, and with it hopefully buy all the secrets that remain hidden.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_InsectoidSupremacy)->We will amass wealth beyond all imagining, and with it hopefully buy the doomsday devices that will bring the end of days.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_InsectoidSupremacy)->Regarding employee incentives, please remember that this is not a charity. As the saying goes: "it is wealth that moves the world, and profit that rules it".</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Trader</ideoName>
+				<theme>trading</theme>
+				<adjective>trading</adjective>
+				<member>trader</member>
+			</li>
+			<li>
+				<ideoName>Economics</ideoName>
+				<theme>economy</theme>
+				<adjective>economic</adjective>
+				<member>economist</member>
+			</li>
+			<li>
+				<ideoName>Wealth</ideoName>
+				<theme>wealth</theme>
+				<adjective>wealthy</adjective>
+				<member>investor</member>
+			</li>
+			
+		</symbolPacks>
+		
+		
+	</MemeDef>
+	<MemeDef>
+		<defName>VME_PartyLife</defName>
+		<label>party life</label>
+		<description>Let us toast to the acts of dance, drink and debauchery. Any free time is a good time, but party time is the best time.</description>
+		<iconPath>UI/Memes/VME_AlphaMeme</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>2</impact>
+		
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->trading</li>
+				<li>memeAdjective->wealthy</li>
+				<li>memeAdjective->profitting</li>		
+				<li>memeAdjective->greedy</li>	
+				<li>memeAdjective->materialistic</li>					
+				<li>memeHyphenPrefix->trade</li>			     			
+				<li>memeLeaderNoun->trader</li>
+				<li>memeLeaderNoun->merchant</li>
+
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_PartyLife)        ->[deity0_name] spoke to [deity0_possessive] followers: "Poverty is the greatest sin. Amassing wealth is the true measure of humanity."</li>
+					<li>episode(uses=1,tag=meme_PartyLife)  ->Following the teachings of [deity0_name], we struggled to become the richest faction of all. Poets will sing about prosperity and opulence long after we are gone.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_PartyLife)           ->On the [place_summary] [place_name], the [memberNamePlural] built a gigantic vault to store all the riches consecrated to [deity0_name].</li>
+					<li>conflict(tag=meme_PartyLife)        ->An envious [foeLeader] wanted all these riches for [foeLeader_objective]self, and sought to steal our hard-earned wealth.</li>
+					<li>founderJoin(tag=meme_PartyLife)     ->[founderName], known as the Great Merchant, bought a powerful neutron bomb from an allied nation's traders, and used it against the [foeLeader]'s soldiers.</li>
+					<li>victory(tag=meme_PartyLife)         ->The terrible weapon decimated their ranks, their flesh melting from their bones, but left the vault unaffected, as it was built sparing no expenses and prepared to withstand even the fury of atomic fire.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_PartyLife)           ->[founderName] was an economist in one of the Glitterworlds. [founder_pronoun] looked at the apparent prosperity surrounding [foeLeader_objective] and saw only decadence. The stagnation of a false post-scarcity economy that has forgotten what makes life worth living.</li>
+					<li>story(uses=1,tag=meme_PartyLife)    ->Seeking the thrill of making his own fortune, [founderName] assembled a team of merchants and chartered a ship to travel to the Rim. Unfortunately, [founderName_pronoun] didn't survive the dangerous trip.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_PartyLife)         ->The oldest trader in my caravan taught me the history of wealth, how humanity has always sought to increase its prosperity. He was leading me to understand that</li>
+					<li>lesson(tag=meme_PartyLife)              ->the true measure and power of a man lies in profit</li>
+					<li>lessonReinforcement(tag=meme_PartyLife) ->A poor man is a defenseless man, and the Rim is not a place for weaklings.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_PartyLife)    ->Picture a world entering transcendence. Do you really think the masses of poor, filthy, unwashed beggars have any place in such a process?</li>
+					<li>archistFact(tag=meme_PartyLife)     ->The archotechs can't ascend everyone, and it stands to reason that they will choose the most prosperous and capable of us all.</li>
+					<li>archistProphecy(tag=meme_PartyLife) ->[inTheEnd], only those who can buy their way to transcendence will be chosen.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_PartyLife)    ->As there are spirits of nature and mechanisms, so there are spirits that govern the abstract concepts that guide the future of humanity.</li>
+					<li>animistFact(tag=meme_PartyLife)     ->Among the spirits, the Spirit of Wealth has unrivaled power among them all, for it controls the sphere of prosperity, of power.</li>					
+					<li>animistProphecy(tag=meme_PartyLife) ->[itIsSaid] only those who amass incredible wealth can truly appease the spirits.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_PartyLife)->[itIsSaid] as ants store food for the long winter, we will accumulate wealth beyond all imagining, and with it, incredible prosperity.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_PartyLife)->Only the truly prosperous can hope to evade the gaze of such eldritch entities. We will amass wealth beyond all imagining, and with it hopefully buy our way out of their insanity.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_PartyLife)->Such occult knowledge will be expensive. We will amass wealth beyond all imagining, and with it hopefully buy all the secrets that remain hidden.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_PartyLife)->We will amass wealth beyond all imagining, and with it hopefully buy the doomsday devices that will bring the end of days.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_PartyLife)->Regarding employee incentives, please remember that this is not a charity. As the saying goes: "it is wealth that moves the world, and profit that rules it".</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Trader</ideoName>
+				<theme>trading</theme>
+				<adjective>trading</adjective>
+				<member>trader</member>
+			</li>
+			<li>
+				<ideoName>Economics</ideoName>
+				<theme>economy</theme>
+				<adjective>economic</adjective>
+				<member>economist</member>
+			</li>
+			<li>
+				<ideoName>Wealth</ideoName>
+				<theme>wealth</theme>
+				<adjective>wealthy</adjective>
+				<member>investor</member>
 			</li>
 			
 		</symbolPacks>

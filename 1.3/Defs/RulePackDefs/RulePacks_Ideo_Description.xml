@@ -556,8 +556,8 @@
     <defName>VME_CorporateDescription</defName>
     <segments>
       <li>introMemo</li>
-      <li>episode</li>
-      <li>episode</li>
+      <li>episodeCorporate</li>
+      <li>episodeCorporate</li>
     </segments>
     <rules>
       <include>
@@ -565,10 +565,10 @@
       </include>
       <rulesStrings>
         <!-- final fallbacks -->
-        <li>episode(priority=-1)-></li> <!-- allow zero or more episodes -->
+        <li>episodeCorporate(priority=-1)-></li> <!-- allow zero or more episodes -->
 		
 		<!-- typesetting -->
-        <li>r_pattern->"To: All Employees\n\nFrom: Upper Management\n\nSubject: [subject]\n\n[r_introMemo] [r_episode] [r_episode]"</li>
+        <li>r_pattern->"To: All Employees\n\nFrom: Upper Management\n\nSubject: [subject]\n\n[r_introMemo] [r_episodeCorporate] [r_episodeCorporate]"</li>
 
         <!-- generic creation -->
         <li>introMemo->Coworkers, it has come to my attention that many in the office have been spending time doing unapproved activities.</li>
@@ -586,17 +586,17 @@
 
 
         <!-- generic episode -->
-        <li>episode(uses=1)->This memo is a reminder to use your work hours for work.</li>
-        <li>episode(uses=1)->Of course, we don't want you to view our organization as a place of drudgery and draconian rules. We encourage a fun and competitive environment.</li>
-        <li>episode(uses=1)->Though this change may initially seem like a headache and an extra step, it is necessary to ensure the proper functioning of our company.</li>
-        <li>episode(uses=1)->Please be sure to follow this new procedure.</li>
-		<li>episode(uses=1)->I think I don't need to remind you all that we are a team, no, a family. And families stick together, no matter the challenge.</li>
-		<li>episode(uses=1)->This critical issue will be discussed in an all-hands meeting, ASAP.</li>
-		<li>episode(uses=1)->It is prioritary that we start thinking outside the box. And let's all sing from the same hymn sheet.</li>
-		<li>episode(uses=1)->Let's take it to the next level, people.</li>
-		<li>episode(uses=1)->Our executive management has decided that some restructuring of our department is in order so that our transition through this merger can be as seamless as possible. You'll receive more info shortly.</li>
-		<li>episode(uses=1)->We are scheduling a staff meeting for tomorrow from 12 pm to 1 pm where we will outline the steps of this important transition; lunch will be provided.</li>
-		<li>episode(uses=1)->Your experience and vision will be a great asset to this group, and I know that the team is looking forward to working with you.</li>
+        <li>episodeCorporate(uses=1)->This memo is a reminder to use your work hours for work.</li>
+        <li>episodeCorporate(uses=1)->Of course, we don't want you to view our organization as a place of drudgery and draconian rules. We encourage a fun and competitive environment.</li>
+        <li>episodeCorporate(uses=1)->Though this change may initially seem like a headache and an extra step, it is necessary to ensure the proper functioning of our company.</li>
+        <li>episodeCorporate(uses=1)->Please be sure to follow this new procedure.</li>
+		<li>episodeCorporate(uses=1)->I think I don't need to remind you all that we are a team, no, a family. And families stick together, no matter the challenge.</li>
+		<li>episodeCorporate(uses=1)->This critical issue will be discussed in an all-hands meeting, ASAP.</li>
+		<li>episodeCorporate(uses=1)->It is prioritary that we start thinking outside the box. And let's all sing from the same hymn sheet.</li>
+		<li>episodeCorporate(uses=1)->Let's take it to the next level, people.</li>
+		<li>episodeCorporate(uses=1)->Our executive management has decided that some restructuring of our department is in order so that our transition through this merger can be as seamless as possible. You'll receive more info shortly.</li>
+		<li>episodeCorporate(uses=1)->We are scheduling a staff meeting for tomorrow from 12 pm to 1 pm where we will outline the steps of this important transition; lunch will be provided.</li>
+		<li>episodeCorporate(uses=1)->Your experience and vision will be a great asset to this group, and I know that the team is looking forward to working with you.</li>
 
 
 		
