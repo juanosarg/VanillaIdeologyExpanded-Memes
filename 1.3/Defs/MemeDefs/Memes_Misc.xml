@@ -1371,11 +1371,11 @@
 					<!-- theist founder -->
 					<li>intro(tag=meme_FireWorship)           ->On the [place_summary] [place_name], the [memberNamePlural] built an enormous bonfire, dedicated to [deity0_name].</li>
 					<li>conflict(tag=meme_FireWorship)        ->An envious [foeLeader] saw the bonfire in the horizon, and wanted to quench its fire.</li>
-					<li>founderJoin(tag=meme_FireWorship)     ->[founderName], known as the Great Merchant, bought a powerful neutron bomb from an allied nation's traders, and used it against the [foeLeader]'s soldiers.</li>
-					<li>victory(tag=meme_FireWorship)         ->The terrible weapon decimated their ranks, their flesh melting from their bones, but left the vault unaffected, as it was built sparing no expenses and prepared to withstand even the fury of atomic fire.</li>
+					<li>founderJoin(tag=meme_FireWorship)     ->At great peril [founderName], an acolyte of [deity0_name], infiltrated the encampment of the [foeLeader]'s soldiers during the night, and set their tents ablaze.</li>
+					<li>victory(tag=meme_FireWorship)         ->The [memberNamePlural] will never forget the anguished cries of the burning soldiers. Their charred corpses were added to the bonfire, a warning to all who would attempt to defy the Will of [deity0_name] again.</li>
 					<!-- ideological founder -->
-					<li>setup(tag=meme_FireWorship)           ->[founderName] was an economist in one of the Glitterworlds. [founder_pronoun] looked at the apparent prosperity surrounding [foeLeader_objective] and saw only decadence. The stagnation of a false post-scarcity economy that has forgotten what makes life worth living.</li>
-					<li>story(uses=1,tag=meme_FireWorship)    ->Seeking the thrill of making his own fortune, [founderName] assembled a team of merchants and chartered a ship to travel to the Rim. Unfortunately, [founderName_pronoun] didn't survive the dangerous trip.</li>
+					<li>setup(tag=meme_FireWorship)           ->[founderName] was imprisoned from [founderName_possessive] youth for [founderName_possessive] supposed crimes. Arsonist, [founderName_pronoun] was called. What they failed to see is that [founderName_pronoun] was instead a visionary, a prophet. [founderName_pronoun] saw the hidden patterns that are inside all flames.</li>
+					<li>story(uses=1,tag=meme_FireWorship)    ->A small spark can start a great fire, and the philosophy [founderName] assembled a team of merchants and chartered a ship to travel to the Rim. Unfortunately, [founderName_pronoun] didn't survive the dangerous trip.</li>
 					<!-- ideological lesson -->
 					<li>lessonIntro(tag=meme_FireWorship)         ->The oldest trader in my caravan taught me the history of wealth, how humanity has always sought to increase its prosperity. He was leading me to understand that</li>
 					<li>lesson(tag=meme_FireWorship)              ->the true measure and power of a man lies in profit</li>
