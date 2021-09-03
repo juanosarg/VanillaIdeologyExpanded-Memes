@@ -1684,14 +1684,11 @@
 		<impact>2</impact>
 		<generalRules>
 			<rulesStrings>
-				<li>memeAdjective->trading</li>
-				<li>memeAdjective->wealthy</li>
-				<li>memeAdjective->profitting</li>
-				<li>memeAdjective->greedy</li>
-				<li>memeAdjective->materialistic</li>
-				<li>memeHyphenPrefix->trade</li>
-				<li>memeLeaderNoun->trader</li>
-				<li>memeLeaderNoun->merchant</li>
+				<li>memeAdjective->building</li>
+				<li>memeAdjective->industrious</li>
+				
+				<li>memeLeaderNoun->great builder</li>
+				<li>memeLeaderNoun->architect</li>
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
@@ -1701,15 +1698,15 @@
 					<li>creation(tag=meme_CityBuilders)        ->[deity0_name] thus spoke to us: "Build these cities and surround them with walls and towers, gates and bars. The land is yours because you have sought me; On every lofty mountain and on every high hill there will be streams running with water, until the towers fall".</li>
 					<li>episode(uses=1,tag=meme_CityBuilders)  ->Following the teachings of [deity0_name], we struggled to become the richest faction of all. Poets will sing about prosperity and opulence long after we are gone.</li>
 					<!-- theist founder -->
-					<li>intro(tag=meme_CityBuilders)           ->On the [place_summary] [place_name], the [memberNamePlural] built a gigantic vault to store all the riches consecrated to [deity0_name].</li>
-					<li>conflict(tag=meme_CityBuilders)        ->An envious [foeLeader] wanted all these riches for [foeLeader_objective]self, and sought to steal our hard-earned wealth.</li>
-					<li>founderJoin(tag=meme_CityBuilders)     ->[founderName], known as the Great Merchant, bought a powerful neutron bomb from an allied nation's traders, and used it against the [foeLeader]'s soldiers.</li>
-					<li>victory(tag=meme_CityBuilders)         ->The terrible weapon decimated their ranks, their flesh melting from their bones, but left the vault unaffected, as it was built sparing no expenses and prepared to withstand even the fury of atomic fire.</li>
+					<li>intro(tag=meme_CityBuilders)           ->On the [place_summary] [place_name], the [memberNamePlural] built the greatest city, with a grand temple dedicated to [deity0_name].</li>
+					<li>conflict(tag=meme_CityBuilders)        ->An envious [foeLeader] wanted to conquer this city, for he was jealous of the leisure its inhabitants enjoyed. [foeLeader_possessive] assembled a huge army, and laid siege to the city.</li>
+					<li>founderJoin(tag=meme_CityBuilders)     ->[founderName], known as the Great Magistrate, laughed at this temerity. Didn't the [foeLeader] know that the city was sacred to [deity0_name]? Its walls were tall as mountains, and impenetrable.</li>
+					<li>victory(tag=meme_CityBuilders)         ->After several months, the [foeLeader] was forced to retreat, as most of [foeLeader_possessive] men were dying of starvation and exposure. The city had't fallen, and it would stand proud for millenia to come.</li>
 					<!-- ideological founder -->
-					<li>setup(tag=meme_CityBuilders)           ->[founderName] was an economist in one of the Glitterworlds. [founder_pronoun] looked at the apparent prosperity surrounding [foeLeader_objective] and saw only decadence. The stagnation of a false post-scarcity economy that has forgotten what makes life worth living.</li>
-					<li>story(uses=1,tag=meme_CityBuilders)    ->Seeking the thrill of making his own fortune, [founderName] assembled a team of merchants and chartered a ship to travel to the Rim. Unfortunately, [founderName_pronoun] didn't survive the dangerous trip.</li>
+					<li>setup(tag=meme_CityBuilders)           ->[founderName] was a magistrate in a small settlement in the Rim. [founder_pronoun] believed that a squalid settlement stood little chance in the face of constant external threats, and he proposed a series of monumental construction projects that would turn the small hamlet into a sprawling metropolis.</li>
+					<li>story(uses=1,tag=meme_CityBuilders)    ->[founderName] is remembered as ther Great Architect, and [founder_possessive] city would stand proud for millenia to come.</li>
 					<!-- ideological lesson -->
-					<li>lessonIntro(tag=meme_CityBuilders)         ->The oldest trader in my caravan taught me the history of wealth, how humanity has always sought to increase its prosperity. He was leading me to understand that</li>
+					<li>lessonIntro(tag=meme_CityBuilders)         ->In the oldest tomes I studied the forgotten art of siege warfare. If we want to make our cities stand proud we must understand that</li>
 					<li>lesson(tag=meme_CityBuilders)              ->the true measure and power of a man lies in profit</li>
 					<li>lessonReinforcement(tag=meme_CityBuilders) ->A poor man is a defenseless man, and the Rim is not a place for weaklings.</li>
 					<!-- archist -->
