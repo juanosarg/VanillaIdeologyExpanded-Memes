@@ -961,7 +961,7 @@
 					<li>animistFact(tag=meme_Scrapper)     ->When we have recovered and reused the technology of our forefathers, we will truly make their spirits at peace.</li>
 					<li>animistProphecy(tag=meme_Scrapper) ->[itIsSaid] one day we will be as intelligent as the ancients were, and their discarded machinery will hold no secrets for us.</li>
 					<!-- serketist -->
-					<li>serketistProphecy(tag=meme_Scrapper)->[itIsSaid] scavenging the ancient technology that litters the landscape is as sacred as termites using soil to build their nests.</li>
+					<li>serketistProphecy(tag=meme_Scrapper)->[itIsSaid] we will learn that scavenging the ancient technology that litters the landscape is as sacred as termites using soil to build their nests.</li>
 					<!-- eldritch / chthonian -->
 					<li>chthonianProphecy(tag=meme_Scrapper)->The Rim is littered with the technological corpses of those who failed to appease these inhuman entities: only by repurposing this ancient technology may we hope to resist their onslaught where so many others failed.</li>
 					<!-- esoteric -->
@@ -1641,7 +1641,7 @@
 					<li>setup(tag=meme_BloodCourt)           ->[founderName] was a rampaging warlord, constantly fighting the remnants of a fallen star empire. [founder_pronoun] understood that conflict and strife are what guides a civilization. Complacency brings stagnation.</li>
 					<li>story(uses=1,tag=meme_BloodCourt)    ->[founder_pronoun] taught us that a strong, successful man is not the victim of his environment. He creates favorable conditions. His own inherent force and energy compel things to turn out as he desires.</li>
 					<!-- ideological lesson -->
-					<li>lessonIntro(tag=meme_BloodCourt)         ->It was incredibly tough to grow up in that place, and not all of use made it. Even so, those who perished in the struggle made clear that</li>
+					<li>lessonIntro(tag=meme_BloodCourt)         ->It was incredibly tough to grow up in that place, and not all of us made it. Even so, those who perished in the struggle made clear that</li>
 					<li>lesson(tag=meme_BloodCourt)              ->difficulties are meant to rouse, not discourage. The human spirit is to grow strong by conflict</li>
 					<li>lessonReinforcement(tag=meme_BloodCourt) ->You have power over your mind - not outside events. Realize this, and you will find strength.</li>
 					<!-- archist -->
