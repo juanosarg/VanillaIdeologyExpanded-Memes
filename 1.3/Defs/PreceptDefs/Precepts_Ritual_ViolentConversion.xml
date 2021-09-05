@@ -5,22 +5,7 @@
 
  
 
-  <PreceptDef>
-    <defName>VME_DivineStarsPrecept</defName>
-    <label>divine the stars</label>
-    <description>A divination ritual.</description>
-	<issue>Ritual</issue>
-	 <preceptClass>Precept_Ritual</preceptClass>
-    <visible>true</visible>
-    <countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
-    <selectionWeight>1.0</selectionWeight>
-    <ritualPatternBase>VME_DivineStarsRitual</ritualPatternBase>
-    <iconPath>UI/Rituals/CelebrationStarDivination</iconPath>
-    <ignoreNameUniqueness>false</ignoreNameUniqueness>
-	<requiredMemes>
-      <li>VME_Astrology</li>
-    </requiredMemes>
-  </PreceptDef>
+ 
   
   <PreceptDef>
     <defName>VME_ViolentConversionPrecept</defName>
@@ -32,7 +17,7 @@
     <countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
     <selectionWeight>1.0</selectionWeight>
     <ritualPatternBase>VME_ViolentConversionRitual</ritualPatternBase>
-    <iconPath>UI/Rituals/VME_AlphaMeme</iconPath>
+    <iconPath>UI/Issues/ViolentConversion</iconPath>
     <ignoreNameUniqueness>false</ignoreNameUniqueness>
 	<requiredMemes>
       <li>VME_ViolentConversion</li>

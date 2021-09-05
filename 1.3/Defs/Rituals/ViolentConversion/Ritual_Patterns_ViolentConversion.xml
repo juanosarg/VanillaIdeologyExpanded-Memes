@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <RitualPatternDef>
-    <defName>VME_DivineStarsRitual</defName>
-    <ritualBehavior>VME_DivineStarsRitualBehaviour</ritualBehavior>
-    <ritualObligationTargetFilter>AnyIdeoBuildingOrRitualSpot</ritualObligationTargetFilter>
-    <ritualTargetFilter>IdeoBuildingOrRitualSpot</ritualTargetFilter>
-    <alwaysStartAnytime>true</alwaysStartAnytime>
-	<ritualOutcomeEffect>VME_DivineStarsRitualOutcome</ritualOutcomeEffect>
-  </RitualPatternDef>
+ 
   
   <RitualPatternDef>
     <defName>VME_ViolentConversionRitual</defName>

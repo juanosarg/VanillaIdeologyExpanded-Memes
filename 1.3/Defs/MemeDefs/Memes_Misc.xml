@@ -158,6 +158,12 @@
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>VME_Mood_DictatedByStars</li>
+			</li>
+			
+		</requireOne>
 		<requiredRituals>
 			<li>
 				<precept>VME_DivineStarsPrecept</precept>
@@ -1135,6 +1141,7 @@
 				<ideoName>Elders</ideoName>
 				<theme>elders</theme>
 				<adjective>elderly</adjective>
+				<member>elder</member>
 			</li>
 		</symbolPacks>
 	</MemeDef>
@@ -1273,6 +1280,7 @@
 				<ideoName>Egalitarianism</ideoName>
 				<theme>equality</theme>
 				<adjective>egalitarian</adjective>
+				<member>egalitarian</member>
 			</li>
 		</symbolPacks>
 	</MemeDef>
@@ -1552,12 +1560,11 @@
 				<li>memeAdjective->itinerant</li>
 				<li>memeAdjective->travelling</li>
 				<li>memeAdjective->transient</li>
-				<li>memeHyphenPrefix->rover</li>				
+				<li>memeHyphenPrefix->rover</li>
 				<li>memeConcept->wandering</li>
-				<li>memeConcept->travelling</li>				
+				<li>memeConcept->travelling</li>
 				<li>memeLeaderNoun->wayfarer</li>
-				<li>memeLeaderNoun->wanderer</li>				
-				
+				<li>memeLeaderNoun->wanderer</li>
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
@@ -1606,7 +1613,6 @@
 				<adjective>nomadic</adjective>
 				<member>nomad</member>
 			</li>
-			
 		</symbolPacks>
 	</MemeDef>
 	<MemeDef>
@@ -1619,7 +1625,7 @@
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->bloody</li>
-				<li>memeAdjective->brutal</li>				
+				<li>memeAdjective->brutal</li>
 				<li>memeConcept->strength</li>
 				<li>memeConcept->strife</li>
 				<li>memeLeaderNoun->bloodletter</li>
@@ -1672,7 +1678,6 @@
 				<adjective>violent</adjective>
 				<member>fighter</member>
 			</li>
-			
 		</symbolPacks>
 	</MemeDef>
 	<MemeDef>
@@ -1686,7 +1691,6 @@
 			<rulesStrings>
 				<li>memeAdjective->building</li>
 				<li>memeAdjective->industrious</li>
-				
 				<li>memeLeaderNoun->great builder</li>
 				<li>memeLeaderNoun->architect</li>
 			</rulesStrings>
@@ -1737,7 +1741,6 @@
 				<adjective>builder</adjective>
 				<member>builder</member>
 			</li>
-			
 		</symbolPacks>
 	</MemeDef>
 	<MemeDef>
@@ -1753,17 +1756,16 @@
 				<li>memeAdjective->machine</li>
 				<li>memeAdjective->cybernetic</li>
 				<li>memeCreed->perfection</li>
-				<li>memeCreed->mechanoids</li>				
+				<li>memeCreed->mechanoids</li>
 				<li>memeHyphenPrefix->techno</li>
 				<li>memeHyphenPrefix->cyber</li>
-				<li>memeHyphenPrefix->mecha</li>			
+				<li>memeHyphenPrefix->mecha</li>
 				<li>memeConcept->technology</li>
 				<li>memeConcept->silicon</li>
-				<li>memeConcept->mechanoids</li>							
+				<li>memeConcept->mechanoids</li>
 				<li>memeLeaderNoun->cyborg</li>
 				<li>memeLeaderAdjective->techno</li>
 				<li>memeLeaderAdjective->mecha</li>
-			
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
@@ -1812,7 +1814,6 @@
 				<adjective>mechanoid</adjective>
 				<member>mechanoid worshipper</member>
 			</li>
-			
 		</symbolPacks>
 	</MemeDef>
 	<MemeDef>
@@ -1828,11 +1829,10 @@
 				<li>memeAdjective->chitinous</li>
 				<li>memeAdjective->insectile</li>
 				<li>memeCreed->perfection</li>
-				<li>memeCreed->insectoids</li>				
+				<li>memeCreed->insectoids</li>
 				<li>memeHyphenPrefix->bug</li>
-				<li>memeHyphenPrefix->fly</li>					
-				<li>memeConcept->insects</li>									
-				
+				<li>memeHyphenPrefix->fly</li>
+				<li>memeConcept->insects</li>
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
@@ -1881,7 +1881,6 @@
 				<adjective>insectoid</adjective>
 				<member>insect worshipper</member>
 			</li>
-			
 		</symbolPacks>
 	</MemeDef>
 	<MemeDef>
@@ -1898,9 +1897,9 @@
 				<li>memeAdjective->dancing</li>
 				<li>memeAdjective->enjoying</li>
 				<li>memeConcept->celebration</li>
-				<li>memeConcept->festivity</li>				
-				<li>memeLeaderNoun->merrymaker</li>				
-				<li>memeMoralist->reveler</li>				
+				<li>memeConcept->festivity</li>
+				<li>memeLeaderNoun->merrymaker</li>
+				<li>memeMoralist->reveler</li>
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
@@ -1949,7 +1948,6 @@
 				<adjective>partying</adjective>
 				<member>celebrant</member>
 			</li>
-			
 		</symbolPacks>
 	</MemeDef>
 </Defs>
