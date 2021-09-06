@@ -296,7 +296,7 @@
     <Compile Include="Harmony\Plant_YieldNow.cs" />
     <Compile Include="Harmony\JobDriver_Notify_Starting.cs" />
     <Compile Include="Harmony\ThoughtWorker_Sick_CurrentStateInternal.cs" />
-    <Compile Include="MapComponents\MapComponent_IllnessTracker - Copy.cs" />
+    <Compile Include="MapComponents\MapComponent_BestCrafterTracker.cs" />
     <Compile Include="MapComponents\MapComponent_IllnessTracker.cs" />
     <Compile Include="MapComponents\MapComponent_MoodFromStars.cs" />
     <Compile Include="PawnCollectionClass\PawnCollectionClass.cs" />
