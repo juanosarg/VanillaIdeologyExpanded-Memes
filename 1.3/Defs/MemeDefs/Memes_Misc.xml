@@ -162,7 +162,7 @@
 			<li>
 				<li>VME_Mood_DictatedByStars</li>
 			</li>
-			
+
 		</requireOne>
 		<requiredRituals>
 			<li>
@@ -216,8 +216,8 @@
 			<rules>
 				<rulesStrings>
 					<!-- theist myth -->
-					<li>creation(tag=meme_GodEmperor)        ->[deity0_name] annointed [deity0_possessive] Chosen One to lead us through this life.</li>
-					<li>episode(uses=1,tag=meme_GodEmperor)  ->[deity0_name] said to all the [memberNamePlural], "For you shall follow my Chosen One, and prostrate yourselves in humility, submission and adoration."</li>
+					<li>creation(tag=meme_GodEmperor)        ->[deity0_name] annointed [deity0_possessive] Chosen One to lead us through this life, our God Emperor.</li>
+					<li>episode(uses=1,tag=meme_GodEmperor)  ->[deity0_name] said to all the [memberNamePlural], "For you shall follow my Chosen One, the God Emperor, and prostrate yourselves in humility, submission and adoration."</li>
 					<!-- theist founder -->
 					<li>intro(tag=meme_GodEmperor)           ->[memberNamePlural] built a great [altarName] on the [place_summary] [place_name], a huge monument to their God Emperor.</li>
 					<li>conflict(tag=meme_GodEmperor)        ->A coward [foeLeader], seeking to deny the will of [deity0_name], tried to slay our God Emperor, finding only ruin.</li>
@@ -227,8 +227,8 @@
 					<li>story(uses=1,tag=meme_GodEmperor)    ->The believers will spread the wisdom of unwavering loyalty to the decreeds of our God Emperor.</li>
 					<!-- ideological lesson -->
 					<li>lessonIntro(tag=meme_GodEmperor)         ->In all my years serving our God Emperor, I learned one lesson that stands over all:</li>
-					<li>lesson(tag=meme_GodEmperor)              ->only through absolute subservience will we achieve our goals</li>
-					<li>lessonReinforcement(tag=meme_GodEmperor) ->It is only through Divine Will that we will uncover the secrets of the Cosmos.</li>
+					<li>lesson(tag=meme_GodEmperor)              ->only through absolute subservience to our leader will we achieve our goals</li>
+					<li>lessonReinforcement(tag=meme_GodEmperor) ->It is only through the Divine Will of our God Emperor that we will uncover the secrets of the Cosmos.</li>
 					<!-- archist -->
 					<li>archistBasis(tag=meme_GodEmperor)    ->The archotechs announce their presence from the sky, and in the mind, our God Emperor is their Chosen One.</li>
 					<li>archistFact(tag=meme_GodEmperor)     ->Archotechs are wise beyond all reason, it stands to logic that their paragon is also the epitome of wisdom.</li>
@@ -248,6 +248,15 @@
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>VME_Leader_Godlike</li>
+			</li>
+			<li>
+				<li>VME_Power_Exalted</li>
+			</li>
+
+		</requireOne>
 		<symbolPacks>
 			<li>
 				<ideoName>God Emperor</ideoName>
@@ -312,6 +321,24 @@
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>MiningYield_High</li>
+			</li>
+			<li>
+				<li>VME_WoodcuttingYield_High</li>
+			</li>
+			<li>
+				<li>VME_FarmingYield_High</li>
+			</li>
+			<li>
+				<li>VME_Apostasy_Accepted</li>
+			</li>
+			<li>
+				<li>VME_DumbLabor_Exalted</li>
+			</li>
+
+		</requireOne>
 		<symbolPacks>
 			<li>
 				<ideoName>Hardcore Industrialism</ideoName>
@@ -461,6 +488,16 @@
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>Scarification_Heavy</li>
+			</li>
+			<li>
+				<li>VME_BodyMod_OnlyBiological</li>
+			</li>
+			
+
+		</requireOne>
 		<symbolPacks>
 			<li>
 				<ideoName>Biotechnologism</ideoName>
@@ -544,6 +581,22 @@
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>Pain_Idealized</li>
+			</li>
+			<li>
+				<li>VME_Illness_Exalted</li>
+			</li>
+			
+
+		</requireOne>
+		<requiredRituals>
+			<li>
+				<precept>VME_PlagueFestivalPrecept</precept>
+				<pattern>VME_PlagueFestivalRitual</pattern>
+			</li>
+		</requiredRituals>
 		<symbolPacks>
 			<li>
 				<ideoName>Plaguebringing</ideoName>

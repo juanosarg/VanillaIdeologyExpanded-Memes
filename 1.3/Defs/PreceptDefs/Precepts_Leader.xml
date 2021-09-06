@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>VME_Leader</defName>
+		<label>leader</label>
+		<iconPath>UI/Issues/Leader</iconPath>
+	</IssueDef>
+
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_Leader_Godlike</defName>
+		<issue>VME_Leader</issue>
+		<label>godlike</label>
+		<description>Our leader should be exalted as a god, to treat them as any less assures our demise.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_GodEmperor</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>VME_GodEmperor</li>
+		</requiredMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+
+				<thought>VME_Leader_Godlike</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+
+	<ThoughtDef>
+		<defName>VME_Leader_Godlike</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>VanillaMemesExpanded.Thought_StageByWill</workerClass>
+		<stages>
+			<li>
+				<label>supreme god emperor</label>
+				<baseOpinionOffset>100</baseOpinionOffset>
+			</li>
+			<li>
+				<label>god emperor</label>
+				<baseOpinionOffset>50</baseOpinionOffset>
+			</li>
+			<li>
+				<label>dubious divinity</label>
+				<baseOpinionOffset>-50</baseOpinionOffset>
+			</li>
+			<li>
+				<label>false god</label>
+				<baseOpinionOffset>-125</baseOpinionOffset>
+			</li>
+			
+			
+			
+		</stages>
+	</ThoughtDef>
+
+</Defs>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+
+  <!-- Precepts -->
+
+  <PreceptDef>
+    <defName>VME_Apostasy_Accepted</defName>
+    <issue>Apostasy</issue>
+    <label>accepted</label>
+    <description>We feel bound by the force of habit to follow the current ideoligion, and will not think twice if an opportunity presents itself to change our ways.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>-10</displayOrderInIssue>
+    
+    <associatedMemes>
+      <li>VME_HardcoreIndustrialism</li>
+  
+    </associatedMemes>
+    <statFactors>
+      <CertaintyLossFactor>3</CertaintyLossFactor>
+    </statFactors>
+   
+  </PreceptDef>
+
+ 
+
+</Defs>

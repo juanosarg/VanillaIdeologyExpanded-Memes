@@ -9,8 +9,7 @@ namespace VanillaMemesExpanded
     public class MapComponent_MoodFromStars : MapComponent
     {
 
-        //This class updates all the rooms in the map every 2000 ticks if a pedigreed raptor is in the map
-
+       
        
         public int tickCounter = 0;
         public int tickInterval = 900000; //15 days
@@ -40,7 +39,7 @@ namespace VanillaMemesExpanded
             if ((tickCounter > tickInterval))
             {
                
-                Find.HistoryEventsManager.RecordEvent(new HistoryEvent(DefDatabase<HistoryEventDef>.GetNamed("VME_MoodOfTheStars")), true);
+                Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_MoodOfTheStars), true);
 
                 tickCounter = 0;
             }

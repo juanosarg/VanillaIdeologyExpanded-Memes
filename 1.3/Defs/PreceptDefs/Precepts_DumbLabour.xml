@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>VME_DumbLabor</defName>
+		<label>dumb labor</label>
+		<iconPath>UI/Issues/DumbLabor</iconPath>
+	</IssueDef>
+	<HistoryEventDef>
+		<defName>VME_DumbLabor</defName>
+		<label>dumb labor</label>
+	</HistoryEventDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_DumbLabor_Exalted</defName>
+		<issue>VME_DumbLabor</issue>
+		<label>exalted</label>
+		<description>An aching body is to be revered. Nearly nothing is found more rewarding than a day of hard work.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_HardcoreIndustrialism</li>
+		</associatedMemes>
+		
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_DumbLabor</eventDef>
+				<thought>VME_DumbLabor_Exalted</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_DumbLabor_Exalted</defName>
+		
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>did dumb labor</label>
+				<description>I had to do dumb labor. I am an excellent example of the working class.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+			
+		</stages>
+	</ThoughtDef>
+</Defs>

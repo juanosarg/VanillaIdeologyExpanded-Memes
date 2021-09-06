@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>VME_Power</defName>
+		<label>power</label>
+		<iconPath>UI/Issues/Power</iconPath>
+	</IssueDef>
+	
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_Power_Exalted</defName>
+		<issue>VME_Power</issue>
+		<label>exalted</label>
+		<description>My rule is supreme, for I am godlike.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_GodEmperor</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>VME_GodEmperor</li>
+		</requiredMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				
+				<thought>VME_Power_Exalted</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_Power_Exalted</defName>
+		 <thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>VanillaMemesExpanded.Thought_Power_Exalted</workerClass>
+		
+		<stages>
+			<li>
+				<label>divine rule</label>
+				<description>My rule is supreme, for I am godlike</description>
+				<baseMoodEffect>30</baseMoodEffect>
+			</li>
+			
+		</stages>
+	</ThoughtDef>
+</Defs>
