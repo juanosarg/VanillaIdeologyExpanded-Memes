@@ -314,9 +314,7 @@
     <Compile Include="Thoughts\Thought_StageByWill.cs" />
     <Compile Include="VMEMod.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="GameComponent\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <PackageReference Include="Lib.Harmony">
       <Version>2.1.1</Version>
