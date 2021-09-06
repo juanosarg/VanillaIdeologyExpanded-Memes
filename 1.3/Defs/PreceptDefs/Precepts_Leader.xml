@@ -55,5 +55,22 @@
 			
 		</stages>
 	</ThoughtDef>
+	
+	<PreceptDef>
+		<defName>VME_Leader_BestCrafter</defName>
+		<issue>VME_Leader</issue>
+		<label>best crafter</label>
+		<description>Our most skilled artisan is our leader, through their keen eye and delicate touch our workshops will sing the song of creation.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_CraftCulture</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>VME_CraftCulture</li>
+		</requiredMemes>
+		
+	</PreceptDef>
 
 </Defs>

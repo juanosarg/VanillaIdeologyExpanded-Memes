@@ -669,6 +669,14 @@
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>VME_Leader_BestCrafter</li>
+			</li>
+			
+			
+
+		</requireOne>
 		<symbolPacks>
 			<li>
 				<ideoName>Crafting</ideoName>

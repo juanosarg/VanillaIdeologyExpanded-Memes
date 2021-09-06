@@ -296,6 +296,7 @@
     <Compile Include="Harmony\Plant_YieldNow.cs" />
     <Compile Include="Harmony\JobDriver_Notify_Starting.cs" />
     <Compile Include="Harmony\ThoughtWorker_Sick_CurrentStateInternal.cs" />
+    <Compile Include="MapComponents\MapComponent_IllnessTracker - Copy.cs" />
     <Compile Include="MapComponents\MapComponent_IllnessTracker.cs" />
     <Compile Include="MapComponents\MapComponent_MoodFromStars.cs" />
     <Compile Include="PawnCollectionClass\PawnCollectionClass.cs" />
@@ -303,6 +304,7 @@
     <Compile Include="Rituals\RitualBehaviorWorker_ViolentConversion.cs" />
     <Compile Include="Rituals\RitualOutcomeEffectWorker_PlagueFestival.cs" />
     <Compile Include="Rituals\RitualOutcomeEffectWorker_ViolentConversion.cs" />
+    <Compile Include="RoleRequirements\RoleRequirement_BestCrafter.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_HasNonNaturalProsthetic.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_HasNonNaturalProsthetic_Social.cs" />
     <Compile Include="Thoughts\Thought_Illness_Exalted.cs" />

@@ -15,6 +15,9 @@ namespace VanillaMemesExpanded
 		public static PreceptDef VME_Leader_Godlike;
 
 		[MayRequireIdeology]
+		public static PreceptDef VME_Leader_BestCrafter;
+
+		[MayRequireIdeology]
 		public static PreceptDef VME_Power_Exalted;
 
 		[MayRequireIdeology]
