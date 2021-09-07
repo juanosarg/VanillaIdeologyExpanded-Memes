@@ -43,7 +43,7 @@ namespace VanillaMemesExpanded
                     Pawn mostSkilledPawn = null;
                     int highestSkillLevel = 0;
 
-                    foreach (Pawn pawn in map.mapPawns.FreeColonistsSpawned)
+                    foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists)
                     {
                         if (pawn.skills.GetSkill(SkillDefOf.Crafting).Level > highestSkillLevel)
                         {

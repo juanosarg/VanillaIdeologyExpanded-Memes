@@ -17,6 +17,8 @@ namespace VanillaMemesExpanded
 
         public static IDictionary<Pawn, int> colonist_illness_tracker = new Dictionary<Pawn, int>();
 
+        public static int ticksWithoutTrading = 0;
+
 
         public static void AddColonistToIllnessList(Pawn pawn, int ticks)
         {

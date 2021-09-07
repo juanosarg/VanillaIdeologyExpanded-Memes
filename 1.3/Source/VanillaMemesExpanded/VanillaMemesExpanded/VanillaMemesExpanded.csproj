@@ -288,16 +288,29 @@
       <HintPath>..\..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.XRModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="VFECore">
+      <HintPath>References\VFECore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comps\CompDisableAbilityIfMemeFound.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_DisableAbilityIfMemeFound.cs" />
     <Compile Include="DefOfs\InternalDefOfs.cs" />
+    <Compile Include="Harmony\GenRecipe_PostProcessProduct.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
+    <Compile Include="Harmony\Pawn_AgeTracker_BirthdayBiological.cs" />
+    <Compile Include="Harmony\Precept_Role_DisabledWorktypes.cs" />
     <Compile Include="Harmony\Recipe_InstallArtificialBodyPart_ApplyOnPawn.cs" />
     <Compile Include="Harmony\Plant_YieldNow.cs" />
     <Compile Include="Harmony\JobDriver_Notify_Starting.cs" />
+    <Compile Include="Harmony\RecordsUtility_Notify_PawnDowned.cs" />
     <Compile Include="Harmony\ThoughtWorker_Sick_CurrentStateInternal.cs" />
+    <Compile Include="Harmony\TradeDeal_TryExecute.cs" />
     <Compile Include="MapComponents\MapComponent_BestCrafterTracker.cs" />
+    <Compile Include="MapComponents\MapComponent_TradingTracker.cs" />
     <Compile Include="MapComponents\MapComponent_IllnessTracker.cs" />
+    <Compile Include="MapComponents\MapComponent_FactoryModifier.cs" />
     <Compile Include="MapComponents\MapComponent_MoodFromStars.cs" />
     <Compile Include="PawnCollectionClass\PawnCollectionClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -305,11 +318,17 @@
     <Compile Include="Rituals\RitualOutcomeEffectWorker_PlagueFestival.cs" />
     <Compile Include="Rituals\RitualOutcomeEffectWorker_ViolentConversion.cs" />
     <Compile Include="RoleRequirements\RoleRequirement_BestCrafter.cs" />
+    <Compile Include="StatPartDefs\StatPart_WorkTableAutomation.cs" />
+    <Compile Include="StatPartDefs\StatPart_WorkTableManualUnefficient.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_HasNonNaturalProsthetic.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_HasNonNaturalProsthetic_Social.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_Precept_Trading.cs" />
+    <Compile Include="Thoughts\Thought_Elders_Respected.cs" />
     <Compile Include="Thoughts\Thought_Illness_Exalted.cs" />
     <Compile Include="Thoughts\Thought_Illness_Exalted_TooHealthy.cs" />
+    <Compile Include="Thoughts\Thought_Power_Desired.cs" />
     <Compile Include="Thoughts\Thought_Power_Exalted.cs" />
+    <Compile Include="Thoughts\Thought_Power_Preferred.cs" />
     <Compile Include="Thoughts\Thought_RandomStageOnce.cs" />
     <Compile Include="Thoughts\Thought_StageByWill.cs" />
     <Compile Include="VMEMod.cs" />

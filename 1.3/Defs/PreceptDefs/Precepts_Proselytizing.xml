@@ -21,5 +21,22 @@
     </statFactors>
     <proselytizes>true</proselytizes>
   </PreceptDef>
+  
+  <PreceptDef>
+    <defName>VME_Proselytizing_Never</defName>
+    <issue>Proselytizing</issue>
+    <label>never</label>
+    <description>Everyone has their own truth, and everyone should respect the rights of others to follow their own.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Disables conversion rituals and the convert ability of the moralist role.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>30</displayOrderInIssue>
+   
+    <associatedMemes>
+      <li>VME_Egalitarian</li>
+    </associatedMemes>
+    <statFactors>
+      <SocialIdeoSpreadFrequencyFactor>0</SocialIdeoSpreadFrequencyFactor>
+    </statFactors>
+    <proselytizes>false</proselytizes>
+  </PreceptDef>
 
 </Defs>

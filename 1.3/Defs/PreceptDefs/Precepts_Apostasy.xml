@@ -22,6 +22,36 @@
     </statFactors>
    
   </PreceptDef>
+  
+  <PreceptDef>
+    <defName>Apostasy_Despicable</defName>
+    <issue>Apostasy</issue>
+    <label>despicable</label>
+    <description>To leave our ideoligion after having known it is the depth of immorality.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>19</displayOrderInIssue>
+    <conflictingMemes>
+      <li>Guilty</li>
+    </conflictingMemes>
+    <associatedMemes>
+      <li>VME_Egalitarian</li>
+     
+    </associatedMemes>
+    <statFactors>
+      <CertaintyLossFactor>0.2</CertaintyLossFactor>
+    </statFactors>
+    <comps>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>ChangedIdeo</eventDef>
+        <thought>ChangedIdeo_Know_Abhorrent</thought>
+        <description>Changed ideoligion</description>
+        <doerMustBeMyIdeo>true</doerMustBeMyIdeo>
+      </li>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>IsApostate_Abhorrent_Social</thought>
+      </li>
+    </comps>
+  </PreceptDef>
 
  
 

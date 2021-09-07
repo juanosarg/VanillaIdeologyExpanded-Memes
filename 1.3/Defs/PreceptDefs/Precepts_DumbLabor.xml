@@ -43,4 +43,38 @@
 			
 		</stages>
 	</ThoughtDef>
+	
+	<PreceptDef>
+		<defName>VME_DumbLabor_Horrible</defName>
+		<issue>VME_DumbLabor</issue>
+		<label>horrible</label>
+		<description>We should not suffer the laborious degradation of our bodies, nor the degradation of sweat forming on our brow.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Leader and Moralist roles will be incapable of Dumb Labor.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_Aristocratic</li>
+		</associatedMemes>
+		
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_DumbLabor</eventDef>
+				<thought>VME_DumbLabor_Horrible</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_DumbLabor_Horrible</defName>
+		
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>did dumb labor</label>
+				<description>I had to do dumb labor. It’s horrible. I don’t want it.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+			
+		</stages>
+	</ThoughtDef>
 </Defs>

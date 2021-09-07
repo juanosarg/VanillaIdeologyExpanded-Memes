@@ -24,7 +24,7 @@ namespace VanillaMemesExpanded
             if (billDoer != null)
             {
                 if (!__instance.recipe.addsHediff.spawnThingOnRemoved.thingCategories.Contains(ThingCategoryDef.Named("BodyPartsNatural"))) {
-                    Log.Message("Artificial detected");
+                   
                     Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_InstalledNonNaturalProsthetic, billDoer.Named(HistoryEventArgsNames.Doer)), true);
                 }
 

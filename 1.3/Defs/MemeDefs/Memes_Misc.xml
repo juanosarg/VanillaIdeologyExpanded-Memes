@@ -495,7 +495,7 @@
 			<li>
 				<li>VME_BodyMod_OnlyBiological</li>
 			</li>
-			
+
 
 		</requireOne>
 		<symbolPacks>
@@ -588,7 +588,7 @@
 			<li>
 				<li>VME_Illness_Exalted</li>
 			</li>
-			
+
 
 		</requireOne>
 		<requiredRituals>
@@ -673,8 +673,13 @@
 			<li>
 				<li>VME_Leader_BestCrafter</li>
 			</li>
-			
-			
+			<li>
+				<li>VME_CraftingQuality_Increased</li>
+			</li>
+			<li>
+				<li>VME_CraftingSpeed_Slower</li>
+			</li>
+
 
 		</requireOne>
 		<symbolPacks>
@@ -757,6 +762,17 @@
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
+		<requireOne>
+
+			<li>
+				<li>VME_AutomationEfficiency_Increased</li>
+			</li>
+			<li>
+				<li>VME_CraftingSpeed_SlowerForManual</li>
+			</li>
+
+
+		</requireOne>
 		<symbolPacks>
 			<li>
 				<ideoName>Automation</ideoName>
@@ -825,6 +841,18 @@
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
+		<requireOne>
+
+			<li>
+				<li>VME_Power_Desired</li>
+				<li>VME_Power_Preferred</li>
+			</li>
+			<li>
+				<li>VME_DumbLabor_Horrible</li>
+			</li>
+
+
+		</requireOne>
 		<symbolPacks>
 			<li>
 				<ideoName>Nobility</ideoName>
@@ -894,6 +922,15 @@
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
+		<requireOne>
+
+			
+			<li>
+				<li>VME_Leader_Three</li>
+			</li>
+
+
+		</requireOne>
 		<symbolPacks>
 			<li>
 				<ideoName>Republic</ideoName>
@@ -1119,6 +1156,17 @@
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
+		<requireOne>
+
+			
+			<li>
+				<li>VME_TradingPrice_Improved</li>
+			</li>
+			<li>
+				<li>VME_Trading_Required</li>
+			</li>
+
+		</requireOne>
 		<symbolPacks>
 			<li>
 				<ideoName>Trader</ideoName>
@@ -1197,6 +1245,16 @@
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
+		<requireOne>
+
+			
+			<li>
+				<li>VME_Elders_Respected</li>
+			
+				<li>VME_Elders_Holy</li>
+			</li>
+
+		</requireOne>
 		<symbolPacks>
 			<li>
 				<ideoName>Elders</ideoName>
@@ -1263,6 +1321,19 @@
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
+		<requireOne>
+
+			<li>
+				<li>VME_FarmingYield_High</li>
+			
+			</li>
+			<li>
+				<li>MeatEating_Abhorrent</li>
+			
+			</li>
+			
+
+		</requireOne>
 		<symbolPacks>
 			<li>
 				<ideoName>Vegan</ideoName>
@@ -1283,8 +1354,8 @@
 		<label>egalitarian</label>
 		<description>Bigotry is absolutely to never be tolerated, helping those in need and respecting their beliefs are rewards in and of themselves.</description>
 		<iconPath>UI/Memes/Egalitarian</iconPath>
-		<groupDef>Misc</groupDef>
-		<impact>2</impact>
+		<groupDef>GroupRelation</groupDef>
+		<impact>1</impact>
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->egalitarian</li>
@@ -1336,6 +1407,26 @@
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
+		<requireOne>
+
+			<li>
+				<li>VME_Proselytizing_Never</li>
+			
+			</li>
+			<li>
+				<li>Charity_Worthwhile</li>
+			
+			</li>
+			<li>
+				<li>Slavery_Abhorrent</li>
+			
+			</li>
+			<li>
+				<li>Apostasy_Despicable</li>
+			
+			</li>
+
+		</requireOne>
 		<symbolPacks>
 			<li>
 				<ideoName>Egalitarianism</ideoName>
@@ -1531,6 +1622,15 @@
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
+		<requireOne>
+
+			<li>
+				<li>VME_Defeat_Dishonorable</li>
+			
+			</li>
+			
+
+		</requireOne>
 		<symbolPacks>
 			<li>
 				<ideoName>Bushido</ideoName>

@@ -21,13 +21,18 @@ namespace VanillaMemesExpanded
         static void IfDumbSendHistoryEvent(JobDriver __instance)
         {
 
-        
-            if (__instance.job?.workGiverDef?.workType?.workTags.HasFlag(WorkTags.ManualDumb)==true)
+
+            if (__instance.job?.workGiverDef?.workType?.workTags.HasFlag(WorkTags.ManualDumb) == true)
             {
-                
+
                 Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_DumbLabor, new SignalArgs(__instance.pawn.Named(HistoryEventArgsNames.Doer))), true);
 
+               
+
+
             }
+
+
 
 
 

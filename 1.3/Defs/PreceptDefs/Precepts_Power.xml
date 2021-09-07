@@ -42,4 +42,75 @@
 			
 		</stages>
 	</ThoughtDef>
+	
+	
+	<PreceptDef>
+		<defName>VME_Power_Desired</defName>
+		<issue>VME_Power</issue>
+		<label>desired</label>
+		<description>Craving to be one of the powerful elite is a very understandable desire and should not be looked down upon.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_Aristocratic</li>
+		</associatedMemes>
+	
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				
+				<thought>VME_Power_Desired</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>VME_Power_Desired</defName>
+		 <thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>VanillaMemesExpanded.Thought_Power_Desired</workerClass>
+		
+		<stages>
+			<li>
+				<label>in a position of power</label>
+				<description>I feel important and everyone looks up to me</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+			
+		</stages>
+	</ThoughtDef>
+	
+	<PreceptDef>
+		<defName>VME_Power_Preferred</defName>
+		<issue>VME_Power</issue>
+		<label>preferred</label>
+		<description>Craving to be one of the powerful elite is a very understandable desire and should not be looked down upon.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_Aristocratic</li>
+		</associatedMemes>
+	
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				
+				<thought>VME_Power_Preferred</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>VME_Power_Preferred</defName>
+		 <thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>VanillaMemesExpanded.Thought_Power_Preferred</workerClass>
+		
+		<stages>
+			<li>
+				<label>i am important</label>
+				<description>I hold a reasonable position of power and I like that feeling</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+			
+		</stages>
+	</ThoughtDef>
 </Defs>

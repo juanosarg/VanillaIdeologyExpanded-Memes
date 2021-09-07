@@ -22,6 +22,9 @@
 	<requiredMemes>
       <li>VME_ViolentConversion</li>
     </requiredMemes>
+	<conflictingMemes>
+		<li>VME_Egalitarian</li>
+	</conflictingMemes>
   </PreceptDef>
   
   

@@ -40,7 +40,7 @@ namespace VanillaMemesExpanded
                 Ideo ideo = Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo;
                 if (ideo.HasPrecept(InternalDefOf.VME_Illness_Exalted))
                 {
-                    List<Pawn> listPawns = map.mapPawns.FreeColonistsAndPrisonersSpawned;
+                    List<Pawn> listPawns = PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists;
                     foreach(Pawn p in listPawns)
                     {
                         if (p.Ideo == ideo)
@@ -51,7 +51,12 @@ namespace VanillaMemesExpanded
                             {
                                 PawnCollectionClass.ResetPawnIlnessTicks(p);
                             }
-                            else { PawnCollectionClass.IncreasePawnIllnessTicks(p, tickInterval);
+                            else { 
+                                if(PawnCollectionClass.colonist_illness_tracker[p]<int.MaxValue- tickInterval)
+                                {
+                                    PawnCollectionClass.IncreasePawnIllnessTicks(p, tickInterval);
+
+                                }
                             }
 
 

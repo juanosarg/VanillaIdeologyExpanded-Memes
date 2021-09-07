@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <RulePackDef>
+    <defName>VME_NamerSecondTriumvir</defName>
+    <rulePack>
+      <rulesStrings>
+       
+        <li>r_roleName->second triumvir</li>
+       
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>VME_NamerThirdTriumvir</defName>
+    <rulePack>
+      <rulesStrings>
+       
+        <li>r_roleName->third triumvir</li>
+       
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  
+
+</Defs>
