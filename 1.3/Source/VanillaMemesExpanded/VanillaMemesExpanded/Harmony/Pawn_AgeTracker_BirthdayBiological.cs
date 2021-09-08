@@ -21,7 +21,7 @@ namespace VanillaMemesExpanded
         static void IfElderAddTrait(Pawn_AgeTracker __instance, Pawn ___pawn)
         {
 
-            if (___pawn.Ideo.HasPrecept(InternalDefOf.VME_Elders_Holy))
+            if (___pawn.Ideo!=null&&___pawn.Ideo.HasPrecept(InternalDefOf.VME_Elders_Holy))
             {
 
                 if (__instance.AgeBiologicalYears>65 && !___pawn.story.traits.HasTrait(InternalDefOf.VME_Elder))

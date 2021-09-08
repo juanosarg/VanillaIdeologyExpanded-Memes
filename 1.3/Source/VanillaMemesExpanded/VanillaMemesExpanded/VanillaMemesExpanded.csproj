@@ -307,6 +307,7 @@
     <Compile Include="Harmony\RecordsUtility_Notify_PawnDowned.cs" />
     <Compile Include="Harmony\ThoughtWorker_Sick_CurrentStateInternal.cs" />
     <Compile Include="Harmony\TradeDeal_TryExecute.cs" />
+    <Compile Include="MapComponents\MapComponent_PawnsInMapDesiringRitualSuicide.cs" />
     <Compile Include="MapComponents\MapComponent_BestCrafterTracker.cs" />
     <Compile Include="MapComponents\MapComponent_TradingTracker.cs" />
     <Compile Include="MapComponents\MapComponent_IllnessTracker.cs" />
@@ -314,7 +315,11 @@
     <Compile Include="MapComponents\MapComponent_MoodFromStars.cs" />
     <Compile Include="PawnCollectionClass\PawnCollectionClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RitualObligationTriggers\RitualObligationTriggerProperties_SecondDefeat.cs" />
+    <Compile Include="RitualObligationTriggers\RitualObligationTrigger_SecondDefeat.cs" />
+    <Compile Include="RitualRoles\RitualRole_Suicidal.cs" />
     <Compile Include="Rituals\RitualBehaviorWorker_ViolentConversion.cs" />
+    <Compile Include="Rituals\RitualOutcomeEffectWorker_CeremonialSuicide.cs" />
     <Compile Include="Rituals\RitualOutcomeEffectWorker_PlagueFestival.cs" />
     <Compile Include="Rituals\RitualOutcomeEffectWorker_ViolentConversion.cs" />
     <Compile Include="RoleRequirements\RoleRequirement_BestCrafter.cs" />
@@ -322,7 +327,9 @@
     <Compile Include="StatPartDefs\StatPart_WorkTableManualUnefficient.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_HasNonNaturalProsthetic.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_HasNonNaturalProsthetic_Social.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_Precept_TotalDarkness.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_Trading.cs" />
+    <Compile Include="Thoughts\Thought_DisableFirstDefeatThought.cs" />
     <Compile Include="Thoughts\Thought_Elders_Respected.cs" />
     <Compile Include="Thoughts\Thought_Illness_Exalted.cs" />
     <Compile Include="Thoughts\Thought_Illness_Exalted_TooHealthy.cs" />

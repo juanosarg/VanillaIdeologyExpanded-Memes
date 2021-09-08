@@ -13,9 +13,11 @@ namespace VanillaMemesExpanded
        
        
         public int tickCounter = 0;
-        public int tickInterval = 6000; 
+        public int tickInterval = 6000;
+        public int ticksWithoutTradingbackup;
 
-       
+
+
 
 
         public override void ExposeData()
@@ -23,6 +25,7 @@ namespace VanillaMemesExpanded
             base.ExposeData();
 
             Scribe_Values.Look<int>(ref this.tickCounter, "tickCounter", 0, true);
+            Scribe_Values.Look<int>(ref this.ticksWithoutTradingbackup, "ticksWithoutTradingbackup", 0, true);
 
 
         }
@@ -34,7 +37,7 @@ namespace VanillaMemesExpanded
 
         public override void FinalizeInit()
         {
-
+            PawnCollectionClass.ticksWithoutTrading = ticksWithoutTradingbackup;
             base.FinalizeInit();
 
         }
@@ -48,6 +51,8 @@ namespace VanillaMemesExpanded
             tickCounter++;
             if ((tickCounter > tickInterval))
             {
+                ticksWithoutTradingbackup=PawnCollectionClass.ticksWithoutTrading;
+
                 Ideo ideo = Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo;
                 if (ideo.HasPrecept(InternalDefOf.VME_Trading_Required))
                 {

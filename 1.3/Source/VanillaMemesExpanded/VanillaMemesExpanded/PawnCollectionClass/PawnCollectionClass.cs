@@ -15,11 +15,11 @@ namespace VanillaMemesExpanded
         //This static class stores lists of animals and pawns for different things.
 
 
-        public static IDictionary<Pawn, int> colonist_illness_tracker = new Dictionary<Pawn, int>();
+        public static Dictionary<Pawn, int> colonist_illness_tracker = new Dictionary<Pawn, int>();
 
         public static int ticksWithoutTrading = 0;
 
-
+       
         public static void AddColonistToIllnessList(Pawn pawn, int ticks)
         {
             if (!colonist_illness_tracker.ContainsKey(pawn))
@@ -40,6 +40,8 @@ namespace VanillaMemesExpanded
             colonist_illness_tracker[pawn] = 0;
 
         }
+
+      
 
 
 

@@ -1628,9 +1628,26 @@
 				<li>VME_Defeat_Dishonorable</li>
 			
 			</li>
+			<li>
+				<li>VME_Raiding_Honorable</li>
 			
+			</li>
+			<li>
+				<li>Slavery_Acceptable</li>
+				<li>Slavery_Honorable</li>
+			</li>
+			<li>
+				<li>VME_Pain_DontCare</li>
+			
+			</li>
 
 		</requireOne>
+		<requiredRituals>
+			<li>
+				<precept>VME_CeremonialSuicidePrecept</precept>
+				<pattern>VME_CeremonialSuicideRitual</pattern>
+			</li>
+		</requiredRituals>
 		<symbolPacks>
 			<li>
 				<ideoName>Bushido</ideoName>
@@ -1699,6 +1716,17 @@
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
+		<requireOne>
+
+			<li>
+				<li>VME_Darklight_NormalPreferred</li>
+			
+			</li>
+			<li>
+				<li>VME_DarknessCombat_Despised</li>
+			
+			</li>
+		</requireOne>
 		<symbolPacks>
 			<li>
 				<ideoName>Light</ideoName>

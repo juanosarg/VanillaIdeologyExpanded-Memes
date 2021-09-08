@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+ 
+
+  <PreceptDef ParentName="RaidingBase">
+    <defName>VME_Raiding_Honorable</defName>
+    <issue>Raiding</issue>
+    <label>honorable</label>
+    <description>We display our strength and perseverance through conquest, and in doing so we bring honor to our colony.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>20</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <statOffsets>
+      <WorkSpeedGlobal>-0.04</WorkSpeedGlobal>
+    </statOffsets>
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>VME_RecentConquest_Honorable</thought>
+        <thoughtStageDescriptions>
+          <li>Less than {DAYSSINCELASTRAIDTHRESHOLD} days since our last raid</li>
+          <li>More than {DAYSSINCELASTRAIDTHRESHOLD} days since our last raid</li>
+        </thoughtStageDescriptions>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <thought>VME_ParticipatedInRaid_Honorable</thought>
+        <eventDef>Raided</eventDef>
+      </li>
+    </comps>
+  </PreceptDef>
+  
+  <ThoughtDef>
+    <defName>VME_ParticipatedInRaid_Honorable</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>5</durationDays>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stackLimit>300</stackLimit>
+    <stages>
+      <li>
+        <label>participated in raid</label>
+        <description>I participated in a raid. Through conquest, we bring honor to our colony.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>VME_RecentConquest_Honorable</defName>
+    <workerClass>ThoughtWorker_Precept_RecentConquest</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>recent conquest</label>
+        <description>We recently raided another faction. Through conquest, we bring honor to our colony.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+      <li>
+        <label>no recent conquest</label>
+        <description>It's been far too long since we raided anyone. Through conquest, we bring honor to our colony.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+ 
+
+</Defs>

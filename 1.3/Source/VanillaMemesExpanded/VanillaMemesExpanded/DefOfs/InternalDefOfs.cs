@@ -50,9 +50,12 @@ namespace VanillaMemesExpanded
 		public static HistoryEventDef VME_InstalledNonNaturalProsthetic;
 
 		public static HistoryEventDef VME_Defeat;
+		public static HistoryEventDef VME_SecondDefeat;
+
 
 		public static TraitDef VME_Elder;
 
+		public static ThoughtDef VME_Defeat_Dishonorable;
 
 	}
 }

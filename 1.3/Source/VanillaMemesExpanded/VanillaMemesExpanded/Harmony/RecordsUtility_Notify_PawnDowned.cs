@@ -21,7 +21,13 @@ namespace VanillaMemesExpanded
         static void ThrowPawnDownedEvent(Pawn downed, Pawn instigator)
         {
             if (!instigator.NonHumanlikeOrWildMan()&&instigator.HostileTo(Faction.OfPlayer)) {
-                Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_Defeat, downed.Named(HistoryEventArgsNames.Doer)), true);
+
+                if (downed.needs.mood.thoughts.memories.GetFirstMemoryOfDef(InternalDefOf.VME_Defeat_Dishonorable) != null)
+                {
+                    Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_SecondDefeat, downed.Named(HistoryEventArgsNames.Doer)), true);
+                } else Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_Defeat, downed.Named(HistoryEventArgsNames.Doer)), true);
+
+
 
 
             }

@@ -18,6 +18,7 @@ namespace VanillaMemesExpanded
        
         public override void ExposeData()
         {
+            base.ExposeData();
             Scribe_Values.Look<bool>(ref this.added, "added", false, false);
         }
 

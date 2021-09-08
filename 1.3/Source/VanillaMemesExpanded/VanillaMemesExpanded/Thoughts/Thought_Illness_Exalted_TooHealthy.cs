@@ -7,7 +7,7 @@ namespace VanillaMemesExpanded
 {
 	public class Thought_Illness_Exalted_TooHealthy : ThoughtWorker
 	{
-		public const int tickInterval = 300000; //5 days
+		public const int tickInterval = 12000; //5 days
 
 
 		protected override ThoughtState CurrentStateInternal(Pawn p)
