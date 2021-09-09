@@ -30,7 +30,7 @@ namespace VanillaMemesExpanded
 				}
 
 				
-					if (!existingObligations.Contains(comp.mostSkilledPawn) && comp.mostSkilledPawn.Ideo != null)
+					if (comp.mostSkilledPawn!=null&&!existingObligations.Contains(comp.mostSkilledPawn) && comp.mostSkilledPawn.Ideo != null)
 					{
 						
 						if (comp.mostSkilledPawn != comp.pawnThatIsTheLeaderNow)
