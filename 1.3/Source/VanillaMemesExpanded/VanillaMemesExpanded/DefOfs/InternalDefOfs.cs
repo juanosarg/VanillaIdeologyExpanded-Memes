@@ -43,6 +43,15 @@ namespace VanillaMemesExpanded
 
 		public static PreceptDef VME_Elders_Holy;
 
+		public static PreceptDef VME_PermanentBases_Despised;
+
+		public static PreceptDef VME_Travel_Desired;
+
+		public static PreceptDef VME_Travel_Despised;
+
+		public static PreceptDef VME_Leader_BestFighter;
+
+
 		public static HistoryEventDef VME_MoodOfTheStars;
 
 		public static HistoryEventDef VME_DumbLabor;

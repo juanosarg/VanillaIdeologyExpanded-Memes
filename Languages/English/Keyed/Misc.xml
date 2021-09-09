@@ -6,5 +6,6 @@
   <VME_Automation>Automation efficiency: increased precept</VME_Automation>
   <VME_AutomationManual>Crafting speed: slower for manual precept</VME_AutomationManual>
   <VME_PawnMustBeSuicidal>{0} is not harbouring suicidal thoughts!</VME_PawnMustBeSuicidal>
+  <VME_PawnMustBeBestMelee>{0} must be the best melee fighter in the colony!</VME_PawnMustBeBestMelee>
 
 </LanguageData>

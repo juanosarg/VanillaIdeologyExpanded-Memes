@@ -61,7 +61,7 @@
 		<issue>VME_Leader</issue>
 		<label>best crafter</label>
 		<description>Our most skilled artisan is our leader, through their keen eye and delicate touch our workshops will sing the song of creation.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - The leader role will periodically be forced upon the highest level crafter in the colony.</description>
-		<impact>High</impact>
+		<impact>Medium</impact>
 		<displayOrderInIssue>40</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
 		<associatedMemes>
@@ -69,6 +69,23 @@
 		</associatedMemes>
 		<requiredMemes>
 			<li>VME_CraftCulture</li>
+		</requiredMemes>
+		
+	</PreceptDef>
+	
+	<PreceptDef>
+		<defName>VME_Leader_BestFighter</defName>
+		<issue>VME_Leader</issue>
+		<label>best fighter</label>
+		<description>Martial expertise, be it with a blade or spear is a show of strength and courage. Our most talented fighter will be our leader, no questions asked.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>35</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_BloodCourt</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>VME_BloodCourt</li>
 		</requiredMemes>
 		
 	</PreceptDef>

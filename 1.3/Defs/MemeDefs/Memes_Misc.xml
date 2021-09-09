@@ -875,6 +875,9 @@
 		<iconPath>UI/Memes/Republic</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>1</impact>
+		<exclusionTags>
+			<li>VME_NeedsSingleLeader</li>
+		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->republican</li>
@@ -1795,6 +1798,18 @@
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
+		<requireOne>
+
+			<li>
+				<li>VME_PermanentBases_Despised</li>
+			
+			</li>
+			<li>
+				<li>VME_Travel_Desired</li>
+			
+			</li>
+			
+		</requireOne>
 		<symbolPacks>
 			<li>
 				<ideoName>Nomadism</ideoName>
@@ -1811,6 +1826,9 @@
 		<iconPath>UI/Memes/BloodCourt</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>3</impact>
+		<exclusionTags>
+			<li>VME_NeedsSingleLeader</li>
+		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->bloody</li>
@@ -1860,6 +1878,21 @@
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
+		<requireOne>
+
+			<li>
+				<li>VME_Leader_BestFighter</li>
+			
+			</li>
+			
+			
+		</requireOne>
+		<requiredRituals>
+			<li>
+				<precept>VME_LeadershipChallengePrecept</precept>
+				<pattern>VME_LeadershipChallengeRitual</pattern>
+			</li>
+		</requiredRituals>
 		<symbolPacks>
 			<li>
 				<ideoName>Blood Court</ideoName>
@@ -1923,6 +1956,15 @@
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
+		<requireOne>
+
+			
+			<li>
+				<li>VME_Travel_Despised</li>
+			
+			</li>
+			
+		</requireOne>
 		<symbolPacks>
 			<li>
 				<ideoName>Builders</ideoName>

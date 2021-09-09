@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>VME_PermanentBases</defName>
+		<label>permanent bases</label>
+		<iconPath>UI/Issues/PermanentBases</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_PermanentBases_Despised</defName>
+		<issue>VME_PermanentBases</issue>
+		<label>despised</label>
+		<description>Our colony is only temporary, should we stay it will only be a matter of time before we are unable to defend it, it is better to never gain such comfort.</description>
+		<impact>High</impact>
+		<displayOrderInImpact>80</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_Nomad</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>VME_Nomad</li>
+		</requiredMemes>
+		<comps>			
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_PermanentBases_Despised</thought>
+			</li>
+		</comps>
+		
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>VME_PermanentBases_Despised</defName>
+		<validWhileDespawned>true</validWhileDespawned>
+		<workerClass>VanillaMemesExpanded.Thought_StageByTime</workerClass>
+		<stages>
+			<li>
+				<label>wanderlust (initial)</label>
+				<description>We have been here for too long. Perhaps it is time to leave.</description>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+			<li>
+				<label>wanderlust (initial)</label>
+				<description>We have been here for too long. Perhaps it is time to leave.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>wanderlust (initial)</label>
+				<description>We have been here for too long. Perhaps it is time to leave.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+			<li>
+				<label>wanderlust (normal)</label>
+				<description>This colony is trite. We should we wandering, not staying on the same place.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>wanderlust (normal)</label>
+				<description>This colony is trite. We should we wandering, not staying on the same place.</description>
+				<baseMoodEffect>-20</baseMoodEffect>
+			</li>
+			<li>
+				<label>wanderlust (serious)</label>
+				<description>Enough already! It is time to pack our things and hit the road.</description>
+				<baseMoodEffect>-30</baseMoodEffect>
+			</li>
+			<li>
+				<label>wanderlust (serious)</label>
+				<description>Enough already! It is time to pack our things and hit the road.</description>
+				<baseMoodEffect>-40</baseMoodEffect>
+			</li>
+			<li>
+				<label>wanderlust (extreme)</label>
+				<description>Agh! I can't stand being here anymore!</description>
+				<baseMoodEffect>-50</baseMoodEffect>
+			</li>
+			
+			
+			
+			
+		</stages>
+	</ThoughtDef>
+</Defs>

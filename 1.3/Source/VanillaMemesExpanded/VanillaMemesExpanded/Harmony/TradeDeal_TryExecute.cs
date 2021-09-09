@@ -21,15 +21,12 @@ namespace VanillaMemesExpanded
         static void NotifySuccessfulTrade(bool __result)
         {
 
-            Ideo ideo = Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo;
-            if (ideo.HasPrecept(InternalDefOf.VME_Trading_Required))
-            {
+           
                 if (__result)
                 {
                     PawnCollectionClass.ticksWithoutTrading = 0;
                 }
 
-            }
             
 
 
