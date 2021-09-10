@@ -992,6 +992,11 @@
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>VME_Leader_Moralist</li>
+			</li>
+		</requireOne>
 		<symbolPacks>
 			<li>
 				<ideoName>Papacy</ideoName>

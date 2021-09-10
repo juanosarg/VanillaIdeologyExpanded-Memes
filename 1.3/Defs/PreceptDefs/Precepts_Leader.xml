@@ -106,5 +106,22 @@
 		</requiredMemes>
 		
 	</PreceptDef>
+	
+	<PreceptDef>
+		<defName>VME_Leader_Moralist</defName>
+		<issue>VME_Leader</issue>
+		<label>moralist</label>
+		<description>Our leader is a morale bastion, and through them and their divinity we shall flourish.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - The colony's leader can use moralist abilities too.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>25</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_ExaltedPriesthood</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>VME_ExaltedPriesthood</li>
+		</requiredMemes>
+		
+	</PreceptDef>
 
 </Defs>

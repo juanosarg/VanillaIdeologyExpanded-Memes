@@ -8,7 +8,7 @@
     <description>A leader who holds the group together and represents your faction in diplomatic interactions.</description>
     <iconPath>UI/Roles/Leader</iconPath>
 	 <nameMaker>VME_NamerSecondTriumvir</nameMaker>
-    <leaderRole>true</leaderRole>
+   
     <displayOrderInImpact>1000</displayOrderInImpact>
     <restrictToSupremeGenderChance>1</restrictToSupremeGenderChance>
     <expectationsOffset>2</expectationsOffset>
@@ -156,7 +156,7 @@
     <description>A leader who holds the group together and represents your faction in diplomatic interactions.</description>
     <iconPath>UI/Roles/Leader</iconPath>
 	<nameMaker>VME_NamerThirdTriumvir</nameMaker>
-    <leaderRole>true</leaderRole>
+   
     <displayOrderInImpact>1000</displayOrderInImpact>
     <restrictToSupremeGenderChance>1</restrictToSupremeGenderChance>
     <expectationsOffset>2</expectationsOffset>

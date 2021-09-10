@@ -329,8 +329,10 @@
     <Compile Include="RitualObligationTriggers\RitualObligationTrigger_StrongerLeader.cs" />
     <Compile Include="RitualRoles\RitualRole_BestMelee.cs" />
     <Compile Include="RitualRoles\RitualRole_Suicidal.cs" />
+    <Compile Include="Rituals\RitualBehaviorWorker_LeaderConversion.cs" />
     <Compile Include="Rituals\RitualBehaviorWorker_ViolentConversion.cs" />
     <Compile Include="Rituals\RitualOutcomeEffectWorker_CeremonialSuicide.cs" />
+    <Compile Include="Rituals\RitualOutcomeEffectWorker_LeaderConversion.cs" />
     <Compile Include="Rituals\RitualOutcomeEffectWorker_LeadershipChallenge.cs" />
     <Compile Include="Rituals\RitualOutcomeEffectWorker_PlagueFestival.cs" />
     <Compile Include="Rituals\RitualOutcomeEffectWorker_ViolentConversion.cs" />
@@ -362,7 +364,7 @@
   <ItemGroup>
     <PackageReference Include="Lib.Harmony">
       <Version>2.1.1</Version>
-	  <ExcludeAssets>runtime</ExcludeAssets>
+      <ExcludeAssets>runtime</ExcludeAssets>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
