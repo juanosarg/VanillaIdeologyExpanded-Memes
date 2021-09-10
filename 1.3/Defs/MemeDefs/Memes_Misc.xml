@@ -199,6 +199,7 @@
 		<iconPath>UI/Memes/GodEmperor</iconPath>
 		<exclusionTags>
 			<li>VME_GodEmperor</li>
+			<li>VME_LeaderPrecepts</li>
 		</exclusionTags>
 		<impact>2</impact>
 		<generalRules>
@@ -618,6 +619,10 @@
 		<iconPath>UI/Memes/CraftCulture</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>
+		<exclusionTags>
+			
+			<li>VME_LeaderPrecepts</li>
+		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->artificing</li>
@@ -866,8 +871,10 @@
 		<iconPath>UI/Memes/Republic</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>1</impact>
+		
 		<exclusionTags>
-			<li>VME_NeedsSingleLeader</li>
+			
+			<li>VME_LeaderPrecepts</li>
 		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
@@ -942,6 +949,9 @@
 		<description>Our leader must also be our prophet, and it’s important that we heed their advice.</description>
 		<iconPath>UI/Memes/ExaltedPriesthood</iconPath>
 		<groupDef>Misc</groupDef>
+		<exclusionTags>		
+			<li>VME_LeaderPrecepts</li>
+		</exclusionTags>
 		<impact>1</impact>
 		<generalRules>
 			<rulesStrings>
@@ -1809,9 +1819,10 @@
 		<iconPath>UI/Memes/BloodCourt</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>3</impact>
+		
 		<exclusionTags>
 			<li>VME_TooViolent</li>
-			<li>VME_NeedsSingleLeader</li>
+			<li>VME_LeaderPrecepts</li>
 		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
