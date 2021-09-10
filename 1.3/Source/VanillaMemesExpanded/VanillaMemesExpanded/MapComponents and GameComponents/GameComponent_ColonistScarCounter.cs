@@ -38,7 +38,7 @@ namespace VanillaMemesExpanded
         {
             base.ExposeData();
 
-            Scribe_Values.Look<int>(ref this.tickCounter, "tickCounter", 0, true);
+            Scribe_Values.Look<int>(ref this.tickCounter, "tickCounterScars", 0, true);
             Scribe_Collections.Look(ref colonist_scar_counter_backup, "colonist_scar_counter_backup", LookMode.Reference, LookMode.Value, ref list2, ref list3);
 
 

@@ -11,6 +11,7 @@
 		<label>violent conversion</label>
 		<exclusionTags>
 			<li>VME_Proselytism</li>
+			<li>VME_PacifistsNotViolentConverters</li>
 		</exclusionTags>
 		<description>Infidels can choose to adopt our beliefs, or die.</description>
 		<iconPath>UI/Memes/ViolentConversion</iconPath>
@@ -162,7 +163,6 @@
 			<li>
 				<li>VME_Mood_DictatedByStars</li>
 			</li>
-
 		</requireOne>
 		<requiredRituals>
 			<li>
@@ -255,7 +255,6 @@
 			<li>
 				<li>VME_Power_Exalted</li>
 			</li>
-
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -337,7 +336,6 @@
 			<li>
 				<li>VME_DumbLabor_Exalted</li>
 			</li>
-
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -410,6 +408,11 @@
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>VME_Mood_Shared</li>
+			</li>
+		</requireOne>
 		<symbolPacks>
 			<li>
 				<theme>hive mind</theme>
@@ -495,8 +498,6 @@
 			<li>
 				<li>VME_BodyMod_OnlyBiological</li>
 			</li>
-
-
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -588,8 +589,6 @@
 			<li>
 				<li>VME_Illness_Exalted</li>
 			</li>
-
-
 		</requireOne>
 		<requiredRituals>
 			<li>
@@ -679,8 +678,6 @@
 			<li>
 				<li>VME_CraftingSpeed_Slower</li>
 			</li>
-
-
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -763,15 +760,12 @@
 			</rules>
 		</descriptionMaker>
 		<requireOne>
-
 			<li>
 				<li>VME_AutomationEfficiency_Increased</li>
 			</li>
 			<li>
 				<li>VME_CraftingSpeed_SlowerForManual</li>
 			</li>
-
-
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -842,7 +836,6 @@
 			</rules>
 		</descriptionMaker>
 		<requireOne>
-
 			<li>
 				<li>VME_Power_Desired</li>
 				<li>VME_Power_Preferred</li>
@@ -850,8 +843,6 @@
 			<li>
 				<li>VME_DumbLabor_Horrible</li>
 			</li>
-
-
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -926,13 +917,9 @@
 			</rules>
 		</descriptionMaker>
 		<requireOne>
-
-			
 			<li>
 				<li>VME_Leader_Three</li>
 			</li>
-
-
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -1160,15 +1147,12 @@
 			</rules>
 		</descriptionMaker>
 		<requireOne>
-
-			
 			<li>
 				<li>VME_TradingPrice_Improved</li>
 			</li>
 			<li>
 				<li>VME_Trading_Required</li>
 			</li>
-
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -1249,14 +1233,10 @@
 			</rules>
 		</descriptionMaker>
 		<requireOne>
-
-			
 			<li>
 				<li>VME_Elders_Respected</li>
-			
 				<li>VME_Elders_Holy</li>
 			</li>
-
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -1325,17 +1305,12 @@
 			</rules>
 		</descriptionMaker>
 		<requireOne>
-
 			<li>
 				<li>VME_FarmingYield_High</li>
-			
 			</li>
 			<li>
 				<li>MeatEating_Abhorrent</li>
-			
 			</li>
-			
-
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -1411,24 +1386,18 @@
 			</rules>
 		</descriptionMaker>
 		<requireOne>
-
 			<li>
 				<li>VME_Proselytizing_Never</li>
-			
 			</li>
 			<li>
 				<li>Charity_Worthwhile</li>
-			
 			</li>
 			<li>
 				<li>Slavery_Abhorrent</li>
-			
 			</li>
 			<li>
 				<li>Apostasy_Despicable</li>
-			
 			</li>
-
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -1445,6 +1414,10 @@
 		<description>While defending oneself is acceptable, we have come too far and evolved too much to ever endorse the premise of warfare or slavery. Even tantrums should only manifest in forms that do not harm others or property.</description>
 		<iconPath>UI/Memes/Pacifist</iconPath>
 		<groupDef>Misc</groupDef>
+		<exclusionTags>
+			<li>VME_TooViolent</li>
+			<li>VME_PacifistsNotViolentConverters</li>
+		</exclusionTags>
 		<impact>3</impact>
 		<generalRules>
 			<rulesStrings>
@@ -1493,6 +1466,20 @@
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>VME_Raiding_Abhorrent</li>
+			</li>
+			<li>
+				<li>Slavery_Abhorrent</li>
+			</li>
+			<li>
+				<li>VME_Violence_Abhorrent</li>
+			</li>
+			<li>
+				<li>Execution_Abhorrent</li>
+			</li>
+		</requireOne>
 		<symbolPacks>
 			<li>
 				<ideoName>Pacifism</ideoName>
@@ -1577,6 +1564,9 @@
 		<iconPath>UI/Memes/Bushido</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>
+		<exclusionTags>
+			<li>VME_TooViolent</li>
+		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->honourable</li>
@@ -1626,14 +1616,11 @@
 			</rules>
 		</descriptionMaker>
 		<requireOne>
-
 			<li>
 				<li>VME_Defeat_Dishonorable</li>
-			
 			</li>
 			<li>
 				<li>VME_Raiding_Honorable</li>
-			
 			</li>
 			<li>
 				<li>Slavery_Acceptable</li>
@@ -1641,9 +1628,7 @@
 			</li>
 			<li>
 				<li>VME_Pain_DontCare</li>
-			
 			</li>
-
 		</requireOne>
 		<requiredRituals>
 			<li>
@@ -1720,14 +1705,11 @@
 			</rules>
 		</descriptionMaker>
 		<requireOne>
-
 			<li>
 				<li>VME_Darklight_NormalPreferred</li>
-			
 			</li>
 			<li>
 				<li>VME_DarknessCombat_Despised</li>
-			
 			</li>
 		</requireOne>
 		<symbolPacks>
@@ -1799,16 +1781,12 @@
 			</rules>
 		</descriptionMaker>
 		<requireOne>
-
 			<li>
 				<li>VME_PermanentBases_Despised</li>
-			
 			</li>
 			<li>
 				<li>VME_Travel_Desired</li>
-			
 			</li>
-			
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -1827,6 +1805,7 @@
 		<groupDef>Misc</groupDef>
 		<impact>3</impact>
 		<exclusionTags>
+			<li>VME_TooViolent</li>
 			<li>VME_NeedsSingleLeader</li>
 		</exclusionTags>
 		<generalRules>
@@ -1879,26 +1858,20 @@
 			</rules>
 		</descriptionMaker>
 		<requireOne>
-
 			<li>
 				<li>VME_Leader_BestFighter</li>
-			
 			</li>
 			<li>
 				<li>VME_Death_DontCare</li>
-			
 			</li>
 			<li>
 				<li>Corpses_DontCare</li>
-			
 			</li>
 			<li>
 				<li>Apostasy_Abhorrent</li>
-			
 			</li>
 			<li>
 				<li>VME_Scars_Honorable</li>
-			
 			</li>
 		</requireOne>
 		<requiredRituals>
@@ -1971,13 +1944,9 @@
 			</rules>
 		</descriptionMaker>
 		<requireOne>
-
-			
 			<li>
 				<li>VME_Travel_Despised</li>
-			
 			</li>
-			
 		</requireOne>
 		<symbolPacks>
 			<li>

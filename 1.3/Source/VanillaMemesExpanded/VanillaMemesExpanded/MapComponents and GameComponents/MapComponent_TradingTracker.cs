@@ -24,7 +24,7 @@ namespace VanillaMemesExpanded
         {
             base.ExposeData();
 
-            Scribe_Values.Look<int>(ref this.tickCounter, "tickCounter", 0, true);
+            Scribe_Values.Look<int>(ref this.tickCounter, "tickCounterTrade", 0, true);
             Scribe_Values.Look<int>(ref this.ticksWithoutTradingbackup, "ticksWithoutTradingbackup", 0, true);
 
 

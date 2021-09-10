@@ -53,12 +53,18 @@ namespace VanillaMemesExpanded
 
 		public static PreceptDef VME_Scars_Honorable;
 
+		public static PreceptDef VME_Mood_Shared;
+
+		public static PreceptDef VME_Violence_Abhorrent;
+
 
 		public static HistoryEventDef VME_MoodOfTheStars;
 
 		public static HistoryEventDef VME_DumbLabor;
 
 		public static HistoryEventDef VME_InstalledNonNaturalProsthetic;
+
+		public static HistoryEventDef VME_AttackedInnocent;
 
 		public static HistoryEventDef VME_Defeat;
 		public static HistoryEventDef VME_SecondDefeat;

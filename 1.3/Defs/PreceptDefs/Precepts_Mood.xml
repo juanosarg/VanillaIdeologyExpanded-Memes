@@ -14,7 +14,7 @@
 		<defName>VME_Mood_DictatedByStars</defName>
 		<issue>VME_Mood</issue>
 		<label>dictated by stars</label>
-		<description>The endless sea of stars in our skies will dictate my future, be it benevolent or otherwise.</description>
+		<description>The endless sea of stars in our skies will dictate my future, be it benevolent or otherwise.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Every 15 days, mood will randomly change between -10 and +10.</description>
 		<impact>High</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -48,5 +48,46 @@
 				<baseMoodEffect>-10</baseMoodEffect>
 			</li>
 		</stages>
+	</ThoughtDef>
+	<PreceptDef>
+		<defName>VME_Mood_Shared</defName>
+		<issue>VME_Mood</issue>
+		<label>shared</label>
+		<description>Empathy is a quality we must all strive to possess. We bear each other's burdens as well as each other's jubilations.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - If the average colony mood is happy, colonists receive a positive thought, and vice versa.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_Gestalt</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>VME_Gestalt</li>
+		</requiredMemes>
+		<comps>
+			
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_Mood_Shared</thought>
+			</li>
+			
+		</comps>
+		
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>VME_Mood_Shared</defName>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_SharedMood</workerClass>
+		<stages>
+			<li>
+				<label>rejoice</label>
+				<description>Everyone is in good mood, as am I.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+			<li>
+				<label>grieve</label>
+				<description>Everyone is in bad mood, as am I.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+
 	</ThoughtDef>
 </Defs>

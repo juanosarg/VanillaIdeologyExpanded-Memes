@@ -35,6 +35,7 @@ namespace VanillaMemesExpanded
 
             Scribe_References.Look<Pawn>(ref this.mostSkilledPawn, "mostSkilledPawn");
             Scribe_References.Look<Pawn>(ref this.pawnThatIsTheLeaderNow, "pawnThatIsTheLeaderNow");
+            Scribe_Values.Look<int>(ref this.tickCounter, "tickCounterMelee", 0, true);
 
 
 
@@ -48,28 +49,33 @@ namespace VanillaMemesExpanded
             tickCounter++;
             if ((tickCounter > tickInterval))
             {
-                pawnThatIsTheLeaderNow = PawnCollectionClass.pawnThatIsTheLeaderNow;
-                int highestSkillLevel = 0;
-
-                foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists)
+                if (Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo.HasPrecept(InternalDefOf.VME_Leader_BestFighter))
                 {
-                    if (pawn.skills.GetSkill(SkillDefOf.Melee).Level > highestSkillLevel)
+                    pawnThatIsTheLeaderNow = PawnCollectionClass.pawnThatIsTheLeaderNow;
+                    int highestSkillLevel = 0;
+
+                    foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists)
                     {
-                        highestSkillLevel = pawn.skills.GetSkill(SkillDefOf.Melee).Level;
-                        mostSkilledPawn = pawn;
+                        if (pawn.skills.GetSkill(SkillDefOf.Melee).Level > highestSkillLevel)
+                        {
+                            highestSkillLevel = pawn.skills.GetSkill(SkillDefOf.Melee).Level;
+                            mostSkilledPawn = pawn;
+                        }
                     }
+
+                    Precept_Role precept_role = Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo.GetPrecept(PreceptDefOf.IdeoRole_Leader) as Precept_Role;
+                    Pawn leader = precept_role.ChosenPawnSingle();
+
+                    if (leader == null)
+                    {
+                        pawnThatIsTheLeaderNow = mostSkilledPawn;
+                        PawnCollectionClass.pawnThatIsTheLeaderNow = pawnThatIsTheLeaderNow;
+                        precept_role.Assign(mostSkilledPawn, true);
+
+                    }
+
                 }
-
-                Precept_Role precept_role = Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo.GetPrecept(PreceptDefOf.IdeoRole_Leader) as Precept_Role;
-                Pawn leader = precept_role.ChosenPawnSingle();
-
-                if (leader == null)
-                {
-                    pawnThatIsTheLeaderNow = mostSkilledPawn;
-                    PawnCollectionClass.pawnThatIsTheLeaderNow = pawnThatIsTheLeaderNow;
-                    precept_role.Assign(mostSkilledPawn, true);
-                    
-                } 
+                
 
 
                 tickCounter = 0;

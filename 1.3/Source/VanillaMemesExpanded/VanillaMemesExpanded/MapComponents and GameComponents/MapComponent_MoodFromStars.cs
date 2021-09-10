@@ -29,7 +29,14 @@ namespace VanillaMemesExpanded
 
         }
 
-      
+        public override void ExposeData()
+        {
+            base.ExposeData();
+
+          
+            Scribe_Values.Look<int>(ref this.tickCounter, "tickCounterStars", 0, true);
+
+        }
 
         public override void MapComponentTick()
         {

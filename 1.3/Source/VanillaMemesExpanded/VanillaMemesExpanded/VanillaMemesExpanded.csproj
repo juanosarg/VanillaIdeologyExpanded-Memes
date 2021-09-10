@@ -298,8 +298,10 @@
     <Compile Include="Comps\CompProperties\CompProperties_DisableAbilityIfMemeFound.cs" />
     <Compile Include="DefOfs\InternalDefOfs.cs" />
     <Compile Include="Harmony\CaravanExitMapUtility_AddCaravanExitTaleIfShould.cs" />
+    <Compile Include="Harmony\DamageWorker_Apply.cs" />
     <Compile Include="Harmony\GenRecipe_PostProcessProduct.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
+    <Compile Include="Harmony\MentalBreakWorker_BreakCanOccur.cs" />
     <Compile Include="Harmony\Pawn_AgeTracker_BirthdayBiological.cs" />
     <Compile Include="Harmony\Precept_Role_DisabledWorktypes.cs" />
     <Compile Include="Harmony\Recipe_InstallArtificialBodyPart_ApplyOnPawn.cs" />
@@ -312,6 +314,7 @@
     <Compile Include="MapComponents and GameComponents\GameComponent_BestMeleeLeaderTracker.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_ColonistScarCounter.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_TravellingTracker.cs" />
+    <Compile Include="MapComponents and GameComponents\MapComponent_AverageMoodTracker.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_PawnsInMapDesiringRitualSuicide.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_BestCrafterTracker.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_TradingTracker.cs" />
@@ -338,6 +341,7 @@
     <Compile Include="StatPartDefs\StatPart_WorkTableManualUnefficient.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_HasNonNaturalProsthetic.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_HasNonNaturalProsthetic_Social.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_Precept_SharedMood.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_TotalDarkness.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_Trading.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_Travel.cs" />
@@ -358,6 +362,7 @@
   <ItemGroup>
     <PackageReference Include="Lib.Harmony">
       <Version>2.1.1</Version>
+	  <ExcludeAssets>runtime</ExcludeAssets>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

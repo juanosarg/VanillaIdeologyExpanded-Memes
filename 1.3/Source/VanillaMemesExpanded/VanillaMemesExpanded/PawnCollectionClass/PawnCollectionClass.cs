@@ -23,6 +23,8 @@ namespace VanillaMemesExpanded
 
         public static Pawn pawnThatIsTheLeaderNow;
 
+        public static float averageColonyMood = 0;
+
 
         public static int ticksWithoutTrading = 0;
 

@@ -39,7 +39,7 @@ namespace VanillaMemesExpanded
         {
             base.ExposeData();
 
-            Scribe_Values.Look<int>(ref this.tickCounter, "tickCounter", 0, true);
+            Scribe_Values.Look<int>(ref this.tickCounter, "tickCounterTravel", 0, true);
             Scribe_Values.Look<int>(ref this.ticksWithoutAbandoningbackup, "ticksWithoutAbandoningbackup", 0, true);
             Scribe_Collections.Look(ref colonist_caravan_tracker_backup, "colonist_caravan_tracker_backup", LookMode.Reference, LookMode.Value, ref list2, ref list3);
 
