@@ -310,6 +310,7 @@
     <Compile Include="Harmony\ThoughtWorker_Sick_CurrentStateInternal.cs" />
     <Compile Include="Harmony\TradeDeal_TryExecute.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_BestMeleeLeaderTracker.cs" />
+    <Compile Include="MapComponents and GameComponents\GameComponent_ColonistScarCounter.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_TravellingTracker.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_PawnsInMapDesiringRitualSuicide.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_BestCrafterTracker.cs" />
@@ -348,6 +349,7 @@
     <Compile Include="Thoughts\Thought_Power_Exalted.cs" />
     <Compile Include="Thoughts\Thought_Power_Preferred.cs" />
     <Compile Include="Thoughts\Thought_RandomStageOnce.cs" />
+    <Compile Include="Thoughts\Thought_Scars_Honorable.cs" />
     <Compile Include="Thoughts\Thought_StageByTime.cs" />
     <Compile Include="Thoughts\Thought_StageByWill.cs" />
     <Compile Include="VMEMod.cs" />

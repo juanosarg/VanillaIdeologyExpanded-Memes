@@ -51,6 +51,8 @@ namespace VanillaMemesExpanded
 
 		public static PreceptDef VME_Leader_BestFighter;
 
+		public static PreceptDef VME_Scars_Honorable;
+
 
 		public static HistoryEventDef VME_MoodOfTheStars;
 

@@ -19,6 +19,8 @@ namespace VanillaMemesExpanded
 
         public static Dictionary<Pawn, int> colonist_caravan_tracker = new Dictionary<Pawn, int>();
 
+        public static Dictionary<Pawn, int> colonist_scar_counter = new Dictionary<Pawn, int>();
+
         public static Pawn pawnThatIsTheLeaderNow;
 
 
@@ -69,7 +71,21 @@ namespace VanillaMemesExpanded
 
         }
 
+        public static void AddColonistToScarList(Pawn pawn, int scars)
+        {
+            if (!colonist_scar_counter.ContainsKey(pawn))
+            {
+                colonist_scar_counter.Add(pawn, scars);
+            }
+        }
 
+        public static void SetPawnScars(Pawn pawn, int scars)
+        {
+
+            colonist_scar_counter[pawn] = scars;
+
+        }
+        
 
 
 

@@ -1,71 +1,65 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
- 
-  
-   <RitualOutcomeEffectDef>
-    <defName>VME_LeadershipChallengeRitualOutcome</defName>
-    <description>Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.</description>
-    <workerClass>VanillaMemesExpanded.RitualOutcomeEffectWorker_LeadershipChallenge</workerClass>
-    <extraPredictedOutcomeDescriptions>
-      <li>Duelists and viewers will gain melee combat experience.</li>
-      <li>Spectators will gain a mood boost and fill their recreation bars.</li>
-    </extraPredictedOutcomeDescriptions>
-    <comps>
-      <li Class="RitualOutcomeComp_ParticipantCount">
-        <label>participant count</label>
-        <curve>
-          <points>
-            <li>(1,  0.0)</li>
-            <li>(5,  0.15)</li>
-            <li>(10, 0.2)</li>
-          </points>
-        </curve>
-      </li>
-     
-    </comps>
-    <outcomeChances>
-      <li>
-        <chance>0.05</chance>
-        <label>Terrible</label>
-        <memory>TerribleDuel</memory>
-        <roleIdsNotGainingMemory>
-          <li>duelist</li>
-        </roleIdsNotGainingMemory>
-        <description>The duel was terrible! The fighters bumbled around, ineptly avoiding each other in a extended display of cowardice and weakness. Watching it just made people sad.</description>
-        <positivityIndex>-2</positivityIndex>
-      </li>
-      <li>
-        <chance>0.15</chance>
-        <label>Boring</label>
-        <memory>BoringDuel</memory>
-        <roleIdsNotGainingMemory>
-          <li>duelist</li>
-        </roleIdsNotGainingMemory>
-        <description>The duel was boring. The fighters wouldn't commit, so there were no exciting moments.</description>
-        <positivityIndex>-1</positivityIndex>
-      </li>
-      <li>
-        <chance>0.6</chance>
-        <label>Good</label>
-        <memory>GoodDuel</memory>
-        <roleIdsNotGainingMemory>
-          <li>duelist</li>
-        </roleIdsNotGainingMemory>
-        <description>The duel was good. The fighters went for blood and showed real heart.</description>
-        <positivityIndex>1</positivityIndex>
-      </li>
-      <li>
-        <chance>0.2</chance>
-        <label>Unforgettable</label>
-        <memory>UnforgettableDuel</memory>
-        <roleIdsNotGainingMemory>
-          <li>duelist</li>
-        </roleIdsNotGainingMemory>
-        <description>The duel was unforgettable! Both fighters gave all they had, and the death showed their dedication.</description>
-        <positivityIndex>2</positivityIndex>
-      </li>
-    </outcomeChances>
-  </RitualOutcomeEffectDef>
-  
+
+
+	<RitualOutcomeEffectDef>
+		<defName>VME_LeadershipChallengeRitualOutcome</defName>
+		<description>Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.</description>
+		<workerClass>VanillaMemesExpanded.RitualOutcomeEffectWorker_LeadershipChallenge</workerClass>
+		<extraPredictedOutcomeDescriptions>    
+			<li>This is a duel to the death. Whoever wins will get (or keep) the leader title.</li>
+		</extraPredictedOutcomeDescriptions>
+		<comps>
+			<li Class="RitualOutcomeComp_ParticipantCount">
+				<label>participant count</label>
+				<curve>
+					<points>
+						<li>(1,  0.0)</li>
+						<li>(5,  0.15)</li>
+						<li>(10, 0.2)</li>
+					</points>
+				</curve>
+			</li>
+
+		</comps>
+		<outcomeChances>
+			<li>
+				<chance>0.05</chance>
+				<label>Terrible</label>
+				<memory>VME_TerribleLeadershipChallenge</memory>       
+				<description>The leadership challenge was terrible! The fighters bumbled around, ineptly avoiding each other in a extended display of cowardice and weakness. Watching it just made people sad.</description>
+				<roleIdsNotGainingMemory>
+					<li>duelist1</li>
+					<li>duelist2</li>
+				</roleIdsNotGainingMemory>
+				<positivityIndex>-2</positivityIndex>
+			</li>
+			<li>
+				<chance>0.15</chance>
+				<label>Boring</label>
+				<memory>VME_BoringLeadershipChallenge</memory>
+				
+				<description>The leadership challenge was boring. The fighters wouldn't commit, so there were no exciting moments. At least our leader is the strongest.</description>
+				<positivityIndex>-1</positivityIndex>
+			</li>
+			<li>
+				<chance>0.6</chance>
+				<label>Good</label>
+				<memory>VME_GoodLeadershipChallenge</memory>
+
+				<description>The leadership challenge was good. The fighters went for blood and showed real heart. We now know that our leader is the strongest.</description>
+				<positivityIndex>1</positivityIndex>
+			</li>
+			<li>
+				<chance>0.2</chance>
+				<label>Unforgettable</label>
+				<memory>VME_UnforgettableLeadershipChallenge</memory>
+
+				<description>The leadership challenge was unforgettable! Both fighters gave all they had, and we know that our leader is now the strongest among us!</description>
+				<positivityIndex>2</positivityIndex>
+			</li>
+		</outcomeChances>
+	</RitualOutcomeEffectDef>
+
 </Defs>

@@ -1884,8 +1884,22 @@
 				<li>VME_Leader_BestFighter</li>
 			
 			</li>
+			<li>
+				<li>VME_Death_DontCare</li>
 			
+			</li>
+			<li>
+				<li>Corpses_DontCare</li>
 			
+			</li>
+			<li>
+				<li>Apostasy_Abhorrent</li>
+			
+			</li>
+			<li>
+				<li>VME_Scars_Honorable</li>
+			
+			</li>
 		</requireOne>
 		<requiredRituals>
 			<li>
