@@ -620,7 +620,7 @@
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>
 		<exclusionTags>
-			
+
 			<li>VME_LeaderPrecepts</li>
 		</exclusionTags>
 		<generalRules>
@@ -871,9 +871,9 @@
 		<iconPath>UI/Memes/Republic</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>1</impact>
-		
+
 		<exclusionTags>
-			
+
 			<li>VME_LeaderPrecepts</li>
 		</exclusionTags>
 		<generalRules>
@@ -1269,6 +1269,10 @@
 		<iconPath>UI/Memes/Vegan</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>3</impact>
+		<exclusionTags>
+			<li>VME_VeganVsRancher</li>
+		</exclusionTags>
+
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->vegan</li>
@@ -1349,6 +1353,10 @@
 		<iconPath>UI/Memes/Egalitarian</iconPath>
 		<groupDef>GroupRelation</groupDef>
 		<impact>1</impact>
+		<exclusionTags>
+			<li>GroupRelation</li>
+
+		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->egalitarian</li>
@@ -1413,6 +1421,10 @@
 			<li>
 				<li>Apostasy_Despicable</li>
 			</li>
+			<li>
+				<li>IdeoDiversity_Respected</li>
+				<li>IdeoDiversity_Exalted</li>
+			</li>
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -1432,6 +1444,8 @@
 		<exclusionTags>
 			<li>VME_TooViolent</li>
 			<li>VME_PacifistsNotViolentConverters</li>
+			<li>VME_TooHonourable</li>
+			<li>VME_NotRaiders</li>
 		</exclusionTags>
 		<impact>3</impact>
 		<generalRules>
@@ -1580,7 +1594,7 @@
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>
 		<exclusionTags>
-			<li>VME_TooViolent</li>
+			<li>VME_TooHonourable</li>
 		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
@@ -1667,6 +1681,9 @@
 		<iconPath>UI/Memes/Light</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>
+		<exclusionTags>
+			<li>Darkness</li>
+		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->light</li>
@@ -1742,6 +1759,9 @@
 		<description>Stagnation is death and as with all things in this world, homes are only temporary. Traveling this world and walking roads unwalked always leads to greater things.</description>
 		<iconPath>UI/Memes/Nomad</iconPath>
 		<groupDef>Misc</groupDef>
+		<exclusionTags>
+			<li>VME_NomadVsCityBuilders</li>
+		</exclusionTags>
 		<impact>3</impact>
 		<generalRules>
 			<rulesStrings>
@@ -1819,7 +1839,7 @@
 		<iconPath>UI/Memes/BloodCourt</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>3</impact>
-		
+
 		<exclusionTags>
 			<li>VME_TooViolent</li>
 			<li>VME_LeaderPrecepts</li>
@@ -1911,6 +1931,9 @@
 		<description>Our home should feature all the accommodations of a great city, homes, workshops, and places of leisure should all be present and accessible by all.</description>
 		<iconPath>UI/Memes/CityBuilders</iconPath>
 		<groupDef>Misc</groupDef>
+		<exclusionTags>
+			<li>VME_NomadVsCityBuilders</li>
+		</exclusionTags>
 		<impact>2</impact>
 		<generalRules>
 			<rulesStrings>

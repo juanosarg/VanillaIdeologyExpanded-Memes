@@ -358,7 +358,6 @@
     <Compile Include="Thoughts\Thought_Scars_Honorable.cs" />
     <Compile Include="Thoughts\Thought_StageByTime.cs" />
     <Compile Include="Thoughts\Thought_StageByWill.cs" />
-    <Compile Include="VMEMod.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
