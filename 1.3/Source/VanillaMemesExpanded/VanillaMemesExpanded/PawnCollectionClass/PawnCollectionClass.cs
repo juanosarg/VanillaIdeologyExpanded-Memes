@@ -21,12 +21,17 @@ namespace VanillaMemesExpanded
 
         public static Dictionary<Pawn, int> colonist_scar_counter = new Dictionary<Pawn, int>();
 
+        public static Dictionary<Pawn, int> colonist_junk_tracker = new Dictionary<Pawn, int>();
+
+
         public static Pawn pawnThatIsTheLeaderNow;
 
         public static float averageColonyMood = 0;
 
 
         public static int ticksWithoutTrading = 0;
+
+        public static int roomsInMap = 0;
 
         public static int ticksWithoutAbandoning = 0;
 
@@ -87,7 +92,22 @@ namespace VanillaMemesExpanded
             colonist_scar_counter[pawn] = scars;
 
         }
-        
+
+        public static void AddColonistToJunkList(Pawn pawn, int numOfJunk)
+        {
+            if (!colonist_junk_tracker.ContainsKey(pawn))
+            {
+                colonist_junk_tracker.Add(pawn, numOfJunk);
+            }
+        }
+
+        public static void SetPawnJunk(Pawn pawn, int numOfJunk)
+        {
+
+            colonist_junk_tracker[pawn] = numOfJunk;
+
+        }
+
 
 
 

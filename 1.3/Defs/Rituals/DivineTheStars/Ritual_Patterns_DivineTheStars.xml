@@ -4,8 +4,8 @@
   <RitualPatternDef>
     <defName>VME_DivineStarsRitual</defName>
     <ritualBehavior>VME_DivineStarsRitualBehaviour</ritualBehavior>
-    <ritualObligationTargetFilter>AnyIdeoBuildingOrRitualSpot</ritualObligationTargetFilter>
-    <ritualTargetFilter>IdeoBuildingOrRitualSpot</ritualTargetFilter>
+    <ritualObligationTargetFilter>VME_DivineStarsTarget</ritualObligationTargetFilter>
+   
     <alwaysStartAnytime>true</alwaysStartAnytime>
 	<ritualOutcomeEffect>VME_DivineStarsRitualOutcome</ritualOutcomeEffect>
   </RitualPatternDef>

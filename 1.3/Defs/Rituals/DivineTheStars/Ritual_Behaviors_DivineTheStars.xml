@@ -6,7 +6,7 @@
 
   <RitualBehaviorDef>
     <defName>VME_DivineStarsRitualBehaviour</defName>
-    <durationTicks>6250</durationTicks>
+    <durationTicks>2500</durationTicks>
     <roles>
       <li Class="RitualRoleTag">
         <label>astrologer</label>

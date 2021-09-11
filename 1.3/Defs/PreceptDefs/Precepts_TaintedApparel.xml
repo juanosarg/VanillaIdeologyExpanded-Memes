@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>VME_TaintedApparel</defName>
+		<label>tainted apparel</label>
+		<iconPath>UI/Issues/TaintedApparel</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_TaintedApparel_DontCare</defName>
+		<issue>VME_TaintedApparel</issue>
+		<label>don't care</label>
+		<description>Clothing soaked in blood or bits shouldn’t dissuade one from covering themselves and making use of what would otherwise be worn away by time.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_Scrapper</li>
+		</associatedMemes>
+	</PreceptDef>
+</Defs>

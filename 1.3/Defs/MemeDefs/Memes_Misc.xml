@@ -416,6 +416,7 @@
 		</requireOne>
 		<symbolPacks>
 			<li>
+				<ideoName>gestalt</ideoName>
 				<theme>hive mind</theme>
 				<adjective>gestalt</adjective>
 				<member>extension</member>
@@ -423,10 +424,10 @@
 		</symbolPacks>
 	</MemeDef>
 	<MemeDef>
-		<defName>VME_Fleshcrafting</defName>
+		<defName>VME_Fleshcrafters</defName>
 		<label>fleshcrafting</label>
 		<description>Technology should be shunned, unless it serves the flesh. Only through extreme biological experimentation may we unlock our hidden potential.</description>
-		<iconPath>UI/Memes/Fleshcrafting</iconPath>
+		<iconPath>UI/Memes/Fleshcrafting</iconPath>		
 		<groupDef>Misc</groupDef>
 		<impact>3</impact>
 		<exclusionTags>
@@ -480,7 +481,7 @@
 					<li>animistFact(tag=meme_Fleshcrafting)     ->When the spirits become fused with our flesh, both will be combined and become more powerful.</li>
 					<li>animistProphecy(tag=meme_Fleshcrafting) ->[itIsSaid] that one day the wielder of the [relic0_name] will summon its spirit who will teach humanity the ultimate gift of fleshcrafting.</li>
 					<!-- serketist -->
-					<li>serketistProphecy(tag=meme_Fleshcrafting)->[itIsSaid] with the proper technology we can shape our bodies to be like those of insects. Tough and immutable, our new chittering forms will be as close to perfection as possible.</li>
+					<li>serketistProphecy(tag=meme_Fleshcrafting)->[itIsSaid] with the proper technology we will shape our bodies to be like those of insects. Tough and immutable, our new chittering forms will be as close to perfection as possible.</li>
 					<!-- eldritch / chthonian -->
 					<li>chthonianProphecy(tag=meme_Fleshcrafting)->Our human bodies will not be able to withstand the madness and cosmic insanity brought by these entities: we must shape our forms beyond the imaginable so they are capable of resisting their onslaught.</li>
 					<!-- esoteric -->
@@ -498,6 +499,9 @@
 			</li>
 			<li>
 				<li>VME_BodyMod_OnlyBiological</li>
+			</li>
+			<li>
+				<li>VME_OrganUse_PostMortem</li>
 			</li>
 		</requireOne>
 		<symbolPacks>
@@ -521,6 +525,8 @@
 			</li>
 		</symbolPacks>
 	</MemeDef>
+	
+	
 	<MemeDef>
 		<defName>VME_HolyDiseases</defName>
 		<label>holy diseases</label>
@@ -1082,6 +1088,17 @@
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>VME_Junk_Beautiful</li>
+			</li>
+			<li>
+				<li>VME_TaintedApparel_DontCare</li>
+			</li>
+			<li>
+				<li>VME_TatteredApparel_DontCare</li>
+			</li>
+		</requireOne>
 		<symbolPacks>
 			<li>
 				<ideoName>Scavenging</ideoName>
@@ -1716,7 +1733,7 @@
 					<li>lesson(tag=meme_Light)              ->the best way to find yourself is to lose yourself in the service of others</li>
 					<li>lessonReinforcement(tag=meme_Light) ->That's what dispelling the darkness means.</li>
 					<!-- archist -->
-					<li>archistBasis(tag=meme_Light)    ->The archotechs, from their beginning, perceived the universe using senses beyond the physical.</li>
+					<li>archistBasis(tag=meme_Light)    ->The archotechs, from their beginning, perceived the universe using senses beyond the physical. Their clarity of thought bathes the Universe in light.</li>
 					<li>archistFact(tag=meme_Light)     ->By clouding our senses with darkness, all we are doing is stopping us from understanding the universe the way the archotechs do.</li>
 					<li>archistProphecy(tag=meme_Light) ->[inTheEnd], we will banish darkness forever and unlock the wisdom of the archotechs for all humanity.</li>
 					<!-- animist -->
@@ -1742,6 +1759,9 @@
 			</li>
 			<li>
 				<li>VME_DarknessCombat_Despised</li>
+			</li>
+			<li>
+				<li>VME_Aurora_Amazing</li>
 			</li>
 		</requireOne>
 		<symbolPacks>
@@ -1986,6 +2006,9 @@
 			<li>
 				<li>VME_Travel_Despised</li>
 			</li>
+			<li>
+				<li>VME_PermanentBases_Desired</li>
+			</li>
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -2140,7 +2163,7 @@
 		<defName>VME_PartyLife</defName>
 		<label>party life</label>
 		<description>Let us toast to the acts of dance, drink and debauchery. Any free time is a good time, but party time is the best time.</description>
-		<iconPath>UI/Memes/VME_AlphaMeme</iconPath>
+		<iconPath>UI/Memes/PartyLife</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>
 		<generalRules>

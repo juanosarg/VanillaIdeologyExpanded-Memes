@@ -57,6 +57,10 @@ namespace VanillaMemesExpanded
 
 		public static PreceptDef VME_Violence_Abhorrent;
 
+		public static PreceptDef VME_Junk_Beautiful;
+
+		public static PreceptDef VME_OrganUse_PostMortem;
+
 
 		public static HistoryEventDef VME_MoodOfTheStars;
 

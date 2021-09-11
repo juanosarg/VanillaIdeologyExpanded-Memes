@@ -3,8 +3,8 @@
 
   <RitualOutcomeEffectDef>
     <defName>VME_DivineStarsRitualOutcome</defName>
-    <description>Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.</description>
-    <workerClass>RitualOutcomeEffectWorker_FromQuality</workerClass>
+    <description>Participants will get completely random results, with no regard for ritual quality.</description>
+    <workerClass>VanillaMemesExpanded.RitualOutcomeEffectWorker_DivineStars</workerClass>
     <comps>
       <li Class="RitualOutcomeComp_PawnStatScaled">
         <label>{PAWN_labelShort}'s social impact</label>
@@ -34,33 +34,13 @@
     
     </comps>
     <outcomeChances>
+      
       <li>
-        <label>Terrible</label>
-        <chance>0.05</chance>
-        <memory>TerribleFestival</memory>
-        <description>The {0} was terrible! Participants endured hours of jaw-clenching small talk while waiting for it to end.</description>
-        <positivityIndex>-2</positivityIndex>
-      </li>
-      <li>
-        <label>Boring</label>
-        <chance>0.15</chance>
-        <memory>BoringFestival</memory>
-        <description>The {0} was boring. Everyone felt too awkward to open up and laugh.</description>
-        <positivityIndex>-1</positivityIndex>
-      </li>
-      <li>
-        <label>Fun</label>
-        <chance>0.6</chance>
-        <memory>FunFestival</memory>
-        <description>The {0} was fun. Everyone appreciated the chance to relax and have fun together.</description>
+        <label>inscrutable</label>
+        <chance>1</chance>
+        <memory>VME_DivineTheStarsRandom</memory>
+        <description>Our destiny has been revealed by the stars.</description>
         <positivityIndex>1</positivityIndex>
-      </li>
-      <li>
-        <label>Unforgettable</label>
-        <chance>0.2</chance>
-        <memory>UnforgettableFestival</memory>
-        <description>The {0} was unforgettable! Everyone learned about each other and felt like a family.</description>
-        <positivityIndex>2</positivityIndex>
       </li>
     </outcomeChances>
   </RitualOutcomeEffectDef>

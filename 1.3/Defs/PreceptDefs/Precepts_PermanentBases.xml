@@ -78,4 +78,64 @@
 			
 		</stages>
 	</ThoughtDef>
+	
+	<PreceptDef>
+		<defName>VME_PermanentBases_Desired</defName>
+		<issue>VME_PermanentBases</issue>
+		<label>desired</label>
+		<description>Our colony should become our forever home, the more buildings, paths, and lights we can erect the better off we’ll all be.</description>
+		<impact>Medium</impact>
+		<displayOrderInImpact>70</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_CityBuilders</li>
+		</associatedMemes>
+		<conflictingMemes>
+			<li>VME_Nomad</li>
+		</conflictingMemes>
+		<comps>			
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_PermanentBases_Desired</thought>
+			</li>
+		</comps>
+		
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>VME_PermanentBases_Desired</defName>
+		<validWhileDespawned>true</validWhileDespawned>
+		<workerClass>VanillaMemesExpanded.Thought_MoodByRooms</workerClass>
+		<stages>
+		<li>
+				<label>magnificent city</label>
+				<description>Our city is magnificent, a fine example of what humanity can achieve.</description>
+				<baseMoodEffect>20</baseMoodEffect>
+			</li>
+			<li>
+				<label>many beautiful buildings</label>
+				<description>We have so many beautiful buildings!</description>
+				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+			<li>
+				<label>many beautiful buildings</label>
+				<description>We have so many beautiful buildings!</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+			<li>
+				<label>burgeoning city</label>
+				<description>Our city is growing!</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+			
+			<li>
+				<label>not enough buildings</label>
+				<description>There are not enough buildings nearby. I feel unprotected.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			
+			
+			
+			
+			
+		</stages>
+	</ThoughtDef>
 </Defs>

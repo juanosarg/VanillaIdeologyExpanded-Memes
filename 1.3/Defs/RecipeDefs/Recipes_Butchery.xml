@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>VME_ButcherHumanoidForArm</defName>
+    <label>butcher humanoid corpse for arm</label>
+    <description>Butcher a humanoid to obtain a useable arm.</description>
+    <jobString>Fleshcrafting.</jobString>
+    <workAmount>450</workAmount>
+    <workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+    <workSkill>Medicine</workSkill>
+    <efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
+    <effectWorking>ButcherFlesh</effectWorking>
+    <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+    <interruptIfIngredientIsRotting>true</interruptIfIngredientIsRotting>
+    <recipeUsers>
+				<li>TableButcher</li>	  
+		</recipeUsers>	
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>CorpsesHumanlike</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    
+    <fixedIngredientFilter>
+      <categories>
+        <li>CorpsesHumanlike</li>
+      </categories>
+     
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>CorpsesHumanlike</li>
+      </categories>
+    </defaultIngredientFilter>
+	<products>
+      <VME_FleshcraftedArm>1</VME_FleshcraftedArm>
+    </products>
+	<memePrerequisitesAny><li>VME_Fleshcrafters</li></memePrerequisitesAny>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>VME_ButcherHumanoidForLeg</defName>
+    <label>butcher humanoid corpse for leg</label>
+    <description>Butcher a humanoid to obtain a useable leg.</description>
+    <jobString>Fleshcrafting.</jobString>
+    <workAmount>450</workAmount>
+    <workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+    <workSkill>Medicine</workSkill>
+    <efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
+    <effectWorking>ButcherFlesh</effectWorking>
+    <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+    <interruptIfIngredientIsRotting>true</interruptIfIngredientIsRotting>
+    <recipeUsers>
+				<li>TableButcher</li>	  
+		</recipeUsers>	
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>CorpsesHumanlike</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    
+    <fixedIngredientFilter>
+      <categories>
+        <li>CorpsesHumanlike</li>
+      </categories>
+     
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>CorpsesHumanlike</li>
+      </categories>
+    </defaultIngredientFilter>
+	<products>
+      <VME_FleshcraftedLeg>1</VME_FleshcraftedLeg>
+    </products>
+	<memePrerequisitesAny><li>VME_Fleshcrafters</li></memePrerequisitesAny>
+  </RecipeDef>
+  
+ 
+</Defs>

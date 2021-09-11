@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>VME_TattereedApparel</defName>
+		<label>tattered apparel</label>
+		<iconPath>UI/Issues/TatteredApparel</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_TatteredApparel_DontCare</defName>
+		<issue>VME_TattereedApparel</issue>
+		<label>don't care</label>
+		<description>We have bigger concerns to address than holes in our clothes, let's not waste our valuable time fretting or lamenting about such trivialities.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_Scrapper</li>
+		</associatedMemes>
+	</PreceptDef>
+</Defs>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Base: Natural body part 
+  <ThingDef Name="BodyPartNaturalBase" ParentName="BodyPartBase" Abstract="True">
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(190,190,190)</color>
+    </graphicData>
+    <thingCategories>
+      <li>BodyPartsNatural</li>
+    </thingCategories>
+    <statBases>
+      <DeteriorationRate>4.0</DeteriorationRate>
+    </statBases>
+  </ThingDef>-->
+
+  <!-- Arm -->
+  <ThingDef ParentName="BodyPartNaturalBase">
+    <defName>VME_FleshcraftedArm</defName>
+    <label>fleshcrafted arm</label>
+    <description>A biological human arm, fleshcrafted from a corpse.</description>
+    <descriptionHyperlinks><RecipeDef>VME_InstallFleshcraftedArm</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <defName>VME_InstallFleshcraftedArm</defName>
+    <label>install fleshcrafted arm</label>
+    <description>Install a fleshcrafted arm.</description>
+   
+    <jobString>Installing fleshcrafted arm.</jobString>
+    
+    
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>VME_FleshcraftedArm</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>VME_FleshcraftedArm</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Arm</li>
+    </appliedOnFixedBodyParts>
+	<addsHediff>VME_FleshcraftedArmHediff</addsHediff>
+	
+  </RecipeDef>
+  
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>VME_FleshcraftedArmHediff</defName>
+    <label>fleshcrafted arm</label>
+    <labelNoun>a fleshcrafted arm</labelNoun>
+    <description>An installed fleshcrafted arm.</description>
+    <descriptionHyperlinks><ThingDef>VME_FleshcraftedArm</ThingDef></descriptionHyperlinks>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>fist</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>8.2</power> <!-- Same as natural fist -->
+            <cooldownTime>2</cooldownTime>
+          </li>
+        </tools>
+      </li>
+	  <li Class="VanillaMemesExpanded.HediffCompProperties_Infections">
+        
+      </li>
+    </comps>
+    <spawnThingOnRemoved>VME_FleshcraftedArm</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+  
+  <!-- Leg -->
+  <ThingDef ParentName="BodyPartNaturalBase">
+    <defName>VME_FleshcraftedLeg</defName>
+    <label>fleshcrafted leg</label>
+    <description>A biological human leg, fleshcrafted from a corpse.</description>
+    <descriptionHyperlinks><RecipeDef>VME_InstallFleshcraftedLeg</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <defName>VME_InstallFleshcraftedLeg</defName>
+    <label>install fleshcrafted leg</label>
+    <description>Install a fleshcrafted leg.</description>
+   
+    <jobString>Installing fleshcrafted leg.</jobString>
+    
+    
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>VME_FleshcraftedLeg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>VME_FleshcraftedLeg</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Leg</li>
+    </appliedOnFixedBodyParts>
+	<addsHediff>VME_FleshcraftedLegHediff</addsHediff>
+	
+  </RecipeDef>
+  
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>VME_FleshcraftedLegHediff</defName>
+    <label>fleshcrafted leg</label>
+    <labelNoun>a fleshcrafted leg</labelNoun>
+    <description>An installed fleshcrafted leg.</description>
+    <descriptionHyperlinks><ThingDef>VME_FleshcraftedLeg</ThingDef></descriptionHyperlinks>
+    <comps>
+      
+	  <li Class="VanillaMemesExpanded.HediffCompProperties_Infections">
+        
+      </li>
+    </comps>
+    <spawnThingOnRemoved>VME_FleshcraftedLeg</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+
+ 
+</Defs>

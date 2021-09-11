@@ -9,7 +9,7 @@
     <graphicData>
       <graphicClass>Graphic_Fleck</graphicClass>
       <shaderType>Mote</shaderType>
-      <texPath>UI/Issues/VME_AlphaIssue</texPath>
+      <texPath>UI/Motes/Fleck_StarDivinationA</texPath>
       <drawSize>(2, 2)</drawSize>
     </graphicData>
     <altitudeLayer>MoteOverhead</altitudeLayer>

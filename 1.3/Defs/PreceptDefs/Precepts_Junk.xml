@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>VME_Junk</defName>
+		<label>junk</label>
+		<iconPath>UI/Issues/Junk</iconPath>
+	</IssueDef>
+	
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_Junk_Beautiful</defName>
+		<issue>VME_Junk</issue>
+		<label>beautiful</label>
+		<description>The machinations of old are breath-taking, and their weathering should be viewed as art. It's wonderful to live surrounded by things discarded by others.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_Scrapper</li>
+		</associatedMemes>
+		
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+
+				<thought>VME_Junk_Beautiful</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_Junk_Beautiful</defName>
+		
+		<workerClass>VanillaMemesExpanded.Thought_Junk_Beautiful</workerClass>
+		<stages>
+			<li>
+				<label>no junk</label>
+				<description>It has been too long since I’ve seen junk.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>very little junk</label>
+				<description>This area is way too sparse, I miss seeing the junk.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>small junk</label>
+				<description>I recently saw a small pile of junk.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>saw junk</label>
+				<description>I recently saw junk.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+			<li>
+				<label>amazing junk</label>
+				<description>I am surrounded by junk.</description>
+				<baseMoodEffect>7</baseMoodEffect>
+			</li>
+			<li>
+				<label>beautiful  junk</label>
+				<description>I am surrounded by a junkyard and I love it.</description>
+				<baseMoodEffect>9</baseMoodEffect>
+			</li>
+				
+			
+			
+		</stages>
+	</ThoughtDef>
+	
+	
+</Defs>

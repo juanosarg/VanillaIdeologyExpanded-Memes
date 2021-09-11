@@ -20,10 +20,10 @@
 			<li>Transhumanist</li>
 		</conflictingMemes>
 		<associatedMemes>
-			<li>VME_Fleshcrafting</li>
+			<li>VME_Fleshcrafters</li>
 		</associatedMemes>
 		<requiredMemes>
-			<li>VME_Fleshcrafting</li>
+			<li>VME_Fleshcrafters</li>
 		</requiredMemes>
 		<comps>
 			<li Class="PreceptComp_SelfTookMemoryThought">
