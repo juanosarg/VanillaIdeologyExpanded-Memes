@@ -32,6 +32,16 @@ namespace VanillaMemesExpanded
 
             }
 
+            if (__instance.job?.workGiverDef?.workType?.workTags.HasFlag(WorkTags.Firefighting) == true)
+            {
+
+                Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_Firefighting, new SignalArgs(__instance.pawn.Named(HistoryEventArgsNames.Doer))), true);
+
+
+
+
+            }
+
 
 
 

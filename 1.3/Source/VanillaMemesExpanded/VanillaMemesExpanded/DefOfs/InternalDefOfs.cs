@@ -61,6 +61,10 @@ namespace VanillaMemesExpanded
 
 		public static PreceptDef VME_OrganUse_PostMortem;
 
+		public static HistoryEventDef VME_Firefighting;
+
+		public static HistoryEventDef VME_KillingWithFire;
+
 
 		public static HistoryEventDef VME_MoodOfTheStars;
 
