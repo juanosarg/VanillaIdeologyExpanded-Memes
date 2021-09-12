@@ -294,10 +294,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abilities\CompAbilityStrengthenFlame.cs" />
+    <Compile Include="Abilities\CompProperties_AbilityStrengthenFlame.cs" />
     <Compile Include="Comps\CompDisableAbilityIfMemeFound.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_DisableAbilityIfMemeFound.cs" />
     <Compile Include="DefOfs\InternalDefOfs.cs" />
+    <Compile Include="Defs\SupportedDrinksForPreceptDefs.cs" />
     <Compile Include="Harmony\CaravanExitMapUtility_AddCaravanExitTaleIfShould.cs" />
+    <Compile Include="Harmony\CompDrug_PostIngested.cs" />
     <Compile Include="Harmony\TaleUtility_Notify_PawnDied.cs" />
     <Compile Include="Harmony\DamageWorker_Apply.cs" />
     <Compile Include="Harmony\GenRecipe_PostProcessProduct.cs" />
@@ -316,7 +320,9 @@
     <Compile Include="Hediffs\HediffComp_Infections.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_BestMeleeLeaderTracker.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_ColonistScarCounter.cs" />
+    <Compile Include="MapComponents and GameComponents\MapComponent_BoozeTracker.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_TravellingTracker.cs" />
+    <Compile Include="MapComponents and GameComponents\MapComponent_FireTracker.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_RoomsInMap.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_JunkTracker.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_AverageMoodTracker.cs" />
@@ -346,20 +352,26 @@
     <Compile Include="RoleRequirements\RoleRequirement_BestCrafter.cs" />
     <Compile Include="RoleRequirements\RoleRequirement_BestFighter.cs" />
     <Compile Include="StageEndTriggers\StageEndTrigger_DeadDuelEnded.cs" />
+    <Compile Include="StatPartDefs\StatPart_ExtraJoyGain.cs" />
     <Compile Include="StatPartDefs\StatPart_WorkTableAutomation.cs" />
+    <Compile Include="StatPartDefs\StatPart_WorkTableAutomationDecreased.cs" />
     <Compile Include="StatPartDefs\StatPart_WorkTableManualUnefficient.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_Precept_Alcohol_MildAbstinence.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_Aurora.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_HasNonNaturalProsthetic.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_HasNonNaturalProsthetic_Social.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_SharedMood.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_TotalDarkness.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_Trading.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_Precept_Alcohol.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_Travel.cs" />
     <Compile Include="Thoughts\Thought_DisableFirstDefeatThought.cs" />
     <Compile Include="Thoughts\Thought_DivineTheStarsRandom.cs" />
     <Compile Include="Thoughts\Thought_Elders_Respected.cs" />
+    <Compile Include="Thoughts\Thought_IdeoRole_FireKeeper.cs" />
     <Compile Include="Thoughts\Thought_Illness_Exalted.cs" />
     <Compile Include="Thoughts\Thought_Illness_Exalted_TooHealthy.cs" />
+    <Compile Include="Thoughts\Thought_Fire_Desired.cs" />
     <Compile Include="Thoughts\Thought_MoodByRooms.cs" />
     <Compile Include="Thoughts\Thought_Power_Desired.cs" />
     <Compile Include="Thoughts\Thought_Power_Exalted.cs" />

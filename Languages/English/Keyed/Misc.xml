@@ -4,7 +4,10 @@
   <!-- Ideoligions -->
   
   <VME_Automation>Automation efficiency: increased precept</VME_Automation>
+  <VME_AutomationDecreased>Automation efficiency: decreased precept</VME_AutomationDecreased>
+
   <VME_AutomationManual>Crafting speed: slower for manual precept</VME_AutomationManual>
+  <VME_ExtraJoyGain>Recreation: loved precept</VME_ExtraJoyGain>
   <VME_PawnMustBeSuicidal>{0} is not harbouring suicidal thoughts!</VME_PawnMustBeSuicidal>
   <VME_PawnMustBeBestMelee>{0} must be the best melee fighter in the colony!</VME_PawnMustBeBestMelee>
   <VME_RitualTargetDivineTheStarsInfo>An unroofed ritual spot at night. Spot must be unroofed with at least 25 unroofed cells in the area.</VME_RitualTargetDivineTheStarsInfo>

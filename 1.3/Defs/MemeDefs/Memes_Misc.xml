@@ -1555,6 +1555,9 @@
 				<li>memeLeaderNoun->great arsonist</li>
 			</rulesStrings>
 		</generalRules>
+		<agreeableTraits>
+			<li>Pyromaniac</li>
+		</agreeableTraits>
 		<descriptionMaker>
 			<rules>
 				<rulesStrings>
@@ -1594,6 +1597,17 @@
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>VME_Firefighting_Abhorrent</li>
+			</li>
+			<li>
+				<li>VME_Fire_Desired</li>
+			</li>
+			<li>
+				<li>VME_KillingWithFire_Preferred</li>
+			</li>
+		</requireOne>
 		<symbolPacks>
 			<li>
 				<ideoName>Fire Worship</ideoName>
@@ -1763,6 +1777,10 @@
 			<li>
 				<li>VME_Aurora_Amazing</li>
 			</li>
+			<li>
+				<li>VME_Eclipse_Despised</li>
+			</li>
+			
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -2083,6 +2101,12 @@
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>VME_Mechanoids_Exalted</li>
+			</li>
+			
+		</requireOne>
 		<symbolPacks>
 			<li>
 				<ideoName>Mechanoid</ideoName>
@@ -2150,6 +2174,18 @@
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>VME_Insectoids_Exalted</li>
+			</li>
+			<li>
+				<li>VME_InsectMeatEating_Sacrilegious</li>
+			</li>
+			<li>
+				<li>VME_InsectJellyEaten_Loved_Classic</li>
+			</li>
+			
+		</requireOne>
 		<symbolPacks>
 			<li>
 				<ideoName>Insectoid</ideoName>
@@ -2217,6 +2253,16 @@
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>VME_Recreation_Loved</li>
+			</li>
+			<li>
+				<li>VME_Alcohol_Demanded</li>
+			</li>
+			
+			
+		</requireOne>
 		<symbolPacks>
 			<li>
 				<ideoName>Party Life</ideoName>

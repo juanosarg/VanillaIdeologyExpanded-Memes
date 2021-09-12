@@ -22,6 +22,10 @@ namespace VanillaMemesExpanded
             {
                 ItemProcessor.FactoryMultiplierClass.FactoryPreceptMultiplier = 0.75f;
             }
+            if (Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo.HasPrecept(InternalDefOf.VME_AutomationEfficiency_Decreased))
+            {
+                ItemProcessor.FactoryMultiplierClass.FactoryPreceptMultiplier = 1.5f;
+            }
             base.FinalizeInit();
 
         }

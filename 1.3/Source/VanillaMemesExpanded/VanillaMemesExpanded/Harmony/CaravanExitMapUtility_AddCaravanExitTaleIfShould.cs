@@ -25,7 +25,7 @@ namespace VanillaMemesExpanded
             {
                 PawnCollectionClass.AddColonistToCaravanList(pawn, 0);
                 PawnCollectionClass.ResetPawnCaravanTicks(pawn);
-                Log.Message("Added");
+                
             }
 
 

@@ -23,6 +23,9 @@ namespace VanillaMemesExpanded
 
         public static Dictionary<Pawn, int> colonist_junk_tracker = new Dictionary<Pawn, int>();
 
+        public static Dictionary<Pawn, int> colonist_booze_tracker = new Dictionary<Pawn, int>();
+
+
 
         public static Pawn pawnThatIsTheLeaderNow;
 
@@ -34,6 +37,9 @@ namespace VanillaMemesExpanded
         public static int roomsInMap = 0;
 
         public static int ticksWithoutAbandoning = 0;
+
+        public static int firesInTheMap = 0;
+
 
 
         public static void AddColonistToIllnessList(Pawn pawn, int ticks)
@@ -108,7 +114,26 @@ namespace VanillaMemesExpanded
 
         }
 
+        public static void AddColonistToBoozeList(Pawn pawn, int ticks)
+        {
+            if (!colonist_booze_tracker.ContainsKey(pawn))
+            {
+                colonist_booze_tracker.Add(pawn, ticks);
+            }
+        }
 
+        public static void IncreasePawnBoozeTicks(Pawn pawn, int ticks)
+        {
+
+            colonist_booze_tracker[pawn] += ticks;
+
+        }
+        public static void ResetPawnBoozeTicks(Pawn pawn)
+        {
+
+            colonist_booze_tracker[pawn] = 0;
+
+        }
 
 
     }

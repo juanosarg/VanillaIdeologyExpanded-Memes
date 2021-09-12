@@ -24,6 +24,32 @@
     </rulePack>
   </RulePackDef>
 
-  
+  <RulePackDef>
+    <defName>VME_RoleFireKeeper</defName>
+    
+    <rulePack>
+      <rulesStrings>
+	    <li>r_roleName(p=7)->[firstPart][secondPart]</li>
+        <li>r_roleName->firekeeper</li>
+        <li>r_roleName->flamekeeper</li>
+        <li>firstPart->flame</li>
+        <li>firstPart->ash</li>
+        <li>firstPart->fire</li>
+        <li>firstPart->warmth</li>
+        <li>firstPart->bright</li>
+        <li>firstPart->light</li>
+        <li>firstPart->kiln</li>
+        <li>firstPart->forge</li>
+        <li>secondPart(p=4)->touched</li>
+        <li>secondPart(p=4)->warden</li>
+        <li>secondPart(p=4)->herald</li>
+        <li>secondPart(p=4)->protector</li>
+        <li>secondPart(p=4)->defender</li>
+        <li>secondPart(p=4)->seeker</li>
+        <li>secondPart(p=4)->whisperer</li>
+        <li>secondPart(p=4)->keeper</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
 
 </Defs>

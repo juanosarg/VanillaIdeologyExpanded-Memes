@@ -38,6 +38,25 @@ namespace VanillaMemesExpanded
                 }
 
             }
+            if (worker.Ideo.HasPrecept(InternalDefOf.VME_CraftingQuality_Decreased))
+            {
+
+                CompQuality compQuality = product.TryGetComp<CompQuality>();
+                if (compQuality != null)
+                {
+                    if (recipeDef.workSkill == null)
+                    {
+                        Log.Error(recipeDef + " needs workSkill because it creates a product with a quality.");
+                    }
+                    if (compQuality.Quality != QualityCategory.Awful)
+                    {
+                        compQuality.SetQuality(compQuality.Quality -1, ArtGenerationContext.Colony);
+
+                    }
+
+                }
+
+            }
 
 
 

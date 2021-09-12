@@ -6,6 +6,7 @@
 		<xpath>/Defs/StatDef[defName="WorkTableWorkSpeedFactor"]/parts</xpath>
 		<value>
 			<li Class="VanillaMemesExpanded.StatPart_WorkTableAutomation" />
+			<li Class="VanillaMemesExpanded.StatPart_WorkTableAutomationDecreased" />
 			<li Class="VanillaMemesExpanded.StatPart_WorkTableManualUnefficient" />
 		</value>
 	</Operation>

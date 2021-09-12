@@ -30,8 +30,10 @@ namespace VanillaMemesExpanded
 		public static PreceptDef VME_Illness_Exalted;
 
 		public static PreceptDef VME_CraftingQuality_Increased;
+		public static PreceptDef VME_CraftingQuality_Decreased;
 
 		public static PreceptDef VME_AutomationEfficiency_Increased;
+		public static PreceptDef VME_AutomationEfficiency_Decreased;
 
 		public static PreceptDef VME_CraftingSpeed_SlowerForManual;
 
@@ -61,6 +63,13 @@ namespace VanillaMemesExpanded
 
 		public static PreceptDef VME_OrganUse_PostMortem;
 
+		public static PreceptDef VME_IdeoRole_FireKeeper;
+
+		public static PreceptDef VME_Recreation_Loved;
+
+		public static MemeDef VME_FireWorship;
+
+
 		public static HistoryEventDef VME_Firefighting;
 
 		public static HistoryEventDef VME_KillingWithFire;
@@ -76,6 +85,9 @@ namespace VanillaMemesExpanded
 
 		public static HistoryEventDef VME_Defeat;
 		public static HistoryEventDef VME_SecondDefeat;
+
+		public static HistoryEventDef VME_MechanoidDestroyed;
+		public static HistoryEventDef VME_InsectoidKilled;
 
 
 		public static TraitDef VME_Elder;

@@ -40,4 +40,38 @@
 			</li>
 		</stages>
 	</ThoughtDef>
+	<PreceptDef>
+		<defName>VME_Aurora_Despised</defName>
+		<issue>VME_Aurora</issue>
+		<label>despised</label>
+		<description>The blinding lights in the heavens give us a nasty headache.</description>
+		<impact>Low</impact>
+		<requiredMemes>
+			<li>Darkness</li>
+		</requiredMemes>
+		<associatedMemes>
+			<li>Darkness</li>
+		</associatedMemes>
+		<conflictingMemes>
+			<li>VME_Light</li>
+			<li>Blindsight</li>
+		</conflictingMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_Aurora_Despised</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_Aurora_Despised</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Aurora</workerClass>
+		<stages>
+			<li>
+				<label>disgusting aurora</label>
+				<description>The blinding lights in the heavens give me a headache.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 </Defs>

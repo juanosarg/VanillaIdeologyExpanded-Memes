@@ -26,6 +26,16 @@
  
    
   </PreceptDef>
+  
+  <PreceptDef>
+    <defName>VME_CraftingQuality_Decreased</defName>
+    <issue>VME_CraftingQuality</issue>
+    <label>decreased</label>
+    <description>We don't care about artisanal work. Why create something when you can buy it or steal it from others?\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Decreases quality of items created on a worktable by 1, up to Awful.</description>
+    <impact>Medium</impact>
+    
+   
+  </PreceptDef>
 
  
 

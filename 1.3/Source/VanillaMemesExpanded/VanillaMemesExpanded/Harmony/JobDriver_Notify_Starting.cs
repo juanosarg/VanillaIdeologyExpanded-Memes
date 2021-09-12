@@ -34,9 +34,12 @@ namespace VanillaMemesExpanded
 
             if (__instance.job?.workGiverDef?.workType?.workTags.HasFlag(WorkTags.Firefighting) == true)
             {
+                if ((__instance.pawn?.ideo?.Ideo.HasMeme(InternalDefOf.VME_FireWorship) == true)&& ((Precept_RoleSingle)__instance.pawn?.ideo?.Ideo.GetPrecept(InternalDefOf.VME_IdeoRole_FireKeeper)).ChosenPawnSingle()!= __instance.pawn) {
+                    
+                    Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_Firefighting, new SignalArgs(__instance.pawn.Named(HistoryEventArgsNames.Doer))), true);
 
-                Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_Firefighting, new SignalArgs(__instance.pawn.Named(HistoryEventArgsNames.Doer))), true);
-
+                }
+               
 
 
 
