@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <DutyDef>
+    <defName>VME_NakedPartyDance</defName>
+    <label>dance party</label>
+    <hook>MediumPriority</hook>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="ThinkNode_ConditionalInGatheringArea">
+          <subNodes>
+
+			 <li Class="VanillaMemesExpanded.JobGiver_GetNaked">
+              
+             
+            </li>
+
+            <!-- Stand where you are and do dance moves -->
+            <li Class="ThinkNode_ConditionalRandom">
+              <chance>0.6</chance>
+              <subNodes>
+                <li Class="JobGiver_Dance">
+                  <ticksRange>480</ticksRange>
+                </li>
+              </subNodes>
+            </li>
+
+            <!-- Get joy -->
+            <li Class="ThinkNode_ConditionalRandom">
+              <chance>0.1</chance>
+              <subNodes>
+                <li Class="JobGiver_GetJoyInGatheringArea">
+                  <desiredRadius>8</desiredRadius>
+                </li>
+              </subNodes>
+            </li>
+
+            <!-- Wander -->
+            <li Class="JobGiver_WanderInGatheringArea">
+              <ticksBetweenWandersRange>50</ticksBetweenWandersRange>
+              <desiredRadius>6</desiredRadius>
+            </li>
+          </subNodes>
+        </li>
+
+        <!-- Reach the party area -->
+        <li Class="JobGiver_WanderInGatheringArea">
+          <ticksBetweenWandersRange>50~250</ticksBetweenWandersRange>
+          <locomotionUrgency>Jog</locomotionUrgency>
+          <desiredRadius>6</desiredRadius>
+        </li>
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+
+ 
+
+</Defs>

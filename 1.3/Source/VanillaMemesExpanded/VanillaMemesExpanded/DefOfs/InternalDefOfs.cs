@@ -1,5 +1,6 @@
 ﻿using System;
 using RimWorld;
+using Verse;
 
 namespace VanillaMemesExpanded
 {
@@ -95,6 +96,10 @@ namespace VanillaMemesExpanded
 		public static TraitDef VME_Elder;
 
 		public static ThoughtDef VME_Defeat_Dishonorable;
+		public static ThoughtDef VME_GotSomeLovin;
+
+		public static SoundDef VME_RitualSustainer_Orgy;
+
 
 	}
 }
