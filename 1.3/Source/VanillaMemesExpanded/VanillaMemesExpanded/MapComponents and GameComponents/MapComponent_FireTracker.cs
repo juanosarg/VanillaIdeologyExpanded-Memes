@@ -24,7 +24,10 @@ namespace VanillaMemesExpanded
 
         public override void FinalizeInit()
         {
-            PawnCollectionClass.firesInTheMap = firesInTheMap_backup;
+            if (map.IsPlayerHome)
+            {
+                PawnCollectionClass.firesInTheMap = firesInTheMap_backup;
+            }
 
             base.FinalizeInit();
 
@@ -47,23 +50,27 @@ namespace VanillaMemesExpanded
             {
 
 
-
-
-                firesInTheMap_backup = PawnCollectionClass.firesInTheMap;                
-
-                int wildFires = map.listerThings.ThingsOfDef(ThingDefOf.Fire).Count;
-                int campFires = map.listerThings.ThingsOfDef(ThingDefOf.Campfire).Count;
-                int stoneCampfires = 0;
-                if (DefDatabase<ThingDef>.GetNamedSilentFail("Stone_Campfire") != null) {
-                    stoneCampfires = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamedSilentFail("Stone_Campfire")).Count;
-                }
-                int braziers = 0;
-                if (DefDatabase<ThingDef>.GetNamedSilentFail("Brazier") != null)
+                if (map.IsPlayerHome)
                 {
-                    braziers = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamedSilentFail("Brazier")).Count;
+                    firesInTheMap_backup = PawnCollectionClass.firesInTheMap;
+
+                    int wildFires = map.listerThings.ThingsOfDef(ThingDefOf.Fire).Count;
+                    int campFires = map.listerThings.ThingsOfDef(ThingDefOf.Campfire).Count;
+                    int stoneCampfires = 0;
+                    if (DefDatabase<ThingDef>.GetNamedSilentFail("Stone_Campfire") != null)
+                    {
+                        stoneCampfires = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamedSilentFail("Stone_Campfire")).Count;
+                    }
+                    int braziers = 0;
+                    if (DefDatabase<ThingDef>.GetNamedSilentFail("Brazier") != null)
+                    {
+                        braziers = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamedSilentFail("Brazier")).Count;
+                    }
+                    firesInTheMap_backup = wildFires + campFires + stoneCampfires + braziers;
+                    PawnCollectionClass.firesInTheMap = firesInTheMap_backup;
                 }
-                firesInTheMap_backup = wildFires + campFires + stoneCampfires + braziers;
-                PawnCollectionClass.firesInTheMap = firesInTheMap_backup;
+
+                
 
 
                 tickCounter = 0;

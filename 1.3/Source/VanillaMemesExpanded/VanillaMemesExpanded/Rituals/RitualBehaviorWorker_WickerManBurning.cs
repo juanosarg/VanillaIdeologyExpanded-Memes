@@ -7,19 +7,19 @@ using Verse.AI;
 
 namespace VanillaMemesExpanded
 {
-	public class RitualBehaviorWorker_ViolentConversion : RitualBehaviorWorker
+	public class RitualBehaviorWorker_WickerManBurning : RitualBehaviorWorker
 	{
-		public RitualBehaviorWorker_ViolentConversion()
+		public RitualBehaviorWorker_WickerManBurning()
 		{
 		}
 
-		public RitualBehaviorWorker_ViolentConversion(RitualBehaviorDef def) : base(def)
+		public RitualBehaviorWorker_WickerManBurning(RitualBehaviorDef def) : base(def)
 		{
 		}
 
 		public override string CanStartRitualNow(TargetInfo target, Precept_Ritual ritual, Pawn selectedPawn = null, Dictionary<string, Pawn> forcedForRole = null)
 		{
-			Precept_Role precept_Role = ritual.ideo.RolesListForReading.First((Precept_Role r) => r.def == PreceptDefOf.IdeoRole_Moralist);
+			Precept_Role precept_Role = ritual.ideo.RolesListForReading.First((Precept_Role r) => r.def == InternalDefOf.VME_IdeoRole_FireKeeper);
 			if (precept_Role.ChosenPawnSingle() == null)
 			{
 				return "CantStartRitualRoleNotAssigned".Translate(precept_Role.LabelCap);

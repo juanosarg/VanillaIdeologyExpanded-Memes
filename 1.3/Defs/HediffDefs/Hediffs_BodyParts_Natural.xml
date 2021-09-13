@@ -21,7 +21,7 @@
   <ThingDef ParentName="BodyPartNaturalBase">
     <defName>VME_FleshcraftedArm</defName>
     <label>fleshcrafted arm</label>
-    <description>A biological human arm, fleshcrafted from a corpse.</description>
+    <description>A biological human arm, fleshcrafted from a corpse. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
     <descriptionHyperlinks><RecipeDef>VME_InstallFleshcraftedArm</RecipeDef></descriptionHyperlinks>
     <statBases>
       <MarketValue>45</MarketValue>
@@ -33,7 +33,7 @@
   <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
     <defName>VME_InstallFleshcraftedArm</defName>
     <label>install fleshcrafted arm</label>
-    <description>Install a fleshcrafted arm.</description>
+    <description>Install a fleshcrafted arm. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
    
     <jobString>Installing fleshcrafted arm.</jobString>
     
@@ -85,7 +85,7 @@
     </comps>
     <spawnThingOnRemoved>VME_FleshcraftedArm</spawnThingOnRemoved>
     <addedPartProps>
-      <solid>true</solid>
+    
       <partEfficiency>1</partEfficiency>
     </addedPartProps>
   </HediffDef>
@@ -94,7 +94,7 @@
   <ThingDef ParentName="BodyPartNaturalBase">
     <defName>VME_FleshcraftedLeg</defName>
     <label>fleshcrafted leg</label>
-    <description>A biological human leg, fleshcrafted from a corpse.</description>
+    <description>A biological human leg, fleshcrafted from a corpse. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
     <descriptionHyperlinks><RecipeDef>VME_InstallFleshcraftedLeg</RecipeDef></descriptionHyperlinks>
     <statBases>
       <MarketValue>45</MarketValue>
@@ -106,7 +106,7 @@
   <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
     <defName>VME_InstallFleshcraftedLeg</defName>
     <label>install fleshcrafted leg</label>
-    <description>Install a fleshcrafted leg.</description>
+    <description>Install a fleshcrafted leg. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
    
     <jobString>Installing fleshcrafted leg.</jobString>
     
@@ -147,10 +147,682 @@
     </comps>
     <spawnThingOnRemoved>VME_FleshcraftedLeg</spawnThingOnRemoved>
     <addedPartProps>
-      <solid>true</solid>
+     
       <partEfficiency>1</partEfficiency>
     </addedPartProps>
   </HediffDef>
+  
+  <!-- Heart -->
+  <ThingDef ParentName="BodyPartNaturalBase">
+    <defName>VME_FleshcraftedHeart</defName>
+    <label>fleshcrafted heart</label>
+    <description>A biological human heart, fleshcrafted from a corpse. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
+    <descriptionHyperlinks><RecipeDef>VME_InstallFleshcraftedHeart</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+  </ThingDef>
 
- 
+  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <defName>VME_InstallFleshcraftedHeart</defName>
+    <label>install fleshcrafted heart</label>
+    <description>Install a fleshcrafted heart. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
+   
+    <jobString>Installing fleshcrafted heart.</jobString>
+    
+    
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>VME_FleshcraftedHeart</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>VME_FleshcraftedHeart</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Heart</li>
+    </appliedOnFixedBodyParts>
+	<addsHediff>VME_FleshcraftedHeartHediff</addsHediff>
+	
+  </RecipeDef>
+  
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>VME_FleshcraftedHeartHediff</defName>
+    <label>fleshcrafted heart</label>
+    <labelNoun>a fleshcrafted heart</labelNoun>
+    <description>An installed fleshcrafted heart.</description>
+    <descriptionHyperlinks><ThingDef>VME_FleshcraftedHeart</ThingDef></descriptionHyperlinks>
+    <comps>
+      
+	  <li Class="VanillaMemesExpanded.HediffCompProperties_Infections">
+        
+      </li>
+    </comps>
+    <spawnThingOnRemoved>VME_FleshcraftedHeart</spawnThingOnRemoved>
+    <addedPartProps>
+      
+      <partEfficiency>1</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+  
+    <!-- Lung -->
+  <ThingDef ParentName="BodyPartNaturalBase">
+    <defName>VME_FleshcraftedLung</defName>
+    <label>fleshcrafted lung</label>
+    <description>A biological human lung, fleshcrafted from a corpse. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
+    <descriptionHyperlinks><RecipeDef>VME_InstallFleshcraftedLung</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <defName>VME_InstallFleshcraftedLung</defName>
+    <label>install fleshcrafted lung</label>
+    <description>Install a fleshcrafted lung. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
+   
+    <jobString>Installing fleshcrafted lung.</jobString>
+    
+    
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>VME_FleshcraftedLung</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>VME_FleshcraftedLung</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Lung</li>
+    </appliedOnFixedBodyParts>
+	<addsHediff>VME_FleshcraftedLungHediff</addsHediff>
+	
+  </RecipeDef>
+  
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>VME_FleshcraftedLungHediff</defName>
+    <label>fleshcrafted lung</label>
+    <labelNoun>a fleshcrafted lung</labelNoun>
+    <description>An installed fleshcrafted lung.</description>
+    <descriptionHyperlinks><ThingDef>VME_FleshcraftedLung</ThingDef></descriptionHyperlinks>
+    <comps>
+      
+	  <li Class="VanillaMemesExpanded.HediffCompProperties_Infections">
+        
+      </li>
+    </comps>
+    <spawnThingOnRemoved>VME_FleshcraftedLung</spawnThingOnRemoved>
+    <addedPartProps>
+     
+      <partEfficiency>1</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+   <!-- Kidney -->
+  <ThingDef ParentName="BodyPartNaturalBase">
+    <defName>VME_FleshcraftedKidney</defName>
+    <label>fleshcrafted kidney</label>
+    <description>A biological human kidney, fleshcrafted from a corpse. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
+    <descriptionHyperlinks><RecipeDef>VME_InstallFleshcraftedKidney</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <defName>VME_InstallFleshcraftedKidney</defName>
+    <label>install fleshcrafted kidney</label>
+    <description>Install a fleshcrafted kidney. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
+   
+    <jobString>Installing fleshcrafted kidney.</jobString>
+    
+    
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>VME_FleshcraftedKidney</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>VME_FleshcraftedKidney</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Kidney</li>
+    </appliedOnFixedBodyParts>
+	<addsHediff>VME_FleshcraftedKidneyHediff</addsHediff>
+	
+  </RecipeDef>
+  
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>VME_FleshcraftedKidneyHediff</defName>
+    <label>fleshcrafted kidney</label>
+    <labelNoun>a fleshcrafted kidney</labelNoun>
+    <description>An installed fleshcrafted kidney.</description>
+    <descriptionHyperlinks><ThingDef>VME_FleshcraftedKidney</ThingDef></descriptionHyperlinks>
+    <comps>
+      
+	  <li Class="VanillaMemesExpanded.HediffCompProperties_Infections">
+        
+      </li>
+    </comps>
+    <spawnThingOnRemoved>VME_FleshcraftedKidney</spawnThingOnRemoved>
+    <addedPartProps>
+     
+      <partEfficiency>1</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+  
+  <!-- Liver -->
+  <ThingDef ParentName="BodyPartNaturalBase">
+    <defName>VME_FleshcraftedLiver</defName>
+    <label>fleshcrafted liver</label>
+    <description>A biological human liver, fleshcrafted from a corpse. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
+    <descriptionHyperlinks><RecipeDef>VME_InstallFleshcraftedLiver</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <defName>VME_InstallFleshcraftedLiver</defName>
+    <label>install fleshcrafted liver</label>
+    <description>Install a fleshcrafted liver. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
+   
+    <jobString>Installing fleshcrafted liver.</jobString>
+    
+    
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>VME_FleshcraftedLiver</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>VME_FleshcraftedLiver</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Liver</li>
+    </appliedOnFixedBodyParts>
+	<addsHediff>VME_FleshcraftedLiverHediff</addsHediff>
+	
+  </RecipeDef>
+  
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>VME_FleshcraftedLiverHediff</defName>
+    <label>fleshcrafted liver</label>
+    <labelNoun>a fleshcrafted liver</labelNoun>
+    <description>An installed fleshcrafted liver.</description>
+    <descriptionHyperlinks><ThingDef>VME_FleshcraftedLiver</ThingDef></descriptionHyperlinks>
+    <comps>
+      
+	  <li Class="VanillaMemesExpanded.HediffCompProperties_Infections">
+        
+      </li>
+    </comps>
+    <spawnThingOnRemoved>VME_FleshcraftedLiver</spawnThingOnRemoved>
+    <addedPartProps>
+     
+      <partEfficiency>1</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+   <!-- Eye -->
+  <ThingDef ParentName="BodyPartNaturalBase">
+    <defName>VME_FleshcraftedEye</defName>
+    <label>fleshcrafted eye</label>
+    <description>A biological human eye, fleshcrafted from a corpse. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
+    <descriptionHyperlinks><RecipeDef>VME_InstallFleshcraftedEye</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <defName>VME_InstallFleshcraftedEye</defName>
+    <label>install fleshcrafted eye</label>
+    <description>Install a fleshcrafted eye. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
+   
+    <jobString>Installing fleshcrafted eye.</jobString>
+    
+    
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>VME_FleshcraftedEye</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>VME_FleshcraftedEye</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+	<addsHediff>VME_FleshcraftedEyeHediff</addsHediff>
+	
+  </RecipeDef>
+  
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>VME_FleshcraftedEyeHediff</defName>
+    <label>fleshcrafted eye</label>
+    <labelNoun>a fleshcrafted eye</labelNoun>
+    <description>An installed fleshcrafted eye.</description>
+    <descriptionHyperlinks><ThingDef>VME_FleshcraftedEye</ThingDef></descriptionHyperlinks>
+    <comps>
+      
+	  <li Class="VanillaMemesExpanded.HediffCompProperties_Infections">
+        
+      </li>
+    </comps>
+    <spawnThingOnRemoved>VME_FleshcraftedEye</spawnThingOnRemoved>
+    <addedPartProps>
+      
+      <partEfficiency>1</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+  <!-- Ear -->
+  <ThingDef ParentName="BodyPartNaturalBase">
+    <defName>VME_FleshcraftedEar</defName>
+    <label>fleshcrafted ear</label>
+    <description>A biological human ear, fleshcrafted from a corpse. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
+    <descriptionHyperlinks><RecipeDef>VME_InstallFleshcraftedEar</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <defName>VME_InstallFleshcraftedEar</defName>
+    <label>install fleshcrafted ear</label>
+    <description>Install a fleshcrafted ear. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
+   
+    <jobString>Installing fleshcrafted ear.</jobString>
+    
+    
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>VME_FleshcraftedEar</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>VME_FleshcraftedEar</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Ear</li>
+    </appliedOnFixedBodyParts>
+	<addsHediff>VME_FleshcraftedEarHediff</addsHediff>
+	
+  </RecipeDef>
+  
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>VME_FleshcraftedEarHediff</defName>
+    <label>fleshcrafted ear</label>
+    <labelNoun>a fleshcrafted ear</labelNoun>
+    <description>An installed fleshcrafted ear.</description>
+    <descriptionHyperlinks><ThingDef>VME_FleshcraftedEar</ThingDef></descriptionHyperlinks>
+    <comps>
+      
+	  <li Class="VanillaMemesExpanded.HediffCompProperties_Infections">
+        
+      </li>
+    </comps>
+    <spawnThingOnRemoved>VME_FleshcraftedEar</spawnThingOnRemoved>
+    <addedPartProps>
+      
+      <partEfficiency>1</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+  <!-- Nose -->
+  <ThingDef ParentName="BodyPartNaturalBase">
+    <defName>VME_FleshcraftedNose</defName>
+    <label>fleshcrafted nose</label>
+    <description>A biological human nose, fleshcrafted from a corpse. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
+    <descriptionHyperlinks><RecipeDef>VME_InstallFleshcraftedNose</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <defName>VME_InstallFleshcraftedNose</defName>
+    <label>install fleshcrafted nose</label>
+    <description>Install a fleshcrafted nose. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
+   
+    <jobString>Installing fleshcrafted nose.</jobString>
+    
+    
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>VME_FleshcraftedNose</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>VME_FleshcraftedNose</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Nose</li>
+    </appliedOnFixedBodyParts>
+	<addsHediff>VME_FleshcraftedNoseHediff</addsHediff>
+	
+  </RecipeDef>
+  
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>VME_FleshcraftedNoseHediff</defName>
+    <label>fleshcrafted nose</label>
+    <labelNoun>a fleshcrafted nose</labelNoun>
+    <description>An installed fleshcrafted nose.</description>
+    <descriptionHyperlinks><ThingDef>VME_FleshcraftedNose</ThingDef></descriptionHyperlinks>
+    <comps>
+      
+	  <li Class="VanillaMemesExpanded.HediffCompProperties_Infections">
+        
+      </li>
+    </comps>
+    <spawnThingOnRemoved>VME_FleshcraftedNose</spawnThingOnRemoved>
+    <addedPartProps>
+      
+      <partEfficiency>1</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+  <!-- Jaw -->
+  <ThingDef ParentName="BodyPartNaturalBase">
+    <defName>VME_FleshcraftedJaw</defName>
+    <label>fleshcrafted jaw</label>
+    <description>A biological human jaw, fleshcrafted from a corpse. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
+    <descriptionHyperlinks><RecipeDef>VME_InstallFleshcraftedJaw</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <defName>VME_InstallFleshcraftedJaw</defName>
+    <label>install fleshcrafted jaw</label>
+    <description>Install a fleshcrafted jaw. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
+   
+    <jobString>Installing fleshcrafted jaw.</jobString>
+    
+    
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>VME_FleshcraftedJaw</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>VME_FleshcraftedJaw</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Jaw</li>
+    </appliedOnFixedBodyParts>
+	<addsHediff>VME_FleshcraftedJawHediff</addsHediff>
+	
+  </RecipeDef>
+  
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>VME_FleshcraftedJawHediff</defName>
+    <label>fleshcrafted jaw</label>
+    <labelNoun>a fleshcrafted jaw</labelNoun>
+    <description>An installed fleshcrafted jaw.</description>
+    <descriptionHyperlinks><ThingDef>VME_FleshcraftedJaw</ThingDef></descriptionHyperlinks>
+    <comps>
+      
+	  <li Class="VanillaMemesExpanded.HediffCompProperties_Infections">
+        
+      </li>
+    </comps>
+    <spawnThingOnRemoved>VME_FleshcraftedJaw</spawnThingOnRemoved>
+    <addedPartProps>
+      
+      <partEfficiency>1</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+  <!-- Stomach -->
+  <ThingDef ParentName="BodyPartNaturalBase">
+    <defName>VME_FleshcraftedStomach</defName>
+    <label>fleshcrafted stomach</label>
+    <description>A biological human stomach, fleshcrafted from a corpse. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
+    <descriptionHyperlinks><RecipeDef>VME_InstallFleshcraftedStomach</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <defName>VME_InstallFleshcraftedStomach</defName>
+    <label>install fleshcrafted stomach</label>
+    <description>Install a fleshcrafted stomach. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
+   
+    <jobString>Installing fleshcrafted stomach.</jobString>
+    
+    
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>VME_FleshcraftedStomach</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>VME_FleshcraftedStomach</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Stomach</li>
+    </appliedOnFixedBodyParts>
+	<addsHediff>VME_FleshcraftedStomachHediff</addsHediff>
+	
+  </RecipeDef>
+  
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>VME_FleshcraftedStomachHediff</defName>
+    <label>fleshcrafted stomach</label>
+    <labelNoun>a fleshcrafted stomach</labelNoun>
+    <description>An installed fleshcrafted stomach.</description>
+    <descriptionHyperlinks><ThingDef>VME_FleshcraftedStomach</ThingDef></descriptionHyperlinks>
+    <comps>
+      
+	  <li Class="VanillaMemesExpanded.HediffCompProperties_Infections">
+        
+      </li>
+    </comps>
+    <spawnThingOnRemoved>VME_FleshcraftedStomach</spawnThingOnRemoved>
+    <addedPartProps>
+      
+      <partEfficiency>1</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+   <!-- Tongue -->
+  <ThingDef ParentName="BodyPartNaturalBase">
+    <defName>VME_FleshcraftedTongue</defName>
+    <label>fleshcrafted tongue</label>
+    <description>A biological human tongue, fleshcrafted from a corpse. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
+    <descriptionHyperlinks><RecipeDef>VME_InstallFleshcraftedTongue</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <defName>VME_InstallFleshcraftedTongue</defName>
+    <label>install fleshcrafted tongue</label>
+    <description>Install a fleshcrafted tongue. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
+   
+    <jobString>Installing fleshcrafted tongue.</jobString>
+    
+    
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>VME_FleshcraftedTongue</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>VME_FleshcraftedTongue</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Tongue</li>
+    </appliedOnFixedBodyParts>
+	<addsHediff>VME_FleshcraftedTongueHediff</addsHediff>
+	
+  </RecipeDef>
+  
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>VME_FleshcraftedTongueHediff</defName>
+    <label>fleshcrafted tongue</label>
+    <labelNoun>a fleshcrafted tongue</labelNoun>
+    <description>An installed fleshcrafted tongue.</description>
+    <descriptionHyperlinks><ThingDef>VME_FleshcraftedTongue</ThingDef></descriptionHyperlinks>
+    <comps>
+      
+	  <li Class="VanillaMemesExpanded.HediffCompProperties_Infections">
+        
+      </li>
+    </comps>
+    <spawnThingOnRemoved>VME_FleshcraftedTongue</spawnThingOnRemoved>
+    <addedPartProps>
+      
+      <partEfficiency>1</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+  <!-- Spine -->
+  <ThingDef ParentName="BodyPartNaturalBase">
+    <defName>VME_FleshcraftedSpine</defName>
+    <label>fleshcrafted spine</label>
+    <description>A biological human spine, fleshcrafted from a corpse. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
+    <descriptionHyperlinks><RecipeDef>VME_InstallFleshcraftedSpine</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <defName>VME_InstallFleshcraftedSpine</defName>
+    <label>install fleshcrafted spine</label>
+    <description>Install a fleshcrafted spine. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
+   
+    <jobString>Installing fleshcrafted spine.</jobString>
+    
+    
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>VME_FleshcraftedSpine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>VME_FleshcraftedSpine</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Spine</li>
+    </appliedOnFixedBodyParts>
+	<addsHediff>VME_FleshcraftedSpineHediff</addsHediff>
+	
+  </RecipeDef>
+  
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>VME_FleshcraftedSpineHediff</defName>
+    <label>fleshcrafted spine</label>
+    <labelNoun>a fleshcrafted spine</labelNoun>
+    <description>An installed fleshcrafted spine.</description>
+    <descriptionHyperlinks><ThingDef>VME_FleshcraftedSpine</ThingDef></descriptionHyperlinks>
+    <comps>
+      
+	  <li Class="VanillaMemesExpanded.HediffCompProperties_Infections">
+        
+      </li>
+    </comps>
+    <spawnThingOnRemoved>VME_FleshcraftedSpine</spawnThingOnRemoved>
+    <addedPartProps>
+      
+      <partEfficiency>1</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
 </Defs>

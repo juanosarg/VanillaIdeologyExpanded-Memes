@@ -525,8 +525,8 @@
 			</li>
 		</symbolPacks>
 	</MemeDef>
-	
-	
+
+
 	<MemeDef>
 		<defName>VME_HolyDiseases</defName>
 		<label>holy diseases</label>
@@ -595,6 +595,9 @@
 			</li>
 			<li>
 				<li>VME_Illness_Exalted</li>
+			</li>
+			<li>
+				<li>VME_Immunity_Enhanced</li>
 			</li>
 		</requireOne>
 		<requiredRituals>
@@ -1555,6 +1558,9 @@
 				<li>memeLeaderNoun->great arsonist</li>
 			</rulesStrings>
 		</generalRules>
+		<consumableBuildings>
+			<li>VME_WickerMan</li>
+		</consumableBuildings>
 		<agreeableTraits>
 			<li>Pyromaniac</li>
 		</agreeableTraits>
@@ -1608,6 +1614,13 @@
 				<li>VME_KillingWithFire_Preferred</li>
 			</li>
 		</requireOne>
+		<requiredRituals>
+			<li>
+				<precept>VME_WickerManBurningPrecept</precept>
+				<pattern>VME_WickerManBurningRitual</pattern>
+				<building>VME_WickerMan</building>
+			</li>
+		</requiredRituals>
 		<symbolPacks>
 			<li>
 				<ideoName>Fire Worship</ideoName>
@@ -1780,7 +1793,7 @@
 			<li>
 				<li>VME_Eclipse_Despised</li>
 			</li>
-			
+
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -2105,7 +2118,7 @@
 			<li>
 				<li>VME_Mechanoids_Exalted</li>
 			</li>
-			
+
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -2184,7 +2197,7 @@
 			<li>
 				<li>VME_InsectJellyEaten_Loved_Classic</li>
 			</li>
-			
+
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -2260,8 +2273,8 @@
 			<li>
 				<li>VME_Alcohol_Demanded</li>
 			</li>
-			
-			
+
+
 		</requireOne>
 		<symbolPacks>
 			<li>

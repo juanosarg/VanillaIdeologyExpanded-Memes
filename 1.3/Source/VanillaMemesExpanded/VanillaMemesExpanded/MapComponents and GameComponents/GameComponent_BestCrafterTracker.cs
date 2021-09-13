@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace VanillaMemesExpanded
 {
-    public class MapComponent_BestCrafterTracker : MapComponent
+    public class GameComponent_BestCrafterTracker : GameComponent
     {
 
        
@@ -16,7 +16,7 @@ namespace VanillaMemesExpanded
         public int tickInterval = 30000;
 
 
-        public MapComponent_BestCrafterTracker(Map map) : base(map)
+        public GameComponent_BestCrafterTracker(Game game) : base()
         {
 
         }
@@ -30,7 +30,7 @@ namespace VanillaMemesExpanded
 
       
 
-        public override void MapComponentTick()
+        public override void GameComponentTick()
         {
 
           
@@ -45,7 +45,7 @@ namespace VanillaMemesExpanded
 
                     foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists)
                     {
-                        if (pawn.skills.GetSkill(SkillDefOf.Crafting).Level > highestSkillLevel)
+                        if (pawn.skills.GetSkill(SkillDefOf.Crafting).Level > highestSkillLevel && pawn.ideo.Ideo == ideo)
                         {
                             highestSkillLevel = pawn.skills.GetSkill(SkillDefOf.Crafting).Level;
                             mostSkilledPawn = pawn;

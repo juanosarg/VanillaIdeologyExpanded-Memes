@@ -6,12 +6,12 @@ using UnityEngine;
 
 namespace VanillaMemesExpanded
 {
-    public class MapComponent_FactoryModifier : MapComponent
+    public class GameComponent_FactoryModifier : GameComponent
     {
 
        
 
-        public MapComponent_FactoryModifier(Map map) : base(map)
+        public GameComponent_FactoryModifier(Game game) : base()
         {
 
         }

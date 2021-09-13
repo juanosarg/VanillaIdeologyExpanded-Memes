@@ -24,7 +24,10 @@ namespace VanillaMemesExpanded
 
         public override void FinalizeInit()
         {
-            PawnCollectionClass.roomsInMap = roomsInMap_backup;
+            if (map.IsPlayerHome)
+            {
+                PawnCollectionClass.roomsInMap = roomsInMap_backup;
+            }
 
             base.FinalizeInit();
 
@@ -45,18 +48,22 @@ namespace VanillaMemesExpanded
             tickCounter++;
             if ((tickCounter > tickInterval))
             {
-                roomsInMap_backup=PawnCollectionClass.roomsInMap;
+                if (map.IsPlayerHome) {
+                    roomsInMap_backup = PawnCollectionClass.roomsInMap;
 
-                int totalRooms = 0;
+                    int totalRooms = 0;
 
-                foreach (Room room in map.regionGrid.allRooms)
-                {
-                    if (room.CellCount>25)
+                    foreach (Room room in map.regionGrid.allRooms)
                     {
-                        totalRooms++;
+                        if (room.CellCount > 25)
+                        {
+                            totalRooms++;
+                        }
                     }
+                    roomsInMap_backup = totalRooms;
+
                 }
-                roomsInMap_backup = totalRooms;
+                    
                
 
                 tickCounter = 0;

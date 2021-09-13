@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace VanillaMemesExpanded
 {
-    public class MapComponent_IllnessTracker : MapComponent
+    public class GameComponent_IllnessTracker : GameComponent
     {
 
        
@@ -20,14 +20,14 @@ namespace VanillaMemesExpanded
 
 
 
-        public MapComponent_IllnessTracker(Map map) : base(map)
+        public GameComponent_IllnessTracker(Game game) : base()
         {
 
         }
 
         public override void FinalizeInit()
         {
-            PawnCollectionClass.colonist_illness_tracker = colonist_illness_tracker_backup;
+            PawnCollectionClass.colonist_illness_tracker = colonist_illness_tracker_backup;            
             base.FinalizeInit();
 
         }
@@ -42,7 +42,7 @@ namespace VanillaMemesExpanded
 
 
 
-        public override void MapComponentTick()
+        public override void GameComponentTick()
         {
 
           

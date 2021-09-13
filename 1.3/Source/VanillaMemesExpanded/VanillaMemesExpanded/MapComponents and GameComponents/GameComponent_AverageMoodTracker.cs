@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace VanillaMemesExpanded
 {
-    public class MapComponent_AverageMoodTracker : MapComponent
+    public class GameComponent_AverageMoodTracker : GameComponent
     {
 
 
@@ -17,13 +17,14 @@ namespace VanillaMemesExpanded
         public float averageColonyMood_backup;
 
 
-        public MapComponent_AverageMoodTracker(Map map) : base(map)
+        public GameComponent_AverageMoodTracker(Game game) : base()
         {
 
         }
 
         public override void FinalizeInit()
         {
+            
             PawnCollectionClass.averageColonyMood = averageColonyMood_backup;
 
             base.FinalizeInit();
@@ -38,7 +39,7 @@ namespace VanillaMemesExpanded
             Scribe_Values.Look<int>(ref this.tickCounter, "tickCounterMood", 0, true);
 
         }
-        public override void MapComponentTick()
+        public override void GameComponentTick()
         {
 
 
@@ -52,7 +53,7 @@ namespace VanillaMemesExpanded
                 {
                    
                     float totalMood = 0;
-                    foreach (Pawn pawn in map.mapPawns.FreeColonistsSpawned)
+                    foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists)
                     {
                         totalMood += pawn.needs.mood.thoughts.TotalMoodOffset();
                     }

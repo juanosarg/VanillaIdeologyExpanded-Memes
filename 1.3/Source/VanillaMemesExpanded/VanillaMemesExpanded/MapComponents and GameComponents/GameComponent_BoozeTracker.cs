@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace VanillaMemesExpanded
 {
-    public class MapComponent_BoozeTracker : MapComponent
+    public class GameComponent_BoozeTracker : GameComponent
     {
 
        
@@ -20,16 +20,16 @@ namespace VanillaMemesExpanded
         List<int> list3;
 
 
-        public MapComponent_BoozeTracker(Map map) : base(map)
+        public GameComponent_BoozeTracker(Game game) : base()
         {
 
         }
 
         public override void FinalizeInit()
         {
-           
-            PawnCollectionClass.colonist_booze_tracker = colonist_booze_tracker_backup;
-
+            
+                PawnCollectionClass.colonist_booze_tracker = colonist_booze_tracker_backup;
+          
 
             base.FinalizeInit();
 
@@ -44,28 +44,33 @@ namespace VanillaMemesExpanded
         }
 
 
-        public override void MapComponentTick()
+        public override void GameComponentTick()
         {
 
           
             tickCounter++;
             if ((tickCounter > tickInterval))
             {
-                colonist_booze_tracker_backup = PawnCollectionClass.colonist_booze_tracker;
 
-                foreach (Pawn p in map.mapPawns.FreeColonistsSpawned)
-                {
-                    PawnCollectionClass.AddColonistToBoozeList(p, 0);
-                    
+                
+                    colonist_booze_tracker_backup = PawnCollectionClass.colonist_booze_tracker;
+
+                    foreach (Pawn p in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists)
+                    {
+                        PawnCollectionClass.AddColonistToBoozeList(p, 0);
+
                         if (PawnCollectionClass.colonist_booze_tracker[p] < int.MaxValue - tickInterval)
                         {
                             PawnCollectionClass.IncreasePawnBoozeTicks(p, tickInterval);
 
                         }
-                    
 
 
-                }
+
+                    }
+
+                
+                
 
 
 

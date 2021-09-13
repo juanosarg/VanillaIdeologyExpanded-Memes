@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace VanillaMemesExpanded
 {
-    public class MapComponent_TradingTracker : MapComponent
+    public class GameComponent_TradingTracker : GameComponent
     {
 
        
@@ -30,7 +30,7 @@ namespace VanillaMemesExpanded
 
         }
 
-        public MapComponent_TradingTracker(Map map) : base(map)
+        public GameComponent_TradingTracker(Game game) : base()
         {
 
         }
@@ -44,7 +44,7 @@ namespace VanillaMemesExpanded
 
       
 
-        public override void MapComponentTick()
+        public override void GameComponentTick()
         {
 
           

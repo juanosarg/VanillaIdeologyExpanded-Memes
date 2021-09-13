@@ -49,14 +49,15 @@ namespace VanillaMemesExpanded
             tickCounter++;
             if ((tickCounter > tickInterval))
             {
-                if (Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo.HasPrecept(InternalDefOf.VME_Leader_BestFighter))
+                Ideo ideo = Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo;
+                if (ideo.HasPrecept(InternalDefOf.VME_Leader_BestFighter))
                 {
                     pawnThatIsTheLeaderNow = PawnCollectionClass.pawnThatIsTheLeaderNow;
                     int highestSkillLevel = 0;
 
                     foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists)
                     {
-                        if (pawn.skills.GetSkill(SkillDefOf.Melee).Level > highestSkillLevel)
+                        if (pawn.skills.GetSkill(SkillDefOf.Melee).Level > highestSkillLevel && pawn.ideo.Ideo == ideo)
                         {
                             highestSkillLevel = pawn.skills.GetSkill(SkillDefOf.Melee).Level;
                             mostSkilledPawn = pawn;

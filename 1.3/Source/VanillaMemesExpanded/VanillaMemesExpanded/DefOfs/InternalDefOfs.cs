@@ -67,6 +67,8 @@ namespace VanillaMemesExpanded
 
 		public static PreceptDef VME_Recreation_Loved;
 
+		public static PreceptDef VME_JunkDeconstructionYield_High;
+
 		public static MemeDef VME_FireWorship;
 
 

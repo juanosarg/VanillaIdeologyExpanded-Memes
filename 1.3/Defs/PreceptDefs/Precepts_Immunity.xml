@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Issues -->
+
+ 
+  <IssueDef>
+    <defName>VME_Immunity</defName>
+    <label>immunity</label>
+    <iconPath>UI/Issues/VME_AlphaIssue</iconPath>
+  </IssueDef>
+
+  <!-- Precepts -->
+
+ 
+
+  <PreceptDef>
+    <defName>VME_Immunity_Enhanced</defName>
+    <issue>VME_Immunity</issue>
+    <label>enhanced</label>
+    <description>Our bodies are more resistant to disease.</description>
+    <impact>Medium</impact>
+    <associatedMemes>
+      <li>VME_HolyDiseases</li>
+	
+    </associatedMemes>
+	<statOffsets>
+      <ImmunityGainSpeed>0.5</ImmunityGainSpeed>
+	  
+    </statOffsets>
+ 
+   
+  </PreceptDef>
+  
+  
+
+ 
+
+</Defs>

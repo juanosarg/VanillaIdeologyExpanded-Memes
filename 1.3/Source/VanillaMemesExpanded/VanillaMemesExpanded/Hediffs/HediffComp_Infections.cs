@@ -12,7 +12,7 @@ namespace VanillaMemesExpanded
             if (pawn.ideo != null && !pawn.ideo.Ideo.HasPrecept(InternalDefOf.VME_OrganUse_PostMortem))
             {
                 base.Pawn.health.AddHediff(HediffDefOf.WoundInfection, this.parent.Part, null, null);
-                base.Pawn.health.AddHediff(HediffDefOf.WoundInfection, this.parent.Part, null, null);
+               
             }
             base.CompPostMake();
         }

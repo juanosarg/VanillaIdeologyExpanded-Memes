@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+
+  <ThingDef ParentName="IdeoBurnableBase">
+    <defName>VME_WickerMan</defName>
+    <label>wicker man</label>
+    <description>A large humanoid figure made out of dry brush, thatch, and wood scraps. Prisoners can be physically restrained  to the figurine then burned alive as part of a trial or ritual.</description>
+    <ideoBuildingNamerBase>NamerBurnTarget</ideoBuildingNamerBase>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Misc/Effigy/Effigy</texPath>
+      <drawSize>(3,3)</drawSize>
+      <shadowData>
+        <volume>(0.5, 0.3 ,0.5)</volume>
+      </shadowData>
+    </graphicData>
+    <size>(3,3)</size>
+    <costList>
+      <WoodLog>80</WoodLog>
+    </costList>
+	
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>3000</WorkToBuild>
+	  
+      <Mass>25</Mass>
+    </statBases>
+	    <altitudeLayer>Blueprint</altitudeLayer>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <passability>PassThroughOnly</passability>
+    <comps>
+      <li Class="VanillaMemesExpanded.CompProperties_TimedFireOverlay">
+        <fireSize>3</fireSize>
+		<minRitualProgress>1</minRitualProgress>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(252,187,113,0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+
+  
+
+</Defs>

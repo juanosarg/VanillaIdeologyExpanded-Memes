@@ -26,7 +26,8 @@ namespace VanillaMemesExpanded
 
         public override void FinalizeInit()
         {
-            PawnCollectionClass.colonist_junk_tracker = colonist_junk_tracker_backup;
+             PawnCollectionClass.colonist_junk_tracker = colonist_junk_tracker_backup; 
+                
 
             base.FinalizeInit();
 
