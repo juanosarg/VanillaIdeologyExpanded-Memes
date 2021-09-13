@@ -2276,6 +2276,13 @@
 
 
 		</requireOne>
+		<requiredRituals>
+			<li>
+				<precept>VME_OrgyPrecept</precept>
+				<pattern>VME_OrgyRitual</pattern>
+				
+			</li>
+		</requiredRituals>
 		<symbolPacks>
 			<li>
 				<ideoName>Party Life</ideoName>
