@@ -19,13 +19,12 @@
 		
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
-			<warmupTime>1</warmupTime>
-			<range>1</range>
+			<warmupTime>3</warmupTime>
+			<range>15</range>
 			<targetParams>
-				<canTargetSelf>true</canTargetSelf>
-				<canTargetPawns>false</canTargetPawns>
+				
+				<canTargetPawns>true</canTargetPawns>
 				<canTargetBuildings>false</canTargetBuildings>
-
 			</targetParams>
 		</verbProperties>
 		<comps>
