@@ -52,4 +52,60 @@
     </rulePack>
   </RulePackDef>
 
+<RulePackDef>
+    <defName>VME_Mechacker</defName>
+
+    <rulePack>
+      <rulesStrings>
+        <li>r_roleName(p=7)->[firstPart][secondPart]</li>
+        <li>r_roleName->Mechacker</li>
+        <li>firstPart->Engine </li>
+        <li>firstPart->Mechanoid </li>
+        <li>firstPart->Bionic </li>
+        <li>firstPart->Technological </li>
+        <li>firstPart->Electronic </li>
+        <li>firstPart->Artificial </li>
+        <li>firstPart->Scientific </li>
+        <li>firstPart->Brilliant </li>
+        <li>secondPart(p=4)->Engineseer</li>
+        <li>secondPart(p=4)->Artificer</li>
+        <li>secondPart(p=4)->Machinist</li>
+        <li>secondPart(p=4)->Soothesayer</li>
+        <li>secondPart(p=4)->Designer</li>
+        <li>secondPart(p=4)->Hackmaster</li>
+        <li>secondPart(p=4)->Mastermind</li>
+        <li>secondPart(p=4)->Inventor</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>VME_PartyHost</defName>
+   
+    <rulePack>
+      <rulesStrings>
+	   <li>r_roleName(p=7)->[firstPart][secondPart]</li>
+        <li>r_roleName->party host</li>
+        <li>r_roleName->party animal</li>
+        <li>firstPart->exciting </li>
+        <li>firstPart->comedic </li>
+        <li>firstPart->esteemed </li>
+        <li>firstPart->hilarious </li>
+        <li>firstPart->crazed </li>
+        <li>firstPart->wild </li>
+        <li>firstPart->jubilant </li>
+        <li>firstPart->joyous </li>
+        <li>secondPart(p=4)->genius</li>
+        <li>secondPart(p=4)->entertainer</li>
+        <li>secondPart(p=4)->host</li>
+        <li>secondPart(p=4)->jester</li>
+        <li>secondPart(p=4)->joker</li>
+        <li>secondPart(p=4)->animal</li>
+        <li>secondPart(p=4)->performer</li>
+        <li>secondPart(p=4)->comedian</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+
 </Defs>

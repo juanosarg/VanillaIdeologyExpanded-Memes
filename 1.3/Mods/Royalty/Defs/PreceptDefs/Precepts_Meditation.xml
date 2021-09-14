@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Issues -->
+
+
+	<IssueDef>
+		<defName>VME_Meditation</defName>
+		<label>meditation</label>
+		<iconPath>UI/Issues/VME_AlphaIssue</iconPath>
+	</IssueDef>
+
+	<!-- Precepts -->
+
+
+
+	<PreceptDef>
+		<defName>VME_Meditation_Exquisite</defName>
+		<issue>VME_Meditation</issue>
+		<label>exquisite</label>
+		<description>Placeholder.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>VME_PsychicFocus</li>
+		</associatedMemes>
+		<statOffsets>
+			<MeditationFocusStrength>0.2</MeditationFocusStrength>
+			
+		</statOffsets>
+	</PreceptDef>
+	
+
+
+</Defs>

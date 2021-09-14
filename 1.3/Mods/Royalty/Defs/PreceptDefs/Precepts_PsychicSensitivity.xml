@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Issues -->
+
+
+	<IssueDef>
+		<defName>VME_PsychicSensitivity</defName>
+		<label>psychic sensitivity</label>
+		<iconPath>UI/Issues/VME_AlphaIssue</iconPath>
+	</IssueDef>
+
+	<!-- Precepts -->
+
+
+
+	<PreceptDef>
+		<defName>VME_PsychicSensitivity_Lowered</defName>
+		<issue>VME_PsychicSensitivity</issue>
+		<label>lowered</label>
+		<description>Placeholder.</description>
+		<impact>Low</impact>
+		<associatedMemes>
+			<li>VME_PsychicFocus</li>
+		</associatedMemes>
+		<statOffsets>
+			<PsychicSensitivity>-0.2</PsychicSensitivity>
+			
+		</statOffsets>
+	</PreceptDef>
+	
+
+
+</Defs>

@@ -41,7 +41,16 @@ namespace VanillaMemesExpanded
 
 			}
 
-			
+			foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists)
+			{
+				Random random = new Random();
+				int randomMood = random.Next(0, 9);
+				PawnCollectionClass.AddColonistAndRandomMood(pawn, randomMood);
+				PawnCollectionClass.SetColonistAndRandomMood(pawn, randomMood);
+
+			}
+
+
 
 
 			string text2 = outcome.description.Formatted(jobRitual.Ritual.Label).CapitalizeFirst() + "\n\n" + this.OutcomeQualityBreakdownDesc(quality, progress, jobRitual);

@@ -5,10 +5,7 @@
 		<label>mood</label>
 		<iconPath>UI/Issues/Mood</iconPath>
 	</IssueDef>
-	<HistoryEventDef>
-		<defName>VME_MoodOfTheStars</defName>
-		<label>mood of the stars</label>
-	</HistoryEventDef>
+	
 	<!-- Precepts -->
 	<PreceptDef>
 		<defName>VME_Mood_DictatedByStars</defName>
@@ -25,27 +22,61 @@
 			<li>VME_Astrology</li>
 		</requiredMemes>
 		<comps>
-			<li Class="PreceptComp_KnowsMemoryThought">
-				<eventDef>VME_MoodOfTheStars</eventDef>
+			<li Class="PreceptComp_SituationalThought">
+				
 				<thought>VME_Mood_DictatedByStars</thought>
 			</li>
 		</comps>
 	</PreceptDef>
 	<ThoughtDef>
 		<defName>VME_Mood_DictatedByStars</defName>
-		<thoughtClass>VanillaMemesExpanded.Thought_RandomStageOnce</thoughtClass>
-		<durationDays>14.95</durationDays>
-		<stackLimit>1</stackLimit>
+		<thoughtClass>VanillaMemesExpanded.Thought_Precept_RandomStageMood</thoughtClass>
+		
 		<stages>
 			<li>
-				<label>constellations favor me</label>
-				<description>Constellations favor me.</description>
+				<label>stars are aligned</label>
+				<description>The astral architects smile upon me, their benevolence is unmatched.</description>
+				<baseMoodEffect>30</baseMoodEffect>
+			</li>
+			<li>
+				<label>stars are perfect</label>
+				<description>The stellar bodies above tell a story of imminent fortunes and success.</description>
+				<baseMoodEffect>20</baseMoodEffect>
+			</li>
+			<li>
+				<label>stars are excellent</label>
+				<description>The stars whisper to me, and they tell me to breathe easy. My fate is comfortably in their hands.</description>
 				<baseMoodEffect>10</baseMoodEffect>
 			</li>
 			<li>
-				<label>constellations are not in my favor</label>
-				<description>Constellations are not in my favor.</description>
+				<label>stars are good</label>
+				<description>Though small, the constellations tell me all is well for the time being.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+			<li>
+				<label>stars are indifferent</label>
+				<description>The stars whisper nonsense and contradictions, our destiny is increasingly unclear.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+			<li>
+				<label>stars are bad</label>
+				<description>The skies do not bode well, an ill omen is on the horizon.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>stars are not on my side</label>
+				<description>The sea of stars is ever cloudy, they shroud themselves from me and refuse to tell me of my fate.</description>
 				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+			<li>
+				<label>stars are a bad omen</label>
+				<description>The stellar bodies far above have made themselves clear, I am no longer in their favor.</description>
+				<baseMoodEffect>-20</baseMoodEffect>
+			</li>
+			<li>
+				<label>stars are aligned… against me</label>
+				<description>The planets have aligned, a syzygy has made clear my approaching demise is inescapable. I will shortly be reduced to mere dust.</description>
+				<baseMoodEffect>-30</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>

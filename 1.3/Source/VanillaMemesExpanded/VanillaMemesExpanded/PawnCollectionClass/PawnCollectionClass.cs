@@ -25,6 +25,9 @@ namespace VanillaMemesExpanded
 
         public static Dictionary<Pawn, int> colonist_booze_tracker = new Dictionary<Pawn, int>();
 
+        public static Dictionary<Pawn, int> colonist_and_random_mood = new Dictionary<Pawn, int>();
+
+
 
 
         public static Pawn pawnThatIsTheLeaderNow;
@@ -132,6 +135,21 @@ namespace VanillaMemesExpanded
         {
 
             colonist_booze_tracker[pawn] = 0;
+
+        }
+
+        public static void AddColonistAndRandomMood(Pawn pawn, int mood)
+        {
+            if (!colonist_and_random_mood.ContainsKey(pawn))
+            {
+                colonist_and_random_mood.Add(pawn, mood);
+            }
+        }
+
+        public static void SetColonistAndRandomMood(Pawn pawn, int mood)
+        {
+
+            colonist_and_random_mood[pawn] = mood;
 
         }
 

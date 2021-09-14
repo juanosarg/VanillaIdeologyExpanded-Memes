@@ -39,7 +39,7 @@ namespace VanillaMemesExpanded
                     
                     
                     }
-                    Log.Message(resultingList.ToStringSafeEnumerable());
+                    //Log.Message(resultingList.ToStringSafeEnumerable());
                     return resultingList;
 
                 }

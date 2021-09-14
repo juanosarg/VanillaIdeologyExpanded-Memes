@@ -70,15 +70,16 @@ namespace VanillaMemesExpanded
 
 		public static PreceptDef VME_JunkDeconstructionYield_High;
 
+		public static PreceptDef VME_Leader_BestPsycaster;
+
+		public static PreceptDef VME_IdeoRole_PartyHost;
+
 		public static MemeDef VME_FireWorship;
 
 
 		public static HistoryEventDef VME_Firefighting;
 
 		public static HistoryEventDef VME_KillingWithFire;
-
-
-		public static HistoryEventDef VME_MoodOfTheStars;
 
 		public static HistoryEventDef VME_DumbLabor;
 

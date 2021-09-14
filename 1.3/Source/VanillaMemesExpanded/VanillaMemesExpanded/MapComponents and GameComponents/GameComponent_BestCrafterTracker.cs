@@ -45,16 +45,16 @@ namespace VanillaMemesExpanded
 
                     foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists)
                     {
-                        if (pawn.skills.GetSkill(SkillDefOf.Crafting).Level > highestSkillLevel && pawn.ideo.Ideo == ideo)
+                        if (pawn.skills.GetSkill(SkillDefOf.Crafting).Level > highestSkillLevel && pawn.ideo?.Ideo == ideo)
                         {
                             highestSkillLevel = pawn.skills.GetSkill(SkillDefOf.Crafting).Level;
                             mostSkilledPawn = pawn;
                         }
                     }
 
-                    Precept_Role precept_role = mostSkilledPawn.Ideo.GetPrecept(PreceptDefOf.IdeoRole_Leader) as Precept_Role;
+                    Precept_Role precept_role = mostSkilledPawn?.Ideo?.GetPrecept(PreceptDefOf.IdeoRole_Leader) as Precept_Role;
 
-                    if(precept_role.ChosenPawnSingle() != mostSkilledPawn)
+                    if(precept_role?.ChosenPawnSingle() != mostSkilledPawn)
                     {
                         precept_role.Unassign(precept_role.ChosenPawnSingle(), true);
                         precept_role.Assign(mostSkilledPawn, true);

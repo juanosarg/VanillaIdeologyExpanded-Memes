@@ -37,7 +37,7 @@
 					<!-- theist founder -->
 					<li>intro(tag=meme_ViolentConversion)           ->[memberNamePlural] built a great [altarName] on the [place_summary] [place_name], so that many would be bent to [deity0_name]'s will.</li>
 					<li>conflict(tag=meme_ViolentConversion)        ->A coward [foeLeader], seeking to deny the will of [deity0_name], told [foeLeader_possessive] [foeSoldiers] to cut out the tongues of any who speak of the [deity0_type].</li>
-					<li>founderJoin(tag=meme_ViolentConversion)     ->[deity0_name] blessed a [place_job] named [founderName] with [foeLeader_possessive] unwavering resolve, and none could turn away when [founder_pronoun] spoke.</li>
+					<li>founderJoin(tag=meme_ViolentConversion)     ->[deity0_name] blessed a [place_job] named [founderName] with [deity0_possessive] unwavering resolve, and none could turn away when [founder_pronoun] spoke.</li>
 					<li>victory(tag=meme_ViolentConversion)         ->[founderName] slaughtered many of the [foeSoldiers] and mercilessly tortured the survivors to show [deity0_name]'s power. Their cries of anguish will forever remind us of the destiny awaiting those who deny [deity0_name].</li>
 					<!-- ideological founder -->
 					<li>setup(tag=meme_ViolentConversion)           ->Our founder [founderName] was a great revolutionary and a genious, converting thousands as [founder_pronoun] traveled between the cities.</li>

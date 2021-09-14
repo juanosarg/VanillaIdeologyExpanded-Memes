@@ -294,8 +294,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abilities\CompAbilityEnableSelfDestruct.cs" />
     <Compile Include="Abilities\CompAbilityStrengthenFlame.cs" />
-    <Compile Include="Abilities\CompProperties_AbilityStrengthenFlame.cs" />
+    <Compile Include="Abilities\CompAbilityThrowParty.cs" />
+    <Compile Include="Abilities\Properties\CompProperties_AbilityEnableSelfDestruct.cs" />
+    <Compile Include="Abilities\Properties\CompProperties_AbilityStrengthenFlame.cs" />
+    <Compile Include="Abilities\Properties\CompProperties_AbilityThrowParty.cs" />
     <Compile Include="AI\JobGiver_GetNaked.cs" />
     <Compile Include="Comps\CompDisableAbilityIfMemeFound.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_DisableAbilityIfMemeFound.cs" />
@@ -305,7 +309,10 @@
     <Compile Include="Defs\SupportedDrinksForPreceptDefs.cs" />
     <Compile Include="Harmony\CaravanExitMapUtility_AddCaravanExitTaleIfShould.cs" />
     <Compile Include="Harmony\CompDrug_PostIngested.cs" />
+    <Compile Include="Harmony\GameConditionManager_RegisterCondition.cs" />
+    <Compile Include="Harmony\GameCondition_Aurora_Init.cs" />
     <Compile Include="Harmony\GenLeavings_DoLeavingsFor.cs" />
+    <Compile Include="Harmony\Need_Joy_FallPerInterval.cs" />
     <Compile Include="Harmony\RitualObligationTargetWorker_IdeoBuildingOrRitualSpot_CanUseTargetInternal.cs" />
     <Compile Include="Harmony\TaleUtility_Notify_PawnDied.cs" />
     <Compile Include="Harmony\DamageWorker_Apply.cs" />
@@ -323,6 +330,7 @@
     <Compile Include="Harmony\TradeDeal_TryExecute.cs" />
     <Compile Include="Hediffs\HediffCompProperties_Infections.cs" />
     <Compile Include="Hediffs\HediffComp_Infections.cs" />
+    <Compile Include="MapComponents and GameComponents\GameComponent_BestPsycasterTracker.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_BestMeleeLeaderTracker.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_ColonistScarCounter.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_BoozeTracker.cs" />
@@ -336,7 +344,7 @@
     <Compile Include="MapComponents and GameComponents\GameComponent_TradingTracker.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_IllnessTracker.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_FactoryModifier.cs" />
-    <Compile Include="MapComponents and GameComponents\MapComponent_MoodFromStars.cs" />
+    <Compile Include="MapComponents and GameComponents\GameComponent_MoodFromStars.cs" />
     <Compile Include="PawnCollectionClass\PawnCollectionClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rituals\RitualBehaviorWorker_Orgy.cs" />
@@ -385,7 +393,7 @@
     <Compile Include="Thoughts\Thought_Power_Desired.cs" />
     <Compile Include="Thoughts\Thought_Power_Exalted.cs" />
     <Compile Include="Thoughts\Thought_Power_Preferred.cs" />
-    <Compile Include="Thoughts\Thought_RandomStageOnce.cs" />
+    <Compile Include="Thoughts\Thought_Precept_RandomStageMood.cs" />
     <Compile Include="Thoughts\Thought_Junk_Beautiful.cs" />
     <Compile Include="Thoughts\Thought_Scars_Honorable.cs" />
     <Compile Include="Thoughts\Thought_StageByTime.cs" />
