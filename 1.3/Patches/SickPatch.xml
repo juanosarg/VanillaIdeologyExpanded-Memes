@@ -9,6 +9,7 @@
 			<value>
 				<nullifyingPrecepts>
 					<li>VME_Illness_Exalted</li>
+					<li>VME_Illness_Preferred</li>
 				</nullifyingPrecepts>
 			</value>
 		</nomatch>
@@ -16,6 +17,7 @@
 			<xpath>/Defs/ThoughtDef[defName = "Sick"]/nullifyingPrecepts</xpath>
 			<value>
 				<li>VME_Illness_Exalted</li>
+				<li>VME_Illness_Preferred</li>
 			</value>
 		</match>
 	</Operation>

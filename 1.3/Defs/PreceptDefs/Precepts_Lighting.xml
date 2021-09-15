@@ -30,7 +30,7 @@
 		<issue>DarknessCombat</issue>
 		<label>despised</label>
 		<description>Beyond being difficult to fight in, bloodshed should never take place in darkness, lest the enemy be spared peering into your eyes before you end their lives.</description>
-		<impact>Low</impact>
+		<impact>High</impact>
 		<displayOrderInIssue>10</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
 		<associatedMemes>

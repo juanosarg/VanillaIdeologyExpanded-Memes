@@ -12,6 +12,75 @@
 
 	<!-- Precepts -->
 	<PreceptDef>
+		<defName>VME_Violence_Honorable</defName>
+		<issue>VME_Violence</issue>
+		<label>honorable</label>
+		<description>Harming innocents is an honorable necessity on the Rim, it proves our strength and our resolve.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists will receive a positive mood if they are forced to attack non-hostile humanoid targets.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>20</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		
+		
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_AttackedInnocent</eventDef>
+				<thought>VME_Violence_Honorable</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+
+	<ThoughtDef>
+		<defName>VME_Violence_Honorable</defName>
+		<durationDays>5</durationDays>
+		<stages>
+			<li>
+				<label>attacked harmless person</label>
+				<description>I have used deadly force on a harmless adversary. This proves our strength and our resolve.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+
+	</ThoughtDef>
+	<PreceptDef>
+		<defName>VME_Violence_Acceptable</defName>
+		<issue>VME_Violence</issue>
+		<label>acceptable</label>
+		<description>Violence is just a fact of life.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+	</PreceptDef>
+	<PreceptDef>
+		<defName>VME_Violence_Disapproved</defName>
+		<issue>VME_Violence</issue>
+		<label>disapproved</label>
+		<description>We should avoid harming innocents if possible. Attacking a harmless person is immoral. \n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists will receive a negative mood if they are forced to attack non-hostile humanoid targets.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		
+		
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_AttackedInnocent</eventDef>
+				<thought>VME_Violence_Disapproved</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+
+	<ThoughtDef>
+		<defName>VME_Violence_Disapproved</defName>
+		<durationDays>5</durationDays>
+		<stages>
+			<li>
+				<label>attacked harmless person</label>
+				<description>I have used deadly force on a harmless adversary. This is wrong.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+
+	</ThoughtDef>
+	<PreceptDef>
 		<defName>VME_Violence_Abhorrent</defName>
 		<issue>VME_Violence</issue>
 		<label>abhorrent</label>

@@ -11,7 +11,7 @@
 		<defName>VME_Mood_DictatedByStars</defName>
 		<issue>VME_Mood</issue>
 		<label>dictated by stars</label>
-		<description>The endless sea of stars in our skies will dictate my future, be it benevolent or otherwise.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Every 15 days, mood will randomly change between -10 and +10.</description>
+		<description>The endless sea of stars in our skies will dictate my future, be it benevolent or otherwise.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - After every Divine the Stars ritual, a solar eclipse or an aurora, mood will randomly change between -30 and +30.</description>
 		<impact>High</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -117,6 +117,80 @@
 				<label>grieve</label>
 				<description>Everyone is in bad mood, as am I.</description>
 				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+
+	</ThoughtDef>
+	
+	<PreceptDef>
+		<defName>VME_Mood_LowExpectations</defName>
+		<issue>VME_Mood</issue>
+		<label>low expectations</label>
+		<description>We are stranded on a lost, forgotten planet on the Rim. Things can hardly get worse.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		
+		<comps>
+			
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_Mood_LowExpectations</thought>
+			</li>
+			
+		</comps>
+		
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>VME_Mood_LowExpectations</defName>
+		
+		<stages>
+			
+			<li>
+				<label>bad mood</label>
+				<description>I'm just generally having a bad mood. The Rim is a hostile place.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+
+	</ThoughtDef>
+	
+	<PreceptDef>
+		<defName>VME_Mood_Normal</defName>
+		<issue>VME_Mood</issue>
+		<label>normal</label>
+		<description>I'm fine, thanks.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>20</displayOrderInIssue>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+	</PreceptDef>
+	
+	<PreceptDef>
+		<defName>VME_Mood_HighExpectations</defName>
+		<issue>VME_Mood</issue>
+		<label>high expectations</label>
+		<description>The whole world is ours to explore and enjoy.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		
+		<comps>
+			
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_Mood_HighExpectations</thought>
+			</li>
+			
+		</comps>
+		
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>VME_Mood_HighExpectations</defName>
+		
+		<stages>
+			
+			<li>
+				<label>good mood</label>
+				<description>I'm just generally having a good mood. The Rim is an amazing place.</description>
+				<baseMoodEffect>5</baseMoodEffect>
 			</li>
 		</stages>
 

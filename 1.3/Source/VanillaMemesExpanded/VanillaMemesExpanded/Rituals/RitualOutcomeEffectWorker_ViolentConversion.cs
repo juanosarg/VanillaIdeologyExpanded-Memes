@@ -54,6 +54,7 @@ namespace VanillaMemesExpanded
 
 			}
             else {
+				prisoner.health.killedByRitual = true;
 				ExecutionUtility.DoExecutionByCut(inquisitor, prisoner, 8, true);
 				ThoughtUtility.GiveThoughtsForPawnExecuted(prisoner, inquisitor, PawnExecutionKind.GenericBrutal);
 				TaleRecorder.RecordTale(TaleDefOf.ExecutedPrisoner, new object[]

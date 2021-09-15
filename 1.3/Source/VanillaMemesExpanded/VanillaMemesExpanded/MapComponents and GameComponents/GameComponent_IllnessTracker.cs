@@ -13,7 +13,7 @@ namespace VanillaMemesExpanded
        
        
         public int tickCounter = 0;
-        public int tickInterval = 6000;
+        public int tickInterval = 3000;
         public Dictionary<Pawn, int> colonist_illness_tracker_backup = new Dictionary<Pawn, int>();
         List<Pawn> list2;
         List<int> list3;
@@ -73,6 +73,33 @@ namespace VanillaMemesExpanded
                             }
 
 
+                        }
+
+                    }
+
+                }
+
+                if (ideo.HasPrecept(InternalDefOf.VME_Illness_TimeOff))
+                {
+                    
+                    List<Pawn> listPawns = PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists;
+                    foreach (Pawn p in listPawns)
+                    {
+                        if (p.health.hediffSet.AnyHediffMakesSickThought)
+                        {
+                            if (!p.story.traits.HasTrait(InternalDefOf.VME_Time_Off))
+                            {
+                                Trait trait = new Trait(InternalDefOf.VME_Time_Off, 0, true);
+                                p.story.traits.GainTrait(trait);
+                            }
+                        }
+                        else {
+
+                            if (p.story.traits.HasTrait(InternalDefOf.VME_Time_Off))
+                            {
+                               
+                                p.story.traits.RemoveTrait(p.story.traits.GetTrait(InternalDefOf.VME_Time_Off));
+                            }
                         }
 
                     }

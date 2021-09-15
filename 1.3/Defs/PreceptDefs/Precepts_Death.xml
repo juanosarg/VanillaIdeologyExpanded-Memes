@@ -18,8 +18,45 @@
 		<associatedMemes>
 			<li>VME_BloodCourt</li>
 		</associatedMemes>
-		
-		
 	</PreceptDef>
+	
+	<PreceptDef>
+		<defName>VME_Death_Normal</defName>
+		<issue>VME_Death</issue>
+		<label>normal</label>
+		<description>Death is inevitable, an incredibly sad fact of life.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+	</PreceptDef>
+	
+	<PreceptDef>
+		<defName>VME_Death_Troubling</defName>
+		<issue>VME_Death</issue>
+		<label>troubling</label>
+		<description>Death is inevitable, but we prefer not to dwell on it and not be reminded of its reality as much as possible.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>ObservedLayingCorpse</eventDef>
+				<thought>VME_Death_Troubling</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>VME_Death_Troubling</defName>
+		<durationDays>2</durationDays>
+		<stages>
+			<li>
+				<label>death is troubling</label>
+				<description>I know death is a part of life, but I just HATE being reminded of it.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+
+	</ThoughtDef>
 	
 </Defs>

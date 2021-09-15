@@ -129,7 +129,7 @@
 		</graphicData>
 	</ThingStyleDef>
 
-	<ThingStyleDef Name="VME_Serketist_StandingLamp">
+	<ThingStyleDef Name="VME_Serketist_StandingLampBase">
 		<defName>VME_Serketist_StandingLamp</defName>
 		<graphicData>
 			<texPath>Things/Building/BuildingStyles/Serketist/VME_SerketistLampStanding</texPath>
@@ -137,15 +137,15 @@
 		</graphicData>
 	</ThingStyleDef>
 
-	<ThingStyleDef ParentName="VME_Serketist_StandingLamp">
+	<ThingStyleDef ParentName="VME_Serketist_StandingLampBase">
 		<defName>VME_Serketist_StandingLamp_Red</defName>
 	</ThingStyleDef>
 
-	<ThingStyleDef ParentName="VME_Serketist_StandingLamp">
+	<ThingStyleDef ParentName="VME_Serketist_StandingLampBase">
 		<defName>VME_Serketist_StandingLamp_Blue</defName>
 	</ThingStyleDef>
 
-	<ThingStyleDef ParentName="VME_Serketist_StandingLamp">
+	<ThingStyleDef ParentName="VME_Serketist_StandingLampBase">
 		<defName>VME_Serketist_StandingLamp_Green</defName>
 	</ThingStyleDef>
 
@@ -794,7 +794,241 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
+	
+	<!-- ====== Esotericism ======== -->
 
 
+	
 
+
+	<ThingStyleDef>
+		<defName>VME_Esotericism_SculptureSmall</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Esotericism/Sculptures/Small</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Esotericism_SculptureLarge</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Esotericism/Sculptures/Large</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+	
+
+
+	<ThingStyleDef>
+		<defName>VME_Esotericism_Apparel_BowlerHat</defName>
+		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/VME_EsotericismBowlerHat/VME_EsotericismBowlerHat</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparelstyles/Single/VME_EsotericismBowlerHat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_Esotericism_Apparel_Hood</defName>
+		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/VME_EsotericismHood/VME_EsotericismHood</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparelstyles/Single/VME_EsotericismHood</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_Esotericism_Apparel_VisageMask</defName>
+		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/VME_EsotericismVisageMask/VME_EsotericismVisageMask</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparelstyles/Single/VME_EsotericismVisageMask</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	
+	<ThingStyleDef>
+		<defName>VME_Esotericism_Gladius</defName>
+		<graphicData>
+			<texPath>Things/Weapons/EsotericismWeapons/VME_EsotericistGladius</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+
+	<!-- ====== Eldritch ======== -->
+
+
+	<ThingStyleDef>
+		<defName>VME_Eldritch_Obelisk</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Eldritch/Obelisk</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Eldritch_SculptureSmall</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Eldritch/Sculptures/Small</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Eldritch_SculptureLarge</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Eldritch/Sculptures/Large</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Eldritch_SculptureGrand</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Eldritch/Sculptures/Grand</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>VME_Eldritch_AltarSmall</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Eldritch/Altars/VME_EldritchAltar1x1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shadowData>
+				<volume>(0.8, 1, 0.8)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Eldritch_AltarMedium</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Eldritch/Altars/VME_EldritchAltar1x3</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,1)</drawSize>
+			<shadowData>
+				<volume>(2.4, 1, 0.8)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Eldritch_AltarLarge</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Eldritch/Altars/VME_EldritchAltar2x3</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,2)</drawSize>
+			<shadowData>
+				<volume>(2.4, 1, 1.6)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Eldritch_AltarGrand</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Eldritch/Altars/VME_EldritchAltar3x3</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(2.4, 1, 2.4)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef Name="VME_Eldritch_StandingLampBase">
+		<defName>VME_Eldritch_StandingLamp</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Eldritch/VME_EldritchLampStanding</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef ParentName="VME_Eldritch_StandingLampBase">
+		<defName>VME_Eldritch_StandingLamp_Red</defName>
+	</ThingStyleDef>
+
+	<ThingStyleDef ParentName="VME_Eldritch_StandingLampBase">
+		<defName>VME_Eldritch_StandingLamp_Blue</defName>
+	</ThingStyleDef>
+
+	<ThingStyleDef ParentName="VME_Eldritch_StandingLampBase">
+		<defName>VME_Eldritch_StandingLamp_Green</defName>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>VME_Eldritch_DarklampStanding</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Eldritch/VME_EldritchDarkLampStanding</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>VME_Eldritch_TorchLamp</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Eldritch/VME_EldritchTorchLamp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Eldritch/VME_EldritchTorchLamp_MenuIcon</uiIconPath>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Eldritch_Apparel_PowerArmorHelmet</defName>
+		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/VME_HelmetMarineEldritch/VME_HelmetMarineEldritch</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparelstyles/Single/VME_HelmetMarineEldritch</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>VME_Eldritch_Apparel_ArmorHelmetRecon</defName>
+		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/VME_HelmetReconEldritch/VME_HelmetReconEldritch</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparelstyles/Single/VME_HelmetReconEldritch</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_Eldritch_Apparel_ArmorHelmetCataphract</defName>
+		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/VME_HelmetCataphractEldritch/VME_HelmetCataphractEldritch</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparelstyles/Single/VME_HelmetCataphractEldritch</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>VME_Eldritch_HeavySMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/EldritchWeapons/VME_EldritchHeavySMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_Eldritch_Autopistol</defName>
+		<graphicData>
+			<texPath>Things/Weapons/EldritchWeapons/VME_EldritchAutopistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_Eldritch_Revolver</defName>
+		<graphicData>
+			<texPath>Things/Weapons/EldritchWeapons/VME_EldritchRevolver</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_Eldritch_Knife</defName>
+		<graphicData>
+			<texPath>Things/Weapons/EldritchWeapons/VME_EldritchKnife</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 </Defs>

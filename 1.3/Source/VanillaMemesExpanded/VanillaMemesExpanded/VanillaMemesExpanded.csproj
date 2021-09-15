@@ -312,6 +312,7 @@
     <Compile Include="Harmony\GameConditionManager_RegisterCondition.cs" />
     <Compile Include="Harmony\GameCondition_Aurora_Init.cs" />
     <Compile Include="Harmony\GenLeavings_DoLeavingsFor.cs" />
+    <Compile Include="Harmony\JoyUtility_JoyTickCheckEnd.cs" />
     <Compile Include="Harmony\Need_Joy_FallPerInterval.cs" />
     <Compile Include="Harmony\RitualObligationTargetWorker_IdeoBuildingOrRitualSpot_CanUseTargetInternal.cs" />
     <Compile Include="Harmony\TaleUtility_Notify_PawnDied.cs" />
@@ -378,6 +379,8 @@
     <Compile Include="Thoughts\ThoughtWorker_Precept_HasNonNaturalProsthetic.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_HasNonNaturalProsthetic_Social.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_SharedMood.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_Precept_TaintedApparel_Abhorrent.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_Precept_TatteredApparel_Abhorrent.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_TotalDarkness.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_Trading.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_Alcohol.cs" />

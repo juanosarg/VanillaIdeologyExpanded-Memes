@@ -52,4 +52,39 @@
 		</stages>
 	</ThoughtDef>
 	
+	<PreceptDef>
+		<defName>VME_Insectoids_Despised</defName>
+		<issue>VME_Insectoids</issue>
+		<label>despised</label>
+		<description>Insects are our enemies, a plague that deserves to be exterminated.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_InsectoidKilled</eventDef>
+				<thought>VME_Insectoids_Despised</thought>
+			</li>
+			
+		</comps>
+		
+		
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>VME_Insectoids_Despised</defName>
+		
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			
+			<li>
+				<label>insectoid slain</label>
+				<description>I have killed an insectoid being, this is a victory!</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
 </Defs>

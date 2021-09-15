@@ -57,5 +57,52 @@
 		</stages>
 	</ThoughtDef>
 	
+	<PreceptDef>
+		<defName>VME_Scars_Disgusting</defName>
+		<issue>VME_Scars</issue>
+		<label>disgusting</label>
+		<description>A body marked with scars is disgusting.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+
+				<thought>VME_Scars_Disgusting</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_Scars_Disgusting</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>VanillaMemesExpanded.Thought_Scars_Honorable</workerClass>
+		<stages>
+			<li>
+				<label>faintly scarred</label>
+				<baseOpinionOffset>-2</baseOpinionOffset>
+			</li>
+			<li>
+				<label>scarred</label>
+				<baseOpinionOffset>-5</baseOpinionOffset>
+			</li>
+			<li>
+				<label>heavily scarred</label>
+				<baseOpinionOffset>-10</baseOpinionOffset>
+			</li>
+			<li>
+				<label>extremely scarred</label>
+				<baseOpinionOffset>-15</baseOpinionOffset>
+			</li>
+			<li>
+				<label>innumerable battlefield scars</label>
+				<baseOpinionOffset>-20</baseOpinionOffset>
+			</li>
+				
+			
+			
+		</stages>
+	</ThoughtDef>
+	
 	
 </Defs>

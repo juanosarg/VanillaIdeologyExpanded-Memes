@@ -108,6 +108,12 @@
 				<member>practitioner</member>
 			</li>
 		</symbolPacks>
+		<thingStyleCategories>
+			<li>
+				<category>VME_Esotericism</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
 	</MemeDef>
 	<MemeDef>
 		<defName>VME_Structure_Bacchanalianism</defName>

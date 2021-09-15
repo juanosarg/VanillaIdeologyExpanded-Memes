@@ -9,7 +9,7 @@ namespace VanillaMemesExpanded
 	{
 		protected override ThoughtState CurrentStateInternal(Pawn p)
 		{
-			return p.Ideo.HasPrecept(InternalDefOf.VME_Illness_Exalted) && p.health.hediffSet.AnyHediffMakesSickThought;
+			return ((p.Ideo.HasPrecept(InternalDefOf.VME_Illness_Exalted))|| (p.Ideo.HasPrecept(InternalDefOf.VME_Illness_Preferred))) && p.health.hediffSet.AnyHediffMakesSickThought;
 		}
 	}
 }

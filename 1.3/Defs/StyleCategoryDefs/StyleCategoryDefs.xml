@@ -431,7 +431,161 @@
 
 
 	</StyleCategoryDef>
+	
+		<StyleCategoryDef>
+		<defName>VME_Esotericism</defName>
+		<label>esotericism</label>
+		<iconPath>UI/StyleCategories/VME_ThingStyle_Esotericism</iconPath>
+		<soundOngoingRitual>VME_RitualSustainer_Esotericism</soundOngoingRitual>
+		<ritualVisualEffectDef>Morbid</ritualVisualEffectDef>
+		<thingDefStyles>
+			<li>
+				<thingDef>SculptureSmall</thingDef>
+				<styleDef>VME_Esotericism_SculptureSmall</styleDef>
+			</li>
+			<li>
+				<thingDef>SculptureLarge</thingDef>
+				<styleDef>VME_Esotericism_SculptureLarge</styleDef>
+			</li>
+			
+
+			<li>
+				<thingDef>Apparel_BowlerHat</thingDef>
+				<styleDef>VME_Esotericism_Apparel_BowlerHat</styleDef>
+			</li>			
+			<li>
+				<thingDef>Apparel_HatHood</thingDef>
+				<styleDef>VME_Esotericism_Apparel_Hood</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_VisageMask</thingDef>
+				<styleDef>VME_Esotericism_Apparel_VisageMask</styleDef>
+			</li>
+			
+
+			<li>
+				<thingDef>MeleeWeapon_Gladius</thingDef>
+				<styleDef>VME_Esotericism_Gladius</styleDef>
+			</li>
 
 
+		</thingDefStyles>
+		<addDesignators>
+			<li>VME_EsotericismSlab_Medium</li>
+			<li>VME_EsotericismSlab_Broad</li>
+		</addDesignators>
+		
+
+
+	</StyleCategoryDef>
+
+	<StyleCategoryDef>
+		<defName>VME_Eldritch</defName>
+		<label>eldritch</label>
+		<iconPath>UI/StyleCategories/VME_ThingStyle_Eldritch</iconPath>
+		<soundOngoingRitual>VME_RitualSustainer_Eldritch</soundOngoingRitual>
+		<ritualVisualEffectDef>Morbid</ritualVisualEffectDef>
+		<thingDefStyles>
+			<li>
+				<thingDef>SculptureSmall</thingDef>
+				<styleDef>VME_Eldritch_SculptureSmall</styleDef>
+			</li>
+			<li>
+				<thingDef>SculptureLarge</thingDef>
+				<styleDef>VME_Eldritch_SculptureLarge</styleDef>
+			</li>
+			<li>
+				<thingDef>SculptureGrand</thingDef>
+				<styleDef>VME_Eldritch_SculptureGrand</styleDef>
+			</li>
+
+			<li>
+				<thingDef>Altar_Small</thingDef>
+				<styleDef>VME_Eldritch_AltarSmall</styleDef>
+			</li>
+			<li>
+				<thingDef>Altar_Medium</thingDef>
+				<styleDef>VME_Eldritch_AltarMedium</styleDef>
+			</li>
+			<li>
+				<thingDef>Altar_Large</thingDef>
+				<styleDef>VME_Eldritch_AltarLarge</styleDef>
+			</li>
+			<li>
+				<thingDef>Altar_Grand</thingDef>
+				<styleDef>VME_Eldritch_AltarGrand</styleDef>
+			</li>
+
+
+			
+
+			<li>
+				<thingDef>StandingLamp</thingDef>
+				<styleDef>VME_Eldritch_StandingLamp</styleDef>
+			</li>
+			<li>
+				<thingDef>StandingLamp_Red</thingDef>
+				<styleDef>VME_Eldritch_StandingLamp_Red</styleDef>
+			</li>
+			<li>
+				<thingDef>StandingLamp_Green</thingDef>
+				<styleDef>VME_Eldritch_StandingLamp_Green</styleDef>
+			</li>
+			<li>
+				<thingDef>StandingLamp_Blue</thingDef>
+				<styleDef>VME_Eldritch_StandingLamp_Blue</styleDef>
+			</li>
+			
+			<li>
+				<thingDef>Darklamp</thingDef>
+				<styleDef>VME_Eldritch_DarklampStanding</styleDef>
+			</li>
+			<li>
+				<thingDef>TorchLamp</thingDef>
+				<styleDef>VME_Eldritch_TorchLamp</styleDef>
+			</li>
+			<li>
+				<thingDef>SculptureTerror</thingDef>
+				<styleDef>VME_Eldritch_Obelisk</styleDef>
+			</li>
+
+			<li>
+				<thingDef>Apparel_PowerArmorHelmet</thingDef>
+				<styleDef>VME_Eldritch_Apparel_PowerArmorHelmet</styleDef>
+			</li>			
+			
+			<li>
+				<thingDef>Apparel_ArmorHelmetRecon</thingDef>
+				<styleDef>VME_Eldritch_Apparel_ArmorHelmetRecon</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<thingDef>Apparel_ArmorHelmetCataphract</thingDef>
+				<styleDef>VME_Eldritch_Apparel_ArmorHelmetCataphract</styleDef>
+			</li>
+			
+			<li>
+				<thingDef>Gun_HeavySMG</thingDef>
+				<styleDef>VME_Eldritch_HeavySMG</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_Autopistol</thingDef>
+				<styleDef>VME_Eldritch_Autopistol</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_Revolver</thingDef>
+				<styleDef>VME_Eldritch_Revolver</styleDef>
+			</li>
+<li>
+				<thingDef>MeleeWeapon_Knife</thingDef>
+				<styleDef>VME_Eldritch_Knife</styleDef>
+			</li>
+
+		</thingDefStyles>
+		<addDesignators>
+			<li>VME_EldritchSlab_Medium</li>
+			<li>VME_EldritchSlab_Broad</li>
+		</addDesignators>
+		
+	</StyleCategoryDef>
 
 </Defs>

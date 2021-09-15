@@ -52,4 +52,39 @@
 		</stages>
 	</ThoughtDef>
 	
+	<PreceptDef>
+		<defName>VME_Mechanoids_Despised</defName>
+		<issue>VME_Mechanoids</issue>
+		<label>despised</label>
+		<description>Mechanoids are an abomination, a reminder of man's hubris.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_MechanoidDestroyed</eventDef>
+				<thought>VME_Mechanoids_Despised</thought>
+			</li>
+			
+		</comps>
+		
+		
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>VME_Mechanoids_Despised</defName>
+		
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			
+			<li>
+				<label>mechanoid destroyed</label>
+				<description>I have destroyed a mechanoid being, this is a victory!</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
 </Defs>

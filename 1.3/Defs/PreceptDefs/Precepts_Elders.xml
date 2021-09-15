@@ -7,13 +7,44 @@
 	</IssueDef>
 	
 	<!-- Precepts -->
+	
+	<PreceptDef>
+		<defName>VME_Elders_Despised</defName>
+		<issue>VME_Elders</issue>
+		<label>despised</label>
+		<description>What is this, a retirement home? Get out of my way, fossil!</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+
+				<thought>VME_Elders_Despised</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_Elders_Despised</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>VanillaMemesExpanded.Thought_Elders_Respected</workerClass>
+		<stages>
+			<li>
+				<label>elder</label>
+				<baseOpinionOffset>-40</baseOpinionOffset>
+			</li>
+				
+			
+			
+		</stages>
+	</ThoughtDef>
 	<PreceptDef>
 		<defName>VME_Elders_Respected</defName>
 		<issue>VME_Elders</issue>
 		<label>respected</label>
 		<description>True wisdom comes only with age, and those who have seen many seasons are to be venerated.</description>
 		<impact>Medium</impact>
-		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInIssue>40</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
 		<associatedMemes>
 			<li>VME_Elders</li>
@@ -47,7 +78,7 @@
 		<label>holy</label>
 		<description>Our elders are to be respected and revered, and never shall we expect them to do hard work.</description>
 		<impact>High</impact>
-		<displayOrderInIssue>40</displayOrderInIssue>
+		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
 		<associatedMemes>
 			<li>VME_Elders</li>

@@ -71,6 +71,40 @@
     </subSounds>
   </SoundDef>
   
+   <SoundDef ParentName="RitualSustainerBase">
+    <defName>VME_RitualSustainer_Esotericism</defName>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ambience/RitualSustainers/Ritual_Sustainer_Esotericism_Loop</clipPath>
+          </li>
+        </grains>
+        <volumeRange>22</volumeRange>
+        <distRange>30~100</distRange>
+        <sustainAttack>5.0</sustainAttack>
+        <sustainSkipFirstAttack>False</sustainSkipFirstAttack>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef ParentName="RitualSustainerBase">
+    <defName>VME_RitualSustainer_Eldritch</defName>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ambience/RitualSustainers/Ritual_Sustainer_EldritchCult_Loop</clipPath>
+          </li>
+        </grains>
+        <volumeRange>22</volumeRange>
+        <distRange>30~100</distRange>
+        <sustainAttack>5.0</sustainAttack>
+        <sustainSkipFirstAttack>False</sustainSkipFirstAttack>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
   <SoundDef ParentName="RitualSustainerBase">
     <defName>VME_RitualSustainer_Orgy</defName>
     <subSounds>

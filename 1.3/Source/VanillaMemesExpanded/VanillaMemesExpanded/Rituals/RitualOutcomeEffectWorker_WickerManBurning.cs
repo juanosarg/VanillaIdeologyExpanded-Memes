@@ -57,6 +57,7 @@ namespace VanillaMemesExpanded
 			Pawn prisoner = jobRitual.PawnWithRole("prisoner");
 			Pawn inquisitor = jobRitual.PawnWithRole("inquisitor");
 			prisoner.guilt.Notify_Guilty(900000);
+			prisoner.health.killedByRitual = true;
 			do
 			{
 				BattleLogEntry_DamageTaken battleLogEntry_DamageTaken = new BattleLogEntry_DamageTaken(prisoner, RulePackDefOf.DamageEvent_Fire, null);
