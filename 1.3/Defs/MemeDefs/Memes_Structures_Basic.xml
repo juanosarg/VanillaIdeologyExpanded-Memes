@@ -219,6 +219,12 @@
 				<member>cultist</member>
 			</li>
 		</symbolPacks>
+		<thingStyleCategories>
+			<li>
+				<category>VME_Eldritch</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
 	</MemeDef>
 	<MemeDef>
 		<defName>VME_Structure_Eschatologism</defName>
