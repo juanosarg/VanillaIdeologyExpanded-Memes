@@ -381,6 +381,7 @@
     <Compile Include="Thoughts\ThoughtWorker_Precept_Aurora.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_HasNonNaturalProsthetic.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_HasNonNaturalProsthetic_Social.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_Precept_Leather_Abhorrent.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_SharedMood.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_TaintedApparel_Abhorrent.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_TatteredApparel_Abhorrent.cs" />
