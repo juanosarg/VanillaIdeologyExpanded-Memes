@@ -1620,6 +1620,11 @@
 				<pattern>VME_WickerManBurningRitual</pattern>
 				<building>VME_WickerMan</building>
 			</li>
+			<li>
+				<precept>VME_BonfirePrecept</precept>
+				<pattern>VME_BonfireRitual</pattern>
+				<building>VME_Bonfire</building>
+			</li>
 		</requiredRituals>
 		<symbolPacks>
 			<li>

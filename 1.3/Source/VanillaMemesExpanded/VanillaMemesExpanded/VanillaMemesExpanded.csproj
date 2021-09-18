@@ -296,8 +296,10 @@
   <ItemGroup>
     <Compile Include="Abilities\CompAbilityEnableSelfDestruct.cs" />
     <Compile Include="Abilities\CompAbilityStrengthenFlame.cs" />
+    <Compile Include="Abilities\CompAbilityTameInsectoid.cs" />
     <Compile Include="Abilities\CompAbilityThrowParty.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityEnableSelfDestruct.cs" />
+    <Compile Include="Abilities\Properties\CompProperties_AbilityTameInsectoid.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityStrengthenFlame.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityThrowParty.cs" />
     <Compile Include="AI\JobGiver_GetNaked.cs" />
@@ -349,6 +351,7 @@
     <Compile Include="PawnCollectionClass\PawnCollectionClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rituals\RitualBehaviorWorker_Orgy.cs" />
+    <Compile Include="Rituals\RitualOutcomeEffectWorker_Bonfire.cs" />
     <Compile Include="Rituals\RitualOutcomeEffectWorker_Orgy.cs" />
     <Compile Include="RitualTargets\RitualObligationTargetWorker_DivineStars.cs" />
     <Compile Include="RitualObligationTriggers\RitualObligationTriggerProperties_StrongerLeader.cs" />

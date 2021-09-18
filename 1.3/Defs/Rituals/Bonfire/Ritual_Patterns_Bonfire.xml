@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+  
+  <RitualPatternDef>
+    <defName>VME_BonfireRitual</defName>
+    <ritualBehavior>VME_BonfireBehaviour</ritualBehavior>
+   
+    <ritualObligationTargetFilter>VME_Bonfire</ritualObligationTargetFilter>
+    <canStartAnytime>true</canStartAnytime>
+    <ritualObligationTriggers>
+      <li Class="RitualObligationTrigger_DateProperties">
+        <mustBePlayerIdeo>true</mustBePlayerIdeo>
+      </li>
+    </ritualObligationTriggers>
+	<ritualOutcomeEffect>VME_BonfireOutcome</ritualOutcomeEffect>
+	 <ritualExpectedDesc>Every year on {DATE}, {MEMBERS} celebrate a {RITUAL_labelDef} ceremony.</ritualExpectedDesc>
+    <ritualExpectedPostfix>{0} {1} want to hold the celebration as soon as possible.</ritualExpectedPostfix>
+	<tags>
+      <li>CelebratedDate</li>
+    </tags>
+    <patternGroupTag>CelebratedDate</patternGroupTag>
+  </RitualPatternDef>
+
+
+
+ 
+
+</Defs>

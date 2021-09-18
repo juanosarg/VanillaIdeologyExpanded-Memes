@@ -11,4 +11,5 @@
 	<VME_AbilityDisabledNoWickerMan>No reachable wicker man.</VME_AbilityDisabledNoWickerMan>
 	<VME_WickerManInfo>A built wicker man.</VME_WickerManInfo>
 	<VME_AbilityNeedsATurret>This ability needs to target a turret.</VME_AbilityNeedsATurret>
+	<VME_AbilityNeedsInsect>This ability needs to target a wild or hostile insectoid.</VME_AbilityNeedsInsect>
 </LanguageData>

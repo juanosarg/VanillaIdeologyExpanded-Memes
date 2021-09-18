@@ -106,6 +106,33 @@
       </rulesStrings>
     </rulePack>
   </RulePackDef>
+  
+  <RulePackDef>
+    <defName>VME_InsectoidHerder</defName>
+
+    <rulePack>
+      <rulesStrings>
+        <li>r_roleName(p=7)->[firstPart][secondPart]</li>
+        <li>r_roleName->Insectoid Herder</li>
+        <li>firstPart->Spider </li>
+        <li>firstPart->Maggot </li>
+        <li>firstPart->Scarab </li>
+        <li>firstPart->Cricket </li>
+        <li>firstPart->Tick </li>
+        <li>firstPart->Larva </li>
+        <li>firstPart->Beetle </li>
+        <li>firstPart->Locust </li>
+        <li>secondPart(p=4)->Harvester</li>
+        <li>secondPart(p=4)->Handler</li>
+        <li>secondPart(p=4)->Brood-sibling</li>
+        <li>secondPart(p=4)->Devotee</li>
+        <li>secondPart(p=4)->Hive-Psyker</li>
+        <li>secondPart(p=4)->Hive-Commander</li>
+        <li>secondPart(p=4)->Hive-brood</li>
+        <li>secondPart(p=4)->Hive-slave</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
 
 
 </Defs>
