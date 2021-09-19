@@ -76,6 +76,8 @@ namespace VanillaMemesExpanded
 
 		public static PreceptDef VME_IdeoRole_PartyHost;
 
+		public static PreceptDef VME_BonfirePrecept;
+
 		public static MemeDef VME_FireWorship;
 
 

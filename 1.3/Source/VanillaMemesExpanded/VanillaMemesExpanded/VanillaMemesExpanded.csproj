@@ -337,6 +337,7 @@
     <Compile Include="MapComponents and GameComponents\GameComponent_BestMeleeLeaderTracker.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_ColonistScarCounter.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_BoozeTracker.cs" />
+    <Compile Include="MapComponents and GameComponents\GameComponent_BonfireTracker.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_TravellingTracker.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_FireTracker.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_RoomsInMap.cs" />

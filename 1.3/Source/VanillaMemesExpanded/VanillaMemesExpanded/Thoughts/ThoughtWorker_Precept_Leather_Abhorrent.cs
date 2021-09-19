@@ -13,7 +13,7 @@ namespace VanillaMemesExpanded
 			List<Apparel> wornApparel = p.apparel.WornApparel;
 			for (int i = 0; i < wornApparel.Count; i++)
 			{
-				if (wornApparel[i].Stuff?.defName.Contains("Leather")==true)
+				if (wornApparel[i].Stuff?.stuffProps?.categories?.Contains(StuffCategoryDefOf.Leathery)==true)
 				{
 					flag = true;
 				}

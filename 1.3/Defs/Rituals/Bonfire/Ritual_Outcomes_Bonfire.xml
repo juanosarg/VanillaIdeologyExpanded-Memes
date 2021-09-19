@@ -5,7 +5,7 @@
   
    <RitualOutcomeEffectDef>
     <defName>VME_BonfireOutcome</defName>
-    <description>Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.</description>
+    <description>Depending on ritual quality, participants will receive a recreation boost that last between 4 hours and 3 days that will raise their recreation bar. They'll also get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.</description>
     <workerClass>VanillaMemesExpanded.RitualOutcomeEffectWorker_Bonfire</workerClass>
     <comps>
       <li Class="RitualOutcomeComp_ParticipantCount">
@@ -25,30 +25,30 @@
       <li>
         <label>Terrible</label>
         <chance>0.05</chance>
-        <memory>VME_TerribleWickerManBurning</memory>
-        <description>The {0} was terrible! The prisoner rattled the cage all the time and it smelled like rotten bacon.</description>
+        <memory>VME_TerribleBonfire</memory>
+        <description>The {0} was terrible! Some pathetic little flames drifted around, and they went away too soon (no recreation effect applied).</description>
         <positivityIndex>-2</positivityIndex>
       </li>
       <li>
         <label>Lackluster</label>
-        <chance>0.15</chance>
-        <memory>VME_LacklusterWickerManBurning</memory>
-        <description>The {0} was lackluster. The prisoner just burned to death too fast, and the fire didn't even lift our spirits much.</description>
-        <positivityIndex>-1</positivityIndex>
-      </li>
-      <li>
-        <label>Good</label>
-        <chance>0.6</chance>
-        <memory>VME_GoodWickerManBurning</memory>
-        <description>The {0} was good. The anguished cries of the prisoner will resonate with us for a long time, another soul consumed by the flames.</description>
+        <chance>0.45</chance>
+        <memory>VME_LacklusterBonfire</memory>
+        <description>The {0} was lackluster. We were expecting a wondrous conflagration, and instead we got an oversized campfire. At least it was kinda entertaining.\n\nRecreation of all participants will be raised for 4 hours.</description>
         <positivityIndex>1</positivityIndex>
       </li>
       <li>
-        <label>Glorious</label>
-        <chance>0.2</chance>
-        <memory>VME_GloriousWickerManBurning</memory>
-        <description>The {0} was glorious! We will forever remember the thrashing of the prisoner, the frightened crescendo of screams as another soul was consumed by the holy flames.</description>
+        <label>Good</label>
+        <chance>0.4</chance>
+        <memory>VME_GoodBonfire</memory>
+        <description>The {0} was good. The flames rose and crackled majestically over the settlement, and it lifted all our spirits considerably.\n\nRecreation of all participants will be raised for 1 day.</description>
         <positivityIndex>2</positivityIndex>
+      </li>
+      <li>
+        <label>Glorious</label>
+        <chance>0.1</chance>
+        <memory>VME_GloriousBonfire</memory>
+        <description>The {0} was glorious! It was super fun and we really connected with each other with the shared experience.\n\nRecreation of all participants will be raised for 3 days.</description>
+        <positivityIndex>3</positivityIndex>
       </li>
     </outcomeChances>
   </RitualOutcomeEffectDef>

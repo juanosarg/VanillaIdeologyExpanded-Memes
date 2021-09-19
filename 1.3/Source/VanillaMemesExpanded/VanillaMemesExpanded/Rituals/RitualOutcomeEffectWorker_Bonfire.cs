@@ -34,10 +34,32 @@ namespace VanillaMemesExpanded
 				this.ApplyAttachableOutcome(totalPresence, jobRitual, outcome, out text, ref lookTargets);
 			}
 			bool flag = false;
+
+			GameComponent_BonfireTracker comp = Current.Game.GetComponent<GameComponent_BonfireTracker>();
 			foreach (Pawn pawn in totalPresence.Keys)
 			{
 				
-					base.GiveMemoryToPawn(pawn, outcome.memory, jobRitual);
+				base.GiveMemoryToPawn(pawn, outcome.memory, jobRitual);
+				if (comp != null)
+                {
+					switch (outcome.positivityIndex)
+					{
+						case 1:
+							comp.AddColonistAndTicksToCountdown(pawn,10000);
+							
+							break;
+						case 2:
+							comp.AddColonistAndTicksToCountdown(pawn, 60000);
+
+							break;
+						case 3:
+							comp.AddColonistAndTicksToCountdown(pawn, 180000);
+
+							break;
+					}
+
+				}
+				
 				
 
 			}
