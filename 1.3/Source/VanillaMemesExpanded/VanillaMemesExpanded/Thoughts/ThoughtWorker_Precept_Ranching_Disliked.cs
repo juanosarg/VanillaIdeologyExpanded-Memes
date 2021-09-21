@@ -19,7 +19,7 @@ namespace VanillaMemesExpanded
                 return ThoughtState.ActiveAtStage(1);
 
             }
-            else if (PawnCollectionClass.pensInTheMap < 5)
+            else if (PawnCollectionClass.pensInTheMap < 4)
             {
                 return ThoughtState.ActiveAtStage(2);
 
