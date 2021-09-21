@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace VanillaMemesExpanded
 {
-    public class MapComponent_FireTracker : MapComponent
+    public class MapComponent_FireAndPenTracker : MapComponent
     {
 
 
@@ -15,9 +15,11 @@ namespace VanillaMemesExpanded
         public int tickCounter = 0;
         public int tickInterval = 2000;
         public int firesInTheMap_backup = 0; 
+        public int pensInTheMap_backup = 0;
 
 
-        public MapComponent_FireTracker(Map map) : base(map)
+
+        public MapComponent_FireAndPenTracker(Map map) : base(map)
         {
 
         }
@@ -27,6 +29,8 @@ namespace VanillaMemesExpanded
             if (map.IsPlayerHome)
             {
                 PawnCollectionClass.firesInTheMap = firesInTheMap_backup;
+                PawnCollectionClass.pensInTheMap = pensInTheMap_backup;
+
             }
 
             base.FinalizeInit();
@@ -37,6 +41,7 @@ namespace VanillaMemesExpanded
         {
             base.ExposeData();
             Scribe_Values.Look<int>(ref this.firesInTheMap_backup, "firesInTheMap_backup", 0, true);
+            Scribe_Values.Look<int>(ref this.pensInTheMap_backup, "pensInTheMap_backup", 0, true);
 
             Scribe_Values.Look<int>(ref this.tickCounter, "tickCounterFire", 0, true);
 
@@ -53,6 +58,8 @@ namespace VanillaMemesExpanded
                 if (map.IsPlayerHome)
                 {
                     firesInTheMap_backup = PawnCollectionClass.firesInTheMap;
+                    pensInTheMap_backup = PawnCollectionClass.pensInTheMap;
+                    int pens = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamedSilentFail("PenMarker")).Count;
 
                     int wildFires = map.listerThings.ThingsOfDef(ThingDefOf.Fire).Count;
                     int campFires = map.listerThings.ThingsOfDef(ThingDefOf.Campfire).Count;
@@ -67,7 +74,9 @@ namespace VanillaMemesExpanded
                         braziers = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamedSilentFail("Brazier")).Count;
                     }
                     firesInTheMap_backup = wildFires + campFires + stoneCampfires + braziers;
+                    pensInTheMap_backup = pens;
                     PawnCollectionClass.firesInTheMap = firesInTheMap_backup;
+                    PawnCollectionClass.pensInTheMap = pensInTheMap_backup;
                 }
 
                 

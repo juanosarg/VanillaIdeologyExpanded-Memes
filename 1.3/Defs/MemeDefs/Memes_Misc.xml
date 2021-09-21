@@ -1348,10 +1348,13 @@
 				<li>VME_FarmingYield_High</li>
 			</li>
 			<li>
-				<li>MeatEating_Abhorrent</li>
+				<li>VME_MeatEating_Abhorrent_Strict</li>
 			</li>
 			<li>
 				<li>VME_LeatherApparel_Abhorrent</li>
+			</li>
+			<li>
+				<li>VME_Ranching_Disliked</li>
 			</li>
 		</requireOne>
 		<symbolPacks>

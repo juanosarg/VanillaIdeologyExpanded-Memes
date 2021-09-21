@@ -28,6 +28,7 @@
 				<thought>VME_Travel_Desired</thought>
 			</li>
 		</comps>
+		
 	</PreceptDef>
 	<ThoughtDef>
 		<defName>VME_Travel_Desired</defName>

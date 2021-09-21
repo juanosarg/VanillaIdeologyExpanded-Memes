@@ -99,6 +99,9 @@ namespace VanillaMemesExpanded
 
 		public static HistoryEventDef VME_HavingFun;
 
+		public static HistoryEventDef VME_AteAnimalProducts;
+
+
 
 		public static TraitDef VME_Elder;
 		public static TraitDef VME_Time_Off;

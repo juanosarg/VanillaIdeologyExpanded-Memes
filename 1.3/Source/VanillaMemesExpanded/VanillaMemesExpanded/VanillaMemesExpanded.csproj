@@ -329,7 +329,9 @@
     <Compile Include="Harmony\JobDriver_Notify_Starting.cs" />
     <Compile Include="Harmony\RecordsUtility_Notify_PawnDowned.cs" />
     <Compile Include="Harmony\SettlementAbandonUtility_Abandon.cs" />
+    <Compile Include="Harmony\FoodUtility_ThoughtsFromIngesting.cs" />
     <Compile Include="Harmony\ThoughtWorker_Sick_CurrentStateInternal.cs" />
+    <Compile Include="Harmony\Thing_Ingested.cs" />
     <Compile Include="Harmony\TradeDeal_TryExecute.cs" />
     <Compile Include="Hediffs\HediffCompProperties_Infections.cs" />
     <Compile Include="Hediffs\HediffComp_Infections.cs" />
@@ -339,7 +341,7 @@
     <Compile Include="MapComponents and GameComponents\GameComponent_BoozeTracker.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_BonfireTracker.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_TravellingTracker.cs" />
-    <Compile Include="MapComponents and GameComponents\MapComponent_FireTracker.cs" />
+    <Compile Include="MapComponents and GameComponents\MapComponent_FireAndPenTracker.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_RoomsInMap.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_JunkTracker.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_AverageMoodTracker.cs" />
@@ -383,6 +385,7 @@
     <Compile Include="Thoughts\ThoughtWorker_Precept_HasNonNaturalProsthetic.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_HasNonNaturalProsthetic_Social.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_Leather_Abhorrent.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_Precept_Ranching_Disliked.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_SharedMood.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_TaintedApparel_Abhorrent.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_TatteredApparel_Abhorrent.cs" />

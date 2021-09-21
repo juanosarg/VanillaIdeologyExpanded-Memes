@@ -43,6 +43,9 @@ namespace VanillaMemesExpanded
 
         public static int firesInTheMap = 0;
 
+        public static int pensInTheMap = 0;
+
+
 
 
         public static void AddColonistToIllnessList(Pawn pawn, int ticks)
