@@ -7,7 +7,7 @@
   <IssueDef>
     <defName>VME_Immunity</defName>
     <label>immunity</label>
-    <iconPath>UI/Issues/VME_AlphaIssue</iconPath>
+    <iconPath>UI/Issues/Immunity</iconPath>
   </IssueDef>
 
   <!-- Precepts -->

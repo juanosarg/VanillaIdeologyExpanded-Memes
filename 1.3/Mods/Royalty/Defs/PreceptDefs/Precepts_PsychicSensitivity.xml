@@ -7,7 +7,7 @@
 	<IssueDef>
 		<defName>VME_PsychicSensitivity</defName>
 		<label>psychic sensitivity</label>
-		<iconPath>UI/Issues/VME_AlphaIssue</iconPath>
+		<iconPath>UI/Issues/PsychicSensitivity</iconPath>
 	</IssueDef>
 
 	<!-- Precepts -->
