@@ -11,7 +11,7 @@
 		<defName>VME_Power_Exalted</defName>
 		<issue>VME_Power</issue>
 		<label>exalted</label>
-		<description>My rule is supreme, for I am godlike.</description>
+		<description>I am righteousness! I am no simple king, I have ascended to that of a god! Bow before me or atone with your life.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -83,7 +83,7 @@
 		<defName>VME_Power_Preferred</defName>
 		<issue>VME_Power</issue>
 		<label>preferred</label>
-		<description>Craving to be one of the powerful elite is a very understandable desire and should not be looked down upon.</description>
+		<description>It’s unthinkable to be considered a commoner. I want people to take my word seriously and put forth great effort not to disappoint me.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>30</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>

@@ -6,7 +6,7 @@
 		<label>psychic focus</label>
 		
 		<description>A meme surrounding psycasting and psychic energy gain.</description>
-		<iconPath>UI/Memes/VME_AlphaMeme</iconPath>
+		<iconPath>UI/Memes/PsychicFocus</iconPath>
 		<exclusionTags>
 			
 			<li>VME_LeaderPrecepts</li>

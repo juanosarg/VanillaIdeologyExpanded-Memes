@@ -7,7 +7,7 @@
 	<IssueDef>
 		<defName>VME_PsyfocusGain</defName>
 		<label>psyfocus gain</label>
-		<iconPath>UI/Issues/VME_AlphaIssue</iconPath>
+		<iconPath>UI/Issues/PsyfocusGain</iconPath>
 	</IssueDef>
 
 	<!-- Precepts -->

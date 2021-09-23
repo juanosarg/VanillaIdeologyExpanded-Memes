@@ -15,7 +15,7 @@
 		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
 		<selectionWeight>1.0</selectionWeight>
 		<ritualPatternBase>VME_BonfireRitual</ritualPatternBase>
-		<iconPath>UI/Rituals/VME_AlphaMeme</iconPath>
+		<iconPath>UI/Rituals/CelebrationBonfireBurning</iconPath>
 		<ignoreNameUniqueness>false</ignoreNameUniqueness>
 		<requiredMemes>
 			<li>VME_FireWorship</li>

@@ -7,7 +7,7 @@
 	<IssueDef>
 		<defName>VME_Meditation</defName>
 		<label>meditation</label>
-		<iconPath>UI/Issues/VME_AlphaIssue</iconPath>
+		<iconPath>UI/Issues/Meditation</iconPath>
 	</IssueDef>
 
 	<!-- Precepts -->
