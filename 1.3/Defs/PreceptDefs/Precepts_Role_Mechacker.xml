@@ -19,6 +19,7 @@
 		
 		<grantedAbilities>
 			<li>VME_EnableSelfDestruct</li>
+			
 		</grantedAbilities>
 		<roleApparelRequirements>
       <li>

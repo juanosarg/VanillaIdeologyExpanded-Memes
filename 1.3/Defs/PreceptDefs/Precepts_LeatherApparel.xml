@@ -3,7 +3,7 @@
 	<IssueDef>
 		<defName>VME_LeatherApparel</defName>
 		<label>leather apparel</label>
-		<iconPath>UI/Issues/VME_AlphaIssue</iconPath>
+		<iconPath>UI/Issues/LeatherApparel</iconPath>
 	</IssueDef>
 	<!-- Precepts -->
 	

@@ -111,6 +111,6 @@ namespace VanillaMemesExpanded
 
 		public static SoundDef VME_RitualSustainer_Orgy;
 
-
+		
 	}
 }

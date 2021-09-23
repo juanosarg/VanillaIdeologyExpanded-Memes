@@ -427,7 +427,7 @@
 		<defName>VME_Fleshcrafters</defName>
 		<label>fleshcrafting</label>
 		<description>Technology should be shunned, unless it serves the flesh. Only through extreme biological experimentation may we unlock our hidden potential.</description>
-		<iconPath>UI/Memes/Fleshcrafting</iconPath>		
+		<iconPath>UI/Memes/Fleshcrafting</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>3</impact>
 		<exclusionTags>
@@ -525,8 +525,6 @@
 			</li>
 		</symbolPacks>
 	</MemeDef>
-
-
 	<MemeDef>
 		<defName>VME_HolyDiseases</defName>
 		<label>holy diseases</label>
@@ -629,7 +627,6 @@
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>
 		<exclusionTags>
-
 			<li>VME_LeaderPrecepts</li>
 		</exclusionTags>
 		<generalRules>
@@ -880,9 +877,7 @@
 		<iconPath>UI/Memes/Republic</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>1</impact>
-
 		<exclusionTags>
-
 			<li>VME_LeaderPrecepts</li>
 		</exclusionTags>
 		<generalRules>
@@ -958,7 +953,7 @@
 		<description>Our leader must also be our prophet, and it’s important that we heed their advice.</description>
 		<iconPath>UI/Memes/ExaltedPriesthood</iconPath>
 		<groupDef>Misc</groupDef>
-		<exclusionTags>		
+		<exclusionTags>
 			<li>VME_LeaderPrecepts</li>
 		</exclusionTags>
 		<impact>1</impact>
@@ -1292,7 +1287,6 @@
 		<exclusionTags>
 			<li>VME_VeganVsRancher</li>
 		</exclusionTags>
-
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->vegan</li>
@@ -1381,7 +1375,6 @@
 		<impact>1</impact>
 		<exclusionTags>
 			<li>GroupRelation</li>
-
 		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
@@ -1804,7 +1797,6 @@
 			<li>
 				<li>VME_Eclipse_Despised</li>
 			</li>
-
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -1901,7 +1893,6 @@
 		<iconPath>UI/Memes/BloodCourt</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>3</impact>
-
 		<exclusionTags>
 			<li>VME_TooViolent</li>
 			<li>VME_LeaderPrecepts</li>
@@ -2129,7 +2120,6 @@
 			<li>
 				<li>VME_Mechanoids_Exalted</li>
 			</li>
-
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -2139,6 +2129,9 @@
 				<member>mechanoid worshipper</member>
 			</li>
 		</symbolPacks>
+		<addDesignators>
+			<li>VME_MechanoidEffigy</li>
+		</addDesignators>
 	</MemeDef>
 	<MemeDef>
 		<defName>VME_InsectoidSupremacy</defName>
@@ -2208,7 +2201,6 @@
 			<li>
 				<li>VME_InsectJellyEaten_Loved_Classic</li>
 			</li>
-
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -2284,14 +2276,11 @@
 			<li>
 				<li>VME_Alcohol_Demanded</li>
 			</li>
-
-
 		</requireOne>
 		<requiredRituals>
 			<li>
 				<precept>VME_OrgyPrecept</precept>
 				<pattern>VME_OrgyRitual</pattern>
-				
 			</li>
 		</requiredRituals>
 		<symbolPacks>

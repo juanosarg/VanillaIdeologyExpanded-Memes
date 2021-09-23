@@ -1,90 +1,115 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
- 
-
-  <ThingDef ParentName="IdeoBurnableBase">
-    <defName>VME_WickerMan</defName>
-    <label>wicker man</label>
-    <description>A large humanoid figure made out of dry brush, thatch, and wood scraps. Prisoners can be physically restrained  to the figurine then burned alive as part of a trial or ritual.</description>
-    <ideoBuildingNamerBase>NamerBurnTarget</ideoBuildingNamerBase>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-      <texPath>Things/Building/Misc/Effigy/Effigy</texPath>
-      <drawSize>(3,3)</drawSize>
-      <shadowData>
-        <volume>(0.5, 0.3 ,0.5)</volume>
-      </shadowData>
-    </graphicData>
-    <size>(3,3)</size>
-    <costList>
-      <WoodLog>80</WoodLog>
-    </costList>
+	<ThingDef ParentName="IdeoBurnableBase">
+		<defName>VME_WickerMan</defName>
+		<label>wicker man</label>
+		<description>A large humanoid figure made out of dry brush, thatch, and wood scraps. Prisoners can be physically restrained  to the figurine then burned alive as part of a trial or ritual.</description>
+		<ideoBuildingNamerBase>NamerBurnTarget</ideoBuildingNamerBase>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/Misc/Effigy/Effigy</texPath>
+			<drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(0.5, 0.3 ,0.5)</volume>
+			</shadowData>
+		</graphicData>
+		<size>(3,3)</size>
+		<costList>
+			<WoodLog>80</WoodLog>
+		</costList>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>3000</WorkToBuild>
+			<Mass>25</Mass>
+		</statBases>
+		<altitudeLayer>Blueprint</altitudeLayer>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<passability>PassThroughOnly</passability>
+		<comps>
+			<li Class="VanillaMemesExpanded.CompProperties_TimedFireOverlay">
+				<fireSize>3</fireSize>
+				<minRitualProgress>1</minRitualProgress>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>10</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="IdeoBurnableBase">
+		<defName>VME_Bonfire</defName>
+		<label>bonfire</label>
+		<description>An incredibly large and bright-burning bonfire made out of a carefully organized pile of logs on a stone base. Used heavily during flame-based rituals and can only be placed outdoors.</description>
+		<ideoBuildingNamerBase>NamerBurnTarget</ideoBuildingNamerBase>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/Misc/Bonfire/Bonfire</texPath>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<size>(5,5)</size>
+		<costList>
+			<WoodLog>400</WoodLog>
+		</costList>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>6000</WorkToBuild>
+			<Mass>400</Mass>
+		</statBases>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<passability>PassThroughOnly</passability>
+		<comps>
+			<li Class="VanillaMemesExpanded.CompProperties_TimedFireOverlay">
+				<fireSize>8</fireSize>
+				<minRitualProgress>0</minRitualProgress>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>20</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>VME_MechanoidEffigy</defName>
+		<label>mechanoid effigy</label>
+		<description>A structure assembled from scrapped mechanoid parts. Emits an IFF programming signal capable of confusing ancient mechanoid receptors. Should two exist per colonist enough signal noise will soft reset ancient mechanoid programming, causing an immediate retreat.</description>
+		<castEdgeShadows>true</castEdgeShadows>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<tickerType>Normal</tickerType>
+		<useHitPoints>true</useHitPoints>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<designationCategory>Misc</designationCategory>
+    <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>Things/Building/Misc/MechanoidEffigy</texPath>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<fillPercent>0.5</fillPercent>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>7</Mass>
+			<Beauty>-5</Beauty>
+			<WorkToMake>5000</WorkToMake>
+			<StyleDominance>10</StyleDominance>
+			<Flammability>1.0</Flammability>
+			<SellPriceFactor>1.10</SellPriceFactor>
+			<MeditationFocusStrength>0.0</MeditationFocusStrength>
+		</statBases>
+		<costList>
+			<Plasteel>50</Plasteel>
+			<Steel>5</Steel>
+		</costList>
+		
+	</ThingDef>
 	
-    <statBases>
-      <MaxHitPoints>50</MaxHitPoints>
-      <WorkToBuild>3000</WorkToBuild>
-	  
-      <Mass>25</Mass>
-    </statBases>
-	    <altitudeLayer>Blueprint</altitudeLayer>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <passability>PassThroughOnly</passability>
-    <comps>
-      <li Class="VanillaMemesExpanded.CompProperties_TimedFireOverlay">
-        <fireSize>3</fireSize>
-		<minRitualProgress>1</minRitualProgress>
-      </li>
-      <li Class="CompProperties_Glower">
-        <glowRadius>10</glowRadius>
-        <glowColor>(252,187,113,0)</glowColor>
-      </li>
-    </comps>
-  </ThingDef>
-  
-   <ThingDef ParentName="IdeoBurnableBase">
-    <defName>VME_Bonfire</defName>
-    <label>bonfire</label>
-    <description>An incredibly large and bright-burning bonfire made out of a carefully organized pile of logs on a stone base. Used heavily during flame-based rituals and can only be placed outdoors.</description>
-    <ideoBuildingNamerBase>NamerBurnTarget</ideoBuildingNamerBase>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-      <texPath>Things/Building/Misc/Bonfire/Bonfire</texPath>
-      <drawSize>(5,5)</drawSize>
-     
-    </graphicData>
-    <size>(5,5)</size>
-    <costList>
-      <WoodLog>400</WoodLog>
-    </costList>
 	
-    <statBases>
-      <MaxHitPoints>500</MaxHitPoints>
-      <WorkToBuild>6000</WorkToBuild>
-	  
-      <Mass>400</Mass>
-    </statBases>
-	   
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <passability>PassThroughOnly</passability>
-    <comps>
-      <li Class="VanillaMemesExpanded.CompProperties_TimedFireOverlay">
-        <fireSize>8</fireSize>
-		<minRitualProgress>0</minRitualProgress>
-      </li>
-      <li Class="CompProperties_Glower">
-        <glowRadius>20</glowRadius>
-        <glowColor>(252,187,113,0)</glowColor>
-      </li>
-    </comps>
-	<placeWorkers>
-      <li>PlaceWorker_NotUnderRoof</li>
-     
-    </placeWorkers>
-  </ThingDef>
-  
-  
-
-  
-
 </Defs>
