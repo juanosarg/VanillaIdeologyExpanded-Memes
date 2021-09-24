@@ -1186,7 +1186,6 @@
 			<li>
 				<li>VME_Expectations_High</li>
 			</li>
-			
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -2142,6 +2141,10 @@
 		<addDesignators>
 			<li>VME_MechanoidEffigy</li>
 		</addDesignators>
+		<preferredWeaponClasses>
+			<noble>Ultratech</noble>
+			<despised>Neolithic</despised>
+		</preferredWeaponClasses>
 	</MemeDef>
 	<MemeDef>
 		<defName>VME_InsectoidSupremacy</defName>
