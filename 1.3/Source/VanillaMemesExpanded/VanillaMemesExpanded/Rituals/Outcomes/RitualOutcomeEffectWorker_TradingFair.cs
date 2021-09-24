@@ -61,18 +61,29 @@ namespace VanillaMemesExpanded
 			}
             else
             {
-				/*switch (outcome.positivityIndex)
+				int numberOfCaravans = 0;
+				switch (outcome.positivityIndex)
 				{
 
 					case 1:
-						;
+						numberOfCaravans=1;
+						break;
 					case 2:
-						;
+						numberOfCaravans = 3;
+						break;
 					case 3:
-						;
-					
-				}*/
-				TradeUtility.LaunchThingsOfType(ThingDefOf.Silver, 200, selectedTarget.Map, null);
+						numberOfCaravans = 6;
+						break;
+
+				}
+				for(int i =0;i< numberOfCaravans; i++)
+                {
+					IncidentDef IncidentDef = IncidentDefOf.TraderCaravanArrival;
+					IncidentParms parms = StorytellerUtility.DefaultParmsNow(IncidentDef.category, selectedTarget.Map);
+					IncidentDef.Worker.TryExecute(parms);
+					TradeUtility.LaunchThingsOfType(ThingDefOf.Silver, 200, selectedTarget.Map, null);
+				}
+				
 			}
 
 			

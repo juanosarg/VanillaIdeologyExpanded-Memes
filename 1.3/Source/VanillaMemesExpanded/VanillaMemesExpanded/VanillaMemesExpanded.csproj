@@ -346,6 +346,7 @@
     <Compile Include="MapComponents and GameComponents\GameComponent_BonfireTracker.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_TravellingTracker.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_FireAndPenTracker.cs" />
+    <Compile Include="MapComponents and GameComponents\MapComponent_TradeCaravanDelay.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_RoomsInMap.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_JunkTracker.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_AverageMoodTracker.cs" />

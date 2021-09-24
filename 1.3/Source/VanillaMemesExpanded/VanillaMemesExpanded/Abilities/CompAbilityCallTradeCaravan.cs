@@ -17,10 +17,12 @@ namespace VanillaMemesExpanded
 		public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
 		{
 
-			IncidentDef IncidentDef = IncidentDefOf.TraderCaravanArrival;
-			IncidentParms parms = StorytellerUtility.DefaultParmsNow(IncidentDef.category, this.parent.pawn.Map);
-			IncidentDef.Worker.TryExecute(parms);
-
+			MapComponent_TradeCaravanDelay comp = this.parent.pawn.Map.GetComponent<MapComponent_TradeCaravanDelay>();
+			if (comp != null)
+            {
+				comp.signaledCaravanArriving = true;
+				Messages.Message("VME_AbilityCaravanWillArrive".Translate(), MessageTypeDefOf.CautionInput, true);
+			}
 
 
 			base.Apply(target, dest);
