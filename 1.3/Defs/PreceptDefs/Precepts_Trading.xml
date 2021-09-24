@@ -35,7 +35,7 @@
 		<stages>
 			<li>
 				<label>business is booming!</label>
-				<description>Our product flies off the shelves!</description>
+				<description>As usual, our products are flying off the shelves.</description>
 				<baseMoodEffect>5</baseMoodEffect>
 			</li>
 			<li>

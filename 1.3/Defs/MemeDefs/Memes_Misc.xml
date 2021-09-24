@@ -1183,6 +1183,10 @@
 			<li>
 				<li>VME_Trading_Required</li>
 			</li>
+			<li>
+				<li>VME_Expectations_High</li>
+			</li>
+			
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -1204,6 +1208,12 @@
 				<member>investor</member>
 			</li>
 		</symbolPacks>
+		<requiredRituals>
+			<li>
+				<precept>VME_TradingFairPrecept</precept>
+				<pattern>VME_TradingFairRitual</pattern>
+			</li>
+		</requiredRituals>
 	</MemeDef>
 	<MemeDef>
 		<defName>VME_Elders</defName>
@@ -2210,6 +2220,12 @@
 				<member>insect worshipper</member>
 			</li>
 		</symbolPacks>
+		<requiredRituals>
+			<li>
+				<precept>VME_InsectoidHymnPrecept</precept>
+				<pattern>VME_InsectoidHymnRitual</pattern>
+			</li>
+		</requiredRituals>
 	</MemeDef>
 	<MemeDef>
 		<defName>VME_PartyLife</defName>

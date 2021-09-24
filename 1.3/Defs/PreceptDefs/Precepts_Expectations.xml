@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Issues -->
+
+
+	<IssueDef>
+		<defName>VME_Expectations</defName>
+		<label>expectations</label>
+		<iconPath>UI/Issues/VME_AlphaIssue</iconPath>
+	</IssueDef>
+
+	<!-- Precepts -->
+
+
+
+	<PreceptDef>
+		<defName>VME_Expectations_High</defName>
+		<issue>VME_Expectations</issue>
+		<label>high</label>
+		<description>Our people are creatures of comfort, even the commoners among us deserve to relax or be pampered from time to time.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Expectations increased by 1 for everyone in the colony.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>VME_Trader</li>
+		</associatedMemes>
+		<displayOrderInIssue>20</displayOrderInIssue>
+		<expectationsOffset>1</expectationsOffset>
+	</PreceptDef>
+	
+	
+	
+
+
+</Defs>

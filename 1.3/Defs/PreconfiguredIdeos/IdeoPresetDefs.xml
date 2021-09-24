@@ -4,7 +4,7 @@
 	<IdeoPresetDef>
 		<defName>VME_Human_Hive</defName>
 		<label>human hive</label>
-		<description>From saloon to stable we're honest muffalopokes and live by one simple rule. ‘You don't get to live a bad life and have good things happen to you’. ‘Course, not all of us seem too convinced... Just don’t let the long arm of the law catch up y’all, ya’ hear?</description>
+		<description>Like clockwork, the lives of our fellow believers are ever intertwined. What causes one of us suffering causes all of us suffering and what brings us higher brings all of us higher. Together, we are one and we are strong.</description>
 		<categoryDef>Mild</categoryDef>
 		<memes>
 			<li>VME_Gestalt</li>
@@ -14,7 +14,7 @@
 	<IdeoPresetDef>
 		<defName>VME_Egalitarian_Republic</defName>
 		<label>egalitarian republic</label>
-		<description>From saloon to stable we're honest muffalopokes and live by one simple rule. ‘You don't get to live a bad life and have good things happen to you’. ‘Course, not all of us seem too convinced... Just don’t let the long arm of the law catch up y’all, ya’ hear?</description>
+		<description>Democracy, freedom, and equality. It’s nothing short of appalling that we should think any of these to be revocable privileges rather than basic rights. People's creeds, cultures, and character all deserve respect and representation.\n\n&lt;color=#E5E54C&gt;Recommended Structure:&lt;/color&gt;\n - Agnosticism.</description>
 		<categoryDef>Mild</categoryDef>
 		<memes>
 			<li>VME_Republic</li>
@@ -24,7 +24,7 @@
 	<IdeoPresetDef>
 		<defName>VME_Exalted_Gerontocracy</defName>
 		<label>exalted gerontocracy</label>
-		<description>From saloon to stable we're honest muffalopokes and live by one simple rule. ‘You don't get to live a bad life and have good things happen to you’. ‘Course, not all of us seem too convinced... Just don’t let the long arm of the law catch up y’all, ya’ hear?</description>
+		<description>Our heavenly clergy will guide us well, age is more than just the gaining of wisdom or wrinkle. With each passing year our elders become closer to god.\n\n&lt;color=#E5E54C&gt;Recommended Structure:&lt;/color&gt;\n - Any monotheistic.</description>
 		<categoryDef>Mild</categoryDef>
 		<memes>
 			<li>VME_ExaltedPriesthood</li>
@@ -34,7 +34,7 @@
 	<IdeoPresetDef>
 		<defName>VME_Factory_Drones</defName>
 		<label>factory drones</label>
-		<description>From saloon to stable we're honest muffalopokes and live by one simple rule. ‘You don't get to live a bad life and have good things happen to you’. ‘Course, not all of us seem too convinced... Just don’t let the long arm of the law catch up y’all, ya’ hear?</description>
+		<description>Work and cooperation breeds strength. We’ll sweat and bleed alike together, as a community, to reach an agreeable standard of living for all of us.\n\n&lt;color=#E5E54C&gt;Recommended Structure:&lt;/color&gt;\n - Authoritarian.</description>
 		<categoryDef>Mild</categoryDef>
 		<memes>
 			<li>VME_Progressive</li>

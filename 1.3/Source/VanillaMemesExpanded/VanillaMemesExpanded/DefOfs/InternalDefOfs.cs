@@ -76,6 +76,9 @@ namespace VanillaMemesExpanded
 
 		public static PreceptDef VME_IdeoRole_PartyHost;
 
+		public static PreceptDef VME_IdeoRole_InsectoidHerder;
+
+
 		public static PreceptDef VME_BonfirePrecept;
 
 		public static MemeDef VME_FireWorship;
@@ -101,16 +104,21 @@ namespace VanillaMemesExpanded
 
 		public static HistoryEventDef VME_AteAnimalProducts;
 
-
+		public static ThingDef VME_InsectNest;
 
 		public static TraitDef VME_Elder;
 		public static TraitDef VME_Time_Off;
 
 		public static ThoughtDef VME_Defeat_Dishonorable;
 		public static ThoughtDef VME_GotSomeLovin;
+		public static ThoughtDef VME_CheapTradingFair;
 
 		public static SoundDef VME_RitualSustainer_Orgy;
+		public static SoundDef VME_RitualSustainer_InsectoidHymn;
 
-		
+		public static AbilityDef VME_ConstructANest;
+
+
+
 	}
 }

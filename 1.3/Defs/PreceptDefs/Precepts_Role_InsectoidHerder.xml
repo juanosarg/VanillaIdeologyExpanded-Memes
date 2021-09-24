@@ -50,6 +50,7 @@
 		</roleDisabledWorkTags>
 		<grantedAbilities>
 			<li>VME_TameInsectoid</li>
+			<li>VME_ConstructANest</li>
 		</grantedAbilities>
 		
 	</PreceptDef>

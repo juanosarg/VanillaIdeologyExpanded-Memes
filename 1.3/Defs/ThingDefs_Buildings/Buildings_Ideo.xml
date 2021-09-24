@@ -83,10 +83,11 @@
 		<useHitPoints>true</useHitPoints>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<designationCategory>Misc</designationCategory>
-    <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
-    <thingCategories>
-      <li>BuildingsSecurity</li>
-    </thingCategories>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<uiIconScale>0.65</uiIconScale>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
 		<graphicData>
 			<graphicClass>Graphic_Random</graphicClass>
 			<texPath>Things/Building/Misc/MechanoidEffigy</texPath>
@@ -108,8 +109,46 @@
 			<Plasteel>50</Plasteel>
 			<Steel>5</Steel>
 		</costList>
-		
 	</ThingDef>
-	
-	
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>VME_InsectNest</defName>
+		<label>insect nest</label>
+		<description>A large, swollen hive that seems to be seeping high amounts of bubbling insectoid jelly but not incubating any insectoids themselves.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Misc/InsectNest/VIE_InsectNest</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.6</drawSize>
+		</graphicData>
+		<uiIconScale>0.65</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<fillPercent>0.5</fillPercent>
+		<statBases>
+			<MaxHitPoints>130</MaxHitPoints>
+			<Flammability>1.5</Flammability>
+		</statBases>
+		<pathCost>42</pathCost>
+		
+		<blockWind>true</blockWind>
+		<tickerType>Normal</tickerType>
+		<passability>PassThroughOnly</passability>
+		<killedLeavings>
+			<InsectJelly>30</InsectJelly>
+		</killedLeavings>
+		<comps>
+			
+			
+			<li Class="CompProperties_Spawner">
+				<thingToSpawn>InsectJelly</thingToSpawn>
+				<spawnCount>5</spawnCount>
+				<spawnIntervalRange>26000~30000</spawnIntervalRange>
+				<spawnMaxAdjacent>40</spawnMaxAdjacent>
+				<spawnForbidden>false</spawnForbidden>
+				<saveKeysPrefix>jelly</saveKeysPrefix>
+			</li>
+			
+			
+		</comps>
+	</ThingDef>
 </Defs>
