@@ -83,6 +83,7 @@ namespace VanillaMemesExpanded
 
 		public static MemeDef VME_FireWorship;
 
+		public static MemeDef VME_Astrology;
 
 		public static HistoryEventDef VME_Firefighting;
 
@@ -117,6 +118,8 @@ namespace VanillaMemesExpanded
 		public static SoundDef VME_RitualSustainer_InsectoidHymn;
 
 		public static AbilityDef VME_ConstructANest;
+
+		public static JobDef VME_DeconstructBuilding;
 
 
 

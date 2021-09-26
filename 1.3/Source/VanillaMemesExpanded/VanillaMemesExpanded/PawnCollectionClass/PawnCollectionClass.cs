@@ -27,7 +27,7 @@ namespace VanillaMemesExpanded
 
         public static Dictionary<Pawn, int> colonist_and_random_mood = new Dictionary<Pawn, int>();
 
-
+        public static HashSet<Thing> objectsToDeconstruct_InMap = new HashSet<Thing>();
 
 
         public static Pawn pawnThatIsTheLeaderNow;
@@ -154,6 +154,24 @@ namespace VanillaMemesExpanded
 
             colonist_and_random_mood[pawn] = mood;
 
+        }
+
+        public static void AddDeconstructibleObjectToMap(Thing thing)
+        {
+            bool flag = !objectsToDeconstruct_InMap.Contains(thing);
+            if (flag)
+            {
+                objectsToDeconstruct_InMap.Add(thing);
+            }
+        }
+
+        public static void RemoveDeconstructibleObjectFromMap(Thing thing)
+        {
+            bool flag = objectsToDeconstruct_InMap.Contains(thing);
+            if (flag)
+            {
+                objectsToDeconstruct_InMap.Remove(thing);
+            }
         }
 
 

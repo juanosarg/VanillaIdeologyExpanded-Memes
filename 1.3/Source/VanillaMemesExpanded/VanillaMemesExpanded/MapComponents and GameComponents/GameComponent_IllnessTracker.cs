@@ -49,14 +49,13 @@ namespace VanillaMemesExpanded
             tickCounter++;
             if ((tickCounter > tickInterval))
             {
-                Ideo ideo = Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo;
-                if (ideo.HasPrecept(InternalDefOf.VME_Illness_Exalted))
+                if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Illness_Exalted) != null) 
                 {
                     colonist_illness_tracker_backup = PawnCollectionClass.colonist_illness_tracker;
                     List<Pawn> listPawns = PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists;
                     foreach(Pawn p in listPawns)
                     {
-                        if (p.Ideo == ideo)
+                        if (p.Ideo.GetPrecept(InternalDefOf.VME_Illness_Exalted) != null)
                         {
                             PawnCollectionClass.AddColonistToIllnessList(p,0);
 
@@ -79,7 +78,7 @@ namespace VanillaMemesExpanded
 
                 }
 
-                if (ideo.HasPrecept(InternalDefOf.VME_Illness_TimeOff))
+                if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Illness_TimeOff) != null)
                 {
                     
                     List<Pawn> listPawns = PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists;

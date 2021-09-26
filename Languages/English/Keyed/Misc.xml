@@ -15,4 +15,11 @@
 	<VME_AbilityNeedsRoof>This ability needs to target an empty spot under mountain roof.</VME_AbilityNeedsRoof>
 	<VME_AbilityNeedsSpotEmpty>This ability needs to target an empty spot.</VME_AbilityNeedsSpotEmpty>
 	<VME_AbilityCaravanWillArrive>A trader caravan has been attracted to your settlement and will arrive in approximately a day.</VME_AbilityCaravanWillArrive>
+	
+	<VME_DeconstructBuildingLabel>Deconstruct building</VME_DeconstructBuildingLabel>
+	<VME_DeconstructBuildingDesc>Deconstruct building</VME_DeconstructBuildingDesc>
+	<VME_CancelDeconstructBuildingLabel>Cancel deconstruct building</VME_CancelDeconstructBuildingLabel>
+	<VME_CancelDeconstructBuildingDesc>Cancel deconstruct building</VME_CancelDeconstructBuildingDesc>
+	
+	
 </LanguageData>

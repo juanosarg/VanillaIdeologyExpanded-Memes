@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<MemeDef>
+		<defName>VME_SweetTeeth</defName>
+		<label>sweet teeth</label>
+		
+		<description>Yummy yummy.</description>
+		<iconPath>UI/Memes/VME_AlphaMeme</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>2</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->forced</li>
+				<li>memeAdjective->strict</li>
+				<li>memeHyphenPrefix->extreme</li>
+				<li>memeConcept->absolute truth</li>
+				<li>memeLeaderNoun->high inquisitor</li>
+				<li>memeMoralist->inquisitor</li>
+				<li>memeMoralist->crusader</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_ViolentConversion)        ->[deity0_name] anointed a few crusaders among mortals to carry out [deity0_possessive] will.</li>
+					<li>episode(uses=1,tag=meme_ViolentConversion)  ->[deity0_name] said to all the [memberNamePlural], "The infidel shall accept my words, or perish."</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_ViolentConversion)           ->[memberNamePlural] built a great [altarName] on the [place_summary] [place_name], so that many would be bent to [deity0_name]'s will.</li>
+					<li>conflict(tag=meme_ViolentConversion)        ->A coward [foeLeader], seeking to deny the will of [deity0_name], told [foeLeader_possessive] [foeSoldiers] to cut out the tongues of any who speak of the [deity0_type].</li>
+					<li>founderJoin(tag=meme_ViolentConversion)     ->[deity0_name] blessed a [place_job] named [founderName] with [deity0_possessive] unwavering resolve, and none could turn away when [founder_pronoun] spoke.</li>
+					<li>victory(tag=meme_ViolentConversion)         ->[founderName] slaughtered many of the [foeSoldiers] and mercilessly tortured the survivors to show [deity0_name]'s power. Their cries of anguish will forever remind us of the destiny awaiting those who deny [deity0_name].</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_ViolentConversion)           ->Our founder [founderName] was a great revolutionary and a genious, converting thousands as [founder_pronoun] traveled between the cities.</li>
+					<li>story(uses=1,tag=meme_ViolentConversion)    ->The believers moved between cities and institutions, spreading word of the new order and fighting against those who would disagree.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_ViolentConversion)         ->In all my years spreading our philosophy, I learned one lesson that stands over all:</li>
+					<li>lesson(tag=meme_ViolentConversion)              ->there is no Truth but Our Truth. We can't let anyone stand in our way. They can either agree, or die</li>
+					<li>lessonReinforcement(tag=meme_ViolentConversion) ->This is the fact we need to spread, and spread, and spread. By force, if necessary.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_ViolentConversion)    ->The archotechs announce their presence from the sky, and in the mind, and their existance MUST become an universal truth.</li>
+					<li>archistFact(tag=meme_ViolentConversion)     ->Archotechs must be obeyed, and it is our reponsibility to bend others to their will.</li>
+					<li>archistProphecy(tag=meme_ViolentConversion) ->[inTheEnd], the archotechs will voice their final wisdom to the holder of the [relic0_name]. Anyone who hasn't listened must be purged.</li>
+					<!-- animist -->
+					<li>animistFact(tag=meme_ViolentConversion)     ->The spirits want to be known, but only speak to a few. We will make anyone who stands in our way fear the will of the spirits.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_ViolentConversion)->[itIsSaid] we will learn from them, and use that knowledge to purge the universe of filthy infidels.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_ViolentConversion)->We will acquire their eldritch knowledge, and use it to purge the universe of filthy infidels.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_ViolentConversion)->With such knowledge, we will have a clear advantage over the rest of this planet's inhabitants, and use it to purge it of filthy infidels.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_ViolentConversion)->There will be nothing left. The filthy infidels will be purged by atomic fire and deadly disease.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_ViolentConversion)->As you know, the mission of our Company is way too important to let others get in our way, so we are preparing a hostile merger to get rid of these... undesireable competitors.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		
+		<symbolPacks>
+			<li>
+				<ideoName>Strictness</ideoName>
+				<theme>strict</theme>
+				<adjective>strict</adjective>
+				<member>strict</member>
+			</li>
+			
+		</symbolPacks>
+	</MemeDef>
+
+</Defs>

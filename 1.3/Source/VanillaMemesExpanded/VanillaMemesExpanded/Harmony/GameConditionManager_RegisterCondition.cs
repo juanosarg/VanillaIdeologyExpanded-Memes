@@ -21,14 +21,16 @@ namespace VanillaMemesExpanded
         static void SendRandomMood(GameCondition cond)
         {
 
-            if (cond?.def == GameConditionDefOf.Eclipse) { }
-            foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists)
+            if (cond?.def == GameConditionDefOf.Eclipse)
             {
-                System.Random random = new System.Random();
-                int randomMood = random.Next(0, 9);
-                PawnCollectionClass.AddColonistAndRandomMood(pawn, randomMood);
-                PawnCollectionClass.SetColonistAndRandomMood(pawn, randomMood);
+                foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists)
+                {
+                    System.Random random = new System.Random();
+                    int randomMood = random.Next(0, 9);
+                    PawnCollectionClass.AddColonistAndRandomMood(pawn, randomMood);
+                    PawnCollectionClass.SetColonistAndRandomMood(pawn, randomMood);
 
+                }
             }
         }
 

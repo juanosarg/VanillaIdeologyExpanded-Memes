@@ -60,7 +60,7 @@
 		<defName>VME_Leader_BestCrafter</defName>
 		<issue>VME_Leader</issue>
 		<label>best crafter</label>
-		<description>Our most skilled artisan is our leader, through their keen eye and delicate touch our workshops will sing the song of creation.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - The leader role will periodically be forced upon the highest level crafter in the colony.</description>
+		<description>Our most skilled artisan is our leader, through their keen eye and delicate touch our workshops will sing the song of creation.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - The leader role will periodically be forced upon the highest level crafter in the colony (this will only work if the ideology is the primary one).</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>40</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -77,7 +77,7 @@
 		<defName>VME_Leader_BestFighter</defName>
 		<issue>VME_Leader</issue>
 		<label>best fighter</label>
-		<description>Martial expertise, be it with a blade or spear is a show of strength and courage. Our most talented fighter will be our leader, no questions asked.</description>
+		<description>Martial expertise, be it with a blade or spear is a show of strength and courage. Our most talented fighter will be our leader, no questions asked (this will only work if the ideology is the primary one).</description>
 		<impact>High</impact>
 		<displayOrderInIssue>35</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>

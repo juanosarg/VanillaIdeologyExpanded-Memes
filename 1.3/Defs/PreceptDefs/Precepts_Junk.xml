@@ -11,7 +11,7 @@
 		<defName>VME_Junk_Beautiful</defName>
 		<issue>VME_Junk</issue>
 		<label>beautiful</label>
-		<description>The machinations of old are breath-taking, and their weathering should be viewed as art. It's wonderful to live surrounded by things discarded by others.</description>
+		<description>The machinations of old are breath-taking, and their weathering should be viewed as art. It's wonderful to live surrounded by things discarded by others.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Ancient junk buildings can be uninstalled and placed again as needed.</description>
 		<impact>High</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -34,12 +34,12 @@
 			<li>
 				<label>no junk</label>
 				<description>It has been too long since I’ve seen junk.</description>
-				<baseMoodEffect>-5</baseMoodEffect>
+				<baseMoodEffect>-15</baseMoodEffect>
 			</li>
 			<li>
 				<label>very little junk</label>
 				<description>This area is way too sparse, I miss seeing the junk.</description>
-				<baseMoodEffect>-2</baseMoodEffect>
+				<baseMoodEffect>-10</baseMoodEffect>
 			</li>
 			<li>
 				<label>small junk</label>

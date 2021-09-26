@@ -3,6 +3,7 @@ using RimWorld;
 using Verse;
 using UnityEngine;
 using System.Collections.Generic;
+using System.Linq;
 
 
 namespace VanillaMemesExpanded
@@ -48,8 +49,8 @@ namespace VanillaMemesExpanded
             {
 
               
-                Ideo ideo = Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo;
-                if (ideo.HasPrecept(InternalDefOf.VME_Mood_Shared))
+                
+                if (Current.Game.World.factionManager.OfPlayer.ideos.HasAnyIdeoWithMeme(InternalDefOf.VME_Astrology))
                 {
                    
                     float totalMood = 0;

@@ -53,8 +53,7 @@ namespace VanillaMemesExpanded
             {
                 ticksWithoutTradingbackup=PawnCollectionClass.ticksWithoutTrading;
 
-                Ideo ideo = Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo;
-                if (ideo.HasPrecept(InternalDefOf.VME_Trading_Required))
+                if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Trading_Required) != null) 
                 {
                     if (PawnCollectionClass.ticksWithoutTrading < int.MaxValue - tickInterval)
                     {

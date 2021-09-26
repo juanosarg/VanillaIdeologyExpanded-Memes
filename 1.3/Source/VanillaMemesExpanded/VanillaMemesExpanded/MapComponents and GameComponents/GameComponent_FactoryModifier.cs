@@ -18,11 +18,11 @@ namespace VanillaMemesExpanded
 
         public override void FinalizeInit()
         {
-            if (Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo.HasPrecept(InternalDefOf.VME_AutomationEfficiency_Increased))
+            if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_AutomationEfficiency_Increased) != null)
             {
                 ItemProcessor.FactoryMultiplierClass.FactoryPreceptMultiplier = 0.75f;
             }
-            if (Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo.HasPrecept(InternalDefOf.VME_AutomationEfficiency_Decreased))
+            if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_AutomationEfficiency_Decreased) != null)
             {
                 ItemProcessor.FactoryMultiplierClass.FactoryPreceptMultiplier = 1.5f;
             }

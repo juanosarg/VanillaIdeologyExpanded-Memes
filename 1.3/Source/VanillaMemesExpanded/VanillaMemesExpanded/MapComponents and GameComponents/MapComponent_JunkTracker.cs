@@ -49,9 +49,8 @@ namespace VanillaMemesExpanded
             if ((tickCounter > tickInterval))
             {
 
-              
-                Ideo ideo = Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo;
-                if (ideo.HasPrecept(InternalDefOf.VME_Junk_Beautiful))
+                if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Junk_Beautiful) != null)
+                   
                 {
 
                     colonist_junk_tracker_backup = PawnCollectionClass.colonist_junk_tracker;
@@ -59,7 +58,7 @@ namespace VanillaMemesExpanded
                     foreach (Pawn pawn in map.mapPawns.FreeColonistsSpawned)
                     {
                         int totalNumberOfJunk = 0;
-                        int num = GenRadial.NumCellsInRadius(11.9f);
+                        int num = GenRadial.NumCellsInRadius(5.9f);
                         for (int i = 0; i < num; i++)
                         {
                             IntVec3 intVec = pawn.Position + GenRadial.RadialPattern[i];

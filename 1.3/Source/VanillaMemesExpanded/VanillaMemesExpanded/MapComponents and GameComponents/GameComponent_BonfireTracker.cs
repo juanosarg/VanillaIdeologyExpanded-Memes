@@ -49,8 +49,7 @@ namespace VanillaMemesExpanded
             tickCounter++;
             if ((tickCounter > tickInterval))
             {
-                Ideo ideo = Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo;
-                if (ideo.HasPrecept(InternalDefOf.VME_BonfirePrecept))
+                if(Current.Game.World.factionManager.OfPlayer.ideos.HasAnyIdeoWithMeme(InternalDefOf.VME_FireWorship))
                 {
                     foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists)
                     {

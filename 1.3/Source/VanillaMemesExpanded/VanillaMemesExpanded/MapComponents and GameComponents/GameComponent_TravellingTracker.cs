@@ -58,9 +58,7 @@ namespace VanillaMemesExpanded
                 colonist_caravan_tracker_backup=PawnCollectionClass.colonist_caravan_tracker;
                 ticksWithoutAbandoningbackup = PawnCollectionClass.ticksWithoutAbandoning;
 
-                Ideo ideo = Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo;
-
-                if (ideo.HasPrecept(InternalDefOf.VME_PermanentBases_Despised))
+                if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_PermanentBases_Despised) != null)
                 {
 
                     int num = 0;
@@ -81,12 +79,15 @@ namespace VanillaMemesExpanded
                     }
 
                 }
-                if (ideo.HasPrecept(InternalDefOf.VME_Travel_Desired)|| ideo.HasPrecept(InternalDefOf.VME_Travel_Despised))
+                if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Travel_Desired) != null
+                    || Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Travel_Despised) != null)
+
+                    
                 {
                     List<Pawn> listPawns = PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists;
                     foreach (Pawn p in listPawns)
                     {
-                        if (p.Ideo == ideo)
+                        if (p.Ideo.GetPrecept(InternalDefOf.VME_Travel_Desired) != null || p.Ideo.GetPrecept(InternalDefOf.VME_Travel_Despised) != null)
                         {
 
 

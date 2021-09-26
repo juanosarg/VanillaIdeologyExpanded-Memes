@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+
+
+	
+	<WorkGiverDef>
+		<defName>VME_DeconstructJunk</defName>
+		<label>uninstall ancient junk</label>
+		<giverClass>VanillaMemesExpanded.WorkGiver_DeconstructBuilding</giverClass>
+		<workType>Hauling</workType>
+		<verb>uninstall ancient junk</verb>
+		<gerund>uninstalling ancient junk</gerund>
+		<priorityInType>80</priorityInType>
+		<requiredCapacities>
+		  <li>Manipulation</li>
+		</requiredCapacities>
+    </WorkGiverDef>
+	
+
+
+
+
+</Defs>

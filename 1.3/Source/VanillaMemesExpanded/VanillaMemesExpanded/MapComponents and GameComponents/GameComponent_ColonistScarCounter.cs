@@ -54,11 +54,9 @@ namespace VanillaMemesExpanded
             if ((tickCounter > tickInterval))
             {
                 colonist_scar_counter_backup = PawnCollectionClass.colonist_scar_counter;
-               
 
-                Ideo ideo = Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo;
 
-                if (ideo.HasPrecept(InternalDefOf.VME_Scars_Honorable))
+                if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Scars_Honorable)!=null)
                 {
 
                     foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists)

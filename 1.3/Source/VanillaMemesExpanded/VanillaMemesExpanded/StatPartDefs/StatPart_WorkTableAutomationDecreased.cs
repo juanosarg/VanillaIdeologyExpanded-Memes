@@ -35,7 +35,7 @@ namespace VanillaMemesExpanded
 		{
 
 			CompPowerTrader compPowerTrader = th.TryGetComp<CompPowerTrader>();
-			return compPowerTrader != null && Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo.HasPrecept(InternalDefOf.VME_AutomationEfficiency_Decreased);
+			return compPowerTrader != null && Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_AutomationEfficiency_Decreased)!=null;
 		}
 	}
 }

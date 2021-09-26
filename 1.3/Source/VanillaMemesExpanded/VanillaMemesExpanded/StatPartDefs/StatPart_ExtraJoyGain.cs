@@ -35,7 +35,7 @@ namespace VanillaMemesExpanded
 		{
 			
 			
-			return Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo.HasPrecept(InternalDefOf.VME_Recreation_Loved);
+			return Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Recreation_Loved)!=null;
 		}
 	}
 }

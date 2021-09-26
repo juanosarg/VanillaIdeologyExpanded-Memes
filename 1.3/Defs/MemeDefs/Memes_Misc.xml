@@ -1096,6 +1096,9 @@
 			<li>
 				<li>VME_TatteredApparel_DontCare</li>
 			</li>
+			<li>
+				<li>VME_JunkDeconstructionYield_High</li>
+			</li>
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -1894,6 +1897,11 @@
 				<member>nomad</member>
 			</li>
 		</symbolPacks>
+		<modExtensions>
+			<li Class="VanillaMemesExpanded.ExtendedMemeProperties">
+				<removedDesignators><li>Bed</li></removedDesignators>
+			</li>
+		</modExtensions>
 	</MemeDef>
 	<MemeDef>
 		<defName>VME_BloodCourt</defName>

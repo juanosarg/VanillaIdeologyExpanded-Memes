@@ -20,8 +20,8 @@ namespace VanillaMemesExpanded
         [HarmonyPostfix]
         static void IncreaseTreeCuttingYield(Plant __instance,ref int __result)
         {
-            if ((__instance.def.plant.IsTree && Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo.HasPrecept(InternalDefOf.VME_WoodcuttingYield_High))||
-                (__instance.IsCrop && Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo.HasPrecept(InternalDefOf.VME_FarmingYield_High)))
+            if ((__instance.def.plant.IsTree && Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_WoodcuttingYield_High)!=null)||
+                (__instance.IsCrop && Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_FarmingYield_High) != null))
             {
                 __result = GenMath.RoundRandom(__result* 1.1f);
 
