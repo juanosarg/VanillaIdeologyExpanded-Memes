@@ -1897,11 +1897,7 @@
 				<member>nomad</member>
 			</li>
 		</symbolPacks>
-		<modExtensions>
-			<li Class="VanillaMemesExpanded.ExtendedMemeProperties">
-				<removedDesignators><li>Bed</li></removedDesignators>
-			</li>
-		</modExtensions>
+		
 	</MemeDef>
 	<MemeDef>
 		<defName>VME_BloodCourt</defName>
