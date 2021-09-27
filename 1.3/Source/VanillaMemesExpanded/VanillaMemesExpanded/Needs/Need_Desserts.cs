@@ -19,6 +19,33 @@ namespace VanillaMemesExpanded
 				return 0f;
 			}
 		}
+		public DessertNeedCategory CurCategory
+		{
+			get
+			{
+				if (this.CurLevel < 0.1f)
+				{
+					return DessertNeedCategory.Craving;
+				}
+				if (this.CurLevel < 0.2f)
+				{
+					return DessertNeedCategory.Desiring;
+				}
+				if (this.CurLevel < 0.3f)
+				{
+					return DessertNeedCategory.Wanting;
+				}
+				if (this.CurLevel < 0.7f)
+				{
+					return DessertNeedCategory.RecentlyEaten;
+				}
+				if (this.CurLevel < 0.9f)
+				{
+					return DessertNeedCategory.Full;
+				}
+				return DessertNeedCategory.CompletelyFull;
+			}
+		}
 
 		public override bool ShowOnNeedList
 		{

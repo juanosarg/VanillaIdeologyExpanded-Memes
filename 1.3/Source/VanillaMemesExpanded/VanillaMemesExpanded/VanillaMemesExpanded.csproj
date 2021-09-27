@@ -317,13 +317,15 @@
     <Compile Include="Comps\CompTimedFireOverlay.cs" />
     <Compile Include="DefOfs\InternalDefOfs.cs" />
     <Compile Include="Defs\SupportedDrinksForPreceptDefs.cs" />
+    <Compile Include="Enums\DessertNeedCategory.cs" />
     <Compile Include="Harmony\CaravanExitMapUtility_AddCaravanExitTaleIfShould.cs" />
     <Compile Include="Harmony\GenLeaving_GetBuildingResourcesLeaveCalculator.cs" />
     <Compile Include="Harmony\CompDrug_PostIngested.cs" />
     <Compile Include="Harmony\GameConditionManager_RegisterCondition.cs" />
     <Compile Include="Harmony\GameCondition_Aurora_Init.cs" />
     <Compile Include="Harmony\GenLeavings_DoLeavingsFor.cs" />
-    <Compile Include="Harmony\JoyUtility_JoyTickCheckEnd.cs" />
+    <Compile Include="Harmony\Need_Joy_GainJoy.cs" />
+    <Compile Include="Harmony\PlantUtility_CanSowOnGrower.cs" />
     <Compile Include="Harmony\Need_Joy_FallPerInterval.cs" />
     <Compile Include="Harmony\RitualObligationTargetWorker_IdeoBuildingOrRitualSpot_CanUseTargetInternal.cs" />
     <Compile Include="Harmony\TaleUtility_Notify_PawnDied.cs" />
@@ -363,6 +365,7 @@
     <Compile Include="MapComponents and GameComponents\GameComponent_MoodFromStars.cs" />
     <Compile Include="Needs\Need_Desserts.cs" />
     <Compile Include="PawnCollectionClass\PawnCollectionClass.cs" />
+    <Compile Include="PreceptComps\PreceptComp_AddDessertNeed.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rituals\Behaviours\RitualBehaviorWorker_InsectoidHymn.cs" />
     <Compile Include="Rituals\Behaviours\RitualBehaviorWorker_Orgy.cs" />
@@ -394,6 +397,7 @@
     <Compile Include="StatPartDefs\StatPart_WorkTableAutomation.cs" />
     <Compile Include="StatPartDefs\StatPart_WorkTableAutomationDecreased.cs" />
     <Compile Include="StatPartDefs\StatPart_WorkTableManualUnefficient.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_NeedSweets.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_Alcohol_MildAbstinence.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_Aurora.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_HasNonNaturalProsthetic.cs" />

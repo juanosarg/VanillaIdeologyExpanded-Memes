@@ -76,7 +76,7 @@
 		<defName>VME_Elders_Holy</defName>
 		<issue>VME_Elders</issue>
 		<label>holy</label>
-		<description>Our elders are to be respected and revered, and never shall we expect them to do hard work.</description>
+		<description>Our elders are to be respected and revered, and never shall we expect them to do hard work.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists older than 65 will not do dumb labor.</description>
 		<impact>High</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>

@@ -3,11 +3,11 @@
 <ModMetaData>
 	<name>Vanilla Ideology Expanded - Memes</name>
 	<author>Oskar Potocki, Sarg Bjornson</author>
-	<url></url>
-    <supportedVersions>
-        
+	<url/>
+	<supportedVersions>
+
 		<li>1.3</li>
-    </supportedVersions>
+	</supportedVersions>
 	<modDependencies>
 		<li>
 			<packageId>brrainz.harmony</packageId>
@@ -22,7 +22,12 @@
 			<downloadUrl>https://github.com/AndroidQuazar/VanillaExpandedFramework</downloadUrl>
 		</li>
 	</modDependencies>
+	<loadAfter>
+		<li>VanillaExpanded.VCookE</li>
+		<li>VanillaExpanded.VCEF</li>
+		<li>sarg.alphaanimals</li>
+	</loadAfter>
 	<packageId>VanillaExpanded.VMemesE</packageId>
-    <description>Can I haz cheeseburger?
-</description>
+	<description>Can I haz cheeseburger?
+	</description>
 </ModMetaData>
