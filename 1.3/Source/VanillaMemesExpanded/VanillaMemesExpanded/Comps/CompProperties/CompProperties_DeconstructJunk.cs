@@ -18,13 +18,13 @@ namespace VanillaMemesExpanded
 
 		public string buttonDesc = "VME_DeconstructBuildingDesc";
 
-		public string buttonIcon = "UI/Issues/VME_AlphaIssue";
+		public string buttonIcon = "UI/Abilities/UninstallAncientJunk";
 
 		public string buttonCancelLabel = "VME_CancelDeconstructBuildingLabel";
 
 		public string buttonCancelDesc = "VME_CancelDeconstructBuildingDesc";
 
-		public string buttonCancelIcon = "UI/Issues/VME_AlphaIssue";
+		public string buttonCancelIcon = "UI/Abilities/CancelUninstallAncientJunk";
 
 		public ThingDef defToPopUpMinified;
 

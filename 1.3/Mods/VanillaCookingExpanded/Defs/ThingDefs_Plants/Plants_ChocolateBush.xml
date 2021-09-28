@@ -13,8 +13,8 @@
       <Nutrition>0.05</Nutrition>
     </statBases>
     <graphicData>
-      <texPath>Things/Plant/VME_CocoaBush</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Misc/CocoaBush</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <altitudeLayer>Item</altitudeLayer>
     <selectable>true</selectable>

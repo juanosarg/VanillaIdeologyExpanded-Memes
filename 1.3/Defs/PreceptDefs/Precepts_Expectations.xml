@@ -7,7 +7,7 @@
 	<IssueDef>
 		<defName>VME_Expectations</defName>
 		<label>expectations</label>
-		<iconPath>UI/Issues/VME_AlphaIssue</iconPath>
+		<iconPath>UI/Issues/Expectations</iconPath>
 	</IssueDef>
 
 	<!-- Precepts -->

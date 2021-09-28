@@ -6,7 +6,7 @@
 		<label>sweet teeth</label>
 		
 		<description>Placeholder.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Unlocks a "Desserts Need" that will make colonists happier if they consume desserts and chocolate regularly\n - Unlocks sowing the cocoa bush, a cocoa producing plant that is more efficient than the tree and can be grown indoors and on hydroponics</description>
-		<iconPath>UI/Memes/VME_AlphaMeme</iconPath>
+		<iconPath>UI/Memes/SweetTeeth</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>
 		<generalRules>

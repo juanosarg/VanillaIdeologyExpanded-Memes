@@ -6,7 +6,7 @@
 		<label>cultured</label>
 		
 		<description>Placeholder.</description>
-		<iconPath>UI/Memes/VME_AlphaMeme</iconPath>
+		<iconPath>UI/Memes/Cultured</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>1</impact>
 		<generalRules>

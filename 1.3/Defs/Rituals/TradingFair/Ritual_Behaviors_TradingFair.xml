@@ -46,7 +46,7 @@
 		
       </li>
 	  <li>
-	    <visualEffectDef>Duel</visualEffectDef>
+	    <visualEffectDef>VME_TradingFairVisuals</visualEffectDef>
         <defaultDuty>VME_Wander</defaultDuty>
 		<essential>True</essential>
        

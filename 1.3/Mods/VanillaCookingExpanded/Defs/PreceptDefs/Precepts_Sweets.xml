@@ -7,7 +7,7 @@
 	<IssueDef>
 		<defName>VME_Sweets</defName>
 		<label>sweets</label>
-		<iconPath>UI/Issues/VME_AlphaIssue</iconPath>
+		<iconPath>UI/Issues/Sweets</iconPath>
 	</IssueDef>
 
 	<HistoryEventDef>

@@ -3,10 +3,10 @@
 	
 	<MemeDef>
 		<defName>VME_Angler</defName>
-		<label>angler</label>
+		<label>fishing culture</label>
 		
 		<description>Placeholder.</description>
-		<iconPath>UI/Memes/VME_AlphaMeme</iconPath>
+		<iconPath>UI/Memes/FishCulture</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>
 		<exclusionTags>
