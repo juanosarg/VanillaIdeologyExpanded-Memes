@@ -1298,6 +1298,7 @@
 		<impact>3</impact>
 		<exclusionTags>
 			<li>VME_VeganVsRancher</li>
+			<li>VME_VeganVsFishing</li>
 		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
@@ -1888,6 +1889,13 @@
 			<li>
 				<li>VME_Travel_Desired</li>
 			</li>
+			<li>
+				<li>VME_Ranching_Nomadic</li>
+			</li>
+			<li>
+				<li>RoughLiving_Welcomed</li>
+			</li>
+			
 		</requireOne>
 		<symbolPacks>
 			<li>

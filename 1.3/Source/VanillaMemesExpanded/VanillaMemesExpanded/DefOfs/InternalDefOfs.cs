@@ -78,7 +78,6 @@ namespace VanillaMemesExpanded
 
 		public static PreceptDef VME_IdeoRole_InsectoidHerder;
 
-
 		public static PreceptDef VME_BonfirePrecept;
 
 		public static MemeDef VME_FireWorship;

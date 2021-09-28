@@ -58,12 +58,21 @@ namespace VanillaMemesExpanded
 
             }
 
+            if (worker.Ideo.HasPrecept(DefDatabase<PreceptDef>.GetNamedSilentFail("VME_BookWriting_Exalted")))
+            {
+                if (product.HasThingCategory(DefDatabase<ThingCategoryDef>.GetNamedSilentFail("VBE_Books"))){
+                    Find.HistoryEventsManager.RecordEvent(new HistoryEvent(DefDatabase<HistoryEventDef>.GetNamedSilentFail("VME_WroteBook"), worker.Named(HistoryEventArgsNames.Doer)), true);
+
+                }
+            }
 
 
 
 
+
+
+            }
         }
-    }
 
 
 

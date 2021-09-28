@@ -9,6 +9,10 @@
 		<iconPath>UI/Memes/VME_AlphaMeme</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>
+		<exclusionTags>
+			
+			<li>VME_VeganVsFishing</li>
+		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->piscatorial</li>

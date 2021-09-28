@@ -38,6 +38,28 @@
     </statOffsets>
   </PreceptDef>
 
+ <PreceptDef>
+    <defName>VME_Ranching_Nomadic</defName>
+    <issue>Ranching</issue>
+    <label>nomadic</label>
+    <description>Placeholder.</description>
+    <impact>Medium</impact>
+	<displayOrderInIssue>30</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <requiredMemes>
+      <li>VME_Nomad</li>
+    </requiredMemes>
+   
+    <statFactors>
+    
+      <TameAnimalChance>1.25</TameAnimalChance>
+	  <TrainAnimalChance>1.25</TrainAnimalChance>
+    
+    </statFactors>
+    
+  </PreceptDef>
+
+
   <!-- Thoughts -->
 
   <!-- Ranching animal mass per capita -->

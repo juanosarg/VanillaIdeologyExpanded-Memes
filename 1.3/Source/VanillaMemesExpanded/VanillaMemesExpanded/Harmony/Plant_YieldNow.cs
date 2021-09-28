@@ -27,7 +27,19 @@ namespace VanillaMemesExpanded
 
             }
 
-         
+            if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_PermanentBases_Despised) != null) 
+            {
+                if(!__instance.def.plant.IsTree && __instance.IsCrop)
+                {
+                    __result = GenMath.RoundRandom(__result * 0.9f);
+                }
+                if (!__instance.def.plant.IsTree && !__instance.IsCrop)
+                {
+                    __result = GenMath.RoundRandom(__result * 1.4f);
+                }
+
+
+            }
 
 
 
