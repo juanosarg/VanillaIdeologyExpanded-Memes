@@ -101,13 +101,7 @@
 				<baseMoodEffect>1</baseMoodEffect>
 			</li>
 		</stages>
-		<modExtensions>
-			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
-				<hediffToAffect>VCE_Diabetes</hediffToAffect>
-				<partToAffect>Body</partToAffect>
-				<percentage>0.005</percentage>
-			</li>
-		</modExtensions>
+		
 	</ThoughtDef>
 	
 	<ThoughtDef>
@@ -122,13 +116,7 @@
 				<baseMoodEffect>2</baseMoodEffect>
 			</li>
 		</stages>
-		<modExtensions>
-			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
-				<hediffToAffect>VCE_Diabetes</hediffToAffect>
-				<partToAffect>Body</partToAffect>
-				<percentage>0.015</percentage>
-			</li>
-		</modExtensions>
+		
 	</ThoughtDef>
 	
 	<ThoughtDef>
@@ -143,13 +131,7 @@
 				<baseMoodEffect>5</baseMoodEffect>
 			</li>
 		</stages>
-		<modExtensions>
-			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
-				<hediffToAffect>VCE_Diabetes</hediffToAffect>
-				<partToAffect>Body</partToAffect>
-				<percentage>0.025</percentage>
-			</li>
-		</modExtensions>
+		
 	</ThoughtDef>
 	
 	<ThoughtDef>
@@ -164,13 +146,7 @@
 				<baseMoodEffect>7</baseMoodEffect>
 			</li>
 		</stages>
-		<modExtensions>
-			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
-				<hediffToAffect>VCE_Diabetes</hediffToAffect>
-				<partToAffect>Body</partToAffect>
-				<percentage>0.035</percentage>
-			</li>
-		</modExtensions>
+		
 	</ThoughtDef>
 	
 	<ThoughtDef>
