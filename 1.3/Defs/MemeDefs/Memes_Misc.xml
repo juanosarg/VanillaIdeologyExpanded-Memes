@@ -2323,4 +2323,90 @@
 			</li>
 		</symbolPacks>
 	</MemeDef>
+	<MemeDef>
+		<defName>VME_Anonymity</defName>
+		<label>anonymity</label>
+		<description>Placeholder.</description>
+		<iconPath>UI/Memes/PartyLife</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>2</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeCreed->anonymity</li>
+				<li>memeAdjective->anonymous</li>
+				<li>memeAdjective->mysterious</li>
+				<li>memeAdjective->nameless</li>
+				<li>memeAdjective->inconspicuous</li>
+				<li>memeConcept->privacy</li>
+				<li>memeConcept->anonymity</li>
+				<li>memeLeaderNoun->anon</li>
+				
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Anonymity)        ->[deity0_name] didn't speak to [deity0_possessive] followers, and instead just looked at them sternly. They understood the need for complete silence.</li>
+					<li>episode(uses=1,tag=meme_Anonymity)  ->[deity0_name]'s utter silence was interpreted as a portent, and we have stayed silent since then.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Anonymity)           ->On the [place_summary] [place_name], the [memberNamePlural] built a giant temple erected in complete silence, a mute testament to [deity0_name]'s will.</li>
+					<li>conflict(tag=meme_Anonymity)        ->An evil [foeLeader] despised this silence, and wanted to plunge the world into a multitudinous cacophony. [foeLeader_pronoun] wanted to tear down the temple and watch it burn.</li>
+					<li>founderJoin(tag=meme_Anonymity)     ->[founderName], the Silent One, would have nothing of this heressy, and plunged a poisoned blade into the heart of the [foeLeader] in the dead of night.</li>
+					<li>victory(tag=meme_Anonymity)         ->[founderName] didn't want any accolades for [founder_possessive] acts, for [founder_pronoun] just wanted to be left alone.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Anonymity)           ->We are not really sure who [founderName] actually was. Perhaps [founder_pronoun] didn't even exist, and we just have a faint recollection of a mythology of sorts. In any case, it is ascribed to [founder_objective] that a solitary life of contemplation and isolation is a goal in and of itself.</li>
+					<li>story(uses=1,tag=meme_Anonymity)    ->Anonymity is a shield from the tyranny of the majority.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Anonymity)         ->Let me put down these words on paper, for relaying them to you by voice is repulsive:</li>
+					<li>lesson(tag=meme_Anonymity)              ->you never appreciate your anonymity until you don't have it anymore</li>
+					<li>lessonReinforcement(tag=meme_Anonymity) ->Wanting to be unknown, unpossessed by others' knowledge of you. That is freedom.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Anonymity)    ->The archotechs are unknown and unknowable, shielded behind the ultimate mask: transcendence.</li>
+					<li>archistFact(tag=meme_Anonymity)     ->The archotechs ask: "What is the purpose of civilization if not to grant the greatest of gifts, anonymity?".</li>
+					<li>archistProphecy(tag=meme_Anonymity) ->[inTheEnd], only those who spend their lives in anonymity will be allowed to transcend.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Anonymity)    ->The spirits do not care about our meaningless identities, and would prefer us to stay anonymous.</li>
+					<li>animistFact(tag=meme_Anonymity)     ->They show us that a solitary life of contemplation and isolation is a goal in and of itself.</li>
+					<li>animistProphecy(tag=meme_Anonymity) ->[itIsSaid] only those who spend their lives in solitude and silence can truly commune with the spirits.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Anonymity)->[itIsSaid] we will fade into anonymity like a myriad ants, part of a whole but insignificant on their own.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Anonymity)->It is madness to raise our voice in defiance of these entities, and thus we shall remain silent, isolated, lest we attract their unwanted attention.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Anonymity)->Such occult knowledge can only be discovered through careful meditation. And perhaps we will discover that a solitary life of contemplation and isolation is a goal in and of itself.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Anonymity)->The world will burn, and we shall be the faceless and anonymous bringers of its downfall.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Anonymity)->Lately we have had multiple instances of people using "Reply All" on company e-mails. Let me remind you that this is unnecessary and leads to confusion.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>VME_SocialInteractions_Disallowed</li>
+			</li>
+			<li>
+				<li>VME_Anonymity_Required</li>
+			</li>
+			
+		</requireOne>
+		<selectOneOrNone>
+			<noneChance>0</noneChance>
+			<preceptThingPairs>
+				<li>
+					<precept>ApparelDesired_Strong_Subordinate</precept>
+					<thing>Apparel_VisageMask</thing>
+				</li>
+			</preceptThingPairs>
+		</selectOneOrNone>
+		<symbolPacks>
+			<li>
+				<ideoName>Anonymity</ideoName>
+				<theme>anonymity</theme>
+				<adjective>anonymous</adjective>
+				<member>anon</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
 </Defs>

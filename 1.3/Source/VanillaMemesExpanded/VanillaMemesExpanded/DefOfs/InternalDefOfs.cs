@@ -80,6 +80,9 @@ namespace VanillaMemesExpanded
 
 		public static PreceptDef VME_BonfirePrecept;
 
+		public static PreceptDef VME_SocialInteractions_Disallowed;
+		public static PreceptDef VME_Anonymity_Required;
+
 		public static MemeDef VME_FireWorship;
 
 		public static MemeDef VME_Astrology;

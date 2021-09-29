@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <NeedDef>
+    <defName>VME_Anonymity</defName>
+    <needClass>VanillaMemesExpanded.Need_Anonymity</needClass>
+    <label>anonymity</label>
+    <description>Placeholder.</description>
+    <minIntelligence>Humanlike</minIntelligence>
+    <colonistAndPrisonersOnly>true</colonistAndPrisonersOnly>
+    <seekerRisePerHour>0.60</seekerRisePerHour>
+    <seekerFallPerHour>0.02</seekerFallPerHour>
+    <listPriority>80</listPriority>
+   
+  </NeedDef>
+
+  
+</Defs>
