@@ -70,6 +70,7 @@ namespace VanillaMemesExpanded
                                         if ((building = (thing as Building)) != null && building.def.defName=="VME_Obelisk")
                                         {
                                             obeliskFound = true;
+                                            break;
                                         }
                                     }
                                 }

@@ -114,7 +114,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>VME_Obelisk</defName>
 		<label>ominous obelisk</label>
-		<description>An ominous-looking obelisk of pure chiseled stone. It seems to radiate an aura of hopelessness and despair.</description>
+		<description>An ominous-looking obelisk of pure chiseled stone. It seems to radiate an aura of hopelessness and despair.\n\nThe Corruption need of any colonist in an obelisk's radius of effect won't decrease.</description>
 		<castEdgeShadows>true</castEdgeShadows>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -147,6 +147,7 @@
 		<stuffCategories>
 			<li>Stony</li>
 		</stuffCategories>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<costStuffCount>100</costStuffCount>
 		<placeWorkers><li>VanillaMemesExpanded.PlaceWorker_ShowObeliskRadius</li></placeWorkers>
 	</ThingDef>
