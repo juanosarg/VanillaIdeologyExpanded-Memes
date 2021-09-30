@@ -165,6 +165,12 @@
 				<member>hedonist</member>
 			</li>
 		</symbolPacks>
+		<requiredRituals>
+			<li>
+				<precept>VME_OrgyPrecept</precept>
+				<pattern>VME_OrgyRitual</pattern>
+			</li>
+		</requiredRituals>
 	</MemeDef>
 	<MemeDef>
 		<defName>VME_Structure_ChthonianCult</defName>

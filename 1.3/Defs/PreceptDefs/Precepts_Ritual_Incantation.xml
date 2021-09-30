@@ -6,20 +6,20 @@
 
 
 	<PreceptDef>
-		<defName>VME_OrgyPrecept</defName>
-		<label>orgy</label>
-		<description>An orgy. Participants will ignore any sexual preferences during the event's duration.</description>
+		<defName>VME_IncantationPrecept</defName>
+		<label>incantation</label>
+		<description>An incantation. A dark chant to appease the eldritch entities that defy all natural laws.</description>
 		<issue>Ritual</issue>
 		<preceptClass>Precept_Ritual</preceptClass>
 		<visible>true</visible>
 		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
 		<selectionWeight>1.0</selectionWeight>
-		<ritualPatternBase>VME_OrgyRitual</ritualPatternBase>
-		<iconPath>UI/Rituals/CelebrationOrgy</iconPath>
+		<ritualPatternBase>VME_IncantationRitual</ritualPatternBase>
+		<iconPath>UI/Rituals/CelebrationIncantation</iconPath>
 		<ignoreNameUniqueness>false</ignoreNameUniqueness>
 		<requiredMemes>
-			<li>VME_PartyLife</li>
-			<li>VME_Structure_Bacchanalianism</li>
+		
+			<li>VME_Structure_ChthonianCult</li>
 		</requiredMemes>
 	</PreceptDef>
 
