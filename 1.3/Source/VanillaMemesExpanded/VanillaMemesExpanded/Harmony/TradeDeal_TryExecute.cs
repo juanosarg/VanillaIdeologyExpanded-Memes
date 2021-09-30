@@ -21,13 +21,26 @@ namespace VanillaMemesExpanded
         static void NotifySuccessfulTrade(bool __result)
         {
 
-           
-                if (__result)
-                {
-                    PawnCollectionClass.ticksWithoutTrading = 0;
-                }
 
-            
+            if (__result)
+            {
+                PawnCollectionClass.ticksWithoutTrading = 0;
+            }
+
+            Pawn pawn = TradeSession.playerNegotiator as Pawn;
+           // Log.Message(pawn.Name.ToString());
+            if (pawn.Ideo?.HasPrecept(InternalDefOf.VME_Anonymity_Required) == true)
+            {
+                if (pawn.needs != null)
+                {
+                    Need_Anonymity need = pawn.needs.TryGetNeed<Need_Anonymity>();
+                    need.AnonymityTaken(-1);
+                    need.CurLevel -= 1;
+                   // Log.Message(need.ToString()+" decreased");
+                }
+            }
+
+
 
 
 

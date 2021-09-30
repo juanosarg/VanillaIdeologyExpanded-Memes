@@ -2,12 +2,12 @@
 <Defs>
 
 
-	<!--<VanillaMemesExpanded.StartingItemsByIdeologyDef>
-		<defName>VME_StartingItemsByIdeologyTest</defName>
-		<associatedMeme>VME_Astrology</associatedMeme>	
-		<thingSetMaker>Reward_ItemsStandard</thingSetMaker>		
+	<VanillaMemesExpanded.StartingItemsByIdeologyDef>
+		<defName>VME_StartingItemsEldritchCult</defName>
+		<associatedMeme>VME_Structure_ChthonianCult</associatedMeme>	
+		<thingSetMaker>VME_StartingItemsEldritchCult</thingSetMaker>		
 	</VanillaMemesExpanded.StartingItemsByIdeologyDef>
--->
+
 
 
 

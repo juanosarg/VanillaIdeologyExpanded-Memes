@@ -24,7 +24,7 @@
 		<defName>VME_BookWriting_Exalted</defName>
 		<issue>VME_BookWriting</issue>
 		<label>exalted</label>
-		<description>Placeholder.</description>
+		<description>Passing on one's knowledge is a purely respectful act. The authors of this world and their heirs shall be the ones to inherit it and all of it’s fruits.</description>
 		<impact>Low</impact>
 		<associatedMemes>
 			<li>VME_Cultured</li>
@@ -74,7 +74,7 @@
 		<defName>VME_BookWriting_Disliked</defName>
 		<issue>VME_BookWriting</issue>
 		<label>disliked</label>
-		<description>Placeholder.</description>
+		<description>Why write down what can be taught much quicker semantically or through trial and error? What an absolute waste of time.</description>
 		<impact>Low</impact>
 		
 		<comps>

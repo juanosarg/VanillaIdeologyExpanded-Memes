@@ -13,7 +13,10 @@
 		<requireOne>
 			<li>
 				<li>VME_InsectMeatEating_Sacrilegious</li>
-				<li>VME_InsectJellyEaten_Loved_Classic</li>
+				
+			</li>
+			<li>
+				<li>VME_InsectJellyEaten_Loved_Classic</li>				
 			</li>
 		</requireOne>
 		<generalRules>
@@ -225,6 +228,16 @@
 				<priority>4</priority>
 			</li>
 		</thingStyleCategories>
+		<requireOne>
+			<li>
+				<li>VME_Corruption_Essential</li>
+				
+			</li>
+			
+		</requireOne>
+		<addDesignators>
+			<li>VME_Obelisk</li>
+		</addDesignators>
 	</MemeDef>
 	<MemeDef>
 		<defName>VME_Structure_Eschatologism</defName>

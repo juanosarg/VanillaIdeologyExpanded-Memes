@@ -2326,8 +2326,8 @@
 	<MemeDef>
 		<defName>VME_Anonymity</defName>
 		<label>anonymity</label>
-		<description>Placeholder.</description>
-		<iconPath>UI/Memes/PartyLife</iconPath>
+		<description>Knowing the names, faces, and backgrounds of your fellow colonists can be both a blessing and a curse.</description>
+		<iconPath>UI/Memes/Anonymity</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>
 		<generalRules>

@@ -4,11 +4,11 @@
  <ThingDef ParentName="ApparelBase">
     <defName>VME_TackleBox</defName>
     <label>tackle box</label>
-    <description>Placeholder.</description>
+    <description>A small metal box filled with different hooks, bobbers and baits meant to entice fish big and small to latch on before being reeled in via line and rod.</description>
     <techLevel>Industrial</techLevel>
     
     <graphicData>
-      <texPath>UI/Issues/VME_AlphaIssue</texPath>
+      <texPath>Things/Item/Apparel/TackleBox/TackleBox</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
@@ -23,7 +23,7 @@
     </thingCategories>
     <generateAllowChance>0</generateAllowChance>
     <apparel>
-	  <wornGraphicPath>UI/Issues/VME_AlphaIssue</wornGraphicPath>
+	  <wornGraphicPath>Things/Item/Apparel/TackleBox/TackleBox</wornGraphicPath>
       <careIfWornByCorpse>false</careIfWornByCorpse>
       <careIfDamaged>false</careIfDamaged>
       <countsAsClothingForNudity>false</countsAsClothingForNudity>

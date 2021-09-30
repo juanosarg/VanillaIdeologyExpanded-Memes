@@ -42,7 +42,7 @@
     <defName>VME_Ranching_Nomadic</defName>
     <issue>Ranching</issue>
     <label>nomadic</label>
-    <description>Placeholder.</description>
+    <description>A nomad is nothing without their trusty steed. Developing a bond with beasts of burden means traveling this world will never be a lonely endeavour.</description>
     <impact>Medium</impact>
 	<displayOrderInIssue>30</displayOrderInIssue>
     <displayOrderInImpact>1000</displayOrderInImpact>

@@ -8,7 +8,7 @@
     <defName>VME_Recreation_Fishing</defName>
     <issue>VME_Recreation</issue>
     <label>fishing</label>
-    <description>Placeholder.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Colonists gain recreation when fishing.</description>
+    <description>Fishing is one of the most relaxing and fulfilling activities you could possibly spend your free time doing.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Colonists gain recreation when fishing.</description>
     <impact>Medium</impact>
 	<displayOrderInIssue>60</displayOrderInIssue>
 	<displayOrderInImpact>100</displayOrderInImpact>

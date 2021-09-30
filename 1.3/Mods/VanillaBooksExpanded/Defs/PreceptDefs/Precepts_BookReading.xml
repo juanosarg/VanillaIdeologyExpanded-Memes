@@ -24,7 +24,7 @@
 		<defName>VME_BookReading_Desired</defName>
 		<issue>VME_BookReading</issue>
 		<label>desired</label>
-		<description>Placeholder.</description>
+		<description>It’s important to soak up every bit of information we can, how else are we supposed to learn? Most books are even quite entertaining to boot.</description>
 		<impact>Low</impact>
 		<associatedMemes>
 			<li>VME_Cultured</li>
@@ -58,7 +58,7 @@
 		<defName>VME_BookReading_Disliked</defName>
 		<issue>VME_BookReading</issue>
 		<label>disliked</label>
-		<description>Placeholder.</description>
+		<description>Reading is just such a chore. We retain nothing from it.</description>
 		<impact>Low</impact>
 		
 		<comps>

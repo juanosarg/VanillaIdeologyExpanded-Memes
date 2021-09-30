@@ -4,7 +4,7 @@ using RimWorld;
 
 namespace VanillaMemesExpanded
 {
-	public class ThoughtWorker_Anonymity : ThoughtWorker
+	public class ThoughtWorker_NeedAnonymity : ThoughtWorker
 	{
 		protected override ThoughtState CurrentStateInternal(Pawn p)
 		{
@@ -13,26 +13,25 @@ namespace VanillaMemesExpanded
 				return ThoughtState.Inactive;
 			}
 
-			if (p.Ideo?.HasPrecept(InternalDefOf.VME_Anonymity_Required)==false)
+			if (!p.Ideo.HasPrecept(InternalDefOf.VME_Anonymity_Required))
 			{
 				return ThoughtState.Inactive;
 			}
 			Need_Anonymity need = p.needs.TryGetNeed<Need_Anonymity>();
 			switch (need.CurCategory)
 			{
-				case DessertNeedCategory.Craving:
+				case AnonymityNeedCategory.AnonymityViolated:
 					return ThoughtState.ActiveAtStage(0);
-				case DessertNeedCategory.Desiring:
+				case AnonymityNeedCategory.AnonymityCompromised:
 					return ThoughtState.ActiveAtStage(1);
-				case DessertNeedCategory.Wanting:
+				case AnonymityNeedCategory.AnonymityThreatened:
 					return ThoughtState.ActiveAtStage(2);
-				case DessertNeedCategory.RecentlyEaten:
+				case AnonymityNeedCategory.Anonymous:
 					return ThoughtState.Inactive;
 					
-				case DessertNeedCategory.Full:
+				case AnonymityNeedCategory.CompletelyAnonymous:
 					return ThoughtState.ActiveAtStage(3);
-				case DessertNeedCategory.CompletelyFull:
-					return ThoughtState.ActiveAtStage(4);
+				
 				default:
 					throw new NotImplementedException();
 			}

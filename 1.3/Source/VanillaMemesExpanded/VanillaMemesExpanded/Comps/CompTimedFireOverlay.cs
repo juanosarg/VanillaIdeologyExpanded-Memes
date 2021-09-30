@@ -28,9 +28,9 @@ namespace VanillaMemesExpanded
 			{
 				return;
 			}
-			Vector3 loc = this.parent.TrueCenter()+Vector3.up;
+			Vector3 loc = this.parent.TrueCenter()+(Vector3.forward*Props.upOffset);
 			loc.y = AltitudeLayer.MoteOverhead.AltitudeFor();
-			CompFireOverlay.FireGraphic.Draw(loc, Rot4.North, this.parent, 0f);
+			CompFireOverlayCool.FireGraphic.Draw(loc, Rot4.North, this.parent, 0f);
 		}
 
 		public override void CompTick()

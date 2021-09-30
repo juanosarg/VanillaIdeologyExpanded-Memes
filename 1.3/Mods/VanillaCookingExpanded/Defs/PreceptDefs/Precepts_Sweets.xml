@@ -39,7 +39,7 @@
 		<defName>VME_Sweets_Craved</defName>
 		<issue>VME_Sweets</issue>
 		<label>craved</label>
-		<description>Placeholder.</description>
+		<description>Desserts and treats shouldn’t be withheld, sugary confections should be eaten at least every couple days.</description>
 		<impact>Medium</impact>
 		<associatedMemes>
 			<li>VME_SweetTeeth</li>
@@ -175,7 +175,7 @@
 		<defName>VME_Sweets_Impartial</defName>
 		<issue>VME_Sweets</issue>
 		<label>impartial</label>
-		<description>Placeholder.</description>
+		<description>Sweets aren’t that great, they can easily be left behind.</description>
 		<impact>Low</impact>
 		<classic>true</classic>
 		<visible>false</visible>

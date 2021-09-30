@@ -19,31 +19,28 @@ namespace VanillaMemesExpanded
 				return 0f;
 			}
 		}
-		public DessertNeedCategory CurCategory
+		public AnonymityNeedCategory CurCategory
 		{
 			get
 			{
 				if (this.CurLevel < 0.1f)
 				{
-					return DessertNeedCategory.Craving;
+					return AnonymityNeedCategory.AnonymityViolated;
 				}
 				if (this.CurLevel < 0.2f)
 				{
-					return DessertNeedCategory.Desiring;
+					return AnonymityNeedCategory.AnonymityCompromised;
 				}
 				if (this.CurLevel < 0.3f)
 				{
-					return DessertNeedCategory.Wanting;
+					return AnonymityNeedCategory.AnonymityThreatened;
 				}
 				if (this.CurLevel < 0.7f)
 				{
-					return DessertNeedCategory.RecentlyEaten;
+					return AnonymityNeedCategory.Anonymous;
 				}
-				if (this.CurLevel < 0.9f)
-				{
-					return DessertNeedCategory.Full;
-				}
-				return DessertNeedCategory.CompletelyFull;
+				
+				return AnonymityNeedCategory.CompletelyAnonymous;
 			}
 		}
 
@@ -68,11 +65,29 @@ namespace VanillaMemesExpanded
 		{
 			if (!this.IsFrozen)
 			{
-				this.CurLevel += this.DessertFallPerTick * 150f;
+				bool flag = false;
+				List<Apparel> wornApparel = this.pawn.apparel.WornApparel;
+				for (int i = 0; i < wornApparel.Count; i++)
+				{
+					if (wornApparel[i].def.apparel.bodyPartGroups.Contains(BodyPartGroupDefOf.FullHead))
+					{
+						flag = true;
+					}
+				}
+
+				if (flag)
+				{
+
+					this.CurLevel += this.AnonymityFallPerTick * 150f;
+				}else this.CurLevel -= this.AnonymityFallPerTick * 150f;
+
+
+
+
 			}
 		}
 
-		private float DessertFallPerTick
+		private float AnonymityFallPerTick
 		{
 			get
 			{
@@ -85,7 +100,7 @@ namespace VanillaMemesExpanded
 
 		}
 
-		public void DessertTaken(float anonymity)
+		public void AnonymityTaken(float anonymity)
 		{
 			this.lastAnonymityUsed = anonymity;
 			this.lastAnonymityUseTick = Find.TickManager.TicksGame;

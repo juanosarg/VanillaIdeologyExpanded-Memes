@@ -59,8 +59,9 @@
 		<passability>PassThroughOnly</passability>
 		<comps>
 			<li Class="VanillaMemesExpanded.CompProperties_TimedFireOverlay">
-				<fireSize>8</fireSize>
+				<fireSize>6</fireSize>
 				<minRitualProgress>0</minRitualProgress>
+				<upOffset>2</upOffset>
 			</li>
 			<li Class="CompProperties_Glower">
 				<glowRadius>20</glowRadius>
@@ -110,6 +111,45 @@
 			<Steel>5</Steel>
 		</costList>
 	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>VME_Obelisk</defName>
+		<label>ominous obelisk</label>
+		<description>An ominous-looking obelisk of pure chiseled stone. It seems to radiate an aura of hopelessness and despair.</description>
+		<castEdgeShadows>true</castEdgeShadows>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<tickerType>Normal</tickerType>
+		<useHitPoints>true</useHitPoints>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<designationCategory>Misc</designationCategory>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<uiIconScale>0.65</uiIconScale>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>Things/Building/BuildingStyles/Eldritch/Obelisk</texPath>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<fillPercent>0.5</fillPercent>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>50</Mass>
+			<Beauty>-10</Beauty>
+			<WorkToMake>5000</WorkToMake>
+			<StyleDominance>30</StyleDominance>
+			<Flammability>0</Flammability>
+			<MeditationFocusStrength>0.0</MeditationFocusStrength>
+		</statBases>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<placeWorkers><li>VanillaMemesExpanded.PlaceWorker_ShowObeliskRadius</li></placeWorkers>
+	</ThingDef>
 	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>VME_InsectNest</defName>
 		<label>insect nest</label>
@@ -129,7 +169,6 @@
 			<Flammability>1.5</Flammability>
 		</statBases>
 		<pathCost>42</pathCost>
-		
 		<blockWind>true</blockWind>
 		<tickerType>Normal</tickerType>
 		<passability>PassThroughOnly</passability>
@@ -137,8 +176,6 @@
 			<InsectJelly>30</InsectJelly>
 		</killedLeavings>
 		<comps>
-			
-			
 			<li Class="CompProperties_Spawner">
 				<thingToSpawn>InsectJelly</thingToSpawn>
 				<spawnCount>5</spawnCount>
@@ -147,8 +184,6 @@
 				<spawnForbidden>false</spawnForbidden>
 				<saveKeysPrefix>jelly</saveKeysPrefix>
 			</li>
-			
-			
 		</comps>
 	</ThingDef>
 </Defs>

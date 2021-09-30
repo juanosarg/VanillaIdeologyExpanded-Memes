@@ -81,11 +81,16 @@ namespace VanillaMemesExpanded
 		public static PreceptDef VME_BonfirePrecept;
 
 		public static PreceptDef VME_SocialInteractions_Disallowed;
+
 		public static PreceptDef VME_Anonymity_Required;
+
+		public static PreceptDef VME_Corruption_Essential;
 
 		public static MemeDef VME_FireWorship;
 
 		public static MemeDef VME_Astrology;
+
+		public static MemeDef VME_Structure_ChthonianCult;
 
 		public static HistoryEventDef VME_Firefighting;
 
@@ -108,6 +113,8 @@ namespace VanillaMemesExpanded
 		public static HistoryEventDef VME_AteAnimalProducts;
 
 		public static ThingDef VME_InsectNest;
+
+		public static ThingDef VME_Obelisk;
 
 		public static TraitDef VME_Elder;
 		public static TraitDef VME_Time_Off;

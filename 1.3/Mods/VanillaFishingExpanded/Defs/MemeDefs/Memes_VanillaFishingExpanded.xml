@@ -5,7 +5,7 @@
 		<defName>VME_Angler</defName>
 		<label>fishing culture</label>
 		
-		<description>Placeholder.</description>
+		<description>Serene and therapeutic, placid lakes and lapping shores are criminally underappreciated. With a little time or simple engineering rivers and oceans alike can leave our bellies full of tasty fish.</description>
 		<iconPath>UI/Memes/FishCulture</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>

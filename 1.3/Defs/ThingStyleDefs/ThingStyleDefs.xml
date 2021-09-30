@@ -859,13 +859,6 @@
 	<!-- ====== Eldritch ======== -->
 
 
-	<ThingStyleDef>
-		<defName>VME_Eldritch_Obelisk</defName>
-		<graphicData>
-			<texPath>Things/Building/BuildingStyles/Eldritch/Obelisk</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
-		</graphicData>
-	</ThingStyleDef>
 
 	<ThingStyleDef>
 		<defName>VME_Eldritch_SculptureSmall</defName>

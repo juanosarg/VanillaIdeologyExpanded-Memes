@@ -3,7 +3,7 @@
 	<IssueDef>
 		<defName>VME_Anonymity</defName>
 		<label>anonymity</label>
-		<iconPath>UI/Issues/Scars</iconPath>
+		<iconPath>UI/Issues/AnonymityPrecept</iconPath>
 	</IssueDef>
 	
 	<!-- Precepts -->
@@ -11,7 +11,7 @@
 		<defName>VME_Anonymity_Required</defName>
 		<issue>VME_Anonymity</issue>
 		<label>required</label>
-		<description>Placeholder.</description>
+		<description>Histrionic tendencies are despicable, through true anonymity we can achieve things thought unfathomable. For the betterment of yourself and your brothers in faith, keep your voice to a whisper and your face covered.</description>
 		<impact>High</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>

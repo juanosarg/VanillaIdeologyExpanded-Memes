@@ -23,6 +23,8 @@ namespace VanillaMemesExpanded
 
         public static Dictionary<Pawn, int> colonist_junk_tracker = new Dictionary<Pawn, int>();
 
+        public static Dictionary<Pawn, bool> colonist_obelisk_tracker = new Dictionary<Pawn, bool>();
+
         public static Dictionary<Pawn, int> colonist_booze_tracker = new Dictionary<Pawn, int>();
 
         public static Dictionary<Pawn, int> colonist_and_random_mood = new Dictionary<Pawn, int>();
@@ -172,6 +174,15 @@ namespace VanillaMemesExpanded
             {
                 objectsToDeconstruct_InMap.Remove(thing);
             }
+        }
+
+        public static void AddColonistAndObelisk(Pawn pawn, bool obeliskPresent)
+        {
+            if (!colonist_obelisk_tracker.ContainsKey(pawn))
+            {
+                colonist_obelisk_tracker.Add(pawn, obeliskPresent);
+            }
+            else { colonist_obelisk_tracker[pawn] = obeliskPresent; }
         }
 
 

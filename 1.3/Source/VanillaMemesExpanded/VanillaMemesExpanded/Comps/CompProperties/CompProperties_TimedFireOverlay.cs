@@ -11,5 +11,6 @@ namespace VanillaMemesExpanded
 		}
 
 		public int minRitualProgress;
+		public int upOffset = 0;
 	}
 }

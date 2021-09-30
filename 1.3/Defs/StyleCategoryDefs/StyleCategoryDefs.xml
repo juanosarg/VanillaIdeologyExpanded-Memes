@@ -544,10 +544,7 @@
 				<thingDef>TorchLamp</thingDef>
 				<styleDef>VME_Eldritch_TorchLamp</styleDef>
 			</li>
-			<li>
-				<thingDef>SculptureTerror</thingDef>
-				<styleDef>VME_Eldritch_Obelisk</styleDef>
-			</li>
+			
 
 			<li>
 				<thingDef>Apparel_PowerArmorHelmet</thingDef>
