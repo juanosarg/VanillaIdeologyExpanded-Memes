@@ -324,8 +324,8 @@
     <Compile Include="Harmony\GameConditionManager_RegisterCondition.cs" />
     <Compile Include="Harmony\GameCondition_Aurora_Init.cs" />
     <Compile Include="Harmony\GenLeavings_DoLeavingsFor.cs" />
-    <Compile Include="Harmony\Need_Joy_GainJoy.cs" />
-    <Compile Include="Harmony\Pawn_InteractionsTracker_CurrentSocialMode.cs" />
+    <Compile Include="Harmony\JoyUtility_JoyTickCheckEnd.cs" />
+    <Compile Include="Harmony\InteractionUtility_CanReceiveInteraction.cs" />
     <Compile Include="Harmony\PlantUtility_CanSowOnGrower.cs" />
     <Compile Include="Harmony\Need_Joy_FallPerInterval.cs" />
     <Compile Include="Harmony\RitualObligationTargetWorker_IdeoBuildingOrRitualSpot_CanUseTargetInternal.cs" />
