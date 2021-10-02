@@ -5,7 +5,7 @@
   
  <RitualBehaviorDef>
     <defName>VME_IncantationBehavior</defName>
-    <workerClass>VanillaMemesExpanded.RitualBehaviorWorker_LeaderConversion</workerClass>
+   
     <durationTicks>5000</durationTicks>
     <preceptRequirements><li Class="PreceptRequirement_Altar"/></preceptRequirements>
     <roles Inherit="False">
@@ -18,71 +18,36 @@
         <maxCount>1</maxCount>
         <countsAsParticipant>False</countsAsParticipant>
       </li>
-      <li Class="RitualRoleConvertee">
-        <label>convertee</label>
-        <id>convertee</id>
-        <maxCount>1</maxCount>
-        <required>True</required>
-        <allowOtherIdeos>True</allowOtherIdeos>
-        <countsAsParticipant>False</countsAsParticipant>
-      </li>
+      
     </roles>
+    <spectatorsLabel>Participants</spectatorsLabel>
+    <spectatorGerund>participate</spectatorGerund>
     <stages>
-      <li Class="RitualStage_InteractWithRole">
-        <defaultDuty>Spectate</defaultDuty>
-        <targetId>convertee</targetId>
-        <endTriggers>
-          <li Class="StageEndTrigger_PawnDeliveredOrNotValid"/>
-        </endTriggers>
-        <failTriggers>
-          <li Class="StageFailTrigger_TargetPawnUnreachable">
-            <takerId>leader</takerId>
-            <takeeId>convertee</takeeId>
-            <desc>Prisoner is not reachable.</desc>
-          </li>
-        </failTriggers>
-        <roleBehaviors>
-          <li>
-            <roleId>leader</roleId>
-            <dutyDef>DeliverPawnToAltar</dutyDef>
-          </li>
-          <li>
-            <roleId>convertee</roleId>
-            <dutyDef>ArriveToCell</dutyDef>
-            <customPositions>
-              <li Class="RitualPosition_InFrontThingCenter"/>
-            </customPositions>
-          </li>
-        </roleBehaviors>
-      </li>
       <li>
         <defaultDuty>Spectate</defaultDuty>
+		<spectateDistanceOverride>3~5</spectateDistanceOverride>
+        <essential>True</essential>
         <endTriggers>
           <li Class="StageEndTrigger_DurationPercentage">
             <percentage>1</percentage>
           </li>
         </endTriggers>
+       
         <roleBehaviors>
           <li>
             <roleId>leader</roleId>
             <dutyDef>SpeakOnCellFacingSpectators</dutyDef>
-            <speakerInteraction>Speech_Conversion</speakerInteraction>
+            <speakerInteraction>Speech_DateRitual</speakerInteraction>
             <customPositions>
-              <li Class="RitualPosition_Lectern">
-                <maxDistanceToFocus>5</maxDistanceToFocus>
-              </li>
-              <li Class="RitualPosition_OnInteractionCell" />
+             
+              <li Class="RitualPosition_BesideThing" />
             </customPositions>
-          </li>
-          <li>
-            <roleId>convertee</roleId>
-            <dutyDef>LayDownAwake</dutyDef>
           </li>
         </roleBehaviors>
       </li>
+      
     </stages>
   </RitualBehaviorDef>
-
  
 
 </Defs>

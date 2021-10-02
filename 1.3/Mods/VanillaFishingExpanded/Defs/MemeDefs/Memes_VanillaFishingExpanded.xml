@@ -84,6 +84,11 @@
 				<li>VME_Ranching_Discouraged</li>
 			</li>
 		</requireOne>
+		<addDesignators>
+			<li>VME_SmallFishingTrap</li>
+			<li>VME_MediumFishingTrap</li>
+			<li>VME_LargeFishingTrap</li>
+		</addDesignators>
 	</MemeDef>
 
 </Defs>

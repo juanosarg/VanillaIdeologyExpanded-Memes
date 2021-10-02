@@ -241,6 +241,12 @@
 			</li>
 			
 		</requireOne>
+		<requiredRituals>
+			<li>
+				<precept>VME_IncantationPrecept</precept>
+				<pattern>VME_IncantationPattern</pattern>
+			</li>
+		</requiredRituals>
 		<addDesignators>
 			<li>VME_Obelisk</li>
 		</addDesignators>

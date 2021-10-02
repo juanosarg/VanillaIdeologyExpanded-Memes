@@ -5,8 +5,8 @@
 
 	<RitualOutcomeEffectDef>
     <defName>VME_IncantationOutcome</defName>
-    <description>If it goes well, target's ideoligion certainty will be reduced or they will convert. If it goes badly, they will gain certainty in their old beliefs.</description>
-    <workerClass>VanillaMemesExpanded.RitualOutcomeEffectWorker_LeaderConversion</workerClass>
+    <description>If the incantation ritual goes well (positive outcome) it will increase the corruption need of all participants by 10%, as well as provide a mood bonus.</description>
+    <workerClass>VanillaMemesExpanded.RitualOutcomeEffectWorker_Incantation</workerClass>
     <comps>
       <li Class="RitualOutcomeComp_RoomStat">
         <label>room impressiveness</label>
@@ -43,54 +43,38 @@
           </points>
         </curve>
       </li>
-      <li Class="RitualOutcomeComp_PawnExpectations">
-        <roleId>convertee</roleId>
-        <label>{PAWN_labelShort}'s expectations</label>
-        <labelAbstract>convertee's expectations</labelAbstract>
-        <offsetPerExpectation>
-          <ExtremelyLow>0.1</ExtremelyLow>
-          <VeryLow>0.05</VeryLow>
-          <Low>0</Low>
-          <Moderate>-0.1</Moderate>
-          <High>-0.2</High>
-          <SkyHigh>-0.3</SkyHigh>
-          <Noble>-0.3</Noble>
-          <Royal>-0.3</Royal>
-          <RoleElite>-0.3</RoleElite>
-          <RoleSupreme>-0.3</RoleSupreme>
-        </offsetPerExpectation>
-      </li>
+     
     </comps>
     <outcomeChances>
       <li>
-        <label>Terrible</label>
+        <label>Squamous</label>
         <chance>0.05</chance>
-        <ideoCertaintyOffset>0.2</ideoCertaintyOffset>
-        <description>The {0} was terrible! From the first word, it was a fruitless back-and-forth argument. It dragged on for a cringe-inducingly long time.</description>
-        <positivityIndex>-2</positivityIndex>
-      </li>
-      <li>
-        <label>Ineffective</label>
-        <chance>0.15</chance>
-        <ideoCertaintyOffset>0.12</ideoCertaintyOffset>
-        <description>The {0} was ineffective. Most of the arguments were unclear, and the convertee countered those that made sense.</description>
+        <memory>VME_SquamousIncantation</memory>
+        <description>The {0} was abnormal! An indescribably hideous gibbering! We'd even describe it as squamous, but we don't even know what that is! An unutterable word!</description>
         <positivityIndex>-1</positivityIndex>
       </li>
       <li>
-        <label>Effective</label>
-        <chance>0.6</chance>
-        <ideoCertaintyOffset>-0.3</ideoCertaintyOffset>
-        <memory>EffectiveConversion</memory>
-        <description>The {0} was effective. The speech not only delivered solid arguments and visibly swayed the convertee's thoughts, but kept the crowd entertained as well.</description>
+        <label>Accursed</label>
+        <chance>0.15</chance>
+        <memory>VME_AccursedIncantation</memory>
+        <description>The {0} was suitably accursed. A litany of dark morbidities expressed in crime, perversion, and insanity.</description>
         <positivityIndex>1</positivityIndex>
       </li>
       <li>
-        <label>Masterful</label>
-        <chance>0.2</chance>
-        <ideoCertaintyOffset>-1</ideoCertaintyOffset>
-        <memory>MasterfulConversion</memory>
-        <description>The {0} was masterful! Old beliefs seemed to dissolve effortlessly and inevitably, and our true knowledge was accepted.</description>
+        <label>Blasphemous</label>
+        <chance>0.6</chance>
+        <memory>VME_BlasphemousIncantation</memory>
+       
+        <description>The {0} was blasphemous. A promise of hidden and fathomless worlds of strange life which pulsate in the gulfs beyond the stars and press hideously upon our own globe in unholy dimensions which only the dead and the moonstruck can glimpse.</description>
         <positivityIndex>2</positivityIndex>
+      </li>
+      <li>
+        <label>Loathsome</label>
+        <chance>0.2</chance>
+        <memory>VME_LoathsomeIncantation</memory>
+      
+        <description>The {0} was loathsome! We live on a placid island of ignorance in the midst of black seas of infinity, and it was not meant that we should voyage far.</description>
+        <positivityIndex>3</positivityIndex>
       </li>
     </outcomeChances>
   </RitualOutcomeEffectDef>

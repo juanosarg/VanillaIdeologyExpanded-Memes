@@ -14,7 +14,7 @@
 		<visible>true</visible>
 		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
 		<selectionWeight>1.0</selectionWeight>
-		<ritualPatternBase>VME_IncantationRitual</ritualPatternBase>
+		<ritualPatternBase>VME_IncantationPattern</ritualPatternBase>
 		<iconPath>UI/Rituals/CelebrationIncantation</iconPath>
 		<ignoreNameUniqueness>false</ignoreNameUniqueness>
 		<requiredMemes>

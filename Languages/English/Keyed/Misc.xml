@@ -16,12 +16,22 @@
 	<VME_AbilityNeedsInsect>This ability needs to target a wild or hostile insectoid.</VME_AbilityNeedsInsect>
 	<VME_AbilityNeedsRoof>This ability needs to target an empty spot under mountain roof.</VME_AbilityNeedsRoof>
 	<VME_AbilityNeedsSpotEmpty>This ability needs to target an empty spot.</VME_AbilityNeedsSpotEmpty>
-	<VME_AbilityCaravanWillArrive>A trader caravan has been attracted to your settlement and will arrive in approximately a day.</VME_AbilityCaravanWillArrive>
-	
+	<VME_AbilityCaravanWillArrive>A trader caravan has been attracted to your settlement and will arrive in approximately a day.</VME_AbilityCaravanWillArrive>	
 	<VME_DeconstructBuildingLabel>Deconstruct building</VME_DeconstructBuildingLabel>
 	<VME_DeconstructBuildingDesc>Deconstruct building</VME_DeconstructBuildingDesc>
 	<VME_CancelDeconstructBuildingLabel>Cancel deconstruct building</VME_CancelDeconstructBuildingLabel>
 	<VME_CancelDeconstructBuildingDesc>Cancel deconstruct building</VME_CancelDeconstructBuildingDesc>
+	<VME_BreakCorruption>Last straw: cosmic horror</VME_BreakCorruption>
+	<VME_NeedsWater>Must be built on passable water.</VME_NeedsWater>
+	<VME_NeedsDistance>Fish traps must be built at least 10 tiles apart from each other.</VME_NeedsDistance>
+	<VME_SmallFishTrapDescriptionInspect>This fish trap can catch small fish:</VME_SmallFishTrapDescriptionInspect>
+	<VME_SmallFishCaughtIn>Next small fish caught in</VME_SmallFishCaughtIn>
+	<VME_MediumFishTrapDescriptionInspect>This fish trap can catch medium fish:</VME_MediumFishTrapDescriptionInspect>
+	<VME_MediumFishCaughtIn>Next medium fish caught in</VME_MediumFishCaughtIn>
+	<VME_LargeFishTrapDescriptionInspect>This fish trap can catch large fish:</VME_LargeFishTrapDescriptionInspect>
+	<VME_LargeFishCaughtIn>Next large fish caught in</VME_LargeFishCaughtIn>
+	<VME_UsesLeftUntilItBreaks>Catches until breaking: {0}</VME_UsesLeftUntilItBreaks>
+	
 	
 	
 </LanguageData>
