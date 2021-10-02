@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+  <RitualVisualEffectDef>
+    <defName>VME_EldritchVisuals</defName>
+    <tintColor>(0, 0, 0)</tintColor>
+    <comps>
+      <li>
+        <compClass>CompRitualEffect_ConstantCenter</compClass>
+        <moteDef>VME_Mote_RitualSmokeEldritch</moteDef>
+        <scaleWithRoom>true</scaleWithRoom>
+      </li>
+      <li Class="CompProperties_RitualEffectIntervalSpawnCircle">
+        <fleckDef>VME_Tentacle</fleckDef>
+        <area>(27, 28)</area>
+        <radius>6</radius>
+        <concentration>3</concentration>
+        <spawnIntervalTicks>9</spawnIntervalTicks>
+        <spawnCount>1</spawnCount>
+        <rotation>-15~15</rotation>
+        <scalePositionWithRoom>true</scalePositionWithRoom>
+        <onlySpawnInSameRoom>true</onlySpawnInSameRoom>
+      </li>
+    </comps>
+  </RitualVisualEffectDef>
+  
+  <ThingDef ParentName="MoteBase">
+    <defName>VME_Mote_RitualSmokeEldritch</defName>
+    <thingClass>MoteThrown</thingClass>
+    <altitudeLayer>Weather</altitudeLayer>
+    <mote>
+      <solidTime>99999</solidTime>
+      <fadeInTime>0.4</fadeInTime>
+      <fadeOutTime>1</fadeOutTime>
+      <needsMaintenance>True</needsMaintenance>
+      <fadeOutUnmaintained>True</fadeOutUnmaintained>
+    </mote>
+    <graphicData>
+      <graphicClass>Graphic_MotePulse</graphicClass>
+      <shaderType>RitualSmoke</shaderType>
+      <texPath>Motes/VME_MoteEldritch</texPath>
+      <shaderParameters>
+        <_SmokeTex1>/Things/Mote/RitualEffects/Smoke1_Thick</_SmokeTex1>
+        <_SmokeTex2>/Things/Mote/RitualEffects/Smoke2_Thick</_SmokeTex2>
+        <_MaskTex>/Things/Mote/RitualEffects/GlowRayMask</_MaskTex>
+        <_DistortionTex>/Things/Mote/RitualEffects/DistortionSoft</_DistortionTex>
+        <_ScrollSpeed>0.016</_ScrollSpeed>
+        <_Thickness>13</_Thickness>
+        <_Distortion>0.6</_Distortion>
+      </shaderParameters>
+      <drawSize>(32.0, 32.0)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <FleckDef ParentName="FleckBase">
+    <defName>VME_Tentacle</defName>
+    <fleckSystemClass>FleckSystemThrown</fleckSystemClass>
+    <graphicData>
+      <graphicClass>Graphic_Fleck</graphicClass>
+      <shaderType>MoteDistorted</shaderType>
+      <texPath>Motes/VME_TentacleMote</texPath>
+      <drawSize>(1, 2)</drawSize>
+      <shaderParameters>
+        <_DistortionTex>/Things/Mote/SmokeTiled</_DistortionTex>
+        <_distortionScrollSpeed>0.15</_distortionScrollSpeed>
+      </shaderParameters>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0.42</solidTime>
+    <fadeInTime>0.6</fadeInTime>
+    <fadeOutTime>1.3</fadeOutTime>
+    <acceleration>(0, 0.0, 0.4)</acceleration>
+  </FleckDef>
+
+ 
+  
+</Defs>
