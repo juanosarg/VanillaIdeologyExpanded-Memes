@@ -4,11 +4,11 @@
  
   <RitualVisualEffectDef>
     <defName>VME_EldritchVisuals</defName>
-    <tintColor>(0, 0, 0)</tintColor>
+    <tintColor>(255, 180, 180)</tintColor>
     <comps>
       <li>
         <compClass>CompRitualEffect_ConstantCenter</compClass>
-        <moteDef>VME_Mote_RitualSmokeEldritch</moteDef>
+        <moteDef>Mote_RitualSmokeDustVague</moteDef>
         <scaleWithRoom>true</scaleWithRoom>
       </li>
       <li Class="CompProperties_RitualEffectIntervalSpawnCircle">
@@ -25,7 +25,9 @@
     </comps>
   </RitualVisualEffectDef>
   
-  <ThingDef ParentName="MoteBase">
+ 
+  
+   <ThingDef ParentName="MoteBase">
     <defName>VME_Mote_RitualSmokeEldritch</defName>
     <thingClass>MoteThrown</thingClass>
     <altitudeLayer>Weather</altitudeLayer>
@@ -41,15 +43,16 @@
       <shaderType>RitualSmoke</shaderType>
       <texPath>Motes/VME_MoteEldritch</texPath>
       <shaderParameters>
-        <_SmokeTex1>/Things/Mote/RitualEffects/Smoke1_Thick</_SmokeTex1>
-        <_SmokeTex2>/Things/Mote/RitualEffects/Smoke2_Thick</_SmokeTex2>
+        <_SmokeTex1>/Things/Mote/RitualEffects/Smoke1_Dust</_SmokeTex1>
+        <_SmokeTex2>/Things/Mote/RitualEffects/Smoke2_Dust</_SmokeTex2>
         <_MaskTex>/Things/Mote/RitualEffects/GlowRayMask</_MaskTex>
         <_DistortionTex>/Things/Mote/RitualEffects/DistortionSoft</_DistortionTex>
-        <_ScrollSpeed>0.016</_ScrollSpeed>
+        <_ScrollSpeed>0.02</_ScrollSpeed>
         <_Thickness>13</_Thickness>
         <_Distortion>0.6</_Distortion>
+        <_Detail>2</_Detail>
       </shaderParameters>
-      <drawSize>(32.0, 32.0)</drawSize>
+      <drawSize>(34.0, 34.0)</drawSize>
     </graphicData>
   </ThingDef>
   
@@ -60,7 +63,7 @@
       <graphicClass>Graphic_Fleck</graphicClass>
       <shaderType>MoteDistorted</shaderType>
       <texPath>Motes/VME_TentacleMote</texPath>
-      <drawSize>(1, 2)</drawSize>
+      <drawSize>(2, 4)</drawSize>
       <shaderParameters>
         <_DistortionTex>/Things/Mote/SmokeTiled</_DistortionTex>
         <_distortionScrollSpeed>0.15</_distortionScrollSpeed>
