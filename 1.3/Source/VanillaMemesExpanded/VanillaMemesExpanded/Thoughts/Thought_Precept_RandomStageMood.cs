@@ -17,6 +17,7 @@ namespace VanillaMemesExpanded
 		{
 			if (PawnCollectionClass.colonist_and_random_mood.ContainsKey(p))
 			{
+				
                 switch (PawnCollectionClass.colonist_and_random_mood[p])
                 {
 

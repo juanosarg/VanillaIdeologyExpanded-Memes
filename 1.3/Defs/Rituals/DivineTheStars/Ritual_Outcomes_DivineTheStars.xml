@@ -38,7 +38,7 @@
       <li>
         <label>inscrutable</label>
         <chance>1</chance>
-        <memory>VME_DivineTheStarsRandom</memory>
+       
         <description>Our destiny has been revealed by the stars.</description>
         <positivityIndex>1</positivityIndex>
       </li>

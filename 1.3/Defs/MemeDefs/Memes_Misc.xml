@@ -1040,6 +1040,7 @@
 				<li>memeAdjective->scrounging</li>
 				<li>memeHyphenPrefix->scrap</li>
 				<li>memeHyphenPrefix->junk</li>
+				<li>memeConcept->scrap</li>
 				<li>memeLeaderNoun->scavenger</li>
 				<li>memeLeaderNoun->scrapper</li>
 				<li>memeLeaderNoun->scrounger</li>
@@ -1136,6 +1137,7 @@
 				<li>memeAdjective->greedy</li>
 				<li>memeAdjective->materialistic</li>
 				<li>memeHyphenPrefix->trade</li>
+				<li>memeConcept->trade</li>
 				<li>memeLeaderNoun->trader</li>
 				<li>memeLeaderNoun->merchant</li>
 			</rulesStrings>
@@ -1230,6 +1232,7 @@
 				<li>memeAdjective->ancient</li>
 				<li>memeAdjective->old</li>
 				<li>memeAdjective->wise</li>
+				<li>memeConcept->age</li>
 				<li>memeAdjective->geriatric</li>
 				<li>memeHyphenPrefix->old</li>
 				<li>memeLeaderNoun->elder</li>
@@ -1486,6 +1489,7 @@
 				<li>memeAdjective->peace-monger</li>
 				<li>memeAdjective->appeasing</li>
 				<li>memeLeaderNoun->peacemaker</li>
+				<li>memeConcept->peace</li>
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
@@ -1568,6 +1572,7 @@
 				<li>memeLeaderNoun->fire-starter</li>
 				<li>memeLeaderNoun->torcher</li>
 				<li>memeLeaderNoun->great arsonist</li>
+				<li>memeConcept->fire</li>
 			</rulesStrings>
 		</generalRules>
 		<consumableBuildings>
@@ -1664,6 +1669,7 @@
 				<li>memeAdjective->skilled</li>
 				<li>memeAdjective->loyal</li>
 				<li>memeLeaderNoun->daimyo</li>
+				<li>memeConcept->courage</li>
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
@@ -2015,6 +2021,7 @@
 				<li>memeAdjective->industrious</li>
 				<li>memeLeaderNoun->great builder</li>
 				<li>memeLeaderNoun->architect</li>
+				<li>memeConcept->cities</li>
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>

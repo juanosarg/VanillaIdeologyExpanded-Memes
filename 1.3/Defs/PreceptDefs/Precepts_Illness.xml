@@ -80,7 +80,7 @@
 	
 	<ThoughtDef>
 		<defName>VME_Illness_Preferred</defName>
-		<workerClass>VanillaMemesExpanded.Thought_Illness_Exalted</workerClass>
+		<workerClass>VanillaMemesExpanded.Thought_Illness_Preferred</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>

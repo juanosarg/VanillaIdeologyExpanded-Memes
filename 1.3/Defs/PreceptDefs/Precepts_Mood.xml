@@ -30,7 +30,7 @@
 	</PreceptDef>
 	<ThoughtDef>
 		<defName>VME_Mood_DictatedByStars</defName>
-		<thoughtClass>VanillaMemesExpanded.Thought_Precept_RandomStageMood</thoughtClass>
+		<workerClass>VanillaMemesExpanded.Thought_Precept_RandomStageMood</workerClass>
 		
 		<stages>
 			<li>

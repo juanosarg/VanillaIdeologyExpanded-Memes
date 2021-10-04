@@ -8,7 +8,7 @@
 		<label>serketist</label>
 		<iconPath>UI/StyleCategories/VME_ThingStyle_Insectoid</iconPath>
 		<soundOngoingRitual>VME_RitualSustainer_Serketist</soundOngoingRitual>
-		<ritualVisualEffectDef>Morbid</ritualVisualEffectDef>
+		<ritualVisualEffectDef>VME_SerketistVisuals</ritualVisualEffectDef>
 		<thingDefStyles>
 			<li>
 				<thingDef>SculptureSmall</thingDef>
@@ -112,7 +112,7 @@
 		<label>corporate</label>
 		<iconPath>UI/StyleCategories/VME_ThingStyle_Corporate</iconPath>
 		<soundOngoingRitual>VME_RitualSustainer_Corporate</soundOngoingRitual>
-		<ritualVisualEffectDef>Morbid</ritualVisualEffectDef>
+		<ritualVisualEffectDef>VME_CorporateVisuals</ritualVisualEffectDef>
 		<thingDefStyles>
 			<li>
 				<thingDef>SculptureSmall</thingDef>
@@ -229,7 +229,7 @@
 		<label>authoritarian</label>
 		<iconPath>UI/StyleCategories/VME_ThingStyle_Authoritarian</iconPath>
 		<soundOngoingRitual>VME_RitualSustainer_Authoritarian</soundOngoingRitual>
-		<ritualVisualEffectDef>Morbid</ritualVisualEffectDef>
+		<ritualVisualEffectDef>VME_AuthoritarianVisuals</ritualVisualEffectDef>
 		<thingDefStyles>
 			<li>
 				<thingDef>SculptureSmall</thingDef>
@@ -318,7 +318,7 @@
 		<label>shintaoist</label>
 		<iconPath>UI/StyleCategories/VME_ThingStyle_Taoist</iconPath>
 		<soundOngoingRitual>VME_RitualSustainer_Shintao</soundOngoingRitual>
-		<ritualVisualEffectDef>Morbid</ritualVisualEffectDef>
+		<ritualVisualEffectDef>VME_ShintaoVisuals</ritualVisualEffectDef>
 		<thingDefStyles>
 			<li>
 				<thingDef>SculptureSmall</thingDef>
@@ -437,7 +437,7 @@
 		<label>esotericism</label>
 		<iconPath>UI/StyleCategories/VME_ThingStyle_Esotericism</iconPath>
 		<soundOngoingRitual>VME_RitualSustainer_Esotericism</soundOngoingRitual>
-		<ritualVisualEffectDef>Morbid</ritualVisualEffectDef>
+		<ritualVisualEffectDef>VME_EsotericismVisuals</ritualVisualEffectDef>
 		<thingDefStyles>
 			<li>
 				<thingDef>SculptureSmall</thingDef>

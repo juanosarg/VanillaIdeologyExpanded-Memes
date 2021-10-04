@@ -428,9 +428,9 @@
     <Compile Include="Thoughts\ThoughtWorker_Precept_Alcohol.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_Travel.cs" />
     <Compile Include="Thoughts\Thought_DisableFirstDefeatThought.cs" />
-    <Compile Include="Thoughts\Thought_DivineTheStarsRandom.cs" />
     <Compile Include="Thoughts\Thought_Elders_Respected.cs" />
     <Compile Include="Thoughts\Thought_IdeoRole_FireKeeper.cs" />
+    <Compile Include="Thoughts\Thought_Illness_Preferred.cs" />
     <Compile Include="Thoughts\Thought_Illness_Exalted.cs" />
     <Compile Include="Thoughts\Thought_Illness_Exalted_TooHealthy.cs" />
     <Compile Include="Thoughts\Thought_Fire_Desired.cs" />

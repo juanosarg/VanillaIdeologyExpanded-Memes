@@ -22,9 +22,9 @@ namespace VanillaMemesExpanded
         {
 
 
-            foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists)
+            foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists.InRandomOrder())
             {
-                System.Random random = new System.Random();
+                System.Random random = new System.Random(Current.Game.tickManager.TicksAbs + PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists.IndexOf(pawn));
                 int randomMood = random.Next(0, 9);
                 PawnCollectionClass.AddColonistAndRandomMood(pawn, randomMood);
                 PawnCollectionClass.SetColonistAndRandomMood(pawn, randomMood);

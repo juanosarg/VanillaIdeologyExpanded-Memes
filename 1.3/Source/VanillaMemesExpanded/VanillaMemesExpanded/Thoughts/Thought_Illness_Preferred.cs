@@ -5,11 +5,11 @@ using System.Collections.Generic;
 
 namespace VanillaMemesExpanded
 {
-	public class Thought_Illness_Exalted : ThoughtWorker
+	public class Thought_Illness_Preferred : ThoughtWorker
 	{
 		protected override ThoughtState CurrentStateInternal(Pawn p)
 		{
-			return (p.Ideo.HasPrecept(InternalDefOf.VME_Illness_Exalted) && p.health.hediffSet.AnyHediffMakesSickThought);
+			return (p.Ideo.HasPrecept(InternalDefOf.VME_Illness_Preferred) && p.health.hediffSet.AnyHediffMakesSickThought);
 		}
 	}
 }
