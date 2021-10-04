@@ -184,6 +184,7 @@
 				<spawnMaxAdjacent>40</spawnMaxAdjacent>
 				<spawnForbidden>false</spawnForbidden>
 				<saveKeysPrefix>jelly</saveKeysPrefix>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
 			</li>
 		</comps>
 	</ThingDef>
