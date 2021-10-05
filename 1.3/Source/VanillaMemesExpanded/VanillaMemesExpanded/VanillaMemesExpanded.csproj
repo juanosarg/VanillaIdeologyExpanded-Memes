@@ -331,6 +331,7 @@
     <Compile Include="Harmony\JobDriver_ConvertPrisoner_MakeNewToils.cs" />
     <Compile Include="Harmony\JoyUtility_JoyTickCheckEnd.cs" />
     <Compile Include="Harmony\InteractionUtility_CanReceiveInteraction.cs" />
+    <Compile Include="Harmony\LordToil_PanicFlee_Init.cs" />
     <Compile Include="Harmony\PlantUtility_CanSowOnGrower.cs" />
     <Compile Include="Harmony\Need_Joy_FallPerInterval.cs" />
     <Compile Include="Harmony\RitualObligationTargetWorker_IdeoBuildingOrRitualSpot_CanUseTargetInternal.cs" />
@@ -361,6 +362,7 @@
     <Compile Include="MapComponents and GameComponents\GameComponent_TravellingTracker.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_FireAndPenTracker.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_ObeliskTracker.cs" />
+    <Compile Include="MapComponents and GameComponents\MapComponent_MechanoidRaidFleeing.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_TradeCaravanDelay.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_RoomsInMap.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_JunkTracker.cs" />
@@ -379,6 +381,7 @@
     <Compile Include="PlaceWorkers\PlaceWorker_ShowObeliskRadius.cs" />
     <Compile Include="PreceptComps\PreceptComp_AddDessertNeed.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RitualRoles\RitualRole_Adult.cs" />
     <Compile Include="Rituals\Behaviours\RitualBehaviorWorker_InsectoidHymn.cs" />
     <Compile Include="Rituals\Behaviours\RitualBehaviorWorker_Orgy.cs" />
     <Compile Include="Rituals\Outcomes\RitualOutcomeEffectWorker_Bonfire.cs" />

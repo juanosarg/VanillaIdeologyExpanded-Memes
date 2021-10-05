@@ -31,6 +31,7 @@
 	<VME_LargeFishTrapDescriptionInspect>This fish trap can catch large fish:</VME_LargeFishTrapDescriptionInspect>
 	<VME_LargeFishCaughtIn>Next large fish caught in</VME_LargeFishCaughtIn>
 	<VME_UsesLeftUntilItBreaks>Catches until breaking: {0}</VME_UsesLeftUntilItBreaks>
+	<VME_PawnMustBeAnAdult>Only adults can participate in this ritual</VME_PawnMustBeAnAdult>
 	
 	
 	

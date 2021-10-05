@@ -76,7 +76,7 @@
 		<defName>VME_MechanoidEffigy</defName>
 		<label>mechanoid effigy</label>
 		<description>A structure assembled from scrapped mechanoid parts. Emits an IFF programming signal capable of confusing ancient mechanoid receptors. Should two exist per colonist enough signal noise will soft reset ancient mechanoid programming, causing an immediate retreat.</description>
-		<castEdgeShadows>true</castEdgeShadows>
+		<castEdgeShadows>false</castEdgeShadows>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>

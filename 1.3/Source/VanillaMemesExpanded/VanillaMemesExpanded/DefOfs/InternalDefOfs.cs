@@ -86,11 +86,15 @@ namespace VanillaMemesExpanded
 
 		public static PreceptDef VME_Corruption_Essential;
 
+		public static PreceptDef VME_Ranching_Disliked;
+
 		public static MemeDef VME_FireWorship;
 
 		public static MemeDef VME_Astrology;
 
 		public static MemeDef VME_Structure_ChthonianCult;
+
+		public static MemeDef VME_MechanoidSupremacy;
 
 		public static HistoryEventDef VME_Firefighting;
 
@@ -112,9 +116,13 @@ namespace VanillaMemesExpanded
 
 		public static HistoryEventDef VME_AteAnimalProducts;
 
+		public static HistoryEventDef VME_AttackedAnimal;
+
 		public static ThingDef VME_InsectNest;
 
 		public static ThingDef VME_Obelisk;
+
+		public static ThingDef VME_MechanoidEffigy;
 
 		public static TraitDef VME_Elder;
 		public static TraitDef VME_Time_Off;

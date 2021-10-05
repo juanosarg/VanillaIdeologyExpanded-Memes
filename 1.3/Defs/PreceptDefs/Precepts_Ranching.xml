@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-
+	<HistoryEventDef>
+		<defName>VME_AttackedAnimal</defName>
+		<label>attacked animal</label>
+	</HistoryEventDef>
   <!-- Precepts -->
 
   <PreceptDef>
@@ -23,6 +26,10 @@
       <li Class="PreceptComp_SelfTookMemoryThought">
         <eventDef>SowedHumanFoodPlant</eventDef>
         <thought>VME_Ranching_Disliked_SowedPlant</thought>
+      </li>
+	   <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>VME_AttackedAnimal</eventDef>
+        <thought>VME_Ranching_Disliked_AttackedAnimal</thought>
       </li>
       
     </comps>
@@ -89,6 +96,19 @@
         <baseMoodEffect>-10</baseMoodEffect>
       </li>
      
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>VME_Ranching_Disliked_AttackedAnimal</defName>
+    <durationDays>2</durationDays>
+   
+    <stages>
+      <li>
+        <label>attacked an animal</label>
+        <description>I had to attack an animal. They have rights too!</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
     </stages>
   </ThoughtDef>
 
