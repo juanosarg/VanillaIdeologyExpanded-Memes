@@ -1366,6 +1366,11 @@
 			<li>
 				<li>VME_Ranching_Disliked</li>
 			</li>
+			<li>
+				<li>AnimalSlaughter_Prohibited</li>
+				<li>AnimalSlaughter_Horrible</li>
+				<li>AnimalSlaughter_Disapproved</li>
+			</li>
 		</requireOne>
 		<symbolPacks>
 			<li>
