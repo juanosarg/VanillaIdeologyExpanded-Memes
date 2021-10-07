@@ -8,6 +8,10 @@ namespace VanillaMemesExpanded
     {
         protected override ThoughtState ShouldHaveThought(Pawn p)
         {
+            if (!p.Map.IsPlayerHome)
+            {
+                return false;
+            }
 
             if (!PawnCollectionClass.colonist_junk_tracker.ContainsKey(p))
             {

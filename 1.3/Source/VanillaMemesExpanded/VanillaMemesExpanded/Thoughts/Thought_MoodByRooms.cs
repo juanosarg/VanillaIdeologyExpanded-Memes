@@ -10,8 +10,12 @@ namespace VanillaMemesExpanded
 	
 		protected override ThoughtState ShouldHaveThought(Pawn p)
 		{
+			if (!p.Map.IsPlayerHome)
+			{
+				return false;
+			}
 
-            if (PawnCollectionClass.roomsInMap < 5)
+			if (PawnCollectionClass.roomsInMap < 5)
             {
 				return ThoughtState.ActiveAtStage(4);
 			} else if (PawnCollectionClass.roomsInMap < 10)

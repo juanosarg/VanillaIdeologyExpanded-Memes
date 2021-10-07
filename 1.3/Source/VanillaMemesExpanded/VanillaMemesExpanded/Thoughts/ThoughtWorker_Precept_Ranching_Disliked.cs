@@ -9,6 +9,11 @@ namespace VanillaMemesExpanded
         protected override ThoughtState ShouldHaveThought(Pawn p)
         {
 
+            if (!p.Map.IsPlayerHome)
+            {
+                return false;
+            }
+
             if (PawnCollectionClass.pensInTheMap == 0)
             {
                 return ThoughtState.ActiveAtStage(0);

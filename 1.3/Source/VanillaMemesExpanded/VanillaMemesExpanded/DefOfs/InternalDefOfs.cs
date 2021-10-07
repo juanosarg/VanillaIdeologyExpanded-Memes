@@ -72,7 +72,7 @@ namespace VanillaMemesExpanded
 
 		public static PreceptDef VME_JunkDeconstructionYield_High;
 
-		public static PreceptDef VME_Leader_BestPsycaster;
+		
 
 		public static PreceptDef VME_IdeoRole_PartyHost;
 
