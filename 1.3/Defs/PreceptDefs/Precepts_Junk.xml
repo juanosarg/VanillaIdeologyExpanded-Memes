@@ -28,7 +28,7 @@
 	</PreceptDef>
 	<ThoughtDef>
 		<defName>VME_Junk_Beautiful</defName>
-		
+		<minExpectation>VeryLow</minExpectation>
 		<workerClass>VanillaMemesExpanded.Thought_Junk_Beautiful</workerClass>
 		<stages>
 			<li>

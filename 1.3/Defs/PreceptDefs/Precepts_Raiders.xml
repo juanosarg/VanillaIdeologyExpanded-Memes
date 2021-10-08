@@ -49,6 +49,7 @@
     <defName>VME_RecentConquest_Honorable</defName>
     <workerClass>ThoughtWorker_Precept_RecentConquest</workerClass>
     <validWhileDespawned>true</validWhileDespawned>
+	<minExpectation>Moderate</minExpectation>
     <stages>
       <li>
         <label>recent conquest</label>

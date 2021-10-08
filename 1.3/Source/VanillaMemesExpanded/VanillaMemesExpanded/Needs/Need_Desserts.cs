@@ -68,7 +68,12 @@ namespace VanillaMemesExpanded
 		{
 			if (!this.IsFrozen)
 			{
-				this.CurLevel -= this.DessertFallPerTick * 150f;
+                if (ExpectationsUtility.CurrentExpectationFor(this.pawn).order>2)
+                {
+
+					this.CurLevel -= this.DessertFallPerTick * 150f;
+				}
+               
 			}
 		}
 

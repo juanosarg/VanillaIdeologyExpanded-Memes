@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-
-
-	<Operation Class="PatchOperationAdd"> 
+	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/structureMemeWeights</xpath>
 		<value>
 			<VME_Structure_Serketist MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Serketist>
@@ -18,19 +16,15 @@
 			<VME_Structure_SecularSpirituality MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_SecularSpirituality>
 			<VME_Structure_Shintaoism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Shintaoism>
 			<VME_Structure_Corporate MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Corporate>
-
 		</value>
 	</Operation>
-	
-	<Operation Class="PatchOperationAdd"> 
+	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/disallowedMemes</xpath>
 		<value>
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Nomad</li>
-			
 		</value>
 	</Operation>
-
-	<Operation Class="PatchOperationAdd"> 
+	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/FactionDef[@Name="TribeBase"]/structureMemeWeights</xpath>
 		<value>
 			<VME_Structure_Serketist MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Serketist>
@@ -45,11 +39,9 @@
 			<VME_Structure_Agnosticism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Agnosticism>
 			<VME_Structure_SecularSpirituality MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_SecularSpirituality>
 			<VME_Structure_Shintaoism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Shintaoism>
-
-
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd"> 
+	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/FactionDef[@Name="TribeBase"]/disallowedMemes</xpath>
 		<value>
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Structure_Corporate</li>
@@ -57,84 +49,71 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Republic</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_CityBuilders</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_HardcoreIndustrialism</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Fleshcrafters</li>	
-
+			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Fleshcrafters</li>
 		</value>
 	</Operation>
-	
-	<Operation Class="PatchOperationAdd"> 
+	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/FactionDef[defName="TribeCivil"]/disallowedMemes</xpath>
 		<value>
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Bushido</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_BloodCourt</li>
-			
-
 		</value>
 	</Operation>
-	
-	<Operation Class="PatchOperationAdd"> 
+	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/FactionDef[defName="TribeRough"]/disallowedMemes</xpath>
 		<value>
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Pacifist</li>
-			
-
 		</value>
 	</Operation>
-	
-	<Operation Class="PatchOperationAdd"> 
+	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/FactionDef[defName="TribeSavage"]/disallowedMemes</xpath>
 		<value>
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Pacifist</li>
-			
-
 		</value>
 	</Operation>
-
-	<Operation Class="PatchOperationAdd"> 
+	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/FactionDef[@Name="PirateBandBase"]/structureMemeWeights</xpath>
 		<value>
-
 			<VME_Structure_Eschatologism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Eschatologism>
 			<VME_Structure_Authoritarianism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Authoritarianism>
 			<VME_Structure_CultOfPersonality MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_CultOfPersonality>
 			<VME_Structure_Agnosticism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Agnosticism>
-
-
 		</value>
 	</Operation>
-	
-	
-	<Operation Class="PatchOperationAdd"> 
+	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/FactionDef[@Name="PirateBandBase"]/allowedMemes</xpath>
 		<value>
-
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Bushido</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_BloodCourt</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_GodEmperor</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_FireWorship</li>
 		</value>
 	</Operation>
-
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Royalty</li>
 		</mods>
-
-		<match Class="PatchOperationAdd"> 
-			<xpath>/Defs/FactionDef[defName="Empire"]/structureMemeWeights</xpath>
-			<value>
-				
-				<VME_Structure_Authoritarianism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Authoritarianism>			
-				<VME_Structure_Agnosticism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Agnosticism>
-				<VME_Structure_SecularSpirituality MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_SecularSpirituality>
-
-			</value>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/FactionDef[defName="Empire"]/structureMemeWeights</xpath>
+					<value>
+						<VME_Structure_Authoritarianism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Authoritarianism>
+						<VME_Structure_Agnosticism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Agnosticism>
+						<VME_Structure_SecularSpirituality MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_SecularSpirituality>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/FactionDef[defName="Empire"]/allowedMemes</xpath>
+					<value>
+						
+						<li MayRequire="Ludeon.RimWorld.Ideology">VME_Aristocratic</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">VME_Light</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">VME_CityBuilders</li>
+						
+					</value>
+				</li>
+			</operations>
 		</match>
-
 	</Operation>
-
-
-
-
-
 </Patch>

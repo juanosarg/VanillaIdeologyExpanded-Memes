@@ -32,6 +32,7 @@
 	<ThoughtDef>
 		<defName>VME_Alcohol_Demanded</defName>
 		<validWhileDespawned>true</validWhileDespawned>
+		<minExpectation>Moderate</minExpectation>
 		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Alcohol</workerClass>
 		<stages>
 			<li>
