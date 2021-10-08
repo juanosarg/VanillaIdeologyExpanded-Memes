@@ -86,6 +86,7 @@
 		<label>shared</label>
 		<description>Empathy is a quality we must all strive to possess. We bear each other's burdens as well as each other's jubilations.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - If the average colony mood is happy, colonists receive a positive thought, and vice versa.</description>
 		<impact>High</impact>
+		
 		<displayOrderInIssue>40</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
 		<associatedMemes>

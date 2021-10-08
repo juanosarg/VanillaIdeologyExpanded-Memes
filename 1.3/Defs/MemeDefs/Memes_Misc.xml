@@ -355,6 +355,9 @@
 		<allowDuringTutorial>true</allowDuringTutorial>
 		<groupDef>Individualism</groupDef>
 		<impact>1</impact>
+		<consumableBuildings>
+			<li>SacrificialFlag</li>
+		</consumableBuildings>
 		<exclusionTags>
 			<li>Individualism</li>
 		</exclusionTags>
@@ -1486,6 +1489,7 @@
 			<li>VME_PacifistsNotViolentConverters</li>
 			<li>VME_TooHonourable</li>
 			<li>VME_NotRaiders</li>
+			<li>VME_SadistVsNonviolence</li>
 		</exclusionTags>
 		<impact>3</impact>
 		<generalRules>
@@ -1906,7 +1910,6 @@
 			<li>
 				<li>RoughLiving_Welcomed</li>
 			</li>
-			
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -1916,7 +1919,6 @@
 				<member>nomad</member>
 			</li>
 		</symbolPacks>
-		
 	</MemeDef>
 	<MemeDef>
 		<defName>VME_BloodCourt</defName>
@@ -2352,7 +2354,6 @@
 				<li>memeConcept->privacy</li>
 				<li>memeConcept->anonymity</li>
 				<li>memeLeaderNoun->anon</li>
-				
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
@@ -2401,7 +2402,6 @@
 			<li>
 				<li>VME_Anonymity_Required</li>
 			</li>
-			
 		</requireOne>
 		<selectOneOrNone>
 			<noneChance>0</noneChance>

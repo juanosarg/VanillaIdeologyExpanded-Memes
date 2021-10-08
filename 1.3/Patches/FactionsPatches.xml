@@ -87,6 +87,9 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_BloodCourt</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_GodEmperor</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_FireWorship</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">VME_HolyDiseases</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Nomad</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Scrapper</li>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationFindMod">
@@ -110,7 +113,8 @@
 						<li MayRequire="Ludeon.RimWorld.Ideology">VME_Aristocratic</li>
 						<li MayRequire="Ludeon.RimWorld.Ideology">VME_Light</li>
 						<li MayRequire="Ludeon.RimWorld.Ideology">VME_CityBuilders</li>
-						
+						<li MayRequire="Ludeon.RimWorld.Ideology">VME_PsychicFocus</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">VME_Anonymity</li>
 					</value>
 				</li>
 			</operations>
