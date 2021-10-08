@@ -1229,6 +1229,9 @@
 		<iconPath>UI/Memes/Elders</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>1</impact>
+		<exclusionTags>
+			<li>VME_EldersOrYouth</li>
+		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->elderly</li>

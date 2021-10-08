@@ -431,6 +431,7 @@
     <Compile Include="Thoughts\ThoughtWorker_Precept_Alcohol.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_Travel.cs" />
     <Compile Include="Thoughts\Thought_DisableFirstDefeatThought.cs" />
+    <Compile Include="Thoughts\Thought_Elders_Despised.cs" />
     <Compile Include="Thoughts\Thought_Elders_Respected.cs" />
     <Compile Include="Thoughts\Thought_IdeoRole_FireKeeper.cs" />
     <Compile Include="Thoughts\Thought_Illness_Preferred.cs" />

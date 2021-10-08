@@ -27,11 +27,15 @@
 	<ThoughtDef>
 		<defName>VME_Elders_Despised</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>VanillaMemesExpanded.Thought_Elders_Respected</workerClass>
+		<workerClass>VanillaMemesExpanded.Thought_Elders_Despised</workerClass>
 		<stages>
 			<li>
 				<label>elder</label>
 				<baseOpinionOffset>-40</baseOpinionOffset>
+			</li>
+			<li>
+				<label>youth</label>
+				<baseOpinionOffset>20</baseOpinionOffset>
 			</li>
 				
 			
