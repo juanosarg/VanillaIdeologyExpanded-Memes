@@ -5,6 +5,10 @@
 		<label>serketism</label>
 		<description>The true face of gods is found in the bite of a spider, the sting of the scorpion. Let those of many legs crawl all over us.</description>
 		<category>Structure</category>
+		<exclusionTags>
+			<li>AA_SerketistAndEradicators</li>
+					
+		</exclusionTags>
 		<iconPath>UI/Structures/Structure_Serketism</iconPath>
 		<impact>0</impact>
 		<worshipRoomLabel>hive</worshipRoomLabel>
