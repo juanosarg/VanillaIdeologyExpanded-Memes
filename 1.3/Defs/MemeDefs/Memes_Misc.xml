@@ -1307,6 +1307,7 @@
 		<impact>3</impact>
 		<exclusionTags>
 			<li>VME_VeganVsRancher</li>
+			<li>VME_VeganVsExterminators</li>
 			<li>VME_VeganVsFishing</li>
 		</exclusionTags>
 		<generalRules>
