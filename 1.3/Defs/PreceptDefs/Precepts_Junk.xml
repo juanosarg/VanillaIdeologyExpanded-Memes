@@ -23,6 +23,15 @@
 			<li Class="PreceptComp_SituationalThought">
 
 				<thought>VME_Junk_Beautiful</thought>
+				<thoughtStageDescriptions>
+					<li>no junk</li>
+					<li>very little junk</li>
+					<li>small junk</li>
+					<li>saw junk</li>
+					<li>amazing junk</li>
+					<li>beautiful junk</li>
+					
+				</thoughtStageDescriptions>
 			</li>
 		</comps>
 	</PreceptDef>

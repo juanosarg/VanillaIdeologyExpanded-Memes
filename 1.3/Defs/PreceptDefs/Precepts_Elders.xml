@@ -5,9 +5,7 @@
 		<label>elders</label>
 		<iconPath>UI/Issues/Elders</iconPath>
 	</IssueDef>
-	
 	<!-- Precepts -->
-	
 	<PreceptDef>
 		<defName>VME_Elders_Despised</defName>
 		<issue>VME_Elders</issue>
@@ -16,11 +14,14 @@
 		<impact>Medium</impact>
 		<displayOrderInIssue>30</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
-		
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
-
 				<thought>VME_Elders_Despised</thought>
+				<thoughtStageDescriptions>
+					<li>elder (more than 65 years)</li>
+					<li>youth (less than 25 years)</li>
+					
+				</thoughtStageDescriptions>
 			</li>
 		</comps>
 	</PreceptDef>
@@ -37,9 +38,6 @@
 				<label>youth</label>
 				<baseOpinionOffset>20</baseOpinionOffset>
 			</li>
-				
-			
-			
 		</stages>
 	</ThoughtDef>
 	<PreceptDef>
@@ -53,11 +51,13 @@
 		<associatedMemes>
 			<li>VME_Elders</li>
 		</associatedMemes>
-		
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
-
 				<thought>VME_Elders_Respected</thought>
+				<thoughtStageDescriptions>
+					<li>elder (more than 65 years)</li>
+				
+				</thoughtStageDescriptions>
 			</li>
 		</comps>
 	</PreceptDef>
@@ -70,12 +70,8 @@
 				<label>elder</label>
 				<baseOpinionOffset>40</baseOpinionOffset>
 			</li>
-				
-			
-			
 		</stages>
 	</ThoughtDef>
-	
 	<PreceptDef>
 		<defName>VME_Elders_Holy</defName>
 		<issue>VME_Elders</issue>
@@ -92,8 +88,11 @@
 		</exclusionTags>
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
-
 				<thought>VME_Elders_Holy</thought>
+				<thoughtStageDescriptions>
+					<li>elder (more than 65 years)</li>
+				
+				</thoughtStageDescriptions>
 			</li>
 		</comps>
 	</PreceptDef>
@@ -106,9 +105,6 @@
 				<label>elder</label>
 				<baseOpinionOffset>100</baseOpinionOffset>
 			</li>
-				
-			
-			
 		</stages>
 	</ThoughtDef>
 </Defs>

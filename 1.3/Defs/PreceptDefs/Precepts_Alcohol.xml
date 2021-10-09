@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
 	<!-- Issues -->
-
-
 	<IssueDef>
 		<defName>VME_Alcohol</defName>
 		<label>alcohol</label>
 		<iconPath>UI/Issues/Alcohol</iconPath>
 	</IssueDef>
-
 	<!-- Precepts -->
-
-
-
 	<PreceptDef>
 		<defName>VME_Alcohol_Demanded</defName>
 		<issue>VME_Alcohol</issue>
@@ -26,6 +19,13 @@
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
 				<thought>VME_Alcohol_Demanded</thought>
+				<thoughtStageDescriptions>
+					<li>Missed alcohol (3 days)</li>
+					<li>No alcohol (5 days)</li>
+					<li>Needs alcohol (10 days)</li>
+					<li>Craves alcohol (15 days)</li>
+					<li>Demands alcohol (30 days)</li>
+				</thoughtStageDescriptions>
 			</li>
 		</comps>
 	</PreceptDef>
@@ -61,16 +61,13 @@
 				<baseMoodEffect>-48</baseMoodEffect>
 			</li>
 		</stages>
-
 	</ThoughtDef>
-	
 	<PreceptDef>
 		<defName>VME_Alcohol_MildAbstinence</defName>
 		<issue>VME_Alcohol</issue>
 		<label>mild abstinence</label>
 		<description>Alcohol is okay when consumed in small dosages, but it is better to stay away from it as long as possible.</description>
 		<impact>Low</impact>
-		
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
 				<thought>VME_Alcohol_MildAbstinence</thought>
@@ -92,11 +89,6 @@
 				<description>I haven't consumed alcohol lately.</description>
 				<baseMoodEffect>2</baseMoodEffect>
 			</li>
-			
 		</stages>
-
 	</ThoughtDef>
-
-
-
 </Defs>

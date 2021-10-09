@@ -25,6 +25,18 @@
 			<li Class="PreceptComp_SituationalThought">
 				
 				<thought>VME_Mood_DictatedByStars</thought>
+				<thoughtStageDescriptions>
+					<li>stars are aligned</li>
+					<li>stars are perfect</li>
+					<li>stars are excellent</li>
+					<li>stars are good</li>
+					<li>stars are indifferent</li>
+					<li>stars are bad</li>
+					<li>stars are not on my side</li>
+					<li>stars are a bad omen</li>
+					<li>stars are aligned… against me</li>
+					
+				</thoughtStageDescriptions>
 			</li>
 		</comps>
 	</PreceptDef>

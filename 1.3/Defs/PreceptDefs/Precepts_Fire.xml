@@ -27,6 +27,15 @@
 			<li Class="PreceptComp_SituationalThought">
 
 				<thought>VME_Fire_Desired</thought>
+				<thoughtStageDescriptions>
+					<li>no fires nearby</li>
+					<li>very few fires</li>
+					<li>small fires</li>
+					<li>saw fires</li>
+					<li>amazing fires</li>
+					<li>beautiful fires</li>
+					
+				</thoughtStageDescriptions>
 			</li>
 		</comps>
 	</PreceptDef>
@@ -84,6 +93,15 @@
 			<li Class="PreceptComp_SituationalThought">
 
 				<thought>VME_Fire_Despised</thought>
+				<thoughtStageDescriptions>
+					<li>no fires nearby</li>
+					<li>very few fires</li>
+					<li>small fire</li>
+					<li>saw fire</li>
+					<li>blazing fires</li>
+					<li>conflagration</li>
+					
+				</thoughtStageDescriptions>
 			</li>
 		</comps>
 	</PreceptDef>

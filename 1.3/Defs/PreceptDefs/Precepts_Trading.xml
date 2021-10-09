@@ -26,6 +26,11 @@
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
 				<thought>VME_Trading_Required</thought>
+				<thoughtStageDescriptions>
+					<li>business is booming!</li>
+					<li>no customers</li>
+				
+				</thoughtStageDescriptions>
 			</li>
 		</comps>
 	</PreceptDef>

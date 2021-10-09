@@ -23,6 +23,13 @@
 			<li Class="PreceptComp_SituationalThought">
 
 				<thought>VME_Scars_Honorable</thought>
+				<thoughtStageDescriptions>
+					<li>faintly scarred</li>
+					<li>scarred</li>
+					<li>heavily scarred</li>
+					<li>extremely scarred</li>
+					<li>innumerable battlefield scars</li>
+				</thoughtStageDescriptions>
 			</li>
 		</comps>
 	</PreceptDef>
@@ -70,6 +77,13 @@
 			<li Class="PreceptComp_SituationalThought">
 
 				<thought>VME_Scars_Disgusting</thought>
+				<thoughtStageDescriptions>
+					<li>faintly scarred</li>
+					<li>scarred</li>
+					<li>heavily scarred</li>
+					<li>extremely scarred</li>
+					<li>innumerable battlefield scars</li>
+				</thoughtStageDescriptions>
 			</li>
 		</comps>
 	</PreceptDef>

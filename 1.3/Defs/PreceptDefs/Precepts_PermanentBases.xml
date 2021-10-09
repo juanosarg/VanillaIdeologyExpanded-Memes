@@ -22,10 +22,23 @@
 		<comps>			
 			<li Class="PreceptComp_SituationalThought">
 				<thought>VME_PermanentBases_Despised</thought>
+				<thoughtStageDescriptions>
+					<li>wanderlust (15 days)</li>
+					<li>wanderlust (16 days)</li>
+					<li>wanderlust (17 days)</li>
+					<li>wanderlust (20 days)</li>
+					<li>wanderlust (30 days)</li>
+					<li>wanderlust (40 days)</li>
+					<li>wanderlust (50 days)</li>
+					<li>wanderlust (60 days)</li>
+					
+				</thoughtStageDescriptions>
 			</li>
 		</comps>
 		
 	</PreceptDef>
+	
+	
 	
 	<ThoughtDef>
 		<defName>VME_PermanentBases_Despised</defName>
@@ -95,6 +108,15 @@
 		<comps>			
 			<li Class="PreceptComp_SituationalThought">
 				<thought>VME_PermanentBases_Desired</thought>
+				<thoughtStageDescriptions>
+					<li>magnificent city (more than 20 buildings)</li>
+					<li>lots of beautiful buildings (less than 20 buildings)</li>
+					<li>many beautiful buildings (less than 15 buildings)</li>
+					<li>burgeoning city (less than 10 buildings)</li>
+					<li>not enough buildings (less than 5 buildings)</li>
+					
+					
+				</thoughtStageDescriptions>
 			</li>
 		</comps>
 		
@@ -111,7 +133,7 @@
 				<baseMoodEffect>20</baseMoodEffect>
 			</li>
 			<li>
-				<label>many beautiful buildings</label>
+				<label>lots of beautiful buildings</label>
 				<description>We have so many beautiful buildings!</description>
 				<baseMoodEffect>15</baseMoodEffect>
 			</li>

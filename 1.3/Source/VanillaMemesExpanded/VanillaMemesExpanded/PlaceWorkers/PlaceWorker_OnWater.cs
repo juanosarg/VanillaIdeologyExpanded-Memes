@@ -17,7 +17,7 @@ namespace VanillaMemesExpanded
                     return new AcceptanceReport("VME_NeedsWater".Translate());
                 }
             }
-            foreach (Thing generator in GenRadial.RadialDistinctThingsAround(loc, map, 10, true))
+            foreach (Thing generator in GenRadial.RadialDistinctThingsAround(loc, map, 5, true))
             {
                 Building generatorBuilding = generator as Building;
                 if (generatorBuilding != null &&generatorBuilding.def.defName.Contains("FishingTrap"))
@@ -39,7 +39,7 @@ namespace VanillaMemesExpanded
 
             Color color2 = new Color(0f, 0.6f, 0f);
 
-            GenDraw.DrawRadiusRing(loc, 10, color2);
+            GenDraw.DrawRadiusRing(loc, 5, color2);
 
         }
 

@@ -25,6 +25,13 @@
 			<li Class="PreceptComp_SituationalThought">
 
 				<thought>VME_Leader_Godlike</thought>
+				<thoughtStageDescriptions>
+					<li>supreme god emperor (certainty above 75%)</li>
+					<li>god emperor (certainty above 50%)</li>
+					<li>dubious divinity (certainty above 25%)</li>
+					<li>false god (certainty below 25%)</li>
+					
+				</thoughtStageDescriptions>
 			</li>
 		</comps>
 	</PreceptDef>
