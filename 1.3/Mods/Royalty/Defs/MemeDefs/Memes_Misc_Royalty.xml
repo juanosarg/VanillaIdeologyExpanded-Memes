@@ -10,6 +10,7 @@
 		<exclusionTags>
 			
 			<li>VME_LeaderPrecepts</li>
+			<li>VME_AffinityVsVampires</li>
 		</exclusionTags>
 		<impact>2</impact>
 		<generalRules>

@@ -62,6 +62,8 @@
 					<li>eschatologismFact(tag=meme_ViolentConversion)->There will be nothing left. The filthy infidels will be purged by atomic fire and deadly disease.</li>
 					<!-- corporate -->
 					<li>introMemo(tag=meme_ViolentConversion)->As you know, the mission of our Company is way too important to let others get in our way, so we are preparing a hostile merger to get rid of these... undesireable competitors.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->We need to spread by force the reality of these creatures, seeded by humanity through all the Rim.</li>
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -156,6 +158,8 @@
 					<li>eschatologismFact(tag=meme_Astrology)->The stars will only show a singular fate: destruction.</li>
 					<!-- corporate -->
 					<li>introMemo(tag=meme_Astrology)->It has been brought to my atention that some of you are using work breaks to share your astrological charts. Although this is a sanctioned topic by the Company, I would like to remind you that breaks should never exceed the allotted time.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->The stars will reveal us the reality of these wondrous creatures.</li>
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -246,6 +250,8 @@
 					<li>eschatologismFact(tag=meme_GodEmperor)->Our God Emperor will bring forth the End Times. In servitude, we will participate in this divine glory.</li>
 					<!-- corporate -->
 					<li>introMemo(tag=meme_GodEmperor)->Now, I know there have been rummors of the CEO of the Company being a God. Yes, a God Emperor, in fact. But that doesn't mean anything unless each and any of you acts PROACTIVELY. We need to leverage our assets!</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->All these wondrous animals will be a great trophy for our beloved God Emperor.</li>
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -318,6 +324,8 @@
 					<li>eschatologismFact(tag=meme_HardcoreIndustrialis)->Our factories will bloat the sky and suffocate all life. Their skin will dissolve from their bones, and be consumed in the fires of industry.</li>
 					<!-- corporate -->
 					<li>introMemo(tag=meme_HardcoreIndustrialis)->It has come to my attention that our production quotas have fallen 4.56% compared to last quarter. This is unnaceptable, and I trust that you will labour harder than ever to increase our throughput to desireable levels.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->All these wondrous creatures show us what the ingenuity of humanity can do through hard work and careful experimentation.</li>
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -409,6 +417,8 @@
 					<li>eschatologismFact(tag=meme_Gestalt)->We will unify our minds in a harmony of purpose and thought; no indecision, no doubts. A single purpose, a single will: to destroy.</li>
 					<!-- corporate -->
 					<li>introMemo(tag=meme_Gestalt)->There have been some unsavoury rumours about an "employee appreciation" award. Let me remind you that in this Company we all act as One. We strive for a harmony of purpose and thought; no indecision, no doubts; the security and strength of a unified will. This is what our clients want, this is what out clients DESERVE.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->If we have to judge whether all these genetically modified creations are good or bad, we will need to do it together.</li>
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -493,6 +503,8 @@
 					<li>eschatologismFact(tag=meme_Fleshcrafting)->We will shape our bodies, contorting them into nightmarish shapes that will bring with them the end of all things.</li>
 					<!-- corporate -->
 					<li>introMemo(tag=meme_Fleshcrafting)->The company's policy about self-mutilation and fleshcrafting is crystal clear: if it helps the bottom line, go ahead. Just please clean the meeting room afterwards.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->All these wayward creations of humanity provide us with an infinite bounty of flesh for our experiments.</li>
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -574,7 +586,7 @@
 					<li>archistFact(tag=meme_HolyDiseases)     ->If the archotechs treated us as we treat the creatures that seem insignificant to us, they'd have wiped us from existance a long time ago.</li>
 					<li>archistProphecy(tag=meme_HolyDiseases) ->Therefore, it stands to reason to treat diseases as we'd like to be treated by entities who are so far above us in the evolutionary scale as we are to microorganisms.</li>
 					<!-- animist -->
-					<li>animistBasis(tag=meme_HolyDiseases)    ->In the world of spirits, everything has a corresponding entity that guardas it and protects it.</li>
+					<li>animistBasis(tag=meme_HolyDiseases)    ->In the world of spirits, everything has a corresponding entity that guards it and protects it.</li>
 					<li>animistFact(tag=meme_HolyDiseases)     ->It stands to reason that even the most insignificant and smallest of beings have a corresponding spirit, too.</li>
 					<li>animistProphecy(tag=meme_HolyDiseases) ->By offering our mortal bodies as vessels for the spirits of disease, we will ensure to always be on their good graces.</li>
 					<!-- serketist -->
@@ -587,6 +599,8 @@
 					<li>eschatologismFact(tag=meme_HolyDiseases)->There will be four signs of the impending Apocalypse: Disease, Famine, War and Death, and we shall embrace the first horseman with glee.</li>
 					<!-- corporate -->
 					<li>introMemo(tag=meme_HolyDiseases)->Regarding the issue of paid sick leave, the company is OK with it, as long as you work from home, and work harder. A few degrees of fever never killed anyone! And if they did, it was in service to the company, so everything worked out in hindsight! Think proactively!</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->All these wayward creations of humanity provide us with an infinite reservoir of holy diseases, a cornucopia of plagues.</li>
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -679,6 +693,8 @@
 					<li>eschatologismFact(tag=meme_CraftCulture)->Mark my words: the world will end, and we shall be the crafters of its demise.</li>
 					<!-- corporate -->
 					<li>introMemo(tag=meme_CraftCulture)->Starting next Tuesday, we are introducing production quotas on each crafting station. Bear in mind that straying too far from these quotas might result in immediate admonishment from Upper Management. Guys, this is not a charity, we are here to PRODUCE.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->All these wayward creations of humanity provide us with infinite inspiration for our own creations.</li>
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -770,6 +786,8 @@
 					<li>eschatologismFact(tag=meme_Progressive)->We won't stop at a single world. Our automated orbital factories will fill the Cosmos with a myriad destructive machines. We shall bring the end of everything.</li>
 					<!-- corporate -->
 					<li>introMemo(tag=meme_Progressive)->We have received complaints from Steve in tech support concerning the reluctance of some of you to adopt the new process automation policies. Some people were overhead saying "I spent 30 hours automating a process that I could do in half an hour by hand!". This is SO SHORTSIGHTED!</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->All these wayward creations of humanity shows us what humanity can achieve through automated technology, wondrous genetic laboratories sampling the genome at breakneck speeds.</li>
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -846,6 +864,8 @@
 					<li>eschatologismFact(tag=meme_Aristocratic)->We shall name our leader the Prince of Lies. The one who brings the end of all things.</li>
 					<!-- corporate -->
 					<li>introMemo(tag=meme_Aristocratic)->Remember that those of noble blood have vacation time privileges. Yes, I understand that some of you would like to take a vacation in August, and that you may have two children and it's hard to find a good daycare in that month, but your lack of aristocratic lineage means you will have to adapt to the current situation.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->We will create wondrous royal menageries with all of these creatures, a veritable display of our power and might.</li>
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -926,7 +946,9 @@
 					<!-- eschatologism -->
 					<li>eschatologismFact(tag=meme_Republic)->Lead by three heralds of the end of times, we will usher in a new era of darkness.</li>
 					<!-- corporate -->
-					<li>introMemo(tag=meme_Republic)->We are aware that some new employees are confused with our somewhat unorthodox corporate structure... It's simple, really, we consider our company to be a post-modern form of government, based on efficiency and economical robustness.</li>
+					<li>introMemo(tag=meme_Republic)->We are aware that some new employees are confused with our somewhat unorthodox three-winged corporate structure... It's simple, really, we consider our company to be a post-modern form of government, based on efficiency and economical robustness.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->Our three triumvir will decide the fate of all these wayward human creations, for we trust their wisdom in such matters.</li>
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -1006,6 +1028,8 @@
 					<li>eschatologismFact(tag=meme_ExaltedPriesthood)->The Dark Pope, highest among our priests, will usher in the end of times. The herald of this world's destruction.</li>
 					<!-- corporate -->
 					<li>introMemo(tag=meme_ExaltedPriesthood)->If you look at the calendar, you have certainly noticed that the birthday of our Dear Leader and CEO is in two weeks. Now, it is of course an optional thing, but in the name of good team spirit I expect each and every one of you to look for a gift of at least two months salary equivalent price. It's the least we can do!</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->Our dear leader, the highest among our priests, will decide the fate of all these wayward human creations, for we trust his wisdom in such matters.</li>
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -1087,6 +1111,9 @@
 					<li>eschatologismFact(tag=meme_Scrapper)->The Rim is littered with the technological corpses of those who have fallen before, and we will use their own forgotten technology to bring the end of times.</li>
 					<!-- corporate -->
 					<li>introMemo(tag=meme_Scrapper)->In this week's recommended reading I'd like to point you to: "Reassess, reduce, reuse, recycle – how to be a sustainable modern business". Please read it at your leisure and we will discuss the finer points in tomorrow's meeting.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->Perhaps all these wayward human creations can be repurposed somehow, as they are nothing but living pieces of ancient technology.</li>
+					
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -1181,6 +1208,9 @@
 					<li>eschatologismFact(tag=meme_Trader)->We will amass wealth beyond all imagining, and with it hopefully buy the doomsday devices that will bring the end of days.</li>
 					<!-- corporate -->
 					<li>introMemo(tag=meme_Trader)->Regarding employee incentives, please remember that this is not a charity. As the saying goes: "it is wealth that moves the world, and profit that rules it".</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->These wayward creations, born of human creativity, represent a boundless potential wealth that we'd do well to exploit.</li>
+					
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -1280,6 +1310,9 @@
 					<li>eschatologismFact(tag=meme_Elders)->We shall honour our elders, for they have been labouring the longest to bring about the end of days.</li>
 					<!-- corporate -->
 					<li>introMemo(tag=meme_Elders)->Hear me out on this: it is time to retire retirement. Retirement only causes a severe shortage of talented workers, people who have been bringing expertise and wisdom to our company for decades. Why are we just letting them go? It's absurd!</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->These wayward creations, born of human creativity, hold a treasure trove of ancient wisdom, a window to the forgotten techniques of our ancestors.</li>
+					
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -1357,6 +1390,9 @@
 					<li>eschatologismFact(tag=meme_Vegan)->We will shun the devouring of corrupt, rotting, sickening meat, for it is a symbol of why this world and its cruel inhabitants must be purged.</li>
 					<!-- corporate -->
 					<li>introMemo(tag=meme_Vegan)->Starting from now, we will only offer vegan alternatives in our cattering services. Simply put, meat is too expensive, and we need to streamline our expenses to keep being competitive.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->These wayward creatures are poor, innocent beings. It would be a grave mistake to mistreat them in any way.</li>
+					
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -1452,6 +1488,9 @@
 					<li>eschatologismFact(tag=meme_Egalitarian)->A narrow mind won't be able to bring the end of days. We'll need to expand our minds if we want to get the job done.</li>
 					<!-- corporate -->
 					<li>introMemo(tag=meme_Egalitarian)->This coming week we are instating the new multifaith policies to ensure all our employees are free to express their own beliefs in peace. The Human Resources department will handle reservations and timetables for the scheduled multifaith masses.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->These wayward creatures are a point of contention among many people. Are they to be protected, or destroyed? We'd do well to listen to all points of view before deciding.</li>
+					
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -1494,6 +1533,8 @@
 			<li>VME_TooHonourable</li>
 			<li>VME_NotRaiders</li>
 			<li>VME_SadistVsNonviolence</li>
+			<li>VME_PacifistsVsDefilers</li>
+
 		</exclusionTags>
 		<impact>3</impact>
 		<generalRules>
@@ -1541,6 +1582,9 @@
 					<li>eschatologismFact(tag=meme_Pacifist)->As much as the world deserves to burn, we are not killers. If we become murderers, how are we any better than this cursed Universe? No, the Apocalypse must be brought without bloodshed, cleanly. It's the only way.</li>
 					<!-- corporate -->
 					<li>introMemo(tag=meme_Pacifist)->We are writing to inform you that the two employees (who shall remain unnamed per the company's privacy clauses) who caused a violent altercation yesterday have had their contracts terminated, and are no longer part of our staff. Such violence in the workplace is abhorrent and we will NOT let it go unpunished.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->These wayward creatures are innocent beings. We are not killers, and perhaps we'd better leave them alone.</li>
+					
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -1630,6 +1674,9 @@
 					<li>eschatologismFact(tag=meme_FireWorship)->We will watch it all burn.</li>
 					<!-- corporate -->
 					<li>introMemo(tag=meme_FireWorship)->Let me remind you all that this week's fire evacuation drill has been scheduled one hour earlier than usual. We take safety measures very seriously here: fire may be sacred, but a burned employee harms profits.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->All these wayward creatures, forgotten creations of humanity, will serve as kindling for the flames.</li>
+					
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -1720,7 +1767,10 @@
 					<!-- eschatologism -->
 					<li>eschatologismFact(tag=meme_Bushido)->Through the very end, we will keep ourselves pure, for only a life lived with honour, courage and skill is worth living.</li>
 					<!-- corporate -->
-					<li>introMemo(tag=meme_Bushido)->Remember our motto! "Only a life lived with honour, courage and skill is worth living".</li>
+					<li>introMemo(tag=meme_Bushido)->Remember our motto! "Only a life lived with honour, courage and skill is worth living". We encourage printing this on stickers to decorate your offices.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->These wayward creatures, forgotten and discarded creations of humanity's hubris, remind us that only a life lived with honour, courage and skill is worth living.</li>
+					
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -1813,6 +1863,9 @@
 					<li>eschatologismFact(tag=meme_Light)->A blinding light will herald the end of days, bathing the world in a deadly, annihilating brilliance.</li>
 					<!-- corporate -->
 					<li>introMemo(tag=meme_Light)->As scheduled, the new blue-coloured neon light fixtures will be installed on all our offices beginning next Tuesday. These are energy-efficient lights, so good for the environment!</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->These wayward creatures have veered too far from the light, and wander into darkness.</li>
+					
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -1898,6 +1951,9 @@
 					<li>eschatologismFact(tag=meme_Nomad)->We will scour every corner of the world, never resting, never slowing down, until we bring the end of days.</li>
 					<!-- corporate -->
 					<li>introMemo(tag=meme_Nomad)->In the interest of dedication, flexibility, and resolve, we have decided to implement a new policy of "mobile offices" that will greatly increase our productivity. Thank you for trusting in our ability to find new ways to continue to provide the best goods and services for our customers, all the while caring for our employees.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->These wayward creatures can be our companions on the road, forever looking for a place where they can fit in.</li>
+					
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -1981,6 +2037,9 @@
 					<li>eschatologismFact(tag=meme_BloodCourt)->Of course, people will resist, clinging to their pathetic existance in this doomed, cursed world. We will crush them.</li>
 					<!-- corporate -->
 					<li>introMemo(tag=meme_BloodCourt)->Are you interested in a promotion? I'm glad to inform you all that from now on we are scheduling company-approved gladiator fights around the coffee machine. Tired of your boss? Prove it!</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->These wayward creatures can show us what strength looks like, and by overpowering them we might prove to ourselves that we are deserving of it.</li>
+					
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -2071,6 +2130,9 @@
 					<li>eschatologismFact(tag=meme_CityBuilders)->We will build gigantic, spawling cities, from which our forces will pour like molten lead and burn the whole world.</li>
 					<!-- corporate -->
 					<li>introMemo(tag=meme_CityBuilders)->I'm happy to announce that we are opening seven new branches of the company. If you'd like to request a transference to any of them, please let me know ASAP.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->These wayward creatures can be useful when building our glorious cities.</li>
+					
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -2152,6 +2214,9 @@
 					<li>eschatologismFact(tag=meme_MechanoidSupremacy)->We will emulate the rage and ferocity of the mechanoids, perfect beings who are hell-bent on eradicating humanity.</li>
 					<!-- corporate -->
 					<li>introMemo(tag=meme_MechanoidSupremacy)->Starting next quarter, we will provide a helpful mechanoid companion to each of our employees. They will come pre-configured with a brand new productivity suite that I think most of you will find super useful to increase your proactivity and ROI.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->These wayward creatures are faulty, mere biological machines that pale in comparison to any mechanoid, but they are a step in the right direction.</li>
+					
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -2182,6 +2247,9 @@
 		<description>The labyrinthine tunnels of the underdark ungulate with a seemingly limitless hive of relentless and brutal insects, we should not fear them, we should revere them.</description>
 		<iconPath>UI/Memes/InsectoidSupremacy</iconPath>
 		<groupDef>Misc</groupDef>
+		<exclusionTags>
+			<li>VME_InsectoidVsDefilers</li>
+		</exclusionTags>
 		<impact>2</impact>
 		<generalRules>
 			<rulesStrings>
@@ -2231,6 +2299,9 @@
 					<li>eschatologismFact(tag=meme_InsectoidSupremacy)->Like a devouring swarm of ravenous insects we will descend upon our enemies, and leave only their bones, devoid of flesh.</li>
 					<!-- corporate -->
 					<li>introMemo(tag=meme_InsectoidSupremacy)->Concerning the constant reports about cockroaches in the cafeteria, need I remind you that cockroaches are living creatures, as worthy of respect as you and I? I will not allow a single more furtive call to a pest control company!</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->Among these genetically modified animals lies the insectoid geneline that was developed at Sorne, and that brought us the perfect lifeform.</li>
+					
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -2314,7 +2385,11 @@
 					<!-- eschatologism -->
 					<li>eschatologismFact(tag=meme_PartyLife)->The world will burn, and this is something that is better not to face sober.</li>
 					<!-- corporate -->
-					<li>introMemo(tag=meme_PartyLife)->It's our favourite time of the year already! The company's mandatory team-building exercise will be scheduled for this next Tuesday. Remember to bring your tennis paddles!</li>
+					<li>introMemo(tag=meme_PartyLife)->It's our favourite time of the year already! The company's mandatory team-building exercise will be scheduled for this next Tuesday. Remember to bring your tennis paddles!</li>					
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->I have heard there is even some weird lizard that turns plants into alcohol. Ohhh, man, I could hug that lizard right now.</li>
+					
+					
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -2396,6 +2471,9 @@
 					<li>eschatologismFact(tag=meme_Anonymity)->The world will burn, and we shall be the faceless and anonymous bringers of its downfall.</li>
 					<!-- corporate -->
 					<li>introMemo(tag=meme_Anonymity)->Lately we have had multiple instances of people using "Reply All" on company e-mails. Let me remind you that this is unnecessary and leads to confusion.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->Animals do not care about human. We can be ourselves with them, as they are not as prone to judgement as humans are.</li>
+					
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
