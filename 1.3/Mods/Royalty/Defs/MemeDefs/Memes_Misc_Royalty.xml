@@ -43,7 +43,7 @@
 					<li>story(uses=1,tag=meme_PsychicFocus)    ->[founder_pronoun] founded a prestigious martial academy where all [foeLeader_possessive] followers could learn how to hone their minds and use them as a weapon.</li>
 					<!-- ideological lesson -->
 					<li>lessonIntro(tag=meme_PsychicFocus)         ->In all my years teaching the disciplines of the mind, I learned one lesson that is more important than anything else:</li>
-					<li>lesson(tag=meme_PsychicFocus)              ->you don't use your mind as a weapon, your mind IS the weapon. You don't just use it for offenssive purposes, or it is wasted</li>
+					<li>lesson(tag=meme_PsychicFocus)              ->you don't use your mind as a weapon, your mind IS the weapon. You don't just use it for offensive purposes, or it is wasted</li>
 					<li>lessonReinforcement(tag=meme_PsychicFocus) ->The greatest psychic warrior ever will not be one that knows how to use these powers, but one who knows how to think before using them.</li>
 					<!-- archist -->
 					<li>archistBasis(tag=meme_PsychicFocus)    ->The archotechs are pure minds, pristine intellects that are so far beyond anything else as to be like gods.</li>
