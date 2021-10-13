@@ -55,7 +55,7 @@
         <label>Entrancing</label>
         <chance>0.1</chance>
         <memory>VME_EntrancingInsectoidHymn</memory>
-        <description>The {0} was entrancing! We can still hear the mesmerizing words of the hymn, like a myriad insectile legs crawling all over our bodies.\n\nThe ritual refreshed the cooldown of the insectoid herder's nest building ability.</description>
+        <description>The {0} was entrancing! We can still hear the mesmerizing words of the hymn, like a myriad insectile legs crawling all over our bodies.\n\nThe ritual refreshed the cooldown of the insectoid herder's nest building ability.\n\nThe ritual also made any insectoids that were assaulting the colony flee.</description>
         
         <positivityIndex>2</positivityIndex>
       </li>
