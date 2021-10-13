@@ -149,14 +149,11 @@ namespace VanillaMemesExpanded
             {
                 colonist_and_random_mood.Add(pawn, mood);
             }
+            else { colonist_and_random_mood[pawn] = mood; }
+ 
         }
 
-        public static void SetColonistAndRandomMood(Pawn pawn, int mood)
-        {
-
-            colonist_and_random_mood[pawn] = mood;
-
-        }
+        
 
         public static void AddDeconstructibleObjectToMap(Thing thing)
         {

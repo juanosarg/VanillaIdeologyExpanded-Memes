@@ -78,32 +78,7 @@ namespace VanillaMemesExpanded
 
                 }
 
-                if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Illness_TimeOff) != null)
-                {
-                    
-                    List<Pawn> listPawns = PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists;
-                    foreach (Pawn p in listPawns)
-                    {
-                        if (p.health.hediffSet.AnyHediffMakesSickThought)
-                        {
-                            if (!p.story.traits.HasTrait(InternalDefOf.VME_Time_Off))
-                            {
-                                Trait trait = new Trait(InternalDefOf.VME_Time_Off, 0, true);
-                                p.story.traits.GainTrait(trait);
-                            }
-                        }
-                        else {
-
-                            if (p.story.traits.HasTrait(InternalDefOf.VME_Time_Off))
-                            {
-                               
-                                p.story.traits.RemoveTrait(p.story.traits.GetTrait(InternalDefOf.VME_Time_Off));
-                            }
-                        }
-
-                    }
-
-                }
+               
 
                 tickCounter = 0;
             }

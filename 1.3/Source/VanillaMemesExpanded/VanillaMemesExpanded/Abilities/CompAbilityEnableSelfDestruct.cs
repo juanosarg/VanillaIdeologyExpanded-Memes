@@ -32,9 +32,19 @@ namespace VanillaMemesExpanded
 				}
 
 
-			} else if( mechanoid != null){
-				GenExplosion.DoExplosion(target.Cell, target.Thing.Map, 5.9f, DamageDefOf.Bomb, this.parent.pawn, -1, -1f, null, null, null, null, null, 0f, 1, false, null, 0f, 1, 0f, false, null, null);
-				mechanoid.Kill(null);
+			} else if( mechanoid != null)
+			{
+
+                if (mechanoid.RaceProps.IsMechanoid) {
+					GenExplosion.DoExplosion(target.Cell, target.Thing.Map, 5.9f, DamageDefOf.Bomb, this.parent.pawn, -1, -1f, null, null, null, null, null, 0f, 1, false, null, 0f, 1, 0f, false, null, null);
+					mechanoid.Kill(null);
+
+                }
+                else {
+					Messages.Message("VME_AbilityNeedsATurret".Translate(), MessageTypeDefOf.RejectInput, true);
+					this.parent.StartCooldown(30);
+				}
+				
 
 
 			}

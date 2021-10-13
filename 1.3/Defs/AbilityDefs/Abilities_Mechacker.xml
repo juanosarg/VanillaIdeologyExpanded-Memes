@@ -22,9 +22,7 @@
 			<range>15</range>
 			<targetParams>
 				<canTargetPawns>true</canTargetPawns>
-				<canTargetMechs>true</canTargetMechs>
-				<canTargetHumans>false</canTargetHumans>
-				<canTargetAnimals>false</canTargetAnimals>
+				
 				<canTargetSelf>false</canTargetSelf>
 				<canTargetBuildings>true</canTargetBuildings>
 			</targetParams>

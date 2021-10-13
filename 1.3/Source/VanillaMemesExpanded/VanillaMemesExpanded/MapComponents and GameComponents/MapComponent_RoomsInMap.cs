@@ -57,11 +57,12 @@ namespace VanillaMemesExpanded
                     {
                         if (room.CellCount > 25)
                         {
+                           
                             totalRooms++;
                         }
                     }
                     roomsInMap_backup = totalRooms;
-
+                    PawnCollectionClass.roomsInMap = totalRooms;
                 }
                     
                

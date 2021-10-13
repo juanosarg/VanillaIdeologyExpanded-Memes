@@ -10,8 +10,9 @@
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>
 		<exclusionTags>
-			
+			<li>VME_FishingVsFurries</li>
 			<li>VME_VeganVsFishing</li>
+			<li>VME_FishingVsNature</li>
 		</exclusionTags>
 		<generalRules>
 			<rulesStrings>

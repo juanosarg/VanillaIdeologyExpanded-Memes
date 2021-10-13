@@ -101,14 +101,5 @@
 		<defaultSelectionWeight>1</defaultSelectionWeight>
 	</PreceptDef>
 	
-	<PreceptDef>
-		<defName>VME_Illness_TimeOff</defName>
-		<issue>VME_Illness</issue>
-		<label>time off</label>
-		<description>Illness is a very serious matter, and a person who is sick shouldn't be expected to do anything except rest.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists that are considered sick will be incapable of most work types until they recover (bear in mind cryptosleep sickness counts as being sick).</description>
-		<impact>High</impact>
-		<displayOrderInIssue>20</displayOrderInIssue>
-		<displayOrderInImpact>100</displayOrderInImpact>
-		
-	</PreceptDef>
+	
 </Defs>

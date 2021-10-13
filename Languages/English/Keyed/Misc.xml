@@ -12,7 +12,7 @@
 	<VME_RitualTargetDivineTheStarsInfo>An unroofed ritual spot at night. Spot must be unroofed with at least 25 unroofed cells in the area.</VME_RitualTargetDivineTheStarsInfo>
 	<VME_AbilityDisabledNoWickerMan>No reachable wicker man.</VME_AbilityDisabledNoWickerMan>
 	<VME_WickerManInfo>A built wicker man.</VME_WickerManInfo>
-	<VME_AbilityNeedsATurret>This ability needs to target a turret.</VME_AbilityNeedsATurret>
+	<VME_AbilityNeedsATurret>This ability needs to target a turret or mechanoid.</VME_AbilityNeedsATurret>
 	<VME_AbilityNeedsInsect>This ability needs to target a wild or hostile insectoid.</VME_AbilityNeedsInsect>
 	<VME_AbilityNeedsRoof>This ability needs to target an empty spot under mountain roof.</VME_AbilityNeedsRoof>
 	<VME_AbilityNeedsSpotEmpty>This ability needs to target an empty spot.</VME_AbilityNeedsSpotEmpty>
@@ -34,6 +34,7 @@
 	<VME_PawnMustBeAnAdult>Only adults can participate in this ritual</VME_PawnMustBeAnAdult>
 	<VME_Maintenance>Insect nest maintenance: {0}%</VME_Maintenance>
 	<VME_MaintenanceNeeded>Maintenance needed. If it reaches 0% the nest will be destroyed.</VME_MaintenanceNeeded>
+	<VME_NotTheQueen>The Queen snorts at you: "No, I don't think I will"</VME_NotTheQueen>
 	
 	
 	

@@ -13,30 +13,5 @@
 			<li>ManualDumb</li>
 		</disabledWorkTags>
 	</TraitDef>
-	<TraitDef>
-		<defName>VME_Time_Off</defName>
-		<commonality>0</commonality>
-		<degreeDatas>
-			<li>
-				<label>time off</label>
-				<description>This person is sick and will refuse to do most work types.</description>
-			</li>
-		</degreeDatas>
-		<disabledWorkTags>
-			<li>ManualDumb</li>
-			<li>Animals</li>
-			<li>Cooking</li>
-			<li>PlantWork</li>
-			<li>Mining</li>
-			<li>Crafting</li>
-			<li>Constructing</li>
-			<li>Hunting</li>
-			<li>Artistic</li>
-			<li>Intellectual</li>
-			<li>Violent</li>
-			<li>Firefighting</li>
-			<li>Commoner</li>
-			<li>AllWork</li>
-		</disabledWorkTags>
-	</TraitDef>
+	
 </Defs>

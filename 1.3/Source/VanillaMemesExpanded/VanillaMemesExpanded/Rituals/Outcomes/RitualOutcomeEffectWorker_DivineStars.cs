@@ -45,8 +45,7 @@ namespace VanillaMemesExpanded
 				int randomMood = random.Next(0, 9);
 			
 				PawnCollectionClass.AddColonistAndRandomMood(pawn, randomMood);
-				PawnCollectionClass.SetColonistAndRandomMood(pawn, randomMood);
-
+				
 			}
 			
 

@@ -30,7 +30,7 @@ namespace VanillaMemesExpanded
 
 		public static PreceptDef VME_Illness_Exalted;
 		public static PreceptDef VME_Illness_Preferred;
-		public static PreceptDef VME_Illness_TimeOff;
+	
 
 		public static PreceptDef VME_CraftingQuality_Increased;
 		public static PreceptDef VME_CraftingQuality_Decreased;
@@ -126,8 +126,7 @@ namespace VanillaMemesExpanded
 		public static ThingDef VME_MechanoidEffigy;
 
 		public static TraitDef VME_Elder;
-		public static TraitDef VME_Time_Off;
-
+	
 		public static ThoughtDef VME_Defeat_Dishonorable;
 		public static ThoughtDef VME_GotSomeLovin;
 		public static ThoughtDef VME_CheapTradingFair;
