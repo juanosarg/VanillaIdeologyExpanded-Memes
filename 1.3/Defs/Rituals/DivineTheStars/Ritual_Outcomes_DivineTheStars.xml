@@ -37,7 +37,14 @@
       
       <li>
         <label>inscrutable</label>
-        <chance>1</chance>
+        <chance>0.5</chance>
+       
+        <description>Our destiny has been revealed by the stars.</description>
+        <positivityIndex>-1</positivityIndex>
+      </li>
+	  <li>
+        <label>inscrutable</label>
+        <chance>0.5</chance>
        
         <description>Our destiny has been revealed by the stars.</description>
         <positivityIndex>1</positivityIndex>
