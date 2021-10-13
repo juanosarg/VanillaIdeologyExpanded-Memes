@@ -32,7 +32,7 @@ namespace VanillaMemesExpanded
 				{
 					if (!existingObligations.Contains(pawn) && pawn.Ideo != null)
 					{
-						if (pawn.Map.GetComponent<MapComponent_PawnsInMapDesiringRitualSuicide>()?.pawnsDesiringSuicide.Contains(pawn)==true)
+						if (pawn.Map?.GetComponent<MapComponent_PawnsInMapDesiringRitualSuicide>()?.pawnsDesiringSuicide.Contains(pawn)==true)
 						{
 							this.ritual.AddObligation(new RitualObligation(this.ritual, pawn, false));
 						}
