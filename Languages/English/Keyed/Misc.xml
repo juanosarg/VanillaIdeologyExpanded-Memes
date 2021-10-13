@@ -32,6 +32,8 @@
 	<VME_LargeFishCaughtIn>Next large fish caught in</VME_LargeFishCaughtIn>
 	<VME_UsesLeftUntilItBreaks>Catches until breaking: {0}</VME_UsesLeftUntilItBreaks>
 	<VME_PawnMustBeAnAdult>Only adults can participate in this ritual</VME_PawnMustBeAnAdult>
+	<VME_Maintenance>Insect nest maintenance: {0}%</VME_Maintenance>
+	<VME_MaintenanceNeeded>Maintenance needed. If it reaches 0% the nest will be destroyed.</VME_MaintenanceNeeded>
 	
 	
 	

@@ -88,6 +88,7 @@ namespace VanillaMemesExpanded
 
 		public static PreceptDef VME_Ranching_Disliked;
 
+
 		public static MemeDef VME_FireWorship;
 
 		public static MemeDef VME_Astrology;
@@ -137,6 +138,7 @@ namespace VanillaMemesExpanded
 		public static AbilityDef VME_ConstructANest;
 
 		public static JobDef VME_DeconstructBuilding;
+		public static JobDef VME_MaintainInsectNest;
 
 
 

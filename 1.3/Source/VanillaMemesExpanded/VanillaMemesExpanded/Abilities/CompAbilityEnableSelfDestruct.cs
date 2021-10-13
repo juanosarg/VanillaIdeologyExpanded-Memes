@@ -17,8 +17,9 @@ namespace VanillaMemesExpanded
 		public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
 		{
 			Building_TurretGun turret = target.Thing as Building_TurretGun;
+			Pawn mechanoid = target.Thing as Pawn;
 
-            if (turret != null) {
+			if (turret != null) {
 				CompExplosive comp = turret.TryGetComp<CompExplosive>();
                 if (comp != null)
                 {
@@ -31,8 +32,13 @@ namespace VanillaMemesExpanded
 				}
 
 
-			} else
-            {
+			} else if( mechanoid != null){
+				GenExplosion.DoExplosion(target.Cell, target.Thing.Map, 5.9f, DamageDefOf.Bomb, this.parent.pawn, -1, -1f, null, null, null, null, null, 0f, 1, false, null, 0f, 1, 0f, false, null, null);
+				mechanoid.Kill(null);
+
+
+			}
+            else{
 				Messages.Message("VME_AbilityNeedsATurret".Translate(), MessageTypeDefOf.RejectInput, true);
 				this.parent.StartCooldown(30);
 			}

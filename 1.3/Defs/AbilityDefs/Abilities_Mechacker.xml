@@ -11,7 +11,7 @@
 		<groupDef>VME_Mechacker</groupDef>
 		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>True</disableGizmoWhileUndrafted>
-		<description>An ability to command a turret to self-destruct. The mechacker can target any turret, even enemy ones.</description>
+		<description>An ability to command a turret or mechanoid to self-destruct. The mechacker can target any turret, even enemy ones, as well as any mechanoid.</description>
 		<targetRequired>True</targetRequired>
 		<gizmoClass>Command_Ability</gizmoClass>
 		<iconPath>UI/Abilities/EnableSelfDestruct</iconPath>
@@ -21,7 +21,11 @@
 			<warmupTime>5</warmupTime>
 			<range>15</range>
 			<targetParams>
-				<canTargetPawns>false</canTargetPawns>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetMechs>true</canTargetMechs>
+				<canTargetHumans>false</canTargetHumans>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetSelf>false</canTargetSelf>
 				<canTargetBuildings>true</canTargetBuildings>
 			</targetParams>
 		</verbProperties>

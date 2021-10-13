@@ -3,7 +3,7 @@
 	<PreceptDef ParentName="PreceptRoleSingleBase">
 		<defName>VME_IdeoRole_Mechacker</defName>
 		<label>mechacker</label>
-		<description>A brilliant engineer capable of assembling salvaged mechanoids. Unlike their lazy counterparts, Mechackers are willing to do all work types. All Mechackers possess the ability to overload and detonate turrets, causing an explosion.</description>
+		<description>A brilliant engineer capable of assembling mechanoid effigies. Unlike their lazy counterparts, Mechackers are willing to do all work types. All Mechackers possess the ability to overload and detonate turrets or hostile mechanoids, causing an explosion.</description>
 		<iconPath>UI/Roles/Mechacker</iconPath>
 		<nameMaker>VME_Mechacker</nameMaker>
 		

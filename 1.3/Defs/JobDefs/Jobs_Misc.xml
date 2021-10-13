@@ -6,5 +6,11 @@
 		<driverClass>VanillaMemesExpanded.JobDriver_DeconstructBuilding</driverClass>
 		<reportString>uninstalling ancient junk building.</reportString>
 	</JobDef>
+	
+	<JobDef>
+		<defName>VME_MaintainInsectNest</defName>
+		<driverClass>VanillaMemesExpanded.JobDriver_DeconstructBuilding</driverClass>
+		<reportString>maintaining insect nest.</reportString>
+	</JobDef>
 
 </Defs>

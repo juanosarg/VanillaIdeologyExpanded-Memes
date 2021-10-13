@@ -1,10 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
- 
-
-
-	
 	<WorkGiverDef>
 		<defName>VME_DeconstructJunk</defName>
 		<label>uninstall ancient junk</label>
@@ -14,12 +9,19 @@
 		<gerund>uninstalling ancient junk</gerund>
 		<priorityInType>80</priorityInType>
 		<requiredCapacities>
-		  <li>Manipulation</li>
+			<li>Manipulation</li>
 		</requiredCapacities>
-    </WorkGiverDef>
-	
-
-
-
-
+	</WorkGiverDef>
+	<WorkGiverDef>
+		<defName>VME_MaintainInsectNest</defName>
+		<label>maintain insect nest</label>
+		<giverClass>VanillaMemesExpanded.WorkGiver_MaintainInsectNest</giverClass>
+		<workType>Handling</workType>
+		<verb>maintain</verb>
+		<gerund>maintaining</gerund>
+		<priorityInType>19</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
 </Defs>

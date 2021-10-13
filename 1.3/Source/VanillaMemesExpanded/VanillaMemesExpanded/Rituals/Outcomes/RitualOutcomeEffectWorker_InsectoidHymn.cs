@@ -4,6 +4,8 @@ using System.Linq;
 using Verse;
 using RimWorld;
 using Verse.Sound;
+using Verse.AI.Group;
+using Verse.AI;
 
 
 namespace VanillaMemesExpanded
@@ -53,6 +55,27 @@ namespace VanillaMemesExpanded
 			{
 				
 				leader.abilities?.GetAbility(InternalDefOf.VME_ConstructANest,true)?.StartCooldown(30);
+
+			}
+
+            if (outcome.positivityIndex == 2)
+            {
+				foreach (Lord lord in Find.CurrentMap.lordManager.lords)
+				{
+
+					if (lord.faction == Faction.OfInsects)
+					{
+
+						for (int i = 0; i < lord.ownedPawns.Count; i++)
+						{
+							Pawn pawn = lord.ownedPawns[i];
+
+							pawn.mindState.duty = new PawnDuty(DutyDefOf.ExitMapRandom);
+
+						}
+					}
+				}
+
 
 			}
 

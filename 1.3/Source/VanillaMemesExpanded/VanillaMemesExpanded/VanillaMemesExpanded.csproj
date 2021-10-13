@@ -306,9 +306,12 @@
     <Compile Include="Abilities\Properties\CompProperties_AbilityTameInsectoid.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityStrengthenFlame.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityThrowParty.cs" />
+    <Compile Include="AI\JobDriver_MaintainInsectNest.cs" />
     <Compile Include="AI\JobDriver_DeconstructBuilding.cs" />
     <Compile Include="AI\JobGiver_GetNaked.cs" />
     <Compile Include="AI\WorkGiver_DeconstructBuilding.cs" />
+    <Compile Include="AI\WorkGiver_MaintainInsectNest.cs" />
+    <Compile Include="Buildings\Building_InsectNest.cs" />
     <Compile Include="Comps\CompDeconstructJunk.cs" />
     <Compile Include="Comps\CompDisableAbilityIfMemeFound.cs" />
     <Compile Include="Comps\CompFireOverlayCool.cs" />
