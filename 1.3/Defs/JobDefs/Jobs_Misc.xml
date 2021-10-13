@@ -9,7 +9,7 @@
 	
 	<JobDef>
 		<defName>VME_MaintainInsectNest</defName>
-		<driverClass>VanillaMemesExpanded.JobDriver_DeconstructBuilding</driverClass>
+		<driverClass>VanillaMemesExpanded.JobDriver_MaintainInsectNest</driverClass>
 		<reportString>maintaining insect nest.</reportString>
 	</JobDef>
 
