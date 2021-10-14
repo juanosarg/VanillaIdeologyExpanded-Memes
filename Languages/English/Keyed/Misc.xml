@@ -37,7 +37,9 @@
 	<VME_NotTheQueen>The Queen snorts at you: "No, I don't think I will"</VME_NotTheQueen>
 	<VME_NoValidPartySpot>Could not find any valid party spot or organizer was unavailable.</VME_NoValidPartySpot>
 	<VME_CantStartRitualNoConvertee>You need a reasonably healthy prisoner to start the ritual</VME_CantStartRitualNoConvertee>
-	
-	
+	<VME_ViolentOutcome>Unfortunately, {0} refused to see our reasonable ways and was sacrificed.</VME_ViolentOutcome>
+	<VME_NonViolentOutcome>{0} saw our reasonable ways and was converted to our ideoligion.</VME_NonViolentOutcome>
+	<VME_RitualNeedsNightOrDarkness>Ritual needs to be done at night, or under any condition that lowers light below 50% globally (eclipses don't count).</VME_RitualNeedsNightOrDarkness>
+	<VME_RitualNeedsClearWeather>Ritual needs to be done at night, and with clear weather.</VME_RitualNeedsClearWeather>
 	
 </LanguageData>

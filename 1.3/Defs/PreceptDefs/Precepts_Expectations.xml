@@ -27,6 +27,17 @@
 		<expectationsOffset>1</expectationsOffset>
 	</PreceptDef>
 	
+	<PreceptDef>
+		<defName>VME_Expectations_Low</defName>
+		<issue>VME_Expectations</issue>
+		<label>low</label>
+		<description>The Rim is an inhospitable place. We shouldn't expect a comfy live.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Expectations lowered by 1 for everyone in the colony.</description>
+		<impact>Medium</impact>
+		
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<expectationsOffset>-1</expectationsOffset>
+	</PreceptDef>
+	
 	
 	
 

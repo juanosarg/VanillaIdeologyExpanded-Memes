@@ -114,6 +114,10 @@
 		<iconPath>UI/Memes/Astrology</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>1</impact>
+		<exclusionTags>
+			<li>VME_AstrologyVsGestalt</li>
+			
+		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->astrological</li>
@@ -371,8 +375,10 @@
 		<consumableBuildings>
 			<li>SacrificialFlag</li>
 		</consumableBuildings>
+	
 		<exclusionTags>
 			<li>Individualism</li>
+			<li>VME_AstrologyVsGestalt</li>
 		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
@@ -1546,7 +1552,7 @@
 			<li>VME_NotRaiders</li>
 			<li>VME_SadistVsNonviolence</li>
 			<li>VME_PacifistsVsDefilers</li>
-
+			<li>VME_PacifistsVsSupremacist</li>
 		</exclusionTags>
 		<impact>3</impact>
 		<generalRules>

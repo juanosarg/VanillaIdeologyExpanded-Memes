@@ -47,7 +47,12 @@ namespace VanillaMemesExpanded
 				return false;
 			}
             if (GenCelestial.CurCelestialSunGlow(thing.Map) > 0.5f) {
-				return false;
+				return "VME_RitualNeedsNightOrDarkness".Translate();
+			}
+
+			if (thing.Map.weatherManager.curWeather == WeatherDef.Named("Fog")|| thing.Map.weatherManager.curWeather.rainRate>0)
+			{
+				return "VME_RitualNeedsClearWeather".Translate();
 			}
 
 

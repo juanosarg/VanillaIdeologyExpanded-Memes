@@ -45,7 +45,7 @@ namespace VanillaMemesExpanded
 
 			Pawn prisoner = jobRitual.PawnWithRole("prisoner");
 			Pawn inquisitor = jobRitual.PawnWithRole("inquisitor");
-
+			bool violentOutcome = false;
 			if (random.NextDouble() > 0.5)
 			{
 				
@@ -64,12 +64,24 @@ namespace VanillaMemesExpanded
 					inquisitor,
 					prisoner
 				});
+				violentOutcome = true;
 			}
 
 
 
 				string text2 = outcome.description.Formatted(jobRitual.Ritual.Label).CapitalizeFirst() + "\n\n" + this.OutcomeQualityBreakdownDesc(quality, progress, jobRitual);
 			string text3 = this.def.OutcomeMoodBreakdown(outcome);
+			string textViolentOutcome="";
+            if (violentOutcome)
+            {
+				textViolentOutcome = "VME_ViolentOutcome".Translate(prisoner.LabelCap);
+
+			}
+            else
+            {
+				textViolentOutcome = "VME_NonViolentOutcome".Translate(prisoner.LabelCap);
+			}
+
 			if (!text3.NullOrEmpty())
 			{
 				text2 = text2 + "\n\n" + text3;
@@ -87,6 +99,10 @@ namespace VanillaMemesExpanded
 			if (text4 != null)
 			{
 				text2 = text2 + "\n\n" + text4;
+			}
+			if (textViolentOutcome != "")
+			{
+				text2 = text2 + "\n\n" + textViolentOutcome;
 			}
 			Find.LetterStack.ReceiveLetter("OutcomeLetterLabel".Translate(outcome.label.Named("OUTCOMELABEL"), jobRitual.Ritual.Label.Named("RITUALLABEL")), text2, outcome.Positive ? LetterDefOf.RitualOutcomePositive : LetterDefOf.RitualOutcomeNegative, lookTargets, null, null, null, null);
 		}

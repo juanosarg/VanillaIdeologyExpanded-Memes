@@ -29,6 +29,19 @@
 		</statOffsets>
 	</PreceptDef>
 	
+	<PreceptDef>
+		<defName>VME_PsychicSensitivity_Heightened</defName>
+		<issue>VME_PsychicSensitivity</issue>
+		<label>heightened</label>
+		<description>Reach with your mind to encompass the whole world. Let your mind be a swift weapon of psychic retribution.</description>
+		<impact>Low</impact>
+		
+		<statOffsets>
+			<PsychicSensitivity>+0.2</PsychicSensitivity>
+			
+		</statOffsets>
+	</PreceptDef>
+	
 
 
 </Defs>
