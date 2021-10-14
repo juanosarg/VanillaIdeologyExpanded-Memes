@@ -20,7 +20,7 @@
     <defName>VME_Corruption</defName>
     <needClass>VanillaMemesExpanded.Need_Corruption</needClass>
     <label>corruption</label>
-    <description>Corruption represents the oscure and .</description>
+    <description>Corruption reflects a person's desire to give in to the dark, eldritch, and possibly even violent desires deeply embedded within them; a mildly corrupt pawn cannot lose ideological certainty. Corruption slowly fades daily, but can be paused by nearby obelisks and increased by incantation rituals. Upon reaching 100 corruption a pawn will immediately begin mentally breaking, and upon reaching 0 a pawn will easily be swayed to any other ideoligion</description>
     <minIntelligence>Humanlike</minIntelligence>
     <colonistAndPrisonersOnly>true</colonistAndPrisonersOnly>
 	<fallPerDay>12</fallPerDay>
