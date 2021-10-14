@@ -17,6 +17,7 @@ namespace VanillaMemesExpanded
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
             Pawn pawnInsect = target.Thing as Pawn;
+            AnimalBehaviours.CompUntameable comp = pawnInsect.TryGetComp<AnimalBehaviours.CompUntameable>();
 
             if (pawnInsect != null && pawnInsect.RaceProps.Insect && pawnInsect.Faction != Faction.OfPlayer)
             {
@@ -24,6 +25,10 @@ namespace VanillaMemesExpanded
 
                     Messages.Message("VME_NotTheQueen".Translate(), MessageTypeDefOf.RejectInput, true);
                     this.parent.StartCooldown(30);
+                } else if(comp !=null){
+                    comp.externalOverride = true;
+                    InteractionWorker_RecruitAttempt.DoRecruit(this.parent.pawn, pawnInsect, true);
+                    DebugActionsUtility.DustPuffFrom(pawnInsect);
                 }
                 else
                 {

@@ -19,7 +19,7 @@ namespace VanillaMemesExpanded
 			
 			if (!Find.CurrentMap.lordsStarter.TryStartRandomGathering(true))
 			{
-				Messages.Message("Could not find any valid gathering spot or organizer.", MessageTypeDefOf.RejectInput, false);
+				Messages.Message("VME_NoValidPartySpot".Translate(), MessageTypeDefOf.RejectInput, false);
 			}
 			base.Apply(target, dest);
 

@@ -93,6 +93,8 @@ namespace VanillaMemesExpanded
 
 		public static MemeDef VME_Astrology;
 
+		public static MemeDef VME_Gestalt;
+
 		public static MemeDef VME_Structure_ChthonianCult;
 
 		public static MemeDef VME_MechanoidSupremacy;

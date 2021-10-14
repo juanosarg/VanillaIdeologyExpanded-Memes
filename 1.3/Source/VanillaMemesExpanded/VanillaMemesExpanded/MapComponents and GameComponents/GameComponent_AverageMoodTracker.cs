@@ -50,7 +50,7 @@ namespace VanillaMemesExpanded
 
               
                 
-                if (Current.Game.World.factionManager.OfPlayer.ideos.HasAnyIdeoWithMeme(InternalDefOf.VME_Astrology))
+                if (Current.Game.World.factionManager.OfPlayer.ideos.HasAnyIdeoWithMeme(InternalDefOf.VME_Gestalt))
                 {
                    
                     float totalMood = 0;

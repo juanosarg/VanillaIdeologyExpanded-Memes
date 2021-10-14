@@ -111,6 +111,12 @@
 			
 			<li Class="PreceptComp_SituationalThought">
 				<thought>VME_Mood_Shared</thought>
+				<thoughtStageDescriptions>
+					<li>average colony mood is positive</li>
+					<li>average colony mood is negative</li>
+					
+					
+				</thoughtStageDescriptions>
 			</li>
 			
 		</comps>

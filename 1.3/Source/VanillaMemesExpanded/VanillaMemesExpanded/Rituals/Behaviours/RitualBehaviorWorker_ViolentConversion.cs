@@ -38,7 +38,7 @@ namespace VanillaMemesExpanded
 			}
 			if (!flag)
 			{
-				return "CantStartRitualNoConvertee".Translate(precept_Role.ChosenPawnSingle().Ideo.name);
+				return "VME_CantStartRitualNoConvertee".Translate(precept_Role.ChosenPawnSingle().Ideo.name);
 			}
 			return base.CanStartRitualNow(target, ritual, selectedPawn, forcedForRole);
 		}

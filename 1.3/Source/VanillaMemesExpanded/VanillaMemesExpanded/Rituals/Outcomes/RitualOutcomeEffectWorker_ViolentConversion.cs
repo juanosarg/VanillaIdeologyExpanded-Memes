@@ -54,6 +54,8 @@ namespace VanillaMemesExpanded
 
 			}
             else {
+
+				prisoner.guilt.Notify_Guilty(900000);
 				prisoner.health.killedByRitual = true;
 				ExecutionUtility.DoExecutionByCut(inquisitor, prisoner, 8, true);
 				ThoughtUtility.GiveThoughtsForPawnExecuted(prisoner, inquisitor, PawnExecutionKind.GenericBrutal);
