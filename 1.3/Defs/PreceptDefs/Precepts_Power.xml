@@ -36,7 +36,7 @@
 		<stages>
 			<li>
 				<label>divine rule</label>
-				<description>My rule is supreme, for I am godlike</description>
+				<description>My rule is supreme, for I am godlike.</description>
 				<baseMoodEffect>30</baseMoodEffect>
 			</li>
 			
@@ -72,7 +72,7 @@
 		<stages>
 			<li>
 				<label>in a position of power</label>
-				<description>I feel important and everyone looks up to me</description>
+				<description>I feel important and everyone looks up to me.</description>
 				<baseMoodEffect>10</baseMoodEffect>
 			</li>
 			
