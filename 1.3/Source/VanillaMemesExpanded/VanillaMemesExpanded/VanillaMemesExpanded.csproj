@@ -311,12 +311,15 @@
     <Compile Include="AI\JobGiver_GetNaked.cs" />
     <Compile Include="AI\WorkGiver_DeconstructBuilding.cs" />
     <Compile Include="AI\WorkGiver_MaintainInsectNest.cs" />
+    <Compile Include="Buildings\Building_Bonfire.cs" />
     <Compile Include="Buildings\Building_InsectNest.cs" />
     <Compile Include="Comps\CompDeconstructJunk.cs" />
     <Compile Include="Comps\CompDisableAbilityIfMemeFound.cs" />
     <Compile Include="Comps\CompFireOverlayCool.cs" />
+    <Compile Include="Comps\CompPermanentFireOverlay.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_DeconstructJunk.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_DisableAbilityIfMemeFound.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_PermanentFireOverlay.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_TimedFireOverlay.cs" />
     <Compile Include="Comps\CompTimedFireOverlay.cs" />
     <Compile Include="DefOfs\InternalDefOfs.cs" />

@@ -41,5 +41,6 @@
 	<VME_NonViolentOutcome>{0} saw our reasonable ways and was converted to our ideoligion.</VME_NonViolentOutcome>
 	<VME_RitualNeedsNightOrDarkness>Ritual needs to be done at night, or under any condition that lowers light below 50% globally (eclipses don't count).</VME_RitualNeedsNightOrDarkness>
 	<VME_RitualNeedsClearWeather>Ritual needs to be done at night, and with clear weather.</VME_RitualNeedsClearWeather>
+	<VME_BonfireDyingIn>Bonfire at {0}% strength</VME_BonfireDyingIn>
 	
 </LanguageData>

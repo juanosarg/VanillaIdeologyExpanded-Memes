@@ -63,6 +63,7 @@ namespace VanillaMemesExpanded
 
                     int wildFires = map.listerThings.ThingsOfDef(ThingDefOf.Fire).Count;
                     int campFires = map.listerThings.ThingsOfDef(ThingDefOf.Campfire).Count;
+                    int bonfires = map.listerThings.ThingsOfDef(InternalDefOf.VME_BonfireAfterRitual).Count;
                     int stoneCampfires = 0;
                     if (DefDatabase<ThingDef>.GetNamedSilentFail("Stone_Campfire") != null)
                     {
@@ -73,7 +74,7 @@ namespace VanillaMemesExpanded
                     {
                         braziers = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamedSilentFail("Brazier")).Count;
                     }
-                    firesInTheMap_backup = wildFires + campFires + stoneCampfires + braziers;
+                    firesInTheMap_backup = wildFires + campFires + stoneCampfires + braziers + bonfires;
                     pensInTheMap_backup = pens;
                     PawnCollectionClass.firesInTheMap = firesInTheMap_backup;
                     PawnCollectionClass.pensInTheMap = pensInTheMap_backup;

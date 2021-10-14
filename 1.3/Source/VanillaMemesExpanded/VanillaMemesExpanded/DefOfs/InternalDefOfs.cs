@@ -127,6 +127,8 @@ namespace VanillaMemesExpanded
 
 		public static ThingDef VME_MechanoidEffigy;
 
+		public static ThingDef VME_BonfireAfterRitual;
+
 		public static TraitDef VME_Elder;
 	
 		public static ThoughtDef VME_Defeat_Dishonorable;

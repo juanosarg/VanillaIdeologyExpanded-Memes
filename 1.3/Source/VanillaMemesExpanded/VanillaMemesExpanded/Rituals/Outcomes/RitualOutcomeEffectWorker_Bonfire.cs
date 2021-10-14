@@ -95,7 +95,14 @@ namespace VanillaMemesExpanded
 				text2 = text2 + "\n\n" + text4;
 			}
 			Find.LetterStack.ReceiveLetter("OutcomeLetterLabel".Translate(outcome.label.Named("OUTCOMELABEL"), jobRitual.Ritual.Label.Named("RITUALLABEL")), text2, outcome.Positive ? LetterDefOf.RitualOutcomePositive : LetterDefOf.RitualOutcomeNegative, lookTargets, null, null, null, null);
-			
+
+			Building altar = jobRitual.selectedTarget.Thing as Building;
+			IntVec3 loc = altar.Position;
+			Map map = altar.Map;
+			altar.Destroy();
+			ThingDef newThing = InternalDefOf.VME_BonfireAfterRitual;
+			Thing bonfire = GenSpawn.Spawn(newThing, loc, map, WipeMode.Vanish);
+			bonfire.SetFaction(Faction.OfPlayer);
 
 		}
 	}

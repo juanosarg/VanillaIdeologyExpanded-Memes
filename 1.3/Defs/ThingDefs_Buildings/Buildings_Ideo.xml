@@ -72,6 +72,49 @@
 			<li>PlaceWorker_NotUnderRoof</li>
 		</placeWorkers>
 	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>VME_BonfireAfterRitual</defName>
+		<label>bonfire</label>
+		<description>An incredibly large and bright-burning bonfire made out of a carefully organized pile of logs on a stone base. Used heavily during flame-based rituals and can only be placed outdoors. Will last for at least two quadrums and provide beauty nearby, as well as count for the Fire: Desired precept.</description>
+		<castEdgeShadows>true</castEdgeShadows>
+		<altitudeLayer>Building</altitudeLayer>
+		<thingClass>VanillaMemesExpanded.Building_Bonfire</thingClass>
+		<passability>PassThroughOnly</passability>
+		<pathCost>500</pathCost>
+		<tickerType>Normal</tickerType>
+		<useHitPoints>true</useHitPoints>	
+		 <drawerType>RealtimeOnly</drawerType>
+		<size>(5,5)</size>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<uiIconScale>0.65</uiIconScale>		
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/Misc/Bonfire/Bonfire</texPath>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<fillPercent>0.5</fillPercent>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>			
+			<Beauty>150</Beauty>
+			<WorkToMake>6000</WorkToMake>
+			
+			<Flammability>0</Flammability>
+			<MeditationFocusStrength>0.0</MeditationFocusStrength>
+		</statBases>
+		<comps>
+			<li Class="VanillaMemesExpanded.CompProperties_PermanentFireOverlay">
+				<fireSize>6</fireSize>				
+				<upOffset>2</upOffset>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>20</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+		</comps>
+		
+	</ThingDef>
 	<ThingDef ParentName="BuildingBase">
 		<defName>VME_MechanoidEffigy</defName>
 		<label>mechanoid effigy</label>

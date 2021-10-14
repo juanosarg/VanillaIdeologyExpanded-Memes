@@ -53,6 +53,8 @@ namespace VanillaMemesExpanded
 
 			}
 
+			
+
 
 
 			string text2 = outcome.description.Formatted(jobRitual.Ritual.Label).CapitalizeFirst() + "\n\n" + this.OutcomeQualityBreakdownDesc(quality, progress, jobRitual);
@@ -77,9 +79,14 @@ namespace VanillaMemesExpanded
 			}
 			Find.LetterStack.ReceiveLetter("OutcomeLetterLabel".Translate(outcome.label.Named("OUTCOMELABEL"), jobRitual.Ritual.Label.Named("RITUALLABEL")), text2, outcome.Positive ? LetterDefOf.RitualOutcomePositive : LetterDefOf.RitualOutcomeNegative, lookTargets, null, null, null, null);
 
+			foreach (Pawn pawn in jobRitual.Map.mapPawns.FreeColonistsAndPrisoners)
+			{
+
+				pawn.Drawer.renderer.graphics.ResolveApparelGraphics();
+
+			}
 
 
-			
 		}
 
 
