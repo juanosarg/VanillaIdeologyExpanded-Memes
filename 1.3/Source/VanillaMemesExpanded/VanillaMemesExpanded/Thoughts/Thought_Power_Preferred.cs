@@ -6,13 +6,13 @@ using System.Collections.Generic;
 
 namespace VanillaMemesExpanded
 {
-	public class Thought_Power_Preferred : ThoughtWorker
+	public class Thought_Power_Preferred : ThoughtWorker_Precept
 	{
 
 
 
 
-		protected override ThoughtState CurrentStateInternal(Pawn p)
+		protected override ThoughtState ShouldHaveThought(Pawn p)
 		{
 			bool hasPrecept = p.Ideo.HasPrecept(InternalDefOf.VME_Power_Preferred);
             if (!hasPrecept)

@@ -23,14 +23,14 @@
 			<li Class="PreceptComp_SituationalThought">
 				<thought>VME_PermanentBases_Despised</thought>
 				<thoughtStageDescriptions>
-					<li>wanderlust (15 days)</li>
-					<li>wanderlust (16 days)</li>
-					<li>wanderlust (17 days)</li>
-					<li>wanderlust (20 days)</li>
-					<li>wanderlust (30 days)</li>
-					<li>wanderlust (40 days)</li>
-					<li>wanderlust (50 days)</li>
-					<li>wanderlust (60 days)</li>
+					<li>Wanderlust (15 days)</li>
+					<li>Wanderlust (16 days)</li>
+					<li>Wanderlust (17 days)</li>
+					<li>Wanderlust (20 days)</li>
+					<li>Wanderlust (30 days)</li>
+					<li>Wanderlust (40 days)</li>
+					<li>Wanderlust (50 days)</li>
+					<li>Wanderlust (60 days)</li>
 					
 				</thoughtStageDescriptions>
 			</li>
@@ -109,11 +109,11 @@
 			<li Class="PreceptComp_SituationalThought">
 				<thought>VME_PermanentBases_Desired</thought>
 				<thoughtStageDescriptions>
-					<li>magnificent city (more than 20 buildings)</li>
-					<li>lots of beautiful buildings (less than 20 buildings)</li>
-					<li>many beautiful buildings (less than 15 buildings)</li>
-					<li>burgeoning city (less than 10 buildings)</li>
-					<li>not enough buildings (less than 5 buildings)</li>
+					<li>Magnificent city (more than 20 buildings)</li>
+					<li>Lots of beautiful buildings (less than 20 buildings)</li>
+					<li>Many beautiful buildings (less than 15 buildings)</li>
+					<li>Burgeoning city (less than 10 buildings)</li>
+					<li>Not enough buildings (less than 5 buildings)</li>
 					
 					
 				</thoughtStageDescriptions>

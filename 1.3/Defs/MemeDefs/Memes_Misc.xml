@@ -287,6 +287,7 @@
 		<exclusionTags>
 			<li>VME_Work</li>
 			<li>VME_IndustrialismVsViolent</li>
+			<li>VME_IndustrialistVsEgalitarian</li>
 		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
@@ -1276,6 +1277,7 @@
 		<impact>1</impact>
 		<exclusionTags>
 			<li>VME_EldersOrYouth</li>
+			<li>VME_EldersOrTranshumanist</li>
 		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
@@ -1457,6 +1459,7 @@
 			<li>VME_Proselytism</li>
 			<li>GenderSupremacy</li>
 			<li>VME_CollectivistVsEgalitarian</li>
+			<li>VME_IndustrialistVsEgalitarian</li>
 		</exclusionTags>
 		<generalRules>
 			<rulesStrings>

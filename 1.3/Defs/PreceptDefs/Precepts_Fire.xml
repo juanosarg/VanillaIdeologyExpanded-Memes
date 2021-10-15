@@ -28,12 +28,12 @@
 
 				<thought>VME_Fire_Desired</thought>
 				<thoughtStageDescriptions>
-					<li>no fires nearby</li>
-					<li>very few fires</li>
-					<li>small fires</li>
-					<li>saw fires</li>
-					<li>amazing fires</li>
-					<li>beautiful fires</li>
+					<li>No fires nearby</li>
+					<li>Very few fires</li>
+					<li>Small fires</li>
+					<li>Saw fires</li>
+					<li>Amazing fires</li>
+					<li>Beautiful fires</li>
 					
 				</thoughtStageDescriptions>
 			</li>
@@ -94,12 +94,12 @@
 
 				<thought>VME_Fire_Despised</thought>
 				<thoughtStageDescriptions>
-					<li>no fires nearby</li>
-					<li>very few fires</li>
-					<li>small fire</li>
-					<li>saw fire</li>
-					<li>blazing fires</li>
-					<li>conflagration</li>
+					<li>No fires nearby</li>
+					<li>Very few fires</li>
+					<li>Small fire</li>
+					<li>Saw fire</li>
+					<li>Blazing fires</li>
+					<li>Conflagration</li>
 					
 				</thoughtStageDescriptions>
 			</li>

@@ -18,8 +18,8 @@
 			<li Class="PreceptComp_SituationalThought">
 				<thought>VME_Elders_Despised</thought>
 				<thoughtStageDescriptions>
-					<li>elder (more than 65 years)</li>
-					<li>youth (less than 25 years)</li>
+					<li>Elder (more than 65 years)</li>
+					<li>Youth (less than 25 years)</li>
 					
 				</thoughtStageDescriptions>
 			</li>
@@ -55,7 +55,7 @@
 			<li Class="PreceptComp_SituationalThought">
 				<thought>VME_Elders_Respected</thought>
 				<thoughtStageDescriptions>
-					<li>elder (more than 65 years)</li>
+					<li>Elder (more than 65 years)</li>
 				
 				</thoughtStageDescriptions>
 			</li>
@@ -90,7 +90,7 @@
 			<li Class="PreceptComp_SituationalThought">
 				<thought>VME_Elders_Holy</thought>
 				<thoughtStageDescriptions>
-					<li>elder (more than 65 years)</li>
+					<li>Elder (more than 65 years)</li>
 				
 				</thoughtStageDescriptions>
 			</li>

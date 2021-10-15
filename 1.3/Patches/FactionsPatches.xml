@@ -50,6 +50,8 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_CityBuilders</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_HardcoreIndustrialism</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Fleshcrafters</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Aristocratic</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">VME_MechanoidSupremacy</li>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
@@ -69,6 +71,9 @@
 		<xpath>/Defs/FactionDef[defName="TribeSavage"]/disallowedMemes</xpath>
 		<value>
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Pacifist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Egalitarian</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Trader</li>
+
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">

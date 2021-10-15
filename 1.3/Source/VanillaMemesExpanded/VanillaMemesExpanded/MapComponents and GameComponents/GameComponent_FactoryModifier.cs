@@ -9,28 +9,53 @@ namespace VanillaMemesExpanded
     public class GameComponent_FactoryModifier : GameComponent
     {
 
-       
+        public int tickCounter = 0;
+        public int tickInterval = 20000;
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+
+            Scribe_Values.Look<int>(ref this.tickCounter, "tickCounterFactories", 0, true);
+         
+        }
+
 
         public GameComponent_FactoryModifier(Game game) : base()
         {
 
         }
 
-        public override void FinalizeInit()
+       
+
+        public override void GameComponentTick()
         {
-            if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_AutomationEfficiency_Increased) != null)
+
+
+            tickCounter++;
+            if ((tickCounter > tickInterval))
             {
-                ItemProcessor.FactoryMultiplierClass.FactoryPreceptMultiplier = 0.75f;
+                if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_AutomationEfficiency_Increased) != null)
+                {
+                    ItemProcessor.FactoryMultiplierClass.FactoryPreceptMultiplier = 0.75f;
+                }
+                if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_AutomationEfficiency_Decreased) != null)
+                {
+                    ItemProcessor.FactoryMultiplierClass.FactoryPreceptMultiplier = 1.5f;
+                }
+
+
+
+
+
+                tickCounter = 0;
             }
-            if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_AutomationEfficiency_Decreased) != null)
-            {
-                ItemProcessor.FactoryMultiplierClass.FactoryPreceptMultiplier = 1.5f;
-            }
-            base.FinalizeInit();
+
+
 
         }
 
-      
+
 
 
 

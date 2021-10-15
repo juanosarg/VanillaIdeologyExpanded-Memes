@@ -5,12 +5,12 @@ using System.Collections.Generic;
 
 namespace VanillaMemesExpanded
 {
-	public class Thought_Illness_Exalted_TooHealthy : ThoughtWorker
+	public class Thought_Illness_Exalted_TooHealthy : ThoughtWorker_Precept
 	{
 		public const int tickInterval = 300000; //5 days
 
 
-		protected override ThoughtState CurrentStateInternal(Pawn p)
+		protected override ThoughtState ShouldHaveThought(Pawn p)
 		{
 			if (!p.Ideo.HasPrecept(InternalDefOf.VME_Illness_Exalted))
             {

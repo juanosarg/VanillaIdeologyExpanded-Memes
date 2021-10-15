@@ -27,10 +27,10 @@
 			<li Class="PreceptComp_SituationalThought">
 				<thought>VME_Travel_Desired</thought>
 				<thoughtStageDescriptions>
-					<li>traveled (less than 5 days ago)</li>
-					<li>traveled (less than 10 days ago)</li>
-					<li>traveled (less than 15 days ago)</li>
-					<li>traveled (less than 60 days ago)</li>
+					<li>Traveled (less than 5 days ago)</li>
+					<li>Traveled (less than 10 days ago)</li>
+					<li>Traveled (less than 15 days ago)</li>
+					<li>Traveled (less than 60 days ago)</li>
 				
 				</thoughtStageDescriptions>
 			</li>
@@ -79,10 +79,10 @@
 			<li Class="PreceptComp_SituationalThought">
 				<thought>VME_Travel_Despised</thought>
 				<thoughtStageDescriptions>
-					<li>traveled (less than 5 days ago)</li>
-					<li>traveled (less than 10 days ago)</li>
-					<li>traveled (less than 15 days ago)</li>
-					<li>traveled (less than 60 days ago)</li>
+					<li>Traveled (less than 5 days ago)</li>
+					<li>Traveled (less than 10 days ago)</li>
+					<li>Traveled (less than 15 days ago)</li>
+					<li>Traveled (less than 60 days ago)</li>
 				
 				</thoughtStageDescriptions>
 			</li>

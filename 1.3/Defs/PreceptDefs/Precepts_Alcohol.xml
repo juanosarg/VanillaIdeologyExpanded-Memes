@@ -71,6 +71,11 @@
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
 				<thought>VME_Alcohol_MildAbstinence</thought>
+				<thoughtStageDescriptions>
+					<li>Consumed alcohol</li>
+					<li>Abstained from alcohol</li>
+					
+				</thoughtStageDescriptions>
 			</li>
 		</comps>
 	</PreceptDef>

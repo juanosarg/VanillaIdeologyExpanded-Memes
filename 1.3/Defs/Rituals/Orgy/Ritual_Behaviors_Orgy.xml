@@ -11,9 +11,9 @@
     <roles>
       <li Class="RitualRoleTag">
         <label>orgy organizer</label>
-        <tag>PartyHost</tag>
+        <tag>Moralist</tag>
         <id>moralist</id>
-        <precept>VME_IdeoRole_PartyHost</precept>
+        <precept>IdeoRole_Moralist</precept>
         <required>True</required>
         <substitutable>false</substitutable>
         <maxCount>1</maxCount>

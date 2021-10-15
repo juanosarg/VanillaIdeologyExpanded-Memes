@@ -49,7 +49,7 @@ namespace VanillaMemesExpanded
 			{
 				Pawn thisPawn = keyValuePair.Key;
 				thisPawn.Drawer.renderer.graphics.ResolveApparelGraphics();			
-				thisPawn.needs.mood.thoughts.memories.TryGainMemory(InternalDefOf.VME_GotSomeLovin);
+				thisPawn.needs.mood.thoughts.memories.TryGainMemory(InternalDefOf.VME_GotSomeLovin, null, jobRitual.Ritual);
 
 			}
 

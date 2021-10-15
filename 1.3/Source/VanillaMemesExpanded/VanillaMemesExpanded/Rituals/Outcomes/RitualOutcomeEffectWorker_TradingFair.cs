@@ -55,7 +55,8 @@ namespace VanillaMemesExpanded
 				foreach (Pawn pawn in totalPresence.Keys)
 				{
 					ThoughtDef cheapTradeMemory = InternalDefOf.VME_CheapTradingFair;
-					pawn.needs.mood.thoughts.memories.TryGainMemory(cheapTradeMemory);
+
+					pawn.needs.mood.thoughts.memories.TryGainMemory(cheapTradeMemory,null,jobRitual.Ritual);
 
 				}
 			}

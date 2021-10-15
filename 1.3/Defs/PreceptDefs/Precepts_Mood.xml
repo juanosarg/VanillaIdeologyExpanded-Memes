@@ -26,15 +26,15 @@
 				
 				<thought>VME_Mood_DictatedByStars</thought>
 				<thoughtStageDescriptions>
-					<li>stars are aligned</li>
-					<li>stars are perfect</li>
-					<li>stars are excellent</li>
-					<li>stars are good</li>
-					<li>stars are indifferent</li>
-					<li>stars are bad</li>
-					<li>stars are not on my side</li>
-					<li>stars are a bad omen</li>
-					<li>stars are aligned… against me</li>
+					<li>Stars are aligned</li>
+					<li>Stars are perfect</li>
+					<li>Stars are excellent</li>
+					<li>Stars are good</li>
+					<li>Stars are indifferent</li>
+					<li>Stars are bad</li>
+					<li>Stars are not on my side</li>
+					<li>Stars are a bad omen</li>
+					<li>Stars are aligned… against me</li>
 					
 				</thoughtStageDescriptions>
 			</li>
@@ -43,7 +43,7 @@
 	<ThoughtDef>
 		<defName>VME_Mood_DictatedByStars</defName>
 		<workerClass>VanillaMemesExpanded.Thought_Precept_RandomStageMood</workerClass>
-		
+		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
 				<label>stars are aligned</label>
@@ -112,8 +112,8 @@
 			<li Class="PreceptComp_SituationalThought">
 				<thought>VME_Mood_Shared</thought>
 				<thoughtStageDescriptions>
-					<li>average colony mood is positive</li>
-					<li>average colony mood is negative</li>
+					<li>Average colony mood is positive</li>
+					<li>Average colony mood is negative</li>
 					
 					
 				</thoughtStageDescriptions>
@@ -125,6 +125,7 @@
 	
 	<ThoughtDef>
 		<defName>VME_Mood_Shared</defName>
+		<validWhileDespawned>true</validWhileDespawned>
 		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_SharedMood</workerClass>
 		<stages>
 			<li>
@@ -144,7 +145,7 @@
 	<PreceptDef>
 		<defName>VME_Mood_LowExpectations</defName>
 		<issue>VME_Mood</issue>
-		<label>low expectations</label>
+		<label>low spirits</label>
 		<description>We are stranded on a lost, forgotten planet on the Rim. Things can hardly get worse.</description>
 		<impact>Low</impact>
 		<displayOrderInIssue>30</displayOrderInIssue>
@@ -161,7 +162,7 @@
 	
 	<ThoughtDef>
 		<defName>VME_Mood_LowExpectations</defName>
-		
+		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			
 			<li>
@@ -186,7 +187,7 @@
 	<PreceptDef>
 		<defName>VME_Mood_HighExpectations</defName>
 		<issue>VME_Mood</issue>
-		<label>high expectations</label>
+		<label>high spirits</label>
 		<description>The whole world is ours to explore and enjoy.</description>
 		<impact>Low</impact>
 		<displayOrderInIssue>10</displayOrderInIssue>
@@ -203,7 +204,7 @@
 	
 	<ThoughtDef>
 		<defName>VME_Mood_HighExpectations</defName>
-		
+		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			
 			<li>

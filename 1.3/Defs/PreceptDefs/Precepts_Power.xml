@@ -25,6 +25,9 @@
 			<li Class="PreceptComp_SituationalThought">
 				
 				<thought>VME_Power_Exalted</thought>
+				<thoughtStageDescriptions>
+					<li>Leader</li>			
+				</thoughtStageDescriptions>
 			</li>
 		</comps>
 	</PreceptDef>
@@ -60,6 +63,9 @@
 			<li Class="PreceptComp_SituationalThought">
 				
 				<thought>VME_Power_Desired</thought>
+				<thoughtStageDescriptions>
+					<li>Leader and moralist</li>			
+				</thoughtStageDescriptions>
 			</li>
 		</comps>
 	</PreceptDef>
@@ -95,6 +101,9 @@
 			<li Class="PreceptComp_SituationalThought">
 				
 				<thought>VME_Power_Preferred</thought>
+				<thoughtStageDescriptions>
+					<li>Any ideo role</li>			
+				</thoughtStageDescriptions>
 			</li>
 		</comps>
 	</PreceptDef>

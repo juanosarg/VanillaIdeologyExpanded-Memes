@@ -27,8 +27,8 @@
 			<li Class="PreceptComp_SituationalThought">
 				<thought>VME_Trading_Required</thought>
 				<thoughtStageDescriptions>
-					<li>recently traded</li>
-					<li>no recent trades</li>
+					<li>Recently traded</li>
+					<li>No recent trades</li>
 				
 				</thoughtStageDescriptions>
 			</li>

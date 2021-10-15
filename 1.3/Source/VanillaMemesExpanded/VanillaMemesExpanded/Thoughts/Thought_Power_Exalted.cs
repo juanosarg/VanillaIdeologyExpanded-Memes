@@ -4,13 +4,13 @@ using RimWorld;
 
 namespace VanillaMemesExpanded
 {
-	public class Thought_Power_Exalted : ThoughtWorker
+	public class Thought_Power_Exalted : ThoughtWorker_Precept
 	{
 
 		
 
 
-		protected override ThoughtState CurrentStateInternal(Pawn p)
+		protected override ThoughtState ShouldHaveThought(Pawn p)
 		{
 			Precept_Role precept_role;
 			return p.Ideo.HasPrecept(InternalDefOf.VME_Power_Exalted) &&

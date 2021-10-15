@@ -100,6 +100,7 @@
 		<rulePack>
 			<rulesStrings>
 				<li>r_deityName->Our Supreme Leader</li>
+				<li>r_deityName->Supreme Leader</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>

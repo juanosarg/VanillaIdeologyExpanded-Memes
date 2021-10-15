@@ -26,10 +26,10 @@
 
 				<thought>VME_Leader_Godlike</thought>
 				<thoughtStageDescriptions>
-					<li>supreme god emperor (certainty above 75%)</li>
-					<li>god emperor (certainty above 50%)</li>
-					<li>dubious divinity (certainty above 25%)</li>
-					<li>false god (certainty below 25%)</li>
+					<li>Supreme god emperor (certainty above 75%)</li>
+					<li>God emperor (certainty above 50%)</li>
+					<li>Dubious divinity (certainty above 25%)</li>
+					<li>False god (certainty below 25%)</li>
 					
 				</thoughtStageDescriptions>
 			</li>
