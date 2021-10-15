@@ -82,9 +82,9 @@ namespace VanillaMemesExpanded
 					IncidentDef IncidentDef = IncidentDefOf.TraderCaravanArrival;
 					IncidentParms parms = StorytellerUtility.DefaultParmsNow(IncidentDef.category, selectedTarget.Map);
 					IncidentDef.Worker.TryExecute(parms);
-					TradeUtility.LaunchThingsOfType(ThingDefOf.Silver, 200, selectedTarget.Map, null);
+					
 				}
-				
+				TradeUtility.LaunchThingsOfType(ThingDefOf.Silver, 200, selectedTarget.Map, null);
 			}
 
 			
