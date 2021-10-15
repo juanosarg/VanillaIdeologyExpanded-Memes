@@ -79,9 +79,9 @@ namespace VanillaMemesExpanded
 				}
 				for(int i =0;i< numberOfCaravans; i++)
                 {
-					IncidentDef IncidentDef = IncidentDefOf.TraderCaravanArrival;
-					IncidentParms parms = StorytellerUtility.DefaultParmsNow(IncidentDef.category, selectedTarget.Map);
-					IncidentDef.Worker.TryExecute(parms);
+					IncidentDef incidentDef = IncidentDefOf.TraderCaravanArrival;
+					IncidentParms parms = StorytellerUtility.DefaultParmsNow(incidentDef.category, selectedTarget.Map);
+					incidentDef.Worker.TryExecute(parms);
 					
 				}
 				TradeUtility.LaunchThingsOfType(ThingDefOf.Silver, 200, selectedTarget.Map, null);

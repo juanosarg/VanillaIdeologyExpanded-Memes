@@ -38,6 +38,12 @@ namespace VanillaMemesExpanded
 				}
 
 			}
+			foreach (Pawn pawn in totalPresence.Keys)
+			{
+
+				base.GiveMemoryToPawn(pawn, outcome.memory, jobRitual);
+
+			}
 			LookTargets lookTargets = jobRitual.selectedTarget;
 			
 			string str = outcome.label + " " + jobRitual.Ritual.Label;

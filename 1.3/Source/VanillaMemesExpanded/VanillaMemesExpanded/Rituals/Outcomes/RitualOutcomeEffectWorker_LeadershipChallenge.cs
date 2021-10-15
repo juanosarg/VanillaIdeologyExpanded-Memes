@@ -31,7 +31,12 @@ namespace VanillaMemesExpanded
 		{
 			float quality = base.GetQuality(jobRitual, progress);
 			OutcomeChance outcome = this.GetOutcome(quality, jobRitual);
+			foreach (Pawn pawn in totalPresence.Keys)
+			{
 
+				base.GiveMemoryToPawn(pawn, outcome.memory, jobRitual);
+
+			}
 			Pawn duelist1 = jobRitual.PawnWithRole("duelist1");
 			Pawn duelist2 = jobRitual.PawnWithRole("duelist2");
 

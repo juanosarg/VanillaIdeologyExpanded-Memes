@@ -376,7 +376,7 @@
     <Compile Include="MapComponents and GameComponents\MapComponent_PawnsInMapDesiringRitualSuicide.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_BestCrafterTracker.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_TradingTracker.cs" />
-    <Compile Include="MapComponents and GameComponents\GameComponent_IllnessTracker.cs" />
+    <Compile Include="MapComponents and GameComponents\GameComponent_AgeAndIllnessTracker.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_FactoryModifier.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_MoodFromStars.cs" />
     <Compile Include="Needs\Need_Anonymity.cs" />

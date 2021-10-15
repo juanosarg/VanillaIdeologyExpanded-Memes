@@ -72,6 +72,10 @@
 		<defName>VME_Darklight_DislikeDarkness</defName>
 		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_TotalDarkness</workerClass>
 		<thoughtClass>Thought_Situational</thoughtClass>
+		<nullifyingTraits>
+			<li>NightOwl</li>
+			<li>Undergrounder</li>
+		</nullifyingTraits>
 		<stages>
 			<li>
 				<label>despised darkness</label>

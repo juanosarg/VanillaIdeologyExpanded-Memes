@@ -18,7 +18,7 @@
 		<defName>VME_Defeat_Dishonorable</defName>
 		<issue>VME_Defeat</issue>
 		<label>dishonorable</label>
-		<description>Suffering a setback on the battlefield is an insult to body, mind, and spirit.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - A colonist that is downed in combat by an enemy twice in less than 30 days will start requiring a ceremonial suicide ritual to cleanse his dishonor.</description>
+		<description>Suffering a setback on the battlefield is an insult to body, mind, and spirit.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - A colonist that is downed in combat by a humanlike enemy twice in less than 30 days will start requiring a ceremonial suicide ritual to cleanse his dishonor. Mechanoids and animals don't count for this.</description>
 		<impact>High</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>

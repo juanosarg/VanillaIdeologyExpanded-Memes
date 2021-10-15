@@ -55,7 +55,7 @@ namespace VanillaMemesExpanded
 
                     foreach (Room room in map.regionGrid.allRooms)
                     {
-                        if (room.CellCount > 25)
+                        if (room.CellCount > 24)
                         {
                            
                             totalRooms++;

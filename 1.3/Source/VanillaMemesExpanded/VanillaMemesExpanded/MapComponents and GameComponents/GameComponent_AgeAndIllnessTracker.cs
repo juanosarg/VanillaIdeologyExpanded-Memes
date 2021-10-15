@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace VanillaMemesExpanded
 {
-    public class GameComponent_IllnessTracker : GameComponent
+    public class GameComponent_AgeAndIllnessTracker : GameComponent
     {
 
        
@@ -20,7 +20,7 @@ namespace VanillaMemesExpanded
 
 
 
-        public GameComponent_IllnessTracker(Game game) : base()
+        public GameComponent_AgeAndIllnessTracker(Game game) : base()
         {
 
         }
@@ -78,7 +78,30 @@ namespace VanillaMemesExpanded
 
                 }
 
-               
+                if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Elders_Holy) != null)
+                {
+                    List<Pawn> listPawns = PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists;
+                    foreach (Pawn p in listPawns)
+                    {
+                        if (p.Ideo != null && p.Ideo.HasPrecept(InternalDefOf.VME_Elders_Holy))
+                        {
+
+                            if (p.ageTracker.AgeBiologicalYears > 65 && !p.story.traits.HasTrait(InternalDefOf.VME_Elder))
+                            {
+                                Trait trait = new Trait(InternalDefOf.VME_Elder, 0, true);
+                                p.story.traits.GainTrait(trait);
+
+
+
+                            }
+
+                        }
+
+
+                    }
+                        
+
+                }
 
                 tickCounter = 0;
             }

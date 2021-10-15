@@ -25,7 +25,11 @@
 				<thought>VME_Junk_Beautiful</thought>
 				<thoughtStageDescriptions>
 					<li>No junk</li>
-					<li>Very little junk</li>
+					<li>Few pieces of ancient junk (1 nearby)</li>
+					<li>Few pieces of ancient junk (2 nearby)</li>
+					<li>Few pieces of ancient junk (3 nearby)</li>
+					<li>Few pieces of ancient junk (4 nearby)</li>
+					<li>very little junk (5 nearby)</li>
 					<li>Small junk</li>
 					<li>Saw junk</li>
 					<li>Amazing junk</li>
@@ -46,9 +50,29 @@
 				<baseMoodEffect>-15</baseMoodEffect>
 			</li>
 			<li>
-				<label>very little junk</label>
+				<label>few pieces of ancient junk (1 nearby)</label>
 				<description>This area is way too sparse, I miss seeing the junk.</description>
 				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+			<li>
+				<label>few pieces of ancient junk (2 nearby)</label>
+				<description>This area has very few relics of ancient technology.</description>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+			<li>
+				<label>few pieces of ancient junk (3 nearby)</label>
+				<description>We need to gather more pieces of ancient junk.</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+			<li>
+				<label>few pieces of ancient junk (4 nearby)</label>
+				<description>We have too few pieces of ancient junk lying around.</description>
+				<baseMoodEffect>-4</baseMoodEffect>
+			</li>
+			<li>
+				<label>very little junk (5 nearby)</label>
+				<description>We should gather at least a few more pieces. Our junkyard is lacking.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
 			</li>
 			<li>
 				<label>small junk</label>

@@ -31,7 +31,12 @@ namespace VanillaMemesExpanded
 		{
 			float quality = base.GetQuality(jobRitual, progress);
 			OutcomeChance outcome = this.GetOutcome(quality, jobRitual);
+			foreach (Pawn pawn in totalPresence.Keys)
+			{
 
+				base.GiveMemoryToPawn(pawn, outcome.memory, jobRitual);
+
+			}
 			Pawn suicide = jobRitual.PawnWithRole("suicide");
 
 			BodyPartRecord bodyPartRecord = suicide.health.hediffSet.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined, null, null).FirstOrDefault((BodyPartRecord x) => x.def == BodyPartDefOf.Head); ;
