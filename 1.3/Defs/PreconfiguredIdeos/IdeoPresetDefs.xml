@@ -187,7 +187,7 @@
 			<li>VME_InsectoidSupremacy</li>
 			<li>Tunneler</li>
 			<li>Darkness</li>
-			<li>VME_Gestalt</li>
+			<li Name="VME_ModifyIfRoyalty">VME_Gestalt</li>
 		</memes>
 	</IdeoPresetDef>
 	<IdeoPresetDef>
