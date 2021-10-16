@@ -161,29 +161,26 @@
     </rulePack>
   </RulePackDef>
   
-  <RulePackDef>
+ <RulePackDef>
     <defName>VME_Patissier</defName>
 
     <rulePack>
       <rulesStrings>
         <li>r_roleName(p=7)->[firstPart][secondPart]</li>
-        <li>r_roleName->Trader</li>
-        <li>firstPart->Bountiful </li>
-        <li>firstPart->Itinerant </li>
-        <li>firstPart->Unscrupulous </li>
-        <li>firstPart->Respectable </li>
-        <li>firstPart->Affluent </li>
-        <li>firstPart->Prosperous </li>
-        <li>firstPart->Opulent </li>
-        <li>firstPart->Rich </li>
-        <li>secondPart(p=4)->Merchant</li>
-        <li>secondPart(p=4)->Operator</li>
-        <li>secondPart(p=4)->Seller</li>
-        <li>secondPart(p=4)->Shopkeeper</li>
-        <li>secondPart(p=4)->Vendor</li>
-        <li>secondPart(p=4)->Broker</li>
-        <li>secondPart(p=4)->Wholesaler</li>
-        <li>secondPart(p=4)->Salesperson</li>
+        <li>r_roleName->Patissier</li>
+        <li>firstPart->Deft-handed </li>
+        <li>firstPart->Accomplished </li>
+        <li>firstPart->Talented </li>
+        <li>firstPart->Exquisite </li>
+        <li>firstPart->Seasoned </li>
+        <li>firstPart->Masterful </li>
+        <li>secondPart(p=4)->Culinarian</li>
+        <li>secondPart(p=4)->Epicurian</li>
+        <li>secondPart(p=4)->Baker</li>
+        <li>secondPart(p=4)->Patissier</li>
+        <li>secondPart(p=4)->Banqueter</li>
+        <li>secondPart(p=4)->Glacier</li>
+        <li>secondPart(p=4)->Confectioner</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
