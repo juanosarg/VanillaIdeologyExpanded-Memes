@@ -3,7 +3,7 @@
 	<ThingDef ParentName="IdeoBurnableBase">
 		<defName>VME_WickerMan</defName>
 		<label>wicker man</label>
-		<description>A large humanoid figure made out of dry brush, thatch, and wood scraps. Prisoners can be physically restrained  to the figurine then burned alive as part of a trial or ritual.</description>
+		<description>A large humanoid figure made out of dry brush, thatch, and wood scraps. Prisoners have to be physically restrained to the figurine then burned alive as part of a trial or ritual.</description>
 		<ideoBuildingNamerBase>NamerBurnTarget</ideoBuildingNamerBase>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>

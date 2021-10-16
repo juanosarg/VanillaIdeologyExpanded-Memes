@@ -5,6 +5,7 @@
 	<VME_AutomationDecreased>Automation efficiency: decreased precept</VME_AutomationDecreased>
 	<VME_AutomationManual>Crafting speed: slower for manual precept</VME_AutomationManual>
 	<VME_ExtraJoyGain>Recreation: loved precept</VME_ExtraJoyGain>
+	<VME_ExtraPatissierCooking>Pâtissier role</VME_ExtraPatissierCooking>
 	<VME_ExtraCertaintyLoss>Eldritch Corruption too low</VME_ExtraCertaintyLoss>
 	<VME_NullCertaintyLoss>Eldritch Corruption</VME_NullCertaintyLoss>
 	<VME_PawnMustBeSuicidal>{0} is not harbouring suicidal thoughts!</VME_PawnMustBeSuicidal>

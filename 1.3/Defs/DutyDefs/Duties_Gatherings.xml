@@ -45,12 +45,7 @@
           </subNodes>
         </li>
 
-        <!-- Reach the party area -->
-        <li Class="JobGiver_WanderInGatheringArea">
-          <ticksBetweenWandersRange>50~250</ticksBetweenWandersRange>
-          <locomotionUrgency>Jog</locomotionUrgency>
-          <desiredRadius>6</desiredRadius>
-        </li>
+        
       </subNodes>
     </thinkNode>
   </DutyDef>

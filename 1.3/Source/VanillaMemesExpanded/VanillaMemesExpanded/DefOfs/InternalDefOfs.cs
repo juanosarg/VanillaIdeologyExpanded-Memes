@@ -50,6 +50,7 @@ namespace VanillaMemesExpanded
 
 		public static PreceptDef VME_PermanentBases_Despised;
 
+
 		public static PreceptDef VME_Travel_Desired;
 
 		public static PreceptDef VME_Travel_Despised;
@@ -134,7 +135,8 @@ namespace VanillaMemesExpanded
 		public static ThoughtDef VME_Defeat_Dishonorable;
 		public static ThoughtDef VME_GotSomeLovin;
 		public static ThoughtDef VME_CheapTradingFair;
-		
+		public static ThoughtDef VME_AttendedParty;
+
 		public static SoundDef VME_RitualSustainer_Orgy;
 		public static SoundDef VME_RitualSustainer_InsectoidHymn;
 

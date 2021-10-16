@@ -62,6 +62,9 @@ namespace VanillaMemesExpanded
 			}
             else
             {
+				TradeUtility.LaunchThingsOfType(ThingDefOf.Silver, 200, selectedTarget.Map, null);
+			}
+           
 				int numberOfCaravans = 0;
 				switch (outcome.positivityIndex)
 				{
@@ -84,8 +87,8 @@ namespace VanillaMemesExpanded
 					incidentDef.Worker.TryExecute(parms);
 					
 				}
-				TradeUtility.LaunchThingsOfType(ThingDefOf.Silver, 200, selectedTarget.Map, null);
-			}
+				
+			
 
 			
 

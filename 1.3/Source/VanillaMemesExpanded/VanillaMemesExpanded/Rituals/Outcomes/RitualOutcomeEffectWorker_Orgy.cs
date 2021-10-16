@@ -79,7 +79,7 @@ namespace VanillaMemesExpanded
 			}
 			Find.LetterStack.ReceiveLetter("OutcomeLetterLabel".Translate(outcome.label.Named("OUTCOMELABEL"), jobRitual.Ritual.Label.Named("RITUALLABEL")), text2, outcome.Positive ? LetterDefOf.RitualOutcomePositive : LetterDefOf.RitualOutcomeNegative, lookTargets, null, null, null, null);
 
-			foreach (Pawn pawn in jobRitual.Map.mapPawns.FreeColonistsAndPrisoners)
+			foreach (Pawn pawn in jobRitual.Map.mapPawns.FreeColonistsAndPrisonersSpawned)
 			{
 
 				pawn.Drawer.renderer.graphics.ResolveApparelGraphics();

@@ -58,7 +58,7 @@ namespace VanillaMemesExpanded
                     foreach (Pawn pawn in map.mapPawns.FreeColonistsSpawned)
                     {
                         int totalNumberOfJunk = 0;
-                        int num = GenRadial.NumCellsInRadius(5.9f);
+                        int num = GenRadial.NumCellsInRadius(10.9f);
                         for (int i = 0; i < num; i++)
                         {
                             IntVec3 intVec = pawn.Position + GenRadial.RadialPattern[i];
@@ -67,7 +67,7 @@ namespace VanillaMemesExpanded
                                 foreach (Thing thing in intVec.GetThingList(map))
                                 {
                                     Building building;
-                                    if ((building = (thing as Building)) != null && building.def.defName.Contains("Ancient"))
+                                    if ((building = (thing as Building)) != null && (building.def.defName.Contains("Ancient")|| building.def.defName.Contains("ancient")))
                                     {
                                         totalNumberOfJunk++;
                                     }

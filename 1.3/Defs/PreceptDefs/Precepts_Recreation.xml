@@ -22,7 +22,7 @@
     <defName>VME_Recreation_Loved</defName>
     <issue>VME_Recreation</issue>
     <label>loved</label>
-    <description>Fun and games aren’t optional - Enjoy every moment of recreation and make it the best you can for yourself and your friends.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Colonists gain recreation at 2x the speed when using any Joy buildings.</description>
+    <description>Fun and games aren’t optional - Enjoy every moment of recreation and make it the best you can for yourself and your friends.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Colonists gain recreation at 50% the speed when using any Joy buildings.\n - Increases by 50% the mood buff acquired by colonists after a party.</description>
     <impact>Medium</impact>
 	<displayOrderInIssue>50</displayOrderInIssue>
 	<displayOrderInImpact>100</displayOrderInImpact>
@@ -33,15 +33,7 @@
 
   </PreceptDef>
   
-   <PreceptDef>
-    <defName>VME_Recreation_Fun</defName>
-    <issue>VME_Recreation</issue>
-    <label>fun</label>
-    <description>Recreation is an important part of life, and living without it is incredibly dull.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Colonists gain recreation at 20% higher speed when using any Joy buildings.</description>
-    <impact>Low</impact>
-	<displayOrderInIssue>40</displayOrderInIssue>
-	
-  </PreceptDef>
+ 
   
   <PreceptDef>
     <defName>VME_Recreation_Normal</defName>

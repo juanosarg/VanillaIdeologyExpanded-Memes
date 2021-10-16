@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+  <ThoughtDef>
+    <defName>VME_AttendedParty</defName>
+    <durationDays>10</durationDays>
+    <stackLimit>10</stackLimit>
+    <stages>
+      <li>
+        <label>attended superb party</label>
+        <description>I had a good time at that party.</description>
+        <baseMoodEffect>12</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+ 
+</Defs>

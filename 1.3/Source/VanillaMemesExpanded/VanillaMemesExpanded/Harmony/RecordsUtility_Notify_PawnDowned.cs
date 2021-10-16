@@ -20,7 +20,7 @@ namespace VanillaMemesExpanded
         [HarmonyPostfix]
         static void ThrowPawnDownedEvent(Pawn downed, Pawn instigator)
         {
-            if (!instigator.NonHumanlikeOrWildMan()&&instigator.HostileTo(Faction.OfPlayer)) {
+            if (!instigator.NonHumanlikeOrWildMan()&& instigator.Faction?.IsPlayer != true) {
 
                 if (downed.needs.mood.thoughts.memories.GetFirstMemoryOfDef(InternalDefOf.VME_Defeat_Dishonorable) != null)
                 {

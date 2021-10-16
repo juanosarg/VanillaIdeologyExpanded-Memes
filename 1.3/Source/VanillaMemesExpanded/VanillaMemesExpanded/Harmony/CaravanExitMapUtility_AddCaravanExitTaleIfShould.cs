@@ -18,7 +18,7 @@ namespace VanillaMemesExpanded
     public static class VanillaMemesExpanded_CaravanExitMapUtility_AddCaravanExitTaleIfShould_Patch
     {
         [HarmonyPostfix]
-        static void SetPawnCaravanTimerToZero(Pawn pawn)
+        static void SetPawnCaravanTimerToZero(Pawn pawn, List<Pawn> ___tmpPawns)
         {
 
             if (pawn.Spawned && pawn.IsFreeColonist)
@@ -27,6 +27,15 @@ namespace VanillaMemesExpanded
                 PawnCollectionClass.ResetPawnCaravanTicks(pawn);
                 
             }
+
+            foreach (Pawn p in ___tmpPawns)
+            {
+                PawnCollectionClass.AddColonistToCaravanList(p, 0);
+                PawnCollectionClass.ResetPawnCaravanTicks(p);
+
+            }
+
+
 
 
 

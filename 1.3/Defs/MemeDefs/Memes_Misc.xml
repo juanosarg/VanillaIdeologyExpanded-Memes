@@ -355,6 +355,9 @@
 			<li>
 				<li>VME_DumbLabor_Exalted</li>
 			</li>
+			<li>
+				<li>VME_SkilledLabor_Slow</li>
+			</li>
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -719,6 +722,9 @@
 			</li>
 			<li>
 				<li>VME_CraftingSpeed_Slower</li>
+			</li>
+			<li>
+				<li>VME_SkilledLabor_Slow</li>
 			</li>
 		</requireOne>
 		<symbolPacks>
@@ -2428,12 +2434,7 @@
 				<li>VME_Alcohol_Demanded</li>
 			</li>
 		</requireOne>
-		<requiredRituals>
-			<li>
-				<precept>VME_OrgyPrecept</precept>
-				<pattern>VME_OrgyRitual</pattern>
-			</li>
-		</requiredRituals>
+		
 		<symbolPacks>
 			<li>
 				<ideoName>Party Life</ideoName>

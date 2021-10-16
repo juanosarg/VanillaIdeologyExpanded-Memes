@@ -332,11 +332,11 @@
     <Compile Include="Harmony\CompDrug_PostIngested.cs" />
     <Compile Include="Harmony\GameConditionManager_RegisterCondition.cs" />
     <Compile Include="Harmony\GameCondition_Aurora_Init.cs" />
-    <Compile Include="Harmony\GenLeavings_DoLeavingsFor.cs" />
     <Compile Include="Harmony\InteractionWorker_RecruitAttempt_Interacted.cs" />
     <Compile Include="Harmony\JobDriver_ConvertPrisoner_MakeNewToils.cs" />
     <Compile Include="Harmony\JoyUtility_JoyTickCheckEnd.cs" />
     <Compile Include="Harmony\InteractionUtility_CanReceiveInteraction.cs" />
+    <Compile Include="Harmony\LordJob_Joinable_Party_AttendeeThought.cs" />
     <Compile Include="Harmony\LordToil_PanicFlee_Init.cs" />
     <Compile Include="Harmony\PlantUtility_CanSowOnGrower.cs" />
     <Compile Include="Harmony\Need_Joy_FallPerInterval.cs" />
@@ -416,6 +416,7 @@
     <Compile Include="RoleRequirements\RoleRequirement_BestFighter.cs" />
     <Compile Include="StageEndTriggers\StageEndTrigger_DeadDuelEnded.cs" />
     <Compile Include="StatPartDefs\StatPart_CertaintyLossFactorByCorruption.cs" />
+    <Compile Include="StatPartDefs\StatPart_Pattisier.cs" />
     <Compile Include="StatPartDefs\StatPart_ExtraJoyGain.cs" />
     <Compile Include="StatPartDefs\StatPart_WorkTableAutomation.cs" />
     <Compile Include="StatPartDefs\StatPart_WorkTableAutomationDecreased.cs" />

@@ -17,7 +17,7 @@ namespace VanillaMemesExpanded
 		{
 			if (req.HasThing && Applies(req.Thing))
 			{
-				val *= 2f;
+				val *= 0.5f;
 			}
 		}
 
@@ -25,7 +25,7 @@ namespace VanillaMemesExpanded
 		{
 			if (req.HasThing && Applies(req.Thing))
 			{
-				float recreation = 2f;
+				float recreation = 0.5f;
 				return "VME_ExtraJoyGain".Translate() + ": x" + recreation.ToStringPercent();
 			}
 			return null;

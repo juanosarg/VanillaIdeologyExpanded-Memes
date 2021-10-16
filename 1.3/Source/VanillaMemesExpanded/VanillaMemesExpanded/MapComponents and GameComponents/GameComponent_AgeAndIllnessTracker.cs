@@ -90,13 +90,13 @@ namespace VanillaMemesExpanded
                             {
                                 Trait trait = new Trait(InternalDefOf.VME_Elder, 0, true);
                                 p.story.traits.GainTrait(trait);
-
-
-
                             }
 
                         }
-
+                        if (p.ageTracker.AgeBiologicalYears < 65 && p.story.traits.HasTrait(InternalDefOf.VME_Elder))
+                        {
+                            p.story.traits.RemoveTrait(p.story.traits.GetTrait(InternalDefOf.VME_Elder));
+                        }
 
                     }
                         
