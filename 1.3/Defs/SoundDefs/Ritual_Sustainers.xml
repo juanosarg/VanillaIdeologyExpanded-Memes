@@ -12,7 +12,7 @@
             <clipPath>Ambience/RitualSustainers/Ritual_Sustainer_Serketism_Loop</clipPath>
           </li>
         </grains>
-        <volumeRange>17</volumeRange>
+        <volumeRange>25</volumeRange>
         <distRange>30~100</distRange>
         <sustainAttack>5.0</sustainAttack>
         <sustainSkipFirstAttack>False</sustainSkipFirstAttack>
@@ -29,7 +29,7 @@
             <clipPath>Ambience/RitualSustainers/Ritual_Sustainer_Corporate_Loop</clipPath>
           </li>
         </grains>
-        <volumeRange>17</volumeRange>
+        <volumeRange>25</volumeRange>
         <distRange>30~100</distRange>
         <sustainAttack>5.0</sustainAttack>
         <sustainSkipFirstAttack>False</sustainSkipFirstAttack>
@@ -46,7 +46,7 @@
             <clipPath>Ambience/RitualSustainers/Ritual_Sustainer_Authoritarian_Loop</clipPath>
           </li>
         </grains>
-        <volumeRange>17</volumeRange>
+        <volumeRange>25</volumeRange>
         <distRange>30~100</distRange>
         <sustainAttack>5.0</sustainAttack>
         <sustainSkipFirstAttack>False</sustainSkipFirstAttack>
@@ -63,7 +63,7 @@
             <clipPath>Ambience/RitualSustainers/Ritual_Sustainer_Shintao_Loop</clipPath>
           </li>
         </grains>
-        <volumeRange>22</volumeRange>
+        <volumeRange>25</volumeRange>
         <distRange>30~100</distRange>
         <sustainAttack>5.0</sustainAttack>
         <sustainSkipFirstAttack>False</sustainSkipFirstAttack>
@@ -80,7 +80,7 @@
             <clipPath>Ambience/RitualSustainers/Ritual_Sustainer_Esotericism_Loop</clipPath>
           </li>
         </grains>
-        <volumeRange>22</volumeRange>
+        <volumeRange>25</volumeRange>
         <distRange>30~100</distRange>
         <sustainAttack>5.0</sustainAttack>
         <sustainSkipFirstAttack>False</sustainSkipFirstAttack>
@@ -97,7 +97,7 @@
             <clipPath>Ambience/RitualSustainers/Ritual_Sustainer_EldritchCult_Loop</clipPath>
           </li>
         </grains>
-        <volumeRange>22</volumeRange>
+        <volumeRange>25</volumeRange>
         <distRange>30~100</distRange>
         <sustainAttack>5.0</sustainAttack>
         <sustainSkipFirstAttack>False</sustainSkipFirstAttack>
@@ -114,7 +114,7 @@
             <clipPath>Ambience/RitualSustainers/Ritual_Sustainer_Orgy</clipPath>
           </li>
         </grains>
-        <volumeRange>22</volumeRange>
+        <volumeRange>25</volumeRange>
         <distRange>30~100</distRange>
         <sustainAttack>5.0</sustainAttack>
         <sustainSkipFirstAttack>False</sustainSkipFirstAttack>
@@ -131,7 +131,7 @@
             <clipPath>Ambience/RitualSustainers/Ritual_Sustainer_InsectoidHymn</clipPath>
           </li>
         </grains>
-        <volumeRange>22</volumeRange>
+        <volumeRange>25</volumeRange>
         <distRange>30~100</distRange>
         <sustainAttack>5.0</sustainAttack>
         <sustainSkipFirstAttack>False</sustainSkipFirstAttack>
