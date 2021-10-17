@@ -11,13 +11,17 @@
 	<VME_PawnMustBeSuicidal>{0} is not harbouring suicidal thoughts!</VME_PawnMustBeSuicidal>
 	<VME_PawnMustBeBestMelee>{0} must be the best melee fighter in the colony!</VME_PawnMustBeBestMelee>
 	<VME_RitualTargetDivineTheStarsInfo>An unroofed ritual spot at night. Spot must be unroofed with at least 25 unroofed cells in the area.</VME_RitualTargetDivineTheStarsInfo>
-	<VME_AbilityDisabledNoWickerMan>No reachable wicker man.</VME_AbilityDisabledNoWickerMan>
 	<VME_WickerManInfo>A built wicker man.</VME_WickerManInfo>
+
+	<VME_AbilityDisabledNoWickerMan>No reachable wicker man.</VME_AbilityDisabledNoWickerMan>	
 	<VME_AbilityNeedsATurret>This ability needs to target a turret or mechanoid.</VME_AbilityNeedsATurret>
 	<VME_AbilityNeedsInsect>This ability needs to target a wild or hostile insectoid.</VME_AbilityNeedsInsect>
 	<VME_AbilityNeedsRoof>This ability needs to target an empty spot under mountain roof.</VME_AbilityNeedsRoof>
 	<VME_AbilityNeedsSpotEmpty>This ability needs to target an empty spot.</VME_AbilityNeedsSpotEmpty>
+	<VME_AbilityNeedsMeal>This ability needs to target food categorized as a meal.</VME_AbilityNeedsMeal>
 	<VME_AbilityCaravanWillArrive>A trader caravan has been attracted to your settlement and will arrive in approximately a day.</VME_AbilityCaravanWillArrive>	
+	<VME_AbilityAlreadyADessert>Meal is already a dessert. This ability needs to target a meal that isn't a dessert.</VME_AbilityAlreadyADessert>
+	
 	<VME_DeconstructBuildingLabel>Deconstruct building</VME_DeconstructBuildingLabel>
 	<VME_DeconstructBuildingDesc>Deconstruct building</VME_DeconstructBuildingDesc>
 	<VME_CancelDeconstructBuildingLabel>Cancel deconstruct building</VME_CancelDeconstructBuildingLabel>

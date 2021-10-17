@@ -76,6 +76,16 @@
 
 		</value>
 	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="TribeCannibal"]/disallowedMemes</xpath>
+		<value>
+			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Pacifist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Egalitarian</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Trader</li>
+
+		</value>
+	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/FactionDef[@Name="PirateBandBase"]/structureMemeWeights</xpath>
 		<value>

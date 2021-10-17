@@ -297,12 +297,14 @@
     <Compile Include="Abilities\CompAbilityCallTradeCaravan.cs" />
     <Compile Include="Abilities\CompAbilityConstructANest.cs" />
     <Compile Include="Abilities\CompAbilityEnableSelfDestruct.cs" />
+    <Compile Include="Abilities\CompAbilityMakeADessert.cs" />
     <Compile Include="Abilities\CompAbilityStrengthenFlame.cs" />
     <Compile Include="Abilities\CompAbilityTameInsectoid.cs" />
     <Compile Include="Abilities\CompAbilityThrowParty.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityCallTradeCaravan.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityConstructANest.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityEnableSelfDestruct.cs" />
+    <Compile Include="Abilities\Properties\CompProperties_AbilityMakeADessert.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityTameInsectoid.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityStrengthenFlame.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityThrowParty.cs" />
@@ -422,6 +424,7 @@
     <Compile Include="StatPartDefs\StatPart_WorkTableAutomationDecreased.cs" />
     <Compile Include="StatPartDefs\StatPart_WorkTableManualUnefficient.cs" />
     <Compile Include="ThingSetMakers\ThingSetMaker_StartingItemsEldritchCult.cs" />
+    <Compile Include="ThingSetMakers\ThingSetMaker_StartingItemsSweetTeeth.cs" />
     <Compile Include="Thoughts\ThoughtWorker_NeedAnonymity.cs" />
     <Compile Include="Thoughts\ThoughtWorker_NeedSweets.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_Alcohol_MildAbstinence.cs" />
