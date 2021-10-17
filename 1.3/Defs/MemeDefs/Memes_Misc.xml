@@ -832,7 +832,7 @@
 		<description>Kings and Queens are the true path to prosperity, the mind of the common man is unfit for leadership.</description>
 		<iconPath>UI/Memes/Aristocratic</iconPath>
 		<groupDef>Misc</groupDef>
-		<impact>2</impact>
+		<impact>1</impact>
 		<exclusionTags>
 			<li>VME_Work</li>
 

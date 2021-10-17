@@ -105,8 +105,8 @@
 		<durationDays>5</durationDays>
 		<stages>
 			<li>
-				<label>attacked harmless person</label>
-				<description>I have used deadly force on a harmless adversary. It brings great shame.</description>
+				<label>attacked person</label>
+				<description>I have used deadly force on an adversary. It brings great shame.</description>
 				<baseMoodEffect>-30</baseMoodEffect>
 			</li>
 		</stages>
