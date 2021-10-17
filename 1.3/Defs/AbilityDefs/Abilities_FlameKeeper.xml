@@ -3,7 +3,7 @@
 
  <AbilityGroupDef>
     <defName>VME_FlameKeeper</defName>
-    <cooldownTicks>60000</cooldownTicks>
+    <cooldownTicks>7500</cooldownTicks>
   </AbilityGroupDef>
 
  
