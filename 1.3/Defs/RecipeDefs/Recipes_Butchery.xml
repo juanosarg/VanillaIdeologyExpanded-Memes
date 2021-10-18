@@ -20,7 +20,7 @@ Spine
 -->
 
 
-	<RecipeDef>
+<!--	<RecipeDef>
 		<defName>VME_ButcherHumanoidForArm</defName>
 		<label>butcher humanoid corpse for arm</label>
 		<description>Butcher a humanoid to obtain a useable arm.</description>
@@ -51,9 +51,7 @@ Spine
 				<li>CorpsesHumanlike</li>
 			</categories>
 
-			<specialFiltersToDisallow>
-				<li>AllowRotten</li>
-			</specialFiltersToDisallow>
+			
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
@@ -99,9 +97,7 @@ Spine
 				<li>CorpsesHumanlike</li>
 			</categories>
 
-			<specialFiltersToDisallow>
-				<li>AllowRotten</li>
-			</specialFiltersToDisallow>
+			
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
@@ -147,9 +143,7 @@ Spine
 				<li>CorpsesHumanlike</li>
 			</categories>
 
-			<specialFiltersToDisallow>
-				<li>AllowRotten</li>
-			</specialFiltersToDisallow>
+			
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
@@ -195,9 +189,7 @@ Spine
 				<li>CorpsesHumanlike</li>
 			</categories>
 
-			<specialFiltersToDisallow>
-				<li>AllowRotten</li>
-			</specialFiltersToDisallow>
+			
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
@@ -243,9 +235,7 @@ Spine
 				<li>CorpsesHumanlike</li>
 			</categories>
 
-			<specialFiltersToDisallow>
-				<li>AllowRotten</li>
-			</specialFiltersToDisallow>
+			
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
@@ -290,9 +280,7 @@ Spine
 				<li>CorpsesHumanlike</li>
 			</categories>
 
-			<specialFiltersToDisallow>
-				<li>AllowRotten</li>
-			</specialFiltersToDisallow>
+			
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
@@ -337,9 +325,7 @@ Spine
 				<li>CorpsesHumanlike</li>
 			</categories>
 
-			<specialFiltersToDisallow>
-				<li>AllowRotten</li>
-			</specialFiltersToDisallow>
+			
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
@@ -384,9 +370,7 @@ Spine
 				<li>CorpsesHumanlike</li>
 			</categories>
 
-			<specialFiltersToDisallow>
-				<li>AllowRotten</li>
-			</specialFiltersToDisallow>
+			
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
@@ -431,9 +415,7 @@ Spine
 				<li>CorpsesHumanlike</li>
 			</categories>
 
-			<specialFiltersToDisallow>
-				<li>AllowRotten</li>
-			</specialFiltersToDisallow>
+			
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
@@ -478,9 +460,7 @@ Spine
 				<li>CorpsesHumanlike</li>
 			</categories>
 
-			<specialFiltersToDisallow>
-				<li>AllowRotten</li>
-			</specialFiltersToDisallow>
+			
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
@@ -525,9 +505,7 @@ Spine
 				<li>CorpsesHumanlike</li>
 			</categories>
 
-			<specialFiltersToDisallow>
-				<li>AllowRotten</li>
-			</specialFiltersToDisallow>
+			
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
@@ -572,9 +550,7 @@ Spine
 				<li>CorpsesHumanlike</li>
 			</categories>
 
-			<specialFiltersToDisallow>
-				<li>AllowRotten</li>
-			</specialFiltersToDisallow>
+			
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
@@ -608,6 +584,7 @@ Spine
 				<filter>
 					<categories>
 						<li>CorpsesHumanlike</li>
+						<li>VME_CorpsesHumanlike</li>
 					</categories>
 				</filter>
 				<count>1</count>
@@ -617,6 +594,7 @@ Spine
 		<fixedIngredientFilter>
 			<categories>
 				<li>CorpsesHumanlike</li>
+				<li>VME_CorpsesHumanlike</li>
 			</categories>
 
 			<specialFiltersToDisallow>
@@ -626,6 +604,7 @@ Spine
 		<defaultIngredientFilter>
 			<categories>
 				<li>CorpsesHumanlike</li>
+				<li>VME_CorpsesHumanlike</li>
 			</categories>
 		</defaultIngredientFilter>
 		<products>
@@ -635,5 +614,5 @@ Spine
 			<li>VME_Fleshcrafters</li>
 		</memePrerequisitesAny>
 	</RecipeDef>
-
+-->
 </Defs>

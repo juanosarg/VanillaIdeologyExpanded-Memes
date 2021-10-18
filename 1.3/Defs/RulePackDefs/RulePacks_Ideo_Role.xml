@@ -197,5 +197,17 @@
       </rulesStrings>
     </rulePack>
   </RulePackDef>
+  
+  <RulePackDef>
+    <defName>VME_Fleshcrafter</defName>
+
+    <rulePack>
+      <rulesStrings>
+       
+        <li>r_roleName->Fleshcrafter</li>
+        
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
 
 </Defs>

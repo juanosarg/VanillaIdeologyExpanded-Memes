@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<PreceptDef ParentName="PreceptRoleSingleBase">
-		<defName>VME_IdeoRole_Commissar</defName>
-		<label>commissar</label>
-		<description>A brave and ruthless military tactician who specializes in leading by means of fear and threats. Capable of executing insubordinate pawns in order to motivate the rest.</description>
-		<iconPath>UI/Roles/Commissar</iconPath>
-		<nameMaker>VME_Commissar</nameMaker>
+		<defName>VME_IdeoRole_Fleshcrafter</defName>
+		<label>fleshcrafter</label>
+		<description>A veritable anatomical expert capable of excising organs from recently deceased cadavers. Because of organ damage and decay only between one and three organs will be harvested at random and the rest of the corpse will be reduced to meat.</description>
+		<iconPath>UI/Roles/Fleshcrafter</iconPath>
+		<nameMaker>VME_Fleshcrafter</nameMaker>
 		
 		<roleTags>
-			<li>Commissar</li>
+			<li>Fleshcrafter</li>
 		</roleTags>
 		<requiredMemes>
-			<li>VME_Nationalist</li>
+			<li>VME_Fleshcrafters</li>
 		</requiredMemes>
 		
 		
 		<displayOrderInImpact>2</displayOrderInImpact>
 		
 		<grantedAbilities>
-			<li>VME_EnforceCompliance</li>
+			<li>VME_HarvestBodyParts</li>
 		</grantedAbilities>
 		<roleApparelRequirements>
       <li>

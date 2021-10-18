@@ -534,6 +534,9 @@
 			<li>
 				<li>VME_OrganUse_PostMortem</li>
 			</li>
+			<li>
+				<li>VME_Death_DontCare</li>
+			</li>
 		</requireOne>
 		<symbolPacks>
 			<li>

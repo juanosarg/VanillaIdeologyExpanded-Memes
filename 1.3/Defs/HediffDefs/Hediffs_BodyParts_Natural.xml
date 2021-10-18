@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- Base: Natural body part 
-  <ThingDef Name="BodyPartNaturalBase" ParentName="BodyPartBase" Abstract="True">
+  <ThingDef Name="VME_FleshcrafterBodyPartNaturalBase" ParentName="BodyPartBase" Abstract="True">
     <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
+      <texPath>Things/Item/Resource/FleshcrafterBodyPart</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.80</drawSize>
-      <color>(190,190,190)</color>
+     
     </graphicData>
+	<tickerType>Rare</tickerType>
     <thingCategories>
       <li>BodyPartsNatural</li>
     </thingCategories>
     <statBases>
       <DeteriorationRate>4.0</DeteriorationRate>
     </statBases>
-  </ThingDef>-->
+	<comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>3</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
 
   <!-- Arm -->
-  <ThingDef ParentName="BodyPartNaturalBase">
+  <ThingDef ParentName="VME_FleshcrafterBodyPartNaturalBase">
     <defName>VME_FleshcraftedArm</defName>
     <label>fleshcrafted arm</label>
     <description>A biological human arm, fleshcrafted from a corpse. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
@@ -91,7 +97,7 @@
   </HediffDef>
   
   <!-- Leg -->
-  <ThingDef ParentName="BodyPartNaturalBase">
+  <ThingDef ParentName="VME_FleshcrafterBodyPartNaturalBase">
     <defName>VME_FleshcraftedLeg</defName>
     <label>fleshcrafted leg</label>
     <description>A biological human leg, fleshcrafted from a corpse. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
@@ -153,7 +159,7 @@
   </HediffDef>
   
   <!-- Heart -->
-  <ThingDef ParentName="BodyPartNaturalBase">
+  <ThingDef ParentName="VME_FleshcrafterBodyPartNaturalBase">
     <defName>VME_FleshcraftedHeart</defName>
     <label>fleshcrafted heart</label>
     <description>A biological human heart, fleshcrafted from a corpse. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
@@ -215,7 +221,7 @@
   </HediffDef>
   
     <!-- Lung -->
-  <ThingDef ParentName="BodyPartNaturalBase">
+  <ThingDef ParentName="VME_FleshcrafterBodyPartNaturalBase">
     <defName>VME_FleshcraftedLung</defName>
     <label>fleshcrafted lung</label>
     <description>A biological human lung, fleshcrafted from a corpse. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
@@ -276,7 +282,7 @@
     </addedPartProps>
   </HediffDef>
    <!-- Kidney -->
-  <ThingDef ParentName="BodyPartNaturalBase">
+  <ThingDef ParentName="VME_FleshcrafterBodyPartNaturalBase">
     <defName>VME_FleshcraftedKidney</defName>
     <label>fleshcrafted kidney</label>
     <description>A biological human kidney, fleshcrafted from a corpse. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
@@ -338,7 +344,7 @@
   </HediffDef>
   
   <!-- Liver -->
-  <ThingDef ParentName="BodyPartNaturalBase">
+  <ThingDef ParentName="VME_FleshcrafterBodyPartNaturalBase">
     <defName>VME_FleshcraftedLiver</defName>
     <label>fleshcrafted liver</label>
     <description>A biological human liver, fleshcrafted from a corpse. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
@@ -399,7 +405,7 @@
     </addedPartProps>
   </HediffDef>
    <!-- Eye -->
-  <ThingDef ParentName="BodyPartNaturalBase">
+  <ThingDef ParentName="VME_FleshcrafterBodyPartNaturalBase">
     <defName>VME_FleshcraftedEye</defName>
     <label>fleshcrafted eye</label>
     <description>A biological human eye, fleshcrafted from a corpse. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
@@ -460,7 +466,7 @@
     </addedPartProps>
   </HediffDef>
   <!-- Ear -->
-  <ThingDef ParentName="BodyPartNaturalBase">
+  <ThingDef ParentName="VME_FleshcrafterBodyPartNaturalBase">
     <defName>VME_FleshcraftedEar</defName>
     <label>fleshcrafted ear</label>
     <description>A biological human ear, fleshcrafted from a corpse. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
@@ -521,7 +527,7 @@
     </addedPartProps>
   </HediffDef>
   <!-- Nose -->
-  <ThingDef ParentName="BodyPartNaturalBase">
+  <ThingDef ParentName="VME_FleshcrafterBodyPartNaturalBase">
     <defName>VME_FleshcraftedNose</defName>
     <label>fleshcrafted nose</label>
     <description>A biological human nose, fleshcrafted from a corpse. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
@@ -582,7 +588,7 @@
     </addedPartProps>
   </HediffDef>
   <!-- Jaw -->
-  <ThingDef ParentName="BodyPartNaturalBase">
+  <ThingDef ParentName="VME_FleshcrafterBodyPartNaturalBase">
     <defName>VME_FleshcraftedJaw</defName>
     <label>fleshcrafted jaw</label>
     <description>A biological human jaw, fleshcrafted from a corpse. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
@@ -643,7 +649,7 @@
     </addedPartProps>
   </HediffDef>
   <!-- Stomach -->
-  <ThingDef ParentName="BodyPartNaturalBase">
+  <ThingDef ParentName="VME_FleshcrafterBodyPartNaturalBase">
     <defName>VME_FleshcraftedStomach</defName>
     <label>fleshcrafted stomach</label>
     <description>A biological human stomach, fleshcrafted from a corpse. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
@@ -704,7 +710,7 @@
     </addedPartProps>
   </HediffDef>
    <!-- Tongue -->
-  <ThingDef ParentName="BodyPartNaturalBase">
+  <ThingDef ParentName="VME_FleshcrafterBodyPartNaturalBase">
     <defName>VME_FleshcraftedTongue</defName>
     <label>fleshcrafted tongue</label>
     <description>A biological human tongue, fleshcrafted from a corpse. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
@@ -765,7 +771,7 @@
     </addedPartProps>
   </HediffDef>
   <!-- Spine -->
-  <ThingDef ParentName="BodyPartNaturalBase">
+  <ThingDef ParentName="VME_FleshcrafterBodyPartNaturalBase">
     <defName>VME_FleshcraftedSpine</defName>
     <label>fleshcrafted spine</label>
     <description>A biological human spine, fleshcrafted from a corpse. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>

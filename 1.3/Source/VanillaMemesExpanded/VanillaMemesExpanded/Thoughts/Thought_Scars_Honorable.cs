@@ -30,6 +30,7 @@ namespace VanillaMemesExpanded
 						return ThoughtState.ActiveAtStage(2);
 					case 4:
 						return ThoughtState.ActiveAtStage(3);
+					
 					default:
 						return ThoughtState.ActiveAtStage(4);
 				}

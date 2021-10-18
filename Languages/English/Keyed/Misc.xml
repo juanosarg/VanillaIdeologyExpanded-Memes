@@ -24,6 +24,7 @@
 	<VME_AbilityCaravanWillArrive>A trader caravan has been attracted to your settlement and will arrive in approximately a day.</VME_AbilityCaravanWillArrive>	
 	<VME_AbilityAlreadyADessert>Meal is already a dessert. This ability needs to target a meal that isn't a dessert.</VME_AbilityAlreadyADessert>
 	<VME_AbilityNeedsAColonist>This ability needs to target a free colonist.</VME_AbilityNeedsAColonist>
+	<VME_AbilityNeedsCorpse>This ability needs to target a fresh humanoid corpse.</VME_AbilityNeedsCorpse>
 
 	<VME_DeconstructBuildingLabel>Uninstall building</VME_DeconstructBuildingLabel>
 	<VME_DeconstructBuildingDesc>Uninstall junk building to be able to move and reintall it. These can be caravaned out of a map, making "junk expeditions" possible</VME_DeconstructBuildingDesc>
@@ -52,7 +53,7 @@
 	<VME_BonfireDyingIn>Bonfire at {0}% strength</VME_BonfireDyingIn>
 	<VEM_HighCorruption>High corruption</VEM_HighCorruption>
 	<VEM_HighCorruptionDesc>These people have a too high corruption need (more than 90%). If they reach 100% corruption they will get an extreme level mental break:\n\n{0}</VEM_HighCorruptionDesc>
-	<VEM_HighCorruption>Low corruption</VEM_HighCorruption>
-	<VEM_HighCorruptionDesc>These people have a too low corruption need (less than 10%). If they reach 0% corruption they will be easily swayed to a different ideoligion. Build obelisks to maintain their corruption need or perform Incantation rituals to increase it by 10%:\n\n{0}</VEM_HighCorruptionDesc>
+	<VEM_LowCorruption>Low corruption</VEM_LowCorruption>
+	<VEM_LowCorruptionDesc>These people have a too low corruption need (less than 10%). If they reach 0% corruption they will be easily swayed to a different ideoligion. Build obelisks to maintain their corruption need or perform Incantation rituals to increase it by 10%:\n\n{0}</VEM_LowCorruptionDesc>
 
 </LanguageData>

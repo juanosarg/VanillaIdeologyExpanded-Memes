@@ -298,6 +298,7 @@
     <Compile Include="Abilities\CompAbilityConstructANest.cs" />
     <Compile Include="Abilities\CompAbilityEnableSelfDestruct.cs" />
     <Compile Include="Abilities\CompAbilityEnforceCompliance.cs" />
+    <Compile Include="Abilities\CompAbilityHarvestBodyParts.cs" />
     <Compile Include="Abilities\CompAbilityMakeADessert.cs" />
     <Compile Include="Abilities\CompAbilityStrengthenFlame.cs" />
     <Compile Include="Abilities\CompAbilityTameInsectoid.cs" />
@@ -306,6 +307,7 @@
     <Compile Include="Abilities\Properties\CompProperties_AbilityConstructANest.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityEnableSelfDestruct.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityEnforceCompliance.cs" />
+    <Compile Include="Abilities\Properties\CompProperties_AbilityHarvestBodyParts.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityMakeADessert.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityTameInsectoid.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityStrengthenFlame.cs" />
