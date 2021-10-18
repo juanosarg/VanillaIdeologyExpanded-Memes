@@ -162,6 +162,12 @@
 				</li>
 			</constants>
 		</descriptionMaker>
+		<thingStyleCategories>
+			<li>
+				<category>VME_Hedonist</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
 		<symbolPacks>
 			<li>
 				<theme>hedonism</theme>
@@ -258,7 +264,7 @@
 	<MemeDef>
 		<defName>VME_Structure_Eschatologism</defName>
 		<label>eschatologism</label>
-		<description>To be cursed to walk this earth is true torture, and whether by means of cataclysm, famine, or pestilance the departure of ones soul from their mortal coil should be celebrated.</description>
+		<description>To be cursed to walk this earth is true torture, and whether by means of cataclysm, famine, or pestilence the departure of ones soul from their mortal coil should be celebrated.</description>
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_Eschatologism</iconPath>
 		<impact>0</impact>

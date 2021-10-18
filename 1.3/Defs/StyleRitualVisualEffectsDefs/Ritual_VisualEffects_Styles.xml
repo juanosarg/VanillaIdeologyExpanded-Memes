@@ -6,13 +6,13 @@
 		<defName>VME_EldritchVisuals</defName>
 		<!--<tintColor>(30, 10, 10)</tintColor>-->
 		<comps>
-		
+
 			<li>
 				<compClass>CompRitualEffect_ConstantCenter</compClass>
 				<moteDef>Mote_RitualSmoke</moteDef>
 				<scaleWithRoom>true</scaleWithRoom>
 			</li>
-			
+
 			<li Class="CompProperties_RitualEffectIntervalSpawnCircle">
 				<fleckDef>VME_Tentacle</fleckDef>
 				<area>(27, 28)</area>
@@ -55,7 +55,7 @@
 
 
 
-	
+
 
 	<FleckDef ParentName="FleckBase">
 		<defName>VME_Tentacle</defName>
@@ -115,7 +115,7 @@
 		<fadeOutTime>1.3</fadeOutTime>
 		<acceleration>(0, 0.0, 0.4)</acceleration>
 	</FleckDef>
-	
+
 	<ThingDef ParentName="MoteBase">
 		<defName>VME_EldritchRune</defName>
 		<thingClass>MoteThrown</thingClass>
@@ -439,31 +439,31 @@
 			<drawSize>15</drawSize>
 		</graphicData>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="MoteBase">
-    <defName>VME_CrystalBall</defName>
-    <thingClass>MoteThrown</thingClass>
-    <altitudeLayer>LightingOverlay</altitudeLayer>
-    <mote>
-      <solidTime>99999</solidTime>
-      <fadeInTime>0.2</fadeInTime>
-      <fadeOutTime>1</fadeOutTime>
-      <needsMaintenance>True</needsMaintenance>
-      <fadeOutUnmaintained>True</fadeOutUnmaintained>
-    </mote>
-    <graphicData>
-      <graphicClass>Graphic_MotePulse</graphicClass>
-      <shaderType>RitualOutline</shaderType>
-      <texPath>Motes/VME_CrystalBall</texPath>
-      <shaderParameters>
-        <_GradientTex>/Things/Mote/RitualEffects/DustyGradient</_GradientTex>
-        <_ScrollSpeed>0.5</_ScrollSpeed>
-      </shaderParameters>
-      <drawSize>(1.4, 2.8)</drawSize>
-    </graphicData>
-  </ThingDef>
-  
-  <RitualVisualEffectDef>
+		<defName>VME_CrystalBall</defName>
+		<thingClass>MoteThrown</thingClass>
+		<altitudeLayer>LightingOverlay</altitudeLayer>
+		<mote>
+			<solidTime>99999</solidTime>
+			<fadeInTime>0.2</fadeInTime>
+			<fadeOutTime>1</fadeOutTime>
+			<needsMaintenance>True</needsMaintenance>
+			<fadeOutUnmaintained>True</fadeOutUnmaintained>
+		</mote>
+		<graphicData>
+			<graphicClass>Graphic_MotePulse</graphicClass>
+			<shaderType>RitualOutline</shaderType>
+			<texPath>Motes/VME_CrystalBall</texPath>
+			<shaderParameters>
+				<_GradientTex>/Things/Mote/RitualEffects/DustyGradient</_GradientTex>
+				<_ScrollSpeed>0.5</_ScrollSpeed>
+			</shaderParameters>
+			<drawSize>(1.4, 2.8)</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<RitualVisualEffectDef>
 		<defName>VME_CorporateVisuals</defName>
 		<tintColor>(66, 115, 185)</tintColor>
 		<comps>
@@ -492,11 +492,11 @@
 				<scalePositionWithRoom>true</scalePositionWithRoom>
 				<onlySpawnInSameRoom>true</onlySpawnInSameRoom>
 			</li>
-			
+
 
 		</comps>
 	</RitualVisualEffectDef>
-		<FleckDef ParentName="FleckBase">
+	<FleckDef ParentName="FleckBase">
 		<defName>VME_Graph</defName>
 		<fleckSystemClass>FleckSystemThrown</fleckSystemClass>
 		<graphicData>
@@ -512,13 +512,80 @@
 		<acceleration>(0, 0.0, 0.4)</acceleration>
 	</FleckDef>
 
-<FleckDef ParentName="FleckBase">
+	<FleckDef ParentName="FleckBase">
 		<defName>VME_Stonks</defName>
 		<fleckSystemClass>FleckSystemThrown</fleckSystemClass>
 		<graphicData>
 			<graphicClass>Graphic_Fleck</graphicClass>
 			<shaderType>MoteGlow</shaderType>
 			<texPath>Motes/VME_Stonks</texPath>
+			<drawSize>(1, 1)</drawSize>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<solidTime>0.5</solidTime>
+		<fadeInTime>0.8</fadeInTime>
+		<fadeOutTime>0.8</fadeOutTime>
+		<acceleration>(0, 0.0, 0.4)</acceleration>
+	</FleckDef>
+
+	<RitualVisualEffectDef ParentName="RitualSmokeAbstract">
+		<defName>VME_HedonismVisuals</defName>
+		<tintColor>(212, 175, 63)</tintColor>
+		<comps>
+
+			<li Class="CompProperties_RitualEffectConstantCircle">
+				<radius>8.0</radius>
+				<numCopies>8</numCopies>
+				<moteDef>VME_GreekColumn</moteDef>
+				<scalePositionWithRoom>true</scalePositionWithRoom>
+				<onlySpawnInSameRoom>true</onlySpawnInSameRoom>
+				<offset>(0, 0, 0.5)</offset>
+				<roomCheckOffset>(0, 0, -1)</roomCheckOffset>
+			</li>
+			<li Class="CompProperties_RitualEffectIntervalSpawnArea">
+				<fleckDef>VME_Grapes</fleckDef>
+				<area>(24, 22)</area>
+				<spawnIntervalTicks>16</spawnIntervalTicks>
+				<spawnCount>1</spawnCount>
+				<rotation>0</rotation>
+				<scale>1~1.75</scale>
+				<scalePositionWithRoom>true</scalePositionWithRoom>
+				<onlySpawnInSameRoom>true</onlySpawnInSameRoom>
+			</li>
+		</comps>
+	</RitualVisualEffectDef>
+
+
+	<ThingDef ParentName="MoteBase">
+		<defName>VME_GreekColumn</defName>
+		<thingClass>MoteThrown</thingClass>
+		<altitudeLayer>LightingOverlay</altitudeLayer>
+		<mote>
+			<solidTime>99999</solidTime>
+			<fadeInTime>0.2</fadeInTime>
+			<fadeOutTime>1</fadeOutTime>
+			<needsMaintenance>True</needsMaintenance>
+			<fadeOutUnmaintained>True</fadeOutUnmaintained>
+		</mote>
+		<graphicData>
+			<graphicClass>Graphic_MotePulse</graphicClass>
+			<shaderType>RitualOutline</shaderType>
+			<texPath>Motes/VME_GreekColumn</texPath>
+			<shaderParameters>
+				<_GradientTex>/Things/Mote/RitualEffects/DustyGradient</_GradientTex>
+				<_ScrollSpeed>0.5</_ScrollSpeed>
+			</shaderParameters>
+			<drawSize>(1.4, 2.8)</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<FleckDef ParentName="FleckBase">
+		<defName>VME_Grapes</defName>
+		<fleckSystemClass>FleckSystemThrown</fleckSystemClass>
+		<graphicData>
+			<graphicClass>Graphic_Fleck</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+			<texPath>Motes/VME_Grapes</texPath>
 			<drawSize>(1, 1)</drawSize>
 		</graphicData>
 		<altitudeLayer>MoteOverhead</altitudeLayer>

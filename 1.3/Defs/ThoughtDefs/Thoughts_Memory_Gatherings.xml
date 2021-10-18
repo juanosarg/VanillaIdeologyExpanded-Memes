@@ -14,6 +14,19 @@
       </li>
     </stages>
   </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>VME_EnforcedCompliance</defName>
+    <durationDays>30</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>compliant</label>
+        <description>Someone was executed for the lack of compliance. I need to be positive. I NEED TO.</description>
+        <baseMoodEffect>20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
 
  
 </Defs>

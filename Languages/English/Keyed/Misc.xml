@@ -13,6 +13,7 @@
 	<VME_RitualTargetDivineTheStarsInfo>An unroofed ritual spot at night. Spot must be unroofed with at least 25 unroofed cells in the area.</VME_RitualTargetDivineTheStarsInfo>
 	<VME_WickerManInfo>A built wicker man.</VME_WickerManInfo>
 	<VME_CantStartWickerManRitual>There is nobody to convert to {0}. You need a prisoner of a different ideoligion.</VME_CantStartWickerManRitual>
+	<VME_MessageRitualRoleMustBeSlave>Participant must be a slave.</VME_MessageRitualRoleMustBeSlave>
 
 	<VME_AbilityDisabledNoWickerMan>No reachable wicker man.</VME_AbilityDisabledNoWickerMan>	
 	<VME_AbilityNeedsATurret>This ability needs to target a turret or mechanoid.</VME_AbilityNeedsATurret>
@@ -22,7 +23,8 @@
 	<VME_AbilityNeedsMeal>This ability needs to target food categorized as a meal.</VME_AbilityNeedsMeal>
 	<VME_AbilityCaravanWillArrive>A trader caravan has been attracted to your settlement and will arrive in approximately a day.</VME_AbilityCaravanWillArrive>	
 	<VME_AbilityAlreadyADessert>Meal is already a dessert. This ability needs to target a meal that isn't a dessert.</VME_AbilityAlreadyADessert>
-	
+	<VME_AbilityNeedsAColonist>This ability needs to target a free colonist.</VME_AbilityNeedsAColonist>
+
 	<VME_DeconstructBuildingLabel>Uninstall building</VME_DeconstructBuildingLabel>
 	<VME_DeconstructBuildingDesc>Uninstall junk building to be able to move and reintall it. These can be caravaned out of a map, making "junk expeditions" possible</VME_DeconstructBuildingDesc>
 	<VME_CancelDeconstructBuildingLabel>Cancel uninstall building</VME_CancelDeconstructBuildingLabel>
@@ -48,5 +50,9 @@
 	<VME_RitualNeedsNightOrDarkness>Ritual needs to be done at night, or under any condition that lowers light below 50% globally (eclipses don't count).</VME_RitualNeedsNightOrDarkness>
 	<VME_RitualNeedsClearWeather>Ritual needs to be done at night, and with clear weather.</VME_RitualNeedsClearWeather>
 	<VME_BonfireDyingIn>Bonfire at {0}% strength</VME_BonfireDyingIn>
-	
+	<VEM_HighCorruption>High corruption</VEM_HighCorruption>
+	<VEM_HighCorruptionDesc>These people have a too high corruption need (more than 90%). If they reach 100% corruption they will get an extreme level mental break:\n\n{0}</VEM_HighCorruptionDesc>
+	<VEM_HighCorruption>Low corruption</VEM_HighCorruption>
+	<VEM_HighCorruptionDesc>These people have a too low corruption need (less than 10%). If they reach 0% corruption they will be easily swayed to a different ideoligion. Build obelisks to maintain their corruption need or perform Incantation rituals to increase it by 10%:\n\n{0}</VEM_HighCorruptionDesc>
+
 </LanguageData>

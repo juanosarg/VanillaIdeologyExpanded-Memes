@@ -52,6 +52,7 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Fleshcrafters</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Aristocratic</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_MechanoidSupremacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Nationalist</li>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
@@ -65,6 +66,7 @@
 		<xpath>/Defs/FactionDef[defName="TribeRough"]/disallowedMemes</xpath>
 		<value>
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Pacifist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Emancipation</li>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
@@ -73,7 +75,7 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Pacifist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Egalitarian</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Trader</li>
-
+			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Emancipation</li>
 		</value>
 	</Operation>
 	
@@ -83,6 +85,7 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Pacifist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Egalitarian</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Trader</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Emancipation</li>
 
 		</value>
 	</Operation>
@@ -105,6 +108,7 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_HolyDiseases</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Nomad</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Scrapper</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">VME_Nationalist</li>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationFindMod">

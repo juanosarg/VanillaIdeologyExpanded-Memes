@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace VanillaMemesExpanded
 {
-    public class GameComponent_TravellingTracker : GameComponent
+    public class GameComponent_TravellingAndTradingTracker : GameComponent
     {
 
        
@@ -15,12 +15,14 @@ namespace VanillaMemesExpanded
         public int tickCounter = 0;
         public int tickInterval = 6000;
         public int ticksWithoutAbandoningbackup;
+        public int ticksWithoutTradingbackup;
+
         public Dictionary<Pawn, int> colonist_caravan_tracker_backup = new Dictionary<Pawn, int>();
         List<Pawn> list2;
         List<int> list3;
 
 
-        public GameComponent_TravellingTracker(Game game) : base()
+        public GameComponent_TravellingAndTradingTracker(Game game) : base()
         {
 
         }
@@ -29,7 +31,7 @@ namespace VanillaMemesExpanded
         {
             PawnCollectionClass.ticksWithoutAbandoning = ticksWithoutAbandoningbackup;
             PawnCollectionClass.colonist_caravan_tracker = colonist_caravan_tracker_backup;
-
+            PawnCollectionClass.ticksWithoutTrading = ticksWithoutTradingbackup;
 
             base.FinalizeInit();
 
@@ -42,6 +44,7 @@ namespace VanillaMemesExpanded
             Scribe_Values.Look<int>(ref this.tickCounter, "tickCounterTravel", 0, true);
             Scribe_Values.Look<int>(ref this.ticksWithoutAbandoningbackup, "ticksWithoutAbandoningbackup", 0, true);
             Scribe_Collections.Look(ref colonist_caravan_tracker_backup, "colonist_caravan_tracker_backup", LookMode.Reference, LookMode.Value, ref list2, ref list3);
+            Scribe_Values.Look<int>(ref this.ticksWithoutTradingbackup, "ticksWithoutTradingbackup", 0, true);
 
 
 
@@ -57,6 +60,7 @@ namespace VanillaMemesExpanded
             {
                 colonist_caravan_tracker_backup=PawnCollectionClass.colonist_caravan_tracker;
                 ticksWithoutAbandoningbackup = PawnCollectionClass.ticksWithoutAbandoning;
+                ticksWithoutTradingbackup = PawnCollectionClass.ticksWithoutTrading;
 
                 if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_PermanentBases_Despised) != null)
                 {
@@ -107,7 +111,17 @@ namespace VanillaMemesExpanded
 
                     }
                 }
+                
 
+                if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Trading_Required) != null)
+                {
+                    if (PawnCollectionClass.ticksWithoutTrading < int.MaxValue - tickInterval)
+                    {
+                        PawnCollectionClass.ticksWithoutTrading += tickInterval;
+                    }
+
+
+                }
 
 
 

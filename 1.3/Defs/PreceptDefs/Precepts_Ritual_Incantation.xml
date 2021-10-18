@@ -17,6 +17,7 @@
 		<ritualPatternBase>VME_IncantationPattern</ritualPatternBase>
 		<iconPath>UI/Rituals/CelebrationIncantation</iconPath>
 		<ignoreNameUniqueness>false</ignoreNameUniqueness>
+		<useRepeatPenalty>false</useRepeatPenalty>
 		<requiredMemes>
 		
 			<li>VME_Structure_ChthonianCult</li>

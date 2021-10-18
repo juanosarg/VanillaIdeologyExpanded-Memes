@@ -89,6 +89,11 @@ namespace VanillaMemesExpanded
 
 		public static PreceptDef VME_Ranching_Disliked;
 
+		public static PreceptDef VME_Alcohol_Demanded;
+		public static PreceptDef VME_Alcohol_MildAbstinence;
+		public static PreceptDef VME_Slavery_Forbidden;
+
+		public static PreceptDef VME_IdeoRole_Commissar;
 
 		public static MemeDef VME_FireWorship;
 
@@ -121,6 +126,7 @@ namespace VanillaMemesExpanded
 		public static HistoryEventDef VME_AteAnimalProducts;
 
 		public static HistoryEventDef VME_AttackedAnimal;
+		public static HistoryEventDef VME_BoughtSlave;
 
 		public static ThingDef VME_InsectNest;
 
@@ -136,6 +142,7 @@ namespace VanillaMemesExpanded
 		public static ThoughtDef VME_GotSomeLovin;
 		public static ThoughtDef VME_CheapTradingFair;
 		public static ThoughtDef VME_AttendedParty;
+		public static ThoughtDef VME_EnforcedCompliance;
 
 		public static SoundDef VME_RitualSustainer_Orgy;
 		public static SoundDef VME_RitualSustainer_InsectoidHymn;

@@ -25,22 +25,22 @@ namespace VanillaMemesExpanded
 			{
 				if (this.CurLevel < 0.1f)
 				{
-					return CorruptionNeedCategory.AnonymityViolated;
+					return CorruptionNeedCategory.Uncorrupted;
 				}
 				if (this.CurLevel < 0.2f)
 				{
-					return CorruptionNeedCategory.AnonymityCompromised;
+					return CorruptionNeedCategory.CorruptionCompromised;
 				}
 				if (this.CurLevel < 0.3f)
 				{
-					return CorruptionNeedCategory.AnonymityThreatened;
+					return CorruptionNeedCategory.CorruptionThreatened;
 				}
 				if (this.CurLevel < 0.7f)
 				{
-					return CorruptionNeedCategory.Anonymous;
+					return CorruptionNeedCategory.Corruption;
 				}
 
-				return CorruptionNeedCategory.CompletelyAnonymous;
+				return CorruptionNeedCategory.CompletelyCorrupted;
 			}
 		}
 

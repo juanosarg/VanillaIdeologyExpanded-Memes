@@ -9,6 +9,7 @@
 			<value>
 				<exclusionTags>
 					<li>VME_NotRaiders</li>
+					<li>VME_EmancipationVsRaiders</li>
 				</exclusionTags>
 			</value>
 		</nomatch>
@@ -16,6 +17,7 @@
 		<xpath>/Defs/MemeDef[defName = "Raider"]/exclusionTags</xpath>
 			<value>
 				<li>VME_NotRaiders</li>
+				<li>VME_EmancipationVsRaiders</li>
 			</value>
 		</match>
 	</Operation>

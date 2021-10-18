@@ -6,10 +6,10 @@ namespace VanillaMemesExpanded
 {
 	public enum CorruptionNeedCategory : byte
 	{
-		AnonymityViolated,
-		AnonymityCompromised,
-		AnonymityThreatened,
-		Anonymous,
-		CompletelyAnonymous
+		Uncorrupted,
+		CorruptionCompromised,
+		CorruptionThreatened,
+		Corruption,
+		CompletelyCorrupted
 	}
 }

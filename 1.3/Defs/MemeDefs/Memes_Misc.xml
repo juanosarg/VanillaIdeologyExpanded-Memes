@@ -13,6 +13,7 @@
 			<li>VME_Proselytism</li>
 			<li>VME_PacifistsNotViolentConverters</li>
 			<li>VME_IndustrialismVsViolent</li>
+			<li>VME_EmancipationVsViolentConversion</li>
 		</exclusionTags>
 		<description>Infidels can choose to adopt our beliefs, or die.</description>
 		<iconPath>UI/Memes/ViolentConversion</iconPath>
@@ -210,7 +211,7 @@
 			<li>VME_GodEmperor</li>
 			<li>VME_LeaderPrecepts</li>
 		</exclusionTags>
-		<impact>2</impact>
+		<impact>1</impact>
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->absolute</li>
@@ -1562,6 +1563,7 @@
 			<li>VME_SadistVsNonviolence</li>
 			<li>VME_PacifistsVsDefilers</li>
 			<li>VME_PacifistsVsSupremacist</li>
+			<li>VME_NationalistVsPacifist</li>
 		</exclusionTags>
 		<impact>3</impact>
 		<generalRules>
@@ -1748,6 +1750,7 @@
 		<impact>2</impact>
 		<exclusionTags>
 			<li>VME_TooHonourable</li>
+			<li>VME_EmancipationVsBushido</li>
 		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
@@ -2537,13 +2540,15 @@
 	<MemeDef>
 		<defName>VME_Emancipation</defName>
 		<label>emancipation</label>
-		<description>.</description>
+		<description>It’s not enough to simply not participate in slavery, we should actively work to fight against those who dare to enslave others and free those who have suffered such inhumanities.</description>
 		<iconPath>UI/Memes/InwardPerfection</iconPath>
 		<groupDef>GroupRelation</groupDef>
 		<impact>1</impact>
 		<exclusionTags>
 			<li>GroupRelation</li>
-			
+			<li>VME_EmancipationVsRaiders</li>
+			<li>VME_EmancipationVsViolentConversion</li>
+			<li>VME_EmancipationVsBushido</li>
 		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
@@ -2561,51 +2566,164 @@
 			<rules>
 				<rulesStrings>
 					<!-- theist myth -->
-					<li>creation(tag=meme_Emancipation)        ->[deity0_name] showed us that the path to true wisdom lies in tolerance and equality.</li>
-					<li>episode(uses=1,tag=meme_Emancipation)  ->[deity0_name] said to all the [memberNamePlural], "You were all created in my own image, and you are all equal to my eyes."</li>
+					<li>creation(tag=meme_Emancipation)        ->[deity0_name] showed us that slavery is aberrant, and should be stopped at all costs.</li>
+					<li>episode(uses=1,tag=meme_Emancipation)  ->[deity0_name] said to all the [memberNamePlural], "Those who deny freedom to others, deserve it not for themselves."</li>
 					<!-- theist founder -->
-					<li>intro(tag=meme_Emancipation)           ->On the [place_summary] [place_name], a tradition began at the [altarRoomLabel] of [deity0_name] where people would accept the beliefs of their neighbours, and revel in the sharing of different perspectives.</li>
-					<li>conflict(tag=meme_Emancipation)           ->A bigot [foeLeader] looked at this with scorn, for [foeLeader_pronoun] was intolerant of any belief different from [foeLeader_possessive] own.</li>
-					<li>founderJoin(tag=meme_Emancipation)        ->[deity0_name]'s truest follower [founderName] stood before the [place_powerCenter], and gave a long, passionate speech about the need for respect and tolerance.</li>
-					<li>victory(tag=meme_Emancipation)            ->Even if the [foeLeader] wasn't convinced by the arguments, everyone else applauded [founderName]'s words, and [founderName_pronoun] was considered from that moment to be [deity0_name]'s speaker.</li>
+					<li>intro(tag=meme_Emancipation)           ->On the [place_summary] [place_name], a tradition began at the [altarRoomLabel] of [deity0_name] where slaves were freed and given a new chance at life.</li>
+					<li>conflict(tag=meme_Emancipation)           ->A bigot [foeLeader] looked at this with scorn, for [foeLeader_pronoun] was a slaver that saw [foeLeader_possessive] profits threatened.</li>
+					<li>founderJoin(tag=meme_Emancipation)        ->[deity0_name]'s truest follower [founderName] stood before the [place_powerCenter], and gave a long, passionate speech about emancipation and the evils of slavery.</li>
+					<li>victory(tag=meme_Emancipation)            ->Even if the [foeLeader] wasn't convinced by the arguments, everyone else applauded [founderName]'s words, and [founder_pronoun] was considered from that moment to be [deity0_name]'s speaker.</li>
 					<!-- ideological founder -->
-					<li>setup(tag=meme_Emancipation)           ->From [founderName_possessive] early life, [founderName] was persecuted and imprisoned. [founderName_possessive] ideas were so radically different that [founderName_pronoun] could never fit anywhere. Perhaps [founderName_pronoun] could have reacted to this scorn with more hatred of [founderName_possessive] own, but instead [founderName_pronoun] decided to embrace the opposite.</li>
-					<li>story(uses=1,tag=meme_Emancipation)    ->[founderName]'s ideas of tolerance and equality deeply resonated with some people, and a new school of thought was born: Light knows no bigotry, wind knows no discrimination, rain knows no snobbery, crops know no segregation.</li>
+					<li>setup(tag=meme_Emancipation)           ->[founderName] was born in an oppressive urbworld where slavery was commonplace. [founder_pronoun] grew up seeing other human beings being used as property, and this deeply disgusted [founder_objective].</li>
+					<li>story(uses=1,tag=meme_Emancipation)    ->[founderName] set out to abolish slavery in [founder_possessive] native planet, and with [founder_possessive] success [founder_possessive] philosophy spread across the stars.</li>
 					<!-- ideological lesson -->
-					<li>lessonIntro(tag=meme_Emancipation)         ->Bigotry, hate, bullying, perversion and discrimination must never be considered to be human rights. It took so long to understand that</li>
-					<li>lesson(tag=meme_Emancipation)              ->a human without a strong sense of justice, is no human - a human without a strong sense of acceptance, is no human - a human without a strong sense of egalitarianism, is no human</li>
-					<li>lessonReinforcement(tag=meme_Emancipation) ->To be human, is to act human, and to act human, is to stand up to all forms of inhumanity.</li>
+					<li>lessonIntro(tag=meme_Emancipation)         ->Slavery is theft -- theft of a life, theft of work, theft of any property or produce, theft even of the children a slave might have borne. It is so important you understand that</li>
+					<li>lesson(tag=meme_Emancipation)              ->nature made no man a slave</li>
+					<li>lessonReinforcement(tag=meme_Emancipation) ->To subjugate another is to subjugate yourself.</li>
 					<!-- archist -->
 					<li>archistBasis(tag=meme_Emancipation)    ->Archotechs are the pinnacle of ethical development. Beings so wise and so advanced that they have achieved perfection in their thoughts.</li>
-					<li>archistFact(tag=meme_Emancipation)     ->To an archotech, there must be no differences between two human beings. We are all the same in their eyes.</li>
-					<li>archistProphecy(tag=meme_Emancipation) ->Only by forgetting our differences and focusing on what makes us all human can we become worthy of transcendence.</li>
+					<li>archistFact(tag=meme_Emancipation)     ->To an archotech, slavery is an abhorrent sin. Treating another human like an object.</li>
+					<li>archistProphecy(tag=meme_Emancipation) ->Only by abolishing slavery and fighting against it everywhere we see it can we become worthy of transcendence.</li>
 					<!-- animist -->
-					<li>animistBasis(tag=meme_Emancipation)    ->As spirits are but a shadow to us, pervading the hidden corners behind reality, so are we similarly hidden to them.</li>
-					<li>animistFact(tag=meme_Emancipation)     ->To the spirits, we are a blurred impression upon the ethereal plane. The differences that seem so striking to us are not as noticeable to them.</li>
-					<li>animistProphecy(tag=meme_Emancipation) ->[itIsSaid] only by forgetting our differences and focusing on what makes us all human can we make the spirits truly listen to us.</li>
+					<li>animistBasis(tag=meme_Emancipation)    ->The very concept of slavery, of owning another human being as if it were an object, is incomprehensible to the spirits.</li>
+					<li>animistFact(tag=meme_Emancipation)     ->To the spirits, slavery is not only sinful and wrong, but something that should be actively fought against in any way possible.</li>
+					<li>animistProphecy(tag=meme_Emancipation) ->[itIsSaid] only by abolishing slavery and fighting against it everywhere we see it can we make the spirits truly listen to us.</li>
 					<!-- serketist -->
-					<li>serketistProphecy(tag=meme_Emancipation)->[itIsSaid] we will form a society in which our differences do not matter. Accepting and tolerant, as all insects are.</li>
+					<li>serketistProphecy(tag=meme_Emancipation)->[itIsSaid] we will form a society in which no human owns another as if it were a mere object. Accepting and tolerant, as all insects are.</li>
 					<!-- eldritch / chthonian -->
-					<li>chthonianProphecy(tag=meme_Emancipation)->In the face of such cosmic depravity our quarrels and differences are moot. Death does not care about the creed of those it collects.</li>
+					<li>chthonianProphecy(tag=meme_Emancipation)->These eldritch entities would love nothing more than to enslave the human race to do their bidding.</li>
 					<!-- esoteric -->
-					<li>esotericismProphecy(tag=meme_Emancipation)->Such occult knowledge will require an open mind. We'll need to welcome all sorts of creeds and beliefs into our fold.</li>
+					<li>esotericismProphecy(tag=meme_Emancipation)->Such occult knowledge will require an unshackled mind. As long as the mind is enslaved, the body can never be free.</li>
 					<!-- eschatologism -->
-					<li>eschatologismFact(tag=meme_Emancipation)->A narrow mind won't be able to bring the end of days. We'll need to expand our minds if we want to get the job done.</li>
+					<li>eschatologismFact(tag=meme_Emancipation)->Only by working together can be bring the end of the world. We will free every shackled slave and recruit them to our cause.</li>
 					<!-- corporate -->
-					<li>introMemo(tag=meme_Emancipation)->This coming week we are instating the new multifaith policies to ensure all our employees are free to express their own beliefs in peace. The Human Resources department will handle reservations and timetables for the scheduled multifaith masses.</li>
+					<li>introMemo(tag=meme_Emancipation)->We all know some other corporations in the Rim engage in "pseudo-illicit exploitment of human capital", so it is company policy to free these "forced employees" as soon as we can, and offer them an internship with us.</li>
 					<!-- alienist -->
-					<li>alienistProphecy(tag=meme_Emancipation)->These wayward creatures are a point of contention among many people. Are they to be protected, or destroyed? We'd do well to listen to all points of view before deciding.</li>
+					<li>alienistProphecy(tag=meme_Emancipation)->These wayward creatures embody the concept of freedom that we espouse, and we'd do well to learn from them.</li>
 
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
-		
+		<requireOne>
+			<li>
+				<li>VME_Slavery_Forbidden</li>
+			</li>
+			<li>
+				<li>VME_SlaveTrading_OnlyBuying</li>
+			</li>
+			
+		</requireOne>
+		<requiredRituals>
+			<li>
+				<precept>VME_SlaveEmancipationPrecept</precept>
+				<pattern>VME_SlaveEmancipationPattern</pattern>
+			</li>
+		</requiredRituals>
 		<symbolPacks>
 			<li>
 				<ideoName>Emancipation</ideoName>
 				<theme>emancipation</theme>
 				<adjective>emancipator</adjective>
 				<member>rescuer</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+	<MemeDef>
+		<defName>VME_Nationalist</defName>
+		<label>nationalist</label>
+		<description>Insubordination and dissent should be quenched to make space for a strong sense of nationalistic pride.</description>
+		<iconPath>UI/Memes/Nationalist</iconPath>
+		<groupDef>GroupRelation</groupDef>
+		<impact>1</impact>
+		<exclusionTags>
+			<li>GroupRelation</li>
+			<li>VME_NationalistVsPacifist</li>
+		</exclusionTags>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->firm</li>
+				<li>memeAdjective->oligarchic</li>
+				<li>memeAdjective->absolute</li>
+				<li>memeAdjective->uncompromising</li>
+				<li>memeAdjective->repressive</li>
+				<li>memeAdjective->iron-fisted</li>
+				<li>memeAdjective->populist</li>
+				<li>memeLeaderNoun->supreme leader</li>
+				<li>memeLeaderNoun->caudillo</li>
+				<li>memeLeaderNoun->chairman</li>
+				<li>memeLeaderNoun->duce</li>
+				<li>memeLeaderNoun->president for life</li>
+				<li>memeLeaderAdjective->stern</li>
+				<li>memeLeaderAdjective->patriot</li>
+				<li>memeLeaderAdjective->callous</li>
+				<li>memeLeaderAdjective->harsh</li>
+				<li>memeLeaderAdjective->implacable</li>
+				<li>memeLeaderAdjective->inexorable</li>
+				<li>memeMoralist->propagandist</li>
+				<li>memeMoralist->regime advocate</li>
+				<li>memeMoralist->campaigner</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Nationalist)        ->[deity0_name] showed us that plutocratic and reactionary democracies have blocked the march and frequently plotted against the existence of the [memberNamePlural].</li>
+					<li>episode(uses=1,tag=meme_Nationalist)  ->[deity0_name] shouted to all the [memberNamePlural], "The hour destined by fate is sounding for us. The hour of irrevocable decision has come."</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Nationalist)           ->On the [place_summary] [place_name], enormous monolitic statues saluted and extolled the glory of [deity0_name].</li>
+					<li>conflict(tag=meme_Nationalist)           ->A coward [foeLeader] looked at this with scorn, for [foeLeader_pronoun] was a revolutionary who didn't believe in order, justice and honor.</li>
+					<li>founderJoin(tag=meme_Nationalist)        ->[deity0_name]'s truest follower [founderName], a true patriot, stood before the [place_powerCenter], and gave a long, rousing speech about how the [foeLeader] was the most powerful enemy number one against whom the [memberNamePlural] were engaged and against whom they should continue the struggle to the last drop of blood.</li>
+					<li>victory(tag=meme_Nationalist)            ->Emboldened by the [founderName]'s words, [founder_possessive] troops incarcerated the [foeLeader], who was executed a few days later for [deity0_name]'s glory.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Nationalist)           ->[founderName] was a hero of the people, a true patriot. Everyone was united under [founder_possessive] banner.</li>
+					<li>story(uses=1,tag=meme_Nationalist)    ->[founderName] made us understand that hardships, suffering and sacrifices that are faced with exemplary courage and dignity have their day of compensation when all the enemy forces are crushed on the battlefields by the heroism of our soldiers.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Nationalist)         ->Through you I want to speak to our people, to the authentic, real, great people, who fight with the courage of lions on land, sea and air fronts. It is so important you understand that</li>
+					<li>lesson(tag=meme_Nationalist)              ->they absolutely must not be confused or contaminated by the minority or well-known, anti-social individuals and complainers, who grumble about their suspended comforts</li>
+					<li>lessonReinforcement(tag=meme_Nationalist) ->We are a great people. We deserve and will have victory.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Nationalist)    ->Archotechs do not respect those who can't defend themselves: We rise as one unified order, under a single banner, and no enemy can destabilize the ideal we represent.</li>
+					<li>archistFact(tag=meme_Nationalist)     ->Our nation will rise triumphant over the rest, proving to the archotechs that we are One people, One voice.</li>
+					<li>archistProphecy(tag=meme_Nationalist) ->Only by standing proud as the only true followers of our ideals can we become worthy of transcendence.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Nationalist)    ->The spirits understand the need for an unified will. The preservation of our eternal values, the suppression of which would imply instability and chaos.</li>
+					<li>animistFact(tag=meme_Nationalist)     ->To the spirits, it is clear that our youth prepared itself for fight and engendered a spirit of our crusade that they derived from our soundest traditions of spiritual values and merged them with the social yearnings of our times.</li>
+					<li>animistProphecy(tag=meme_Nationalist) ->[itIsSaid] only by standing proud as the only true followers of our ideals can we make the spirits truly listen to us.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Nationalist)->[itIsSaid] we will truly stand as One people, with an unified will, standing proud as the only true followers of our ideals.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Nationalist)->These eldritch entities would seek to destroy us, but they lack the vision to understand that we will stand proud against them as the only true followers of our ideals.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Nationalist)->Such occult knowledge requires an unified, iron will. We will stand proud as the only true followers of our ideals.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Nationalist)->Only our nation is strong enough to do what must be done. We will stand proud as the only true followers of our ideals, until the end.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Nationalist)->As a reminder, multiple employment is expressly forbidden by the contract you signed. If you think any of your co-workers is engaging in such activities please report it as soon as possible so the proper disciplinary measures can be enacted.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_Nationalist)->These wayward creatures are ours to do as we please.</li>
+
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>VME_Death_DontCare</li>
+			</li>
+			<li>
+				<li>IdeoDiversity_Disapproved</li>
+			</li>
+			<li>
+				<li>Execution_Required</li>
+			</li>
+			
+		</requireOne>
+		<symbolPacks>
+			<li>
+				<ideoName>Nationalism</ideoName>
+				<theme>nationalism</theme>
+				<adjective>nationalist</adjective>
+				<member>patriot</member>
 			</li>
 		</symbolPacks>
 	</MemeDef>

@@ -185,6 +185,17 @@
     </rulePack>
   </RulePackDef>
 
+ 
+ <RulePackDef>
+    <defName>VME_Commissar</defName>
 
+    <rulePack>
+      <rulesStrings>
+       
+        <li>r_roleName->Commissar</li>
+        
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
 
 </Defs>

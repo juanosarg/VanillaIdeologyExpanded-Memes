@@ -39,7 +39,7 @@
       <li>
         <label>blasphemous incantation</label>
         <description>A promise of hidden and fathomless worlds of strange life which pulsate in the gulfs beyond the stars and press hideously upon our own globe in unholy dimensions which only the dead and the moonstruck can glimpse.</description>
-        <baseMoodEffect>5</baseMoodEffect>
+        <baseMoodEffect>1</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
@@ -53,7 +53,7 @@
       <li>
         <label>loathsome incantation</label>
         <description>We live on a placid island of ignorance in the midst of black seas of infinity, and it was not meant that we should voyage far.</description>
-        <baseMoodEffect>8</baseMoodEffect>
+        <baseMoodEffect>2</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>

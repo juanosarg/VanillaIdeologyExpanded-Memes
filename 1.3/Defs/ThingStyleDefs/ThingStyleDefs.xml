@@ -1024,4 +1024,68 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
+	
+	
+	<!-- ====== Hedonist ======== -->
+
+
+
+	<ThingStyleDef>
+		<defName>VME_Hedonist_SculptureSmall</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Hedonist/Sculptures/Small</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Hedonist_SculptureLarge</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Hedonist/Sculptures/Large</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>VME_Hedonist_SculptureGrand</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Hedonist/Sculptures/Grand</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef ParentName="IdeoColumnStyleBase">
+		<defName>VME_Hedonist_Column</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Hedonist/HedonismColumn</texPath>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>VME_HedonistPlantPot</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Hedonist/HedonismPlantPot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.55, 0.35, 0.3)</volume>
+				<offset>(0, 0, -0.28)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>VME_Hedonist_Apparel_BasicShirt</defName>
+		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/VME_HedonistShirtBasic/HedonistShirtBasic</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparelstyles/Single/HedonistShirtBasic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+
+		</graphicData>
+	</ThingStyleDef>
+	
 </Defs>

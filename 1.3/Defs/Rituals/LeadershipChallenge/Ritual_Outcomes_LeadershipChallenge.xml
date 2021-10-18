@@ -16,8 +16,8 @@
 				<curve>
 					<points>
 						<li>(1,  0.0)</li>
-						<li>(5,  0.15)</li>
-						<li>(10, 0.2)</li>
+						<li>(3,  0.15)</li>
+						<li>(6, 0.2)</li>
 					</points>
 				</curve>
 			</li>

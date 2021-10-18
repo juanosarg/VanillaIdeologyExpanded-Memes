@@ -31,6 +31,7 @@ namespace VanillaMemesExpanded
 
         public static HashSet<Thing> objectsToDeconstruct_InMap = new HashSet<Thing>();
 
+        public static List<Pawn> enslavedPawns = new List<Pawn>();
 
         public static Pawn pawnThatIsTheLeaderNow;
 
@@ -182,6 +183,14 @@ namespace VanillaMemesExpanded
             else { colonist_obelisk_tracker[pawn] = obeliskPresent; }
         }
 
+        public static void AddToEnslavedPawns(Pawn pawn)
+        {
+            if (!enslavedPawns.Contains(pawn))
+            {
+                enslavedPawns.Add(pawn);
+            }
+            
+        }
 
     }
 }
