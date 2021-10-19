@@ -1,6 +1,7 @@
 ﻿using System;
 using Verse;
 using RimWorld;
+using Verse.Sound;
 
 namespace VanillaMemesExpanded
 {
@@ -31,6 +32,7 @@ namespace VanillaMemesExpanded
 					victim.guilt.Notify_Guilty(900000);
 					victim.health.killedByRitual = true;
 					ExecutionUtility.DoExecutionByCut(this.parent.pawn, victim);
+					
 					foreach (Pawn pawn in PawnsFinder.AllMaps_SpawnedPawnsInFaction(Faction.OfPlayer))
 					{
 						if (pawn.RaceProps.Humanlike && (pawn.Ideo == this.parent.pawn.Ideo))

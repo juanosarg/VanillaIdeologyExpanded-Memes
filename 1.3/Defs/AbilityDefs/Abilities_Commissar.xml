@@ -19,18 +19,15 @@
 		<gizmoClass>Command_Ability</gizmoClass>
 		<iconPath>UI/Abilities/EnforceCompliance</iconPath>
 		<uiOrder>1</uiOrder>
-		<statBases>
-			<Ability_EffectRadius>2.9</Ability_EffectRadius>
-		</statBases>
+		
 		<verbProperties>
-			<verbClass>Verb_CastAbility</verbClass>
+			
 			<warmupTime>1</warmupTime>
 			<range>3</range>
 			<targetParams>
 				<canTargetSelf>false</canTargetSelf>
-				<canTargetPawns>true</canTargetPawns>
-				<canTargetAnimals>false</canTargetAnimals>
-			
+				<onlyTargetColonists>true</onlyTargetColonists>
+				<neverTargetIncapacitated>True</neverTargetIncapacitated>
 			</targetParams>
 		</verbProperties>
 		<comps>
