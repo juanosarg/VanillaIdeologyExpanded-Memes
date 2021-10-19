@@ -13,7 +13,7 @@ namespace VanillaMemesExpanded
 				return ThoughtState.Inactive;
 			}
 
-			if (!p.Ideo.HasPrecept(InternalDefOf.VME_Anonymity_Required))
+			if (p.Ideo?.HasPrecept(InternalDefOf.VME_Anonymity_Required)!=true)
 			{
 				return ThoughtState.Inactive;
 			}

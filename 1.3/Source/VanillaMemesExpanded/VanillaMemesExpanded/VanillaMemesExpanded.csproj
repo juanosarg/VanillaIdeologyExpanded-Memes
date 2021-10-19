@@ -300,6 +300,7 @@
     <Compile Include="Abilities\CompAbilityEnforceCompliance.cs" />
     <Compile Include="Abilities\CompAbilityHarvestBodyParts.cs" />
     <Compile Include="Abilities\CompAbilityMakeADessert.cs" />
+    <Compile Include="Abilities\CompAbilityMedicalEmergency.cs" />
     <Compile Include="Abilities\CompAbilityStrengthenFlame.cs" />
     <Compile Include="Abilities\CompAbilityTameInsectoid.cs" />
     <Compile Include="Abilities\CompAbilityThrowParty.cs" />
@@ -309,6 +310,7 @@
     <Compile Include="Abilities\Properties\CompProperties_AbilityEnforceCompliance.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityHarvestBodyParts.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityMakeADessert.cs" />
+    <Compile Include="Abilities\Properties\CompProperties_AbilityMedicalEmergency.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityTameInsectoid.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityStrengthenFlame.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityThrowParty.cs" />
@@ -437,6 +439,7 @@
     <Compile Include="Thoughts\ThoughtWorker_Precept_Aurora.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_HasNonNaturalProsthetic.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_HasNonNaturalProsthetic_Social.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_Precept_Hospital.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_Leather_Abhorrent.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_Ranching_Disliked.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_SharedMood.cs" />

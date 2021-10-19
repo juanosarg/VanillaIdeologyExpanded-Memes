@@ -209,5 +209,17 @@
       </rulesStrings>
     </rulePack>
   </RulePackDef>
+  
+  <RulePackDef>
+    <defName>VME_Nurse</defName>
+
+    <rulePack>
+      <rulesStrings>
+       
+        <li>r_roleName->Nurse</li>
+        
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
 
 </Defs>

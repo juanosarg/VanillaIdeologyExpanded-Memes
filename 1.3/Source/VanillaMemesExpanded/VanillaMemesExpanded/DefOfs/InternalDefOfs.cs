@@ -49,7 +49,9 @@ namespace VanillaMemesExpanded
 		public static PreceptDef VME_Elders_Holy;
 
 		public static PreceptDef VME_PermanentBases_Despised;
+		public static PreceptDef VME_PermanentBases_Desired;
 
+		public static PreceptDef VME_Hospital_Required;
 
 		public static PreceptDef VME_Travel_Desired;
 
@@ -94,6 +96,8 @@ namespace VanillaMemesExpanded
 		public static PreceptDef VME_Slavery_Forbidden;
 
 		public static PreceptDef VME_IdeoRole_Commissar;
+
+		public static PreceptDef VME_IdeoRole_Nurse;
 
 		public static MemeDef VME_FireWorship;
 
@@ -151,6 +155,7 @@ namespace VanillaMemesExpanded
 
 		public static JobDef VME_DeconstructBuilding;
 		public static JobDef VME_MaintainInsectNest;
+		public static HediffDef VME_MedicalEmergencyHediff;
 
 
 

@@ -461,6 +461,7 @@
 		<impact>3</impact>
 		<exclusionTags>
 			<li>FleshAugmentation</li>
+			<li>VME_FleshcrafterVsHealthcare</li>
 		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
@@ -565,6 +566,9 @@
 		<description>To be touched by pestilence is a boon to be coveted. As diseases spread, so too shall our influence.</description>
 		<iconPath>UI/Memes/HolyDiseases</iconPath>
 		<groupDef>Misc</groupDef>
+		<exclusionTags>
+			<li>VME_HolyDiseasesVsHealthcare</li>
+		</exclusionTags>
 		<impact>2</impact>
 		<generalRules>
 			<rulesStrings>
@@ -2728,6 +2732,98 @@
 				<adjective>nationalist</adjective>
 				<member>patriot</member>
 			</li>
+		</symbolPacks>
+	</MemeDef>
+	<MemeDef>
+		<defName>VME_Healthcare</defName>
+		<label>healthcare</label>
+		<description>The wellbeing of our bodies and minds is something our people take very seriously. It’s important that we look out for each other and tend to the wounds of our friends and family alike.</description>
+		<iconPath>UI/Memes/Healthcare</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>2</impact>
+		<exclusionTags>
+			<li>VME_HolyDiseasesVsHealthcare</li>
+			<li>VME_FleshcrafterVsHealthcare</li>
+		</exclusionTags>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->healthy</li>
+				<li>memeAdjective->medical</li>
+				<li>memeAdjective->preventive</li>
+				<li>memeCreed->healthcare</li>
+				<li>memeCreed->wellness</li>
+				<li>memeHyphenPrefix->fit</li>
+				<li>memeConcept->hospitals</li>
+				<li>memeLeaderNoun->surgeon</li>
+				<li>memeMoralist->doctor</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Healthcare)        ->[deity0_name] spoke to [deity0_possessive] followers: "Give people what they need: food, medicine, clean air, pure water, trees and grass. Don't ask who deserves it. Every human being deserves it."</li>
+					<li>episode(uses=1,tag=meme_Healthcare)  ->As [deity0_name] commanded, we always took care of one another and pooled our resources so no one has to suffer alone.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Healthcare)           ->On the [place_summary] [place_name], the [memberNamePlural] built a gigantic hospital, where the ill and infirm were taken care of.</li>
+					<li>conflict(tag=meme_Healthcare)        ->An evil insurance seller, seeing [foeLeader_possessive] profits evaporate due to public healthcare, wanted to sabotage the hospital by any means necessary.</li>
+					<li>founderJoin(tag=meme_Healthcare)     ->Our founder, [founderName], firmly spoke to [foeLeader_objective]: "It is hard to talk about a middle ground for something that is a fundamental right".</li>
+					<li>victory(tag=meme_Healthcare)         ->Eventually, everyone was convinced of [founderName_possessive] arguments, and the [memberNamePlural] will forever believe in universal healthcare.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Healthcare)           ->[founderName] was an accomplished surgeon in one of the Glitterworlds, but lost the use of his hands in a traffic accident. That's how he became Sorcerer Supreme and... wait, wrong Universe...</li>
+					<li>story(uses=1,tag=meme_Healthcare)    ->[founderName] argued that health is your warranty seal. It seems quite pointless to waste health relentlessly in order to earn money that we shall spend on recovering health.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Healthcare)         ->The oldest doctor in our colony taught me the history of healthcare, how healing those who have no means to heal themselves is the basis of a free society. He was leading me to understand that</li>
+					<li>lesson(tag=meme_Healthcare)              ->every single journey of your life starts with a healthy mind and a healthy journey</li>
+					<li>lessonReinforcement(tag=meme_Healthcare) ->You may not appreciate the presence of good health, but you will definitely regret the absence of good health, because health is happiness.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Healthcare)    ->Archotechs are wise beyond measure. The values of compassion and empathy are important to them.</li>
+					<li>archistFact(tag=meme_Healthcare)     ->A society that doesn't take care of those in need is a cruel mockery of civilization. How would the archotechs judge us if we didn't heal those who need it?</li>
+					<li>archistProphecy(tag=meme_Healthcare) ->[inTheEnd], the archotechs will allow only the most compassionate of us to transcend.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Healthcare)    ->The spirits value compassion and empathy above anything else.</li>
+					<li>animistFact(tag=meme_Healthcare)     ->The soul is the same in all living creatures, so it makes sense to make no distinctions when healing others.</li>
+					<li>animistProphecy(tag=meme_Healthcare) ->[itIsSaid] that only those who can truly take care of anyone in need will be able to commune with the spirits.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Healthcare)->[itIsSaid] we will take care of each other like insects do. Unified in purpose, will, and compassion for each other.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Healthcare)->These eldritch entities would see us fight and quarrel among ourselves, rip each other apart. We will show them that compassion and empathy are the only goals worth pursuing.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Healthcare)->Such occult knowledge will require a pure mind to fathom. Through compassion and empathy towards others we will reach a state of mind that will allow us to see the cosmos for what it truly is.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Healthcare)->We will cherish and support each other, for we are a bastion of purity in this obscene world, and by comparison we will see the iniquity of it and why its cruel inhabitants must be purged.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Healthcare)->Let me remind you that the company offers some comprehensive healthcare benefits as part of your employment contract. Feel free to peruse the details on the company's intranet and direct any enquiries to the human resources department.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_Healthcare)->These wayward creatures are poor, innocent beings. We should take care of them and show compassion and empathy.</li>
+
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			
+			<li>
+				<li>Charity_Essential</li>
+				<li>Charity_Important</li>
+				
+			</li>
+			<li>
+				<li>VME_TendQuality_Increased</li>
+				
+			</li>
+			<li>
+				<li>VME_Hospital_Required</li>
+				
+			</li>
+		</requireOne>
+		<symbolPacks>
+			<li>
+				<ideoName>Healthcare</ideoName>
+				<theme>healthcare</theme>
+				<adjective>medical</adjective>
+				<member>medic</member>
+			</li>
+			
 		</symbolPacks>
 	</MemeDef>
 </Defs>

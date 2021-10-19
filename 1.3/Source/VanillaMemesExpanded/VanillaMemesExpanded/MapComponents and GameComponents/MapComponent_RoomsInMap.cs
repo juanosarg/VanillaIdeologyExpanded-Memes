@@ -15,6 +15,7 @@ namespace VanillaMemesExpanded
         public int tickCounter = 0;
         public int tickInterval = 6000;
         public int roomsInMap_backup;
+        public int hospitalTilesInMap_backup;
 
 
         public MapComponent_RoomsInMap(Map map) : base(map)
@@ -27,6 +28,8 @@ namespace VanillaMemesExpanded
             if (map.IsPlayerHome)
             {
                 PawnCollectionClass.roomsInMap = roomsInMap_backup;
+                PawnCollectionClass.hospitalTilesInMap = hospitalTilesInMap_backup;
+
             }
 
             base.FinalizeInit();
@@ -38,6 +41,8 @@ namespace VanillaMemesExpanded
             base.ExposeData();
 
             Scribe_Values.Look<int>(ref this.roomsInMap_backup, "roomsInMap_backup", 0, true);
+            Scribe_Values.Look<int>(ref this.hospitalTilesInMap_backup, "hospitalTilesInMap_backup", 0, true);
+
             Scribe_Values.Look<int>(ref this.tickCounter, "tickCounterRooms", 0, true);
 
         }
@@ -48,7 +53,7 @@ namespace VanillaMemesExpanded
             tickCounter++;
             if ((tickCounter > tickInterval))
             {
-                if (map.IsPlayerHome) {
+                if (map.IsPlayerHome && Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_PermanentBases_Desired) != null) {
                     roomsInMap_backup = PawnCollectionClass.roomsInMap;
 
                     int totalRooms = 0;
@@ -64,8 +69,28 @@ namespace VanillaMemesExpanded
                     roomsInMap_backup = totalRooms;
                     PawnCollectionClass.roomsInMap = totalRooms;
                 }
-                    
-               
+
+                if (map.IsPlayerHome && Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Hospital_Required) != null)
+                {
+                    hospitalTilesInMap_backup = PawnCollectionClass.hospitalTilesInMap;
+
+                    int totalHospitalTiles = 0;
+
+                    foreach (Room room in map.regionGrid.allRooms)
+                    {
+                        if (room.Role == RoomRoleDefOf.Hospital)
+                        {
+                            totalHospitalTiles += room.CellCount;
+                        }
+
+
+
+                    }
+                    hospitalTilesInMap_backup = totalHospitalTiles;
+                    PawnCollectionClass.hospitalTilesInMap = totalHospitalTiles;
+                }
+
+
 
                 tickCounter = 0;
             }

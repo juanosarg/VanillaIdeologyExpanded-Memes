@@ -42,6 +42,8 @@ namespace VanillaMemesExpanded
 
         public static int roomsInMap = 0;
 
+        public static int hospitalTilesInMap = 0;
+
         public static int ticksWithoutAbandoning = 0;
 
         public static int firesInTheMap = 0;
