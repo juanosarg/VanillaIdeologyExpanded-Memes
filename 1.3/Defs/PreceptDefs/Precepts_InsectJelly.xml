@@ -56,6 +56,10 @@
     <exclusionTags>
       <li>VME_InsectJellyEatingLoved</li>
     </exclusionTags>
+	<conflictingMemes>
+      <li>VME_Vegan</li>
+     
+    </conflictingMemes>
     <comps>
       <li Class="PreceptComp_SelfTookMemoryThought">
         <eventDef>VME_AteInsectJelly</eventDef>
