@@ -16,7 +16,7 @@
         <precept>IdeoRole_Leader</precept>
         <required>True</required>
         <maxCount>1</maxCount>
-        <countsAsParticipant>False</countsAsParticipant>
+        <countsAsParticipant>true</countsAsParticipant>
       </li>
       
     </roles>

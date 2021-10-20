@@ -14,7 +14,7 @@ namespace VanillaMemesExpanded
 		public override bool Met(Pawn p, Precept_Role role)
 		{
 
-            if (p.Ideo.HasPrecept(InternalDefOf.VME_Leader_BestCrafter))
+            if (p.ideo?.Ideo?.HasPrecept(InternalDefOf.VME_Leader_BestCrafter)==true)
             {
 
 				Pawn mostSkilledPawn = null;

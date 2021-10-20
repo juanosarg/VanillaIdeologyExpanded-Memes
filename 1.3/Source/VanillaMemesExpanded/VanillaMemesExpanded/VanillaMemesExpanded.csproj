@@ -369,6 +369,7 @@
     <Compile Include="Harmony\Thing_Ingested.cs" />
     <Compile Include="Harmony\Tradeable_Pawn_ResolveTrade.cs" />
     <Compile Include="Harmony\TradeDeal_TryExecute.cs" />
+    <Compile Include="Harmony\WorkGiver_Warden_Convert_JobOnThing.cs" />
     <Compile Include="Hediffs\HediffCompProperties_Infections.cs" />
     <Compile Include="Hediffs\HediffComp_Infections.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_BestPsycasterTracker.cs" />

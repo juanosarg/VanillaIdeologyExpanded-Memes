@@ -20,7 +20,7 @@ namespace VanillaMemesExpanded
         [HarmonyPostfix]
         static void DontShowIfHolyDisease(Pawn p, ref ThoughtState __result)
         {
-            if (p.Ideo?.HasPrecept(InternalDefOf.VME_Illness_Exalted)==true||p.Ideo?.HasPrecept(InternalDefOf.VME_Illness_Preferred) == true)
+            if (p.ideo?.Ideo?.HasPrecept(InternalDefOf.VME_Illness_Exalted)==true||p.ideo?.Ideo?.HasPrecept(InternalDefOf.VME_Illness_Preferred) == true)
             {
                 __result = false;
             }

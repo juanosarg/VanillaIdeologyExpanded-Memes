@@ -55,7 +55,7 @@ namespace VanillaMemesExpanded
                     List<Pawn> listPawns = PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists;
                     foreach(Pawn p in listPawns)
                     {
-                        if (p.Ideo.GetPrecept(InternalDefOf.VME_Illness_Exalted) != null)
+                        if (p.ideo?.Ideo?.HasPrecept(InternalDefOf.VME_Illness_Exalted) ==true)
                         {
                             PawnCollectionClass.AddColonistToIllnessList(p,0);
 
@@ -83,7 +83,7 @@ namespace VanillaMemesExpanded
                     List<Pawn> listPawns = PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists;
                     foreach (Pawn p in listPawns)
                     {
-                        if (p.Ideo != null && p.Ideo.HasPrecept(InternalDefOf.VME_Elders_Holy))
+                        if (p.ideo?.Ideo?.HasPrecept(InternalDefOf.VME_Elders_Holy)==true)
                         {
 
                             if (p.ageTracker.AgeBiologicalYears > 65 && !p.story.traits.HasTrait(InternalDefOf.VME_Elder))

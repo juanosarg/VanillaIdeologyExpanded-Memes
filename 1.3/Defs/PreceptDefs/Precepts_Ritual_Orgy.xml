@@ -18,7 +18,7 @@
 		<iconPath>UI/Rituals/CelebrationOrgy</iconPath>
 		<ignoreNameUniqueness>false</ignoreNameUniqueness>
 		<requiredMemes>
-			<li>VME_PartyLife</li>
+			
 			<li>VME_Structure_Bacchanalianism</li>
 		</requiredMemes>
 	</PreceptDef>

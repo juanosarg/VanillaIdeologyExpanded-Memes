@@ -13,8 +13,8 @@ namespace VanillaMemesExpanded
 		protected override ThoughtState ShouldHaveThought(Pawn p)
 		{
 			Precept_Role precept_role;
-			return p.Ideo.HasPrecept(InternalDefOf.VME_Power_Exalted) &&
-				(precept_role = p.Ideo.GetPrecept(PreceptDefOf.IdeoRole_Leader) as Precept_Role) != null && precept_role.ChosenPawnSingle() == p;
+			return p.ideo?.Ideo?.HasPrecept(InternalDefOf.VME_Power_Exalted)==true &&
+				(precept_role = p.ideo?.Ideo?.GetPrecept(PreceptDefOf.IdeoRole_Leader) as Precept_Role) != null && precept_role.ChosenPawnSingle() == p;
 
 		}
 

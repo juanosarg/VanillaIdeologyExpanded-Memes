@@ -91,7 +91,7 @@ namespace VanillaMemesExpanded
                     List<Pawn> listPawns = PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists;
                     foreach (Pawn p in listPawns)
                     {
-                        if (p.Ideo.GetPrecept(InternalDefOf.VME_Travel_Desired) != null || p.Ideo.GetPrecept(InternalDefOf.VME_Travel_Despised) != null)
+                        if (p.ideo?.Ideo?.HasPrecept(InternalDefOf.VME_Travel_Desired) ==true || p.ideo?.Ideo?.HasPrecept(InternalDefOf.VME_Travel_Despised) ==true)
                         {
 
 

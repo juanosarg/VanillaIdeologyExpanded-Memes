@@ -196,6 +196,10 @@
 		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
 		<symbolPackOverride>true</symbolPackOverride>
 		<deityCount>4</deityCount>
+		<exclusionTags>
+			
+			<li>VME_EldritchVsPacifist</li>
+		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->chthonian</li>

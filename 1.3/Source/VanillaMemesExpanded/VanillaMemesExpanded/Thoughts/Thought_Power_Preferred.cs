@@ -14,7 +14,7 @@ namespace VanillaMemesExpanded
 
 		protected override ThoughtState ShouldHaveThought(Pawn p)
 		{
-			bool hasPrecept = p.Ideo.HasPrecept(InternalDefOf.VME_Power_Preferred);
+			bool hasPrecept = p.ideo?.Ideo?.HasPrecept(InternalDefOf.VME_Power_Preferred)==true;
             if (!hasPrecept)
             {
 				return false;

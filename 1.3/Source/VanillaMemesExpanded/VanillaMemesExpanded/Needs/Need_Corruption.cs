@@ -49,7 +49,7 @@ namespace VanillaMemesExpanded
 			get
 			{
 
-				if (this.pawn.Ideo?.HasMeme(InternalDefOf.VME_Structure_ChthonianCult)!=true)
+				if (this.pawn.Ideo?.HasPrecept(InternalDefOf.VME_Corruption_Essential)!=true)
 				{
 					return false;
 				}
@@ -82,7 +82,13 @@ namespace VanillaMemesExpanded
 		{
 			get
 			{
-				return this.def.fallPerDay / 60000f;
+				if (this.pawn.Ideo?.HasPrecept(InternalDefOf.VME_Corruption_Essential) != true)
+				{
+					return 0;
+				}
+				else return this.def.fallPerDay / 60000f;
+
+
 			}
 		}
 
@@ -91,9 +97,9 @@ namespace VanillaMemesExpanded
 
 		}
 
-		public void CorruptionTaken(float anonymity)
+		public void CorruptionTaken(float corruption)
 		{
-			this.lastCorruptionUsed = anonymity;
+			this.lastCorruptionUsed = corruption;
 			this.lastCorruptionUseTick = Find.TickManager.TicksGame;
 		}
 

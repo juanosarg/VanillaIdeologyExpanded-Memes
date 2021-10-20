@@ -12,7 +12,7 @@
 		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
 		<description>Stops the Nurse’s Rest, Recreation and Hunger from dropping for 12 hours. During this time, Nurse can only do Doctoring jobs properly.</description>
-		<targetRequired>True</targetRequired>
+		<targetRequired>false</targetRequired>
 		<gizmoClass>Command_Ability</gizmoClass>
 		<iconPath>UI/Abilities/MedicalEmergency</iconPath>
 		<uiOrder>1</uiOrder>

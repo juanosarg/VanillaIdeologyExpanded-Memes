@@ -12,7 +12,7 @@ namespace VanillaMemesExpanded
 
 		protected override ThoughtState ShouldHaveThought(Pawn p)
 		{
-			if (!p.Ideo.HasPrecept(InternalDefOf.VME_Illness_Exalted))
+			if (p.ideo?.Ideo?.HasPrecept(InternalDefOf.VME_Illness_Exalted)!=true)
             {
 				return false;
 			}

@@ -10,8 +10,8 @@ namespace VanillaMemesExpanded
 		{
 			Precept_Role precept_role;
 
-			if (p.Faction == otherPawn.Faction && p.Ideo == otherPawn.Ideo && p.Ideo.HasPrecept(InternalDefOf.VME_IdeoRole_FireKeeper) &&
-				(precept_role = p.Ideo.GetPrecept(InternalDefOf.VME_IdeoRole_FireKeeper) as Precept_Role) != null && precept_role.ChosenPawnSingle() == otherPawn)
+			if (p.Faction == otherPawn.Faction && p.ideo?.Ideo == otherPawn.ideo?.Ideo && p.ideo?.Ideo?.HasPrecept(InternalDefOf.VME_IdeoRole_FireKeeper)==true &&
+				(precept_role = p.ideo?.Ideo?.GetPrecept(InternalDefOf.VME_IdeoRole_FireKeeper) as Precept_Role) != null && precept_role.ChosenPawnSingle() == otherPawn)
 			{
 				
 				

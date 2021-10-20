@@ -99,6 +99,8 @@ namespace VanillaMemesExpanded
 
 		public static PreceptDef VME_IdeoRole_Nurse;
 
+		public static PreceptDef VME_Proselytizing_Never;
+
 		public static MemeDef VME_FireWorship;
 
 		public static MemeDef VME_Astrology;
@@ -131,6 +133,8 @@ namespace VanillaMemesExpanded
 
 		public static HistoryEventDef VME_AttackedAnimal;
 		public static HistoryEventDef VME_BoughtSlave;
+
+		public static HistoryEventDef VME_ConvertAPrisoner;
 
 		public static ThingDef VME_InsectNest;
 
