@@ -26,8 +26,9 @@ namespace VanillaMemesExpanded
 
         public override bool AppliesToRole(Precept_Role role, out string reason, Precept_Ritual ritual = null, Pawn pawn = null, bool skipReason = false)
         {
-            throw new NotImplementedException();
-        }
+			reason = null;
+			return false;
+		}
 
 
 
