@@ -21,7 +21,7 @@
 		<uiOrder>1</uiOrder>
 		
 		<verbProperties>
-			
+			<verbClass>Verb_CastAbility</verbClass>
 			<warmupTime>1</warmupTime>
 			<range>3</range>
 			<targetParams>
