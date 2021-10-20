@@ -11,7 +11,7 @@
 		<defName>VME_Junk_Beautiful</defName>
 		<issue>VME_Junk</issue>
 		<label>beautiful</label>
-		<description>The machinations of old are breath-taking, and their weathering should be viewed as art. It's wonderful to live surrounded by things discarded by others.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Ancient junk buildings can be uninstalled and placed again as needed.</description>
+		<description>The machinations of old are breath-taking, and their weathering should be viewed as art. It's wonderful to live surrounded by things discarded by others.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Ancient junk buildings can be uninstalled and placed again as needed.\n - Colonists gets mood penalties / bonuses depending on amount of ancient junk buildings in a 10 tiles radius around them.</description>
 		<impact>High</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -67,12 +67,12 @@
 			<li>
 				<label>few pieces of ancient junk (4 nearby)</label>
 				<description>We have too few pieces of ancient junk lying around.</description>
-				<baseMoodEffect>-4</baseMoodEffect>
+				<baseMoodEffect>-1</baseMoodEffect>
 			</li>
 			<li>
 				<label>very little junk (5 nearby)</label>
 				<description>We should gather at least a few more pieces. Our junkyard is lacking.</description>
-				<baseMoodEffect>-2</baseMoodEffect>
+				<baseMoodEffect>1</baseMoodEffect>
 			</li>
 			<li>
 				<label>small junk</label>

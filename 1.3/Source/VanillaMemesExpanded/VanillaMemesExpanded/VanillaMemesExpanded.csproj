@@ -396,7 +396,7 @@
     <Compile Include="PlaceWorkers\PlaceWorker_ShowObeliskRadius.cs" />
     <Compile Include="PreceptComps\PreceptComp_AddDessertNeed.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RitualRoles\RitualRole_Adult.cs" />
+    <Compile Include="RitualExpectatorFilters\RitualSpectatorFilter_Adult.cs" />
     <Compile Include="RitualRoles\RitualRole_Slave.cs" />
     <Compile Include="Rituals\Behaviours\RitualBehaviorWorker_InsectoidHymn.cs" />
     <Compile Include="Rituals\Behaviours\RitualBehaviorWorker_Orgy.cs" />

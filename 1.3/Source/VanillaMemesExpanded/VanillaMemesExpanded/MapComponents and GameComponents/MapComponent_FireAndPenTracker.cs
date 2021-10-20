@@ -57,27 +57,55 @@ namespace VanillaMemesExpanded
 
                 if (map.IsPlayerHome)
                 {
-                    firesInTheMap_backup = PawnCollectionClass.firesInTheMap;
-                    pensInTheMap_backup = PawnCollectionClass.pensInTheMap;
-                    int pens = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamedSilentFail("PenMarker")).Count;
+                    if ((Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Fire_Desired) != null) || (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Fire_Despised) != null))
 
-                    int wildFires = map.listerThings.ThingsOfDef(ThingDefOf.Fire).Count;
-                    int campFires = map.listerThings.ThingsOfDef(ThingDefOf.Campfire).Count;
-                    int bonfires = map.listerThings.ThingsOfDef(InternalDefOf.VME_BonfireAfterRitual).Count;
-                    int stoneCampfires = 0;
-                    if (DefDatabase<ThingDef>.GetNamedSilentFail("Stone_Campfire") != null)
                     {
-                        stoneCampfires = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamedSilentFail("Stone_Campfire")).Count;
+
+                        firesInTheMap_backup = PawnCollectionClass.firesInTheMap;
+                   
+                        int wildFires = map.listerThings.ThingsOfDef(ThingDefOf.Fire).Count;
+                        int torches = map.listerThings.ThingsOfDef(ThingDefOf.TorchLamp).Count;
+                        int campFires = map.listerThings.ThingsOfDef(ThingDefOf.Campfire).Count;
+                        int bonfires = map.listerThings.ThingsOfDef(InternalDefOf.VME_BonfireAfterRitual).Count;
+                        int stoneCampfires = 0;
+                        if (DefDatabase<ThingDef>.GetNamedSilentFail("Stone_Campfire") != null)
+                        {
+                            stoneCampfires = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamedSilentFail("Stone_Campfire")).Count;
+                        }
+                        int hearths = 0;
+                        if (DefDatabase<ThingDef>.GetNamedSilentFail("VFEV_Hearth") != null)
+                        {
+                            hearths = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamedSilentFail("VFEV_Hearth")).Count;
+                        }
+                        int braziers = 0;
+                        if (DefDatabase<ThingDef>.GetNamedSilentFail("Brazier") != null)
+                        {
+                            braziers = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamedSilentFail("Brazier")).Count;
+                        }
+                        firesInTheMap_backup = wildFires + campFires + stoneCampfires + braziers + bonfires + torches + hearths;
+                       
+                        PawnCollectionClass.firesInTheMap = firesInTheMap_backup;
+
+
                     }
-                    int braziers = 0;
-                    if (DefDatabase<ThingDef>.GetNamedSilentFail("Brazier") != null)
+
+                    if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Ranching_Disliked) != null)
+
                     {
-                        braziers = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamedSilentFail("Brazier")).Count;
+
+                     
+                        pensInTheMap_backup = PawnCollectionClass.pensInTheMap;
+                        int pens = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamedSilentFail("PenMarker")).Count;
+                    
+                        pensInTheMap_backup = pens;
+                      
+                        PawnCollectionClass.pensInTheMap = pensInTheMap_backup;
+
+
                     }
-                    firesInTheMap_backup = wildFires + campFires + stoneCampfires + braziers + bonfires;
-                    pensInTheMap_backup = pens;
-                    PawnCollectionClass.firesInTheMap = firesInTheMap_backup;
-                    PawnCollectionClass.pensInTheMap = pensInTheMap_backup;
+
+
+                   
                 }
 
                 

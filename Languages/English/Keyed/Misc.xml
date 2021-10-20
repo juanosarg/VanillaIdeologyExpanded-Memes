@@ -12,7 +12,7 @@
 	<VME_PawnMustBeBestMelee>{0} must be the best melee fighter in the colony!</VME_PawnMustBeBestMelee>
 	<VME_RitualTargetDivineTheStarsInfo>An unroofed ritual spot at night. Spot must be unroofed with at least 25 unroofed cells in the area.</VME_RitualTargetDivineTheStarsInfo>
 	<VME_WickerManInfo>A built wicker man.</VME_WickerManInfo>
-	<VME_CantStartWickerManRitual>There is nobody to convert to {0}. You need a prisoner of a different ideoligion.</VME_CantStartWickerManRitual>
+	<VME_CantStartWickerManRitual>You need a prisoner to start the wicker man ritual.</VME_CantStartWickerManRitual>
 	<VME_MessageRitualRoleMustBeSlave>Participant must be a slave.</VME_MessageRitualRoleMustBeSlave>
 
 	<VME_AbilityDisabledNoWickerMan>No reachable wicker man.</VME_AbilityDisabledNoWickerMan>	

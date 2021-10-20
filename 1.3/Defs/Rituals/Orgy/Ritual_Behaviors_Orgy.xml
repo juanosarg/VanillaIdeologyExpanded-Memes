@@ -8,6 +8,9 @@
     <defName>VME_OrgyRitualBehaviour</defName>
 	<workerClass>VanillaMemesExpanded.RitualBehaviorWorker_Orgy</workerClass>
     <durationTicks>7500</durationTicks>
+	 <spectatorFilter Class="VanillaMemesExpanded.RitualSpectatorFilter_Adult">
+      <description>Participants must be consenting adults.</description>
+    </spectatorFilter>
     <roles>
       <li Class="RitualRoleTag">
         <label>orgy organizer</label>

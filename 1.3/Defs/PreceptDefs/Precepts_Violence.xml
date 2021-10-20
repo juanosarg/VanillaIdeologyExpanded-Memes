@@ -3,7 +3,7 @@
 	<IssueDef>
 		<defName>VME_Violence</defName>
 		<label>violence</label>
-		<iconPath>UI/Issues/Violence</iconPath>
+		<iconPath>UI/Issues/VME_Violence</iconPath>
 	</IssueDef>
 	<HistoryEventDef>
 		<defName>VME_AttackedInnocent</defName>
