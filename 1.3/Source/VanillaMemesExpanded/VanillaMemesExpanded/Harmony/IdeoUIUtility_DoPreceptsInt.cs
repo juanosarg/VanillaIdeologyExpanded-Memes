@@ -30,11 +30,11 @@ namespace VanillaMemesExpanded
                 {
 
 
-                    yield return new CodeInstruction(OpCodes.Ldc_I4, 10);
+                    yield return new CodeInstruction(OpCodes.Ldc_I4, (int)VanillaMemesExpanded_Settings.ritualsAmount);
                 }
                 else if (i > 0 && codes[i - 1].opcode == OpCodes.Ldstr&&(string)codes[i - 1].operand== "MaxRitualCount")
                 {
-                    yield return new CodeInstruction(OpCodes.Ldc_I4, 10);
+                    yield return new CodeInstruction(OpCodes.Ldc_I4, (int)VanillaMemesExpanded_Settings.ritualsAmount);
                 }
                 else
                 {

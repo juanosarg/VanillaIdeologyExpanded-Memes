@@ -29,7 +29,7 @@ namespace VanillaMemesExpanded
                 if (i > 0 && codes[i - 1].opcode == OpCodes.Ldloc_1 && codes[i].opcode == OpCodes.Ldc_I4_3)
                 {
 
-                    yield return new CodeInstruction(OpCodes.Ldc_I4, 5);
+                    yield return new CodeInstruction(OpCodes.Ldc_I4, (int)VanillaMemesExpanded_Settings.stylesAmount);
                 }
                 
                 else

@@ -13,7 +13,7 @@
 		<requiredMemes>
 			<li>VME_Nationalist</li>
 		</requiredMemes>
-		
+		<roleRequiredWorkTags><li>Violent</li></roleRequiredWorkTags>
 		
 		<displayOrderInImpact>2</displayOrderInImpact>
 		

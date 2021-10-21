@@ -19,7 +19,7 @@ namespace VanillaMemesExpanded
 		{
 			Pawn victim = target.Thing as Pawn;
 
-			if (victim != null && victim != this.parent.pawn)
+			if (victim != null && victim != this.parent.pawn && victim.Faction?.IsPlayer==true)
 			{
 
 				if (victim.IsSlave||victim.IsPrisoner)

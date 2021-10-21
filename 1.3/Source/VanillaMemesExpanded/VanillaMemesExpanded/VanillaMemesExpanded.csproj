@@ -338,7 +338,7 @@
     <Compile Include="Enums\AnonymityNeedCategory.cs" />
     <Compile Include="Enums\DessertNeedCategory.cs" />
     <Compile Include="Harmony\CaravanExitMapUtility_AddCaravanExitTaleIfShould.cs" />
-    <Compile Include="Harmony\Dialog_ChooseMemes_MemeCountRangeAbsolute.cs" />
+    <Compile Include="Harmony\IdeoFoundation_InitPrecepts.cs" />
     <Compile Include="Harmony\GenLeaving_GetBuildingResourcesLeaveCalculator.cs" />
     <Compile Include="Harmony\CompDrug_PostIngested.cs" />
     <Compile Include="Harmony\GameConditionManager_RegisterCondition.cs" />
@@ -395,6 +395,7 @@
     <Compile Include="Needs\Need_Anonymity.cs" />
     <Compile Include="Needs\Need_Corruption.cs" />
     <Compile Include="Needs\Need_Desserts.cs" />
+    <Compile Include="Options\SettingsHelper.cs" />
     <Compile Include="Options\VanillaMemesExpanded_Settings.cs" />
     <Compile Include="Options\VanillaMemesExpanded_SettingsController.cs" />
     <Compile Include="PawnCollectionClass\PawnCollectionClass.cs" />

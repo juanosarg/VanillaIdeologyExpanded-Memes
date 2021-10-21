@@ -14,7 +14,7 @@
 		<groupDef>VME_Commissar</groupDef>
 		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>True</disableGizmoWhileUndrafted>
-		<description>Executes a colonist. Every colonist receives a positive mood bonus.</description>
+		<description>Executes a colonist. Every colonist sharing the Commissar's ideoligion receives a positive mood bonus.</description>
 		<targetRequired>True</targetRequired>
 		<gizmoClass>Command_Ability</gizmoClass>
 		<iconPath>UI/Abilities/EnforceCompliance</iconPath>
