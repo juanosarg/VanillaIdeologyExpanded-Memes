@@ -3,6 +3,7 @@ using UnityEngine;
 using Verse;
 using Verse.AI;
 using RimWorld;
+using System.Collections.Generic;
 
 namespace VanillaMemesExpanded
 {
@@ -10,7 +11,7 @@ namespace VanillaMemesExpanded
 	{
 		protected override Job TryGiveJob(Pawn pawn)
 		{
-			pawn.Drawer.renderer.graphics.ClearCache();
+			pawn.apparel.Notify_ApparelChanged();
 			pawn.Drawer.renderer.graphics.apparelGraphics.Clear();
 			return null;
 		}
