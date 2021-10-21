@@ -163,6 +163,7 @@
 		<researchPrerequisites>
 			<li>CarpetMaking</li>
 		</researchPrerequisites>
+		 <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
 		<burnedDef>BurnedCarpet</burnedDef>
 		<costList>
 			<Cloth>7</Cloth>
@@ -232,6 +233,7 @@
     <costList>
       <Cloth>35</Cloth>
     </costList>
+	 <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
     <designatorDropdown>VME_Floor_ShintaoCarpetFine</designatorDropdown>
     <statBases>
       <Beauty>4</Beauty>

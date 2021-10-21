@@ -49,11 +49,11 @@ namespace VanillaMemesExpanded
 			get
 			{
 
-				if (!this.pawn.Ideo.HasPrecept(InternalDefOf.VME_Anonymity_Required))
+				if (this.pawn.ideo?.Ideo?.HasPrecept(InternalDefOf.VME_Anonymity_Required)==true)
 				{
-					return false;
+					return true ;
 				}
-				else return true;
+				else return false;
 
 
 			}
