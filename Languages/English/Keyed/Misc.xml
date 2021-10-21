@@ -14,6 +14,7 @@
 	<VME_WickerManInfo>A built wicker man.</VME_WickerManInfo>
 	<VME_CantStartWickerManRitual>You need a prisoner to start the wicker man ritual.</VME_CantStartWickerManRitual>
 	<VME_MessageRitualRoleMustBeSlave>Participant must be a slave.</VME_MessageRitualRoleMustBeSlave>
+	<VME_NeedsAdults>Organizer and participants must be consenting adults.</VME_NeedsAdults>
 
 	<VME_AbilityDisabledNoWickerMan>No reachable wicker man.</VME_AbilityDisabledNoWickerMan>	
 	<VME_AbilityNeedsATurret>This ability needs to target a turret or mechanoid.</VME_AbilityNeedsATurret>

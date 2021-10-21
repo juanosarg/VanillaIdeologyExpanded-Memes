@@ -314,8 +314,10 @@
     <Compile Include="Abilities\Properties\CompProperties_AbilityTameInsectoid.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityStrengthenFlame.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityThrowParty.cs" />
+    <Compile Include="AI\JobDriver_DanceWithLove.cs" />
     <Compile Include="AI\JobDriver_MaintainInsectNest.cs" />
     <Compile Include="AI\JobDriver_DeconstructBuilding.cs" />
+    <Compile Include="AI\JobGiver_DanceWithLove.cs" />
     <Compile Include="AI\JobGiver_GetNaked.cs" />
     <Compile Include="AI\WorkGiver_DeconstructBuilding.cs" />
     <Compile Include="AI\WorkGiver_MaintainInsectNest.cs" />
@@ -404,6 +406,7 @@
     <Compile Include="PreceptComps\PreceptComp_AddDessertNeed.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RitualExpectatorFilters\RitualSpectatorFilter_Adult.cs" />
+    <Compile Include="RitualRoles\RitualRoleTag_Adult.cs" />
     <Compile Include="RitualRoles\RitualRole_Slave.cs" />
     <Compile Include="Rituals\Behaviours\RitualBehaviorWorker_InsectoidHymn.cs" />
     <Compile Include="Rituals\Behaviours\RitualBehaviorWorker_Orgy.cs" />

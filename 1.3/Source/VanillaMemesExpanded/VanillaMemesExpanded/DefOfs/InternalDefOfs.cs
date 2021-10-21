@@ -162,6 +162,7 @@ namespace VanillaMemesExpanded
 
 		public static JobDef VME_DeconstructBuilding;
 		public static JobDef VME_MaintainInsectNest;
+		public static JobDef VME_DanceWithLove;
 		public static HediffDef VME_MedicalEmergencyHediff;
 
 

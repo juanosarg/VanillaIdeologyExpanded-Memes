@@ -12,5 +12,11 @@
 		<driverClass>VanillaMemesExpanded.JobDriver_MaintainInsectNest</driverClass>
 		<reportString>maintaining insect nest.</reportString>
 	</JobDef>
+	
+	<JobDef>
+		<defName>VME_DanceWithLove</defName>
+		<driverClass>VanillaMemesExpanded.JobDriver_DanceWithLove</driverClass>
+		<reportString>participating in orgy.</reportString>
+	</JobDef>
 
 </Defs>

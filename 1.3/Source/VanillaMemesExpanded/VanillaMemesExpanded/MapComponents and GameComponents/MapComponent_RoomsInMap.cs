@@ -79,7 +79,8 @@ namespace VanillaMemesExpanded
                     foreach (Room room in map.regionGrid.allRooms)
                     {
                         int scoreStageIndex = RoomStatDefOf.Impressiveness.GetScoreStageIndex(room.GetStat(RoomStatDefOf.Impressiveness));
-                        if (room.Role == RoomRoleDefOf.Hospital && scoreStageIndex>40)
+                       // Log.Message(scoreStageIndex.ToString());
+                        if (room.Role == RoomRoleDefOf.Hospital && scoreStageIndex>=3)
                         {
                             totalHospitalTiles += room.CellCount;
                         }

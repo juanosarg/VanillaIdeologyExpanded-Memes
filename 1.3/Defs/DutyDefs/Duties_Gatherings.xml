@@ -21,7 +21,7 @@
             <li Class="ThinkNode_ConditionalRandom">
               <chance>0.6</chance>
               <subNodes>
-                <li Class="JobGiver_Dance">
+                <li Class="VanillaMemesExpanded.JobGiver_DanceWithLove">
                   <ticksRange>480</ticksRange>
                 </li>
               </subNodes>

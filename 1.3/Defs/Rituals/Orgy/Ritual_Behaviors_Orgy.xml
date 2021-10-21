@@ -12,7 +12,7 @@
       <description>Participants must be consenting adults.</description>
     </spectatorFilter>
     <roles>
-      <li Class="RitualRoleTag">
+      <li Class="VanillaMemesExpanded.RitualRoleTag_Adult">
         <label>orgy organizer</label>
         <tag>Moralist</tag>
         <id>moralist</id>

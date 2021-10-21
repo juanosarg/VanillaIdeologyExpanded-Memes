@@ -11,7 +11,7 @@
 	  <canStartAnytime>true</canStartAnytime>
     <alwaysStartAnytime>true</alwaysStartAnytime>
 	<ritualOutcomeEffect>VME_LeadershipChallengeRitualOutcome</ritualOutcomeEffect>
-	<playsIdeoMusic>false</playsIdeoMusic>
+	
 	 <tags Inherit="False" />
 	 <ritualExpectedDesc>A {IDEO} member has better melee skill than the current leader, other {MEMBERS} expect {RITUAL_labelDef} to take place so only the strongest leader can rule them.</ritualExpectedDesc>
     <ritualExpectedPostfix>{0} {1} want to carry out the leadership challenge as soon as possible.</ritualExpectedPostfix>

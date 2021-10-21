@@ -5,7 +5,7 @@
  
  <RitualOutcomeEffectDef>
     <defName>VME_OrgyRitualOutcome</defName>
-    <description>Every participant will get a "got some lovin'" memory, but the negative effects of a bad quality orgy will be much more severe than usual. Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.</description>
+    <description>Every participant will get a "got some lovin'" memory, but the negative effects of a bad quality orgy will be much more severe than usual. Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.\nNote that all participants must be consenting adults. If the moral guide is not an adult the ritual will appear as blocked.</description>
     <workerClass>VanillaMemesExpanded.RitualOutcomeEffectWorker_Orgy</workerClass>
     
     <comps>

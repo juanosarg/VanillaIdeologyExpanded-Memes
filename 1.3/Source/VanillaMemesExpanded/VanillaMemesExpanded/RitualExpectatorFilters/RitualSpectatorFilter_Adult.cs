@@ -12,7 +12,7 @@ namespace VanillaMemesExpanded
 	{
 		public override bool Allowed(Pawn p)
 		{
-			return p.ageTracker.AgeBiologicalYears > 18;
+			return p.ageTracker.AgeBiologicalYears >= 18;
 		}
 	}
 }
