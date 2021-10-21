@@ -434,7 +434,7 @@
 	
 		<StyleCategoryDef>
 		<defName>VME_Esotericism</defName>
-		<label>esotericism</label>
+		<label>esoteric</label>
 		<iconPath>UI/StyleCategories/VME_ThingStyle_Esotericism</iconPath>
 		<soundOngoingRitual>VME_RitualSustainer_Esotericism</soundOngoingRitual>
 		<ritualVisualEffectDef>VME_EsotericismVisuals</ritualVisualEffectDef>
@@ -616,6 +616,78 @@
 				<thingDef>Apparel_BasicShirt</thingDef>
 				<styleDef>VME_Hedonist_Apparel_BasicShirt</styleDef>
 			</li>
+			
+		</thingDefStyles>
+		
+	</StyleCategoryDef>
+	
+	<StyleCategoryDef>
+		<defName>VME_Eschatological</defName>
+		<label>eschatological</label>
+		<iconPath>UI/StyleCategories/VME_ThingStyle_Eschatology</iconPath>
+		<soundOngoingRitual>VME_RitualSustainer_Eschatological</soundOngoingRitual>
+		<ritualVisualEffectDef>VME_EschatologicalVisuals</ritualVisualEffectDef>
+		<thingDefStyles>
+			
+		</thingDefStyles>
+		
+	</StyleCategoryDef>
+	
+	<StyleCategoryDef>
+		<defName>VME_CultOfPersonality</defName>
+		<label>cult of personality</label>
+		<iconPath>UI/StyleCategories/VME_ThingStyle_CultOfPersonality</iconPath>
+		<soundOngoingRitual>VME_RitualSustainer_CultOfPersonality</soundOngoingRitual>
+		<ritualVisualEffectDef>VME_CultOfPersonalityVisuals</ritualVisualEffectDef>
+		<thingDefStyles>
+			
+		</thingDefStyles>
+		
+	</StyleCategoryDef>
+	
+	<StyleCategoryDef>
+		<defName>VME_Pantheist</defName>
+		<label>pantheist</label>
+		<iconPath>UI/StyleCategories/VME_ThingStyle_Pantheism</iconPath>
+		<soundOngoingRitual>VME_RitualSustainer_Pantheist</soundOngoingRitual>
+		<ritualVisualEffectDef>VME_PantheistVisuals</ritualVisualEffectDef>
+		<thingDefStyles>
+			
+		</thingDefStyles>
+		
+	</StyleCategoryDef>
+	
+	<StyleCategoryDef>
+		<defName>VME_Omnist</defName>
+		<label>omnist</label>
+		<iconPath>UI/StyleCategories/VME_ThingStyle_Omnism</iconPath>
+		<soundOngoingRitual>VME_RitualSustainer_Omnist</soundOngoingRitual>
+		<ritualVisualEffectDef>VME_OmnistVisuals</ritualVisualEffectDef>
+		<thingDefStyles>
+			
+		</thingDefStyles>
+		
+	</StyleCategoryDef>
+	
+	<StyleCategoryDef>
+		<defName>VME_Agnostic</defName>
+		<label>agnostic</label>
+		<iconPath>UI/StyleCategories/VME_ThingStyle_Agnosticism</iconPath>
+		<soundOngoingRitual>VME_RitualSustainer_Agnostic</soundOngoingRitual>
+		<ritualVisualEffectDef>VME_AgnosticVisuals</ritualVisualEffectDef>
+		<thingDefStyles>
+			
+		</thingDefStyles>
+		
+	</StyleCategoryDef>
+	
+	<StyleCategoryDef>
+		<defName>VME_SecularSpirituality</defName>
+		<label>secular spirituality</label>
+		<iconPath>UI/StyleCategories/VME_ThingStyle_SecularSpirituality</iconPath>
+		<soundOngoingRitual>VME_RitualSustainer_SecularSpirituality</soundOngoingRitual>
+		<ritualVisualEffectDef>VME_SecularSpiritualityVisuals</ritualVisualEffectDef>
+		<thingDefStyles>
 			
 		</thingDefStyles>
 		

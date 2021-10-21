@@ -5,17 +5,17 @@
 
   <DutyDef>
     <defName>VME_NakedPartyDance</defName>
-    <label>dance party</label>
+    <label>naked dance party</label>
     <hook>MediumPriority</hook>
     <thinkNode Class="ThinkNode_Priority">
       <subNodes>
+		<li Class="VanillaMemesExpanded.JobGiver_GetNaked">             
+             
+        </li>
         <li Class="ThinkNode_ConditionalInGatheringArea">
           <subNodes>
 
-			 <li Class="VanillaMemesExpanded.JobGiver_GetNaked">
-              
-             
-            </li>
+			
 
             <!-- Stand where you are and do dance moves -->
             <li Class="ThinkNode_ConditionalRandom">

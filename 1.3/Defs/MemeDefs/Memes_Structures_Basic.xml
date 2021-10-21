@@ -315,6 +315,12 @@
 				<member>doomsday cultist</member>
 			</li>
 		</symbolPacks>
+		<thingStyleCategories>
+			<li>
+				<category>VME_Eschatological</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
 	</MemeDef>
 	<MemeDef>
 		<defName>VME_Structure_Authoritarianism</defName>
@@ -437,6 +443,12 @@
 				<member>subject</member>
 			</li>
 		</symbolPacks>
+		<thingStyleCategories>
+			<li>
+				<category>VME_CultOfPersonality</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
 	</MemeDef>
 	<MemeDef>
 		<defName>VME_Structure_Pantheism</defName>
@@ -491,6 +503,12 @@
 				<member>pantheist</member>
 			</li>
 		</symbolPacks>
+		<thingStyleCategories>
+			<li>
+				<category>VME_Pantheist</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
 	</MemeDef>
 	<MemeDef>
 		<defName>VME_Structure_Omnism</defName>
@@ -537,6 +555,12 @@
 				<member>believer</member>
 			</li>
 		</symbolPacks>
+		<thingStyleCategories>
+			<li>
+				<category>VME_Omnist</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
 	</MemeDef>
 	<MemeDef>
 		<defName>VME_Structure_Agnosticism</defName>
@@ -593,6 +617,12 @@
 				<member>agnostic</member>
 			</li>
 		</symbolPacks>
+		<thingStyleCategories>
+			<li>
+				<category>VME_Agnostic</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
 	</MemeDef>
 	<MemeDef>
 		<defName>VME_Structure_SecularSpirituality</defName>
@@ -640,6 +670,12 @@
 				<member>spiritual person</member>
 			</li>
 		</symbolPacks>
+		<thingStyleCategories>
+			<li>
+				<category>VME_SecularSpirituality</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
 	</MemeDef>
 	<MemeDef>
 		<defName>VME_Structure_Shintaoism</defName>

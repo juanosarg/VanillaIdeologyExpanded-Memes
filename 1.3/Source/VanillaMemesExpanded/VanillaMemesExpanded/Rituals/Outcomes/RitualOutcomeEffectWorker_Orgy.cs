@@ -47,8 +47,7 @@ namespace VanillaMemesExpanded
 
 			foreach (KeyValuePair<Pawn, int> keyValuePair in totalPresence)
 			{
-				Pawn thisPawn = keyValuePair.Key;
-				thisPawn.Drawer.renderer.graphics.ResolveApparelGraphics();			
+				Pawn thisPawn = keyValuePair.Key;				
 				thisPawn.needs.mood.thoughts.memories.TryGainMemory(InternalDefOf.VME_GotSomeLovin, null, jobRitual.Ritual);
 
 			}
@@ -79,12 +78,7 @@ namespace VanillaMemesExpanded
 			}
 			Find.LetterStack.ReceiveLetter("OutcomeLetterLabel".Translate(outcome.label.Named("OUTCOMELABEL"), jobRitual.Ritual.Label.Named("RITUALLABEL")), text2, outcome.Positive ? LetterDefOf.RitualOutcomePositive : LetterDefOf.RitualOutcomeNegative, lookTargets, null, null, null, null);
 
-			foreach (Pawn pawn in jobRitual.Map.mapPawns.FreeColonistsAndPrisonersSpawned)
-			{
-
-				pawn.Drawer.renderer.graphics.ResolveApparelGraphics();
-
-			}
+			
 
 
 		}
