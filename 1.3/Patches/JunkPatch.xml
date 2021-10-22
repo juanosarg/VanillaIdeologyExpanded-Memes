@@ -836,28 +836,7 @@
 			</value>
 		</match>
 	</Operation>
-	<Operation Class="PatchOperationConditional">
-		<success>Always</success>
-		<xpath>/Defs/ThingDef[defName = "AncientFence"]/comps</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "AncientFence"]</xpath>
-			<value>
-				<comps>
-					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
-						<defToPopUpMinified>VME_AncientFence</defToPopUpMinified>
-					</li>
-				</comps>
-			</value>
-		</nomatch>
-		<match Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "AncientFence"]/comps</xpath>
-			<value>
-				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
-					<defToPopUpMinified>VME_AncientFence</defToPopUpMinified>
-				</li>
-			</value>
-		</match>
-	</Operation>
+	
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
 		<xpath>/Defs/ThingDef[defName = "AncientRazorWire"]/comps</xpath>

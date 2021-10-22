@@ -13,7 +13,7 @@ namespace VanillaMemesExpanded
 
 
         public int tickCounter = 0;
-        public int tickInterval = 3000;
+        public int tickInterval = 6000;
         public Dictionary<Pawn, int> colonist_junk_tracker_backup = new Dictionary<Pawn, int>();
         List<Pawn> list2;
         List<int> list3;
