@@ -203,6 +203,7 @@
 		</graphicData>
 	</ThingStyleDef>
 	
+	
 	<ThingStyleDef>
 		<defName>VME_Serketist_Apparel_ArmorHelmetRecon</defName>
 		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/HelmetReconSerketism/HelmetReconSerketism</wornGraphicPath>
