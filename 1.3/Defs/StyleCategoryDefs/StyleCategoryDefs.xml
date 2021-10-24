@@ -89,6 +89,20 @@
 				<styleDef>VME_Serketist_WarMask</styleDef>
 			</li>
 			<li>
+				<thingDef>Apparel_PowerArmorHelmet</thingDef>
+				<styleDef>VME_Serketist_Apparel_PowerArmorHelmet</styleDef>
+			</li>			
+			
+			<li>
+				<thingDef>Apparel_ArmorHelmetRecon</thingDef>
+				<styleDef>VME_Serketist_Apparel_ArmorHelmetRecon</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<thingDef>Apparel_ArmorHelmetCataphract</thingDef>
+				<styleDef>VME_Serketist_Apparel_ArmorHelmetCataphract</styleDef>
+			</li>
+			
+			<li>
 				<thingDef>Ideogram</thingDef>
 				<styleDef>VME_Serketist_IdeogramA</styleDef>
 			</li>

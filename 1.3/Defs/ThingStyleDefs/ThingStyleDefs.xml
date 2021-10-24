@@ -193,6 +193,32 @@
 
 		</graphicData>
 	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>VME_Serketist_Apparel_PowerArmorHelmet</defName>
+		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/HelmetMarineSerketism/HelmetMarineSerketism</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparelstyles/Single/HelmetMarineSerketism</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>VME_Serketist_Apparel_ArmorHelmetRecon</defName>
+		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/HelmetReconSerketism/HelmetReconSerketism</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparelstyles/Single/HelmetReconSerketism</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_Serketist_Apparel_ArmorHelmetCataphract</defName>
+		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/HelmetCataphractSerketism/HelmetCataphractSerketism</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparelstyles/Single/HelmetCataphractSerketism</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 
 	<!-- ====== Corporate ======== -->
 
