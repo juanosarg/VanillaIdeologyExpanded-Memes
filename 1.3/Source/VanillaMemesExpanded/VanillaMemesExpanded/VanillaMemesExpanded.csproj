@@ -437,6 +437,7 @@
     <Compile Include="RoleRequirements\RoleRequirement_BestFighter.cs" />
     <Compile Include="StageEndTriggers\StageEndTrigger_DeadDuelEnded.cs" />
     <Compile Include="StatPartDefs\StatPart_CertaintyLossFactorByCorruption.cs" />
+    <Compile Include="StatPartDefs\StatPart_MeditationSpot.cs" />
     <Compile Include="StatPartDefs\StatPart_Pattisier.cs" />
     <Compile Include="StatPartDefs\StatPart_ExtraJoyGain.cs" />
     <Compile Include="StatPartDefs\StatPart_WorkTableAutomation.cs" />

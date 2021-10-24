@@ -24,7 +24,7 @@
 			<li>VME_PsychicFocus</li>
 		</associatedMemes>
 		<statOffsets>
-			<MeditationFocusGain>2</MeditationFocusGain>
+			<MeditationFocusGain>1</MeditationFocusGain>
 			
 		</statOffsets>
 	</PreceptDef>

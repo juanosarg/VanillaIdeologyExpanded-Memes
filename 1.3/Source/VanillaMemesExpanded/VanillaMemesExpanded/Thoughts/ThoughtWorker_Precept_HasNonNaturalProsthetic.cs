@@ -18,10 +18,32 @@ namespace VanillaMemesExpanded
 			List<Hediff> hediffs = hs.hediffs;
 			for (int i = 0; i < hediffs.Count; i++)
 			{
-				if (hediffs[i].def.countsAsAddedPartOrImplant && !hediffs[i].def.spawnThingOnRemoved.thingCategories.Contains(ThingCategoryDef.Named("BodyPartsNatural")))
-				{
-					num++;
+                if (hediffs[i].def.countsAsAddedPartOrImplant)
+                {
+					if(DefDatabase<ThingCategoryDef>.GetNamedSilentFail("VFEI_BodyPartsInsect") is null){
+
+						if (!hediffs[i].def.spawnThingOnRemoved.thingCategories.Contains(ThingCategoryDef.Named("BodyPartsNatural")))
+						{
+							num++;
+						}
+
+                    }
+                    else
+                    {
+						if (!hediffs[i].def.spawnThingOnRemoved.thingCategories.Contains(ThingCategoryDef.Named("BodyPartsNatural"))&& !hediffs[i].def.spawnThingOnRemoved.thingCategories.Contains(ThingCategoryDef.Named("VFEI_BodyPartsInsect")))
+						{
+							num++;
+						}
+
+					}
+
+					
+					
+
 				}
+
+
+
 			}
 			return num;
 		}
