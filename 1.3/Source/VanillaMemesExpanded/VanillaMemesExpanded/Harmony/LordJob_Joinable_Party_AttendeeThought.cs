@@ -21,7 +21,7 @@ namespace VanillaMemesExpanded
         static void ChangeThoughtForParty(Pawn ___organizer, ref ThoughtDef __result)
         {
 
-            if (___organizer.ideo?.Ideo?.GetPrecept(InternalDefOf.VME_Recreation_Loved) != null)
+            if (___organizer.Ideo?.GetPrecept(InternalDefOf.VME_Recreation_Loved) != null)
             {
 
                 __result = InternalDefOf.VME_AttendedParty;

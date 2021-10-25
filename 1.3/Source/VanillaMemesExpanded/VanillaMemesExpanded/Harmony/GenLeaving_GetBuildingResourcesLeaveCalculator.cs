@@ -19,7 +19,7 @@ namespace VanillaMemesExpanded
     public static class VanillaMemesExpanded_GenLeaving_GetBuildingResourcesLeaveCalculator_Patch
     {
         [HarmonyPostfix]
-        static void DetectDrinkConsumed(ref Func<int, int> __result, Thing destroyedThing, DestroyMode mode)
+        static void SetYieldTo100(ref Func<int, int> __result, Thing destroyedThing, DestroyMode mode)
         {
             if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_JunkDeconstructionYield_High) != null)
             {

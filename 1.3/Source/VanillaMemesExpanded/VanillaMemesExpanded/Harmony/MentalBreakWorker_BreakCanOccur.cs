@@ -21,7 +21,7 @@ namespace VanillaMemesExpanded
         static void DisableMostMentalBreaksIfPacifist(ref bool __result, Pawn pawn, MentalBreakWorker __instance)
         {
 
-            if (pawn.Ideo != null && pawn.Ideo.HasPrecept(InternalDefOf.VME_Violence_Abhorrent))
+            if (pawn.Ideo?.HasPrecept(InternalDefOf.VME_Violence_Abhorrent)==true)
             {
 
                 if (__instance.def.defName!= "Wander_Psychotic")

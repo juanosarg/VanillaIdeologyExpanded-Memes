@@ -13,7 +13,7 @@ namespace VanillaMemesExpanded
 
 
         public int tickCounter = 0;
-        public int tickInterval = 6000;
+        public int tickInterval = 12000;
         public Dictionary<Pawn, int> colonist_junk_tracker_backup = new Dictionary<Pawn, int>();
         List<Pawn> list2;
         List<int> list3;
@@ -58,7 +58,7 @@ namespace VanillaMemesExpanded
                     foreach (Pawn pawn in map.mapPawns.FreeColonistsSpawned)
                     {
                         int totalNumberOfJunk = 0;
-                        int num = GenRadial.NumCellsInRadius(10.9f);
+                        int num = GenRadial.NumCellsInRadius(20.9f);
                         for (int i = 0; i < num; i++)
                         {
                             IntVec3 intVec = pawn.Position + GenRadial.RadialPattern[i];

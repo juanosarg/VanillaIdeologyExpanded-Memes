@@ -2,12 +2,26 @@
 <Patch>
 
 
-	<Operation Class="PatchOperationAdd"> 
-		<xpath>/Defs/ThingDef[defName="InsectJelly"]/ingestible</xpath>
-		<value>
-			<ateEvent>VME_AteInsectJelly</ateEvent>
-		</value>
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "InsectJelly"]/ingestible</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "InsectJelly"]</xpath>
+			<value>
+				<ingestible>
+					<ateEvent>VME_AteInsectJelly</ateEvent>
+				</ingestible>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "InsectJelly"]/ingestible</xpath>
+			<value>
+				<ateEvent>VME_AteInsectJelly</ateEvent>
+			</value>
+		</match>
 	</Operation>
+
 
 
 

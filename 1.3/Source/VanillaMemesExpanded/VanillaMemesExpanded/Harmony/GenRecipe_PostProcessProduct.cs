@@ -21,7 +21,7 @@ namespace VanillaMemesExpanded
         static void IncreaseQualityByOne(Thing product, RecipeDef recipeDef, Pawn worker)
         {
 
-            if (worker.Ideo.HasPrecept(InternalDefOf.VME_CraftingQuality_Increased)) {
+            if (worker.Ideo?.HasPrecept(InternalDefOf.VME_CraftingQuality_Increased)==true) {
 
                 CompQuality compQuality = product.TryGetComp<CompQuality>();
                 if (compQuality != null)
@@ -38,7 +38,7 @@ namespace VanillaMemesExpanded
                 }
 
             }
-            if (worker.Ideo.HasPrecept(InternalDefOf.VME_CraftingQuality_Decreased))
+            if (worker.Ideo?.HasPrecept(InternalDefOf.VME_CraftingQuality_Decreased) == true)
             {
 
                 CompQuality compQuality = product.TryGetComp<CompQuality>();
@@ -58,7 +58,7 @@ namespace VanillaMemesExpanded
 
             }
 
-            if (worker.Ideo.HasPrecept(DefDatabase<PreceptDef>.GetNamedSilentFail("VME_BookWriting_Exalted")))
+            if (worker.Ideo?.HasPrecept(DefDatabase<PreceptDef>.GetNamedSilentFail("VME_BookWriting_Exalted")) == true)
             {
                 if (product.HasThingCategory(DefDatabase<ThingCategoryDef>.GetNamedSilentFail("VBE_Books"))){
                     Find.HistoryEventsManager.RecordEvent(new HistoryEvent(DefDatabase<HistoryEventDef>.GetNamedSilentFail("VME_WroteBook"), worker.Named(HistoryEventArgsNames.Doer)), true);

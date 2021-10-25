@@ -24,7 +24,7 @@ namespace VanillaMemesExpanded
 
             if (___pawn.Ideo?.HasPrecept(InternalDefOf.VME_IdeoRole_PartyHost)==true){
 
-                Precept_Role precept_role = ___pawn.Ideo.GetPrecept(InternalDefOf.VME_IdeoRole_PartyHost) as Precept_Role;
+                Precept_Role precept_role = ___pawn.Ideo?.GetPrecept(InternalDefOf.VME_IdeoRole_PartyHost) as Precept_Role;
                 if(precept_role.ChosenPawnSingle() == ___pawn)
                 {
                     __result *= 2;
@@ -35,7 +35,7 @@ namespace VanillaMemesExpanded
             if (___pawn.Ideo?.HasPrecept(InternalDefOf.VME_IdeoRole_Nurse) == true)
             {
 
-                Precept_Role precept_role = ___pawn.Ideo.GetPrecept(InternalDefOf.VME_IdeoRole_Nurse) as Precept_Role;
+                Precept_Role precept_role = ___pawn.Ideo?.GetPrecept(InternalDefOf.VME_IdeoRole_Nurse) as Precept_Role;
                 if (precept_role.ChosenPawnSingle() == ___pawn && ___pawn.health.hediffSet.GetFirstHediffOfDef(InternalDefOf.VME_MedicalEmergencyHediff)!=null)
                 {
                     __result *= 0;
