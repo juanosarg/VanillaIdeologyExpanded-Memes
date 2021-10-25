@@ -1251,7 +1251,7 @@
 			<li>
 				<li>VME_TradingPrice_Improved</li>
 			</li>
-			<li>
+			<li name="tradingrequired">
 				<li>VME_Trading_Required</li>
 			</li>
 			<li>
@@ -1960,7 +1960,7 @@
 			<rules>
 				<rulesStrings>
 					<!-- theist myth -->
-					<li>creation(tag=meme_Nomad)        ->[deity0_name] wrote [deity0_possessive] commandments in 7 clay tablets. The third commandment read: "A nomad I will remain for life, in love with distant and uncharted places."</li>
+					<li>creation(tag=meme_Nomad)        ->[deity0_name] wrote [deity0_possessive] commandments in seven clay tablets. The third commandment read: "A nomad I will remain for life, in love with distant and uncharted places."</li>
 					<li>episode(uses=1,tag=meme_Nomad)  ->In accordance with [deity0_name]'s precepts, we shunned the building of cities and spent our lives on the move, free from the shackles of sedentism.</li>
 					<!-- theist founder -->
 					<li>intro(tag=meme_Nomad)           ->The [memberNamePlural] were restless, for [deity0_name] had commanded them not to build a city and settle, and they were tired of roaming around living off the land.</li>
