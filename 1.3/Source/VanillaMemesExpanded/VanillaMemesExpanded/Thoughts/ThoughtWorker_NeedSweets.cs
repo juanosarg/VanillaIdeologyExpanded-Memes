@@ -13,7 +13,7 @@ namespace VanillaMemesExpanded
 				return ThoughtState.Inactive;
 			}
 
-			if (DefDatabase<MemeDef>.GetNamedSilentFail("VME_SweetTeeth") == null||!Current.Game.World.factionManager.OfPlayer.ideos.HasAnyIdeoWithMeme(DefDatabase<MemeDef>.GetNamedSilentFail("VME_SweetTeeth")))
+			if (DefDatabase<MemeDef>.GetNamedSilentFail("VME_SweetTeeth") == null||p.Ideo?.HasMeme(DefDatabase<MemeDef>.GetNamedSilentFail("VME_SweetTeeth"))!=true)
 			{
 				return ThoughtState.Inactive;
 			}
