@@ -37,7 +37,7 @@
 		</roleApparelRequirementCountCurve>
 		<displayOrderInImpact>2</displayOrderInImpact>
 		<roleDisabledWorkTags>
-			<li>ManualDumb</li>
+			<li>Cleaning</li>
 			<li>Animals</li>
 			<li>Cooking</li>
 			<li>PlantWork</li>

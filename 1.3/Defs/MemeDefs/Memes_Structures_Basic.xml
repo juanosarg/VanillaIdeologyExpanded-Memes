@@ -19,7 +19,7 @@
 				<li>VME_InsectMeatEating_Sacrilegious</li>
 				
 			</li>
-			<li>
+			<li Name="insectjellyloved">
 				<li>VME_InsectJellyEaten_Loved_Classic</li>				
 			</li>
 		</requireOne>
