@@ -21,12 +21,12 @@ namespace VanillaMemesExpanded
         static void IncreaseQualityByOne(Thing product, RecipeDef recipeDef, Pawn worker)
         {
 
-            if (worker.Ideo?.HasPrecept(InternalDefOf.VME_CraftingQuality_Increased)==true) {
+            if (worker?.Ideo?.HasPrecept(InternalDefOf.VME_CraftingQuality_Increased)==true) {
 
-                CompQuality compQuality = product.TryGetComp<CompQuality>();
+                CompQuality compQuality = product?.TryGetComp<CompQuality>();
                 if (compQuality != null)
                 {
-                    if (recipeDef.workSkill == null)
+                    if (recipeDef?.workSkill == null)
                     {
                         Log.Error(recipeDef + " needs workSkill because it creates a product with a quality.");
                     }
@@ -38,13 +38,13 @@ namespace VanillaMemesExpanded
                 }
 
             }
-            if (worker.Ideo?.HasPrecept(InternalDefOf.VME_CraftingQuality_Decreased) == true)
+            if (worker?.Ideo?.HasPrecept(InternalDefOf.VME_CraftingQuality_Decreased) == true)
             {
 
-                CompQuality compQuality = product.TryGetComp<CompQuality>();
+                CompQuality compQuality = product?.TryGetComp<CompQuality>();
                 if (compQuality != null)
                 {
-                    if (recipeDef.workSkill == null)
+                    if (recipeDef?.workSkill == null)
                     {
                         Log.Error(recipeDef + " needs workSkill because it creates a product with a quality.");
                     }
@@ -58,9 +58,9 @@ namespace VanillaMemesExpanded
 
             }
 
-            if (worker.Ideo?.HasPrecept(DefDatabase<PreceptDef>.GetNamedSilentFail("VME_BookWriting_Exalted")) == true)
+            if (worker?.Ideo?.HasPrecept(DefDatabase<PreceptDef>.GetNamedSilentFail("VME_BookWriting_Exalted")) == true)
             {
-                if (product.HasThingCategory(DefDatabase<ThingCategoryDef>.GetNamedSilentFail("VBE_Books"))){
+                if (product?.HasThingCategory(DefDatabase<ThingCategoryDef>.GetNamedSilentFail("VBE_Books"))==true&& worker!=null){
                     Find.HistoryEventsManager.RecordEvent(new HistoryEvent(DefDatabase<HistoryEventDef>.GetNamedSilentFail("VME_WroteBook"), worker.Named(HistoryEventArgsNames.Doer)), true);
 
                 }
