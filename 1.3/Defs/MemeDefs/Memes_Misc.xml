@@ -117,7 +117,7 @@
 		<impact>1</impact>
 		<exclusionTags>
 			<li>VME_AstrologyVsGestalt</li>
-			
+
 		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
@@ -380,7 +380,7 @@
 		<consumableBuildings>
 			<li>SacrificialFlag</li>
 		</consumableBuildings>
-	
+
 		<exclusionTags>
 			<li>Individualism</li>
 			<li>VME_AstrologyVsGestalt</li>
@@ -542,6 +542,12 @@
 				<li>Corpses_DontCare</li>
 			</li>
 		</requireOne>
+		<requiredRituals>
+			<li>
+				<precept>ScarificationCeremony</precept>
+				<pattern>ScarificationCeremony</pattern>
+			</li>
+		</requiredRituals>
 		<symbolPacks>
 			<li>
 				<ideoName>Biotechnologism</ideoName>
@@ -2448,7 +2454,7 @@
 				<li>VME_Alcohol_Demanded</li>
 			</li>
 		</requireOne>
-		
+
 		<symbolPacks>
 			<li>
 				<ideoName>Party Life</ideoName>
@@ -2622,7 +2628,7 @@
 			<li>
 				<li>VME_SlaveTrading_OnlyBuying</li>
 			</li>
-			
+
 		</requireOne>
 		<requiredRituals>
 			<li>
@@ -2727,7 +2733,7 @@
 			<li>
 				<li>Execution_Required</li>
 			</li>
-			
+
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -2805,19 +2811,19 @@
 			</rules>
 		</descriptionMaker>
 		<requireOne>
-			
+
 			<li>
 				<li>Charity_Essential</li>
 				<li>Charity_Important</li>
-				
+
 			</li>
 			<li>
 				<li>VME_TendQuality_Increased</li>
-				
+
 			</li>
 			<li>
 				<li>VME_Hospital_Required</li>
-				
+
 			</li>
 		</requireOne>
 		<symbolPacks>
@@ -2827,7 +2833,7 @@
 				<adjective>medical</adjective>
 				<member>medic</member>
 			</li>
-			
+
 		</symbolPacks>
 	</MemeDef>
 </Defs>
