@@ -56,8 +56,11 @@ namespace VanillaMemesExpanded
 
                     if(precept_role?.ChosenPawnSingle() != mostSkilledPawn)
                     {
-                        precept_role.Unassign(precept_role.ChosenPawnSingle(), true);
-                        precept_role.Assign(mostSkilledPawn, true);
+                        if (precept_role.RequirementsMet(mostSkilledPawn)) {
+                            precept_role.Unassign(precept_role.ChosenPawnSingle(), true);
+                            precept_role.Assign(mostSkilledPawn, true);
+                        }
+                       
                     }
 
                 }

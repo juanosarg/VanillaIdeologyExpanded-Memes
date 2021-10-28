@@ -67,6 +67,7 @@
 		<requireOne>
 			<li>
 				<li>VME_PsychicSensitivity_Lowered</li>
+				<li>VME_PsychicSensitivity_Heightened</li>
 			</li>
 			<li>
 				<li>VME_Meditation_Exquisite</li>

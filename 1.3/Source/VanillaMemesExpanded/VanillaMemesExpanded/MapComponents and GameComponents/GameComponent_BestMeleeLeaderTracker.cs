@@ -71,7 +71,9 @@ namespace VanillaMemesExpanded
                     {
                         pawnThatIsTheLeaderNow = mostSkilledPawn;
                         PawnCollectionClass.pawnThatIsTheLeaderNow = pawnThatIsTheLeaderNow;
-                        precept_role.Assign(mostSkilledPawn, true);
+                        if (precept_role.RequirementsMet(mostSkilledPawn))
+                        { precept_role.Assign(mostSkilledPawn, true); }
+                            
 
                     }
 
