@@ -20,7 +20,7 @@ namespace VanillaMemesExpanded
 				corruptedPawnsResult.Clear();
 				foreach (Pawn pawn in PawnsFinder.AllMaps_FreeColonistsSpawned)
 				{
-					if (pawn.needs.TryGetNeed<Need_Corruption>() != null && (pawn.needs.TryGetNeed<Need_Corruption>().CurLevel>0.9f ))
+					if (pawn.needs.TryGetNeed<Need_Corruption>() != null && (pawn.needs.TryGetNeed<Need_Corruption>().CurLevel>0.9f ) && pawn.Ideo?.HasPrecept(InternalDefOf.VME_Corruption_Essential) == true)
 					{
 						corruptedPawnsResult.Add(pawn);
 					}
