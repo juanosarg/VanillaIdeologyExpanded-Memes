@@ -345,6 +345,7 @@
     <Compile Include="Harmony\CompDrug_PostIngested.cs" />
     <Compile Include="Harmony\GameConditionManager_RegisterCondition.cs" />
     <Compile Include="Harmony\GameCondition_Aurora_Init.cs" />
+    <Compile Include="Harmony\IdeoUIUtility_DoMemes.cs" />
     <Compile Include="Harmony\IdeoUIUtility_DoPrecepts.cs" />
     <Compile Include="Harmony\IdeoUIUtility_DoStyles.cs" />
     <Compile Include="Harmony\IdeoUIUtility_DoPreceptsInt.cs" />
