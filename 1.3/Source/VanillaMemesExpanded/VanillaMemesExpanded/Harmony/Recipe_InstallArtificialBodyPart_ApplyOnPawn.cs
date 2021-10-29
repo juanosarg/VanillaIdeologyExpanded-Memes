@@ -23,7 +23,7 @@ namespace VanillaMemesExpanded
            
             if (billDoer != null)
             {
-                if (!__instance.recipe.addsHediff.spawnThingOnRemoved.thingCategories.Contains(ThingCategoryDef.Named("BodyPartsNatural"))) {
+                if (__instance.recipe?.addsHediff?.spawnThingOnRemoved?.thingCategories?.Contains(ThingCategoryDef.Named("BodyPartsNatural"))==false) {
                    
                     Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_InstalledNonNaturalProsthetic, billDoer.Named(HistoryEventArgsNames.Doer)), true);
                 }
