@@ -6,9 +6,14 @@
 
 	<IssueDef>
 		<defName>VME_FishingYield</defName>
-		<label>fishing yield</label>
+		<label>fishing</label>
 		<iconPath>UI/Issues/FishingYield</iconPath>
 	</IssueDef>
+	
+	  <HistoryEventDef>
+    <defName>VME_Fishing</defName>
+    <label>fishing</label>
+  </HistoryEventDef>
 
 	
 	<!-- Precepts -->
@@ -24,6 +29,24 @@
 		<associatedMemes>
 			<li>VME_Angler</li>
 		</associatedMemes>
+		
+	</PreceptDef>
+	
+	<PreceptDef>
+		<defName>VME_Fishing_Forbidden</defName>
+		<issue>VME_FishingYield</issue>
+		<label>forbidden</label>
+		<description>Fish are animals, and as such fishing should be a banned activity.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>VME_Vegan</li>
+		</associatedMemes>
+		<comps>
+			<li Class="PreceptComp_UnwillingToDo">
+				<eventDef>VME_Fishing</eventDef>
+			</li>
+			
+		</comps>
 		
 	</PreceptDef>
 	

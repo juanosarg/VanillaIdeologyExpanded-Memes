@@ -18,19 +18,39 @@ namespace VanillaMemesExpanded
     public static class VanillaMemesExpanded_Recipe_InstallArtificialBodyPart_ApplyOnPawn_Patch
     {
         [HarmonyPostfix]
-        static void InstalledNonNaturalBodyPart(Pawn pawn, Recipe_InstallArtificialBodyPart __instance , Pawn billDoer)
+        static void InstalledNonNaturalBodyPart(Pawn pawn, Recipe_InstallArtificialBodyPart __instance, Pawn billDoer)
         {
-           
+
             if (billDoer != null)
             {
-                if (__instance.recipe?.addsHediff?.spawnThingOnRemoved?.thingCategories?.Contains(ThingCategoryDef.Named("BodyPartsNatural"))==false) {
-                   
-                    Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_InstalledNonNaturalProsthetic, billDoer.Named(HistoryEventArgsNames.Doer)), true);
-                }
 
+                if (DefDatabase<ThingCategoryDef>.GetNamedSilentFail("VFEI_BodyPartsInsect") != null)
+                {
+                    if (__instance.recipe?.addsHediff?.spawnThingOnRemoved?.thingCategories?.Contains(ThingCategoryDef.Named("BodyPartsNatural")) == false && __instance.recipe?.addsHediff?.spawnThingOnRemoved?.thingCategories?.Contains(ThingCategoryDef.Named("VFEI_BodyPartsInsect")) == false)
+                    {
+                        Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_InstalledNonNaturalProsthetic, billDoer.Named(HistoryEventArgsNames.Doer)), true);
+                    }
+                    
+
+                }
+                else
+                {
+                    if (__instance.recipe?.addsHediff?.spawnThingOnRemoved?.thingCategories?.Contains(ThingCategoryDef.Named("BodyPartsNatural")) == false)
+                    {
+                        Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_InstalledNonNaturalProsthetic, billDoer.Named(HistoryEventArgsNames.Doer)), true);
+                    }
+
+                }
             }
 
-          
+
+            
+
+
+
+
+
+
 
 
 

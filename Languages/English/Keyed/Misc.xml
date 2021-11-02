@@ -57,6 +57,7 @@
 	<VEM_HighCorruptionDesc>These people have a too high corruption need (more than 90%). If they reach 100% corruption they will get an extreme level mental break:\n\n{0}</VEM_HighCorruptionDesc>
 	<VEM_LowCorruption>Low corruption</VEM_LowCorruption>
 	<VEM_LowCorruptionDesc>These people have a too low corruption need (less than 10%). If they reach 0% corruption they will be easily swayed to a different ideoligion. Build obelisks to maintain their corruption need or perform Incantation rituals to increase it by 10%:\n\n{0}</VEM_LowCorruptionDesc>
+	<VME_MessageJunkChunkDrop>Chunks of ancient space junk have impacted nearby. You can uninstall and move them to build your junkyard.\n\nThis event happens if you have any colonists with an ideo using the Scrapper meme.</VME_MessageJunkChunkDrop>
 	
 	<!-- Mod options -->
 	

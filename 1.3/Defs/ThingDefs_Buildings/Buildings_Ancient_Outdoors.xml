@@ -1289,4 +1289,24 @@
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
 	</ThingDef>
+	<ThingDef ParentName="NonDeconstructibleAncientBuildingBase">
+		<defName>VME_AncientSpaceJunk</defName>
+		<label>ancient space junk</label>
+		<description>Ancient chunks of space junk that fell from orbit. Perhaps a relic of an ancient space battle.</description>
+		<graphicData>
+			<texPath>Things/Building/Misc/AncientSpaceJunk</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			
+		</graphicData>
+		<tradeability>None</tradeability>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>550</MaxHitPoints>
+			<WorkToBuild>300</WorkToBuild>
+			<Mass>250</Mass>
+		</statBases>
+	</ThingDef>
 </Defs>

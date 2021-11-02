@@ -96,6 +96,79 @@
     </addedPartProps>
   </HediffDef>
   
+  <!-- Hand -->
+  <ThingDef ParentName="VME_FleshcrafterBodyPartNaturalBase">
+    <defName>VME_FleshcraftedHand</defName>
+    <label>fleshcrafted hand</label>
+    <description>A biological human hand, fleshcrafted from a corpse. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
+    <descriptionHyperlinks><RecipeDef>VME_InstallFleshcraftedHand</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <defName>VME_InstallFleshcraftedHand</defName>
+    <label>install fleshcrafted hand</label>
+    <description>Install a fleshcrafted hand. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
+   
+    <jobString>Installing fleshcrafted hand.</jobString>
+    
+    
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>VME_FleshcraftedHand</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>VME_FleshcraftedHand</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Hand</li>
+    </appliedOnFixedBodyParts>
+	<addsHediff>VME_FleshcraftedHandHediff</addsHediff>
+	
+  </RecipeDef>
+  
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>VME_FleshcraftedHandHediff</defName>
+    <label>fleshcrafted hand</label>
+    <labelNoun>a fleshcrafted hand</labelNoun>
+    <description>An installed fleshcrafted hand.</description>
+    <descriptionHyperlinks><ThingDef>VME_FleshcraftedHand</ThingDef></descriptionHyperlinks>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>fist</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>8.2</power> <!-- Same as natural fist -->
+            <cooldownTime>2</cooldownTime>
+          </li>
+        </tools>
+      </li>
+	  <li Class="VanillaMemesExpanded.HediffCompProperties_Infections">
+        
+      </li>
+    </comps>
+    <spawnThingOnRemoved>VME_FleshcraftedHand</spawnThingOnRemoved>
+    <addedPartProps>
+    
+      <partEfficiency>1</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+  
   <!-- Leg -->
   <ThingDef ParentName="VME_FleshcrafterBodyPartNaturalBase">
     <defName>VME_FleshcraftedLeg</defName>

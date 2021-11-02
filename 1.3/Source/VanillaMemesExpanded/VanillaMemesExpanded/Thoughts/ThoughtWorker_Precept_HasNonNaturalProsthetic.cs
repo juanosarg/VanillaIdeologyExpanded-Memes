@@ -20,25 +20,26 @@ namespace VanillaMemesExpanded
 			{
                 if (hediffs[i].def.countsAsAddedPartOrImplant)
                 {
-					if(DefDatabase<ThingCategoryDef>.GetNamedSilentFail("VFEI_BodyPartsInsect") is null){
-
-						if (!hediffs[i].def.spawnThingOnRemoved.thingCategories.Contains(ThingCategoryDef.Named("BodyPartsNatural")))
+					if (DefDatabase<ThingCategoryDef>.GetNamedSilentFail("VFEI_BodyPartsInsect") != null)
+					{
+						if (!hediffs[i].def.spawnThingOnRemoved.thingCategories.Contains(ThingCategoryDef.Named("BodyPartsNatural")) && !hediffs[i].def.spawnThingOnRemoved.thingCategories.Contains(ThingCategoryDef.Named("VFEI_BodyPartsInsect")))
 						{
 							num++;
 						}
 
-                    }
-                    else
-                    {
-						if (!hediffs[i].def.spawnThingOnRemoved.thingCategories.Contains(ThingCategoryDef.Named("BodyPartsNatural"))&& !hediffs[i].def.spawnThingOnRemoved.thingCategories.Contains(ThingCategoryDef.Named("VFEI_BodyPartsInsect")))
+
+					}
+					else
+					{
+						if (!hediffs[i].def.spawnThingOnRemoved.thingCategories.Contains(ThingCategoryDef.Named("BodyPartsNatural")))
 						{
 							num++;
 						}
 
 					}
 
-					
-					
+
+
 
 				}
 

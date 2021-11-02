@@ -14,7 +14,7 @@
 		<groupDef>VME_Fleshcrafter</groupDef>
 		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
-		<description>Executes a colonist. Every colonist receives a positive mood bonus.</description>
+		<description>Harvests a fleshcrafted body part from a corpse.</description>
 		<targetRequired>True</targetRequired>
 		<gizmoClass>Command_Ability</gizmoClass>
 		<iconPath>UI/Abilities/ExtractBodyPart</iconPath>
@@ -33,6 +33,7 @@
 			<li Class = "VanillaMemesExpanded.CompProperties_AbilityHarvestBodyParts">
 				<bodyParts>
 					<li>VME_FleshcraftedArm</li>
+					<li>VME_FleshcraftedHand</li>
 					<li>VME_FleshcraftedLeg</li>
 					<li>VME_FleshcraftedHeart</li>
 					<li>VME_FleshcraftedLung</li>

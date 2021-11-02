@@ -1159,6 +1159,7 @@
 		<requireOne>
 			<li>
 				<li>VME_Junk_Beautiful</li>
+				<li>VME_Junk_Preferred</li>
 			</li>
 			<li>
 				<li>VME_TaintedApparel_DontCare</li>
@@ -2299,6 +2300,7 @@
 		<groupDef>Misc</groupDef>
 		<exclusionTags>
 			<li>VME_InsectoidVsDefilers</li>
+			<li>VME_InsectEatingConflict</li>
 		</exclusionTags>
 		<impact>2</impact>
 		<generalRules>

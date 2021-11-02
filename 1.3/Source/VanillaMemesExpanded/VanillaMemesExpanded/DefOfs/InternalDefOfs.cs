@@ -110,6 +110,8 @@ namespace VanillaMemesExpanded
 
 		public static MemeDef VME_Gestalt;
 
+		public static MemeDef VME_Scrapper;
+
 		public static MemeDef VME_Structure_ChthonianCult;
 
 		public static MemeDef VME_MechanoidSupremacy;
@@ -148,7 +150,9 @@ namespace VanillaMemesExpanded
 		public static ThingDef VME_BonfireAfterRitual;
 
 		public static TraitDef VME_Elder;
-	
+
+		public static ThingDef VME_AncientSpaceJunk;
+
 		public static ThoughtDef VME_Defeat_Dishonorable;
 		public static ThoughtDef VME_GotSomeLovin;
 		public static ThoughtDef VME_CheapTradingFair;

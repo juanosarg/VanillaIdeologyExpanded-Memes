@@ -20,7 +20,7 @@ namespace VanillaMemesExpanded
         [HarmonyPostfix]
         static void DontInteract(Pawn pawn, ref bool __result)
         {
-           if(pawn.Ideo?.HasPrecept(InternalDefOf.VME_SocialInteractions_Disallowed) == true)
+           if(pawn.Ideo?.HasPrecept(InternalDefOf.VME_SocialInteractions_Disallowed) == true &&!pawn.IsPrisoner)
             {
                 __result = false;
             }
