@@ -18,6 +18,8 @@ namespace VanillaMemesExpanded
 		{
 		}
 
+		public override bool GivesDevelopmentPoints => false;
+
 		public override bool SupportsAttachableOutcomeEffect
 		{
 			get

@@ -14,6 +14,7 @@
 		<description>Spirits, booze, sauce, whatever you call it, we desire it. At least an occasional drink should be encouraged and we shouldn’t even think of sobriety.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>0</displayOrderInIssue>
+		<selectionWeight>1</selectionWeight>
 		<associatedMemes>
 			<li>VME_PartyLife</li>
 		</associatedMemes>
@@ -92,6 +93,7 @@
 		<defName>VME_Alcohol_Desired</defName>
 		<validWhileDespawned>true</validWhileDespawned>
 		<minExpectation>Moderate</minExpectation>
+		<selectionWeight>0</selectionWeight>
 		<nullifyingTraitDegrees>
 			
 				<DrugDesire>-1</DrugDesire>

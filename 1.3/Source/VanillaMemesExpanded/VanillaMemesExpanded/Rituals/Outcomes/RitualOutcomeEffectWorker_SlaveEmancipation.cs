@@ -16,6 +16,8 @@ namespace VanillaMemesExpanded
 			}
 		}
 
+		public override bool GivesDevelopmentPoints => false;
+
 		public RitualOutcomeEffectWorker_SlaveEmancipation()
 		{
 		}

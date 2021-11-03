@@ -358,6 +358,7 @@
 			</li>
 			<li>
 				<li>VME_SkilledLabor_Slow</li>
+				<li>VME_SkilledLabor_Relaxed</li>
 			</li>
 		</requireOne>
 		<symbolPacks>
@@ -742,6 +743,7 @@
 			</li>
 			<li>
 				<li>VME_SkilledLabor_Slow</li>
+				<li>VME_SkilledLabor_Relaxed</li>
 			</li>
 		</requireOne>
 		<symbolPacks>
@@ -1446,6 +1448,7 @@
 			</li>
 			<li>
 				<li>VME_LeatherApparel_Abhorrent</li>
+				<li>VME_LeatherApparel_Disliked</li>
 			</li>
 			<li>
 				<li>VME_Ranching_Disliked</li>
@@ -2454,6 +2457,7 @@
 			</li>
 			<li>
 				<li>VME_Alcohol_Demanded</li>
+				<li>VME_Alcohol_Desired</li>
 			</li>
 		</requireOne>
 

@@ -34,8 +34,8 @@
 		<durationDays>5</durationDays>
 		<stages>
 			<li>
-				<label>attacked harmless person</label>
-				<description>I have used deadly force on a harmless adversary. This proves our strength and our resolve.</description>
+				<label>attacked person</label>
+				<description>I have used deadly force on an adversary. This proves our strength and our resolve.</description>
 				<baseMoodEffect>5</baseMoodEffect>
 			</li>
 		</stages>
@@ -73,8 +73,8 @@
 		<durationDays>5</durationDays>
 		<stages>
 			<li>
-				<label>attacked harmless person</label>
-				<description>I have used deadly force on a harmless adversary. This is wrong.</description>
+				<label>attacked person</label>
+				<description>I have used deadly force on an adversary. This is wrong.</description>
 				<baseMoodEffect>-5</baseMoodEffect>
 			</li>
 		</stages>

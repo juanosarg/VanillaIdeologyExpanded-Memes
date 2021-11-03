@@ -111,7 +111,7 @@
 		<associatedMemes>
 			<li>VME_Scrapper</li>
 		</associatedMemes>
-		
+		<selectionWeight>0</selectionWeight>
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
 

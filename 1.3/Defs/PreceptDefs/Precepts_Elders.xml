@@ -48,6 +48,7 @@
 		<impact>Medium</impact>
 		<displayOrderInIssue>40</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
+		<selectionWeight>0</selectionWeight>
 		<associatedMemes>
 			<li>VME_Elders</li>
 		</associatedMemes>
@@ -80,6 +81,7 @@
 		<impact>High</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
+		<selectionWeight>1</selectionWeight>
 		<associatedMemes>
 			<li>VME_Elders</li>
 		</associatedMemes>
