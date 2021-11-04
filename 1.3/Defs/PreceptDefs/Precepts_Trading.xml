@@ -45,7 +45,7 @@
 			</li>
 			<li>
 				<label>no recent trades</label>
-				<description>Noone wants to buy our product. I hope these quiet times will pass.</description>
+				<description>No one wants to buy our product. I hope these quiet times will pass.</description>
 				<baseMoodEffect>-5</baseMoodEffect>
 			</li>
 		</stages>

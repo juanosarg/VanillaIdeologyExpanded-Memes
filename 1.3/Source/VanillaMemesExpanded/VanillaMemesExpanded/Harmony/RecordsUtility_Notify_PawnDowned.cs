@@ -20,9 +20,9 @@ namespace VanillaMemesExpanded
         [HarmonyPostfix]
         static void ThrowPawnDownedEvent(Pawn downed, Pawn instigator)
         {
-            if (!instigator.NonHumanlikeOrWildMan()&& instigator.Faction?.IsPlayer != true) {
+            if (instigator!=null&&!instigator.NonHumanlikeOrWildMan()&& instigator.Faction?.IsPlayer != true) {
 
-                if (downed.needs.mood.thoughts.memories.GetFirstMemoryOfDef(InternalDefOf.VME_Defeat_Dishonorable) != null)
+                if (downed.needs?.mood?.thoughts?.memories?.GetFirstMemoryOfDef(InternalDefOf.VME_Defeat_Dishonorable) != null)
                 {
                     Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_SecondDefeat, downed.Named(HistoryEventArgsNames.Doer)), true);
                 } else Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_Defeat, downed.Named(HistoryEventArgsNames.Doer)), true);

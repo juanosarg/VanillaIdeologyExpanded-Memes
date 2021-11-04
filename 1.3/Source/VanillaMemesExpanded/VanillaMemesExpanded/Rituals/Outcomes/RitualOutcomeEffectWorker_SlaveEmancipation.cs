@@ -70,7 +70,7 @@ namespace VanillaMemesExpanded
 			}
 			Pawn recruiter = jobRitual.PawnWithRole("leader");
 			Random random = new Random();
-			foreach (Pawn pawn in totalPresence.Keys)
+			foreach (Pawn pawn in slaves)
 			{
 				GenGuest.SlaveRelease(pawn);
 				if (random.NextDouble()< percentage)
