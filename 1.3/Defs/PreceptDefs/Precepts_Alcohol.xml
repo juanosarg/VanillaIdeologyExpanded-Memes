@@ -77,7 +77,7 @@
 		<description>Drinking is just plain fun, though not in excess.</description>
 		<impact>Low</impact>
 		<displayOrderInIssue>10</displayOrderInIssue>
-
+		<selectionWeight>0</selectionWeight>
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
 				<thought>VME_Alcohol_Desired</thought>
@@ -93,7 +93,7 @@
 		<defName>VME_Alcohol_Desired</defName>
 		<validWhileDespawned>true</validWhileDespawned>
 		<minExpectation>Moderate</minExpectation>
-		<selectionWeight>0</selectionWeight>
+		
 		<nullifyingTraitDegrees>
 			
 				<DrugDesire>-1</DrugDesire>
