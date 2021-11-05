@@ -8,6 +8,20 @@
     <description>Depending on ritual quality, participants will receive a recreation boost that last between 4 hours and 3 days that will raise their recreation bar. They'll also get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.\n\nThe ritual bonfire will stay lit for at least two quadrums, providing a beauty bonus nearby and counting towards the number of fires around for the Fire: Desired precept.</description>
     <workerClass>VanillaMemesExpanded.RitualOutcomeEffectWorker_Bonfire</workerClass>
     <comps>
+	 <li Class="RitualOutcomeComp_PawnStatScaled">
+        <label>{PAWN_labelShort}'s social impact</label>
+        <labelAbstract>speaker's social impact</labelAbstract>
+        <roleId>fireKeeper</roleId>
+        <statDef>SocialImpact</statDef>
+        <curve>
+          <points>
+            <li>(0.2, 0.0)</li>
+            <li>(0.6, 0.2)</li>
+            <li>(1.0, 0.3)</li>
+            <li>(1.5, 0.4)</li>
+          </points>
+        </curve>
+      </li>
       <li Class="RitualOutcomeComp_ParticipantCount">
         <label>participant count</label>
         <curve>

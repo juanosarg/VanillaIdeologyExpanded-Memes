@@ -13,7 +13,7 @@ namespace VanillaMemesExpanded
        
        
         public int tickCounter = 0;
-        public int tickInterval = 12000;
+        public int tickInterval = 3000;
         public Pawn mostSkilledPawn;
         public Pawn pawnThatIsTheLeaderNow;
 
@@ -25,6 +25,8 @@ namespace VanillaMemesExpanded
         public override void FinalizeInit()
         {
             PawnCollectionClass.pawnThatIsTheLeaderNow = pawnThatIsTheLeaderNow;
+            PawnCollectionClass.mostSkilledPawn = mostSkilledPawn;
+
             base.FinalizeInit();
 
         }
@@ -53,6 +55,8 @@ namespace VanillaMemesExpanded
                 if (ideo.HasPrecept(InternalDefOf.VME_Leader_BestFighter))
                 {
                     pawnThatIsTheLeaderNow = PawnCollectionClass.pawnThatIsTheLeaderNow;
+                    mostSkilledPawn = PawnCollectionClass.mostSkilledPawn;
+
                     int highestSkillLevel = 0;
 
                     foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists)
@@ -61,6 +65,7 @@ namespace VanillaMemesExpanded
                         {
                             highestSkillLevel = pawn.skills.GetSkill(SkillDefOf.Melee).Level;
                             mostSkilledPawn = pawn;
+                            PawnCollectionClass.mostSkilledPawn = pawn;
                         }
                     }
 

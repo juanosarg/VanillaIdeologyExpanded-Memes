@@ -14,21 +14,8 @@ namespace VanillaMemesExpanded
 		{
 			reason = null;
 
-			Pawn mostSkilledPawn = null;
-			int highestSkillLevel = 0;
-
-			foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_FreeColonists)
-			{
-				if (pawn.skills.GetSkill(SkillDefOf.Melee).Level > highestSkillLevel)
-				{
-					highestSkillLevel = pawn.skills.GetSkill(SkillDefOf.Melee).Level;
-					mostSkilledPawn = pawn;
-				}
-			}
-
-
+			Pawn mostSkilledPawn = PawnCollectionClass.mostSkilledPawn;
 			
-
 			if (p == mostSkilledPawn)
 			{
 				return true;

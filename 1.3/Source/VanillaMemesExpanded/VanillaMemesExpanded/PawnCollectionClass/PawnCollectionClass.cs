@@ -35,6 +35,9 @@ namespace VanillaMemesExpanded
 
         public static Pawn pawnThatIsTheLeaderNow;
 
+        public static Pawn mostSkilledPawn;
+
+
         public static float averageColonyMood = 0;
 
 

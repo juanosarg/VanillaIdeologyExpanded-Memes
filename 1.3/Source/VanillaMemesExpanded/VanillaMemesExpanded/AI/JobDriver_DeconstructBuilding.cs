@@ -33,7 +33,7 @@ namespace VanillaMemesExpanded
 						GenPlace.TryPlaceThing(thing, building.Position, Find.CurrentMap, ThingPlaceMode.Direct, null, null, default(Rot4));
 
 					}
-					building.DeSpawn(DestroyMode.Vanish);
+					building.Destroy(DestroyMode.Vanish);
 				},
 				defaultCompleteMode = ToilCompleteMode.Instant
 			};

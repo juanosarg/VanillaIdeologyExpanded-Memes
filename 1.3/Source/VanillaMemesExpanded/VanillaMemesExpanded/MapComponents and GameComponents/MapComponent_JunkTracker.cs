@@ -49,7 +49,7 @@ namespace VanillaMemesExpanded
             if ((tickCounter > tickInterval))
             {
 
-                if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Junk_Beautiful) != null)
+                if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Junk_Beautiful) != null|| Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Junk_Preferred) != null)
                    
                 {
 

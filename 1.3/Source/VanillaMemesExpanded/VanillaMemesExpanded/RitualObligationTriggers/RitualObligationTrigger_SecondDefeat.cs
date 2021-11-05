@@ -21,9 +21,24 @@ namespace VanillaMemesExpanded
 
 
 				if (this.ritual.activeObligations != null) {
+
+					List<RitualObligation> obligationsToRemove = new List<RitualObligation>();
+
 					foreach (RitualObligation ritualObligation in this.ritual.activeObligations)
 					{
-						existingObligations.Add(ritualObligation.targetA.Thing as Pawn);
+						Pawn pawn = ritualObligation.targetA.Thing as Pawn;
+						if (pawn!=null&&pawn.Dead) {
+							obligationsToRemove.Add(ritualObligation);
+							
+
+						}
+						else {
+							existingObligations.Add(ritualObligation.targetA.Thing as Pawn);
+						}
+					}
+					foreach (RitualObligation ritualObligationToRemove in obligationsToRemove)
+					{
+						this.ritual.activeObligations.Remove(ritualObligationToRemove);
 					}
 
 				} 
