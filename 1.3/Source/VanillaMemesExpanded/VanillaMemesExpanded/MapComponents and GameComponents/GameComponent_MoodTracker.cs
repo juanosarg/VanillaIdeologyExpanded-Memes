@@ -57,11 +57,14 @@ namespace VanillaMemesExpanded
 
                 if (Current.Game.World.factionManager.OfPlayer.ideos.HasAnyIdeoWithMeme(InternalDefOf.VME_Gestalt))
                 {
-                   
+                    List<Pawn> colonistList = PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists;
                     float totalMood = 0;
-                    foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists)
+                    foreach (Pawn pawn in colonistList)
                     {
-                        totalMood += pawn.needs.mood.thoughts.TotalMoodOffset();
+                        if(pawn?.needs?.mood?.thoughts != null) {
+                            totalMood += pawn.needs.mood.thoughts.TotalMoodOffset();
+                        }
+                       
                     }
                    
                     averageColonyMood_backup = totalMood;

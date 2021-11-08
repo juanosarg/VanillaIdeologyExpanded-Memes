@@ -1289,7 +1289,7 @@
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
 	</ThingDef>
-	<ThingDef ParentName="NonDeconstructibleAncientBuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>VME_AncientSpaceJunk</defName>
 		<label>ancient space junk</label>
 		<description>Ancient chunks of space junk that fell from orbit. Perhaps a relic of an ancient space battle.</description>

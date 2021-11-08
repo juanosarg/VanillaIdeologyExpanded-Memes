@@ -25,17 +25,17 @@ namespace VanillaMemesExpanded
 				return "CantStartRitualRoleNotAssigned".Translate(precept_Role.LabelCap);
 			}
 			bool flag = false;
-			using (List<Pawn>.Enumerator enumerator = target.Map.mapPawns.FreeColonistsAndPrisonersSpawned.GetEnumerator())
-			{
-				while (enumerator.MoveNext())
+			List<Pawn> listOfPawns = target.Map.mapPawns.FreeColonistsAndPrisonersSpawned;
+			foreach(Pawn pawn in listOfPawns)
+            {
+				if (ValidateConvertee(pawn, precept_Role.ChosenPawnSingle(), false))
 				{
-					if (ValidateConvertee(enumerator.Current, precept_Role.ChosenPawnSingle(), false))
-					{
-						flag = true;
-						break;
-					}
+					flag = true;
+					break;
 				}
 			}
+
+			
 			if (!flag)
 			{
 				return "VME_CantStartWickerManRitual".Translate(precept_Role.ChosenPawnSingle().Ideo.name);

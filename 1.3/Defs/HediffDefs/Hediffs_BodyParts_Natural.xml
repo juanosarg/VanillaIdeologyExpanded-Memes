@@ -169,6 +169,130 @@
     </addedPartProps>
   </HediffDef>
   
+   <!-- Finger -->
+  <ThingDef ParentName="VME_FleshcrafterBodyPartNaturalBase">
+    <defName>VME_FleshcraftedFinger</defName>
+    <label>fleshcrafted finger</label>
+    <description>A biological human finger, fleshcrafted from a corpse. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
+    <descriptionHyperlinks><RecipeDef>VME_InstallFleshcraftedFinger</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <defName>VME_InstallFleshcraftedFinger</defName>
+    <label>install fleshcrafted finger</label>
+    <description>Install a fleshcrafted finger. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
+   
+    <jobString>Installing fleshcrafted finger.</jobString>
+    
+    
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>VME_FleshcraftedFinger</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>VME_FleshcraftedFinger</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Finger</li>
+    </appliedOnFixedBodyParts>
+	<addsHediff>VME_FleshcraftedFingerHediff</addsHediff>
+	
+  </RecipeDef>
+  
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>VME_FleshcraftedFingerHediff</defName>
+    <label>fleshcrafted finger</label>
+    <labelNoun>a fleshcrafted finger</labelNoun>
+    <description>An installed fleshcrafted finger.</description>
+    <descriptionHyperlinks><ThingDef>VME_FleshcraftedFinger</ThingDef></descriptionHyperlinks>
+    <comps>
+     
+	  <li Class="VanillaMemesExpanded.HediffCompProperties_Infections">
+        
+      </li>
+    </comps>
+    <spawnThingOnRemoved>VME_FleshcraftedFinger</spawnThingOnRemoved>
+    <addedPartProps>
+    
+      <partEfficiency>1</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+  
+     <!-- Toe -->
+  <ThingDef ParentName="VME_FleshcrafterBodyPartNaturalBase">
+    <defName>VME_FleshcraftedToe</defName>
+    <label>fleshcrafted toe</label>
+    <description>A biological human toe, fleshcrafted from a corpse. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
+    <descriptionHyperlinks><RecipeDef>VME_InstallFleshcraftedToe</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <defName>VME_InstallFleshcraftedToe</defName>
+    <label>install fleshcrafted toe</label>
+    <description>Install a fleshcrafted toe. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
+   
+    <jobString>Installing fleshcrafted toe.</jobString>
+    
+    
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>VME_FleshcraftedToe</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>VME_FleshcraftedToe</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Toe</li>
+    </appliedOnFixedBodyParts>
+	<addsHediff>VME_FleshcraftedToeHediff</addsHediff>
+	
+  </RecipeDef>
+  
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>VME_FleshcraftedToeHediff</defName>
+    <label>fleshcrafted toe</label>
+    <labelNoun>a fleshcrafted toe</labelNoun>
+    <description>An installed fleshcrafted toe.</description>
+    <descriptionHyperlinks><ThingDef>VME_FleshcraftedToe</ThingDef></descriptionHyperlinks>
+    <comps>
+     
+	  <li Class="VanillaMemesExpanded.HediffCompProperties_Infections">
+        
+      </li>
+    </comps>
+    <spawnThingOnRemoved>VME_FleshcraftedToe</spawnThingOnRemoved>
+    <addedPartProps>
+    
+      <partEfficiency>1</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+  
   <!-- Leg -->
   <ThingDef ParentName="VME_FleshcrafterBodyPartNaturalBase">
     <defName>VME_FleshcraftedLeg</defName>
