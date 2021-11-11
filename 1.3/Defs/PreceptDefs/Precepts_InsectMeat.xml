@@ -11,6 +11,7 @@
     <impact>Medium</impact>
     <displayOrderInIssue>50</displayOrderInIssue>
     <displayOrderInImpact>100</displayOrderInImpact>
+	<selectionWeight>1</selectionWeight>
     <associatedMemes>
       <li>VME_Structure_Serketist</li>
 	  <li>VME_InsectoidSupremacy</li>

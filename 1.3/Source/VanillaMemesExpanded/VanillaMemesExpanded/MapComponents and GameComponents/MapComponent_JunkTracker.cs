@@ -62,7 +62,7 @@ namespace VanillaMemesExpanded
                         for (int i = 0; i < num; i++)
                         {
                             IntVec3 intVec = pawn.Position + GenRadial.RadialPattern[i];
-                            if (intVec.InBounds(map) && !intVec.Fogged(map) && GenSight.LineOfSight(pawn.Position, intVec, map, false, null, 0, 0))
+                            if (intVec.InBounds(map) && !intVec.Fogged(map))
                             {
                                 foreach (Thing thing in intVec.GetThingList(map))
                                 {

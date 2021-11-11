@@ -2303,7 +2303,7 @@
 		<groupDef>Misc</groupDef>
 		<exclusionTags>
 			<li>VME_InsectoidVsDefilers</li>
-			<li>VME_InsectEatingConflict</li>
+			
 		</exclusionTags>
 		<impact>2</impact>
 		<generalRules>
@@ -2366,6 +2366,7 @@
 			</li>
 			<li>
 				<li>VME_InsectMeatEating_Sacrilegious</li>
+				<li>InsectMeatEating_Loved</li>
 			</li>
 			<li Name="insectjellyloved">
 				<li>VME_InsectJellyEaten_Loved_Classic</li>
