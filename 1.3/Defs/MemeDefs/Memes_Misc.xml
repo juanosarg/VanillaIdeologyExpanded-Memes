@@ -2396,6 +2396,8 @@
 		<impact>2</impact>
 		<exclusionTags>
 			<li>VME_PartyVsPrivacy</li>
+			<li>VME_AsceticVsPartyLife</li>
+			
 		</exclusionTags>
 		<generalRules>
 			<rulesStrings>

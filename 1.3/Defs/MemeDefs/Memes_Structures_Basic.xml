@@ -127,6 +127,10 @@
 		<defName>VME_Structure_Bacchanalianism</defName>
 		<label>hedonism</label>
 		<description>Man's time on this earth is brief and fleeting, to deny oneself of any of life's pleasures such as lust or gluttony is the one true sin. Throw wide the gates to tireless festivity, live and breathe endless splendor.</description>
+		<exclusionTags>
+			<li>VME_AsceticVsHedonism</li>
+					
+		</exclusionTags>
 		<category>Structure</category>
 		<iconPath>UI/Structures/Structure_Bacchanalianism</iconPath>
 		<impact>0</impact>
