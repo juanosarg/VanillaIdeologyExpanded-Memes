@@ -117,7 +117,7 @@
 		<impact>1</impact>
 		<exclusionTags>
 			<li>VME_AstrologyVsGestalt</li>
-
+			<li>VME_MadnessVsAstrology</li>
 		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
@@ -385,6 +385,7 @@
 		<exclusionTags>
 			<li>Individualism</li>
 			<li>VME_AstrologyVsGestalt</li>
+			<li>VME_MadnessVsGestalt</li>
 		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
@@ -2664,6 +2665,7 @@
 		<exclusionTags>
 			<li>GroupRelation</li>
 			<li>VME_NationalistVsPacifist</li>
+			<li>VME_NonViolenceVowVsNationalists</li>
 		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
