@@ -2,12 +2,25 @@
 <Patch>
 	
 
-	<Operation Class="PatchOperationAdd">
+
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
 		<xpath>/Defs/FactionDef[defName="TribeSavage"]/disallowedMemes</xpath>
-		<value>
-			<li MayRequire="Ludeon.RimWorld.Ideology">VME_SweetTeeth</li>
-			
-		</value>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="TribeSavage"]</xpath>
+			<value>
+				<disallowedMemes>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_SweetTeeth</li>
+				</disallowedMemes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="TribeSavage"]/disallowedMemes</xpath>
+			<value>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_SweetTeeth</li>
+			</value>
+		</match>
 	</Operation>
 	
 </Patch>

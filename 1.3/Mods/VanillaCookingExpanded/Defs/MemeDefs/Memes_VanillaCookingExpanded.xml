@@ -11,6 +11,7 @@
 		<impact>2</impact>
 		<exclusionTags>
 			<li>VME_AsceticVsSweetTeeth</li>
+			<li>VME_FleshPurityVsSweetTeeth</li>
 		</exclusionTags>
 		<generalRules>
 			<rulesStrings>

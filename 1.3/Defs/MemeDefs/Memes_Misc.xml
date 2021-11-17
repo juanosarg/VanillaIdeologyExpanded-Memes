@@ -679,6 +679,7 @@
 		<impact>2</impact>
 		<exclusionTags>
 			<li>VME_LeaderPrecepts</li>
+			<li>VME_SadistVsCraftCulture</li>
 		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
