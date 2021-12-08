@@ -163,6 +163,7 @@
 	<ThoughtDef>
 		<defName>VME_Mood_LowExpectations</defName>
 		<validWhileDespawned>true</validWhileDespawned>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_AlwaysOn</workerClass>
 		<stages>
 			
 			<li>
@@ -205,6 +206,7 @@
 	<ThoughtDef>
 		<defName>VME_Mood_HighExpectations</defName>
 		<validWhileDespawned>true</validWhileDespawned>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_AlwaysOn</workerClass>
 		<stages>
 			
 			<li>

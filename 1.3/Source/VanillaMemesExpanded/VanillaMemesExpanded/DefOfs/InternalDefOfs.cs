@@ -105,6 +105,9 @@ namespace VanillaMemesExpanded
 		public static PreceptDef VME_Fire_Desired;
 		public static PreceptDef VME_Fire_Despised;
 
+		public static PreceptDef VME_Expectations_High;
+		public static PreceptDef VME_Expectations_Low;
+
 		public static MemeDef VME_FireWorship;
 
 		public static MemeDef VME_Astrology;

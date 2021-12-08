@@ -52,7 +52,7 @@ namespace VanillaMemesExpanded
 			get
 			{
 				
-				if(DefDatabase<MemeDef>.GetNamedSilentFail("VME_SweetTeeth")==null || !Current.Game.World.factionManager.OfPlayer.ideos.HasAnyIdeoWithMeme(DefDatabase<MemeDef>.GetNamedSilentFail("VME_SweetTeeth")))
+				if(DefDatabase<MemeDef>.GetNamedSilentFail("VME_SweetTeeth")==null || !Current.Game.World.factionManager.OfPlayer.ideos.HasAnyIdeoWithMeme(DefDatabase<MemeDef>.GetNamedSilentFail("VME_SweetTeeth"))|| ExpectationsUtility.CurrentExpectationFor(this.pawn).order <= 2)
                 {
 					return false;
 				}

@@ -1,6 +1,7 @@
 ﻿using System;
 using Verse;
 using RimWorld;
+using System.Collections.Generic;
 
 namespace VanillaMemesExpanded
 {
@@ -12,9 +13,8 @@ namespace VanillaMemesExpanded
 		public int thirdPeriod = 900000; //15 days
 		public int maxPeriod = 3600000; //60 days
 
-
 		
-
+		
 		protected override ThoughtState ShouldHaveThought(Pawn p)
 		{
 

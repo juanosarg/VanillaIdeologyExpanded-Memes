@@ -340,6 +340,7 @@
     <Compile Include="Enums\AnonymityNeedCategory.cs" />
     <Compile Include="Enums\DessertNeedCategory.cs" />
     <Compile Include="Harmony\CaravanExitMapUtility_AddCaravanExitTaleIfShould.cs" />
+    <Compile Include="Harmony\ExpectationsUtility_CurrentExpectationFor.cs" />
     <Compile Include="Harmony\IdeoFoundation_InitPrecepts.cs" />
     <Compile Include="Harmony\GenLeaving_GetBuildingResourcesLeaveCalculator.cs" />
     <Compile Include="Harmony\CompDrug_PostIngested.cs" />
@@ -447,6 +448,7 @@
     <Compile Include="StatPartDefs\StatPart_WorkTableManualUnefficient.cs" />
     <Compile Include="ThingSetMakers\ThingSetMaker_StartingItemsEldritchCult.cs" />
     <Compile Include="ThingSetMakers\ThingSetMaker_StartingItemsSweetTeeth.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_AlwaysOn.cs" />
     <Compile Include="Thoughts\ThoughtWorker_NeedAnonymity.cs" />
     <Compile Include="Thoughts\ThoughtWorker_NeedSweets.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_Alcohol_MildAbstinence.cs" />

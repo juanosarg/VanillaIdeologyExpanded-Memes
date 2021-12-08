@@ -10,7 +10,7 @@
 		<defName>VME_Hospital_Required</defName>
 		<issue>VME_Hospital</issue>
 		<label>required</label>
-		<description>A place of refuge and healing is essential for the long-term health of our community. It’s important to make sure we have open beds and plenty of medicine should the worst come to worst.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists gets mood penalties / bonuses depending on size of hospital rooms found in the map. Only hospital rooms with an impressiveness of "decent" or higher will count for this calculation.</description>
+		<description>A place of refuge and healing is essential for the long-term health of our community. It’s important to make sure we have open beds and plenty of medicine should the worst come to worst.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists gets mood penalties / bonuses depending on size of hospital rooms found in the map. Only hospital rooms with an impressiveness of "decent" or higher will count for this calculation. Hospitals will need to be clean or colonists will complain too!</description>
 		<impact>Medium</impact>
 		<displayOrderInImpact>80</displayOrderInImpact>
 		<associatedMemes>
@@ -22,6 +22,7 @@
 				<thought>VME_Hospital_Required</thought>
 				<thoughtStageDescriptions>
 					<li>Need hospital</li>
+					<li>Dirty hospital</li>
 					<li>Small hospital (less than 25 tiles)</li>
 					<li>Spacious hospital (less than 50 tiles)</li>
 					<li>Huge hospital (more than 50 tiles)</li>
@@ -44,10 +45,15 @@
 		<minExpectation>Moderate</minExpectation>
 		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Hospital</workerClass>
 		<stages>
-		<li>
+			<li>
 				<label>need hospital</label>
 				<description>We lack a place to help people and should have a dedicated hospital.</description>
 				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+			<li>
+				<label>dirty hospital</label>
+				<description>We have a hospital, but it is incredibly dirty. We are not animals!</description>
+				<baseMoodEffect>-5</baseMoodEffect>
 			</li>
 			<li>
 				<label>small hospital</label>

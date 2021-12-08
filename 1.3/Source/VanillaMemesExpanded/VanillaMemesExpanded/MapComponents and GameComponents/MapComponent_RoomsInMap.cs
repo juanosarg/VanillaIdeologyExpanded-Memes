@@ -16,6 +16,7 @@ namespace VanillaMemesExpanded
         public int tickInterval = 6000;
         public int roomsInMap_backup;
         public int hospitalTilesInMap_backup;
+        public bool hospitalDirty_backup = false;
 
 
         public MapComponent_RoomsInMap(Map map) : base(map)
@@ -29,7 +30,7 @@ namespace VanillaMemesExpanded
             {
                 PawnCollectionClass.roomsInMap = roomsInMap_backup;
                 PawnCollectionClass.hospitalTilesInMap = hospitalTilesInMap_backup;
-
+                PawnCollectionClass.hospitalDirty = hospitalDirty_backup;
             }
 
             base.FinalizeInit();
@@ -42,7 +43,7 @@ namespace VanillaMemesExpanded
 
             Scribe_Values.Look<int>(ref this.roomsInMap_backup, "roomsInMap_backup", 0, true);
             Scribe_Values.Look<int>(ref this.hospitalTilesInMap_backup, "hospitalTilesInMap_backup", 0, true);
-
+            Scribe_Values.Look<bool>(ref this.hospitalDirty_backup, "hospitalDirty_backup", false, true);
             Scribe_Values.Look<int>(ref this.tickCounter, "tickCounterRooms", 0, true);
 
         }
@@ -78,11 +79,20 @@ namespace VanillaMemesExpanded
 
                     foreach (Room room in map.regionGrid.allRooms)
                     {
-                        int scoreStageIndex = RoomStatDefOf.Impressiveness.GetScoreStageIndex(room.GetStat(RoomStatDefOf.Impressiveness));
-                       // Log.Message(scoreStageIndex.ToString());
-                        if (room.Role == RoomRoleDefOf.Hospital && scoreStageIndex>=3)
+                                           
+                        if (room.Role == RoomRoleDefOf.Hospital)
                         {
-                            totalHospitalTiles += room.CellCount;
+                            int cleanStageIndex = RoomStatDefOf.Cleanliness.GetScoreStageIndex(room.GetStat(RoomStatDefOf.Cleanliness));
+                            int scoreStageIndex = RoomStatDefOf.Impressiveness.GetScoreStageIndex(room.GetStat(RoomStatDefOf.Impressiveness));
+
+                            if (cleanStageIndex < 3)
+                            {
+                                hospitalDirty_backup = true;
+                            }else hospitalDirty_backup = false;
+
+                            if (scoreStageIndex >= 3) { 
+                                totalHospitalTiles += room.CellCount;
+                            }
                         }
 
 
@@ -90,6 +100,7 @@ namespace VanillaMemesExpanded
                     }
                     hospitalTilesInMap_backup = totalHospitalTiles;
                     PawnCollectionClass.hospitalTilesInMap = totalHospitalTiles;
+                    PawnCollectionClass.hospitalDirty = hospitalDirty_backup;
                 }
 
 
