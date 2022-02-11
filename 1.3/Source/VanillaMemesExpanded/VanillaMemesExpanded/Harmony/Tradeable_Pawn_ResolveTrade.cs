@@ -25,7 +25,7 @@ namespace VanillaMemesExpanded
             {
                 Pawn AnyPawn = (Pawn)__instance.AnyThing;
 
-                if (AnyPawn.RaceProps.Humanlike)
+                if (AnyPawn.RaceProps?.Humanlike ==true)
                 {
                     Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_BoughtSlave));
                 }
