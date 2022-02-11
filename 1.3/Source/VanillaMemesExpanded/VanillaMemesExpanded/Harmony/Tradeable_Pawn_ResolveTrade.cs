@@ -23,8 +23,13 @@ namespace VanillaMemesExpanded
 
             if (__instance.ActionToDo == TradeAction.PlayerBuys)
             {
+                Pawn AnyPawn = (Pawn)__instance.AnyThing;
 
-                Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_BoughtSlave));
+                if (AnyPawn.RaceProps.Humanlike)
+                {
+                    Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_BoughtSlave));
+                }
+
             }
 
 
