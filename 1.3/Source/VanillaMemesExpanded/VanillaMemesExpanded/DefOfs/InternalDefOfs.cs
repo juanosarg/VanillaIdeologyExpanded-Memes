@@ -120,6 +120,8 @@ namespace VanillaMemesExpanded
 
 		public static MemeDef VME_MechanoidSupremacy;
 
+		public static MemeDef VME_ExaltedPriesthood;
+
 		public static HistoryEventDef VME_Firefighting;
 
 		public static HistoryEventDef VME_KillingWithFire;

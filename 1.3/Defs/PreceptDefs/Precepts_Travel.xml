@@ -44,22 +44,22 @@
 		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Travel</workerClass>
 		<stages>
 			<li>
-				<label>traveled the world</label>
+				<label>traveled the world (less than 5 days ago)</label>
 				<description>There is nothing as exhilarating as seeing what the world has to offer.</description>
 				<baseMoodEffect>30</baseMoodEffect>
 			</li>
 			<li>
-				<label>traveled the world</label>
+				<label>traveled the world (less than 10 days ago)</label>
 				<description>Travelling is amazing. Seeing the sights, discovering new lands... The memories of my last travels are still fresh in my mind.</description>
 				<baseMoodEffect>10</baseMoodEffect>
 			</li>
 			<li>
-				<label>traveled the world</label>
+				<label>traveled the world (less than 15 days ago)</label>
 				<description>It's been a few days since I travelled. I loved it.</description>
 				<baseMoodEffect>5</baseMoodEffect>
 			</li>
 			<li>
-				<label>traveled the world</label>
+				<label>traveled the world (less than 60 days ago)</label>
 				<description>I have a fond memory of my past travels.</description>
 				<baseMoodEffect>3</baseMoodEffect>
 			</li>
@@ -95,22 +95,22 @@
 		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Travel</workerClass>
 		<stages>
 			<li>
-				<label>had to leave the colony</label>
+				<label>had to leave the colony (less than 5 days ago)</label>
 				<description>I despise travelling. Leaving the security of our colony is terrible.</description>
 				<baseMoodEffect>-30</baseMoodEffect>
 			</li>
 			<li>
-				<label>had to leave the colony</label>
+				<label>had to leave the colony (less than 10 days ago)</label>
 				<description>The memories of my last travels are still fresh in my mind. I hated it.</description>
 				<baseMoodEffect>-10</baseMoodEffect>
 			</li>
 			<li>
-				<label>had to leave the colony</label>
+				<label>had to leave the colony (less than 15 days ago)</label>
 				<description>It's been a few days since I travelled. I hated it.</description>
 				<baseMoodEffect>-5</baseMoodEffect>
 			</li>
 			<li>
-				<label>had to leave the colony</label>
+				<label>had to leave the colony (less than 60 days ago)</label>
 				<description>I have uncomfortable memories of my past travels.</description>
 				<baseMoodEffect>-3</baseMoodEffect>
 			</li>

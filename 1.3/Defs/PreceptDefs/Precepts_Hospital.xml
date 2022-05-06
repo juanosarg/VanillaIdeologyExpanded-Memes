@@ -16,7 +16,7 @@
 		<associatedMemes>
 			<li>VME_Healthcare</li>
 		</associatedMemes>
-		
+		<allowedForNPCFactions>false</allowedForNPCFactions>
 		<comps>			
 			<li Class="PreceptComp_SituationalThought">
 				<thought>VME_Hospital_Required</thought>

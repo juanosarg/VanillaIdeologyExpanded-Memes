@@ -22,6 +22,10 @@
       </li>
     </comps>
   </ThingDef>
+  
+   <RecipeDef Name="VME_SurgeryInstallBodyPartNaturalBase" ParentName="SurgeryInstallImplantBase" Abstract="True">
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+  </RecipeDef>
 
   <!-- Arm -->
   <ThingDef ParentName="VME_FleshcrafterBodyPartNaturalBase">
@@ -36,7 +40,7 @@
 	<tradeability>None</tradeability>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+  <RecipeDef ParentName="VME_SurgeryInstallBodyPartNaturalBase">
     <defName>VME_InstallFleshcraftedArm</defName>
     <label>install fleshcrafted arm</label>
     <description>Install a fleshcrafted arm. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
@@ -60,7 +64,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <appliedOnFixedBodyParts>
-      <li>Shoulder</li>
+      <li>Arm</li>
     </appliedOnFixedBodyParts>
 	<addsHediff>VME_FleshcraftedArmHediff</addsHediff>
 	
@@ -109,7 +113,7 @@
 	<tradeability>None</tradeability>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+  <RecipeDef ParentName="VME_SurgeryInstallBodyPartNaturalBase">
     <defName>VME_InstallFleshcraftedHand</defName>
     <label>install fleshcrafted hand</label>
     <description>Install a fleshcrafted hand. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
@@ -182,7 +186,7 @@
 	<tradeability>None</tradeability>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+  <RecipeDef ParentName="VME_SurgeryInstallBodyPartNaturalBase">
     <defName>VME_InstallFleshcraftedFinger</defName>
     <label>install fleshcrafted finger</label>
     <description>Install a fleshcrafted finger. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
@@ -244,7 +248,7 @@
 	<tradeability>None</tradeability>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+  <RecipeDef ParentName="VME_SurgeryInstallBodyPartNaturalBase">
     <defName>VME_InstallFleshcraftedToe</defName>
     <label>install fleshcrafted toe</label>
     <description>Install a fleshcrafted toe. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
@@ -293,6 +297,68 @@
     </addedPartProps>
   </HediffDef>
   
+     <!-- Foot -->
+  <ThingDef ParentName="VME_FleshcrafterBodyPartNaturalBase">
+    <defName>VME_FleshcraftedFoot</defName>
+    <label>fleshcrafted foot</label>
+    <description>A biological human foot, fleshcrafted from a corpse. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
+    <descriptionHyperlinks><RecipeDef>VME_InstallFleshcraftedFoot</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+  </ThingDef>
+
+  <RecipeDef ParentName="VME_SurgeryInstallBodyPartNaturalBase">
+    <defName>VME_InstallFleshcraftedFoot</defName>
+    <label>install fleshcrafted foot</label>
+    <description>Install a fleshcrafted foot. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
+   
+    <jobString>Installing fleshcrafted foot.</jobString>
+    
+    
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>VME_FleshcraftedFoot</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>VME_FleshcraftedFoot</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Foot</li>
+    </appliedOnFixedBodyParts>
+	<addsHediff>VME_FleshcraftedFootHediff</addsHediff>
+	
+  </RecipeDef>
+  
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>VME_FleshcraftedFootHediff</defName>
+    <label>fleshcrafted foot</label>
+    <labelNoun>a fleshcrafted foot</labelNoun>
+    <description>An installed fleshcrafted foot.</description>
+    <descriptionHyperlinks><ThingDef>VME_FleshcraftedFoot</ThingDef></descriptionHyperlinks>
+    <comps>
+     
+	  <li Class="VanillaMemesExpanded.HediffCompProperties_Infections">
+        
+      </li>
+    </comps>
+    <spawnThingOnRemoved>VME_FleshcraftedFoot</spawnThingOnRemoved>
+    <addedPartProps>
+    
+      <partEfficiency>1</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+  
   <!-- Leg -->
   <ThingDef ParentName="VME_FleshcrafterBodyPartNaturalBase">
     <defName>VME_FleshcraftedLeg</defName>
@@ -306,7 +372,7 @@
 	<tradeability>None</tradeability>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+  <RecipeDef ParentName="VME_SurgeryInstallBodyPartNaturalBase">
     <defName>VME_InstallFleshcraftedLeg</defName>
     <label>install fleshcrafted leg</label>
     <description>Install a fleshcrafted leg. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
@@ -368,7 +434,7 @@
 	<tradeability>None</tradeability>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+  <RecipeDef ParentName="VME_SurgeryInstallBodyPartNaturalBase">
     <defName>VME_InstallFleshcraftedHeart</defName>
     <label>install fleshcrafted heart</label>
     <description>Install a fleshcrafted heart. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
@@ -430,7 +496,7 @@
 	<tradeability>None</tradeability>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+  <RecipeDef ParentName="VME_SurgeryInstallBodyPartNaturalBase">
     <defName>VME_InstallFleshcraftedLung</defName>
     <label>install fleshcrafted lung</label>
     <description>Install a fleshcrafted lung. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
@@ -491,7 +557,7 @@
 	<tradeability>None</tradeability>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+  <RecipeDef ParentName="VME_SurgeryInstallBodyPartNaturalBase">
     <defName>VME_InstallFleshcraftedKidney</defName>
     <label>install fleshcrafted kidney</label>
     <description>Install a fleshcrafted kidney. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
@@ -553,7 +619,7 @@
 	<tradeability>None</tradeability>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+  <RecipeDef ParentName="VME_SurgeryInstallBodyPartNaturalBase">
     <defName>VME_InstallFleshcraftedLiver</defName>
     <label>install fleshcrafted liver</label>
     <description>Install a fleshcrafted liver. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
@@ -614,7 +680,7 @@
 	<tradeability>None</tradeability>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+  <RecipeDef ParentName="VME_SurgeryInstallBodyPartNaturalBase">
     <defName>VME_InstallFleshcraftedEye</defName>
     <label>install fleshcrafted eye</label>
     <description>Install a fleshcrafted eye. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
@@ -675,7 +741,7 @@
 	<tradeability>None</tradeability>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+  <RecipeDef ParentName="VME_SurgeryInstallBodyPartNaturalBase">
     <defName>VME_InstallFleshcraftedEar</defName>
     <label>install fleshcrafted ear</label>
     <description>Install a fleshcrafted ear. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
@@ -736,7 +802,7 @@
 	<tradeability>None</tradeability>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+  <RecipeDef ParentName="VME_SurgeryInstallBodyPartNaturalBase">
     <defName>VME_InstallFleshcraftedNose</defName>
     <label>install fleshcrafted nose</label>
     <description>Install a fleshcrafted nose. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
@@ -797,7 +863,7 @@
 	<tradeability>None</tradeability>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+  <RecipeDef ParentName="VME_SurgeryInstallBodyPartNaturalBase">
     <defName>VME_InstallFleshcraftedJaw</defName>
     <label>install fleshcrafted jaw</label>
     <description>Install a fleshcrafted jaw. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
@@ -858,7 +924,7 @@
 	<tradeability>None</tradeability>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+  <RecipeDef ParentName="VME_SurgeryInstallBodyPartNaturalBase">
     <defName>VME_InstallFleshcraftedStomach</defName>
     <label>install fleshcrafted stomach</label>
     <description>Install a fleshcrafted stomach. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
@@ -919,7 +985,7 @@
 	<tradeability>None</tradeability>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+  <RecipeDef ParentName="VME_SurgeryInstallBodyPartNaturalBase">
     <defName>VME_InstallFleshcraftedTongue</defName>
     <label>install fleshcrafted tongue</label>
     <description>Install a fleshcrafted tongue. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>
@@ -980,7 +1046,7 @@
 	<tradeability>None</tradeability>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+  <RecipeDef ParentName="VME_SurgeryInstallBodyPartNaturalBase">
     <defName>VME_InstallFleshcraftedSpine</defName>
     <label>install fleshcrafted spine</label>
     <description>Install a fleshcrafted spine. This can be safely installed in colonists following a Fleshcrafting ideoligion, but will cause infections due to organ rejection in others.</description>

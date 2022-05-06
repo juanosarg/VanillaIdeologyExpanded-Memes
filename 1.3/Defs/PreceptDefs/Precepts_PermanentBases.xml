@@ -46,42 +46,42 @@
 		<workerClass>VanillaMemesExpanded.Thought_StageByTime</workerClass>
 		<stages>
 			<li>
-				<label>wanderlust (initial)</label>
+				<label>wanderlust (initial - stayed 15 days)</label>
 				<description>We have been here for too long. Perhaps it is time to leave.</description>
 				<baseMoodEffect>-1</baseMoodEffect>
 			</li>
 			<li>
-				<label>wanderlust (initial)</label>
+				<label>wanderlust (initial - stayed 16 days)</label>
 				<description>We have been here for too long. Perhaps it is time to leave.</description>
 				<baseMoodEffect>-2</baseMoodEffect>
 			</li>
 			<li>
-				<label>wanderlust (initial)</label>
+				<label>wanderlust (initial - stayed 17 days)</label>
 				<description>We have been here for too long. Perhaps it is time to leave.</description>
 				<baseMoodEffect>-3</baseMoodEffect>
 			</li>
 			<li>
-				<label>wanderlust (normal)</label>
+				<label>wanderlust (normal - stayed 20 days)</label>
 				<description>This colony is trite. We should we wandering, not staying on the same place.</description>
 				<baseMoodEffect>-5</baseMoodEffect>
 			</li>
 			<li>
-				<label>wanderlust (normal)</label>
+				<label>wanderlust (normal - stayed 30 days)</label>
 				<description>This colony is trite. We should we wandering, not staying on the same place.</description>
 				<baseMoodEffect>-20</baseMoodEffect>
 			</li>
 			<li>
-				<label>wanderlust (serious)</label>
+				<label>wanderlust (serious - stayed 40 days)</label>
 				<description>Enough already! It is time to pack our things and hit the road.</description>
 				<baseMoodEffect>-30</baseMoodEffect>
 			</li>
 			<li>
-				<label>wanderlust (serious)</label>
+				<label>wanderlust (serious - stayed 50 days)</label>
 				<description>Enough already! It is time to pack our things and hit the road.</description>
 				<baseMoodEffect>-40</baseMoodEffect>
 			</li>
 			<li>
-				<label>wanderlust (extreme)</label>
+				<label>wanderlust (extreme - stayed 60 days)</label>
 				<description>Agh! I can't stand being here anymore!</description>
 				<baseMoodEffect>-50</baseMoodEffect>
 			</li>

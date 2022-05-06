@@ -60,7 +60,7 @@ namespace VanillaMemesExpanded
 
         public static void AddColonistToIllnessList(Pawn pawn, int ticks)
         {
-            if (!colonist_illness_tracker.ContainsKey(pawn))
+            if (!colonist_illness_tracker.ContainsKey(pawn) && pawn != null)
             {
                 colonist_illness_tracker.Add(pawn, ticks);
             }
@@ -81,7 +81,7 @@ namespace VanillaMemesExpanded
 
         public static void AddColonistToCaravanList(Pawn pawn, int ticks)
         {
-            if (!colonist_caravan_tracker.ContainsKey(pawn))
+            if (!colonist_caravan_tracker.ContainsKey(pawn) && pawn != null)
             {
                 colonist_caravan_tracker.Add(pawn, ticks);
             }
@@ -102,7 +102,7 @@ namespace VanillaMemesExpanded
 
         public static void AddColonistToScarList(Pawn pawn, int scars)
         {
-            if (!colonist_scar_counter.ContainsKey(pawn))
+            if (!colonist_scar_counter.ContainsKey(pawn) && pawn != null)
             {
                 colonist_scar_counter.Add(pawn, scars);
             }
@@ -117,7 +117,7 @@ namespace VanillaMemesExpanded
 
         public static void AddColonistToJunkList(Pawn pawn, int numOfJunk)
         {
-            if (!colonist_junk_tracker.ContainsKey(pawn))
+            if (!colonist_junk_tracker.ContainsKey(pawn) && pawn != null)
             {
                 colonist_junk_tracker.Add(pawn, numOfJunk);
             }
@@ -132,7 +132,7 @@ namespace VanillaMemesExpanded
 
         public static void AddColonistToBoozeList(Pawn pawn, int ticks)
         {
-            if (!colonist_booze_tracker.ContainsKey(pawn))
+            if (!colonist_booze_tracker.ContainsKey(pawn)&&pawn!=null)
             {
                 colonist_booze_tracker.Add(pawn, ticks);
             }
@@ -153,11 +153,15 @@ namespace VanillaMemesExpanded
 
         public static void AddColonistAndRandomMood(Pawn pawn, int mood)
         {
-            if (!colonist_and_random_mood.ContainsKey(pawn))
-            {
-                colonist_and_random_mood.Add(pawn, mood);
+            if (pawn != null) {
+
+                if (!colonist_and_random_mood.ContainsKey(pawn))
+                {
+                    colonist_and_random_mood.Add(pawn, mood);
+                }
+                else { colonist_and_random_mood[pawn] = mood; }
             }
-            else { colonist_and_random_mood[pawn] = mood; }
+            
  
         }
 
@@ -183,11 +187,15 @@ namespace VanillaMemesExpanded
 
         public static void AddColonistAndObelisk(Pawn pawn, bool obeliskPresent)
         {
-            if (!colonist_obelisk_tracker.ContainsKey(pawn))
-            {
-                colonist_obelisk_tracker.Add(pawn, obeliskPresent);
+            if (pawn != null) {
+
+                if (!colonist_obelisk_tracker.ContainsKey(pawn))
+                {
+                    colonist_obelisk_tracker.Add(pawn, obeliskPresent);
+                }
+                else { colonist_obelisk_tracker[pawn] = obeliskPresent; }
             }
-            else { colonist_obelisk_tracker[pawn] = obeliskPresent; }
+            
         }
 
         public static void AddToEnslavedPawns(Pawn pawn)

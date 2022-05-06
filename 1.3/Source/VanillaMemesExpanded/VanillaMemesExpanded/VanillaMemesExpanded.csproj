@@ -341,7 +341,7 @@
     <Compile Include="Enums\DessertNeedCategory.cs" />
     <Compile Include="Harmony\CaravanExitMapUtility_AddCaravanExitTaleIfShould.cs" />
     <Compile Include="Harmony\ExpectationsUtility_CurrentExpectationFor.cs" />
-    <Compile Include="Harmony\IdeoFoundation_InitPrecepts.cs" />
+    <Compile Include="Harmony\Dialog_ChooseMemes_MemeCountRangeAbsolute.cs" />
     <Compile Include="Harmony\GenLeaving_GetBuildingResourcesLeaveCalculator.cs" />
     <Compile Include="Harmony\CompDrug_PostIngested.cs" />
     <Compile Include="Harmony\GameConditionManager_RegisterCondition.cs" />
@@ -419,7 +419,7 @@
     <Compile Include="Rituals\Outcomes\RitualOutcomeEffectWorker_Orgy.cs" />
     <Compile Include="Rituals\Outcomes\RitualOutcomeEffectWorker_SlaveEmancipation.cs" />
     <Compile Include="Rituals\Outcomes\RitualOutcomeEffectWorker_TradingFair.cs" />
-    <Compile Include="RitualTargets\RitualObligationTargetWorker_DivineStars.cs" />
+    <Compile Include="StatPartDefs\RitualObligationTargetWorker_DivineStars.cs" />
     <Compile Include="RitualObligationTriggers\RitualObligationTriggerProperties_StrongerLeader.cs" />
     <Compile Include="RitualObligationTriggers\RitualObligationTriggerProperties_SecondDefeat.cs" />
     <Compile Include="RitualObligationTriggers\RitualObligationTrigger_SecondDefeat.cs" />
@@ -485,7 +485,9 @@
     <Compile Include="Thoughts\Thought_StageByTime.cs" />
     <Compile Include="Thoughts\Thought_StageByWill.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="RitualTargets\" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Lib.Harmony">
       <Version>2.1.1</Version>

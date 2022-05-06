@@ -20,20 +20,20 @@ namespace VanillaMemesExpanded
         [HarmonyPostfix]
         static void IncreaseTreeCuttingYield(Plant __instance,ref int __result)
         {
-            if ((__instance.def.plant.IsTree && Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_WoodcuttingYield_High)!=null)||
-                (__instance.IsCrop && Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_FarmingYield_High) != null))
+            if ((__instance?.def?.plant?.IsTree==true && Current.Game.World.factionManager.OfPlayer.ideos?.GetPrecept(InternalDefOf.VME_WoodcuttingYield_High)!=null)||
+                (__instance?.IsCrop ==true && Current.Game.World.factionManager.OfPlayer.ideos?.GetPrecept(InternalDefOf.VME_FarmingYield_High) != null))
             {
                 __result = GenMath.RoundRandom(__result* 1.1f);
 
             }
 
-            if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_PermanentBases_Despised) != null) 
+            if (Current.Game.World.factionManager.OfPlayer.ideos?.GetPrecept(InternalDefOf.VME_PermanentBases_Despised) != null) 
             {
-                if(!__instance.def.plant.IsTree && __instance.IsCrop)
+                if(__instance?.def?.plant?.IsTree == false && __instance.IsCrop)
                 {
                     __result = GenMath.RoundRandom(__result * 0.9f);
                 }
-                if (!__instance.def.plant.IsTree && !__instance.IsCrop)
+                if (__instance?.def?.plant?.IsTree == false && !__instance.IsCrop)
                 {
                     __result = GenMath.RoundRandom(__result * 1.4f);
                 }

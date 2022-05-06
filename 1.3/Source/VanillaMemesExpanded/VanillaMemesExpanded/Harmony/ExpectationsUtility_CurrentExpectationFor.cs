@@ -25,7 +25,10 @@ namespace VanillaMemesExpanded
 
             if (p?.Ideo?.HasPrecept(InternalDefOf.VME_Expectations_High) == true)
             {
-                ExpectationDef finalResult = ExpectationDefOf.VeryLow;
+                ExpectationDef finalResult = __result;
+
+                
+
                 if (__result == ExpectationDefOf.ExtremelyLow)
                 {
                    finalResult = ExpectationDefOf.VeryLow;                     
@@ -54,7 +57,7 @@ namespace VanillaMemesExpanded
             }
             if (p?.Ideo?.HasPrecept(InternalDefOf.VME_Expectations_Low) == true)
             {
-                ExpectationDef finalResult = ExpectationDefOf.VeryLow;
+                ExpectationDef finalResult = __result;
                 if (__result == ExpectationDefOf.ExtremelyLow)
                 {
                     finalResult = ExpectationDefOf.ExtremelyLow;
@@ -80,6 +83,8 @@ namespace VanillaMemesExpanded
                     finalResult = ExpectationDefOf.High;
                 }
                 __result = finalResult;
+
+                
 
 
             }
