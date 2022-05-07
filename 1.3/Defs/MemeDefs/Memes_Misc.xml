@@ -2478,7 +2478,7 @@
 	<MemeDef>
 		<defName>VME_Anonymity</defName>
 		<label>anonymity</label>
-		<description>Knowing the names, faces, and backgrounds of your fellow colonists can be both a blessing and a curse.</description>
+		<description>Knowing the names, faces, and backgrounds of your fellow colonists can be both a blessing and a curse.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Anonymity severely affects both prisoner and slave interactions: wardens with the anonymity meme will get angry when they have to interact with prisoners. Slaves with the anonymity meme can't be suppressed by wardens, as they will ignore the social interaction. Long story short, don't use an ideo with this meme if you are planning on having lots of prisoners or slaves!</description>
 		<iconPath>UI/Memes/Anonymity</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>
