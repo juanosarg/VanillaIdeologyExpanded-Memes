@@ -24,23 +24,18 @@ namespace VanillaMemesExpanded
             if (billDoer != null)
             {
 
-                if (DefDatabase<ThingCategoryDef>.GetNamedSilentFail("VFEI_BodyPartsInsect") != null)
-                {
-                    if (__instance.recipe?.addsHediff?.spawnThingOnRemoved?.thingCategories?.Contains(ThingCategoryDef.Named("BodyPartsNatural")) == false && __instance.recipe?.addsHediff?.spawnThingOnRemoved?.thingCategories?.Contains(ThingCategoryDef.Named("VFEI_BodyPartsInsect")) == false)
-                    {
-                        Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_InstalledNonNaturalProsthetic, billDoer.Named(HistoryEventArgsNames.Doer)), true);
-                    }
-                    
 
-                }
-                else
-                {
-                    if (__instance.recipe?.addsHediff?.spawnThingOnRemoved?.thingCategories?.Contains(ThingCategoryDef.Named("BodyPartsNatural")) == false)
-                    {
-                        Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_InstalledNonNaturalProsthetic, billDoer.Named(HistoryEventArgsNames.Doer)), true);
-                    }
+               if( __instance.recipe?.addsHediff?.spawnThingOnRemoved?.thingCategories?.Contains(ThingCategoryDef.Named("BodyPartsNatural")) == false &&
 
+                        __instance.recipe?.addsHediff?.spawnThingOnRemoved?.thingCategories?.Contains(DefDatabase<ThingCategoryDef>.GetNamedSilentFail("AA_ImplantCategory")) == false &&
+                        __instance.recipe?.addsHediff?.spawnThingOnRemoved?.thingCategories?.Contains(DefDatabase<ThingCategoryDef>.GetNamedSilentFail("VFEI_BodyPartsInsect")) == false &&
+                        __instance.recipe?.addsHediff?.spawnThingOnRemoved?.thingCategories?.Contains(DefDatabase<ThingCategoryDef>.GetNamedSilentFail("GR_ImplantCategory")) == false)
+                {
+
+                    Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_InstalledNonNaturalProsthetic, billDoer.Named(HistoryEventArgsNames.Doer)), true);
                 }
+
+
             }
 
 

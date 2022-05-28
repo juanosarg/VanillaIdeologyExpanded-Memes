@@ -21,7 +21,9 @@ namespace VanillaMemesExpanded
                 if (hediffs[i]?.def?.countsAsAddedPartOrImplant == true)
                 {
 
-                    if (hediffs[i]?.def?.spawnThingOnRemoved?.thingCategories?.Contains(ThingCategoryDef.Named("BodyPartsNatural")) == false && 
+                    if (hediffs[i]?.def?.spawnThingOnRemoved?.thingCategories?.Contains(ThingCategoryDef.Named("BodyPartsNatural")) == false &&
+                         
+                        hediffs[i]?.def?.spawnThingOnRemoved?.thingCategories?.Contains(DefDatabase<ThingCategoryDef>.GetNamedSilentFail("AA_ImplantCategory")) == false &&
                         hediffs[i]?.def?.spawnThingOnRemoved?.thingCategories?.Contains(DefDatabase<ThingCategoryDef>.GetNamedSilentFail("VFEI_BodyPartsInsect")) == false &&
                         hediffs[i]?.def?.spawnThingOnRemoved?.thingCategories?.Contains(DefDatabase<ThingCategoryDef>.GetNamedSilentFail("GR_ImplantCategory")) == false)
                     {
