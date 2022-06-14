@@ -4,6 +4,7 @@ using Verse;
 using UnityEngine;
 using System.Collections.Generic;
 
+using System.Linq;
 
 namespace VanillaMemesExpanded
 {
@@ -16,7 +17,7 @@ namespace VanillaMemesExpanded
         public int tickInterval = 2000;
         public int firesInTheMap_backup = 0; 
         public int pensInTheMap_backup = 0;
-
+        HashSet<string> allFireSources = new HashSet<string>();
 
 
         public MapComponent_FireAndPenTracker(Map map) : base(map)
@@ -31,6 +32,13 @@ namespace VanillaMemesExpanded
                 PawnCollectionClass.firesInTheMap = firesInTheMap_backup;
                 PawnCollectionClass.pensInTheMap = pensInTheMap_backup;
 
+            }
+
+            
+            HashSet<FireSourcesForPreceptDefs> allLists = DefDatabase<FireSourcesForPreceptDefs>.AllDefsListForReading.ToHashSet();
+            foreach (FireSourcesForPreceptDefs individualList in allLists)
+            {
+                allFireSources.AddRange(individualList.supportedFireSourcesForPrecept);
             }
 
             base.FinalizeInit();
@@ -61,28 +69,18 @@ namespace VanillaMemesExpanded
 
                     {
 
-                        firesInTheMap_backup = PawnCollectionClass.firesInTheMap;
-                   
-                        int wildFires = map.listerThings.ThingsOfDef(ThingDefOf.Fire).Count;
-                        int torches = map.listerThings.ThingsOfDef(ThingDefOf.TorchLamp).Count;
-                        int campFires = map.listerThings.ThingsOfDef(ThingDefOf.Campfire).Count;
-                        int bonfires = map.listerThings.ThingsOfDef(InternalDefOf.VME_BonfireAfterRitual).Count;
-                        int stoneCampfires = 0;
-                        if (DefDatabase<ThingDef>.GetNamedSilentFail("Stone_Campfire") != null)
+                        firesInTheMap_backup = 0;
+
+                        foreach (string fireSource in allFireSources)
                         {
-                            stoneCampfires = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamedSilentFail("Stone_Campfire")).Count;
+                            if (DefDatabase<ThingDef>.GetNamedSilentFail(fireSource) != null)
+                            {
+                                firesInTheMap_backup += map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamedSilentFail(fireSource)).Count;
+                            }
+
                         }
-                        int hearths = 0;
-                        if (DefDatabase<ThingDef>.GetNamedSilentFail("VFEV_Hearth") != null)
-                        {
-                            hearths = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamedSilentFail("VFEV_Hearth")).Count;
-                        }
-                        int braziers = 0;
-                        if (DefDatabase<ThingDef>.GetNamedSilentFail("Brazier") != null)
-                        {
-                            braziers = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamedSilentFail("Brazier")).Count;
-                        }
-                        firesInTheMap_backup = wildFires + campFires + stoneCampfires + braziers + bonfires + torches + hearths;
+
+
                        
                         PawnCollectionClass.firesInTheMap = firesInTheMap_backup;
 

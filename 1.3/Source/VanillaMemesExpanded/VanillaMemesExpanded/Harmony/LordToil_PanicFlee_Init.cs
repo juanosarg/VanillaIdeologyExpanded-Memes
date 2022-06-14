@@ -25,7 +25,7 @@ namespace VanillaMemesExpanded
             { 
                 foreach(Pawn pawn in Find.CurrentMap.mapPawns.FreeColonistsAndPrisoners)
                 {
-                    if (pawn.drafter.Drafted)
+                    if (pawn.drafter?.Drafted == true && pawn.Ideo?.HasPrecept(InternalDefOf.VME_Violence_Abhorrent)==true)
                     {
                         pawn.drafter.Drafted = false;
                     }
