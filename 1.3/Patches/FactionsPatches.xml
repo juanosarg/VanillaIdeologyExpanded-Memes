@@ -50,6 +50,7 @@
 			<value>
 				<disallowedMemes>
 					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Nomad</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Vegan</li>
 				</disallowedMemes>
 			</value>
 		</nomatch>
@@ -57,6 +58,7 @@
 			<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/disallowedMemes</xpath>
 			<value>
 				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Nomad</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Vegan</li>
 			</value>
 		</match>
 	</Operation>
@@ -116,6 +118,7 @@
 					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Aristocratic</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">VME_MechanoidSupremacy</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Nationalist</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Vegan</li>
 				</disallowedMemes>
 			</value>
 		</nomatch>
@@ -131,6 +134,7 @@
 				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Aristocratic</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">VME_MechanoidSupremacy</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Nationalist</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Vegan</li>
 			</value>
 		</match>
 	</Operation>
@@ -143,6 +147,7 @@
 				<disallowedMemes>
 					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Bushido</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">VME_BloodCourt</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Vegan</li>
 				</disallowedMemes>
 			</value>
 		</nomatch>
@@ -151,6 +156,7 @@
 			<value>
 				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Bushido</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">VME_BloodCourt</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Vegan</li>
 			</value>
 		</match>
 	</Operation>
@@ -163,6 +169,7 @@
 				<disallowedMemes>
 					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Pacifist</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Emancipation</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Vegan</li>
 				</disallowedMemes>
 			</value>
 		</nomatch>
@@ -171,6 +178,7 @@
 			<value>
 				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Pacifist</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Emancipation</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Vegan</li>
 			</value>
 		</match>
 	</Operation>
@@ -185,6 +193,7 @@
 					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Egalitarian</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Trader</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Emancipation</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Vegan</li>
 				</disallowedMemes>
 			</value>
 		</nomatch>
@@ -195,6 +204,7 @@
 				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Egalitarian</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Trader</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Emancipation</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Vegan</li>
 			</value>
 		</match>
 	</Operation>
@@ -209,6 +219,7 @@
 					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Egalitarian</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Trader</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Emancipation</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Vegan</li>
 				</disallowedMemes>
 			</value>
 		</nomatch>
@@ -219,6 +230,7 @@
 				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Egalitarian</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Trader</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Emancipation</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Vegan</li>
 			</value>
 		</match>
 	</Operation>
