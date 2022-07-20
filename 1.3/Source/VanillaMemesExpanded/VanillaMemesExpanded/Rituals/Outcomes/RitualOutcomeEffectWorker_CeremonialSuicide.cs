@@ -39,17 +39,23 @@ namespace VanillaMemesExpanded
 			}
 			Pawn suicide = jobRitual.PawnWithRole("suicide");
 
+			RitualObligation ritualObligationToRemove =null;
 			foreach (RitualObligation ritualObligation in jobRitual.Ritual.activeObligations)
 			{
 				Pawn pawn = ritualObligation.targetA.Thing as Pawn;
 				if (pawn != null && pawn== suicide)
 				{
-					jobRitual.Ritual.activeObligations?.Remove(ritualObligation);
+					ritualObligationToRemove = ritualObligation;
 
 
 				}
 				
 			}
+            if (ritualObligationToRemove != null)
+            {
+				jobRitual.Ritual.activeObligations?.Remove(ritualObligationToRemove);
+            }
+			
 			BodyPartRecord bodyPartRecord = suicide.health.hediffSet.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined, null, null).FirstOrDefault((BodyPartRecord x) => x.def == BodyPartDefOf.Head); ;
 			int num2 = Mathf.Clamp((int)suicide.health.hediffSet.GetPartHealth(bodyPartRecord) - 1, 1, 20);
 			DamageInfo damageInfo = new DamageInfo(DamageDefOf.ExecutionCut, (float)num2, 999f, -1f, suicide, bodyPartRecord, null, DamageInfo.SourceCategory.ThingOrUnknown, null, false, true);

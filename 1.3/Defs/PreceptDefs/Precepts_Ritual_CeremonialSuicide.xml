@@ -19,7 +19,7 @@
 		<requiredMemes>
 			<li>VME_Bushido</li>
 		</requiredMemes>
-		
+		<skipOpportunityLettersBeforeDay>0</skipOpportunityLettersBeforeDay>		
 		<canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
 		<visible>true</visible>
 		<listedForRoles>false</listedForRoles>

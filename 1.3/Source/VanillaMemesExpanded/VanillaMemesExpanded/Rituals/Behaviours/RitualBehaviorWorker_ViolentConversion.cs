@@ -19,27 +19,31 @@ namespace VanillaMemesExpanded
 
 		public override string CanStartRitualNow(TargetInfo target, Precept_Ritual ritual, Pawn selectedPawn = null, Dictionary<string, Pawn> forcedForRole = null)
 		{
-			Precept_Role precept_Role = ritual.ideo.RolesListForReading.First((Precept_Role r) => r.def == PreceptDefOf.IdeoRole_Moralist);
-			if (precept_Role.ChosenPawnSingle() == null)
-			{
-				return "CantStartRitualRoleNotAssigned".Translate(precept_Role.LabelCap);
-			}
-			bool flag = false;
-			using (List<Pawn>.Enumerator enumerator = target.Map.mapPawns.FreeColonistsAndPrisonersSpawned.GetEnumerator())
-			{
-				while (enumerator.MoveNext())
+			Precept_Role precept_Role = ritual.ideo.RolesListForReading.FirstOrDefault((Precept_Role r) => r.def == PreceptDefOf.IdeoRole_Moralist);
+            if (precept_Role != null)
+            {
+				if (precept_Role.ChosenPawnSingle() == null)
 				{
-					if (ValidateConvertee(enumerator.Current, precept_Role.ChosenPawnSingle(), false))
+					return "CantStartRitualRoleNotAssigned".Translate(precept_Role.LabelCap);
+				}
+				bool flag = false;
+				using (List<Pawn>.Enumerator enumerator = target.Map.mapPawns.FreeColonistsAndPrisonersSpawned.GetEnumerator())
+				{
+					while (enumerator.MoveNext())
 					{
-						flag = true;
-						break;
+						if (ValidateConvertee(enumerator.Current, precept_Role.ChosenPawnSingle(), false))
+						{
+							flag = true;
+							break;
+						}
 					}
 				}
+				if (!flag)
+				{
+					return "VME_CantStartRitualNoConvertee".Translate(precept_Role.ChosenPawnSingle().Ideo.name);
+				}
 			}
-			if (!flag)
-			{
-				return "VME_CantStartRitualNoConvertee".Translate(precept_Role.ChosenPawnSingle().Ideo.name);
-			}
+			
 			return base.CanStartRitualNow(target, ritual, selectedPawn, forcedForRole);
 		}
 

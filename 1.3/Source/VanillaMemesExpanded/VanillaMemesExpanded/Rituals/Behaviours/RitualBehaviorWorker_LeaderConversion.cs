@@ -22,28 +22,32 @@ namespace VanillaMemesExpanded
 
         public override string CanStartRitualNow(TargetInfo target, Precept_Ritual ritual, Pawn selectedPawn = null, Dictionary<string, Pawn> forcedForRole = null)
         {
-            Precept_Role precept_Role = ritual.ideo.RolesListForReading.First((Precept_Role r) => r.def == PreceptDefOf.IdeoRole_Leader);
-            if (precept_Role.ChosenPawnSingle() == null)
+            Precept_Role precept_Role = ritual.ideo.RolesListForReading.FirstOrDefault((Precept_Role r) => r.def == PreceptDefOf.IdeoRole_Leader);
+            if (precept_Role != null)
             {
-                return "CantStartRitualRoleNotAssigned".Translate(precept_Role.LabelCap);
-            }
-            bool flag = false;
-            foreach (Pawn item in target.Map.mapPawns.FreeColonistsAndPrisonersSpawned)
-            {
-                if (ValidateConvertee(item, precept_Role.ChosenPawnSingle(), throwMessages: false))
+                if (precept_Role.ChosenPawnSingle() == null)
                 {
-                    flag = true;
-                    break;
+                    return "CantStartRitualRoleNotAssigned".Translate(precept_Role.LabelCap);
+                }
+                bool flag = false;
+                foreach (Pawn item in target.Map.mapPawns.FreeColonistsAndPrisonersSpawned)
+                {
+                    if (ValidateConvertee(item, precept_Role.ChosenPawnSingle(), throwMessages: false))
+                    {
+                        flag = true;
+                        break;
+                    }
+                }
+                if (!flag)
+                {
+                    return "CantStartRitualNoConvertee".Translate(precept_Role.ChosenPawnSingle().Ideo.name);
+                }
+                if (!precept_Role.ChosenPawnSingle().Ideo.HasMeme(InternalDefOf.VME_ExaltedPriesthood))
+                {
+                    return "VME_NeedsExaltedPriesthood".Translate(precept_Role.ChosenPawnSingle().Ideo.name);
                 }
             }
-            if (!flag)
-            {
-                return "CantStartRitualNoConvertee".Translate(precept_Role.ChosenPawnSingle().Ideo.name);
-            }
-            if (!precept_Role.ChosenPawnSingle().Ideo.HasMeme(InternalDefOf.VME_ExaltedPriesthood))
-            {
-                return "VME_NeedsExaltedPriesthood".Translate(precept_Role.ChosenPawnSingle().Ideo.name);
-            }
+            
 
 
             return base.CanStartRitualNow(target, ritual, selectedPawn, forcedForRole);

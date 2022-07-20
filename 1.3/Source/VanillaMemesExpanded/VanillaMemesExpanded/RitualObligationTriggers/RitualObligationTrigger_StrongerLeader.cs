@@ -50,7 +50,10 @@ namespace VanillaMemesExpanded
 						
 						if (comp.mostSkilledPawn != comp.pawnThatIsTheLeaderNow)
 						{
-							this.ritual.AddObligation(new RitualObligation(this.ritual, comp.mostSkilledPawn, false));
+							this.ritual.AddObligation(new RitualObligation(this.ritual, comp.mostSkilledPawn, false)
+							{
+								sendLetter = true
+							});
 						}
 					}
 				

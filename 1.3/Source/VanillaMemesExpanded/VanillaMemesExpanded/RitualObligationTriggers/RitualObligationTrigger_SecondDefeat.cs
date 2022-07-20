@@ -49,7 +49,10 @@ namespace VanillaMemesExpanded
 					{
 						if (pawn.Map?.GetComponent<MapComponent_PawnsInMapDesiringRitualSuicide>()?.pawnsDesiringSuicide.Contains(pawn)==true)
 						{
-							this.ritual.AddObligation(new RitualObligation(this.ritual, pawn, false));
+							ritual.AddObligation(new RitualObligation(this.ritual, pawn, false)
+							{
+								sendLetter = true
+							});
 						}
 					}
 				}

@@ -19,6 +19,7 @@
     <ritualPatternBase>VME_LeadershipChallengeRitual</ritualPatternBase>
     <iconPath>UI/Rituals/CelebrationLeadershipChallenge</iconPath>
     <ignoreNameUniqueness>false</ignoreNameUniqueness>
+	<skipOpportunityLettersBeforeDay>0</skipOpportunityLettersBeforeDay>
 	<requiredMemes>
       <li>VME_BloodCourt</li>
     </requiredMemes>
