@@ -9,7 +9,7 @@
     
     <ritualObligationTriggers>
       <li Class="VanillaMemesExpanded.RitualObligationTriggerProperties_SecondDefeat">
-        
+        <mustBePlayerIdeo>true</mustBePlayerIdeo>
       </li>
     </ritualObligationTriggers>
 	<ritualObligationTargetFilter>RitualSpotIdeogramOrAltar</ritualObligationTargetFilter>
