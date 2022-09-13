@@ -28,8 +28,8 @@ namespace VanillaMemesExpanded
                 {
 
                     Pawn victimPawn = thing as Pawn;
-
-                    if (victimPawn != null && !victimPawn.HostileTo(instigatorPawn) && victimPawn.RaceProps.Humanlike)
+                    bool notAccident = instigatorPawn.Faction?.IsPlayer != true || instigatorPawn.drafter?.Drafted == true;
+                    if (victimPawn != null && !victimPawn.HostileTo(instigatorPawn) && victimPawn.RaceProps.Humanlike && notAccident)
                     {
 
                         Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_AttackedInnocent, dinfo.Instigator.Named(HistoryEventArgsNames.Doer)), true);

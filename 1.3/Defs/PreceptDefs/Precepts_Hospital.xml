@@ -53,7 +53,7 @@
 			<li>
 				<label>dirty hospital</label>
 				<description>We have a hospital, but it is incredibly dirty. We are not animals!</description>
-				<baseMoodEffect>-5</baseMoodEffect>
+				<baseMoodEffect>-1</baseMoodEffect>
 			</li>
 			<li>
 				<label>small hospital</label>
